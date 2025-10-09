@@ -1,0 +1,2 @@
+## What is It?
+A text area is a form component designed for collecting longer textual input from users, such as comments, descriptions, or messages. It supports label, placeholder, helper text, error messaging, and optional helper links.
