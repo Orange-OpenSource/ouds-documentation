@@ -7,6 +7,3 @@
 ❌ For numeric data entry—use number input or stepper components
 
 ❌ When space is extremely limited and multi-line input is not practical
-  
-  
----
