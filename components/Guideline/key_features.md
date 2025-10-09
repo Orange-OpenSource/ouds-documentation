@@ -9,6 +9,6 @@
 **Comprehensive validation**: Displays error messages, replaces helper text, and indicates character limit violations
 
 **Accessibility-first**: Proper semantic markup, keyboard navigation, and screen reader support
-
-
+  
+  
 ---
