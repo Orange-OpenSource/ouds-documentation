@@ -7,3 +7,5 @@
 ✅ Allow users to compose messages, comments, or notes
 
 ✅ Enable content editing where more than a single line is needed
+
+---
