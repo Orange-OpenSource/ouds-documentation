@@ -8,4 +8,5 @@
 
 ❌ When space is extremely limited and multi-line input is not practical
 
+
 ---
