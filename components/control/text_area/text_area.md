@@ -283,39 +283,40 @@ The user must reduce the number of characters entered for the text area to exit 
 
 # Accessibility
 
-**Keyboard Navigation**
-The text area must be fully operable via keyboard. Users should be able to tab into the field to focus it, use arrow keys to navigate within the text, and use standard text editing shortcuts (Ctrl/Cmd+A to select all, Ctrl/Cmd+C/V for copy/paste). When in error state, users should be able to tab to any helper links without losing focus context. Ensure the tab order is logical and follows the visual flow of the form.
+## Keyboard navigation
+The text area must be fully operable using keyboard controls. Users should be able to tab into the field, type content naturally, use arrow keys to navigate within text, and shift+tab to exit. The focus indicator must be clearly visible with sufficient contrast (minimum 3:1 ratio against adjacent colors) to show when the field is active. When an error occurs, focus should move to the error message or remain on the field with the error announced.
 
-**Screen Reader Support**
-Implement proper ARIA attributes to ensure screen readers announce all relevant information. Use `aria-label` or `aria-labelledby` to associate the label with the input, even when the label is visually hidden. The `aria-describedby` attribute should reference both the helper text and character counter IDs so screen readers announce them when the field receives focus. When in error state, use `aria-invalid="true"` and ensure the error message is announced immediately via `aria-live="polite"` or `aria-describedby` referencing the error message element.
+---
 
-**ARIA Attributes and Labels**
-Required ARIA attributes include:
-- `aria-label` or `aria-labelledby` for field identification
-- `aria-describedby` to connect helper text, character counter, and error messages
-- `aria-invalid="true"` when validation fails
-- `aria-required="true"` for mandatory fields
-- `role="textbox"` with `aria-multiline="true"` to identify the multi-line nature
-- `aria-readonly="true"` for read-only state
-- `aria-disabled="true"` for disabled state
+## Screen reader support
+Implement proper semantic HTML using the `<textarea>` element with associated `<label>` elements connected via matching `for` and `id` attributes. The label must be programmatically associated even when visually hidden. Helper text should be associated using `aria-describedby`, and error messages should be linked with `aria-describedby` and announced using `aria-live="polite"` or `aria-live="assertive"` for critical errors. Character counter updates should be announced periodically, not on every keystroke to avoid overwhelming screen reader users.
 
-**Error Communication**
-Error messages must be programmatically associated with the text area using `aria-describedby` and should be announced automatically when they appear. Use `aria-live="polite"` on the error message container to ensure screen readers announce character count violations in real-time without interrupting the user's typing. Error messages should be clear, specific, and provide actionable guidance on how to resolve the issue (e.g., "You have exceeded the character limit by 47 characters. Please reduce your text.").
+---
 
-**Focus Management**
-Provide a clear visual focus indicator that meets WCAG contrast requirements (minimum 3:1 contrast ratio against adjacent colors). The focus state should be highly visible with a distinct border or outline. When validation errors occur, do not automatically move focus away from the text area—allow users to correct their input without disruption. If a helper link opens a modal, manage focus appropriately by moving it to the modal and returning it to the link when the modal closes.
+## ARIA attributes and labels
+Use `aria-label` or `aria-labelledby` when labels are visually hidden to ensure screen readers can identify the field's purpose. Apply `aria-required="true"` for mandatory fields. Use `aria-invalid="true"` when validation fails and `aria-describedby` to reference both helper text and error message IDs. For multi-part descriptions, include space-separated IDs in `aria-describedby` (e.g., `aria-describedby="helper-text-id error-message-id"`). The `aria-multiline="true"` attribute should be set to indicate the multi-line nature of the input.
 
-**Touch Target Sizing**
-For mobile and tablet interfaces, ensure all interactive elements meet minimum touch target sizes of 44x44px (iOS) or 48x48px (Android) according to WCAG 2.5.5 Target Size guidelines. This includes the text area itself, helper links, and any interactive icons. Provide adequate spacing between interactive elements to prevent accidental activation. The scrollbar, when present, should be wide enough for comfortable finger scrolling (minimum 44px wide).
+---
 
-**Color Contrast Requirements**
-Ensure all text meets WCAG AA standards with a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text (18pt+) against the background. This includes:
-- Label text against the page background
-- Input text against the field background
-- Placeholder text (minimum 4.5:1, though 7:1 is recommended)
-- Helper text and character counter against the background
-- Error messages with sufficient contrast independent of color alone
-Error states should not rely solely on color to convey meaning—combine red borders with error icons and explicit error text.
+## Error communication
+Error messages must be clear, specific, and actionable, explaining both what went wrong and how to correct it. Errors should be communicated through multiple channels: visual styling (color, iconography), text content, and ARIA attributes. Never rely on color alone to indicate errors—always include an icon and text message. When character limits are exceeded, announce the overage amount and required reduction. Error states should not disable the field but should allow users to edit and correct their input immediately.
 
-**Component-Specific Concerns**
-The scrollable behavior when content exceeds maximum height presents accessibility challenges. Ensure the scrollbar is keyboard accessible and that screen reader users are informed about the scrollable region using `aria-label="Scrollable text input area"`. The auto-expansion feature should not cause unexpected page layout shifts that disorient users relying on screen magnification. When the character counter shows excess characters in error state, the negative count and error message should be clearly distinguished and announced together. For the skeleton loading state, use `aria-busy="true"` and `aria-live="polite"` to inform screen reader users that content is loading.
+---
+
+## Focus management
+Maintain logical focus order within forms, ensuring the text area appears in the natural tab sequence. When users interact with helper links that open modals or external resources, manage focus appropriately—moving focus to the opened content and returning it to the text area upon closing. Avoid focus traps that prevent keyboard users from navigating away from the field.
+
+---
+
+## Touch target sizing
+On mobile and tablet devices, ensure the entire text area input region meets minimum touch target size requirements of 44×44 pixels (iOS) or 48×48 pixels (Android). Interactive elements like helper links should be adequately spaced (minimum 8px separation) to prevent accidental activation. The scrollbar, when visible, should be thick enough for touch interaction without frustration.
+
+---
+
+## Color contrast requirements
+All text within and around the text area must meet WCAG AA standards: 4.5:1 contrast ratio for normal text and 3:1 for large text (18pt or 14pt bold). This includes labels, input text, placeholder text, helper text, error messages, and character counters. In disabled states, ensure at least 3:1 contrast so users can still perceive the field's presence and label. Border colors and focus indicators must maintain 3:1 contrast against adjacent background colors.
+
+---
+
+## Component-specific accessibility concerns
+The nested scroll pattern (scrollbar within the text area on a scrollable page) requires careful implementation to ensure screen reader users understand they're navigating within a bounded region. Consider using `role="textbox"` with `aria-multiline="true"` for custom implementations. The auto-resize behavior should not cause unexpected page reflows that disorient users. Loading states must be announced to screen readers using appropriate ARIA live regions. When the skeleton state is active, use `aria-busy="true"` or `aria-label="Loading"` to communicate the loading status to assistive technologies.
