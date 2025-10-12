@@ -1,11 +1,13 @@
 ## When to Use
 
-✅ When users need to provide detailed, open-ended responses that require multiple sentences or paragraphs, such as feedback forms, comment sections, or message composition
+Use the Text Area component when you need to:
 
-✅ For collecting descriptions, explanations, or narratives where content length is unpredictable and may vary significantly between users
+✅ Collect detailed, multi-line user input such as feedback, comments, descriptions, or messages.
 
-✅ When implementing forms that require validation with character limits, where real-time feedback on remaining characters improves user experience
+✅ Allow users to express open-ended responses where single-line inputs would be too restrictive.
 
-✅ In scenarios where content may need to be reviewed or edited after initial entry, benefiting from the expanded viewing area
+✅ Provide visible character limits with real-time feedback to help users stay within defined constraints.
 
-✅ When you need to differentiate longer text inputs from single-line fields in a form, making the interface more intuitive and reducing user confusion
+✅ Accommodate variable content length with automatic expansion up to a defined maximum height.
+
+✅ Display pre-filled content that users can review and edit in a read-only or enabled state.

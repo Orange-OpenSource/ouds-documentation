@@ -1,11 +1,13 @@
 ## When not to Use
 
-❌ For short, single-line inputs like names, email addresses, or search queries where a standard text input would be more appropriate and space-efficient
+Avoid using this component when:
 
-❌ In highly constrained mobile layouts where the expanded height could disrupt the overall page flow or create awkward scrolling experiences
+❌ A single-line text input would suffice for short, predictable responses like names, emails, or phone numbers.
 
-❌ When collecting structured data that would be better served by specific input types like dropdowns, radio buttons, or formatted fields (phone numbers, dates)
+❌ You need structured data entry that would be better served by specific input types like date pickers, dropdowns, or number fields.
 
-❌ For extremely long-form content creation where a dedicated rich text editor with formatting capabilities would provide a better authoring experience
+❌ The expected input is so brief that a text area's vertical space would create unnecessary visual weight in the layout.
 
-❌ In read-only contexts where content simply needs to be displayed rather than edited, where a standard text display would be more appropriate
+❌ You're building a rich text editor with formatting capabilities, which requires a more advanced component with toolbar controls.
+
+❌ Space is extremely limited and a compact input solution is required, such as inline editing or search fields.
