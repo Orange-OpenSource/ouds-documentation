@@ -1,5 +1,3 @@
-## Anatomy
-
 | # | Element | Purpose |
 |---|---------|---------|
 | 1 | Label | The purpose of the text area field |
