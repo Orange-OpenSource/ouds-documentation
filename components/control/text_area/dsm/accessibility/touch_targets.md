@@ -1,0 +1,4 @@
+### Touch Targets
+The minimum touch target size for the text area should be at least 44x44 pixels to accommodate finger taps on mobile and tablet devices, following WCAG guidelines. Ensure adequate spacing (at least 8px) between the textarea and adjacent interactive elements to prevent accidental activation. The entire input container should be tappable to focus the field, not just the text within. Helper links and error messages below the textarea must also meet the 44x44px minimum touch target requirement with proper spacing.
+
+---

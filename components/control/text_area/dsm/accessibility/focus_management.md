@@ -1,0 +1,4 @@
+### Focus Management
+When the text area receives focus, a clear visual indicator must appear with sufficient contrast (3:1 minimum). Focus should follow the natural document order unless programmatically managed for specific interactions. When validation errors occur, consider moving focus to the error message or maintaining it on the textarea with the error announced via `aria-live` regions. If the textarea is part of a modal or dialog, focus should be trapped within that container and restored to the triggering element when closed. Ensure focus is never lost during loading states, and that the loading indicator is announced appropriately.
+
+---
