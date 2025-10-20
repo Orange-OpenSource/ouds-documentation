@@ -11,5 +11,3 @@ Avoid using this component when:
 ❌ You're building a rich text editor with formatting capabilities, which requires a more advanced component with toolbar controls.
 
 ❌ Space is extremely limited and a compact input solution is required, such as inline editing or search fields.
-
----

@@ -11,5 +11,3 @@
 | ⚠️ Label | True | Label is visible by default |
 | Helper text | False | No helper text displayed |
 | Helper link | False | No helper link displayed |
-
----

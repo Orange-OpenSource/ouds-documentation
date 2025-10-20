@@ -8,5 +8,3 @@ Similar behavior to desktop with adjusted touch targets and slightly modified sp
 
 **Mobile**  
 Maintains the same height constraints but requires careful consideration of the scroll-within-scroll behavior when internal scrolling is active within the page scroll.
-
----

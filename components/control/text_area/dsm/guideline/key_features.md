@@ -19,5 +19,3 @@ When maximum height is reached, an internal scrollbar appears to allow navigatio
 **Multiple visual styles**
 
 Offers both filled and outlined variants with optional rounded corners to adapt to different design contexts and brand requirements.
-
----

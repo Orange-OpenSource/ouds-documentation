@@ -7,5 +7,3 @@
 **Character limit exceeded** If the user exceeds the set limit, the field enters an error state, but input is not blocked. The character counter then shows the user, still in real time, how many characters have been entered beyond the field's allowed limit.
 
 The user must reduce the number of characters entered for the text area to exit the error state.
-
----

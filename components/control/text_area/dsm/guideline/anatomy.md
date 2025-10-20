@@ -9,5 +9,3 @@
 | 5 | Helper link | Offers additional help or guidance when needed |
 | 6 | Error message | Communicates validation issues with the entered text |
 | 7 | Scrollbar | Enables navigation through text that exceeds visible height |
-
----

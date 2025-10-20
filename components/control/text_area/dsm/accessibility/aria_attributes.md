@@ -1,4 +1,2 @@
 ### ARIA Attributes
 Required attributes include `aria-label` or `aria-labelledby` when labels are visually hidden, ensuring screen readers can identify the field's purpose. Use `aria-describedby` to reference helper text, character counters, and additional instructions. When errors occur, add `aria-invalid="true"` and associate error messages with `aria-describedby` or `aria-errormessage`. For character limits, use `aria-live="polite"` on the counter element to announce updates. If the textarea is required, include `aria-required="true"`. In read-only state, add `aria-readonly="true"`, and in disabled state, use the `disabled` attribute which implicitly communicates non-interactivity.
-
----

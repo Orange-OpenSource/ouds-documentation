@@ -6,5 +6,3 @@
 • When inputs need to feel lightweight and unobtrusive
 • In a header (search field)
 • In a selection/filtering feature in a product catalog
-
----

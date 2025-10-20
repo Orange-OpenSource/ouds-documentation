@@ -7,5 +7,3 @@ However, hiding the label should only be done if:
 • The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
-
----

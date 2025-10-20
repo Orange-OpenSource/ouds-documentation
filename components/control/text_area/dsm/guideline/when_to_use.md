@@ -11,5 +11,3 @@ Use the Text Area component when you need to:
 ✅ Accommodate variable content length with automatic expansion up to a defined maximum height.
 
 ✅ Display pre-filled content that users can review and edit in a read-only or enabled state.
-
----
