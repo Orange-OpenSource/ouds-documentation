@@ -1,0 +1,97 @@
+# GitHub Actions Workflow for Automatic Documentation Slicing
+# This workflow automatically detects changes to component documentation files
+# and slices them into smaller files based on markdown heading hierarchy
+
+name: Auto Slice Documentation
+
+# Trigger conditions for this workflow
+on:
+  # Trigger on push events
+  push:
+    # Only watch for changes in component markdown files
+    # Pattern: components/[control_type]/[control_name]/[control_name].md
+    paths:
+      - 'components/*/*/*.md'
+    # Only run on main branch
+    branches:
+      - main
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  slice-documentation:
+    # Use the latest Ubuntu runner
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch full git history (needed to detect changed files)
+          fetch-depth: 0
+          # Use GitHub token for authentication
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Step 2: Set up Python environment
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          # Use Python 3.11 (can be changed to 3.8, 3.9, 3.10, etc.)
+          python-version: '3.11'
+      
+      # Step 3: Detect which markdown files have changed
+      - name: Detect changed markdown files
+        id: changed-files
+        run: |
+          # Check if this is a manual trigger or a push event
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual trigger: process ALL component documentation files
+            CHANGED_FILES=$(find components -type f -name "*.md" -path "components/*/*/*.md" ! -path "*/dsm/*" ! -path "*/figma/*")
+          else
+            # Push trigger: only process files that changed in this commit
+            # Pattern matches: components/[type]/[name]/[name].md
+            # Excludes: files in dsm/ and figma/ subdirectories
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^components/[^/]+/[^/]+/[^/]+\.md$' | grep -v '/dsm/' | grep -v '/figma/' || true)
+          fi
+          
+          # Check if any files were found
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No markdown files changed"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changed files:"
+            echo "$CHANGED_FILES"
+            # Save the list to a file for the Python script to read
+            echo "$CHANGED_FILES" > changed_files.txt
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      # Step 4: Run the Python documentation slicer script
+      - name: Run documentation slicer
+        # Only run if there are changed files
+        if: steps.changed-files.outputs.has_changes == 'true'
+        run: |
+          python .github/scripts/slice_docs.py
+      
+      # Step 5: Commit the generated slice files back to the repository
+      - name: Commit sliced documentation
+        # Only commit if there are changed files
+        if: steps.changed-files.outputs.has_changes == 'true'
+        run: |
+          # Configure git with GitHub Actions bot identity
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Stage all changes in dsm/ directories
+          git add components/**/dsm/
+          
+          # Check if there are any changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # Commit with [skip ci] to prevent triggering this workflow again
+            # This prevents an infinite loop of commits
+            git commit -m "docs: auto-slice documentation [skip ci]"
+            git push
+          fi
