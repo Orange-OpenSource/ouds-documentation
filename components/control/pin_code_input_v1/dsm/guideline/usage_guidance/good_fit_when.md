@@ -1,4 +1,4 @@
-### Good fit when
+### Best for
 
 ✅ Fixed-length numeric input required (4, 6, or 8 digits)
 
