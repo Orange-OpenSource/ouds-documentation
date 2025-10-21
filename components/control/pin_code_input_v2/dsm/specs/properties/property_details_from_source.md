@@ -1,0 +1,1 @@
+### Property Details (from source)
