@@ -2,7 +2,7 @@
 
 ## Intro
 
-A specialized numeric input for capturing fixed-length security codes (4, 6, or 8 digits) used in authentication, verification, and transaction confirmation flows.
+A specialized numeric input capturing fixed-length codes for authentication or verification using individual digit boxes for clarity.
 
 ---
 
@@ -20,80 +20,66 @@ This component must support smooth keyboard navigation (automatic focus shift, b
 
 | # | Element | Purpose |
 |---|---------|---------|
-| 1 | Digit container | Individual box representing one digit position in the PIN sequence |
-| 2 | Input field | Active area accepting single numeric character input |
-| 3 | Focus indicator | Visual cue showing the currently active digit position |
-| 4 | Helper text | Instructional message displaying expected digit count (4, 6, or 8) |
-| 5 | Error message | Validation feedback displayed when submission fails or input is incomplete |
+| 1 | Digit input box | Individual field for a single numeric character |
+| 2 | Focus indicator | Visual cue showing the currently active input |
+| 3 | Error indicator | Visual state applied to all boxes when validation fails |
+| 4 | Helper text | Instructional message showing expected digit count |
+| 5 | Error message | Specific feedback displayed when validation fails |
 
 ---
 
-## Usage & Guidance — Compact
+## Usage & Guidance
 
-### Use it if all 3 are true
+### Good fit when
 
-* Fixed-length numeric input (4, 6, or 8 digits) is required
-* Paste/SMS autofill support enhances user experience
-* Security or verification context demands clear visual separation of digits
+✅ Fixed-length numeric input required (4, 6, or 8 digits)  
+✅ Authentication, verification, or transaction confirmation flows  
+✅ Mobile-first contexts requiring paste/SMS autofill support
 
-> Otherwise use a standard text input with `type="tel"` or `inputmode="numeric"` for variable-length codes.
+### Fast checklist
 
-### Top 5 Rules
+**Minimize user effort (Must)**  
+✅ **Do:** Auto-advance focus after each digit entry to reduce manual tabbing  
+❌ **Don't:** Force users to manually tab between boxes, slowing the flow
 
-**Auto-advance focus (Must)**
+**Guide with context (Should)**  
+✅ **Do:** Show helper text indicating expected digit count before first interaction  
+❌ **Don't:** Wait until error submission to explain format requirements
 
-* ✅ **Do:** Move focus to the next digit automatically upon valid character entry
-  *Reduces friction and matches user mental model of sequential entry.*
-* ❌ **Don't:** Require manual Tab navigation between digit boxes
-  *Forces unnecessary keystrokes and slows completion.*
+**Surface errors immediately (Must)**  
+✅ **Do:** Validate on submission and display specific error messages with next steps  
+❌ **Don't:** Show generic "Error" without indicating whether the issue is empty or incorrect input
 
-**Backspace behavior (Must)**
+**Support paste workflows (Should)**  
+✅ **Do:** Allow pasting full codes from SMS/email, auto-distributing digits across boxes  
+❌ **Don't:** Require manual digit-by-digit entry when users have codes ready to paste
 
-* ✅ **Do:** Clear current digit and move focus to previous box on Backspace
-  *Allows natural correction flow without losing position.*
-* ❌ **Don't:** Delete current digit but leave focus in place
-  *Breaks expected editing pattern and confuses users.*
+**Maintain visual hierarchy (Optional)**  
+✅ **Do:** Use outlined style sparingly in headers or filters to reduce visual weight  
+❌ **Don't:** Mix filled and outlined styles within the same form section
 
-**Paste support (Should)**
-
-* ✅ **Do:** Accept full code via paste and distribute across digit boxes (e.g., from SMS)
-  *Enables fast autofill and reduces manual entry errors.*
-* ❌ **Don't:** Block paste or insert all digits into the first box only
-  *Forces tedious retyping when autofill is available.*
-
-**Unified error state (Must)**
-
-* ✅ **Do:** Apply error styling to all digit boxes simultaneously with `aria-invalid="true"`
-  *Communicates validation failure as a single cohesive event.*
-* ❌ **Don't:** Highlight only the first empty or incorrect digit
-  *Implies individual validation when the code is validated as a whole.*
-
-**Helper text visibility (Should)**
-
-* ✅ **Do:** Display digit count ("Enter 6-digit code") by default; append error below without replacing it
-  *Preserves guidance while adding failure context.*
-* ❌ **Don't:** Replace helper text entirely with error message
-  *Removes the digit count reference users need for correction.*
-
-*See also:* Specs → Initial Config, Accessibility → Error Handling, Accessibility → Keyboard Support
+**See also:** [Properties](#properties) · [Keyboard Support](#keyboard-support) · [Error Handling](#error-handling)
 
 ### Core Flows
 
-* **First-time verification** — User receives SMS → Pastes code → All digits populate → Submits → **Success**
-* **Manual retry after error** — User enters wrong code → Submits → Sees error → Clears via Backspace → Re-enters → **Success/Error**
+**SMS verification entry**  
+User receives code → focuses first box → types/pastes digits → auto-advances → submits → receives validation feedback
+
+**Transaction confirmation**  
+User initiates transaction → PIN prompt appears → enters memorized code → backspaces to correct typos → submits → proceeds or sees error
 
 ---
 
 ## Screen Variants
 
-**Desktop**  
-Full-width digit boxes with visible spacing ≥16px between boxes; focus indicators at ≥2px stroke. Optimized for keyboard-first entry.
+### Desktop  
+Standard box sizing with hover states; keyboard navigation is primary interaction method with full Tab/Shift+Tab support.
 
-**Tablet**  
-Balanced digit box sizing (48×48px minimum) supporting both touch and keyboard. Maintains spacing for fat-finger tolerance.
+### Tablet  
+Similar to desktop with slightly larger touch targets; numeric keyboard appears on focus.
 
-**Mobile**  
-Touch targets at 48×48px minimum with ≥8px spacing. Triggers numeric keyboard via `inputmode="numeric"`. Paste button appears in context menu for SMS autofill.
+### Mobile  
+Optimized for thumb reach with 44×44px minimum touch targets; numeric keyboard auto-opens with `inputmode="numeric"`; paste support critical for SMS autofill.
 
 ---
 
@@ -105,13 +91,13 @@ Touch targets at 48×48px minimum with ≥8px spacing. Triggers numeric keyboard
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Uses filled style with subtle background; switch to True for lightweight transparent stroke style. |
-| Rounded corner | False | Square corners by default; enable for brand-specific or emotional contexts. |
-| Length | 6 | Supports 4, 6, or 8 digits; 6 is the most common verification code length. |
-| Error | False | No error shown initially; switches to True after failed validation. |
-| Helper text | True (visible by default) | Displays expected digit count message; remains visible when error appears. |
+| Outlined | `False` | Filled style with subtle background provides better visibility in standard forms. |
+| Rounded corner | `False` | Square corners maintain consistency with business-oriented interfaces. |
+| Length | `6` | Six digits balance security and usability for most verification scenarios. |
+| Error | `False` | Component starts in default state; error appears only after validation. |
+| Helper text | `Off` | Optional instructional text can be enabled to guide users on expected format. |
 
-### Property Details (from source)
+### Property Details
 
 #### Outlined
 
@@ -132,6 +118,16 @@ Touch targets at 48×48px minimum with ≥8px spacing. Triggers numeric keyboard
 
 ---
 
+#### Length
+
+| property name | type |
+|---------------|------|
+| Length | '4' \| '6' \| '8' |
+
+Determines the number of individual digit input boxes displayed. Choose based on security requirements and user context.
+
+---
+
 #### Error
 
 The default helper text informs the user about the number of digits required. The error state doesn't replace the helper message; instead, it adds a relevant error message beneath the helper text.
@@ -148,84 +144,88 @@ Error state applies to all digit inputs simultaneously and cannot be assigned in
 
 ---
 
-#### Other boolean options
+#### Helper text
 
 **Helper text** Offers optional instructional text beneath the PIN code, such as a message indicating the expected number of digits (4, 6, or 8). By default, this text is displayed to inform the user about the required input.
 
 ---
 
-**Source Notes**
-
-* Derived from: Figma link (https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components?node-id=67312-34672), uploaded designer document (`pin_code_input_properties.md`)
-* Conflicts noted: None.
-
----
-
 # Accessibility
 
-### Keyboard Support
+## Keyboard Support
 
-1. `Tab` moves focus into the first empty digit box; `Shift+Tab` moves focus out to the previous form element.
-2. Typing a valid numeric character (`0`–`9`) auto-advances focus to the next digit box (left→right); no auto-advance occurs on the last box.
-3. `Backspace` clears the current digit and moves focus to the previous box; on the first box, Backspace clears the digit without moving focus.
-4. `Arrow Left` / `Arrow Right` navigate between digit boxes without clearing content; wrap is not supported (focus stops at first/last box).
-5. Provide a visible focus indicator with outline/border **≥2px** and contrast **≥3:1** against the background.
-
----
-
-### Screen Reader Experience
-
-1. Use semantic `<input type="text" inputmode="numeric">` elements for each digit box; group all boxes in a `<fieldset>` or `role="group"` with an accessible label (e.g., "Enter 6-digit verification code").
-2. Provide `aria-label` or `aria-labelledby` on the group describing the purpose (e.g., "PIN code input, 6 digits required").
-3. Apply `aria-invalid="true"` and `aria-describedby` linking to helper/error text when validation fails; announce error via `aria-live="assertive"` immediately upon submission failure.
-4. Announce digit count in helper text initially (e.g., "Enter 6-digit code"); when error appears, append error message while preserving helper text (e.g., "Verification failed. Check and enter the correct code. Enter 6-digit code.").
-5. Announce "Digit 1 of 6", "Digit 2 of 6", etc., as focus moves between boxes using `aria-label` or visual labels read by screen readers.
+1. `Tab` moves focus to the first empty digit box or the first box if all are empty.
+2. `Shift+Tab` moves focus backward from the component to the previous focusable element.
+3. Arrow keys (`Left`/`Right`) navigate between digit boxes without deleting content.
+4. `Backspace` deletes the current digit and moves focus to the previous box.
+5. `Delete` removes the current digit and keeps focus on the same box.
+6. `Enter` submits the form when all required digits are filled.
+7. Number keys (`0`-`9`) enter digits and automatically advance focus to the next box.
+8. Provide a visible focus indicator: outline or border ≥2px with contrast ≥3:1 against the background.
+9. Focus order moves left-to-right through digit boxes, then to submit button or next form element.
+10. Pasted content auto-distributes across boxes without breaking focus management.
 
 ---
 
-### Touch & Mobile
+## Screen Reader Experience
 
-1. Provide touch targets **≥48×48px** for each digit box with spacing **≥8px** between adjacent boxes.
-2. Trigger numeric keyboard using `inputmode="numeric"` on each input element; ensure `type="text"` to allow paste and SMS autofill.
-3. Support paste gesture via long-press context menu; distribute pasted digits across all boxes automatically (e.g., pasting "123456" fills all six boxes in sequence).
-4. Support both portrait and landscape orientations; ensure digit boxes remain visible and accessible without horizontal scroll at 100% zoom.
-
----
-
-### Visual Accessibility
-
-1. Ensure text contrast **≥4.5:1** for digit characters and helper/error text; large text (helper) requires **≥3:1**.
-2. Ensure focus indicators and digit box borders have contrast **≥3:1** against the background.
-3. Use both color and text to convey error state; apply red border + "Verification failed" message (do not rely on color alone).
-4. Support text resizing up to **200%** without loss of content or functionality; digit boxes must reflow without horizontal scroll.
-5. Respect `prefers-reduced-motion`; avoid animated transitions for focus movement or error appearance.
+1. Use semantic `<input type="text" inputmode="numeric">` elements for each digit box.
+2. Provide a group label via `<fieldset>` and `<legend>` or `role="group"` with `aria-labelledby` (e.g., "Enter 6-digit verification code").
+3. Announce helper text using `aria-describedby` referencing the helper text ID.
+4. Apply `aria-invalid="true"` to all digit inputs when in error state.
+5. Link error messages to inputs using `aria-describedby` with a stable error ID.
+6. Announce "digit 1 of 6", "digit 2 of 6" using `aria-label` on each input for positional context.
+7. Use `aria-live="polite"` on the error message container to announce validation results on submission.
+8. Ensure the current digit box value is announced when focus moves between boxes.
 
 ---
 
-### Error Handling
+## Touch & Mobile
 
-1. Apply `aria-invalid="true"` to all digit input boxes when the error state is active (Error = True).
-2. Link error text to the input group using `aria-describedby` with a stable ID (e.g., `id="pin-code-error"`); include both helper and error text IDs in `aria-describedby` (e.g., `aria-describedby="pin-code-helper pin-code-error"`).
-3. Announce error message via `aria-live="assertive"` immediately upon failed submission; return focus to the first digit box for correction.
-4. Display specific error messages: "Please enter the verification code." (empty case) or "Verification failed. Check and enter the correct code." (incorrect case).
-5. Remove error state (reset `aria-invalid="false"` and clear error text) upon successful resubmission; announce success via `aria-live="polite"` (e.g., "Code verified successfully.").
+1. Provide touch targets ≥44×44px for each digit box with ≥8px spacing between boxes.
+2. Use `inputmode="numeric"` to trigger the numeric keyboard on mobile devices.
+3. Support paste gestures: long-press to paste full codes, auto-distributing digits across all boxes.
+4. Ensure tap targets don't overlap; provide clear visual separation between digit boxes.
+5. Support both portrait and landscape orientations without loss of functionality or layout breaking.
 
 ---
 
-### Testing Checklist
+## Visual Accessibility
 
-**Quick Tests (≤5 minutes)**
+1. Ensure text contrast ≥4.5:1 for digit values and helper text; large text ≥3:1.
+2. Ensure digit box borders and focus indicators have contrast ≥3:1 against the background.
+3. Do not rely on color alone for error state; add error icons or text indicators below the component.
+4. Support text resizing up to 200% without loss of content or functionality; digit boxes must reflow gracefully.
+5. Respect `prefers-reduced-motion` for any animations related to focus transitions or error state changes.
 
-1. Keyboard-only: `Tab` into first box, type digits with auto-advance, use `Backspace` to correct, and submit; verify visible focus indicator ≥2px with ≥3:1 contrast.
-2. Screen reader announces "Enter 6-digit verification code" on focus; error message "Verification failed. Check and enter the correct code." reads immediately after failed submission.
-3. Zoom to **200%**: digit boxes reflow without horizontal scroll; spacing and focus indicators remain perceivable.
-4. High-contrast/dark mode: focus indicators and error state remain visible with ≥3:1 contrast; red border alone is not the only error cue.
-5. On a touch device: paste 6-digit code from SMS via long-press; verify numeric keyboard opens and all boxes populate correctly.
+---
 
-**Common Issues to Avoid**
+## Error Handling
 
-1. Missing `aria-invalid="true"` on digit boxes when error state is active.
-2. Replacing helper text entirely with error message (both must remain visible simultaneously).
-3. Focus indicators with insufficient contrast (<3:1) against the background.
-4. Blocking paste or failing to distribute pasted digits across all boxes.
-5. Individual digit validation errors instead of unified group-level error state.
+1. Apply `aria-invalid="true"` to all digit inputs when validation fails.
+2. Link error text to inputs using `aria-describedby` with a stable error message ID.
+3. Announce errors via `aria-live="polite"` immediately after form submission with validation failure.
+4. Provide specific error messages: "Please enter the verification code" (empty) or "Verification failed. Check and enter the correct code" (incorrect).
+5. Return focus to the first digit box after error announcement to enable immediate correction.
+6. Remove `aria-invalid="false"` and clear error messages when user begins re-entry or validation succeeds.
+7. Maintain helper text visibility even when error state is active; stack error message below helper text.
+
+---
+
+## Testing Checklist
+
+### Quick Tests (≤5 minutes)
+
+1. Keyboard-only: Tab to first box, type digits with auto-advance, use Backspace to correct, submit with Enter; visible focus indicators appear throughout.
+2. Screen reader: Group label announces "Enter 6-digit verification code", each box announces "digit X of 6", error message reads "Verification failed. Check and enter the correct code" on submission.
+3. Zoom to 200%: Digit boxes reflow without overlapping; all text and spacing remain readable and functional.
+4. High-contrast/dark mode: Focus indicators, digit box borders, and error states remain perceivable with ≥3:1 contrast.
+5. Touch device: Each digit box meets 44×44px target size; numeric keyboard opens automatically; paste from SMS distributes digits correctly.
+
+### Common Issues to Avoid
+
+1. Missing `aria-invalid` or `aria-describedby` on digit inputs when error state is active.
+2. Color-only error indication without accompanying text or icon.
+3. Focus indicator contrast <3:1 or missing visible focus on keyboard navigation.
+4. Paste functionality not working or requiring manual digit-by-digit entry.
+5. Error messages not announced by screen readers or missing specific guidance on correction.
