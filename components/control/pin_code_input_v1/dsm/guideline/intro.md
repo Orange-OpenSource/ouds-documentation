@@ -1,3 +1,3 @@
 ## Intro
 
-A specialized numeric input for capturing fixed-length security codes (4, 6, or 8 digits) used in authentication, verification, and transaction confirmation flows.
+A specialized numeric input capturing fixed-length codes for authentication or verification using individual digit boxes for clarity.

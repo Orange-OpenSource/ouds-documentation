@@ -2,7 +2,7 @@
 
 ## Intro
 
-A specialized numeric input for capturing fixed-length security codes (4, 6, or 8 digits) used in authentication, verification, and transaction confirmation flows.
+A specialized numeric input capturing fixed-length codes for authentication or verification using individual digit boxes for clarity.
 
 ---
 
@@ -20,77 +20,63 @@ This component must support smooth keyboard navigation (automatic focus shift, b
 
 | # | Element | Purpose |
 |---|---------|---------|
-| 1 | Digit container | Individual box representing one digit position in the PIN sequence |
-| 2 | Input field | Active area accepting single numeric character input |
-| 3 | Focus indicator | Visual cue showing the currently active digit position |
-| 4 | Helper text | Instructional message displaying expected digit count (4, 6, or 8) |
-| 5 | Error message | Validation feedback displayed when submission fails or input is incomplete |
+| 1 | Digit input box | Individual field for a single numeric character |
+| 2 | Focus indicator | Visual cue showing the currently active input |
+| 3 | Error indicator | Visual state applied to all boxes when validation fails |
+| 4 | Helper text | Instructional message showing expected digit count |
+| 5 | Error message | Specific feedback displayed when validation fails |
 
 ---
 
-## Usage & Guidance — Compact
+## Usage & Guidance
 
-### Use it if all 3 are true
+### Good fit when
 
-* Fixed-length numeric input (4, 6, or 8 digits) is required
-* Paste/SMS autofill support enhances user experience
-* Security or verification context demands clear visual separation of digits
+✅ Fixed-length numeric input required (4, 6, or 8 digits)  
+✅ Authentication, verification, or transaction confirmation flows  
+✅ Mobile-first contexts requiring paste/SMS autofill support
 
-> Otherwise use a standard text input with `type="tel"` or `inputmode="numeric"` for variable-length codes.
+### Fast checklist
 
-### Top 5 Rules
+**Minimize user effort (Must)**  
+✅ **Do:** Auto-advance focus after each digit entry to reduce manual tabbing  
+❌ **Don't:** Force users to manually tab between boxes, slowing the flow
 
-**Auto-advance focus (Must)**
+**Guide with context (Should)**  
+✅ **Do:** Show helper text indicating expected digit count before first interaction  
+❌ **Don't:** Wait until error submission to explain format requirements
 
-* ✅ **Do:** Move focus to the next digit automatically upon valid character entry
-  *Reduces friction and matches user mental model of sequential entry.*
-* ❌ **Don't:** Require manual Tab navigation between digit boxes
-  *Forces unnecessary keystrokes and slows completion.*
+**Surface errors immediately (Must)**  
+✅ **Do:** Validate on submission and display specific error messages with next steps  
+❌ **Don't:** Show generic "Error" without indicating whether the issue is empty or incorrect input
 
-**Backspace behavior (Must)**
+**Support paste workflows (Should)**  
+✅ **Do:** Allow pasting full codes from SMS/email, auto-distributing digits across boxes  
+❌ **Don't:** Require manual digit-by-digit entry when users have codes ready to paste
 
-* ✅ **Do:** Clear current digit and move focus to previous box on Backspace
-  *Allows natural correction flow without losing position.*
-* ❌ **Don't:** Delete current digit but leave focus in place
-  *Breaks expected editing pattern and confuses users.*
+**Maintain visual hierarchy (Optional)**  
+✅ **Do:** Use outlined style sparingly in headers or filters to reduce visual weight  
+❌ **Don't:** Mix filled and outlined styles within the same form section
 
-**Paste support (Should)**
-
-* ✅ **Do:** Accept full code via paste and distribute across digit boxes (e.g., from SMS)
-  *Enables fast autofill and reduces manual entry errors.*
-* ❌ **Don't:** Block paste or insert all digits into the first box only
-  *Forces tedious retyping when autofill is available.*
-
-**Unified error state (Must)**
-
-* ✅ **Do:** Apply error styling to all digit boxes simultaneously with `aria-invalid="true"`
-  *Communicates validation failure as a single cohesive event.*
-* ❌ **Don't:** Highlight only the first empty or incorrect digit
-  *Implies individual validation when the code is validated as a whole.*
-
-**Helper text visibility (Should)**
-
-* ✅ **Do:** Display digit count ("Enter 6-digit code") by default; append error below without replacing it
-  *Preserves guidance while adding failure context.*
-* ❌ **Don't:** Replace helper text entirely with error message
-  *Removes the digit count reference users need for correction.*
-
-*See also:* Specs → Initial Config, Accessibility → Error Handling, Accessibility → Keyboard Support
+**See also:** [Properties](#properties) · [Keyboard Support](#keyboard-support) · [Error Handling](#error-handling)
 
 ### Core Flows
 
-* **First-time verification** — User receives SMS → Pastes code → All digits populate → Submits → **Success**
-* **Manual retry after error** — User enters wrong code → Submits → Sees error → Clears via Backspace → Re-enters → **Success/Error**
+**SMS verification entry**  
+User receives code → focuses first box → types/pastes digits → auto-advances → submits → receives validation feedback
+
+**Transaction confirmation**  
+User initiates transaction → PIN prompt appears → enters memorized code → backspaces to correct typos → submits → proceeds or sees error
 
 ---
 
 ## Screen Variants
 
-**Desktop**  
-Full-width digit boxes with visible spacing ≥16px between boxes; focus indicators at ≥2px stroke. Optimized for keyboard-first entry.
+### Desktop  
+Standard box sizing with hover states; keyboard navigation is primary interaction method with full Tab/Shift+Tab support.
 
-**Tablet**  
-Balanced digit box sizing (48×48px minimum) supporting both touch and keyboard. Maintains spacing for fat-finger tolerance.
+### Tablet  
+Similar to desktop with slightly larger touch targets; numeric keyboard appears on focus.
 
-**Mobile**  
-Touch targets at 48×48px minimum with ≥8px spacing. Triggers numeric keyboard via `inputmode="numeric"`. Paste button appears in context menu for SMS autofill.
+### Mobile  
+Optimized for thumb reach with 44×44px minimum touch targets; numeric keyboard auto-opens with `inputmode="numeric"`; paste support critical for SMS autofill.

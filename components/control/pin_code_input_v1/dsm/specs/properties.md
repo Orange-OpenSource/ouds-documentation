@@ -4,13 +4,13 @@
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Uses filled style with subtle background; switch to True for lightweight transparent stroke style. |
-| Rounded corner | False | Square corners by default; enable for brand-specific or emotional contexts. |
-| Length | 6 | Supports 4, 6, or 8 digits; 6 is the most common verification code length. |
-| Error | False | No error shown initially; switches to True after failed validation. |
-| Helper text | True (visible by default) | Displays expected digit count message; remains visible when error appears. |
+| Outlined | `False` | Filled style with subtle background provides better visibility in standard forms. |
+| Rounded corner | `False` | Square corners maintain consistency with business-oriented interfaces. |
+| Length | `6` | Six digits balance security and usability for most verification scenarios. |
+| Error | `False` | Component starts in default state; error appears only after validation. |
+| Helper text | `Off` | Optional instructional text can be enabled to guide users on expected format. |
 
-### Property Details (from source)
+### Property Details
 
 #### Outlined
 
@@ -31,6 +31,16 @@
 
 ---
 
+#### Length
+
+| property name | type |
+|---------------|------|
+| Length | '4' \| '6' \| '8' |
+
+Determines the number of individual digit input boxes displayed. Choose based on security requirements and user context.
+
+---
+
 #### Error
 
 The default helper text informs the user about the number of digits required. The error state doesn't replace the helper message; instead, it adds a relevant error message beneath the helper text.
@@ -47,13 +57,6 @@ Error state applies to all digit inputs simultaneously and cannot be assigned in
 
 ---
 
-#### Other boolean options
+#### Helper text
 
 **Helper text** Offers optional instructional text beneath the PIN code, such as a message indicating the expected number of digits (4, 6, or 8). By default, this text is displayed to inform the user about the required input.
-
----
-
-**Source Notes**
-
-* Derived from: Figma link (https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components?node-id=67312-34672), uploaded designer document (`pin_code_input_properties.md`)
-* Conflicts noted: None.

@@ -2,8 +2,8 @@
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Uses filled style with subtle background; switch to True for lightweight transparent stroke style. |
-| Rounded corner | False | Square corners by default; enable for brand-specific or emotional contexts. |
-| Length | 6 | Supports 4, 6, or 8 digits; 6 is the most common verification code length. |
-| Error | False | No error shown initially; switches to True after failed validation. |
-| Helper text | True (visible by default) | Displays expected digit count message; remains visible when error appears. |
+| Outlined | `False` | Filled style with subtle background provides better visibility in standard forms. |
+| Rounded corner | `False` | Square corners maintain consistency with business-oriented interfaces. |
+| Length | `6` | Six digits balance security and usability for most verification scenarios. |
+| Error | `False` | Component starts in default state; error appears only after validation. |
+| Helper text | `Off` | Optional instructional text can be enabled to guide users on expected format. |

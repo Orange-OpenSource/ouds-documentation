@@ -1,7 +1,10 @@
-### Screen Reader Experience
+## Screen Reader Experience
 
-1. Use semantic `<input type="text" inputmode="numeric">` elements for each digit box; group all boxes in a `<fieldset>` or `role="group"` with an accessible label (e.g., "Enter 6-digit verification code").
-2. Provide `aria-label` or `aria-labelledby` on the group describing the purpose (e.g., "PIN code input, 6 digits required").
-3. Apply `aria-invalid="true"` and `aria-describedby` linking to helper/error text when validation fails; announce error via `aria-live="assertive"` immediately upon submission failure.
-4. Announce digit count in helper text initially (e.g., "Enter 6-digit code"); when error appears, append error message while preserving helper text (e.g., "Verification failed. Check and enter the correct code. Enter 6-digit code.").
-5. Announce "Digit 1 of 6", "Digit 2 of 6", etc., as focus moves between boxes using `aria-label` or visual labels read by screen readers.
+1. Use semantic `<input type="text" inputmode="numeric">` elements for each digit box.
+2. Provide a group label via `<fieldset>` and `<legend>` or `role="group"` with `aria-labelledby` (e.g., "Enter 6-digit verification code").
+3. Announce helper text using `aria-describedby` referencing the helper text ID.
+4. Apply `aria-invalid="true"` to all digit inputs when in error state.
+5. Link error messages to inputs using `aria-describedby` with a stable error ID.
+6. Announce "digit 1 of 6", "digit 2 of 6" using `aria-label` on each input for positional context.
+7. Use `aria-live="polite"` on the error message container to announce validation results on submission.
+8. Ensure the current digit box value is announced when focus moves between boxes.

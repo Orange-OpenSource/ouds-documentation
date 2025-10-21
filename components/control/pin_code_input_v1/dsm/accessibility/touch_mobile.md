@@ -1,6 +1,7 @@
-### Touch & Mobile
+## Touch & Mobile
 
-1. Provide touch targets **≥48×48px** for each digit box with spacing **≥8px** between adjacent boxes.
-2. Trigger numeric keyboard using `inputmode="numeric"` on each input element; ensure `type="text"` to allow paste and SMS autofill.
-3. Support paste gesture via long-press context menu; distribute pasted digits across all boxes automatically (e.g., pasting "123456" fills all six boxes in sequence).
-4. Support both portrait and landscape orientations; ensure digit boxes remain visible and accessible without horizontal scroll at 100% zoom.
+1. Provide touch targets ≥44×44px for each digit box with ≥8px spacing between boxes.
+2. Use `inputmode="numeric"` to trigger the numeric keyboard on mobile devices.
+3. Support paste gestures: long-press to paste full codes, auto-distributing digits across all boxes.
+4. Ensure tap targets don't overlap; provide clear visual separation between digit boxes.
+5. Support both portrait and landscape orientations without loss of functionality or layout breaking.
