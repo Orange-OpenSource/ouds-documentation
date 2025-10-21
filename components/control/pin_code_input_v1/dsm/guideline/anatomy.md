@@ -1,3 +1,5 @@
+## Anatomy  
+
 | # | Element | Purpose |
 |---|---------|---------|
 | 1 | Digit input box | Individual field for a single numeric character |
