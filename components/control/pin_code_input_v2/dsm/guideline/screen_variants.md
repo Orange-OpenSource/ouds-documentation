@@ -1,10 +1,10 @@
 ## Screen Variants
 
-**Desktop**  
-Standard 6-digit layout with auto-advance focus and visible keyboard indicators. Each box sized for comfortable mouse/keyboard interaction with clear focus rings.
+### Desktop  
+Display input fields in a horizontal row with comfortable spacing between each digit box, allowing easy mouse or keyboard interaction with clear visual separation.
 
-**Tablet**  
-Slightly larger touch targets (44×44px minimum) to accommodate finger input. Numeric keyboard triggered automatically; layout adapts to portrait/landscape without loss of functionality.
+### Tablet  
+Maintain the horizontal layout with slightly increased touch target sizes to accommodate finger input while preserving the visual clarity of individual digit fields.
 
-**Mobile**  
-Full numeric keyboard on focus with `inputmode="numeric"`. Touch targets meet 48×48px preferred size; boxes stack or scale responsively to fit narrow viewports while maintaining readability.
+### Mobile  
+Present fields in a horizontal row with optimized touch targets (minimum 44×44px), automatically triggering the numeric keyboard and supporting auto-advance between fields for efficient one-handed entry.

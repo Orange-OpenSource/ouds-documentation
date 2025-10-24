@@ -1,8 +1,8 @@
 ### Screen Reader Experience
 
-1. Use `<input type="text" inputmode="numeric" maxlength="1">` for each digit box to enforce single-character numeric entry.
-2. Label the entire group using `role="group"` with `aria-labelledby` pointing to a heading (e.g., "Enter 6-digit verification code").
-3. Each digit box must have a programmatic label such as `aria-label="Digit 1 of 6"` to indicate position in the sequence.
-4. Apply `aria-invalid="true"` to all digit boxes when the error state is active; link error text using `aria-describedby` with a stable ID.
-5. Announce error messages immediately upon submission failure using `aria-live="assertive"`; announce success states with `aria-live="polite"`.
-6. When focus auto-advances, screen readers announce the new box label (e.g., "Digit 2 of 6") without additional interruption.
+1. Use semantic `<input type="text" inputmode="numeric">` elements for each digit field with `maxlength="1"`.
+2. Provide a group label using `role="group"` with `aria-labelledby` pointing to the main label text (e.g., "Enter 6-digit verification code").
+3. Announce the field position and total count using `aria-label` on each input (e.g., "Digit 1 of 6", "Digit 2 of 6").
+4. Apply `aria-invalid="true"` to all input fields when in error state and link error message using `aria-describedby`.
+5. Announce error messages immediately using `aria-live="assertive"` and provide specific feedback about what went wrong (incorrect code, expired, attempts exceeded).
+6. Announce successful code entry using `aria-live="polite"` when validation passes and next action is available.

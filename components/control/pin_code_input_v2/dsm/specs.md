@@ -6,15 +6,13 @@
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Filled style provides better visibility in dense layouts; outlined reduces visual weight for non-form contexts. |
-| Rounded corner | False | Square corners suit standard/business flows; rounded corners offer flexibility for brand-specific or emotional contexts. |
-| Length | 6 | Six digits balances security and usability; adjust to 4 or 8 based on system requirements. |
-| Error | False | Error state applies to all boxes simultaneously and cannot be assigned individually. |
-| Helper text | Off | When enabled, displays the expected digit count (4, 6, or 8) to guide user input. |
+| Outlined | False | Uses filled style with background; set to True for transparent background with stroke outline |
+| Rounded corner | False | Square corners by default; set to True for rounded corners in emotional or brand-specific contexts |
+| Length | 6 | Standard 6-digit code; change to 4 for simple PINs or 8 for enhanced security scenarios |
+| Error | False | Normal state by default; set to True to display validation errors with red styling and error message |
+| Helper text | False | Hidden by default; enable to show supporting text about code format or source below the input fields |
 
----
-
-### Property Details (from source)
+### Property Details
 
 ### Outlined
 
@@ -35,39 +33,28 @@
 
 ---
 
-### Error
-
-The default helper text informs the user about the number of digits required. The error state doesn't replace the helper message; instead, it adds a relevant error message beneath the helper text.
-
-Error state applies to all digit inputs simultaneously and cannot be assigned individually.
-
-**False behavior (no error detected)** The user hasn't submitted the form yet, or the form has been submitted and validated successfully. The component displays either in its default state or, if provided, includes a helper text to guide the user.
-
-**True behavior (error detected)** The form was submitted with an invalid PIN code entry. For example, when the user submits without filling all required digits or enters incorrect digits during verification. The component displays two possible error message:
-• Empty case: "Please enter the verification code."
-• Filled case: "Verification failed. Check and enter the correct code."
-
-⚠️ While the error state is active, the user can type again in the field. Upon resubmission, if validation is successful (True to False), the error state must be removed by resetting it to its default state. When the error state is active, the helper text remains visible without any changes.
-
----
-
-### Other boolean options
-
-**Helper text** Offers optional instructional text beneath the PIN code, such as a message indicating the expected number of digits (4, 6, or 8). By default, this text is displayed to inform the user about the required input.
-
----
-
 ### Length
 
-| Property Value | Notes |
-|----------------|-------|
-| 4 | Four-digit PIN for quick authentication scenarios (e.g., app unlock, simple verification). |
-| 6 | Six-digit PIN balances security and usability (default); common for two-factor authentication flows. |
-| 8 | Eight-digit PIN for high-security contexts (e.g., transaction confirmation, sensitive account access). |
+**`4`** Four individual input fields for simple 4-digit PINs or quick verification codes.
+
+**`6`** Six individual input fields for standard authentication codes, commonly used for SMS or email verification.
+
+**`8`** Eight individual input fields for enhanced security scenarios requiring longer codes.
 
 ---
 
-**Source Notes**
+### Error
 
-* Derived from: [Figma Component](https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components?node-id=67312-34672), uploaded designer document (pin_code_input_properties.md)
-* Conflicts noted: None.
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
+
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
+
+The error state must be triggered by an explicit validation (submission, API response), and not in real time with each keystroke. This can occur either because the entered code does not match the expected code, because the user entered an expired or already used code, or finally if the maximum number of attempts has been exceeded.
+
+⚠️ **Alert:** In the context of a PIN code input, in addition to the input's "Error" UI rendering, it is essential to also include an "Alert" component (also in its "Error" status) in the interface.
+
+---
+
+### Helper text
+
+**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.

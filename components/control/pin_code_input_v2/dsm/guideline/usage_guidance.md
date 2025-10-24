@@ -1,17 +1,13 @@
 ## Usage & Guidance
 
-**When should I use outlined vs. filled style for PIN entry?**
-Use filled (default) for standard form pages and dense layouts where visibility matters. Switch to outlined for lightweight contexts like header search fields, filtering features, or non-form scenarios where transparency reduces visual weight.  
-*See also:* Specs → [Outlined](#outlined), Accessibility → [Visual Accessibility](#visual-accessibility)
+**How should I configure labels and helper text for SMS verification codes?**  
+Position a descriptive label above the input fields (e.g., "Enter verification code") and include helper text below showing the destination phone number or explaining the code source.
 
-**How does auto-advance work when entering digits?**
-Focus automatically shifts to the next empty box after typing a valid digit, enabling rapid sequential entry without Tab key presses. Backspace moves focus to the previous box and clears its value, supporting quick corrections during the flow.  
-*See also:* Specs → [Length](#length), Accessibility → [Keyboard Support](#keyboard-support)
+**What should the error state look like when a code is invalid?**  
+Display red borders around all input fields, show an error icon, and provide a specific error message below explaining whether the code was incorrect, expired, or the maximum attempts were exceeded.
 
-**When does the error state appear and what triggers it?**
-Error activates upon form submission when fields are incomplete or verification fails. Empty case shows "Please enter the verification code."; incorrect entry shows "Verification failed. Check and enter the correct code." Users can retype immediately; successful resubmission clears the error.  
-*See also:* Specs → [Error](#error), Accessibility → [Error Handling](#error-handling)
+**How do I display different PIN lengths for various use cases?**  
+Use 4 fields for simple PINs or quick verification, 6 fields for standard authentication codes (SMS/email), and 8 fields for enhanced security scenarios requiring longer codes.
 
-**How should PIN input behave on mobile devices?**
-Trigger numeric keyboard using `inputmode="numeric"` to streamline digit entry. Ensure each box meets 44×44px minimum touch target with 8px spacing, and support both portrait and landscape orientations without breaking the layout.  
-*See also:* Specs → [Initial settings](#initial-settings), Accessibility → [Touch & Mobile](#touch--mobile)
+**How should the component appear during active digit entry?**  
+Highlight the current input field with a focus indicator, auto-advance to the next field after each digit is entered, and allow backspace to move to the previous field for corrections.

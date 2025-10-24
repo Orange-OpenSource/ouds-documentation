@@ -1,3 +1,3 @@
 ## Intro
 
-A fixed-length numeric input component for capturing short authentication codes, presenting individual digit boxes to improve readability and accuracy during PIN entry.
+A PIN code input captures short, fixed-length numeric codes for authentication or confirmation using a series of individual digit fields.

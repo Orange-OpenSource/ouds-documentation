@@ -1,6 +1,7 @@
 ### Touch & Mobile
 
-1. Provide touch targets ≥44×44px (48×48 preferred) for each digit box with spacing ≥8px between boxes.
-2. Trigger numeric keyboard automatically using `inputmode="numeric"` to streamline digit entry on mobile devices.
-3. Support both portrait and landscape orientations; boxes must reflow or scale responsively without loss of functionality.
-4. Ensure visible focus indicators remain perceivable on touch devices (outline ≥2px, contrast ≥3:1) when using external keyboards.
+1. Provide touch targets ≥44×44px for each input field with spacing ≥8px between fields to prevent accidental touches.
+2. Trigger numeric keyboard automatically using `inputmode="numeric"` or `type="tel"` to optimize for digit entry on mobile devices.
+3. Support auto-advance between fields on digit entry to reduce the need for manual navigation taps.
+4. Ensure the entire component remains visible when the mobile keyboard appears; adjust viewport scroll if necessary.
+5. Support both portrait and landscape orientations without loss of functionality or field visibility.

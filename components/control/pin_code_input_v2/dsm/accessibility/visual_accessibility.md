@@ -1,7 +1,7 @@
 ### Visual Accessibility
 
-1. Ensure digit box borders, focus indicators, and error outlines have contrast ≥3:1 against adjacent colors.
-2. Error state must include both color change (e.g., red border) and a text message below the component; do not rely on color alone.
-3. Helper text and error messages must have text contrast ≥4.5:1; large text (≥18pt or ≥14pt bold) requires ≥3:1.
-4. Support text resizing up to 200%; boxes and text must reflow without horizontal scrolling or content loss (WCAG 2.1 Reflow).
-5. Respect `prefers-reduced-motion` for focus transitions and auto-advance animations; reduce or eliminate motion when requested.
+1. Ensure text and digit content have contrast ≥4.5:1 against background; labels and helper text must meet the same ratio.
+2. Ensure input field borders, focus indicators, and error state borders have contrast ≥3:1 against adjacent surfaces.
+3. Do not rely on color alone to convey error state; include error icon and descriptive error message text below the fields.
+4. Support text resizing up to 200% without loss of content, functionality, or horizontal scrolling (reflow must pass).
+5. Respect `prefers-reduced-motion` and avoid auto-advance animations or transitions that rely on motion to convey state changes.

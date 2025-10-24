@@ -2,16 +2,17 @@
 
 **Quick Tests (≤5 minutes)**
 
-1. Complete digit entry using keyboard only: Tab through boxes, type digits, Backspace to correct, Enter to submit; verify visible focus indicators (≥2px, ≥3:1 contrast).
-2. Screen reader announces group label ("Enter 6-digit verification code"), individual box labels ("Digit 1 of 6"), and error messages immediately upon submission failure.
-3. Zoom to 200%: digit boxes reflow without horizontal scrolling; all text and controls remain readable and functional.
-4. High-contrast mode: focus indicators, error borders, and state cues remain perceivable with ≥3:1 contrast.
-5. Touch device: numeric keyboard opens on focus; each box meets 44×44px; layout adapts to portrait/landscape without breaking.
+1. Complete digit entry using keyboard only with visible focus moving sequentially; `Backspace` navigates backward correctly.
+2. Screen reader announces each field position ("Digit 1 of 6"), group label, and error messages immediately upon validation failure.
+3. Zoom to 200%: all input fields remain visible and functional without horizontal scrolling; layout reflows appropriately.
+4. High-contrast mode: focus indicators, field borders, and error states remain clearly visible with ≥3:1 contrast.
+5. On touch device: numeric keyboard opens automatically; targets are ≥44×44px; auto-advance works between fields.
 
 **Common Issues to Avoid**
 
-1. Missing `aria-labelledby` on the group or `aria-label` on individual digit boxes.
-2. Error state indicated by color change only without accompanying text message or `aria-invalid`.
-3. Focus indicator contrast <3:1 or outline <2px width.
-4. Auto-advance not announced by screen readers or causing focus to skip boxes.
-5. Missing `inputmode="numeric"` on mobile, forcing users to switch keyboard layouts manually.
+1. Missing group label or individual field position announcements for screen reader users.
+2. Color-only error indication without accompanying error icon or descriptive error message text.
+3. Missing `aria-invalid="true"` or `aria-describedby` linking error message to input fields in error state.
+4. Insufficient contrast (<3:1) for focus indicators or error state borders against background.
+5. Focus trap within digit fields preventing users from navigating to submit button or other page elements.
+6. Auto-advance not working or moving focus before users can correct a mistyped digit.
