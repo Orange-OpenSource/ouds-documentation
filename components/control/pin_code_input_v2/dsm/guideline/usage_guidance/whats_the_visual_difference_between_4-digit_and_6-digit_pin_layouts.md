@@ -1,0 +1,2 @@
+### What's the visual difference between 4-digit and 6-digit PIN layouts?
+A 4-digit layout displays 4 individual fields in a row (212px wide), while a 6-digit layout shows 6 fields (324px wide), both maintaining consistent field spacing and sizing.

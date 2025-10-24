@@ -1,2 +1,2 @@
 ### Mobile  
-Present fields in a horizontal row with optimized touch targets (minimum 44×44px), automatically triggering the numeric keyboard and supporting auto-advance between fields for efficient one-handed entry.
+Digit fields remain horizontally arranged but sized appropriately for mobile viewports, with numeric keyboard triggered automatically for efficient input.

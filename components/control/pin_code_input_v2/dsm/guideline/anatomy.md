@@ -2,9 +2,8 @@
 
 | # | Element | Purpose |
 |---|---------|---------|
-| 1 | Label | Identifies the purpose of the input field and provides context for what the user should enter |
-| 2 | Input fields | Individual boxes for each digit, providing clear visual separation and encouraging accurate single-digit entry |
-| 3 | Focus indicator | Highlights the currently active input field to guide user attention during digit entry |
-| 4 | Error indicator | Visual marker (red border/icon) on input fields to signal invalid or rejected code entry |
-| 5 | Helper text | Supporting guidance about the code format, expected length, or where to find the code |
-| 6 | Error message | Specific text explaining what went wrong and how to correct the input |
+| 1 | Input field container | Groups individual digit fields as a single interactive unit |
+| 2 | Individual digit field | Displays and accepts a single numeric character |
+| 3 | Field border/outline | Provides visual boundary and state indication (default, focused, error) |
+| 4 | Helper text | Displays supporting information or instructions below the input |
+| 5 | Error message | Shows validation feedback when code is incorrect or expired |

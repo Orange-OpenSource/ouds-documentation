@@ -1,8 +1,7 @@
 ### Keyboard Support
 
-1. Press `Tab` to focus the first empty input field in the sequence; press `Shift+Tab` to move focus backward through fields.
-2. Type a numeric digit (0-9) to fill the current field and automatically advance focus to the next empty field.
-3. Press `Backspace` to clear the current field and move focus to the previous field if the current field is empty.
-4. Press arrow keys (`ArrowLeft`, `ArrowRight`) to manually navigate between input fields without deleting content.
-5. Provide a visible focus indicator with outline or border ≥2px and contrast ≥3:1 on the currently active input field.
-6. Press `Enter` to submit the complete code once all fields are filled (if auto-submit is not enabled).
+1. `Tab` moves focus to the first empty digit field or the next field in the form; `Shift+Tab` moves backward.
+2. Number keys (0-9) enter a digit in the focused field and automatically advance focus to the next empty field.
+3. `Backspace` deletes the current digit and moves focus to the previous field; holding `Backspace` continues deleting backward.
+4. Arrow keys (`Left`, `Right`) navigate between digit fields without changing values; `Home` jumps to first field, `End` to last field.
+5. Each digit field receives a visible focus indicator with outline ≥2px and contrast ≥3:1 against the background.

@@ -2,17 +2,15 @@
 
 **Quick Tests (≤5 minutes)**
 
-1. Complete digit entry using keyboard only with visible focus moving sequentially; `Backspace` navigates backward correctly.
-2. Screen reader announces each field position ("Digit 1 of 6"), group label, and error messages immediately upon validation failure.
-3. Zoom to 200%: all input fields remain visible and functional without horizontal scrolling; layout reflows appropriately.
-4. High-contrast mode: focus indicators, field borders, and error states remain clearly visible with ≥3:1 contrast.
-5. On touch device: numeric keyboard opens automatically; targets are ≥44×44px; auto-advance works between fields.
+1. Navigate through all digit fields using only `Tab`, number keys, and `Backspace`; verify focus indicators are visible at ≥3:1 contrast.
+2. With a screen reader, confirm the group label, helper text, and error messages are announced correctly when navigating fields.
+3. Zoom to 200%: all digit fields, helper text, and error messages remain visible and functional without horizontal scrolling.
+4. Enable high-contrast mode: verify field borders, focus indicators, and error states remain clearly distinguishable.
+5. On a mobile device, confirm the numeric keyboard opens automatically and touch targets meet 44×44px.
 
 **Common Issues to Avoid**
 
-1. Missing group label or individual field position announcements for screen reader users.
-2. Color-only error indication without accompanying error icon or descriptive error message text.
-3. Missing `aria-invalid="true"` or `aria-describedby` linking error message to input fields in error state.
-4. Insufficient contrast (<3:1) for focus indicators or error state borders against background.
-5. Focus trap within digit fields preventing users from navigating to submit button or other page elements.
-6. Auto-advance not working or moving focus before users can correct a mistyped digit.
+1. Missing `aria-invalid` or `aria-describedby` on digit fields when error state is active.
+2. Error state conveyed only by red color without accompanying error text or icon.
+3. Focus indicators with insufficient contrast (<3:1) making keyboard navigation difficult to track.
+4. Auto-advance behavior that doesn't work correctly with screen readers or keyboard-only users.

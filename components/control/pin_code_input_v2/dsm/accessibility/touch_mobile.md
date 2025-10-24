@@ -1,7 +1,6 @@
 ### Touch & Mobile
 
-1. Provide touch targets ≥44×44px for each input field with spacing ≥8px between fields to prevent accidental touches.
-2. Trigger numeric keyboard automatically using `inputmode="numeric"` or `type="tel"` to optimize for digit entry on mobile devices.
-3. Support auto-advance between fields on digit entry to reduce the need for manual navigation taps.
-4. Ensure the entire component remains visible when the mobile keyboard appears; adjust viewport scroll if necessary.
-5. Support both portrait and landscape orientations without loss of functionality or field visibility.
+1. Each digit field provides a touch target ≥44×44px with ≥8px spacing between fields for accurate tapping.
+2. Use `inputmode="numeric"` to trigger the numeric keyboard on mobile devices, making digit entry faster.
+3. Support both portrait and landscape orientations, maintaining field visibility and keyboard accessibility in both modes.
+4. Ensure focus management works correctly with mobile keyboards, advancing to the next field after each digit entry.

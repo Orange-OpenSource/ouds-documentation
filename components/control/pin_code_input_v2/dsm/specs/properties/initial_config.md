@@ -2,8 +2,8 @@
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Uses filled style with background; set to True for transparent background with stroke outline |
-| Rounded corner | False | Square corners by default; set to True for rounded corners in emotional or brand-specific contexts |
-| Length | 6 | Standard 6-digit code; change to 4 for simple PINs or 8 for enhanced security scenarios |
-| Error | False | Normal state by default; set to True to display validation errors with red styling and error message |
-| Helper text | False | Hidden by default; enable to show supporting text about code format or source below the input fields |
+| Outlined | False | Non-outlined provides better visibility with background fill; outlined offers lighter appearance for non-form contexts |
+| Rounded corner | False | Square corners are default for standard/business journeys; enable for brand-specific emotional contexts |
+| Length | 6 | Common length for verification codes; adjust to 4 for PINs or 8 for enhanced security codes |
+| Error | False | Enable to display error state with red border and error message after validation failure |
+| Helper text | Off | Enable to provide supporting instructions or context below the input fields |

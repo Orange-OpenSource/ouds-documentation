@@ -1,0 +1,2 @@
+### How do I display a PIN input for transaction confirmation?
+Use Length 4 for a transaction PIN, disable Helper text or provide context like "Enter your 4-digit transaction PIN," and pair with an Alert component for additional security messaging.

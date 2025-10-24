@@ -1,8 +1,7 @@
 ### Error Handling
 
-1. Apply `aria-invalid="true"` to all input fields in the group when the complete code fails validation.
-2. Link the error message to all inputs using `aria-describedby` with a stable ID referencing the error text element.
-3. Announce errors immediately via `aria-live="assertive"` after validation fails and return focus to the first input field for correction.
-4. Provide specific, actionable error messages: "Incorrect code. Please try again" or "Code expired. Request a new code" instead of generic "Error".
-5. Announce success state using `aria-live="polite"` when the correct code is entered and describe the next step in the flow.
-6. Clear all fields or maintain entered values based on security requirements when displaying errors; document this behavior clearly.
+1. Apply `aria-invalid="true"` to all digit fields when the code fails validation.
+2. Link the error message to all digit fields using `aria-describedby` with a stable ID for the error text container.
+3. Announce errors via `aria-live="assertive"` immediately after validation, describing the specific issue (e.g., "Invalid code" or "Code expired").
+4. Return focus to the first digit field after error announcement so users can immediately retry.
+5. Clear `aria-invalid` and hide error messages once the user begins entering a new code.
