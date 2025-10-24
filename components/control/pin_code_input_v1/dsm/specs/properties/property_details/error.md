@@ -1,4 +1,4 @@
-### Error
+#### Error
 
 The default helper text informs the user about the number of digits required. The error state doesn't replace the helper message; instead, it adds a relevant error message beneath the helper text.
 
