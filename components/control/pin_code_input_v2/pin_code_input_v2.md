@@ -1,8 +1,14 @@
+I'll generate the design system documentation for the PIN Code Input component using the uploaded document as the primary source and the Figma link as supplementary reference.
+
+Let me first fetch the Figma data to see if there are any visual assets or additional context:Let me get a screenshot to see the visual examples:Perfect! Now I have both the source documentation and visual references. Let me generate the complete documentation:
+
+---
+
 # Guideline
 
 ## Intro
 
-A fixed-length numeric input component for capturing short authentication codes, presenting individual digit boxes to improve readability and accuracy during PIN entry.
+A PIN code input captures short, fixed-length numeric codes for authentication or confirmation using a series of individual digit fields.
 
 ---
 
@@ -10,54 +16,47 @@ A fixed-length numeric input component for capturing short authentication codes,
 
 A PIN code input is a specialized form field used to capture short, fixed-length numeric codes, typically for authentication or confirmation purposes, such as a 4, 6 or 8-digit personal identification number (PIN).
 
-It is often presented as a series of individual input fields or boxes, each representing a single digit, to enhance readability and encourage accurate input.
-
-This component must support smooth keyboard navigation (automatic focus shift, backspace handling), secure input masking if needed. It is commonly used in sensitive flows like login, verification, or transaction confirmation.
-
 ---
 
 ## Anatomy
 
 | # | Element | Purpose |
 |---|---------|---------|
-| 1 | Digit input box | Individual field for a single numeric character; provides clear visual separation between digits |
-| 2 | Focus indicator | Highlights the currently active input box; guides user through sequential entry |
-| 3 | Fill/outline container | Defines the visual boundary of each digit box using background fill or stroke |
-| 4 | Helper text | Displays guidance (digit count) or context below the input row |
-| 5 | Error message | Shows validation feedback when PIN entry fails; appears below helper text |
+| 1 | Label | Identifies the purpose of the input field and provides context for what the user should enter |
+| 2 | Input fields | Individual boxes for each digit, providing clear visual separation and encouraging accurate single-digit entry |
+| 3 | Focus indicator | Highlights the currently active input field to guide user attention during digit entry |
+| 4 | Error indicator | Visual marker (red border/icon) on input fields to signal invalid or rejected code entry |
+| 5 | Helper text | Supporting guidance about the code format, expected length, or where to find the code |
+| 6 | Error message | Specific text explaining what went wrong and how to correct the input |
 
 ---
 
 ## Usage & Guidance
 
-**When should I use outlined vs. filled style for PIN entry?**
-Use filled (default) for standard form pages and dense layouts where visibility matters. Switch to outlined for lightweight contexts like header search fields, filtering features, or non-form scenarios where transparency reduces visual weight.  
-*See also:* Specs → [Outlined](#outlined), Accessibility → [Visual Accessibility](#visual-accessibility)
+**How should I configure labels and helper text for SMS verification codes?**  
+Position a descriptive label above the input fields (e.g., "Enter verification code") and include helper text below showing the destination phone number or explaining the code source.
 
-**How does auto-advance work when entering digits?**
-Focus automatically shifts to the next empty box after typing a valid digit, enabling rapid sequential entry without Tab key presses. Backspace moves focus to the previous box and clears its value, supporting quick corrections during the flow.  
-*See also:* Specs → [Length](#length), Accessibility → [Keyboard Support](#keyboard-support)
+**What should the error state look like when a code is invalid?**  
+Display red borders around all input fields, show an error icon, and provide a specific error message below explaining whether the code was incorrect, expired, or the maximum attempts were exceeded.
 
-**When does the error state appear and what triggers it?**
-Error activates upon form submission when fields are incomplete or verification fails. Empty case shows "Please enter the verification code."; incorrect entry shows "Verification failed. Check and enter the correct code." Users can retype immediately; successful resubmission clears the error.  
-*See also:* Specs → [Error](#error), Accessibility → [Error Handling](#error-handling)
+**How do I display different PIN lengths for various use cases?**  
+Use 4 fields for simple PINs or quick verification, 6 fields for standard authentication codes (SMS/email), and 8 fields for enhanced security scenarios requiring longer codes.
 
-**How should PIN input behave on mobile devices?**
-Trigger numeric keyboard using `inputmode="numeric"` to streamline digit entry. Ensure each box meets 44×44px minimum touch target with 8px spacing, and support both portrait and landscape orientations without breaking the layout.  
-*See also:* Specs → [Initial settings](#initial-settings), Accessibility → [Touch & Mobile](#touch--mobile)
+**How should the component appear during active digit entry?**  
+Highlight the current input field with a focus indicator, auto-advance to the next field after each digit is entered, and allow backspace to move to the previous field for corrections.
 
 ---
 
 ## Screen Variants
 
-**Desktop**  
-Standard 6-digit layout with auto-advance focus and visible keyboard indicators. Each box sized for comfortable mouse/keyboard interaction with clear focus rings.
+### Desktop  
+Display input fields in a horizontal row with comfortable spacing between each digit box, allowing easy mouse or keyboard interaction with clear visual separation.
 
-**Tablet**  
-Slightly larger touch targets (44×44px minimum) to accommodate finger input. Numeric keyboard triggered automatically; layout adapts to portrait/landscape without loss of functionality.
+### Tablet  
+Maintain the horizontal layout with slightly increased touch target sizes to accommodate finger input while preserving the visual clarity of individual digit fields.
 
-**Mobile**  
-Full numeric keyboard on focus with `inputmode="numeric"`. Touch targets meet 48×48px preferred size; boxes stack or scale responsively to fit narrow viewports while maintaining readability.
+### Mobile  
+Present fields in a horizontal row with optimized touch targets (minimum 44×44px), automatically triggering the numeric keyboard and supporting auto-advance between fields for efficient one-handed entry.
 
 ---
 
@@ -69,15 +68,13 @@ Full numeric keyboard on focus with `inputmode="numeric"`. Touch targets meet 48
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Filled style provides better visibility in dense layouts; outlined reduces visual weight for non-form contexts. |
-| Rounded corner | False | Square corners suit standard/business flows; rounded corners offer flexibility for brand-specific or emotional contexts. |
-| Length | 6 | Six digits balances security and usability; adjust to 4 or 8 based on system requirements. |
-| Error | False | Error state applies to all boxes simultaneously and cannot be assigned individually. |
-| Helper text | Off | When enabled, displays the expected digit count (4, 6, or 8) to guide user input. |
+| Outlined | False | Uses filled style with background; set to True for transparent background with stroke outline |
+| Rounded corner | False | Square corners by default; set to True for rounded corners in emotional or brand-specific contexts |
+| Length | 6 | Standard 6-digit code; change to 4 for simple PINs or 8 for enhanced security scenarios |
+| Error | False | Normal state by default; set to True to display validation errors with red styling and error message |
+| Helper text | False | Hidden by default; enable to show supporting text about code format or source below the input fields |
 
----
-
-### Property Details (from source)
+### Property Details
 
 ### Outlined
 
@@ -98,42 +95,31 @@ Full numeric keyboard on focus with `inputmode="numeric"`. Touch targets meet 48
 
 ---
 
-### Error
-
-The default helper text informs the user about the number of digits required. The error state doesn't replace the helper message; instead, it adds a relevant error message beneath the helper text.
-
-Error state applies to all digit inputs simultaneously and cannot be assigned individually.
-
-**False behavior (no error detected)** The user hasn't submitted the form yet, or the form has been submitted and validated successfully. The component displays either in its default state or, if provided, includes a helper text to guide the user.
-
-**True behavior (error detected)** The form was submitted with an invalid PIN code entry. For example, when the user submits without filling all required digits or enters incorrect digits during verification. The component displays two possible error message:
-• Empty case: "Please enter the verification code."
-• Filled case: "Verification failed. Check and enter the correct code."
-
-⚠️ While the error state is active, the user can type again in the field. Upon resubmission, if validation is successful (True to False), the error state must be removed by resetting it to its default state. When the error state is active, the helper text remains visible without any changes.
-
----
-
-### Other boolean options
-
-**Helper text** Offers optional instructional text beneath the PIN code, such as a message indicating the expected number of digits (4, 6, or 8). By default, this text is displayed to inform the user about the required input.
-
----
-
 ### Length
 
-| Property Value | Notes |
-|----------------|-------|
-| 4 | Four-digit PIN for quick authentication scenarios (e.g., app unlock, simple verification). |
-| 6 | Six-digit PIN balances security and usability (default); common for two-factor authentication flows. |
-| 8 | Eight-digit PIN for high-security contexts (e.g., transaction confirmation, sensitive account access). |
+**`4`** Four individual input fields for simple 4-digit PINs or quick verification codes.
+
+**`6`** Six individual input fields for standard authentication codes, commonly used for SMS or email verification.
+
+**`8`** Eight individual input fields for enhanced security scenarios requiring longer codes.
 
 ---
 
-**Source Notes**
+### Error
 
-* Derived from: [Figma Component](https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components?node-id=67312-34672), uploaded designer document (pin_code_input_properties.md)
-* Conflicts noted: None.
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
+
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
+
+The error state must be triggered by an explicit validation (submission, API response), and not in real time with each keystroke. This can occur either because the entered code does not match the expected code, because the user entered an expired or already used code, or finally if the maximum number of attempts has been exceeded.
+
+⚠️ **Alert:** In the context of a PIN code input, in addition to the input's "Error" UI rendering, it is essential to also include an "Alert" component (also in its "Error" status) in the interface.
+
+---
+
+### Helper text
+
+**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 ---
 
@@ -141,52 +127,54 @@ Error state applies to all digit inputs simultaneously and cannot be assigned in
 
 ### Keyboard Support
 
-1. **`Tab`** moves focus forward through each digit box in left-to-right order; **`Shift+Tab`** moves focus backward.
-2. Typing a valid digit (0–9) automatically advances focus to the next empty box; typing in the last box keeps focus on that box.
-3. **`Backspace`** deletes the current digit and moves focus to the previous box; pressing Backspace in an empty box moves to the previous box without deleting.
-4. **`Enter`** submits the form when all required digits are filled; focus remains on the last box if submission fails.
-5. Provide a visible focus indicator with outline/border ≥2px and contrast ≥3:1 around the active digit box.
-6. Arrow keys (**`ArrowLeft`**, **`ArrowRight`**) may optionally navigate between boxes; document this behavior if implemented.
+1. Press `Tab` to focus the first empty input field in the sequence; press `Shift+Tab` to move focus backward through fields.
+2. Type a numeric digit (0-9) to fill the current field and automatically advance focus to the next empty field.
+3. Press `Backspace` to clear the current field and move focus to the previous field if the current field is empty.
+4. Press arrow keys (`ArrowLeft`, `ArrowRight`) to manually navigate between input fields without deleting content.
+5. Provide a visible focus indicator with outline or border ≥2px and contrast ≥3:1 on the currently active input field.
+6. Press `Enter` to submit the complete code once all fields are filled (if auto-submit is not enabled).
 
 ---
 
 ### Screen Reader Experience
 
-1. Use `<input type="text" inputmode="numeric" maxlength="1">` for each digit box to enforce single-character numeric entry.
-2. Label the entire group using `role="group"` with `aria-labelledby` pointing to a heading (e.g., "Enter 6-digit verification code").
-3. Each digit box must have a programmatic label such as `aria-label="Digit 1 of 6"` to indicate position in the sequence.
-4. Apply `aria-invalid="true"` to all digit boxes when the error state is active; link error text using `aria-describedby` with a stable ID.
-5. Announce error messages immediately upon submission failure using `aria-live="assertive"`; announce success states with `aria-live="polite"`.
-6. When focus auto-advances, screen readers announce the new box label (e.g., "Digit 2 of 6") without additional interruption.
+1. Use semantic `<input type="text" inputmode="numeric">` elements for each digit field with `maxlength="1"`.
+2. Provide a group label using `role="group"` with `aria-labelledby` pointing to the main label text (e.g., "Enter 6-digit verification code").
+3. Announce the field position and total count using `aria-label` on each input (e.g., "Digit 1 of 6", "Digit 2 of 6").
+4. Apply `aria-invalid="true"` to all input fields when in error state and link error message using `aria-describedby`.
+5. Announce error messages immediately using `aria-live="assertive"` and provide specific feedback about what went wrong (incorrect code, expired, attempts exceeded).
+6. Announce successful code entry using `aria-live="polite"` when validation passes and next action is available.
 
 ---
 
 ### Touch & Mobile
 
-1. Provide touch targets ≥44×44px (48×48 preferred) for each digit box with spacing ≥8px between boxes.
-2. Trigger numeric keyboard automatically using `inputmode="numeric"` to streamline digit entry on mobile devices.
-3. Support both portrait and landscape orientations; boxes must reflow or scale responsively without loss of functionality.
-4. Ensure visible focus indicators remain perceivable on touch devices (outline ≥2px, contrast ≥3:1) when using external keyboards.
+1. Provide touch targets ≥44×44px for each input field with spacing ≥8px between fields to prevent accidental touches.
+2. Trigger numeric keyboard automatically using `inputmode="numeric"` or `type="tel"` to optimize for digit entry on mobile devices.
+3. Support auto-advance between fields on digit entry to reduce the need for manual navigation taps.
+4. Ensure the entire component remains visible when the mobile keyboard appears; adjust viewport scroll if necessary.
+5. Support both portrait and landscape orientations without loss of functionality or field visibility.
 
 ---
 
 ### Visual Accessibility
 
-1. Ensure digit box borders, focus indicators, and error outlines have contrast ≥3:1 against adjacent colors.
-2. Error state must include both color change (e.g., red border) and a text message below the component; do not rely on color alone.
-3. Helper text and error messages must have text contrast ≥4.5:1; large text (≥18pt or ≥14pt bold) requires ≥3:1.
-4. Support text resizing up to 200%; boxes and text must reflow without horizontal scrolling or content loss (WCAG 2.1 Reflow).
-5. Respect `prefers-reduced-motion` for focus transitions and auto-advance animations; reduce or eliminate motion when requested.
+1. Ensure text and digit content have contrast ≥4.5:1 against background; labels and helper text must meet the same ratio.
+2. Ensure input field borders, focus indicators, and error state borders have contrast ≥3:1 against adjacent surfaces.
+3. Do not rely on color alone to convey error state; include error icon and descriptive error message text below the fields.
+4. Support text resizing up to 200% without loss of content, functionality, or horizontal scrolling (reflow must pass).
+5. Respect `prefers-reduced-motion` and avoid auto-advance animations or transitions that rely on motion to convey state changes.
 
 ---
 
 ### Error Handling
 
-1. Apply `aria-invalid="true"` to all digit boxes when the error state is active (submission with incomplete or incorrect entry).
-2. Link error text to the group using `aria-describedby` with a stable ID (e.g., `id="pin-error"`); ensure each box references this ID.
-3. Announce error messages immediately upon submission using `aria-live="assertive"`; message content must match displayed text.
-4. Provide specific error messages: "Please enter the verification code." (empty case) or "Verification failed. Check and enter the correct code." (incorrect case).
-5. Upon successful resubmission, remove `aria-invalid` and announce success with `aria-live="polite"` (e.g., "Code accepted"); return focus to the next logical element or first digit box for retry.
+1. Apply `aria-invalid="true"` to all input fields in the group when the complete code fails validation.
+2. Link the error message to all inputs using `aria-describedby` with a stable ID referencing the error text element.
+3. Announce errors immediately via `aria-live="assertive"` after validation fails and return focus to the first input field for correction.
+4. Provide specific, actionable error messages: "Incorrect code. Please try again" or "Code expired. Request a new code" instead of generic "Error".
+5. Announce success state using `aria-live="polite"` when the correct code is entered and describe the next step in the flow.
+6. Clear all fields or maintain entered values based on security requirements when displaying errors; document this behavior clearly.
 
 ---
 
@@ -194,16 +182,17 @@ Error state applies to all digit inputs simultaneously and cannot be assigned in
 
 **Quick Tests (≤5 minutes)**
 
-1. Complete digit entry using keyboard only: Tab through boxes, type digits, Backspace to correct, Enter to submit; verify visible focus indicators (≥2px, ≥3:1 contrast).
-2. Screen reader announces group label ("Enter 6-digit verification code"), individual box labels ("Digit 1 of 6"), and error messages immediately upon submission failure.
-3. Zoom to 200%: digit boxes reflow without horizontal scrolling; all text and controls remain readable and functional.
-4. High-contrast mode: focus indicators, error borders, and state cues remain perceivable with ≥3:1 contrast.
-5. Touch device: numeric keyboard opens on focus; each box meets 44×44px; layout adapts to portrait/landscape without breaking.
+1. Complete digit entry using keyboard only with visible focus moving sequentially; `Backspace` navigates backward correctly.
+2. Screen reader announces each field position ("Digit 1 of 6"), group label, and error messages immediately upon validation failure.
+3. Zoom to 200%: all input fields remain visible and functional without horizontal scrolling; layout reflows appropriately.
+4. High-contrast mode: focus indicators, field borders, and error states remain clearly visible with ≥3:1 contrast.
+5. On touch device: numeric keyboard opens automatically; targets are ≥44×44px; auto-advance works between fields.
 
 **Common Issues to Avoid**
 
-1. Missing `aria-labelledby` on the group or `aria-label` on individual digit boxes.
-2. Error state indicated by color change only without accompanying text message or `aria-invalid`.
-3. Focus indicator contrast <3:1 or outline <2px width.
-4. Auto-advance not announced by screen readers or causing focus to skip boxes.
-5. Missing `inputmode="numeric"` on mobile, forcing users to switch keyboard layouts manually.
+1. Missing group label or individual field position announcements for screen reader users.
+2. Color-only error indication without accompanying error icon or descriptive error message text.
+3. Missing `aria-invalid="true"` or `aria-describedby` linking error message to input fields in error state.
+4. Insufficient contrast (<3:1) for focus indicators or error state borders against background.
+5. Focus trap within digit fields preventing users from navigating to submit button or other page elements.
+6. Auto-advance not working or moving focus before users can correct a mistyped digit.
