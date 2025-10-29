@@ -1,0 +1,2 @@
+### How should I configure labels and helper text for a shopping cart quantity?
+Display a clear label like "Quantity" above the input, with optional helper text below showing constraints such as "Minimum quantity is 1" or "Select the number of items you wish to purchase."
