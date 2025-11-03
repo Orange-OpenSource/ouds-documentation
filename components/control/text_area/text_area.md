@@ -21,30 +21,21 @@ It typically includes features like a visible label, placeholder text, character
 | 3 | Placeholder text | Provides guidance on expected content format or examples |
 | 4 | Character counter | Displays remaining/exceeded characters relative to limit in real-time |
 | 5 | Helper text/Error message | Offers additional guidance or validation feedback below field |
-| 6 | Helper link | Optional external or modal link for additional help resources |
 | 7 | Scrollbar | Appears when content exceeds 240px maximum height (10 lines) |
-| 8 | Border/Outline | Visual indicator of field state (enabled, focus, error) |
 
 ---
 
 ## Usage & Guidance
 
-### Best for 👈👈👈
+### Best for
 
 ✅ Multi-sentence feedback requiring 3+ lines of text (reviews, comments, descriptions)  
 ✅ Open-ended questions where response length is unpredictable  
-✅ Message composition interfaces (emails, chat, support tickets)  
-✅ Form fields requiring detailed explanations or justifications  
-✅ Content creation contexts (blog posts, notes, documentation)  
-✅ User-generated descriptions that need character count monitoring  
 ✅ Contexts where auto-resize improves user experience without layout disruption  
-✅ Mobile forms where vertical scroll management is critical  
-✅ Read-only display of longer text blocks requiring scrolling  
-✅ Situations where placeholder guidance helps format consistency
 
 ---
 
-### ⚠️ Label
+### Label
 
 Describes the purpose of the input. Why hide a text area label?
 
@@ -82,95 +73,31 @@ The user must reduce the number of characters entered for the text area to exit 
 
 ---
 
-### Establish clear expectations upfront 👈👈👈
-
-✅ **Do:** Use label + helper text combination to explain expected content length, format, and character limits before users start typing  
-❌ **Don't:** Wait until error state to inform users about character limits or content requirements they should have known from the start
-
-### Position context where users naturally look first 👈👈👈
-
-✅ **Do:** Place essential guidance (character limits, format expectations) in helper text directly below the label where users scan before typing  
-❌ **Don't:** Hide critical information in tooltips, modals, or helper links that require extra interaction to discover
-
-### Design error recovery into the flow 👈👈👈
-
-✅ **Do:** When character limit is exceeded, show "+23 characters over limit" and let users continue typing while they edit down  
-❌ **Don't:** Block input at character limit or clear the field, forcing users to lose their work and start over
-
-### Optimize vertical real estate strategically 👈👈👈
-
-✅ **Do:** Use 72px default height (3 lines) for forms where vertical space is precious and most responses are brief  
-❌ **Don't:** Start with expanded height in dense forms or mobile layouts where it pushes important content below the fold
-
-### Adapt height behavior to content expectations 👈👈👈
-
-✅ **Do:** Allow auto-expansion for feedback forms or messaging where users expect to write longer responses naturally  
-❌ **Don't:** Force scrolling at 72px when the context signals to users they should write detailed, multi-paragraph responses
-
-### Make scroll-within-scroll intentional 👈👈👈
-
-✅ **Do:** Accept scroll-within-scroll on mobile only when maintaining layout stability is more important than scroll convenience (constrained dialogs, fixed-height cards)  
-❌ **Don't:** Cap height at 240px on mobile forms without considering whether users would prefer page-level scrolling instead
-
-### Signal read-only content appropriately 👈👈👈
-
-✅ **Do:** Use read-only state with scrollbar for displaying user-submitted content, historical data, or system-generated text users need to reference  
-❌ **Don't:** Use read-only text areas as a substitute for static text blocks or when there's no need for scrolling interaction
-
-### Handle empty state meaningfully 👈👈👈
+### Handle empty state meaningfully
 
 ✅ **Do:** Use placeholder text that shows realistic examples: "Example: I noticed the checkout button didn't respond when I clicked it on mobile"  
 ❌ **Don't:** Write vague placeholders like "Enter text here" or "Type something" that don't help users understand what to write
 
-### Preserve user content during validation 👈👈👈
-
-✅ **Do:** Keep all user input visible when displaying error messages, allowing them to see and fix specific issues without re-entering text  
-❌ **Don't:** Clear the field, truncate content, or hide text during error states, breaking the user's editing flow
-
-### Coordinate helper text with validation timing 👈👈👈
+### Coordinate helper text with validation timing
 
 ✅ **Do:** Show persistent helper text for character limits but replace it with specific error messages only after users exceed the limit  
 ❌ **Don't:** Show both helper text and error message simultaneously, creating visual clutter and unclear hierarchy
 
 ---
 
-### How should I configure labels and helper text for user feedback forms? 👈👈👈
-
-Use a descriptive label like "What happened?" with helper text below showing the character limit: "Describe the issue you encountered (500 characters maximum)."
-
-### What should the empty state look like when first displayed? 👈👈👈
-
-Display the label, empty 72px container with placeholder text showing an example response format, and helper text with character limit if applicable.
-
-### How do I show the character limit being exceeded? 👈👈👈
-
-When exceeded, add red border and error icon to the container, replace helper text with red error message showing "+[X] characters over limit," and let the user continue editing.
-
-### What's the visual difference between 72px default and expanded height states? 👈👈👈
-
-Default shows 3 lines of text at 72px; after 3 lines, the container automatically grows vertically until reaching 240px maximum height.
-
-### How should I display the scrollbar when maximum height is reached? 👈👈👈
-
-At 240px height (approximately 10 lines), show a vertical scrollbar inside the text container, maintaining the fixed height while allowing content scrolling.
-
-### What should the focus state look like during text entry? 👈👈👈
+### What should the focus state look like during text entry?
 
 Apply focus styling (typically blue border or outline) to the container border, ensure the cursor is visible inside the field, and maintain any helper text or character counter below.
 
-### How do I configure read-only display for system-generated content? 👈👈👈
-
-Use read-only state with muted background color, display the full text content with scrollbar if needed, and show a label indicating the content source.
-
-### What should the error state look like for validation failures beyond character limits? 👈👈👈
+### What should the error state look like for validation failures beyond character limits?
 
 Apply red border and error icon, display specific error message below the field (e.g., "Please remove special characters"), and keep the user's input visible for correction.
 
-### How should I display helper links alongside error messages? 👈👈👈
+### How should I display helper links alongside error messages?
 
 Position the helper link directly below the error message, maintaining its regular styling, so users can access additional help while seeing what went wrong.
 
-### What's the correct configuration for mobile messaging interfaces? 👈👈👈
+### What's the correct configuration for mobile messaging interfaces?
 
 Use 72px default height with auto-expansion enabled, show character counter if there's a limit, and consider allowing expansion beyond 240px if message length is expected.
 
