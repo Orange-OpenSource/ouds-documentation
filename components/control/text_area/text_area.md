@@ -1,11 +1,11 @@
 # Guideline
 
-## Intro
-A text area is a multi-line input component that allows users to enter and edit longer blocks of text with automatic expansion and optional scrolling.
+A multi-line input field that expands automatically as users type longer text, ideal for comments, messages, or detailed descriptions.
 
 ---
 
 ## What is it
+
 A text area is a multi-line text area component that allows users to enter and edit longer blocks of text, such as comments, messages, or descriptions. Unlike a standard text area, which is limited to a single line, the text area can expand vertically and offers more space for content entry.
 
 It typically includes features like a visible label, placeholder text, character limits, and optional resize behavior. The text area is ideal for open-ended responses where users need to express detailed information.
@@ -16,95 +16,106 @@ It typically includes features like a visible label, placeholder text, character
 
 | # | Element | Purpose |
 |---|---------|---------|
-| 1 | Label | Identifies the purpose of the text area field |
-| 2 | Input container | The expandable area where users enter multi-line text |
-| 3 | Placeholder text | Provides guidance on expected input when the field is empty |
-| 4 | Helper text | Displays supporting information or character count |
-| 5 | Helper link | Offers additional help or guidance when needed |
-| 6 | Error message | Communicates validation issues with the entered text |
-| 7 | Scrollbar | Enables navigation through text that exceeds visible height |
+| 1 | Label | Identifies the field's purpose and what input is expected |
+| 2 | Input container | Multi-line text entry area with 72px default height (3 lines) |
+| 3 | Placeholder text | Provides guidance on expected content format or examples |
+| 4 | Character counter | Displays remaining/exceeded characters relative to limit in real-time |
+| 5 | Helper text/Error message | Offers additional guidance or validation feedback below field |
+| 7 | Scrollbar | Appears when content exceeds 240px maximum height (10 lines) |
 
 ---
 
-## Key Features
+## Usage & Guidance
 
-**Multi-line text entry**
+### Best for
 
-Allows users to input extended content across multiple lines, making it suitable for detailed responses, comments, and descriptions.
-
-**Auto-resize capability**
-
-Automatically expands vertically as users type, starting from 3 lines (72px) and growing up to 10 lines (240px) to accommodate content without manual adjustment.
-
-**Character limit feedback**
-
-Displays real-time character count in the helper text area, showing remaining or exceeded characters to help users stay within defined limits.
-
-**Scrolling behavior**
-
-When maximum height is reached, an internal scrollbar appears to allow navigation through overflowing text while maintaining a consistent layout.
-
-**Multiple visual styles**
-
-Offers both filled and outlined variants with optional rounded corners to adapt to different design contexts and brand requirements.
+✅ Multi-sentence feedback requiring 3+ lines of text (reviews, comments, descriptions)  
+✅ Open-ended questions where response length is unpredictable  
+✅ Contexts where auto-resize improves user experience without layout disruption  
 
 ---
 
-## When to Use
+### Label
 
-Use the Text Area component when you need to:
+Describes the purpose of the input. Why hide a text area label?
 
-✅ Collect detailed, multi-line user input such as feedback, comments, descriptions, or messages.
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
 
-✅ Allow users to express open-ended responses where single-line inputs would be too restrictive.
+However, hiding the label should only be done if:
+• The purpose of the input remains clear thanks to a placeholder or contextual icon.
+• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
-✅ Provide visible character limits with real-time feedback to help users stay within defined constraints.
-
-✅ Accommodate variable content length with automatic expansion up to a defined maximum height.
-
-✅ Display pre-filled content that users can review and edit in a read-only or enabled state.
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
 ---
 
-## When not to Use
+### Behavior on content size (height)
 
-Avoid using this component when:
+• **Default display** By default, the height of the input text container is set to 72px, which allows 3 lines of text to be displayed without expanding the component. This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
 
-❌ A single-line text input would suffice for short, predictable responses like names, emails, or phone numbers.
+• **Auto-resize (automatic expansion)** Above 3 lines of text, the field automatically increases in height as the user types their comment.
 
-❌ You need structured data entry that would be better served by specific input types like date pickers, dropdowns, or number fields.
+• **Vertical scrollbar** If expansion is disabled or the maximum height is reached at 240px, corresponding to about 10 lines of text, an internal scrollbar appears allowing the user to scroll through the overflowing text. This choice prevents breaking the layout but has the drawback, on mobile, of creating a scroll within a scroll (text area scroll inside a page scroll).
 
-❌ The expected input is so brief that a text area's vertical space would create unnecessary visual weight in the layout.
-
-❌ You're building a rich text editor with formatting capabilities, which requires a more advanced component with toolbar controls.
-
-❌ Space is extremely limited and a compact input solution is required, such as inline editing or search fields.
+**⚠️ No manual resize (by the user)** On both desktop and mobile, we have chosen to disable manual resizing to avoid behaviors inconsistent with the design system.
 
 ---
 
-## Common Patterns
+### Character count
 
-**Feedback and comment forms**  
-Text areas are commonly used in feedback forms, survey responses, and comment sections where users need to provide detailed opinions or explanations.
+• **Character limit not exceeded** The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field's allowed limit.
 
-**Message composition**  
-Used in messaging interfaces, email clients, and chat applications where users compose multi-line messages with character limits.
+⚠️ It is impossible to provide a recommendation for the maximum number of characters, as this depends too specifically on the constraints (or lack thereof) of each project.
 
-**Profile and settings descriptions**  
-Applied in user profile pages and account settings where users enter biographical information, company descriptions, or extended personal details.
+• **Character limit exceeded** If the user exceeds the set limit, the field enters an error state, but input is not blocked. The character counter then shows the user, still in real time, how many characters have been entered beyond the field's allowed limit.
+
+The user must reduce the number of characters entered for the text area to exit the error state.
 
 ---
 
-## Screen Variants
+### Handle empty state meaningfully
 
-**Desktop**  
-Text areas display with a default height of 72px (3 lines) and auto-expand up to 240px (10 lines) with clear visual indicators and ample space for helper text and character counts.
+✅ **Do:** Use placeholder text that shows realistic examples: "Example: I noticed the checkout button didn't respond when I clicked it on mobile"  
+❌ **Don't:** Write vague placeholders like "Enter text here" or "Type something" that don't help users understand what to write
 
-**Tablet**  
-Similar behavior to desktop with adjusted touch targets and slightly modified spacing to accommodate touch interactions while maintaining readability.
+### Coordinate helper text with validation timing
 
-**Mobile**  
-Maintains the same height constraints but requires careful consideration of the scroll-within-scroll behavior when internal scrolling is active within the page scroll.
+✅ **Do:** Show persistent helper text for character limits but replace it with specific error messages only after users exceed the limit  
+❌ **Don't:** Show both helper text and error message simultaneously, creating visual clutter and unclear hierarchy
+
+---
+
+### What should the focus state look like during text entry?
+
+Apply focus styling (typically blue border or outline) to the container border, ensure the cursor is visible inside the field, and maintain any helper text or character counter below.
+
+### What should the error state look like for validation failures beyond character limits?
+
+Apply red border and error icon, display specific error message below the field (e.g., "Please remove special characters"), and keep the user's input visible for correction.
+
+### How should I display helper links alongside error messages?
+
+Position the helper link directly below the error message, maintaining its regular styling, so users can access additional help while seeing what went wrong.
+
+### What's the correct configuration for mobile messaging interfaces?
+
+Use 72px default height with auto-expansion enabled, show character counter if there's a limit, and consider allowing expansion beyond 240px if message length is expected.
+
+---
+
+## Screen Sizes
+
+### Desktop
+
+Text areas maintain 72px default height and auto-expand vertically to 240px maximum. Wider viewports allow longer line lengths before wrapping, reducing vertical expansion needs. Scrollbars use standard desktop styling.
+
+### Tablet
+
+Similar behavior to desktop with moderate line lengths. Touch-friendly scrollbar sizing ensures usability. Auto-expansion works identically, preventing layout disruption in responsive forms.
+
+### Mobile
+
+Compact width causes more frequent line wrapping and faster vertical expansion. Scroll-within-scroll consideration is critical—balance layout stability against user scroll expectations. Touch targets for scrolling must meet minimum 44px requirements.
 
 ---
 
@@ -116,15 +127,15 @@ Maintains the same height constraints but requires careful consideration of the 
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Filled style with subtle background |
-| Rounded corner | False | Square corners for standard contexts |
-| Input status | Empty | Blank field with no placeholder |
-| State | Enabled | Fully interactive and editable |
-| Error | False | No validation errors displayed |
-| Scrolled | False | No internal scrolling active |
-| ⚠️ Label | True | Label is visible by default |
-| Helper text | False | No helper text displayed |
-| Helper link | False | No helper link displayed |
+| Outlined | False | Filled style with subtle background and bottom border is default for form contexts |
+| Rounded corner | False | Square corners are default; rounded corners available for brand-specific emotional contexts |
+| Input status | Empty | Field starts blank without placeholder unless placeholder text is explicitly configured |
+| State | Enabled | Neutral appearance allowing immediate user interaction without restrictions |
+| Error | False | Field begins in valid state; error status triggers only after validation failure |
+| Scrolled | False | Scrollbar appears automatically only when content exceeds 240px maximum height |
+| ⚠️ Label | True | Label is visible by default; hiding requires explicit choice with accessibility considerations |
+| Helper text | False | Helper text is optional; enable when users need guidance about format or limits |
+| Helper link | False | Additional help link is optional; use only when external resources or modals add value |
 
 ---
 
@@ -177,7 +188,7 @@ Maintains the same height constraints but requires careful consideration of the 
 
 ### Error
 
-The Error status indicates that the user input does not meet validation rules, for example, in this specific case, if the number of characters entered by the user exceeds the allowed limit. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input.
+The Error status indicates that the user input does not meet validation rules, for example, in this specific case, if the number of characters entered by the user exceeds the allowed limit. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
 This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
 
@@ -185,112 +196,101 @@ This state helps users quickly identify and correct mistakes by explaining what 
 
 ---
 
-### Label
+### Scrolled
 
-Describes the purpose of the input. Why hide a text area label? In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
-
-However, hiding the label should only be done if:
-• The purpose of the input remains clear thanks to a placeholder or contextual icon.
-• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
-
-Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
+**`Scrolled`** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond the maximum planned height of 240px, allowing the display of about 10 lines of text. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
 
 ---
 
-### Input text
-
-**Scrolled** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond **the maximum planned height of 240px, allowing the display of about 10 lines of text**. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
+### Helper text
 
 **Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+
+---
+
+### Helper link
 
 **Helper link** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
 
 ---
 
-### Display behavior
-
-**Default display** By default, the height of **the input text container is set to 72px, which allows 3 lines of text** to be displayed without expanding the component. This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
-
-**Auto-resize (automatic expansion)** Above 3 lines of text, the field automatically increases in height as the user types their comment.
-
-**Vertical scrollbar** If expansion is disabled or **the maximum height is reached at 240px, corresponding to about 10 lines of text**, an internal scrollbar appears allowing the user to scroll through the overflowing text. This choice prevents breaking the layout but has the drawback, on mobile, of creating a scroll within a scroll (text area scroll inside a page scroll).
-
-**⚠️ No manual resize (by the user)** On both desktop and mobile, we have chosen to disable manual resizing to avoid behaviors inconsistent with the design system.
-
----
-
-### Character limit
-
-**Character limit not exceeded** The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field's allowed limit.
-
-⚠️ It is impossible to provide a recommendation for the maximum number of characters, as this depends too specifically on the constraints (or lack thereof) of each project.
-
-**Character limit exceeded** If the user exceeds the set limit, the field enters an error state, but input is not blocked. The character counter then shows the user, still in real time, how many characters have been entered beyond the field's allowed limit.
-
-The user must reduce the number of characters entered for the text area to exit the error state.
-
----
-
-## Usage
-
-### Label visibility and accessibility
-**Do:** Always ensure labels are accessible to screen readers using `aria-label`, `aria-labelledby`, or visually hidden text when the visible label is hidden for design purposes.
-
-**Don't:** Hide labels without providing alternative accessible labeling, as this creates confusion for users relying on assistive technologies.
-
-### Character limit guidance
-**Do:** Display character limits proactively with real-time counters to help users stay within constraints before reaching an error state.
-
-**Don't:** Block user input when character limits are exceeded; instead, show the excess count and allow users to edit their content back within limits.
-
-### Error message clarity
-**Do:** Replace helper text with clear, actionable error messages that explain what went wrong and how to fix it, while preserving helper links below the error.
-
-**Don't:** Stack error messages on top of helper text or remove helper links when errors occur, as this removes important contextual information.
-
-### Resize behavior consistency
-**Do:** Use automatic expansion from 3 to 10 lines with internal scrolling at maximum height to maintain consistent layout across the interface.
-
-**Don't:** Allow manual resize handles that can break responsive layouts or create inconsistent component behavior across the design system.
-
----
-
 # Accessibility
 
-### Keyboard Navigation
-Users must be able to navigate to the text area using the Tab key and enter it in the natural tab order of the form. Once focused, users should be able to type freely, with Enter creating new lines within the multi-line field. Shift+Tab should move focus backward. The focus indicator must have a minimum contrast ratio of 3:1 against the background. Arrow keys should navigate within the text content, and keyboard scrolling (Page Up/Page Down, Home/End) should work when internal scrolling is active.
+Text areas require WCAG 2.2 Level AA compliance to ensure users can enter longer-form content independently and efficiently. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
 
 ---
 
-### Screen Reader Support
-The text area must use the semantic `<textarea>` HTML element to ensure proper identification by assistive technologies. Labels must be explicitly associated with the textarea using the `for` attribute matching the textarea's `id`, or by wrapping the textarea in a `<label>` element. Helper text should be associated using `aria-describedby` to provide context. Error messages must use `aria-describedby` or `aria-errormessage` to announce validation issues. Character count information should be announced dynamically using `aria-live="polite"` regions to inform users of remaining or exceeded characters without interrupting their input flow.
+## Accessibility Challenges
+
+Multi-line text inputs present unique challenges: users must understand expected content length and format upfront, navigate multiple lines with keyboard and assistive technology, recover from character limit violations without losing work, and manage scroll-within-scroll interactions especially on mobile. Auto-expansion behavior and dynamic character counting must announce changes to screen readers in real-time without overwhelming users, while maintaining spatial awareness of cursor position across multiple lines.
+
+### Key Challenges
+- Auto-resize behavior changing field height dynamically may disorient screen reader users who lose spatial context
+- Character counters updating in real-time require live region announcements without interrupting text composition flow
+- Scroll-within-scroll on mobile creates navigation complexity for users relying on gestures or screen readers
+- Error states appearing after character limit exceeded must preserve all user content while providing clear recovery path
+
+### Critical Success Factors
+1. Provide programmatically associated labels, helper text, and error messages using `aria-describedby` (WCAG 3.3.2, 4.1.2)
+2. Announce character count changes and limit violations via live regions without disrupting composition flow (WCAG 4.1.3)
+3. Ensure all functionality operates via keyboard including multi-line navigation, scrolling, and error correction (WCAG 2.1.1)
+4. Maintain ≥3:1 contrast for focus indicators, error borders, and disabled text states (WCAG 2.4.7, 1.4.11)
 
 ---
 
-### ARIA Attributes
-Required attributes include `aria-label` or `aria-labelledby` when labels are visually hidden, ensuring screen readers can identify the field's purpose. Use `aria-describedby` to reference helper text, character counters, and additional instructions. When errors occur, add `aria-invalid="true"` and associate error messages with `aria-describedby` or `aria-errormessage`. For character limits, use `aria-live="polite"` on the counter element to announce updates. If the textarea is required, include `aria-required="true"`. In read-only state, add `aria-readonly="true"`, and in disabled state, use the `disabled` attribute which implicitly communicates non-interactivity.
+## Design Requirements
+
+### Structure & Labels
+- [ ] **Programmatically associated label**: Connect visible label to `<textarea>` via `id` and `for` attribute, never omit even if visually hidden ([Orange A11y - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
+- [ ] **Multi-ID aria-describedby**: Associate helper text, character counter, and error message using space-separated IDs so screen readers announce all context
+- [ ] **Persistent label visibility**: Keep labels visible by default unless placeholder + context icon clearly convey purpose with hidden label still available to assistive technology
+
+### Visual Design
+- [ ] **Focus indicator contrast**: Ensure focus border or outline has ≥3:1 contrast against adjacent colors and ≥2px thickness ([Orange A11y - Focus Visibility](https://a11y-guidelines.orange.com/en/web/components-examples/keyboard-navigation/#focus-visibility))
+- [ ] **Error state contrast**: Red error border and icon must meet ≥3:1 contrast against white background, error text ≥4.5:1 against background
+- [ ] **Disabled state contrast**: Maintain ≥3:1 contrast for disabled text and borders to ensure visibility while signaling non-interactivity ([WCAG 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum))
+
+### Content
+- [ ] **Actionable error messages**: ❌ "Character limit exceeded" / ✅ "Please remove 23 characters. Consider shortening your response or splitting into multiple comments." ([Orange A11y - Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/forms/#error-messages))
+- [ ] **Realistic placeholder examples**: Show specific format rather than generic hints: "Example: I clicked the submit button but received error code 502" vs "Enter description here"
 
 ---
 
-### Focus Management
-When the text area receives focus, a clear visual indicator must appear with sufficient contrast (3:1 minimum). Focus should follow the natural document order unless programmatically managed for specific interactions. When validation errors occur, consider moving focus to the error message or maintaining it on the textarea with the error announced via `aria-live` regions. If the textarea is part of a modal or dialog, focus should be trapped within that container and restored to the triggering element when closed. Ensure focus is never lost during loading states, and that the loading indicator is announced appropriately.
+## Testing Checklist
+
+### Screen Reader Testing
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) to verify label announced, helper text read before user types, character counter updates announced via live region, error messages read immediately when triggered
+- [ ] Verify auto-expansion height changes announced, scroll state communicated when scrollbar appears, read-only state indicated, disabled state clearly identified
+
+### Keyboard Testing
+- [ ] Tab focuses field (visible focus indicator ≥3:1 contrast), Enter creates new line within text area (not form submission), Arrow keys navigate between lines, Home/End move to line start/end, Ctrl+Home/End move to field start/end
+- [ ] Verify Page Up/Down scroll content when scrollbar present, Escape clears focus from field, all interactions keyboard-accessible without mouse
+
+### Paste Testing
+- [ ] Paste long text (Ctrl+V/Cmd+V) updates character counter immediately and announces change to screen readers
+- [ ] Verify paste triggering auto-expansion announces new height, paste exceeding character limit triggers error state with preserved content
+
+Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
 
 ---
 
-### Error Handling
-Error messages must be semantically associated with the textarea using `aria-describedby` or `aria-errormessage` so screen readers announce them when the field receives focus. The `aria-invalid="true"` attribute must be added to the textarea element when in an error state. Error messages should clearly explain what went wrong (e.g., "Character limit exceeded by 45 characters") and how to fix it. Visual indicators include a red border, error icon, and red error text meeting color contrast requirements. Error announcements should use `aria-live="assertive"` for immediate validation issues or `aria-live="polite"` for less urgent feedback. The textarea must remain editable during error states to allow correction.
+## Key WCAG Criteria
+
+- **2.1.1 Keyboard** (A): All text entry, scrolling, and error correction operable via keyboard without timing requirements; Enter key creates new lines rather than submitting forms
+- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast on text area border when focused, maintained during typing and scrolling
+- **3.3.1 Error Identification** (A): Character limit violations and validation errors identified in text, associated via `aria-describedby`, with error icon and red border
+- **3.3.2 Labels or Instructions** (A): Labels provided for all text areas, helper text explains character limits upfront, placeholder shows format examples
+- **4.1.2 Name, Role, Value** (A): Correct `<textarea>` semantic HTML, `aria-describedby` links helper/error text, `aria-invalid="true"` set during error states
+- **4.1.3 Status Messages** (AA): Character counter and limit violations announced via `aria-live="polite"` live region without interrupting typing flow
+
+For complete reference: [Orange Accessibility Guidelines - Form Components](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
 
 ---
 
-### Touch Targets
-The minimum touch target size for the text area should be at least 44x44 pixels to accommodate finger taps on mobile and tablet devices, following WCAG guidelines. Ensure adequate spacing (at least 8px) between the textarea and adjacent interactive elements to prevent accidental activation. The entire input container should be tappable to focus the field, not just the text within. Helper links and error messages below the textarea must also meet the 44x44px minimum touch target requirement with proper spacing.
+## Additional Resources
 
----
-
-### Color Contrast
-All text within and around the text area must meet WCAG 2.1 AA contrast requirements: 4.5:1 for normal text (including labels, helper text, placeholder text, and input text) and 3:1 for large text. Error messages and error icons must maintain 4.5:1 contrast against their background. The focus indicator border must have at least 3:1 contrast against adjacent colors. In disabled state, text may have reduced contrast but should still be perceivable. Border colors, both in default and hover states, should meet 3:1 contrast for UI components. Ensure character counter text maintains 4.5:1 contrast in both normal and error states.
-
----
-
-### Component-Specific Considerations
-The auto-resize behavior from 3 to 10 lines must not cause unexpected scroll jumps or disorientation for users. Announce expansion behavior to screen reader users if it significantly changes the layout. The internal scrollbar that appears at maximum height creates a scroll-within-scroll situation, particularly problematic on mobile—ensure this is tested with screen readers and touch gestures. When the scrolled state is active, the scrollable region must be keyboard accessible and announced. Character limit feedback must be real-time but not overly verbose; use `aria-live="polite"` to balance immediacy with non-interruption. The skeleton loading state should include appropriate ARIA attributes (`aria-busy="true"` or `aria-live="polite"`) to inform users that content is loading. Ensure placeholder text is not relied upon as the sole labeling mechanism, as it disappears on input and may not be announced consistently.
+- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+- [Orange Accessibility Guidelines - Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/forms/#error-messages)
+- [WCAG 2.2 Understanding Docs - Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+- [WCAG 2.2 Understanding Docs - Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
