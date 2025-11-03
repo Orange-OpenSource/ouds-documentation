@@ -3,6 +3,7 @@
 Documentation Slicer Script
 Automatically slices Markdown documents by heading hierarchy and saves to dsm/ directory
 Only generates slices for leaf sections (sections without children)
+Removes H2 heading lines from slice content
 """
 
 import os
@@ -167,6 +168,14 @@ def extract_section_content(content: str, sections: List[MarkdownSection],
             break
     
     section_content = '\n'.join(lines[start_line:end_line]).strip()
+    
+    # Remove the heading line itself if it's H2 (level 2)
+    if section.level == 2:
+        section_lines = section_content.split('\n')
+        # Remove first line (the H2 heading)
+        if section_lines and section_lines[0].startswith('##'):
+            section_lines.pop(0)
+        section_content = '\n'.join(section_lines).strip()
     
     # Remove trailing horizontal rules (---, ***, ___, or variations)
     section_lines = section_content.split('\n')

@@ -24,7 +24,6 @@ This component must support smooth keyboard navigation (automatic focus shift, b
 | 2 | Focus indicator | Visual cue showing the currently active input |
 | 3 | Error indicator | Visual state applied to all boxes when validation fails |
 | 4 | Helper text | Instructional message showing expected digit count |
-| 5 | Error message | Specific feedback displayed when validation fails |
 
 ---
 
