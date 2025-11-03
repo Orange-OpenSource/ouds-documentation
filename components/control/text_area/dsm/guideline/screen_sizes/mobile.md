@@ -1,3 +1,2 @@
-### Mobile
-
-Compact width causes more frequent line wrapping and faster vertical expansion. Scroll-within-scroll consideration is critical—balance layout stability against user scroll expectations. Touch targets for scrolling must meet minimum 44px requirements.
+### Mobile  
+Text areas occupy full container width with maintained 72-240px height range. Character counters stack cleanly below input. Be mindful that internal scrolling combined with page scrolling can create usability challenges on smaller screens.

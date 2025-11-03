@@ -1,4 +1,4 @@
 ### Visual Design
-- [ ] **Focus indicator contrast**: Ensure focus border or outline has ≥3:1 contrast against adjacent colors and ≥2px thickness ([Orange A11y - Focus Visibility](https://a11y-guidelines.orange.com/en/web/components-examples/keyboard-navigation/#focus-visibility))
-- [ ] **Error state contrast**: Red error border and icon must meet ≥3:1 contrast against white background, error text ≥4.5:1 against background
-- [ ] **Disabled state contrast**: Maintain ≥3:1 contrast for disabled text and borders to ensure visibility while signaling non-interactivity ([WCAG 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum))
+- [ ] **Focus indicator**: Focus ring has ≥3:1 contrast ratio against background color and remains visible when content scrolls ([Orange Focus Visibility](https://a11y-guidelines.orange.com/en/web/design/focus/))
+- [ ] **Error state contrast**: Error borders, icons, and text meet ≥3:1 contrast ratio for non-text elements, ≥4.5:1 for error message text
+- [ ] **Scrollbar visibility**: Scrollbars remain visible or use sufficient contrast (≥3:1) to indicate scrollable content
