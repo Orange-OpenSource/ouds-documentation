@@ -1,5 +1,3 @@
-## Keyboard Support
-
 1. `Tab` moves focus to the first empty digit box or the first box if all are empty.
 2. `Shift+Tab` moves focus backward from the component to the previous focusable element.
 3. Arrow keys (`Left`/`Right`) navigate between digit boxes without deleting content.

@@ -1,5 +1,3 @@
-## Error Handling
-
 1. Apply `aria-invalid="true"` to all digit inputs when validation fails.
 2. Link error text to inputs using `aria-describedby` with a stable error message ID.
 3. Announce errors via `aria-live="polite"` immediately after form submission with validation failure.

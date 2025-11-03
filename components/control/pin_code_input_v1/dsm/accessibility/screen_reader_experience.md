@@ -1,5 +1,3 @@
-## Screen Reader Experience
-
 1. Use semantic `<input type="text" inputmode="numeric">` elements for each digit box.
 2. Provide a group label via `<fieldset>` and `<legend>` or `role="group"` with `aria-labelledby` (e.g., "Enter 6-digit verification code").
 3. Announce helper text using `aria-describedby` referencing the helper text ID.
