@@ -33,14 +33,12 @@ It typically includes features like a visible label, placeholder text, character
 
 ## Usage & Guidance
 
-### Best for 👈👈👈
+### Best for
 
 ✅ Long-form feedback or comments requiring multiple sentences  
 ✅ Detailed descriptions of issues, problems, or requests  
 ✅ User-generated content like reviews, testimonials, or stories  
-✅ Message composition in support forms or contact pages  
-✅ Notes, instructions, or additional information fields  
-✅ Open-ended survey responses needing elaboration  
+
 ✅ Text content with character limits requiring real-time feedback  
 ✅ Forms where distinguishing multi-line from single-line inputs aids clarity  
 ✅ Contexts where auto-expanding fields improve user experience  
@@ -84,22 +82,21 @@ The user must reduce the number of characters entered for the text area to exit 
 
 ---
 
-### Set realistic character limits based on user needs 👈👈👈
-
+### Set realistic character limits based on user needs 
 ✅ **Do:** Analyze typical user responses and set limits that accommodate 95% of legitimate use cases without feeling restrictive  
 ❌ **Don't:** Impose arbitrary low limits that force users to edit natural language or remove helpful context
 
-### Place critical guidance in the label, not just helper text 👈👈👈
+### Place critical guidance in the label, not just helper text
 
 ✅ **Do:** Include essential requirements directly in the label (e.g., "Describe your issue (max 500 characters)")  
 ❌ **Don't:** Hide character limits or important constraints only in helper text that users may overlook
 
-### Show character count early to prevent late-stage frustration 👈👈👈
+### Show character count early to prevent late-stage frustration
 
 ✅ **Do:** Display remaining characters from the first keystroke so users can self-regulate as they compose  
 ❌ **Don't:** Wait until users approach or exceed the limit to reveal counting, forcing unexpected editing
 
-### Write error messages that guide recovery, not just state problems 👈👈👈
+### Write error messages that guide recovery, not just state problems
 
 ✅ **Do:** Specify "Your comment exceeds the limit by 45 characters—please shorten to submit"  
 ❌ **Don't:** Use vague errors like "Too many characters" without indicating how many to remove
@@ -109,20 +106,6 @@ The user must reduce the number of characters entered for the text area to exit 
 ✅ **Do:** Link to detailed formatting guidelines, content policies, or examples when users need more than a sentence of help  
 ❌ **Don't:** Add helper links for information that could fit in 1-2 lines of helper text
 
-### Position text areas after contextual information in forms 👈👈👈
-
-✅ **Do:** Place shorter fields (name, email) before the text area so users gather momentum before detailed writing  
-❌ **Don't:** Start forms with large text areas before users understand what information is needed or why
-
-### Preserve user content during validation errors 👈👈👈
-
-✅ **Do:** Keep all entered text visible when showing errors so users can edit rather than rewrite  
-❌ **Don't:** Clear the field or hide content on error, forcing users to start over
-
-### Adjust height constraints based on expected response length 👈👈👈
-
-✅ **Do:** Allow 5-7 visible lines for detailed feedback forms, 3-4 for brief comments  
-❌ **Don't:** Use the same small initial height for all contexts regardless of typical response length
 
 ### Provide clear indication when scrolling is available 👈👈👈
 
