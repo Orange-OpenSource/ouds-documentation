@@ -23,11 +23,11 @@ It typically includes features like a visible label, placeholder text, character
 
 | property name | type |
 |---------------|------|
-| Outlined | 'False' \| 'True' |
-| Rounded corner | 'False' \| 'True' |
-| Input status | 'Empty' \| 'Empty (Placeholder)' \| 'Filled' |
-| State | 'Enabled' \| 'Hover' \| 'Focus' \| 'Loading' \| 'Read only' \| 'Disabled' \| 'Skeleton' |
-| Error | 'False' \| 'True' |
+| Outlined | 'False' | 'True' |
+| Rounded corner | 'False' | 'True' |
+| Input status | 'Empty' | 'Empty (Placeholder)' | 'Filled' |
+| State | 'Enabled' | 'Hover' | 'Focus' | 'Loading' | 'Read only' | 'Disabled' | 'Skeleton' |
+| Error | 'False' | 'True' |
 | Scrolled | boolean |
 | ⚠️ Label | boolean |
 | ✏️ Label | text |
@@ -116,23 +116,15 @@ The Error status indicates that the user input does not meet validation rules, f
 
 This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
 
-**⚠️ Error message vs helper text / link** If a helper text accompanies the text input, it is replaced by the error message. However, a helper link must not be replaced and should remain positioned below the error message.
+**Error message vs helper text / link** If a helper text accompanies the text input, it is replaced by the error message. However, a helper link must not be replaced and should remain positioned below the error message.
 
 ---
 
-### Scrolled
+### Other boolean options
 
-**`Scrolled`** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond the maximum planned height of 240px, allowing the display of about 10 lines of text. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
-
----
-
-### Helper text
+**Scrolled** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond the maximum planned height of 240px, allowing the display of about 10 lines of text. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
 
 **Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
-
----
-
-### Helper link
 
 **Helper link** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
 
