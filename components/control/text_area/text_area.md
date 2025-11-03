@@ -47,7 +47,7 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ---
 
-### Behavior on content size (height)
+### Behavior by entered line count
 
 • **Default display** By default, the height of the input text container is set to 72px, which allows 3 lines of text to be displayed without expanding the component. This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
 
