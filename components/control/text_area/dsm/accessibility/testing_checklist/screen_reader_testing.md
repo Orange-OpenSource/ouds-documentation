@@ -1,0 +1,3 @@
+### Screen Reader Testing
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) to verify label announced, helper text read before user types, character counter updates announced via live region, error messages read immediately when triggered
+- [ ] Verify auto-expansion height changes announced, scroll state communicated when scrollbar appears, read-only state indicated, disabled state clearly identified

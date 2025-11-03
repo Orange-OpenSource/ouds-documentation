@@ -1,0 +1,3 @@
+### Keyboard Testing
+- [ ] Tab focuses field (visible focus indicator ≥3:1 contrast), Enter creates new line within text area (not form submission), Arrow keys navigate between lines, Home/End move to line start/end, Ctrl+Home/End move to field start/end
+- [ ] Verify Page Up/Down scroll content when scrollbar present, Escape clears focus from field, all interactions keyboard-accessible without mouse

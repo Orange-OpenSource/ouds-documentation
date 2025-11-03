@@ -1,0 +1,5 @@
+- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+- [Orange Accessibility Guidelines - Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/forms/#error-messages)
+- [WCAG 2.2 Understanding Docs - Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+- [WCAG 2.2 Understanding Docs - Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
