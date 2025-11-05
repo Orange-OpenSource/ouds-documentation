@@ -1,0 +1,39 @@
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.line-height.body.large.desktop | core-ouds.font.line-height.450 | 24px |
+| ouds.font.line-height.body.large.mobile | core-ouds.font.line-height.450 | 24px |
+| ouds.font.line-height.body.large.tablet | core-ouds.font.line-height.450 | 24px |
+| ouds.font.line-height.body.medium.desktop | core-ouds.font.line-height.450 | 24px |
+| ouds.font.line-height.body.medium.mobile | core-ouds.font.line-height.350 | 20px |
+| ouds.font.line-height.body.medium.tablet | core-ouds.font.line-height.350 | 20px |
+| ouds.font.line-height.body.small.desktop | core-ouds.font.line-height.350 | 20px |
+| ouds.font.line-height.body.small.mobile | core-ouds.font.line-height.250 | 16px |
+| ouds.font.line-height.body.small.tablet | core-ouds.font.line-height.250 | 16px |
+| ouds.font.line-height.code.medium | core-ouds.font.line-height.350 | 20px |
+| ouds.font.line-height.display.large.desktop | core-ouds.font.line-height.2050 | 80px |
+| ouds.font.line-height.display.large.mobile | core-ouds.font.line-height.1050 | 48px |
+| ouds.font.line-height.display.large.tablet | core-ouds.font.line-height.1850 | 72px |
+| ouds.font.line-height.display.medium.desktop | core-ouds.font.line-height.1450 | 64px |
+| ouds.font.line-height.display.medium.mobile | core-ouds.font.line-height.950 | 44px |
+| ouds.font.line-height.display.medium.tablet | core-ouds.font.line-height.1250 | 56px |
+| ouds.font.line-height.display.small.desktop | core-ouds.font.line-height.1250 | 56px |
+| ouds.font.line-height.display.small.mobile | core-ouds.font.line-height.850 | 40px |
+| ouds.font.line-height.display.small.tablet | core-ouds.font.line-height.1050 | 48px |
+| ouds.font.line-height.heading.large.desktop | core-ouds.font.line-height.850 | 40px |
+| ouds.font.line-height.heading.large.mobile | core-ouds.font.line-height.650 | 32px |
+| ouds.font.line-height.heading.large.tablet | core-ouds.font.line-height.750 | 36px |
+| ouds.font.line-height.heading.medium.desktop | core-ouds.font.line-height.750 | 36px |
+| ouds.font.line-height.heading.medium.mobile | core-ouds.font.line-height.550 | 28px |
+| ouds.font.line-height.heading.medium.tablet | core-ouds.font.line-height.650 | 32px |
+| ouds.font.line-height.heading.small.desktop | core-ouds.font.line-height.650 | 32px |
+| ouds.font.line-height.heading.small.mobile | core-ouds.font.line-height.450 | 24px |
+| ouds.font.line-height.heading.small.tablet | core-ouds.font.line-height.550 | 28px |
+| ouds.font.line-height.heading.xlarge.desktop | core-ouds.font.line-height.1050 | 48px |
+| ouds.font.line-height.heading.xlarge.mobile | core-ouds.font.line-height.750 | 36px |
+| ouds.font.line-height.heading.xlarge.tablet | core-ouds.font.line-height.950 | 44px |
+| ouds.font.line-height.label.large | core-ouds.font.line-height.450 | 24px |
+| ouds.font.line-height.label.medium | core-ouds.font.line-height.350 | 20px |
+| ouds.font.line-height.label.small | core-ouds.font.line-height.250 | 16px |
+| ouds.font.line-height.label.xlarge | core-ouds.font.line-height.450 | 24px |
+
+<br>Tokens versions: sys.wireframe: 2.0.1 - core.ouds: 1.7.0 - core.wireframe: 1.2.0
