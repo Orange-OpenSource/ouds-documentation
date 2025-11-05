@@ -1,0 +1,39 @@
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.letter-spacing.body.large.desktop | core-ouds.font.letter-spacing.300 | 0.18px |
+| ouds.font.letter-spacing.body.large.mobile | core-ouds.font.letter-spacing.250 | 0.2px |
+| ouds.font.letter-spacing.body.large.tablet | core-ouds.font.letter-spacing.250 | 0.2px |
+| ouds.font.letter-spacing.body.medium.desktop | core-ouds.font.letter-spacing.250 | 0.2px |
+| ouds.font.letter-spacing.body.medium.mobile | core-ouds.font.letter-spacing.200 | 0.17px |
+| ouds.font.letter-spacing.body.medium.tablet | core-ouds.font.letter-spacing.200 | 0.17px |
+| ouds.font.letter-spacing.body.small.desktop | core-ouds.font.letter-spacing.200 | 0.17px |
+| ouds.font.letter-spacing.body.small.mobile | core-ouds.font.letter-spacing.150 | 0.18px |
+| ouds.font.letter-spacing.body.small.tablet | core-ouds.font.letter-spacing.150 | 0.18px |
+| ouds.font.letter-spacing.code.medium | core-ouds.font.letter-spacing.200 | 0.17px |
+| ouds.font.letter-spacing.display.large.desktop | core-ouds.font.letter-spacing.1850 | -1.08px |
+| ouds.font.letter-spacing.display.large.mobile | core-ouds.font.letter-spacing.850 | -0.4px |
+| ouds.font.letter-spacing.display.large.tablet | core-ouds.font.letter-spacing.1450 | -0.96px |
+| ouds.font.letter-spacing.display.medium.desktop | core-ouds.font.letter-spacing.1250 | -0.7px |
+| ouds.font.letter-spacing.display.medium.mobile | core-ouds.font.letter-spacing.750 | -0.36px |
+| ouds.font.letter-spacing.display.medium.tablet | core-ouds.font.letter-spacing.1050 | -0.6px |
+| ouds.font.letter-spacing.display.small.desktop | core-ouds.font.letter-spacing.1050 | -0.6px |
+| ouds.font.letter-spacing.display.small.mobile | core-ouds.font.letter-spacing.650 | -0.32px |
+| ouds.font.letter-spacing.display.small.tablet | core-ouds.font.letter-spacing.850 | -0.4px |
+| ouds.font.letter-spacing.heading.large.desktop | core-ouds.font.letter-spacing.650 | -0.32px |
+| ouds.font.letter-spacing.heading.large.mobile | core-ouds.font.letter-spacing.450 | -0.12px |
+| ouds.font.letter-spacing.heading.large.tablet | core-ouds.font.letter-spacing.550 | -0.28px |
+| ouds.font.letter-spacing.heading.medium.desktop | core-ouds.font.letter-spacing.550 | -0.28px |
+| ouds.font.letter-spacing.heading.medium.mobile | core-ouds.font.letter-spacing.350 | 0px |
+| ouds.font.letter-spacing.heading.medium.tablet | core-ouds.font.letter-spacing.450 | -0.12px |
+| ouds.font.letter-spacing.heading.small.desktop | core-ouds.font.letter-spacing.450 | -0.12px |
+| ouds.font.letter-spacing.heading.small.mobile | core-ouds.font.letter-spacing.300 | 0.18px |
+| ouds.font.letter-spacing.heading.small.tablet | core-ouds.font.letter-spacing.350 | 0px |
+| ouds.font.letter-spacing.heading.xlarge.desktop | core-ouds.font.letter-spacing.850 | -0.4px |
+| ouds.font.letter-spacing.heading.xlarge.mobile | core-ouds.font.letter-spacing.550 | -0.28px |
+| ouds.font.letter-spacing.heading.xlarge.tablet | core-ouds.font.letter-spacing.750 | -0.36px |
+| ouds.font.letter-spacing.label.large | core-ouds.font.letter-spacing.250 | 0.2px |
+| ouds.font.letter-spacing.label.medium | core-ouds.font.letter-spacing.200 | 0.17px |
+| ouds.font.letter-spacing.label.small | core-ouds.font.letter-spacing.150 | 0.18px |
+| ouds.font.letter-spacing.label.xlarge | core-ouds.font.letter-spacing.300 | 0.18px |
+
+<br>Tokens versions: sys.orange: 2.0.1 - core.ouds: 1.7.0 - core.orange: 1.2.0
