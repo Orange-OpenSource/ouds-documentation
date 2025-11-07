@@ -1,0 +1,5 @@
+- [Orange Accessibility Guidelines - Forms Examples](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+- [Orange Accessibility Guidelines - Accessible Hiding](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/)
+- [WCAG 2.2 Understanding - Input Purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+- [Orange Color and Contrast Guidelines](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/)

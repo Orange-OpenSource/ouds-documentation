@@ -1,0 +1,1 @@
+Text inputs must ensure WCAG 2.2 Level AA compliance through proper labeling, keyboard operability, clear error identification, and sufficient contrast for all states. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

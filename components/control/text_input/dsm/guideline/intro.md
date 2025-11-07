@@ -1,0 +1,1 @@
+A text input enables users to enter or edit single-line text such as names, emails, passwords, or search queries.

@@ -11,3 +11,4 @@ The user must reduce the number of characters entered for the text area to exit 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
