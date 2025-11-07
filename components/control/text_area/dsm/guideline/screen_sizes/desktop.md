@@ -1,2 +1,3 @@
-### Desktop  
+### Desktop 👈🤖
+
 Text areas display at their configured width (typically full-width within form containers) with minimum 72px height for 3 visible lines, expanding to maximum 240px with vertical scrollbar. Helper text and links appear below with adequate spacing.

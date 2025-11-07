@@ -1,4 +1,5 @@
-### Best for
+### Best for 👈🤔
+>>>>>>> 4c02f0f (content:update)
 
 ✅ Long-form feedback or comments requiring multiple sentences  
 ✅ Detailed descriptions of issues, problems, or requests  

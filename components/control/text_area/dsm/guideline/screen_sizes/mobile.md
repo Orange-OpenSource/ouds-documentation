@@ -1,2 +1,3 @@
-### Mobile  
+### Mobile 👈🤖
+
 Text areas occupy full container width with maintained 72-240px height range. Character counters stack cleanly below input. Be mindful that internal scrolling combined with page scrolling can create usability challenges on smaller screens.
