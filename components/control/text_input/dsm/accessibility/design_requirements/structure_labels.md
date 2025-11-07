@@ -1,4 +1,0 @@
-### Structure & Labels
-- [ ] **Label association**: Every text input must have a label element properly associated via `for`/`id` or contain label text ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Hidden label accessibility**: When labels are visually hidden, provide `aria-label` or `aria-labelledby` referencing visually-hidden text ([Orange ARIA Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/))
-- [ ] **Helper text linkage**: Connect helper text and error messages to input using `aria-describedby` for screen reader announcement
