@@ -1,2 +1,0 @@
-### What's the visual difference between outlined and filled variants?
-Filled variant shows a subtle background with a bottom border for contained layouts, while outlined variant displays a transparent background with a visible stroke around the entire field for lightweight contexts.

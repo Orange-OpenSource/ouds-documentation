@@ -1,56 +1,200 @@
 # Guideline
 
-## Intro
+## Intro 👈🤖
 
-A quantity input lets users specify a numerical value using a text field with increment and decrement controls for easy adjustments.
+A Quantity Input lets users select numeric values through buttons or keyboard input for shopping carts and inventory.
 
 ---
 
-## What is it
+## Description
 
 A quantity input is a form component that allows users to specify a numerical value representing a quantity, often used in contexts like shopping carts, inventory management, or booking systems. It typically combines a numeric text field with increment and decrement controls (such as "+" and "−" buttons) to make adjustments easy and precise. The component must enforce valid input ranges (minimum of 1), prevent invalid characters, and support keyboard input, stepper controls, and assistive technologies.
 
 ---
 
-## Anatomy
+## Anatomy 👈🤖
 
 | # | Element | Purpose |
 |---|---------|---------|
-| 1 | Label | Describes the purpose of the input field and provides context for users |
-| 2 | Input field | Text field where users can type the numerical quantity value directly |
-| 3 | Increment button | Button (+) that increases the quantity value by one unit |
-| 4 | Decrement button | Button (−) that decreases the quantity value by one unit |
-| 5 | Leading icon (optional) | Visual indicator that appears before the input to provide additional context |
-
+| 1 | Container | Provides the structural frame and background for all input elements |
+| 2 | Label text | Identifies the purpose and expected input for the field |
+| 3 | Leading icon (optional) | Provides visual context or categorization for the input type |
+| 4 | Input field / Placeholder | Displays entered numeric value or guidance text when empty |
+| 5 | Suffix (optional) | Shows the unit of measurement or context (e.g., "pcs", "kg") |
+| 6 | Increment button (+) | Increases the numeric value by one unit on click |
+| 7 | Decrement button (−) | Decreases the numeric value by one unit on click |
+| 8 | Helper / Error text | Offers guidance or displays validation feedback below the input |
 
 ---
 
 ## Usage & Guidance
 
-### How should I configure labels and helper text for a shopping cart quantity?
-Display a clear label like "Quantity" above the input, with optional helper text below showing constraints such as "Minimum quantity is 1" or "Select the number of items you wish to purchase."
+### Best for 👈🤔
 
-### What should the error state look like when a quantity exceeds stock limits?
-The input displays a red border with an error message below stating the specific issue, such as "Quantity must be between 1 and 99" or "Only 5 items available in stock."
-
-### How do trailing vs. split button layouts differ visually?
-Trailing layout places both increment and decrement buttons vertically stacked on the right side, while split layout positions the decrement button on the left and increment button on the right, flanking the input field horizontally.
-
-### What's the visual difference between outlined and filled variants?
-Filled variant shows a subtle background with a bottom border for contained layouts, while outlined variant displays a transparent background with a visible stroke around the entire field for lightweight contexts.
+✅ E-commerce cart quantity adjustments where users select how many items to purchase  
+✅ Inventory or stock management interfaces requiring precise numeric entry  
+✅ Booking systems for tickets, seats, or room reservations with specific counts  
+✅ Recipe builders or measurement tools needing unit-based quantity input  
+✅ Form fields with numeric constraints (min 1, max 99) and touchscreen optimization  
+✅ Settings panels requiring numeric configuration values  
+✅ Product configurators where users specify item quantities  
+✅ Order forms with multiple line items each requiring quantity selection  
+✅ Mobile-first contexts where stepper buttons simplify numeric entry  
+✅ Situations requiring paste or autofill support for numeric values
 
 ---
 
-## Screen Variants
+### Keyboard input disabled
 
-### Desktop
-The component displays at full size with clear clickable buttons and comfortable spacing for mouse interactions. Labels and helper text are fully visible with adequate spacing between elements.
+In the vast majority of modern UX/UI cases, a quantity input should be editable on focus. However, there are a few specific rare cases where direct editing by keyboard input might be disabled:
+• Highly guided or controlled usage→product configuration with mandatory steps
+• Risk of critical error→specific or technical values
+• Strict touch context→mobile app with simplified UI, no keyboard
+• Deliberate product decision→to enforce navigation or a business constraint
 
-### Tablet
-The component maintains similar sizing to desktop but may adjust spacing slightly to accommodate touch targets. All interactive elements remain easily accessible with finger input.
+In this specific context, it is therefore recommended to prefill the input by default.
 
-### Mobile
-The component prioritizes touch-friendly targets with minimum 44×44px button sizes. The numeric keyboard automatically appears when users tap the input field for efficient mobile entry.
+---
+
+### Keyboard input + increment/decrement controls enabled
+
+In the context of an editable quantity input, if the field is focused and already filled by the user, then clicking the + (increase) or – (decrease) buttons must follow a smooth and predictable behavior according to the following UX rules.
+
+When clicking + or – during editing:
+• The value is automatically validated
+• The action is applied to that value (+1 or –1)
+• The field is visually updated with the new value
+• The cursor is moved to the end of the field (optional)
+• The field remains focused
+
+Absolutely to avoid:
+• Losing the currently typed value if partially entered
+• Requiring defocus for the buttons to work
+• Failing to parse/validate the value before incrementing
+
+Specific error focus state:
+If the value in the field is invalid (empty or non-numeric), clicking + or – may:
+• Either fill in a default value (1)
+• Or display a temporary blocking error ("Please enter a number")
+
+---
+
+### ⚠️ Label
+
+Describes the purpose of the input. Why hide a quantity input label?
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
+However, hiding the label should only be done if:
+• The purpose of the input remains clear thanks to a placeholder or contextual icon.
+• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
+
+---
+
+### Context placement 👈🤔
+
+✅ **Do:** Place quantity inputs directly adjacent to product images and names in cart interfaces for immediate visual association  
+❌ **Don't:** Isolate quantity controls far from the items they modify, forcing users to scan back and forth
+
+### Default values and prefilling 👈🤔
+
+✅ **Do:** Default to quantity "1" for most shopping scenarios so users can immediately add to cart without extra clicks  
+❌ **Don't:** Start with empty or "0" values that require users to increment before taking action
+
+### Unit clarity in labels 👈🤔
+
+✅ **Do:** Use suffix text (like "pcs", "kg", "units") when the measurement unit isn't obvious from context  
+❌ **Don't:** Leave unit ambiguity that forces users to guess whether they're selecting items, boxes, or cases
+
+### Validation timing and feedback 👈🤔
+
+✅ **Do:** Provide immediate inline validation as users type or click increment buttons, showing allowed ranges  
+❌ **Don't:** Wait until form submission to reveal that quantities are outside acceptable bounds
+
+### Mobile-first stepper sizing 👈🤔
+
+✅ **Do:** Make increment and decrement buttons large enough (44×44px minimum) for reliable touch interaction on mobile  
+❌ **Don't:** Use tiny stepper controls that cause frequent mis-taps and user frustration
+
+### Error recovery guidance 👈🤔
+
+✅ **Do:** Show helper text like "Min: 1, Max: 99" proactively to prevent errors before they occur  
+❌ **Don't:** Display only error messages after mistakes, missing the opportunity to guide users correctly first
+
+### Label hierarchy and scannability 👈🤔
+
+✅ **Do:** Use clear, specific labels like "Number of tickets:" rather than generic "Quantity:" when context matters  
+❌ **Don't:** Use identical labels for multiple quantity inputs in the same form, reducing differentiation
+
+### Keyboard workflow efficiency 👈🤔
+
+✅ **Do:** Support arrow keys (↑↓) for incrementing values and allow direct numeric typing for power users  
+❌ **Don't:** Force all users through button clicks when keyboard input would be faster for larger value changes
+
+### Visual feedback on interaction 👈🤔
+
+✅ **Do:** Provide hover and active states on stepper buttons so users receive immediate feedback before clicking  
+❌ **Don't:** Use static buttons with no visual response, leaving users uncertain if they've clicked successfully
+
+### Integration with product flows 👈🤔
+
+✅ **Do:** Position quantity selectors before "Add to Cart" or purchase buttons in the natural reading order  
+❌ **Don't:** Place quantity controls after action buttons, disrupting the expected user flow sequence
+
+---
+
+### How should I configure the quantity input for e-commerce cart items with units? 👈🤔
+
+Display the label "Quantity:", input field with the current value, suffix showing units like "pcs", and increment/decrement buttons on the right side.
+
+### What does the empty state with placeholder look like? 👈🤔
+
+Show placeholder text "Enter a number" in muted color within the input field, with stepper buttons enabled and helper text below explaining valid ranges.
+
+### How should I display error state when value exceeds maximum? 👈🤔
+
+Replace helper text with error message in red (e.g., "Maximum quantity is 99"), add error icon, and apply red border or underline to the input container.
+
+### What's the visual difference between trailing and split button placement? 👈🤔
+
+Trailing placement groups both + and − buttons together on the right side; split placement positions the − button on the left, input in center, and + button on the right.
+
+### How do I show the loading state during quantity validation? 👈🤔
+
+Display a progress indicator within the input area while keeping the field value visible but temporarily disabled until validation completes.
+
+### What should the disabled state look like when items are out of stock? 👈🤔
+
+Apply muted background and text colors to the entire component, gray out stepper buttons, and add helper text like "Currently unavailable".
+
+### How should I configure the read-only state for confirmed orders? 👈🤔
+
+Display the quantity value with no stepper buttons, use muted colors, and change label to past tense like "Ordered quantity:".
+
+### What does the focus state look like during keyboard input? 👈🤔
+
+Show prominent focus border around the input container, highlight the input field text, and ensure stepper buttons remain accessible.
+
+### How do I display helper text for range constraints? 👈🤔
+
+Position text like "Please enter a number between 1 and 99" below the input in muted color, aligned with the field's left edge.
+
+### What's the hover state appearance for stepper buttons? 👈🤔
+
+Apply subtle background color change and increase visual contrast on the button being hovered to indicate interactivity.
+
+---
+
+## Screen Sizes
+
+### Desktop 👈🤖
+The quantity input displays with comfortable spacing and full visibility of labels, input field, and stepper buttons. Desktop supports keyboard input workflows including arrow keys for incrementing and Tab navigation between fields.
+
+### Tablet 👈🤖
+Component maintains similar layout to desktop but with slightly adjusted touch target sizes to accommodate finger interaction while preserving the trailing or split button placement options.
+
+### Mobile 👈🤖
+Stepper buttons are enlarged to meet 44×44px minimum touch target requirements. Split button placement becomes more prominent as it provides better thumb-zone accessibility on smaller screens.
 
 ---
 
@@ -62,13 +206,22 @@ The component prioritizes touch-friendly targets with minimum 44×44px button si
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Uses filled style with background and bottom border by default |
-| Rounded corner | False | Square corners are standard for business contexts |
-| Actions placement | Trailing | Buttons stacked vertically on the right side |
-| Input status | Empty | No value displayed initially |
-| State | Enabled | Interactive and ready for user input |
-| Error | False | No validation errors present |
-| Leading icon | False | No icon displayed before the input by default |
+| Outlined | False | Uses filled background style by default for standard form contexts |
+| Rounded corner | False | Maintains square corners unless brand identity requires softer edges |
+| Actions placement | Trailing | Groups increment/decrement buttons together on the right side |
+| Input status | Empty | Starts with no value entered, ready for user input |
+| State | Enabled | Component is interactive and ready for user input immediately |
+| Error | False | No validation errors present initially |
+| Leading icon | False | Icon is optional and hidden by default unless context requires it |
+| ⚠️ Label | True | Label is displayed by default for accessibility and clarity |
+| ✏️ Label | "Quantity:" | Default label text can be customized based on context |
+| ✏️ Placeholder | "Enter a number" | Provides hint when field is empty |
+| ✏️ Input text | Empty | No default numeric value in the field |
+| Suffix | False | Unit text (like "pcs") is optional |
+| Helper text | False | Supporting text is optional |
+| ✏️ Helper text | "Please enter a number between 1 and 99." | Default guidance message when helper text is enabled |
+| ✏️ Error empty text | Customizable | Error message shown when empty field is submitted |
+| ✏️ Error filled text | Customizable | Error message shown when invalid value is entered |
 
 ---
 
@@ -93,186 +246,144 @@ The component prioritizes touch-friendly targets with minimum 44×44px button si
 
 ### Input status
 
-**`Empty`** The input has not been interacted with yet, and no value (not even a placeholder) is displayed. Only the label is visible.
+**`Empty`** The Empty state indicates that the quantity input is blank with no content or placeholder, a neutral starting point.
 
-**`Empty (Placeholder)`** The input has not been interacted with yet and displays a placeholder text to guide the user on what to enter. The placeholder appears in a lighter color and disappears when the user starts typing.
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
 
-**`Filled`** The input contains a value that has been entered by the user or pre-filled by the system. The filled state is the result of user interaction or a default value provided by the application.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
 ---
 
 ### Actions placement
 
-**`Trailing`** The increment and decrement action buttons are positioned on the trailing side (right in LTR languages, left in RTL languages) of the input field, both one above the other. This creates a condensed vertical layout that is consistent with the overall spatial hierarchy of the input field and keeps the entire component compact within a single inline flow.
+**`Trailing`** It places both the increment and decrement buttons on the right side of the input field, either stacked vertically or positioned side by side. This layout is compact and visually streamlined, making it ideal for dense interfaces or mobile views.
 
-**`Split`** The decrement button is positioned on the leading side (left in LTR languages, right in RTL languages), while the increment button is on the trailing side. This creates a horizontal arrangement that visually balances the input field. This layout visually resembles physical controls or product detail pages.
-
----
-
-### States
-
-**`Enabled`** The component is interactive and ready for use. Users can type in the input or use the increment/decrement buttons.
-
-**`Hover`** The visual appearance of the input field changes when the user hovers their mouse over it, indicating interactivity.
-
-**`Focus`** The input field is currently selected and active, ready to receive keyboard input. A visible focus indicator (such as a border or outline) makes it clear which element is active.
-
-**`Loading`** The component displays a loading indicator while data is being fetched or processed (e.g., updating inventory or verifying constraints in real time). Users cannot interact with the input until the loading process is complete.
-
-**`Read only`** The input displays a value that the user cannot modify. This is useful when the quantity is set by the system or determined by external factors. Users can view the value but cannot interact with the increment, decrement, or input field.
-
-**`Disabled`** The input is not currently available for interaction, often due to contextual constraints (e.g., an item is out of stock, or the maximum allowable quantity has been reached). The component appears grayed out and does not respond to user actions.
-
-**`Skeleton`** The component displays a placeholder animation (skeleton screen) while waiting for content to load. This provides a visual cue that data is being fetched and helps reduce perceived wait time.
+**`Split`** It positions the decrement button to the left of the input and the increment button to the right. It provides a more balanced and intuitive interaction model, especially in use cases like e-commerce where users frequently adjust quantities.
 
 ---
 
-### ⚠️ Specific focus state rules
+### State
 
-In the Focus state, the border of the input field becomes thicker (2px instead of 1px). If the border were centered on the edge of the input, half of its thickness (0.5px inward and 0.5px outward) would increase the overall size of the component and could cause layout shifts or alignment issues with surrounding content.
+**`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
-To prevent this, the 2px border must expand inward rather than extending outward. This ensures:
-• The component's outer dimensions remain constant, avoiding layout shifts.
-• Visual consistency and alignment with adjacent elements.
+**`Hover`** Slight visual contrast or border color change.
 
-**Practical implementation:**
-• Use CSS techniques like box-sizing: border-box to ensure the border grows inward.
-• Alternatively, create a pseudo-element (::before or ::after) positioned inside the component to simulate the thicker border without altering the component's box model.
-• Avoid using outline, which may expand outward and cause unwanted misalignment, unless implemented with a negative offset.
+**`Focus`** The quantity input is focused and ready to receive user input. It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
+
+**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the quantity input. A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
+
+**`Read only`** Text visible but not editable (often with a muted or different background).
+
+**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
+
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=False".
 
 ---
 
 ### Error
 
-In the Error state, the quantity input displays a clear indication that the user has entered an invalid value or that the entered value does not meet the required constraints (e.g., exceeds maximum stock, falls below the minimum quantity, or contains non-numeric characters). Depending on the context, the error may be triggered in two scenarios: when the input is empty (no value entered yet) or when the input is filled (a value has been entered but is invalid).
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
-**Empty state error:**
-• Triggered when the input is required, but the user attempts to submit the form or proceed without entering a value.
-• Use the ✏️ Error empty text property to display a custom error message such as "This field is required" or "Please enter a quantity."
-• The focus is typically on encouraging the user to provide a value before proceeding.
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
 
-**Filled state error:**
-• Triggered when the user has entered a value that does not meet validation criteria, such as exceeding the maximum allowed quantity, falling below the minimum, or entering invalid characters (e.g., letters or special symbols).
-• Use the ✏️ Error filled text property to display a specific error message such as "Quantity must be between 1 and 99" or "Only numeric values are allowed."
-• The focus is on correcting the invalid input without erasing the user's entry immediately (unless necessary for real-time validation).
+If the input is filled, an "error" status is triggered by the entry of a value that is too small, too large, or non-numeric.
 
-For both cases, the component should:
-• Display the error message below the input field in a distinct color (typically red) to clearly indicate the issue.
-• Highlight the input field with an error border or background color to draw the user's attention to the invalid state.
-• Provide actionable and specific guidance to help the user correct the issue quickly (e.g., "Enter a number between 1 and 10").
-
-Good error messages are concise, specific, and solution-oriented, helping users understand what went wrong and how to fix it.
+**⚠️ Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
 
 ---
 
 ### Leading icon
 
-This boolean property allows an icon to be displayed on the left side (leading side) of the input field, providing an additional visual cue or contextual indicator for the user.
-
-When set to true, a decorative or functional icon appears at the start of the input. This could represent a category (such as a cart icon for a shopping cart), a unit type (such as a currency symbol for monetary input), or any other relevant visual hint that helps the user understand the context or purpose of the input field.
-
-The leading icon does not replace the label but serves as a supplementary visual cue to reinforce the input's meaning or to make the interface more intuitive and visually engaging.
+Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
 
 ---
 
-### Label
+### Suffix and Helper text
 
-Label is a required element that describes the purpose of the input field. It provides users with clear context about what information or value they are expected to enter.
+**Suffix** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm…).
 
-**⚠️ Label (boolean property)**
-
-Determines whether the label is visible in the component. When set to true, the label is displayed and provides users with clear guidance on what to enter. When set to false, the label is hidden, though this is not recommended from an accessibility standpoint. Even if the label is visually hidden, it should remain present in the code for screen readers and assistive technologies to ensure that all users understand the purpose of the input.
-
-**✏️ Label (text property - editable)**
-
-Allows you to customize the text content of the label. By default, the label may read something like "Quantity" or "Number of items," but you can edit it to match your specific use case, such as "Select quantity," "Number of tickets," or "How many items?". Providing a clear and descriptive label helps users understand exactly what they are expected to input, improving usability and accessibility.
+**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 ---
 
-### Other boolean options
+# Accessibility 👈🤖
 
-**Suffix** Allows an optional suffix (such as a unit indicator like "kg," "pcs," or "items") to be displayed after the input field. This provides additional context to the user about the unit or type of value being entered.
+## Accessibility intro
 
-**Helper text** Determines whether additional explanatory text is displayed below the input field. When enabled, the Helper text can provide extra guidance, tips, or clarification to help users understand how to use the input correctly (e.g., "Minimum quantity is 1" or "Select the number of items you wish to purchase").
-
----
-
-# Accessibility
-
-## Keyboard Support
-
-1. `Tab` moves focus to the quantity input field; `Shift+Tab` moves focus backward to the previous focusable element.
-2. Arrow keys (`Up`/`Down`) increment or decrement the value by one unit when the input has focus.
-3. `Enter` key submits the form if the input is part of a form, or triggers the associated action.
-4. `Escape` key clears focus from the input field if no other action is defined.
-5. Increment and decrement buttons must be keyboard-accessible and activated with `Enter` or `Space`.
-6. Focus order follows left-to-right, top-to-bottom sequence: label → input field → increment/decrement buttons.
-7. Provide a visible focus indicator with outline or border ≥2px and contrast ≥3:1 around the active element.
-8. Ensure focus is not trapped within the component; users must be able to move focus forward and backward freely.
+Quantity inputs must meet WCAG 2.2 Level AA standards to ensure all users can adjust numeric values effectively. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
 
 ---
 
-## Screen Reader Experience
+## Accessibility Challenges
 
-1. Use semantic `<input type="number">` element with appropriate `role` if necessary (default role is sufficient).
-2. Provide `aria-label` or `aria-labelledby` to associate the input with its visible label text.
-3. Use `aria-describedby` to link the input to helper text and error messages with stable IDs.
-4. Apply `aria-invalid="true"` when the input contains an invalid value and link error text via `aria-describedby`.
-5. Announce value changes via `aria-live="polite"` when increment/decrement buttons are used, stating "Quantity set to [value]".
-6. Ensure increment and decrement buttons have accessible names like "Increase quantity" and "Decrease quantity" via `aria-label`.
-7. If min/max constraints exist, communicate them via `aria-valuemin`, `aria-valuemax`, and `aria-valuenow` attributes.
-8. Group the input with its label and buttons using `role="group"` or `<fieldset>` with `<legend>` for complex layouts.
-9. Ensure all state changes (enabled, disabled, read-only, error) are programmatically determinable via ARIA attributes.
+Quantity inputs present unique accessibility challenges because they combine text input with button controls, requiring coordination between keyboard, screen reader, and mouse interactions. Users must understand both the current value and the allowed range, while assistive technology must announce value changes caused by button clicks.
 
----
+### Key Challenges
+- Screen readers must announce both the label and current value when focus moves to the input field
+- Button clicks that change values need immediate announcement of the new value to screen readers
+- Keyboard users require efficient methods to increment values without relying solely on mouse clicks
+- Error states must be programmatically associated with the input so assistive technology can announce them
 
-## Touch & Mobile
-
-1. Ensure increment and decrement buttons meet minimum touch target size of 44×44px (48×48px preferred).
-2. Provide spacing of ≥8px between buttons and other interactive elements to prevent accidental taps.
-3. Use `inputmode="numeric"` to trigger the numeric keyboard on mobile devices for efficient entry.
-4. Support both portrait and landscape orientations without loss of functionality or content reflow issues.
-5. Consider larger button sizes and spacing on mobile to accommodate finger-based interactions.
+### Critical Success Factors
+1. Labels must be programmatically associated with inputs using `for`/`id` or `aria-labelledby`
+2. Live regions (`aria-live`) must announce value changes when users click increment/decrement buttons
+3. All functionality must be keyboard accessible (Tab, Enter, Arrow keys for incrementing)
+4. Error messages must use `aria-describedby` to link validation feedback to the input field
 
 ---
 
-## Visual Accessibility
+## Design Requirements
 
-1. Ensure text contrast ≥4.5:1 for label, input text, and helper text; large text contrast ≥3:1.
-2. Ensure UI components (buttons, borders, focus indicators) have contrast ≥3:1 against adjacent colors.
-3. Do not rely solely on color to convey error state; include text messages, icons, or border thickness changes.
-4. Support text resizing up to 200% (browser zoom) without loss of content or functionality; content must reflow properly.
-5. Respect `prefers-reduced-motion` by avoiding or minimizing animations for value changes and state transitions.
-6. Ensure focus indicators are clearly visible and maintain ≥3:1 contrast against the background.
+### Structure & Labels
+- [ ] **Label association**: Every quantity input must have a visible label programmatically linked via `<label for="input-id">` or `aria-labelledby`
+- [ ] **Button labels**: Increment (+) and decrement (−) buttons must have accessible names like "Increase quantity" and "Decrease quantity"
+- [ ] **Value announcement**: Current value and allowed range should be conveyed through `aria-valuemin`, `aria-valuemax`, `aria-valuenow` attributes
 
----
+### Visual Design
+- [ ] **Focus indicators**: Focus borders must have ≥3:1 contrast ratio against adjacent colors ([Orange A11y: Focus](https://a11y-guidelines.orange.com/en/web/develop/focus/))
+- [ ] **Touch targets**: Increment and decrement buttons must be ≥44×44px on mobile for reliable touch interaction
+- [ ] **Color contrast**: All text (labels, values, helper text) must meet ≥4.5:1 contrast for normal text, ≥3:1 for large text
 
-## Error Handling
-
-1. Apply `aria-invalid="true"` to the input field when it contains an invalid value.
-2. Link error messages to the input using `aria-describedby` with a stable, unique ID.
-3. Announce errors immediately via `aria-live="assertive"` when validation fails, and return focus to the input field.
-4. Provide specific, actionable error messages such as "Quantity must be between 1 and 99" instead of generic "Error" messages.
-5. Announce success states when appropriate (e.g., "Quantity updated successfully") and describe next steps if needed.
-6. Display error messages visually below the input in a distinct color (red) and with sufficient contrast.
-7. Preserve user input when displaying errors; do not clear the field unless necessary for security or validation reasons.
+### Content
+- [ ] **Error messages**: ❌ "Invalid" / ✅ "Please enter a number between 1 and 99" ([Orange A11y: Forms](https://a11y-guidelines.orange.com/en/web/develop/forms/))
+- [ ] **Helper text clarity**: Proactively communicate constraints like "Min: 1, Max: 99" before errors occur
 
 ---
 
 ## Testing Checklist
 
-**Quick Tests (≤5 minutes)**
+### Screen Reader Testing
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
+- [ ] Verify label and current value announced when focusing input, button actions announce new values via `aria-live`, error messages read via `aria-describedby`
 
-1. Navigate the component using only the keyboard (`Tab`, `Shift+Tab`, arrow keys) with visible focus indicators at all times.
-2. Use a screen reader to verify labels, helper text, and error messages are announced correctly and immediately.
-3. Zoom the page to 200% and confirm the layout reflows without content loss, overlap, or horizontal scrolling.
-4. Enable high-contrast mode or dark mode and verify focus indicators, borders, and text remain perceivable.
-5. On a touch device, confirm buttons meet 44×44px minimum size and the numeric keyboard appears when tapping the input.
+### Keyboard Testing
+- [ ] Tab navigation moves between inputs and buttons, focus visible with ≥3:1 contrast, Enter/Space activate buttons, Arrow ↑↓ keys increment values in input field
+- [ ] All functionality accessible without mouse, Escape clears focus if applicable
 
-**Common Issues to Avoid**
+### Paste Testing
+- [ ] Pasting numeric values into the field works correctly and triggers validation
+- [ ] Screen readers announce changes after paste operations
 
-1. Using color alone to indicate error state without accompanying text, icons, or border changes.
-2. Missing `aria-invalid` and `aria-describedby` attributes on inputs with validation errors.
-3. Focus indicators with insufficient contrast (<3:1) or missing entirely.
-4. Buttons or interactive elements smaller than 44×44px on mobile devices.
-5. Error messages not linked to inputs programmatically, causing screen readers to miss announcements.
+Resources: [Orange Accessibility Testing Guide - Forms](https://a11y-guidelines.orange.com/en/web/test/forms/)
+
+---
+
+## Key WCAG Criteria
+
+- **2.1.1 Keyboard** (A): All increment, decrement, and input functionality operable via keyboard without timing requirements
+- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast on input field and stepper buttons
+- **3.3.1 Error Identification** (A): Validation errors identified in text and programmatically associated with inputs via `aria-describedby`
+- **3.3.2 Labels or Instructions** (A): Labels provided for quantity inputs and available to assistive technology via proper HTML association
+- **4.1.2 Name, Role, Value** (A): Correct semantic HTML (`<input type="number">`, `<button>`) and ARIA attributes (`aria-valuenow`, `aria-live`) communicate state changes
+
+For complete reference: [Orange Accessibility Guidelines - Forms & Inputs](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+
+---
+
+## Additional Resources
+
+- [Orange Accessibility Guidelines - Form Examples](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+- [WCAG 2.2 Understanding - Input Modalities](https://www.w3.org/WAI/WCAG22/Understanding/input-modalities)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+- [ARIA: spinbutton role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/spinbutton_role)
+- [W3C ARIA Authoring Practices - Spinbutton](https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/)

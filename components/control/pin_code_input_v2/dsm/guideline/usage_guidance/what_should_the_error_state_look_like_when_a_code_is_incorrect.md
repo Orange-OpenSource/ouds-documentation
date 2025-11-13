@@ -1,2 +1,0 @@
-### What should the error state look like when a code is incorrect?
-The input displays red borders on all digit fields, with an error message below stating the specific issue (e.g., "Invalid code. Please try again").

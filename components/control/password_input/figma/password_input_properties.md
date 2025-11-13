@@ -1,10 +1,12 @@
-# Quantity Input - Definition & Properties
+# Password Input - Definition & Properties
 
 ---
 
 ### Definition
 
-A quantity input is a form component that allows users to specify a numerical value representing a quantity, often used in contexts like shopping carts, inventory management, or booking systems. It typically combines a numeric text field with increment and decrement controls (such as "+" and "–" buttons) to make adjustments easy and precise. The component must enforce valid input ranges (minimum of 1), prevent invalid characters, and support keyboard input, stepper controls, and assistive technologies.
+A password input is a form field specifically designed to securely capture a user's confidential password. It masks the characters as they are typed, typically replacing them with dots, in order to protect the input from being read by others nearby.
+
+While the primary goal is to enhance privacy and security, the field may also include usability features such as a "show/hide password" toggle and helper text to guide password creation.
 
 ---
 
@@ -14,16 +16,18 @@ A quantity input is a form component that allows users to specify a numerical va
 |---------------|------|
 | Outlined | 'False' \| 'True' |
 | Rounded corner | 'False' \| 'True' |
-| Actions placement | 'Trailing' \| 'Split' |
 | Input status | 'Empty' \| 'Empty (Placeholder)' \| 'Filled' |
 | State | 'Enabled' \| 'Hover' \| 'Focus' \| 'Loading' \| 'Read only' \| 'Disabled' \| 'Skeleton' |
 | Error | 'False' \| 'True' |
 | Leading icon | 'False' \| 'True' |
+| Hidden password | 'True' \| 'False' |
 | ⚠️ Label | boolean |
 | ✏️ Label | text |
 | ✏️ Placeholder | text |
+| Prefix | boolean |
+| ✏️ Prefix | text |
 | ✏️ Input text | text |
-| Suffix | boolean |
+| ✏️ Hidden input text | text |
 | Helper text | boolean |
 | ✏️ Helper text | text |
 | ✏️ Error empty text | text |
@@ -37,8 +41,6 @@ A quantity input is a form component that allows users to specify a numerical va
 
 **Rounded corner** Off
 
-**Actions placement** Trailing
-
 **Input status** Empty
 
 **State** Enabled
@@ -47,9 +49,11 @@ A quantity input is a form component that allows users to specify a numerical va
 
 **Leading icon** Off
 
+**Hidden password** On
+
 **⚠️ Label** On
 
-**Suffix** Off
+**Prefix** Off
 
 **Helper text** Off
 
@@ -76,19 +80,11 @@ A quantity input is a form component that allows users to specify a numerical va
 
 ### Input status
 
-**`Empty`** The Empty state indicates that the quantity input is blank with no content or placeholder, a neutral starting point.
+**`Empty`** The Empty state indicates that the password input is blank with no content or placeholder, a neutral starting point.
 
 **`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
 
 **`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
-
----
-
-### Actions placement
-
-**`Trailing`** It places both the increment and decrement buttons on the right side of the input field, either stacked vertically or positioned side by side. This layout is compact and visually streamlined, making it ideal for dense interfaces or mobile views.
-
-**`Split`** It positions the decrement button to the left of the input and the increment button to the right. It provides a more balanced and intuitive interaction model, especially in use cases like e-commerce where users frequently adjust quantities.
 
 ---
 
@@ -98,9 +94,9 @@ A quantity input is a form component that allows users to specify a numerical va
 
 **`Hover`** Slight visual contrast or border color change.
 
-**`Focus`** The quantity input is focused and ready to receive user input. It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
+**`Focus`** The password input is focused and ready to receive user input. It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
 
-**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the quantity input. A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
+**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the password input. A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
 
 **`Read only`** Text visible but not editable (often with a muted or different background).
 
@@ -116,8 +112,6 @@ The Error status indicates that the user input does not meet validation rules or
 
 This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
 
-If the input is filled, an "error" status is triggered by the entry of a value that is too small, too large, or non-numeric.
-
 **⚠️ Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
 
 ---
@@ -128,9 +122,15 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 
 ---
 
-### Suffix and Helper text
+### Other boolean options
 
-**Suffix** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm…).
+**Prefix** A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
+• "corp-" Company password enforcing a prefix
+• "temp-" Temporary password during a testing phase
+• "dev-" For test accounts
+• "eu-, us-, prod-, stage-" To encode a target environment
+• "test@" Used in the context of automated or predictable tests
+• "admin-" Pattern used to define an admin password
 
 **Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 

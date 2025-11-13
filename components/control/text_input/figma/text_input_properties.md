@@ -1,15 +1,4 @@
-# TEXT INPUT - Version, Definition & Properties
-
----
-
-### Changelog
-
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Sep 30, 2025 | 1.3.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
-| Sep 25, 2025 | 1.2.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
-| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
-| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+# Text Input - Definition & Properties
 
 ---
 
@@ -82,9 +71,7 @@ It provides a visual and interactive affordance for text entry while supporting 
 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
-**`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
-
-This style may be interesting for contexts other than form pages:
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
 • When inputs need to feel lightweight and unobtrusive
 • In a header (search field)
 • In a selection/filtering feature in a product catalog
@@ -93,88 +80,79 @@ This style may be interesting for contexts other than form pages:
 
 ### Rounded corner
 
-**`False`** For a square finish.
+**`False`** An input without rounded corner.
 
-**`True`** For a finish with rounded corner.
-
-To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+**`True`** An input with a rounded corner. This style may be interesting for contexts other than form pages:
+• When inputs need to feel lightweight and unobtrusive
+• In a header (search field)
+• In a selection/filtering feature in a product catalog
 
 ---
 
 ### Input status
 
-**`Empty`** The Empty state indicates that the text input is blank with no content or placeholder, a neutral starting point.
+**`Empty`** An empty input field state with no user-entered content and no placeholder text. Represents the initial state when a form first loads.
 
-**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
+**`Empty (Placeholder)`** An empty field displaying placeholder text to guide users on the expected input format or purpose. The placeholder disappears when the user starts typing.
 
-**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
+**`Filled`** A field containing user-entered text or pre-populated data. This state indicates that the field has been successfully engaged with and contains information.
 
 ---
 
-### States
+### State
 
-**`Enabled`** Neutral appearance, whether empty or filled.
+**`Enabled`** The default interactive state where users can click into the field and begin typing. The field responds to hover, focus, and input events. This represents a fully functional, ready-to-use state.
 
-It allows users to click, focus, and type freely without restrictions.
+**`Hover`** The appearance of the input when the cursor is positioned over the field but hasn't clicked yet. Provides visual feedback that the field is interactive and can be selected. Typically shows subtle styling changes like border color shifts.
 
-**`Hover`** Slight visual contrast or border color change.
+**`Focus`** The active editing state when a user has clicked into the field and can type. The field displays a prominent focus indicator (like a border highlight) to show it's currently selected. This state receives all keyboard input.
 
-**`Focus`** The text input is focused and ready to receive user input.
+**`Loading`** The state shown when the system is processing input-related actions, such as validating data, fetching autocomplete suggestions, or performing real-time checks. Usually displays a loading spinner or progress indicator while preserving the field's content.
 
-It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
+**`Read only`** A view-only state displaying static information that users cannot modify. The field appears with reduced visual emphasis to indicate its non-editable nature. Useful for displaying confirmation details or information that shouldn't be changed.
 
-**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the text input.
+**`Disabled`** An inactive state where the field is visible but completely non-interactive. Typically shown in greyed-out styling to clearly communicate unavailability. Used when a field is not applicable to the current workflow or lacks necessary permissions.
 
-A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
-
-**`Read only`** Text visible but not editable (often with a muted or different background).
-
-**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
-
-**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded.
-
-Uses the "Skeleton" component, variant "Security marge=False".
+**`Skeleton`** A loading placeholder state displayed before actual content loads. Shows an animated shimmer or gradient effect as a temporary visual while waiting for field initialization or data retrieval. Part of the skeleton loading pattern for perceived performance.
 
 ---
 
 ### Error
 
-The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
+**`False`** The field is in a valid state with no validation errors. Displays the standard appearance without any error indicators or messaging. Used when input meets all requirements or hasn't been validated yet.
 
-This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it.
-
-The input remains editable, encouraging users to revise their input without starting over.
-
-**⚠️ Error message vs helper text / link**
-
-The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously. However, a helper link must not be replaced and should remain positioned below the error message.
+**`True`** The validation error state showing that the input doesn't meet requirements. Displays error styling (typically red borders), error messages explaining the issue, and potentially error icons. Used after validation fails to guide users toward correct input. Error messages should be clear, specific, and actionable to help users fix the issue.
 
 ---
 
 ### Leading icon
 
-Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
+**`False`** The input field displays without a leading icon, showing only the text container and label. This is the default configuration for most basic input fields.
+
+**`True`** The input includes a functional icon positioned at the start of the field, before the user's text entry area. Leading icons help users quickly identify the input's purpose (like a search icon for search fields or a lock for password inputs).
 
 ---
 
 ### Trailing action
 
-Used to provide actions related to the field: clear input, toggle password visibility, open a date picker, etc. Can also indicate status or feedback (error checkmark, loading spinner).
+**`False`** The input displays without any trailing action button or icon. This is the standard configuration where the field ends with just the text entry area.
+
+**`True`** The input includes an interactive element (button or icon) positioned at the end of the field, after the text entry area. Common trailing actions include clear/reset buttons, password visibility toggles, or submit/search buttons.
 
 ---
 
 ### Other boolean options
 
-**Autocompletion** Provides suggested values as the user types. Displays inline text predictions within the input field and/or a dropdown menu of predictive options to speed up input and reduce errors.
+**⚠️ Label** Describes the purpose of the input. Includes a warning symbol to indicate this is an important field property with accessibility implications.
 
-**Prefix** A visual or textual element placed before the user's input.
+**Autocompletion** Enables or disables autocomplete suggestions that appear as the user types, offering relevant options based on past inputs or system data.
 
-Commonly used to indicate expected formatting like a country code, a unit...
+**Prefix** Adds a fixed text or symbol before the user's input value (like currency symbols "$" or units "kg"). The prefix remains static while the user types.
 
-**Suffix** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm...).
+**Suffix** Adds a fixed text or symbol after the user's input value (like domain extensions ".com" or percentage symbols "%"). The suffix remains static while the user types.
 
-**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+**Helper text** Displays supplementary guidance below the input field to clarify expected format, provide examples, or offer contextual help. This text supports users in completing the field correctly.
 
-**Helper link** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+**Helper link** Provides a clickable link below the input field that directs users to additional information, documentation, or assistance related to filling out the field.
 
 ---

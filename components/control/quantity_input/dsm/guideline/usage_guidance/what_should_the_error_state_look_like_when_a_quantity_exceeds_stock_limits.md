@@ -1,2 +1,0 @@
-### What should the error state look like when a quantity exceeds stock limits?
-The input displays a red border with an error message below stating the specific issue, such as "Quantity must be between 1 and 99" or "Only 5 items available in stock."

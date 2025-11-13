@@ -2,7 +2,7 @@
 
 ## Intro 👈🤖
 
-A text input enables users to enter or edit single-line text such as names, emails, passwords, or search queries.
+A single-line text input field for capturing user information like names, emails, or search queries.
 
 ---
 
@@ -18,14 +18,14 @@ It provides a visual and interactive affordance for text entry while supporting 
 
 | # | Element | Purpose |
 |---|---------|---------|
-| 1 | Label | Identifies the input's purpose; can be hidden visually but must remain accessible |
-| 2 | Input field | Container where users type, edit, or view text content |
-| 3 | Placeholder | Optional hint text suggesting expected input format or example |
-| 4 | Leading icon | Optional visual indicator of input purpose (search, email, phone) |
-| 5 | Trailing action | Optional interactive element (clear, visibility toggle, picker trigger) |
-| 6 | Helper text/Error message | Supporting guidance or validation feedback below the field |
-| 7 | Prefix/Suffix (combined) | Optional formatting indicators (country code, currency, units) |
-| 8 | Autocompletion | Optional predictive suggestions appearing inline or in dropdown |
+| 1 | Label | Identifies the input's purpose and guides user entry |
+| 2 | Input field | Container for text entry with background and border |
+| 3 | Placeholder | Provides example or hint text within empty field |
+| 4 | Leading icon | Optional icon at start indicating input type or function |
+| 5 | Trailing action | Optional button/icon at end for actions like clear or submit |
+| 6 | Helper text | Supplementary guidance below field explaining format or requirements |
+| 7 | Error message | Validation feedback replacing helper text when errors occur |
+| 8 | Prefix/Suffix | Fixed text/symbol before or after user input (combined) |
 
 ---
 
@@ -33,16 +33,16 @@ It provides a visual and interactive affordance for text entry while supporting 
 
 ### Best for 👈🤔
 
-✅ Single-line text entry such as names, emails, phone numbers, or search terms  
-✅ Fields requiring format indicators like currency codes, units, or country prefixes  
-✅ Inputs benefiting from autocompletion to reduce typing and errors  
-✅ Forms where inline validation provides immediate feedback on correctness  
-✅ Password fields with visibility toggle for security and usability balance  
-✅ Search bars in headers or toolbars requiring lightweight, unobtrusive appearance  
-✅ Read-only fields displaying non-editable information within form context  
-✅ Filter controls in product catalogs or data tables needing compact design  
-✅ Loading states where data retrieval requires temporary input prevention  
-✅ Skeleton loading to improve perceived performance before content appears
+✅ Single-line text data entry (names, addresses, email)  
+✅ Search functionality with real-time filtering  
+✅ Form fields requiring validation feedback  
+✅ Inputs needing contextual icons (search, password visibility)  
+✅ Fields with standard character limits (under 100 characters)  
+✅ Data with specific format requirements (phone, date)  
+✅ Inputs requiring clear/reset functionality  
+✅ Login credentials and authentication fields  
+✅ URL or link entry  
+✅ Numeric inputs with fixed units or symbols
 
 ---
 
@@ -60,113 +60,117 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ---
 
-### Clear purpose through labeling 👈🤔
+### ⚠️ Mandatory field indication
 
-✅ **Do:** Write labels that clearly describe what information users should provide, keeping them visible unless context makes purpose obvious  
-❌ **Don't:** Hide labels in complex forms or rely solely on placeholders, which disappear on input and harm accessibility
+**If all fields are mandatory (several fields present):**
+1. Display the message "All fields are mandatory." at the top.
+2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
+UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
 
-### Strategic icon usage 👈🤔
+**If not all fields are mandatory (several fields present):**
+1. Display the message "All fields marked with an * are mandatory." at the top.
+2. Use an asterisk (*) at the end of each mandatory field label (the word "mandatory" is read aloud instead of the visible asterisk at the end of the label).
+UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
+3. Use the mention "(optional)" at the end of each optional field label. Note that this rule is not systematic—it remains an option, to be used if needed.
 
-✅ **Do:** Add leading icons only when they reinforce field purpose (magnifying glass for search, envelope for email)  
-❌ **Don't:** Use decorative icons that add no functional value or create visual clutter in dense form layouts
-
-### Helper text timing 👈🤔
-
-✅ **Do:** Display helper text persistently when users need format guidance before typing, or show on focus for secondary tips  
-❌ **Don't:** Replace critical formatting instructions with error messages after submission—guide users proactively
-
-### Error message clarity 👈🤔
-
-✅ **Do:** Write error messages that explain what's wrong and how to fix it, replacing helper text but keeping helper links visible  
-❌ **Don't:** Show generic errors like "Invalid input" or display helper text simultaneously with error messages
-
-### Trailing action purpose 👈🤔
-
-✅ **Do:** Provide functional trailing actions like clear input, password toggle, or date picker that directly support data entry  
-❌ **Don't:** Add trailing elements that don't perform actions or create confusion about field interactivity
-
-### Placeholder as enhancement 👈🤔
-
-✅ **Do:** Use placeholders to show input format examples (555-123-4567) while keeping labels visible for field identity  
-❌ **Don't:** Treat placeholders as label replacements or include critical instructions that vanish when users start typing
-
-### Prefix and suffix context 👈🤔
-
-✅ **Do:** Display prefixes/suffixes when formatting context is essential (currency codes, measurement units, country codes)  
-❌ **Don't:** Add prefixes or suffixes that duplicate information already clear from label or create input confusion
-
-### Loading state transparency 👈🤔
-
-✅ **Do:** Show loading indicators when processing takes more than a moment, preventing user interaction during data retrieval  
-❌ **Don't:** Leave fields enabled during loading or fail to communicate that system processing is occurring
-
-### Read-only vs disabled distinction 👈🤔
-
-✅ **Do:** Use read-only for reference data users need to see but can't change; use disabled for truly unavailable fields  
-❌ **Don't:** Disable fields containing important information users need to read or copy
-
-### Autocompletion value 👈🤔
-
-✅ **Do:** Implement autocompletion for predictable inputs like addresses, emails, or common search terms to speed entry  
-❌ **Don't:** Add autocompletion to creative fields requiring unique input or when suggestions would confuse rather than help
+**If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
 ---
 
-### How should I configure a text input for email address entry? 👈🤔
+### Label clarity matters most 👈🤔
 
-Display a label "Email address," an optional leading envelope icon, a placeholder showing format (name@example.com), and helper text noting "We'll use this for account recovery."
+✅ **Do:** Write labels that clearly describe what data is needed without requiring placeholder text to understand the purpose  
+❌ **Don't:** Rely solely on placeholder text to communicate the field's purpose, as placeholders disappear on focus and aren't always accessible
 
-### What should the error state look like when an email format is invalid? 👈🤔
+### Keep helper text concise and actionable 👈🤔
 
-Show red border, error icon as trailing element, and error message "Enter a valid email address like name@example.com" replacing helper text below the field.
+✅ **Do:** Use helper text to provide format examples or requirements that help users succeed ("Use format: +33 6 12 34 56 78")  
+❌ **Don't:** Write long instructional paragraphs in helper text or repeat information already in the label
 
-### How do I display a text input with autocompletion for address entry? 👈🤔
+### Match error messages to actual problems 👈🤔
 
-Include a label "Street address," show placeholder "Start typing your address," and display dropdown suggestions as user types with matching text highlighted in each option.
+✅ **Do:** Provide specific error messages that tell users exactly what's wrong and how to fix it ("Email must include @ symbol")  
+❌ **Don't:** Use generic error messages like "Invalid input" that leave users guessing what went wrong
 
-### How should I configure a password input with visibility toggle? 👈🤔
+### Use leading icons for clarity, not decoration 👈🤔
 
-Show label "Password," use password masking (•••), add eye icon as trailing action to toggle visibility, and include helper text "At least 8 characters with one number."
+✅ **Do:** Add leading icons that reinforce the input type and help users scan forms quickly (search icon for search, lock for password)  
+❌ **Don't:** Use decorative icons that don't add meaning or icons that conflict with the label's message
 
-### What does a loading state look like while validating user input? 👈🤔
+### Position trailing actions where they're expected 👈🤔
 
-Display normal field appearance with loading spinner as trailing element, prevent editing, and show helper text "Checking availability..." below the field.
+✅ **Do:** Place clear/reset actions on the trailing side where users naturally look when they've finished typing  
+❌ **Don't:** Add multiple trailing icons that crowd the field or create confusion about which action to take
 
-### How do I configure a search input for a header navigation? 👈🤔
+### Consider the full user journey 👈🤔
 
-Use outlined variant with transparent background, magnifying glass leading icon, placeholder "Search products," and optional clear button as trailing action when filled.
+✅ **Do:** Show helpful contextual information before errors occur, like character counters approaching limits or format hints while typing  
+❌ **Don't:** Wait until validation fails to inform users about requirements they could have met during entry
 
-### How should I display a currency amount input with prefix? 👈🤔
+### Make success states clear and brief 👈🤔
 
-Show label "Amount," dollar sign prefix before input area, placeholder "0.00," and optional helper text "Minimum $10.00" below the field.
+✅ **Do:** Provide quick visual confirmation when validation passes, then let users move forward without distraction  
+❌ **Don't:** Keep success messages visible so long that they slow down the user's progress through the form
 
-### What's the visual difference between read-only and disabled states? 👈🤔
+### Group related fields logically 👈🤔
 
-Read-only shows normal text color with muted background and no cursor change; disabled uses grayed-out text, muted background, and grayed helper text.
+✅ **Do:** Place related text inputs together with clear section headings and ensure adequate spacing between unrelated groups  
+❌ **Don't:** Mix unrelated inputs together or create visual ambiguity about which fields belong to which section
 
-### How do I configure a phone number input with country code prefix? 👈🤔
+---
 
-Display label "Phone number," country code prefix "+1" before input area, placeholder "555-123-4567," and optional helper text "We'll only contact you about your order."
+### How should I display an empty text input with placeholder text? 👈🤔
 
-### How should skeleton loading appear for a form with multiple text inputs? 👈🤔
+Show the label above the field, placeholder text inside using secondary color, and helper text below to guide format expectations.
 
-Show gray animated placeholder rectangles matching input field dimensions with label positions above, maintaining form layout structure before actual content loads.
+### How should I configure a text input with a search icon and clear button? 👈🤔
+
+Place a search icon as the leading element and a clear/close icon as the trailing action, with a descriptive label and placeholder for the search context.
+
+### What should the error state look like when validation fails? 👈🤔
+
+Display red border, error icon, and replace helper text with a specific error message explaining what's wrong and how to fix it.
+
+### How do I show a text input in focus state during typing? 👈🤔
+
+Apply prominent border highlight, maintain visible label, hide placeholder text, and show any real-time validation feedback in helper text area.
+
+### How should I display a disabled text input that users cannot edit? 👈🤔
+
+Use reduced opacity for the entire field, gray out text and borders, maintain label visibility, and include disabled cursor behavior.
+
+### How do I configure prefix or suffix for currency or unit inputs? 👈🤔
+
+Place fixed text (like "$" or "kg") as prefix before the input area or suffix after, ensuring it remains static while users type their values.
+
+### What should the loading state look like during validation or data fetch? 👈🤔
+
+Display a loading spinner in the trailing area, keep the field in focus appearance, and maintain any entered text visible during processing.
+
+### How should I handle a text input in read-only mode? 👈🤔
+
+Show the field with filled content but reduced visual emphasis, no focus outline on click, and potentially different background color to indicate non-editable state.
+
+### How do I display a text input with both helper text and character counter? 👈🤔
+
+Position helper text on the left side below the field and character count on the right, both in secondary text style with appropriate spacing.
+
+### What's the correct layout for a text input with required field indication? 👈🤔
+
+Place red asterisk (*) immediately after the label text, maintain proper spacing, and include "All fields marked with an * are mandatory" message at form top.
 
 ---
 
 ## Screen Sizes
 
 ### Desktop 👈🤖
-
-Text inputs display at full width within their container or with fixed maximum widths appropriate to expected content length (narrower for zip codes, wider for addresses). Labels appear above fields with helper text below, and all interactive states maintain clear visual affordances at standard mouse pointer sizes.
+Text inputs display at full width within their container with comfortable touch targets and clear spacing for labels, helper text, and error messages.
 
 ### Tablet 👈🤖
-
-Text inputs adapt to available space, typically using full-width layouts in portrait orientation while potentially using side-by-side layouts in landscape for shorter fields. Touch targets for trailing actions increase slightly, and on-screen keyboards appear automatically on focus without obscuring the field.
+Inputs maintain similar layout to desktop but may adjust width to fit multi-column forms, ensuring touch targets remain accessible and icons stay proportional.
 
 ### Mobile 👈🤖
-
-Text inputs use full-width layouts to maximize touch targets and readability, with increased padding for finger-friendly interaction. Labels remain above fields, helper text appears below, and the mobile keyboard optimizes to input type (email, number, URL) while the viewport adjusts to keep the focused field visible above the keyboard.
+Text inputs stack vertically at full width to maximize typing area, with increased touch target sizes for icons and appropriately sized fonts for readability on smaller screens.
 
 ---
 
@@ -178,29 +182,27 @@ Text inputs use full-width layouts to maximize touch targets and readability, wi
 
 | Property | Default Value | Notes |
 |----------|---------------|-------|
-| Outlined | False | Subtle background with bottom border creates contained appearance; True provides transparent background with stroke outline |
-| Rounded corner | False | Square corners for standard contexts; True for brand-specific or emotional contexts |
-| Input status | Empty | Neutral starting state with no content or placeholder text |
-| State | Enabled | Field is interactive and ready for user input |
-| Error | False | No validation error present; True displays error styling and message |
-| Leading icon | False | No icon displayed before input area |
-| Trailing action | False | No interactive element after input area |
-| ⚠️ Label | True (boolean) | Label is displayed by default; hide only when context makes purpose obvious |
-| Autocompletion | False | Predictive suggestions disabled by default |
-| Prefix | False | No formatting element before user input |
-| Suffix | False | No formatting element after user input |
-| Helper text | False | Supporting guidance text not displayed by default |
-| Helper link | False | Additional help link not displayed by default |
+| Outlined | False | Uses filled style with background and bottom border by default |
+| Rounded corner | False | Square corners are standard unless context requires rounded appearance |
+| Input status | Empty | Field starts empty without placeholder unless explicitly configured |
+| State | Enabled | Interactive and ready for user input in default state |
+| Error | False | No validation error displayed initially |
+| Leading icon | False | No icon shown at start of field unless needed for context |
+| Trailing action | False | No action button or icon at end unless functionality required |
+| ⚠️ Label | True | Label is visible by default for accessibility and clarity |
+| Autocompletion | False | Browser autocomplete disabled unless explicitly enabled |
+| Prefix | False | No fixed text before input area unless needed for currency/units |
+| Suffix | False | No fixed text after input area unless needed for units/domains |
+| Helper text | False | No supplementary guidance shown unless needed for format hints |
+| Helper link | False | No clickable help link included unless additional resources needed |
 
 ---
 
 ### Outlined
 
-**`False`** An input with a subtle background fill and visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
+**`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
-**`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
-
-This style may be interesting for contexts other than form pages:
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
 • When inputs need to feel lightweight and unobtrusive
 • In a header (search field)
 • In a selection/filtering feature in a product catalog
@@ -209,89 +211,80 @@ This style may be interesting for contexts other than form pages:
 
 ### Rounded corner
 
-**`False`** For a square finish.
+**`False`** An input without rounded corner.
 
-**`True`** For a finish with rounded corner.
-
-To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+**`True`** An input with a rounded corner. This style may be interesting for contexts other than form pages:
+• When inputs need to feel lightweight and unobtrusive
+• In a header (search field)
+• In a selection/filtering feature in a product catalog
 
 ---
 
 ### Input status
 
-**`Empty`** The Empty state indicates that the text input is blank with no content or placeholder, a neutral starting point.
+**`Empty`** An empty input field state with no user-entered content and no placeholder text. Represents the initial state when a form first loads.
 
-**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
+**`Empty (Placeholder)`** An empty field displaying placeholder text to guide users on the expected input format or purpose. The placeholder disappears when the user starts typing.
 
-**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
+**`Filled`** A field containing user-entered text or pre-populated data. This state indicates that the field has been successfully engaged with and contains information.
 
 ---
 
-### States
+### State
 
-**`Enabled`** Neutral appearance, whether empty or filled.
+**`Enabled`** The default interactive state where users can click into the field and begin typing. The field responds to hover, focus, and input events. This represents a fully functional, ready-to-use state.
 
-It allows users to click, focus, and type freely without restrictions.
+**`Hover`** The appearance of the input when the cursor is positioned over the field but hasn't clicked yet. Provides visual feedback that the field is interactive and can be selected. Typically shows subtle styling changes like border color shifts.
 
-**`Hover`** Slight visual contrast or border color change.
+**`Focus`** The active editing state when a user has clicked into the field and can type. The field displays a prominent focus indicator (like a border highlight) to show it's currently selected. This state receives all keyboard input.
 
-**`Focus`** The text input is focused and ready to receive user input.
+**`Loading`** The state shown when the system is processing input-related actions, such as validating data, fetching autocomplete suggestions, or performing real-time checks. Usually displays a loading spinner or progress indicator while preserving the field's content.
 
-It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
+**`Read only`** A view-only state displaying static information that users cannot modify. The field appears with reduced visual emphasis to indicate its non-editable nature. Useful for displaying confirmation details or information that shouldn't be changed.
 
-**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the text input.
+**`Disabled`** An inactive state where the field is visible but completely non-interactive. Typically shown in greyed-out styling to clearly communicate unavailability. Used when a field is not applicable to the current workflow or lacks necessary permissions.
 
-A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
-
-**`Read only`** Text visible but not editable (often with a muted or different background).
-
-**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
-
-**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded.
-
-Uses the "Skeleton" component, variant "Security marge=False".
+**`Skeleton`** A loading placeholder state displayed before actual content loads. Shows an animated shimmer or gradient effect as a temporary visual while waiting for field initialization or data retrieval. Part of the skeleton loading pattern for perceived performance.
 
 ---
 
 ### Error
 
-The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
+**`False`** The field is in a valid state with no validation errors. Displays the standard appearance without any error indicators or messaging. Used when input meets all requirements or hasn't been validated yet.
 
-This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it.
-
-The input remains editable, encouraging users to revise their input without starting over.
-
-**⚠️ Error message vs helper text / link**
-
-The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously. However, a helper link must not be replaced and should remain positioned below the error message.
+**`True`** The validation error state showing that the input doesn't meet requirements. Displays error styling (typically red borders), error messages explaining the issue, and potentially error icons. Used after validation fails to guide users toward correct input. Error messages should be clear, specific, and actionable to help users fix the issue.
 
 ---
 
 ### Leading icon
 
-Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
+**`False`** The input field displays without a leading icon, showing only the text container and label. This is the default configuration for most basic input fields.
+
+**`True`** The input includes a functional icon positioned at the start of the field, before the user's text entry area. Leading icons help users quickly identify the input's purpose (like a search icon for search fields or a lock for password inputs).
 
 ---
 
 ### Trailing action
 
-Used to provide actions related to the field: clear input, toggle password visibility, open a date picker, etc. Can also indicate status or feedback (error checkmark, loading spinner).
+**`False`** The input displays without any trailing action button or icon. This is the standard configuration where the field ends with just the text entry area.
+
+**`True`** The input includes an interactive element (button or icon) positioned at the end of the field, after the text entry area. Common trailing actions include clear/reset buttons, password visibility toggles, or submit/search buttons.
 
 ---
 
 ### Other boolean options
 
-**Autocompletion** Provides suggested values as the user types. Displays inline text predictions within the input field and/or a dropdown menu of predictive options to speed up input and reduce errors.
+**⚠️ Label** Describes the purpose of the input. Includes a warning symbol to indicate this is an important field property with accessibility implications.
 
-**Prefix** A visual or textual element placed before the user's input.
+**Autocompletion** Enables or disables autocomplete suggestions that appear as the user types, offering relevant options based on past inputs or system data.
 
-Commonly used to indicate expected formatting like a country code, a unit...
+**Prefix** Adds a fixed text or symbol before the user's input value (like currency symbols "$" or units "kg"). The prefix remains static while the user types.
 
-**Suffix** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm...).
+**Suffix** Adds a fixed text or symbol after the user's input value (like domain extensions ".com" or percentage symbols "%"). The suffix remains static while the user types.
 
-**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+**Helper text** Displays supplementary guidance below the input field to clarify expected format, provide examples, or offer contextual help. This text supports users in completing the field correctly.
 
-**Helper link** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+**Helper link** Provides a clickable link below the input field that directs users to additional information, documentation, or assistance related to filling out the field.
 
 ---
 
@@ -299,79 +292,79 @@ Commonly used to indicate expected formatting like a country code, a unit...
 
 ## Accessibility intro
 
-Text inputs must ensure WCAG 2.2 Level AA compliance through proper labeling, keyboard operability, clear error identification, and sufficient contrast for all states. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+Text inputs must meet WCAG 2.2 Level AA requirements for keyboard operability, clear labeling, visible focus indicators, and accessible error messaging. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
 
 ---
 
 ## Accessibility Challenges
 
-Text inputs are deceptively complex from an accessibility perspective because they combine multiple interactive elements (field, icons, buttons), dynamic states (empty, filled, error, loading), and critical form semantics that must be correctly communicated to assistive technologies. The challenge intensifies when labels are hidden, errors appear dynamically, or autocompletion introduces live updates that screen readers must announce appropriately.
+Text inputs present accessibility challenges because they require clear purpose identification, keyboard navigation, visible focus indication, meaningful error communication, and proper state announcements for users who cannot see visual cues or use a mouse.
 
 ### Key Challenges
-- **Label visibility vs. accessibility**: Hidden labels require correct ARIA implementation to remain discoverable by screen readers
-- **Dynamic error communication**: Error messages must be programmatically associated and announced immediately without disrupting user flow
-- **Multi-element coordination**: Leading icons, trailing actions, prefixes, and suffixes must not confuse assistive technology navigation
-- **State change announcements**: Loading, validation, and autocompletion updates must be communicated via live regions without overwhelming users
+- Labels must remain visible and programmatically associated with inputs to communicate purpose
+- Error messages need both visual and programmatic connection to failed inputs for screen reader users
+- Focus indicators must maintain sufficient contrast across all states and themes
+- Dynamic content changes (loading, error states) require live region announcements
 
 ### Critical Success Factors
-1. **Proper labeling structure** with visible or ARIA-labeled alternatives that clearly identify field purpose (WCAG 3.3.2)
-2. **Explicit error association** using `aria-describedby` to link validation messages and `aria-invalid` to mark error state (WCAG 3.3.1)
-3. **Keyboard operability** for all interactive elements including trailing actions and autocompletion selection (WCAG 2.1.1)
-4. **Focus visibility** with ≥3:1 contrast focus indicators on all states (WCAG 2.4.7)
+1. Visible and persistent labels with proper `for`/`id` associations (WCAG 3.3.2)
+2. Error messages linked via `aria-describedby` and identified in text (WCAG 3.3.1)
+3. Focus visible with ≥3:1 contrast ratio against background (WCAG 2.4.7)
+4. All functionality keyboard-accessible without timing requirements (WCAG 2.1.1)
 
 ---
 
 ## Design Requirements
 
 ### Structure & Labels
-- [ ] **Label association**: Every text input must have a label element properly associated via `for`/`id` or contain label text ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Hidden label accessibility**: When labels are visually hidden, provide `aria-label` or `aria-labelledby` referencing visually-hidden text ([Orange ARIA Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/))
-- [ ] **Helper text linkage**: Connect helper text and error messages to input using `aria-describedby` for screen reader announcement
+- [ ] **Visible label required**: Always display label text above or beside input, never rely solely on placeholder ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
+- [ ] **Label association**: Ensure label `for` attribute matches input `id` for screen reader connection
+- [ ] **Required field indication**: Use both asterisk (*) and explanatory text at form top for mandatory fields
 
 ### Visual Design
-- [ ] **Focus indicator contrast**: Focus state border/outline must have ≥3:1 contrast against adjacent colors ([Orange Color Contrast](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/))
-- [ ] **Text contrast ratios**: Input text ≥4.5:1, placeholder text ≥4.5:1, disabled text ≥3:1 against backgrounds
-- [ ] **Interactive target size**: Touch/click targets for trailing actions and icons must be ≥44×44 CSS pixels on mobile
+- [ ] **Focus indicator contrast**: Focus outline must have ≥3:1 contrast ratio against background ([Orange Focus Visible](https://a11y-guidelines.orange.com/en/web/design/focus-visible/))
+- [ ] **Error state distinction**: Red error borders alone insufficient—include error icon and text message
+- [ ] **Touch target size**: Minimum 44×44px touch target for mobile including icons and trailing actions
 
 ### Content
-- [ ] **Error message quality**: ❌ "Invalid" / ✅ "Enter a valid email address like name@example.com" ([Orange Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Placeholder limitations**: Placeholders show examples only; critical instructions belong in labels or helper text
+- [ ] **Clear error messages**: ❌ "Invalid input" / ✅ "Email must include @ symbol" ([Orange Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
+- [ ] **Helper text clarity**: Provide format examples in helper text before validation, not just error messages after
 
 ---
 
 ## Testing Checklist
 
 ### Screen Reader Testing
-- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) verifying label announcement, current value reading, state communication, helper text/error message reading, and autocompletion option announcement
-- [ ] Verify hidden labels are announced, error states trigger immediate notification, and loading states communicate processing
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) to verify labels announced correctly, error messages read when present, helper text available, state changes communicated
+- [ ] Verify placeholder text does not replace label announcements and required field status is indicated
 
 ### Keyboard Testing
-- [ ] Tab reaches input, focus visible (≥3:1), trailing actions keyboard-accessible (Tab or arrow keys), autocompletion navigable (arrow keys), selection via Enter/Space
-- [ ] Verify no keyboard traps, Escape clears autocompletion, and all functionality operable without mouse
+- [ ] Tab navigation focuses input, Enter submits form (if applicable), Escape clears focus—all functionality keyboard-accessible
+- [ ] Verify focus visible with ≥3:1 contrast across all states (enabled, hover, error)
 
 ### Paste Testing
-- [ ] Paste via Ctrl+V/Cmd+V works correctly, pasted content announced to screen readers, validation triggered appropriately
+- [ ] Paste functionality works correctly and announces changes to screen readers when content is pasted
 
-Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/toolbox/methods-and-test-tools/)
+Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
 
 ---
 
 ## Key WCAG Criteria
 
-- **2.1.1 Keyboard** (A): All input functionality, trailing actions, and autocompletion operable via keyboard without timing requirements
-- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast on input field and all interactive elements
-- **3.3.1 Error Identification** (A): Errors identified in text, associated with inputs via `aria-describedby`, and marked with `aria-invalid="true"`
-- **3.3.2 Labels or Instructions** (A): Labels provided for all inputs, visible or available via ARIA, with sufficient instructions for expected format
-- **4.1.2 Name, Role, Value** (A): Correct semantic HTML (`<input>`, `<label>`) and ARIA attributes communicate states (error, loading, disabled) to assistive technology
+- **2.1.1 Keyboard** (A): All text input functionality operable via keyboard without timing requirements, including focus, typing, clearing, and form submission
+- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast ratio maintained across all input states and color schemes
+- **3.3.1 Error Identification** (A): Errors identified in text and associated with specific inputs via `aria-describedby` referencing error message ID
+- **3.3.2 Labels or Instructions** (A): Visible labels provided for all inputs with programmatic association via `for`/`id` attributes, never hidden or replaced by placeholders
+- **4.1.2 Name, Role, Value** (A): Semantic `<input>` elements with correct `type` attributes and ARIA attributes (`aria-invalid`, `aria-describedby`, `aria-required`) communicate state changes
 
-For complete reference: [Orange Accessibility Guidelines - WCAG Criteria](https://a11y-guidelines.orange.com/en/web/components-examples/)
+For complete reference: [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
 
 ---
 
 ## Additional Resources
 
 - [Orange Accessibility Guidelines - Forms Examples](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
-- [Orange Accessibility Guidelines - Accessible Hiding](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/)
-- [WCAG 2.2 Understanding - Input Purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)
+- [WCAG 2.2 Understanding Docs - Input Purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)
 - [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
-- [Orange Color and Contrast Guidelines](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/)
+- [Orange Focus Visible Guidelines](https://a11y-guidelines.orange.com/en/web/design/focus-visible/)
+- [Orange Error Message Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
