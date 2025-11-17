@@ -25,6 +25,7 @@ While the primary goal is to enhance privacy and security, the field may also in
 | 5 | Password visibility toggle | Allows users to reveal or hide password characters |
 | 6 | Helper text | Provides guidance on password requirements or constraints |
 | 7 | Error message | Displays validation feedback when password is incorrect or invalid |
+| 8 | Error message | Displays validation feedback when password is incorrect or invalid |
 
 ---
 
