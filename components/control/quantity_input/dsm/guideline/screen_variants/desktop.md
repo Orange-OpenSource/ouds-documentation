@@ -1,2 +1,0 @@
-### Desktop
-The component displays at full size with clear clickable buttons and comfortable spacing for mouse interactions. Labels and helper text are fully visible with adequate spacing between elements.

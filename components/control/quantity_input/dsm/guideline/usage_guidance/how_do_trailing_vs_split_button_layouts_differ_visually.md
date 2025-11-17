@@ -1,2 +1,0 @@
-### How do trailing vs. split button layouts differ visually?
-Trailing layout places both increment and decrement buttons vertically stacked on the right side, while split layout positions the decrement button on the left and increment button on the right, flanking the input field horizontally.
