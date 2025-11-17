@@ -1,6 +1,6 @@
 # Guideline
 
-## Intro 👈🤖
+## Intro
 
 A password input securely captures confidential passwords while masking characters to protect privacy from nearby observers.
 
@@ -14,35 +14,26 @@ While the primary goal is to enhance privacy and security, the field may also in
 
 ---
 
-## Anatomy 👈🤖
+## Anatomy
 
 | # | Element | Purpose |
 |---|---------|---------|
 | 1 | Label | Identifies the field purpose and maintains accessibility |
 | 2 | Leading icon | Provides visual context for password entry (optional) |
 | 3 | Input container | Houses prefix, masked password text, and placeholder |
-| 4 | Prefix text | Displays fixed prefix before user input (rare use cases) |
-| 5 | Password visibility toggle | Allows users to reveal or hide password characters |
-| 6 | Helper text | Provides guidance on password requirements or constraints |
-| 7 | Error message | Displays validation feedback when password is incorrect or invalid |
-| 8 | Error message | Displays validation feedback when password is incorrect or invalid |
+| 4 | Password visibility toggle | Allows users to reveal or hide password characters |
+| 5 | Helper text | Provides guidance on password requirements or constraints |
 
 ---
 
 ## Usage & Guidance
 
-### Best for 👈🤔
+### Best for
 
 ✅ User authentication and login scenarios
 ✅ Account creation requiring new password input
 ✅ Password change or reset flows
 ✅ Secure credential management interfaces
-✅ Multi-factor authentication workflows
-✅ Administrative access requiring elevated permissions
-✅ Encrypted data access requiring password verification
-✅ Mobile applications with auto-fill capabilities
-✅ Forms requiring password confirmation fields
-✅ Security-sensitive operations requiring re-authentication
 
 ---
 
@@ -60,111 +51,31 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ---
 
-### Label visibility 👈🤔
-
-✅ **Do:** Always provide a visible label for password inputs to clearly identify the field's purpose  
-❌ **Don't:** Hide labels unless the context is unmistakably clear and screen reader access is maintained
-
-### Password visibility toggle placement 👈🤔
-
-✅ **Do:** Position the show/hide toggle as a trailing action within the input field for easy discovery  
-❌ **Don't:** Place the toggle outside the input container where it may be overlooked or confusing
-
-### Helper text for password requirements 👈🤔
-
-✅ **Do:** Display password requirements in helper text before users begin typing to set clear expectations  
-❌ **Don't:** Wait until validation fails to inform users about password criteria
-
-### Error messaging clarity 👈🤔
-
-✅ **Do:** Provide specific error messages explaining why a password is invalid (e.g., "Password must include at least one number")  
-❌ **Don't:** Use vague errors like "Invalid password" that don't guide users toward a solution
-
-### Password confirmation patterns 👈🤔
-
-✅ **Do:** Place password and confirm password fields adjacent to each other in account creation flows  
-❌ **Don't:** Separate password fields across multiple steps, forcing users to remember their initial entry
-
-### Mobile keyboard optimization 👈🤔
-
-✅ **Do:** Ensure password fields trigger appropriate mobile keyboards with quick access to special characters  
-❌ **Don't:** Force users to switch keyboard layouts repeatedly to enter complex passwords
-
-### Prefix usage restraint 👈🤔
-
-✅ **Do:** Only use prefixes in highly specific scenarios like environment identifiers (dev-, test-, admin-)  
-❌ **Don't:** Add prefixes to standard password fields as they serve no purpose and confuse users
-
-### Context for password resets 👈🤔
-
-✅ **Do:** Clearly indicate when users are creating a new password versus entering an existing one  
-❌ **Don't:** Use ambiguous labels that don't distinguish between new password creation and authentication
-
-### Password strength indicators 👈🤔
-
-✅ **Do:** Consider showing password strength feedback in helper text during account creation  
-❌ **Don't:** Show strength indicators during login where they provide no value
-
-### Leading icon purposefulness 👈🤔
-
-✅ **Do:** Use leading icons sparingly and only when they add meaningful context (lock icon for security)  
-❌ **Don't:** Add decorative icons that clutter the interface without improving understanding
-
----
-
-### How should I display labels and helper text for a login password field? 👈🤔
+### How should I display labels and helper text for a login password field?
 
 Use "Password" as the label with no helper text, since users already know their password and don't need creation guidance.
 
-### What should the error state look like when a password is incorrect during login? 👈🤔
+### What should the error state look like when a password is incorrect during login?
 
 Display a red border with an error message stating "Incorrect password. Please try again" below the field, with the password cleared for re-entry.
 
-### How do I configure the password visibility toggle in different states? 👈🤔
-
-The toggle appears as a trailing action button with an eye icon (closed eye when hidden, open eye when visible), maintaining visibility across enabled, hover, and focus states.
-
-### What's the visual difference between a new password field and a confirmation password field? 👈🤔
+### What's the visual difference between a new password field and a confirmation password field?
 
 Use "Create password" for the first field and "Confirm password" for the second, both with identical styling and helper text showing requirements only on the first field.
-
-### How should I display password requirements in helper text for account creation? 👈🤔
-
-Show all requirements in a single helper text line (e.g., "Password must be 8-20 characters with at least one number and one special character") before users begin typing.
-
-### What should the loading state look like during password verification? 👈🤔
-
-Display a loading spinner in place of the visibility toggle button while maintaining the field in a disabled-like state with existing input visible.
-
-### How do I show password strength feedback during creation? 👈🤔
-
-Update helper text dynamically to show strength (e.g., "Weak", "Medium", "Strong") along with specific improvement suggestions based on current input.
-
-### What's the proper configuration for a password reset field? 👈🤔
-
-Use "New password" as the label with helper text showing all requirements, followed by a "Confirm new password" field with matching styling.
-
-### How should I display a prefix in specialized password scenarios? 👈🤔
-
-Place the prefix (e.g., "admin-") before the password input with subtle styling to distinguish it from user-entered text, only in environment-specific contexts.
-
-### What should the disabled state look like for read-only password fields? 👈🤔
-
-Show a grayed-out field with dots representing the masked password, no visibility toggle, and muted label/helper text to indicate it cannot be modified.
 
 ---
 
 ## Screen Sizes
 
-### Desktop 👈🤖
+### Desktop
 
-Password inputs maintain full width within their container with ample padding for comfortable interaction. The visibility toggle and leading icons are clearly sized at 24px for easy mouse-based interaction, with helper text displayed in a readable 14px font below the field.
+Password inputs maintain full width within their container with ample padding for comfortable interaction.
 
-### Tablet 👈🤖
+### Tablet
 
-Components adapt to tablet viewports by maintaining their desktop sizing, ensuring touch targets remain at least 44x44px for the visibility toggle button. Labels and helper text retain their desktop proportions for readability across various tablet orientations.
+Components adapt to tablet viewports by maintaining their desktop sizing. Labels and helper text retain their desktop proportions for readability across various tablet orientations.
 
-### Mobile 👈🤖
+### Mobile
 
 On mobile devices, password inputs expand to full container width with increased touch target sizes for the visibility toggle (minimum 44x44px). Helper text may wrap to multiple lines when needed, and mobile keyboards automatically configure for password entry with appropriate character access.
 
@@ -266,7 +177,7 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 
 ---
 
-# Accessibility 👈🤖
+# Accessibility
 
 ## Accessibility intro
 
