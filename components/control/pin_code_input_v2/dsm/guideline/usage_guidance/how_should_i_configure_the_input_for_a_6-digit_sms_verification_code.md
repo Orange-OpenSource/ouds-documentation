@@ -1,2 +1,0 @@
-### How should I configure the input for a 6-digit SMS verification code?
-Set Length to 6, enable Helper text with instructions like "Enter the code sent to your phone," and use the default non-outlined style with standard corners.
