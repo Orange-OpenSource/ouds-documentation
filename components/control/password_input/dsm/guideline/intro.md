@@ -1,0 +1,1 @@
+A password input securely captures confidential passwords while masking characters to protect privacy from nearby observers.

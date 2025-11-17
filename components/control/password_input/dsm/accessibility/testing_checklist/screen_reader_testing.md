@@ -1,0 +1,3 @@
+### Screen Reader Testing
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) to verify label announces field as "password", helper text reads before entry, error messages announce on validation failure, visibility toggle state changes announce clearly
+- [ ] Verify password characters announce as "dot" or "bullet" when masked, actual characters when visible, paste operations announce success

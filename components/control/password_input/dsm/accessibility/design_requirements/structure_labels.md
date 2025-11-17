@@ -1,0 +1,4 @@
+### Structure & Labels
+- [ ] **Persistent label**: Visible label remains above or beside the field at all times, programmatically associated via `for`/`id` attributes ([Orange: Labels](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
+- [ ] **Password visibility toggle**: Trailing button with clear icon states (eye/eye-slash) and `aria-label` describing current state (e.g., "Show password" or "Hide password")
+- [ ] **Helper text association**: Use `aria-describedby` to link helper text explaining password requirements to the input field ([Orange: Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
