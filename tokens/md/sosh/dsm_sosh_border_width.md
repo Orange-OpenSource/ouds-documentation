@@ -1,12 +1,12 @@
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
-| ouds.border.width.default | core-ouds.border.width.50 | 2px |
-| ouds.border.width.focus | core-ouds.border.width.125 | 5px |
-| ouds.border.width.focus-inset | core-ouds.border.width.50 | 2px |
-| ouds.border.width.medium | core-ouds.border.width.50 | 2px |
 | ouds.border.width.none | core-ouds.border.width.0 | 0px |
+| ouds.border.width.default | core-ouds.border.width.50 | 2px |
+| ouds.border.width.thin | core-ouds.border.width.25 | 1px |
+| ouds.border.width.medium | core-ouds.border.width.75 | 3px |
 | ouds.border.width.thick | core-ouds.border.width.100 | 4px |
 | ouds.border.width.thicker | core-ouds.border.width.150 | 6px |
-| ouds.border.width.thin | core-ouds.border.width.25 | 1px |
+| ouds.border.width.focus | core-ouds.border.width.125 | 5px |
+| ouds.border.width.focus-inset | core-ouds.border.width.50 | 2px |
 
-<br>Tokens versions: sys.sosh: 2.0.1 - core.ouds: 1.7.0 - core.sosh: 1.2.0
+<br>Tokens versions: sys.sosh: 2.2.0 - core.ouds: 1.9.0 - core.sosh: 1.2.0
