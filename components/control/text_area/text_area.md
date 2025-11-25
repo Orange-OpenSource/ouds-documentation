@@ -1,6 +1,6 @@
 # Guideline
 
-## Intro 👈🤖
+## Intro
 
 Multi-line text area that allows users to enter detailed text like comments or feedback, with features for character limits, auto-expansion, and error validation.
 
@@ -14,7 +14,7 @@ It typically includes features like a visible label, placeholder text, character
 
 ---
 
-## Best for 👈🤔
+## Best for
 
 ✅ Open-ended feedback collection requiring detailed responses
 
@@ -38,7 +38,7 @@ It typically includes features like a visible label, placeholder text, character
 
 ---
 
-## Anatomy 👈🤖
+## Anatomy
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
@@ -362,7 +362,7 @@ The user must reduce the number of characters entered for the text area to exit 
 
 ---
 
-# Accessibility 👈🤖
+# Accessibility
 
 ## Accessibility intro
 
