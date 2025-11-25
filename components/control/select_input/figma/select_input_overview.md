@@ -1,8 +1,4 @@
-# Select Input - Definition & Properties
-
----
-
-### Definition
+## Definition
 
 A select input is a form component that allows users to choose one (or sometimes multiple) options from a predefined list. It is typically rendered as a dropdown menu that displays available choices when interacted with, either by click or keyboard navigation.
 
@@ -10,57 +6,7 @@ This component is used when the number of choices is limited and known in advanc
 
 ---
 
-### Properties
-
-| property name | type |
-|---------------|------|
-| Outlined | 'False' \| 'True' |
-| Rounded corner | 'False' \| 'True' |
-| Input status | 'Empty' \| 'Filled' |
-| State | 'Enabled' \| 'Hover' \| 'Focus' \| 'Expanded' \| 'Loading' \| 'Read only' \| 'Disabled' \| 'Skeleton' |
-| Error | 'False' \| 'True' |
-| Leading icon | 'False' \| 'True' |
-| ⚠️ Label | boolean |
-| ✏️ Label | text |
-| ✏️ Input text | text |
-| Combobox | boolean |
-| Autocompletion | boolean |
-| ✏️ Autocompletion | text |
-| Helper text | boolean |
-| ✏️ Helper text | text |
-| ✏️ Error empty text | text |
-| ✏️ Error filled text | text |
-| Helper link | boolean |
-
----
-
-### Initial settings
-
-**Outlined** Off
-
-**Rounded corner** Off
-
-**Input status** Empty
-
-**State** Enabled
-
-**Error** Off
-
-**Leading icon** Off
-
-**⚠️ Label** On
-
-**Combobox** Off
-
-**Autocompletion** Off
-
-**Helper text** Off
-
-**Helper link** Off
-
----
-
-### Outlined
+## Outlined
 
 **`False`** An input with a subtle background fill and un visible bottom border.
 
@@ -73,7 +19,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Rounded corner
+## Rounded corner
 
 **`False`** A subtle and minimal style (neutral input border)
 
@@ -81,7 +27,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Input status
+## Input status
 
 **`Empty`** By default, a select input is open with label, no input text, dropdown closed, and no helper text displayed below.
 
@@ -89,7 +35,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### State
+## States
 
 **`Enabled`** Default state: the input is ready for interaction.
 
@@ -109,7 +55,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Error
+## Error
 
 An error is used to provide real-time feedback when the select input is in an invalid state:
 
@@ -129,27 +75,45 @@ An error is used to provide real-time feedback when the select input is in an in
 
 ---
 
-### Leading icon
+## Leading icon
 
 Conveys the nature or purpose of the select input field at a glance.
 
 ---
 
-### Helper text
+## ⚠️ Label
 
-Information displayed below the select input field to provide guidance or context to the user (explanatory text, tips, additional details, guidance on the expected format).
+Describes the purpose of the input. Why hide a select input label?
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
+However, hiding the label should only be done if:
+• The purpose of the input remains clear thanks to a contextual icon.
+• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
-**Examples of helper text:**
-• Indicate the maximum character limit for a text field: "You have 180 characters remaining."
-• Offer tips on format requirements: "Your password must contain at least 8 characters, including a number and a special character."
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
-**Helper text on error:**
-• When in error state, helper text becomes error text.
+---
 
-Helper text is used to provide additional information at the right time, without overcrowding the interface.
+## Other boolean options
 
-Helper text is different from placeholder text:
-• Helper text remains visible before, during, and after text entry.
-• Placeholder text disappears when typing.
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+
+**`Helper link`** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+
+---
+
+## ⚠️ Mandatory field indication
+
+**If all fields are mandatory (several fields present):**
+1. Display the message "All fields are mandatory." at the top.
+2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
+UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
+
+**If not all fields are mandatory (several fields present):**
+1. Display the message "All fields marked with an * are mandatory." at the top.
+2. Use an asterisk (*) at the end of each mandatory field label (the word "mandatory" is read aloud instead of the visible asterisk at the end of the label).
+UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
+3. Use the mention "(optional)" at the end of each optional field label. Note that this rule is not systematic—it remains an option, to be used if needed.
+
+**If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
 ---

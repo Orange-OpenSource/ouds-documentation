@@ -1,5 +1,3 @@
-# PIN code input - Changelog
-
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
 | Sep 30, 2025 | 1.2.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |

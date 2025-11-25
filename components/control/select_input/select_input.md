@@ -2,51 +2,223 @@
 
 ## Intro 👈🤖
 
-A dropdown menu component that allows users to choose one option from a predefined list of standardized values.
+A select input lets users choose a single option from a predefined list displayed in a dropdown menu.
 
 ---
 
-## Description
+## Definition
 
 A select input is a form component that allows users to choose one (or sometimes multiple) options from a predefined list. It is typically rendered as a dropdown menu that displays available choices when interacted with, either by click or keyboard navigation.
 
-This component is used when the number of choices is limited and known in advance and when users should select from controlled or standardized values.
+This component is used when the number of choices is limited and known in advance and when users should select from controlled or standardized values
+
+---
+
+## Best for 👈🤔
+
+✅ Selecting from 5-15 predefined options in a form
+
+✅ Choosing standardized values where custom input is not needed
+
+✅ Space-constrained interfaces where radio buttons would create clutter
+
+✅ Sorting or filtering content by a single criterion
+
+✅ Mobile-optimized forms leveraging native device selectors
+
+✅ Data entry requiring controlled, validated selections
+
+✅ Settings panels with multiple configuration options
+
+✅ Forms where all options need not be immediately visible
+
+✅ Location, date format, or category selection
+
+✅ Small-screen interfaces requiring compact input controls
 
 ---
 
 ## Anatomy 👈🤖
 
-| # | Element | Purpose |
-|---|---------|---------|
-| 1 | Label | Identifies the purpose and content expected in the select field |
-| 2 | Leading icon (optional) | Provides visual context about the input field's purpose or category |
-| 3 | Input field | Contains the selected option text or placeholder, indicating the current selection state |
-| 4 | Dropdown indicator | Shows that additional options are available and indicates the expanded/collapsed state |
-| 5 | Helper text (optional) | Provides additional guidance, format requirements, or contextual information |
-| 6 | Error text (conditional) | Replaces helper text to display specific validation error messages |
-| 7 | Dropdown menu | Displays the list of available options when expanded |
-| 8 | Option items | Individual selectable choices within the dropdown menu |
+| # | Element | Purpose | Optional |
+|---|---------|---------|----------|
+| 1 | Label | Identifies the purpose of the select input | N |
+| 2 | Input container | Clickable area that triggers the dropdown menu | N |
+| 3 | Selected value | Displays the currently chosen option or placeholder text | N |
+| 4 | Chevron icon | Visual indicator that the field opens a dropdown | N |
+| 5 | Helper text | Provides additional guidance about the selection | Y |
+| 6 | Error message | Communicates validation issues to the user | Y |
+| 7 | Leading icon | Conveys the input's purpose or category at a glance | Y |
+| 8 | Helper link | Offers additional help when helper text is insufficient | Y |
 
 ---
 
-## Usage & Guidance
+## Outlined
 
-### Best for 👈🤔
+**`False`** An input with a subtle background fill and un visible bottom border.
 
-✅ Selecting from a predefined list of 5-15 standardized options (countries, languages, categories)
-✅ Form fields requiring controlled vocabulary to ensure data consistency
-✅ Situations where users need to see all available options before choosing
-✅ Single-selection scenarios where radio buttons would take too much space
-✅ Filter controls in product catalogs, search interfaces, or data tables
-✅ Settings and configuration screens with multiple discrete choices
-✅ Mobile interfaces where dropdown behavior is native and familiar
-✅ Location selection (city, region, timezone) where options are predefined
-✅ Date components (month, year selection) within date pickers
-✅ Status or category assignment in forms and workflows
+**`True`** A minimalist input with a transparent background and visible stroke.
+
+This style may be interesting for contexts other than form pages:
+• When inputs need to feel lightweight and unobtrusive
+• In a header (search field)
+• In a selection/filtering feature in a product catalog
+
+### Do & don'ts
+
+✅ **Do:** Use outlined style for inputs in non-form contexts like toolbars, headers, or filters where visual weight needs to be minimal
+
+❌ **Don't:** Mix outlined and filled styles inconsistently within the same form or interface section
+
+✅ **Do:** Choose outlined style when the input sits on colored or textured backgrounds where filled inputs might clash
+
+❌ **Don't:** Use outlined style as the default for long multi-field forms where filled inputs provide better visual structure
+
+✅ **Do:** Ensure outlined inputs maintain sufficient contrast ratios (3:1 minimum) against their background in all states
+
+❌ **Don't:** Rely solely on the border to convey interactive affordance without proper focus indicators
+
+✅ **Do:** Test outlined inputs with users who have low vision to ensure the borders are perceivable in all states
+
+❌ **Don't:** Use outlined style when multiple inputs are stacked vertically without sufficient spacing, as borders may visually merge
+
+✅ **Do:** Apply outlined style consistently across filtering and search interfaces for cohesive visual language
+
+❌ **Don't:** Use outlined inputs in contexts where users expect traditional form styling, causing confusion
 
 ---
 
-### ⚠️ Label
+## Rounded corner
+
+**`False`** A subtle and minimal style (neutral input border)
+
+**`True`** A soft, friendly style, a bit more playful and approachable
+
+### Do & don'ts
+
+✅ **Do:** Use rounded corners consistently across all form inputs in the same interface to maintain visual harmony
+
+❌ **Don't:** Mix sharp and rounded corners arbitrarily within a single form, creating visual inconsistency
+
+✅ **Do:** Choose rounded corners when designing for consumer-facing products where friendliness enhances user comfort
+
+❌ **Don't:** Use extreme border radius values that compromise the rectangular nature of form inputs
+
+✅ **Do:** Consider accessibility by ensuring rounded corners don't interfere with touch target size on mobile devices
+
+❌ **Don't:** Apply rounded corners only to select inputs when other form controls remain sharp-edged
+
+✅ **Do:** Test rounded corners with your brand guidelines to ensure they align with overall design language
+
+❌ **Don't:** Use rounded corners in highly formal or technical interfaces where neutrality is required
+
+✅ **Do:** Maintain consistent corner radius values across different input sizes for visual coherence
+
+❌ **Don't:** Round corners so aggressively that the input resembles a pill shape, reducing form recognition
+
+---
+
+## Input status
+
+**`Empty`** By default, a select input is open with label, no input text, dropdown closed, and no helper text displayed below.
+
+**`Filled`** The input text is the option selected by the user from the dropdown menu.
+
+### Do & don'ts
+
+✅ **Do:** Use clear placeholder text in empty states to guide users on what type of selection is expected
+
+❌ **Don't:** Leave empty states completely blank without labels or placeholders, causing user confusion
+
+✅ **Do:** Provide meaningful placeholder text that describes the category of choices (e.g., "Select country")
+
+❌ **Don't:** Use the first option as a placeholder disguised as a selectable value
+
+✅ **Do:** Ensure filled states clearly display the full selected value or truncate gracefully with ellipsis
+
+❌ **Don't:** Allow selected text to overflow outside the input container without proper truncation
+
+✅ **Do:** Differentiate empty and filled states visually to help users quickly identify which fields need attention
+
+❌ **Don't:** Use identical styling for empty and filled states that makes form progress unclear
+
+✅ **Do:** Announce input status changes to screen readers when selections are made or cleared
+
+❌ **Don't:** Remove the label when the input is filled, forcing users to remember what they selected
+
+---
+
+## Error
+
+An error is used to provide real-time feedback when the select input is in an invalid state:
+
+**Examples of invalid states:**
+• Required field left empty
+• Incorrect value format (invalid email, phone number, postal code)
+• Value that does not meet the established criteria (password not secure enough, text too short or too long)
+
+**Accessibility for error indication:**
+• Color alone is not sufficient: WCAG requires that color not be the only means of conveying information. Therefore, an icon and explicit text must accompany the error color.
+• Assistive technologies need contextual error messages: when a user submits a form or leaves a field, screen readers need to receive clear textual information about the error. Use the aria-describedby attribute to associate error messages with the corresponding select input element.
+• Error text is not just an ornament: WCAG guidelines require that error messages be sufficiently precise and descriptive.
+
+**`False`** The select input is in its neutral or valid state.
+
+**`True`** The user sees an error message detailing the nature of the problem, and the component is visually marked (e.g., with a specific color or icon) to draw attention to the error.
+
+### Do & don'ts
+
+✅ **Do:** Display error messages immediately below the select input, using clear language that explains how to fix the issue
+
+❌ **Don't:** Rely on color alone to indicate errors; always include an icon and descriptive text for accessibility
+
+✅ **Do:** Use `aria-describedby` to programmatically associate error messages with the select input for screen readers
+
+❌ **Don't:** Show generic error messages like "Invalid selection" that don't help users understand what went wrong
+
+✅ **Do:** Trigger validation after the user interacts with the field or attempts to submit the form, not while typing
+
+❌ **Don't:** Display error states prematurely before users have had a chance to complete their selection
+
+✅ **Do:** Ensure error icons have at least 3:1 contrast ratio and error text meets WCAG AA standards
+
+❌ **Don't:** Hide error messages on focus or hover, preventing users from reading them while correcting mistakes
+
+✅ **Do:** Provide specific guidance in error messages, such as "Please select a shipping method to continue"
+
+❌ **Don't:** Use technical jargon or system codes in error messages that users cannot understand
+
+---
+
+## Leading icon
+
+Conveys the nature or purpose of the select input field at a glance.
+
+### Do & don'ts
+
+✅ **Do:** Use universally recognizable icons that clearly represent the input's purpose (e.g., location pin for country selection)
+
+❌ **Don't:** Add decorative icons that don't enhance understanding or serve a functional purpose
+
+✅ **Do:** Ensure leading icons have proper color contrast (3:1 minimum) against their background in all states
+
+❌ **Don't:** Use leading icons inconsistently across similar input types, creating confusion about their meaning
+
+✅ **Do:** Size leading icons appropriately (16-24px) to maintain visual balance with text and remain perceivable
+
+❌ **Don't:** Rely solely on icon color to convey state changes; use additional visual indicators for accessibility
+
+✅ **Do:** Test icon comprehension with users to verify they understand the icon's meaning without text labels
+
+❌ **Don't:** Place leading icons so close to the input text that they interfere with readability or cause visual clutter
+
+✅ **Do:** Make leading icons purely visual and exclude them from the accessibility tree unless they convey unique information
+
+❌ **Don't:** Use overly complex or detailed icons that become unclear when rendered at small sizes
+
+---
+
+## ⚠️ Label
 
 Describes the purpose of the input. Why hide a select input label?
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
@@ -56,9 +228,69 @@ However, hiding the label should only be done if:
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
+### Do & don'ts
+
+✅ **Do:** Always provide a label for every select input, either visibly or through `aria-label` for accessibility
+
+❌ **Don't:** Hide labels visually without ensuring screen readers can still access label text
+
+✅ **Do:** Write clear, concise labels that precisely describe what users should select (e.g., "Delivery method")
+
+❌ **Don't:** Use vague labels like "Choose option" that don't indicate what type of selection is required
+
+✅ **Do:** Position labels directly above or to the left of select inputs following standard form layout patterns
+
+❌ **Don't:** Place labels far from their inputs, making it difficult for users to associate them
+
+✅ **Do:** Keep labels short (3-5 words) to maintain scanability and reduce cognitive load
+
+❌ **Don't:** Write labels as full sentences or questions when a brief phrase is sufficient
+
+✅ **Do:** Use sentence case for labels (e.g., "Country of residence") rather than title case or all caps
+
+❌ **Don't:** Include colons after labels; modern design patterns favor clean label text without punctuation
+
+✅ **Do:** Ensure visually hidden labels still provide complete context for screen reader users
+
+❌ **Don't:** Assume placeholder text can replace proper labels, as placeholders disappear when users interact with the field
+
 ---
 
-### ⚠️ Mandatory field indication
+## Other boolean options
+
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+
+**`Helper link`** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+
+### Do & don'ts
+
+✅ **Do:** Use helper text to provide essential context that helps users understand what to select or why
+
+❌ **Don't:** Repeat information already stated in the label; helper text should add new, valuable guidance
+
+✅ **Do:** Keep helper text concise (one sentence) to maintain readability and reduce cognitive load
+
+❌ **Don't:** Use helper text for critical instructions that users might miss; include essential information in labels
+
+✅ **Do:** Position helper text consistently between the input and any error messages in the vertical stack
+
+❌ **Don't:** Hide helper text on focus or interaction when users may need it most
+
+✅ **Do:** Use helper links when additional explanation is needed without cluttering the form interface
+
+❌ **Don't:** Open helper links in new tabs without warning, as it disrupts the user's workflow
+
+✅ **Do:** Ensure helper text is programmatically associated with the input using `aria-describedby`
+
+❌ **Don't:** Style helper links identically to regular text, making them invisible to users who need extra guidance
+
+✅ **Do:** Write helper text in plain language that all users can understand regardless of technical expertise
+
+❌ **Don't:** Use helper text as a substitute for proper field labeling or clear option descriptions
+
+---
+
+## ⚠️ Mandatory field indication
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -73,170 +305,37 @@ UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
 
 **If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
----
+### Do & don'ts
 
-### Context before selection 👈🤔
+✅ **Do:** Clearly indicate mandatory fields using a consistent pattern throughout the entire form or application
 
-✅ **Do:** Provide clear labels and helper text explaining what users are selecting and why it matters for their task flow  
-❌ **Don't:** Launch users directly into selection without explaining the consequences or purpose of their choice
+❌ **Don't:** Mix different mandatory field indicators (asterisks, labels, colors) inconsistently within the same interface
 
-### Default selection strategy 👈🤔
+✅ **Do:** Place the asterisk immediately after the label text with no space, making the association clear
 
-✅ **Do:** Pre-select the most common or safest option when there's a clear default choice that applies to most users  
-❌ **Don't:** Force users to make a selection when no reasonable default exists or when the choice is critical to user intent
+❌ **Don't:** Use asterisks without providing a legend explaining their meaning to users who may not understand the convention
 
-### Option organization 👈🤔
+✅ **Do:** Ensure screen readers announce "mandatory" or "required" when asterisks are present using `aria-required` or similar attributes
 
-✅ **Do:** Order options logically (alphabetically, by popularity, or by task frequency) to reduce cognitive load and scanning time  
-❌ **Don't:** Present options in random order or bury the most likely selections deep in long lists
+❌ **Don't:** Rely solely on red color to indicate mandatory fields, as color-blind users cannot perceive the distinction
 
-### Error messaging clarity 👈🤔
+✅ **Do:** Display a summary message at the form top explaining the mandatory field convention before users encounter fields
 
-✅ **Do:** Display specific, actionable error messages that explain what went wrong and how to fix it immediately below the field  
-❌ **Don't:** Show generic "invalid selection" messages that leave users confused about what action to take next
+❌ **Don't:** Mark all fields as mandatory when some are truly optional, reducing trust and increasing abandonment
 
-### Loading state communication 👈🤔
+✅ **Do:** Use "(optional)" labels sparingly and only when the optionality needs emphasis for clarity
 
-✅ **Do:** Show loading indicators when options are being fetched asynchronously, with estimated wait time if known  
-❌ **Don't:** Display an empty dropdown or frozen interface that makes users wonder if the component is broken
+❌ **Don't:** Override WCAG guidance by making critical fields appear optional or hiding required field indicators
 
-### Placeholder text usage 👈🤔
+✅ **Do:** Test mandatory field patterns with users who rely on assistive technology to ensure clear communication
 
-✅ **Do:** Use placeholder text like "Select an option" to indicate the field's purpose when no selection has been made  
-❌ **Don't:** Use placeholders as a replacement for labels or include critical instructions that disappear once an option is selected
-
-### Option label length 👈🤔
-
-✅ **Do:** Keep option labels concise and scannable, ideally under 40 characters, to enable quick decision-making  
-❌ **Don't:** Write lengthy option descriptions that require horizontal scrolling or make the dropdown menu difficult to navigate
-
-### Search functionality threshold 👈🤔
-
-✅ **Do:** Add search/filter capability (combobox) when the list exceeds 15 options to improve findability and reduce scrolling  
-❌ **Don't:** Force users to scroll through 50+ options without any search or filtering mechanism
-
-### Mobile consideration 👈🤔
-
-✅ **Do:** Test that native mobile pickers work smoothly and that touch targets for the dropdown indicator are at least 44×44px  
-❌ **Don't:** Implement custom dropdowns on mobile that override the native OS picker behavior users expect
-
-### Read-only vs disabled distinction 👈🤔
-
-✅ **Do:** Use read-only state to display a selection that users need to see but cannot change in the current context  
-❌ **Don't:** Use disabled state when the value is relevant information—disabled implies unavailability, not immutability
-
----
-
-### How should I configure a select input for country selection in a shipping form? 👈🤔
-
-The label should read "Country" with an asterisk if mandatory, the helper text "Select your shipping destination" appears below, and options are ordered alphabetically starting with common countries.
-
-### What does the error state look like when a user submits without making a selection? 👈🤔
-
-The input field displays a red border with an error icon, and the text "Please select a country" replaces the helper text below the field.
-
-### How do I display a select input with a leading icon for currency selection? 👈🤔
-
-The currency icon (💰) appears on the left side of the input field, followed by the label "Currency" above and the selected option "USD - US Dollar" inside the field with a dropdown indicator on the right.
-
-### What should the loading state look like when options are being fetched from an API? 👈🤔
-
-The input field displays a loading spinner inside where the dropdown indicator normally appears, with the helper text "Loading available options..." below the field.
-
-### How should I configure a select input for a filter in a product catalog? 👈🤔
-
-The label reads "Sort by" positioned above the field, with options like "Price: Low to High" and "Newest First" in the dropdown, and no helper text needed for this compact filter context.
-
-### What's the visual difference between an empty and filled select input? 👈🤔
-
-The empty state shows placeholder text "Select an option" in a lighter gray color, while the filled state displays the selected option text "Option Name" in standard text color.
-
-### How do I show a select input in read-only state displaying a user's previously saved selection? 👈🤔
-
-The field displays the selected value "Premium Plan" with reduced opacity, no dropdown indicator, and a read-only visual treatment indicating the value is locked for this view.
-
-### What should the expanded state look like when the dropdown menu is open? 👈🤔
-
-The dropdown menu appears below the input field with all options visible (or scrollable if many), the currently selected option is highlighted, and the dropdown indicator points upward to indicate the open state.
-
-### How should I configure a select input with helper text explaining format requirements? 👈🤔
-
-The label "Time zone" appears above the field, with helper text below reading "Select the time zone for scheduled notifications" in a secondary text color to provide context.
-
-### What does the hover state look like before a user opens the dropdown? 👈🤔
-
-The input field's background changes slightly in color or shows a subtle border highlight, and the cursor changes to a pointer, indicating the field is interactive and ready to expand.
-
----
-
-## Screen Sizes
-
-### Desktop 👈🤖
-
-Select inputs display at their full intended width (typically 280-360px), with dropdown menus expanding below the field to show all options clearly with adequate touch targets and readable text at standard sizes.
-
-### Tablet 👈🤖
-
-Select inputs maintain similar proportions to desktop with slightly larger touch targets (minimum 44px height), and dropdown menus may use native OS pickers on tablets for better touch interaction.
-
-### Mobile 👈🤖
-
-Select inputs trigger native mobile pickers when tapped, providing the familiar OS-specific selection interface with large touch targets and optimized scrolling behavior for single-hand operation.
+❌ **Don't:** Use mandatory field indicators on single-field forms where the requirement is obvious from context
 
 ---
 
 # Specs
 
-## Properties
-
-### Initial Config
-
-| Property | Default Value | Notes |
-|----------|---------------|-------|
-| Outlined | False | Uses subtle background fill with visible bottom border by default |
-| Rounded corner | False | Standard neutral input border styling with minimal corner radius |
-| Input status | Empty | Field is empty with label visible, dropdown closed, and no helper text displayed |
-| State | Enabled | Component is interactive and ready for user selection |
-| Error | False | No validation error is present, component displays in neutral state |
-| Leading icon | False | No icon is displayed on the left side of the input field |
-| ⚠️ Label | True | Label is visible above the input field by default |
-| Combobox | False | Standard select without search/filter functionality |
-| Autocompletion | False | No autocompletion or type-ahead behavior is enabled |
-| Helper text | False | No helper text is displayed below the input field initially |
-| Helper link | False | No link is included in the helper text area |
-
----
-
-### Outlined
-
-**`False`** An input with a subtle background fill and visible bottom border.
-
-**`True`** A minimalist input with a transparent background and visible stroke.
-
-This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
-
----
-
-### Rounded corner
-
-**`False`** A subtle and minimal style (neutral input border)
-
-**`True`** A soft, friendly style, a bit more playful and approachable
-
----
-
-### Input status
-
-**`Empty`** By default, a select input is open with label, no input text, dropdown closed, and no helper text displayed below.
-
-**`Filled`** The input text is the option selected by the user from the dropdown menu.
-
----
-
-### State
+## States
 
 **`Enabled`** Default state: the input is ready for interaction.
 
@@ -256,48 +355,9 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Error
+## Layout and spacing
 
-An error is used to provide real-time feedback when the select input is in an invalid state:
-
-**Examples of invalid states:**
-• Required field left empty
-• Incorrect value format (invalid email, phone number, postal code)
-• Value that does not meet the established criteria (password not secure enough, text too short or too long)
-
-**Accessibility for error indication:**
-• Color alone is not sufficient: WCAG requires that color not be the only means of conveying information. Therefore, an icon and explicit text must accompany the error color.
-• Assistive technologies need contextual error messages: when a user submits a form or leaves a field, screen readers need to receive clear textual information about the error. Use the aria-describedby attribute to associate error messages with the corresponding select input element.
-• Error text is not just an ornament: WCAG guidelines require that error messages be sufficiently precise and descriptive.
-
-**`False`** The select input is in its neutral or valid state.
-
-**`True`** The user sees an error message detailing the nature of the problem, and the component is visually marked (e.g., with a specific color or icon) to draw attention to the error.
-
----
-
-### Leading icon
-
-Conveys the nature or purpose of the select input field at a glance.
-
----
-
-### Helper text
-
-Information displayed below the select input field to provide guidance or context to the user (explanatory text, tips, additional details, guidance on the expected format).
-
-**Examples of helper text:**
-• Indicate the maximum character limit for a text field: "You have 180 characters remaining."
-• Offer tips on format requirements: "Your password must contain at least 8 characters, including a number and a special character."
-
-**Helper text on error:**
-• When in error state, helper text becomes error text.
-
-Helper text is used to provide additional information at the right time, without overcrowding the interface.
-
-Helper text is different from placeholder text:
-• Helper text remains visible before, during, and after text entry.
-• Placeholder text disappears when typing.
+🚧 Content to be added
 
 ---
 
@@ -305,58 +365,55 @@ Helper text is different from placeholder text:
 
 ## Accessibility intro
 
-Select inputs must meet WCAG 2.2 Level AA requirements for keyboard navigation, screen reader compatibility, and clear error identification. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+Select inputs must meet WCAG 2.2 Level AA standards to ensure users can successfully make selections using keyboard navigation, screen readers, and other assistive technologies. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
 
 ---
 
 ## Accessibility Challenges
 
-Select inputs present unique accessibility challenges because they rely heavily on visual affordances (dropdown indicators, option lists) that may not be apparent to screen reader users or keyboard-only users. The interaction model—clicking to expand, scrolling through options, and selecting—requires careful implementation to ensure users can independently navigate, understand available choices, and make selections without visual reference. Additionally, the dynamic nature of dropdown state changes, loading states, and error feedback must be communicated clearly to assistive technologies.
+Select inputs present unique accessibility challenges due to their dual nature as both form controls and interactive menus. The native HTML `<select>` element provides built-in accessibility, but custom-styled implementations often break keyboard navigation, screen reader compatibility, and focus management. Users with motor impairments struggle with precise mouse control required for dropdown interactions, while screen reader users may not receive adequate feedback about available options, current selections, or state changes.
 
 ### Key Challenges
-- **Hidden options until interaction**: Users may not know what choices are available without activating the dropdown, requiring clear labeling and instructions
-- **State communication**: Expanded/collapsed states, loading indicators, and selected values must be announced to screen readers dynamically
-- **Keyboard navigation complexity**: Users must be able to open the dropdown, navigate options with arrow keys, select with Enter/Space, and close with Escape
-- **Error identification**: Validation errors must be associated with the select input and announced clearly, with color not being the only indicator
+- Custom-styled selects often break native keyboard navigation and screen reader support
+- Dropdown menus disappearing before users can make selections with assistive technology
+- Insufficient feedback when options are filtered, loaded asynchronously, or change dynamically
+- Lack of proper ARIA attributes causing screen readers to misidentify component type and state
 
 ### Critical Success Factors
-1. **Proper ARIA roles and attributes**: Use `role="combobox"`, `aria-expanded`, `aria-activedescendant`, and `aria-describedby` to communicate state and associations (WCAG 4.1.2)
-2. **Keyboard-accessible interaction model**: Ensure Tab navigation, Arrow key option selection, Enter/Space to select, and Escape to close work reliably (WCAG 2.1.1)
-3. **Visible focus indicators**: Provide clear focus styles with ≥3:1 contrast ratio on both the input field and dropdown options (WCAG 2.4.7)
-4. **Clear error association**: Link error messages to the input using `aria-describedby` and provide text-based error identification, not just color (WCAG 3.3.1, 3.3.2)
+1. Maintain full keyboard operability (`Tab`, `Enter`, `Space`, `Arrow keys`, `Escape`) with clear focus indicators meeting 3:1 contrast ratio
+2. Implement proper ARIA semantics (`role="combobox"`, `aria-expanded`, `aria-owns`, `aria-activedescendant`) to communicate component structure
+3. Associate labels, error messages, and helper text programmatically using `aria-labelledby` and `aria-describedby`
+4. Announce all state changes and dynamic content updates to screen readers in real-time
 
 ---
 
 ## Design Requirements
 
 ### Structure & Labels
-- [ ] **Visible persistent label**: Provide a clear label above or beside the select input that remains visible when the dropdown is expanded or an option is selected ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Helper text association**: Use `aria-describedby` to link helper text and error messages to the select input so screen readers announce them when the field receives focus ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Mandatory field indication**: Use asterisk (*) with bold red styling at the end of labels for required fields, and ensure "mandatory" is read by screen readers via `aria-required="true"` ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
+- [ ] **Every select input must have a visible or programmatically associated label**: Use `<label>` element with `for` attribute or `aria-labelledby` ([Orange: Form labels](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
+- [ ] **Required fields must be indicated accessibly**: Use `aria-required="true"` and visual indicator with legend explaining convention
+- [ ] **Associate helper text and error messages**: Use `aria-describedby` to link supplementary text to the input element
 
 ### Visual Design
-- [ ] **Minimum touch target size**: Ensure the select input and dropdown options have touch targets of at least 44×44px on mobile and 24×24px on desktop ([Orange Touch Targets](https://a11y-guidelines.orange.com/en/web/design/accessible-design/#touch-targets))
-- [ ] **Focus indicator contrast**: Provide a visible focus indicator with ≥3:1 contrast ratio against the background on the input field and each option in the dropdown ([WCAG 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html))
-- [ ] **Error state visual treatment**: Use red border, error icon, and error text together—never rely on color alone to indicate errors ([WCAG 1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html))
+- [ ] **Focus indicator must have ≥3:1 contrast ratio**: Ensure keyboard focus is clearly visible against background ([Orange: Focus visible](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-components/focus-visible/))
+- [ ] **Error states must not rely on color alone**: Include icon and descriptive text alongside color change ([WCAG 1.4.1](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/))
+- [ ] **Text and icons meet contrast requirements**: Minimum 4.5:1 for text, 3:1 for icons and borders
 
 ### Content
-- [ ] **Concise option labels**: ❌ "This is the option that allows you to select the premium version of our service with additional features" / ✅ "Premium Plan" ([Orange Content Guidelines](https://a11y-guidelines.orange.com/en/web/design/accessible-design/#content))
-- [ ] **Specific error messages**: ❌ "Invalid selection" / ✅ "Please select a shipping country to continue" with clear recovery guidance ([WCAG 3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html))
+- [ ] **Option text must be clear and concise**: ❌ "Option 1" / ✅ "Credit card payment" ([Orange: Clear content](https://a11y-guidelines.orange.com/en/articles/user-tests-accessibility/))
+- [ ] **Error messages must be specific and actionable**: Describe the problem and how to fix it (e.g., "Please select a delivery method")
 
 ---
 
 ## Testing Checklist
 
 ### Screen Reader Testing
-- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) to verify label announced, expanded/collapsed states communicated, selected option read aloud, error messages spoken
-- [ ] Verify arrow key navigation announces each option clearly as focus moves, selected option is indicated, and dropdown closure is announced
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
+- [ ] Verify label announced, current selection communicated, state changes spoken, option count announced when expanded, error messages read
 
 ### Keyboard Testing
-- [ ] Tab to select input, Enter/Space opens dropdown, Arrow keys navigate options and announce them, Enter/Space selects highlighted option, Escape closes dropdown without selection, Tab moves focus away
-- [ ] Verify focus visible with ≥3:1 contrast on input field and all dropdown options
-
-### Mouse/Touch Testing
-- [ ] Click to open dropdown works, click outside closes dropdown, click on option selects it, touch targets on mobile are ≥44×44px
+- [ ] `Tab` focuses input, `Enter`/`Space` opens dropdown, `Arrow keys` navigate options, `Enter` selects, `Escape` closes, verify focus visible with ≥3:1 contrast
+- [ ] All functionality accessible without mouse
 
 Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
 
@@ -364,11 +421,11 @@ Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.c
 
 ## Key WCAG Criteria
 
-- **2.1.1 Keyboard** (A): All select input functionality (open dropdown, navigate options, select, close) is operable via keyboard without timing requirements
-- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast on the input field and each dropdown option
-- **3.3.1 Error Identification** (A): Errors identified in text (not just color) and associated with the select input via `aria-describedby`
-- **3.3.2 Labels or Instructions** (A): Clear labels provided for select inputs and announced by assistive technologies
-- **4.1.2 Name, Role, Value** (A): Correct semantic HTML (`<select>` or custom implementation with `role="combobox"`) and ARIA attributes (`aria-expanded`, `aria-activedescendant`) communicate state changes
+- **2.1.1 Keyboard** (A): All functionality operable via keyboard without timing requirements, including opening dropdown, navigating options, and making selections
+- **2.4.7 Focus Visible** (AA): Visible keyboard focus indicator with ≥3:1 contrast on the input field and selected options
+- **3.3.1 Error Identification** (A): Errors identified in text and associated with the select input via `aria-describedby`
+- **3.3.2 Labels or Instructions** (A): Label provided for the select input, available to assistive technology via proper semantic markup
+- **4.1.2 Name, Role, Value** (A): Correct HTML semantics (`<select>`) or ARIA attributes (`role="combobox"`) communicate state changes and current selection
 
 For complete reference: [Orange Accessibility Guidelines - WCAG Criteria](https://a11y-guidelines.orange.com/en/web/components-examples/)
 
@@ -376,8 +433,20 @@ For complete reference: [Orange Accessibility Guidelines - WCAG Criteria](https:
 
 ## Additional Resources
 
-- [Orange Accessibility Guidelines - Forms Examples](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
-- [WCAG 2.2 Understanding Docs - 4.1.2 Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
-- [WCAG 2.2 Understanding Docs - 2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+- [Orange Accessibility Guidelines - Form Examples](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+- [WCAG 2.2 Understanding - Select and Combobox](https://www.w3.org/WAI/WCAG22/Understanding/)
 - [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
-- [W3C ARIA Authoring Practices - Combobox Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/)
+- [W3C ARIA Authoring Practices - Combobox](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/)
+
+---
+
+# Changelog
+
+| Date | Number | Notes | Designer |
+|------|--------|-------|----------|
+| Nov ??, 2025 | 1.3.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component | Maxime Tonnerre |
+| Sep 30, 2025 | 1.2.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
+| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
+| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+
+---

@@ -1,8 +1,4 @@
-# Password Input - Definition & Properties
-
----
-
-### Definition
+## Definition
 
 A password input is a form field specifically designed to securely capture a user's confidential password. It masks the characters as they are typed, typically replacing them with dots, in order to protect the input from being read by others nearby.
 
@@ -10,56 +6,7 @@ While the primary goal is to enhance privacy and security, the field may also in
 
 ---
 
-### Properties
-
-| property name | type |
-|---------------|------|
-| Outlined | 'False' \| 'True' |
-| Rounded corner | 'False' \| 'True' |
-| Input status | 'Empty' \| 'Empty (Placeholder)' \| 'Filled' |
-| State | 'Enabled' \| 'Hover' \| 'Focus' \| 'Loading' \| 'Read only' \| 'Disabled' \| 'Skeleton' |
-| Error | 'False' \| 'True' |
-| Leading icon | 'False' \| 'True' |
-| Hidden password | 'True' \| 'False' |
-| ⚠️ Label | boolean |
-| ✏️ Label | text |
-| ✏️ Placeholder | text |
-| Prefix | boolean |
-| ✏️ Prefix | text |
-| ✏️ Input text | text |
-| ✏️ Hidden input text | text |
-| Helper text | boolean |
-| ✏️ Helper text | text |
-| ✏️ Error empty text | text |
-| ✏️ Error filled text | text |
-
----
-
-### Initial settings
-
-**Outlined** Off
-
-**Rounded corner** Off
-
-**Input status** Empty
-
-**State** Enabled
-
-**Error** Off
-
-**Leading icon** Off
-
-**Hidden password** On
-
-**⚠️ Label** On
-
-**Prefix** Off
-
-**Helper text** Off
-
----
-
-### Outlined
+## Outlined
 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
@@ -70,7 +17,7 @@ While the primary goal is to enhance privacy and security, the field may also in
 
 ---
 
-### Rounded corner
+## Rounded corner
 
 **`False`** For a square finish.
 
@@ -78,7 +25,7 @@ While the primary goal is to enhance privacy and security, the field may also in
 
 ---
 
-### Input status
+## Input status
 
 **`Empty`** The Empty state indicates that the password input is blank with no content or placeholder, a neutral starting point.
 
@@ -88,7 +35,7 @@ While the primary goal is to enhance privacy and security, the field may also in
 
 ---
 
-### State
+## States
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -106,7 +53,7 @@ While the primary goal is to enhance privacy and security, the field may also in
 
 ---
 
-### Error
+## Error
 
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -116,13 +63,27 @@ This state helps users quickly identify and correct mistakes by explaining what 
 
 ---
 
-### Leading icon
+## Leading icon
 
 Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
 
 ---
 
-### Other boolean options
+## ⚠️ Label
+
+Describes the purpose of the input. Why hide a password input label?
+
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
+
+However, hiding the label should only be done if:
+• The purpose of the input remains clear thanks to a placeholder or contextual icon.
+• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
+
+---
+
+## Other boolean options
 
 **Prefix** A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
 • "corp-" Company password enforcing a prefix

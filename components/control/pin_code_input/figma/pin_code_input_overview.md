@@ -1,8 +1,4 @@
-# PIN code input - Definition & Properties
-
----
-
-### Definition
+## Definition
 
 A PIN code input is a specialized form field used to capture short, fixed-length numeric codes, typically for authentication or confirmation purposes, such as a 4, 6 or 8-digit personal identification number (PIN).
 
@@ -12,36 +8,7 @@ This component must support smooth keyboard navigation (automatic focus shift, b
 
 ---
 
-### Properties
-
-| property name | type |
-|---------------|------|
-| Outlined | 'False' \| 'True' |
-| Rounded corner | 'False' \| 'True' |
-| Length | '4' \| '6' \| '8' |
-| Error | 'False' \| 'True' |
-| Helper text | boolean |
-| ✏️ Helper text (4 digit code) | text |
-| ✏️ Helper text (6 digit code) | text |
-| ✏️ Helper text (8 digit code) | text |
-
----
-
-### Initial settings
-
-**Outlined** Off
-
-**Rounded corner** Off
-
-**Length** 6
-
-**Error** Off
-
-**Helper text** Off
-
----
-
-### Outlined
+## Outlined
 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
@@ -53,7 +20,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Rounded corner
+## Rounded corner
 
 **`False`** For a square finish.
 
@@ -62,7 +29,7 @@ To be favored in more emotional, immersive contexts or those tied to specific vi
 
 ---
 
-### Error
+## Error
 
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -75,7 +42,7 @@ The error state must be triggered by an explicit validation (submission, API res
 
 ---
 
-### Other boolean options
+## Other boolean options
 
 **Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 

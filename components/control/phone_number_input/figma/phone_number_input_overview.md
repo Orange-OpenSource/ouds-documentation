@@ -1,8 +1,4 @@
-# Phone number input - Definition & Properties
-
----
-
-### Definition
+## Definition
 
 A phone number input is a form field specifically designed to capture and validate telephone numbers, often in international format. It typically integrates a country selector, allowing users to choose their country and automatically apply the corresponding dialing code (such as +33 for France).
 
@@ -10,55 +6,7 @@ The dialing code is usually displayed as a non-editable prefix within the field 
 
 ---
 
-### Properties
-
-| property name | type |
-|---------------|------|
-| Outlined | 'True' \| 'False' |
-| Rounded corner | 'False' \| 'True' |
-| Input status | 'Empty' \| 'Empty (Placeholder)' \| 'Filled' |
-| State | 'Enabled' \| 'Hover' \| 'Focus' \| 'Loading' \| 'Read only' \| 'Disabled' \| 'Skeleton' |
-| Error | 'False' \| 'True' |
-| Leading icon | 'False' \| 'True' |
-| Country selector | 'False' \| 'True' |
-| ⚠️ Label | boolean |
-| ✏️ Label | text |
-| Dial code | boolean |
-| ✏️ Dial code | text |
-| ✏️ Placeholder | text |
-| ✏️ Input text | text |
-| Helper text | boolean |
-| ✏️ Helper text | text |
-| ✏️ Error empty text | text |
-| ✏️ Error filled text | text |
-
----
-
-### Initial settings
-
-**Outlined** Off
-
-**Rounded corner** Off
-
-**Input status** Empty
-
-**State** Enabled
-
-**Error** Off
-
-**Leading icon** Off
-
-**Country selector** On
-
-**⚠️ Label** On
-
-**Dial code** On
-
-**Helper text** Off
-
----
-
-### Outlined
+## Outlined
 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
@@ -71,7 +19,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Rounded corner
+## Rounded corner
 
 **`False`** The input field is rectangular with sharp corners, creating a clean and structured appearance. This style is well-suited for form-based interfaces and professional, formal layouts, where clarity and alignment are key.
 
@@ -79,7 +27,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Input status
+## Input status
 
 **`Empty`** The field is empty. The placeholder text is not visible: the label is displayed instead and remains visible when the user starts typing.
 
@@ -89,7 +37,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### State
+## States
 
 **`Enabled`** The default state when the user can interact with the text input. The field is ready to accept input when the user clicks or taps on it.
 
@@ -107,7 +55,7 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Error
+## Error
 
 **`False`** The input is in a standard state, with no validation issues. It is ready for users to fill out without errors.
 
@@ -115,19 +63,33 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Leading icon
+## Leading icon
 
 **`Leading icon`** When enabled, it is possible to display an icon on the left of the input text.
 
 ---
 
-### Country selector
+## Country selector
 
 **`Country selector`** When enabled, it is possible to display a country selector with its flag. Country selector is displayed as a secondary button with only an icon (flag) and a chevron.
 
 ---
 
-### Other boolean options
+## ⚠️ Label
+
+Describes the purpose of the input. Why hide a phone number input label?
+
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
+
+However, hiding the label should only be done if:
+• The purpose of the input remains clear thanks to a placeholder or contextual icon.
+• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
+
+---
+
+## Other boolean options
 
 **Dial code** When enabled, it is possible to display the country dial code value. The dial code is read-only and cannot be edited directly by the user.
 
@@ -135,19 +97,19 @@ This style may be interesting for contexts other than form pages:
 
 ---
 
-### Accessibility
+## ⚠️ Mandatory field indication
 
-**Associating labels with text fields** Labels must be provided to give textual description of the input field.
-With rare exceptions, each text area field should have a label. It is essential that the purpose and expected input remains clear to the user. Even for phone number inputs where some of the elements can stay implicit, such as the country flag, labels remain important.
+**If all fields are mandatory (several fields present):**
+1. Display the message "All fields are mandatory." at the top.
+2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
+   UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
 
-**Keyboard navigation** The phone number input must be fully navigable via keyboard, including the input field and the country selector. Tabbing through form elements should move the focus logically from one field to the next, ensuring all interactive elements are accessible. Focus states must be visually distinct and meet accessibility contrast standards.
+**If not all fields are mandatory (several fields present):**
+1. Display the message "All fields marked with an * are mandatory." at the top.
+2. Use an asterisk (*) at the end of each mandatory field label (the word "mandatory" is read aloud instead of the visible asterisk at the end of the label).
+   UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
+3. Use the mention "(optional)" at the end of each optional field label. Note that this rule is not systematic—it remains an option, to be used if needed.
 
-**Country selection and autofill support** When integrating the country selector, ensure that autocomplete attributes are used correctly to allow browsers and assistive technologies to autofill fields accurately. Example: use autocomplete="tel-national" for the phone number field. Consider providing clear labels for both the country code and the phone number to maintain context.
+**If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
-**ARIA labels and instructions** Provide appropriate ARIA labels for elements like the country selector or dialcode. For example, the flag icon may not be immediately understood by screen readers without a clear label. Use aria-label to clarify the purpose of each component. For instance: aria-label="Select Country" for the country button.
-
-**Error handling and validation** When validation errors occur, use aria-invalid="true" and aria-describedby to clearly communicate what went wrong and how to fix it. Ensure that error messages are announced immediately by screen readers, so users can correct issues without having to navigate away from the field.
-
-**Complex input structures** Phone number inputs often combine multiple elements (e.g., flag, dial code, input field). Test with screen readers to ensure users understand each element's purpose and relationship to the other components. Use fieldset and legend when grouping multiple input components together, to make the relationships clear.
-
-**Voice input** Users may prefer to fill out the field using voice commands, especially for phone numbers. Ensure that the input field supports dictation tools and that the input format doesn't interfere with voice-to-text recognition.
+---

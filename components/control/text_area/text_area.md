@@ -2,11 +2,11 @@
 
 ## Intro 👈🤖
 
-A multi-line input component for longer text entries like comments, messages, or descriptions that auto-expands as users type.
+Multi-line text area that allows users to enter detailed text like comments or feedback, with features for character limits, auto-expansion, and error validation.
 
 ---
 
-## Description
+## Definition
 
 A text area is a multi-line text area component that allows users to enter and edit longer blocks of text, such as comments, messages, or descriptions. Unlike a standard text area, which is limited to a single line, the text area can expand vertically and offers more space for content entry.
 
@@ -14,38 +14,147 @@ It typically includes features like a visible label, placeholder text, character
 
 ---
 
+## Best for 👈🤔
+
+✅ Open-ended feedback collection requiring detailed responses
+
+✅ Comment sections where multi-line explanations are expected
+
+✅ Description fields in forms that need more than a single sentence
+
+✅ Message composition requiring multiple paragraphs
+
+✅ Long-form content entry like reviews or testimonials
+
+✅ Support ticket submissions with detailed issue descriptions
+
+✅ Notes or additional information fields in applications
+
+✅ Text editing where users need to see multiple lines simultaneously
+
+✅ Content requiring character limits with real-time counter feedback
+
+✅ Mobile contexts where expandable fields improve usability
+
+---
+
 ## Anatomy 👈🤖
 
-| # | Element | Purpose |
-|---|---------|---------|
-| 1 | Label text | Describes the purpose of the input field and provides context for users |
-| 2 | Input text container | Main area where users enter and view their text content, auto-expands vertically |
-| 3 | Placeholder text | Provides guidance on expected input when field is empty |
-| 4 | Helper text / Character counter | Displays real-time character count and remaining limit, or provides additional guidance |
-| 5 | Helper link | Optional link for additional assistance or information (external or modal) |
-| 6 | Error message | Replaces helper text when validation fails, explains issue and correction steps |
-| 7 | Scrollbar | Appears when content exceeds maximum height of 240px (approximately 10 lines) |
+| # | Element | Purpose | Optional |
+|---|---------|---------|----------|
+| 1 | Label | Identifies the purpose of the text area for users | N |
+| 2 | Input container | Multi-line text entry field with auto-resize capability | N |
+| 3 | Placeholder text | Provides guidance on expected input format or content | Y |
+| 4 | Helper text | Offers additional context or instructions for completion | Y |
+| 5 | Helper link | Provides access to detailed help or external guidance | Y |
+| 6 | Character counter | Shows remaining or exceeded character count in real-time | Y |
+| 7 | Error message | Displays validation feedback when input rules are violated | Y |
+| 8 | Trailing container | Holds loading indicator or action buttons when needed | Y |
 
 ---
 
-## Usage & Guidance
+## Outlined
 
-### Best for 👈🤔
+**`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
-✅ Open-ended feedback, detailed comments, or lengthy descriptions requiring multiple sentences  
-✅ User-generated content where character count matters (reviews, testimonials, reports)  
-✅ Form fields requiring more than one line of text input  
-✅ Contexts where users need to see and edit multiple lines of text simultaneously  
-✅ Situations where placeholder guidance improves input quality and reduces errors  
-✅ Mobile-first designs where auto-expansion prevents layout disruption  
-✅ Workflows where character limits are enforced to maintain data consistency  
-✅ Scenarios requiring helper text or links to assist users during entry  
-✅ Contexts where read-only or disabled states communicate system processing  
-✅ Applications where loading states indicate background validation or data retrieval
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
+• When inputs need to feel lightweight and unobtrusive
+• In a header (search field)
+• In a selection/filtering feature in a product catalog
+
+### Do & don'ts
+
+✅ **Do:** Use filled text areas in dense forms where multiple fields need clear visual separation and containment
+
+❌ **Don't:** Mix outlined and filled styles within the same form context as it creates visual inconsistency
+
+✅ **Do:** Choose outlined text areas for lightweight contexts like search fields or filtering interfaces where minimal visual weight is desired
+
+❌ **Don't:** Use outlined text areas on backgrounds with poor contrast as the stroke may become difficult to perceive
+
+✅ **Do:** Consider the overall page hierarchy when selecting outlined versus filled, ensuring text areas don't compete with primary actions
+
+❌ **Don't:** Apply outlined style to all text areas by default without considering the specific use case and surrounding interface elements
+
+✅ **Do:** Use filled text areas when the field needs to stand out as an important data collection point
+
+❌ **Don't:** Switch between styles inconsistently across your application, as users expect predictable patterns
+
+✅ **Do:** Test both styles with your target users to determine which provides better usability in your specific context
+
+❌ **Don't:** Assume outlined text areas are always more modern or better; filled variants often provide clearer affordance for interaction
 
 ---
 
-### ⚠️ Label
+## Input status
+
+**`Empty`** The Empty state indicates that the text area is blank with no content or placeholder, a neutral starting point.
+
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
+
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
+
+### Do & don'ts
+
+✅ **Do:** Provide clear placeholder text that demonstrates the expected format or gives a concrete example
+
+❌ **Don't:** Use placeholder text as a replacement for labels, as it disappears when users begin typing
+
+✅ **Do:** Keep placeholder text concise and specific to help users understand what to enter without overwhelming them
+
+❌ **Don't:** Leave text areas in the empty state without any guidance if the expected input isn't immediately obvious
+
+✅ **Do:** Ensure placeholder text has sufficient contrast (at least 4.5:1) while still being distinguishable from entered text
+
+❌ **Don't:** Include critical instructions only in placeholder text, as it's not accessible to all users and disappears during interaction
+
+✅ **Do:** Use the filled state to provide clear visual feedback that user input has been successfully captured
+
+❌ **Don't:** Rely solely on filled state to indicate valid input; combine with other feedback mechanisms for complex validation
+
+✅ **Do:** Consider progressive disclosure where empty fields show just enough information to get started
+
+❌ **Don't:** Make placeholder text so verbose that it becomes distracting or reduces the perceived simplicity of the form
+
+---
+
+## Error
+
+The Error status indicates that the user input does not meet validation rules, for example, in this specific case, if the number of characters entered by the user exceeds the allowed limit. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
+
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
+
+**⚠️ Error message vs helper text / link** If a helper text accompanies the text input, it is replaced by the error message. However, a helper link must not be replaced and should remain positioned below the error message.
+
+**Do & don'ts**
+
+✅ **Do:** Display error messages immediately adjacent to the text area with clear visual indicators like red borders and error icons
+
+❌ **Don't:** Show errors while users are still typing; wait for field blur or form submission to avoid premature interruption
+
+✅ **Do:** Write error messages that explain what went wrong and provide specific guidance on how to fix it
+
+❌ **Don't:** Use technical jargon or error codes in messages; keep language plain and user-friendly
+
+✅ **Do:** Ensure error messages are programmatically associated with the text area using `aria-describedby` for screen reader accessibility
+
+❌ **Don't:** Disable or remove the text area when displaying errors; users must be able to correct their input
+
+✅ **Do:** Combine visual error indicators (color, icons) with text to support users who cannot perceive color alone
+
+❌ **Don't:** Replace helper text permanently with error messages; restore helper text when the error is resolved
+
+✅ **Do:** Keep error messages concise and actionable, focusing on what users need to do next
+
+❌ **Don't:** Display multiple error messages simultaneously if they can be consolidated into a single, clear instruction
+
+✅ **Do:** Maintain error states until users have successfully corrected the input and validation passes
+
+❌ **Don't:** Clear error messages prematurely before users have had a chance to address the issue
+
+---
+
+## ⚠️ Label
 
 Describes the purpose of the input. Why hide a text area label?
 
@@ -57,9 +166,79 @@ However, hiding the label should only be done if:
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
+**Do & don'ts**
+
+✅ **Do:** Always provide a label for every text area, making it visible by default for maximum accessibility and usability
+
+❌ **Don't:** Hide labels unless there's a compelling reason and you can guarantee the purpose remains absolutely clear to all users
+
+✅ **Do:** Position labels above text areas rather than to the side, as top-aligned labels work better with longer text and responsive layouts
+
+❌ **Don't:** Use placeholder text as a substitute for labels, as placeholders are not accessible to all users and disappear during interaction
+
+✅ **Do:** Keep labels short, direct, and written in sentence case without punctuation at the end
+
+❌ **Don't:** Use vague labels like "Comments" when more specific labels like "Additional details about your request" would be clearer
+
+✅ **Do:** When hiding labels visually, ensure they remain accessible using `aria-label`, `aria-labelledby`, or visually-hidden CSS techniques
+
+❌ **Don't:** Rely solely on icons or context to convey the purpose of a text area without providing an accessible label
+
+✅ **Do:** Align labels consistently across your form to create a predictable and scannable layout
+
+❌ **Don't:** Add colons or other punctuation after labels, as modern design systems favor cleaner label presentation
+
+✅ **Do:** Ensure labels are visually and programmatically associated with their corresponding text areas
+
+❌ **Don't:** Place labels far from their text areas, as this makes forms harder to complete and increases cognitive load
+
 ---
 
-### Behavior by entered line count
+## Other boolean options
+
+**Scrolled** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond **the maximum planned height of 240px, allowing the display of about 10 lines of text**. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
+
+**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+
+**Helper link** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+
+**Do & don'ts**
+
+✅ **Do:** Set a maximum height for text areas to prevent them from dominating the layout, using scrolling for overflow content
+
+❌ **Don't:** Allow text areas to expand infinitely without constraint, as this disrupts page layout and creates poor mobile experiences
+
+✅ **Do:** Use helper text to provide concise, actionable guidance that helps users understand what to enter
+
+❌ **Don't:** Make helper text longer than 1-2 lines, as lengthy instructions reduce scannability and increase cognitive burden
+
+✅ **Do:** Position helper text directly below the text area where users naturally look for additional context
+
+❌ **Don't:** Place helper text above the text area or far from it, as this breaks the visual flow and reduces discoverability
+
+✅ **Do:** Use helper links sparingly for detailed instructions that would overwhelm inline helper text
+
+❌ **Don't:** Include links within helper text without clear indication, as screen readers may not announce them as interactive
+
+✅ **Do:** Ensure scrolled text areas have sufficient contrast on scrollbars and clear visual indicators of scrollable content
+
+❌ **Don't:** Hide scrollbars entirely, as users need visual confirmation that more content exists below
+
+✅ **Do:** Test scrolling behavior on mobile devices to avoid nested scrolling issues where possible
+
+❌ **Don't:** Create scroll-within-scroll situations on mobile, as they cause frustration and usability problems
+
+✅ **Do:** Make helper text and helper links accessible via screen readers using proper semantic markup
+
+❌ **Don't:** Convey critical information only through helper links, as users may miss or skip them
+
+✅ **Do:** Display helper text persistently rather than only on focus, ensuring it's available when users need it most
+
+❌ **Don't:** Rely on hover-only tooltips for essential information, as they're not accessible on touch devices or to keyboard users
+
+---
+
+## Behavior by entered line count
 
 • **Default display**
 By default, the height of **the input text container is set to 72px, which allows 3 lines of text** to be displayed without expanding the component. This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
@@ -73,9 +252,43 @@ If expansion is disabled or **the maximum height is reached at 240px, correspond
 **⚠️ No manual resize (by the user)**
 On both desktop and mobile, we have chosen to disable manual resizing to avoid behaviors inconsistent with the design system.
 
+**Do & don'ts**
+
+✅ **Do:** Start with a reasonable default height (3 lines) that signals multi-line input without overwhelming users
+
+❌ **Don't:** Show a single-line height initially, as it fails to communicate that multi-line input is expected
+
+✅ **Do:** Allow text areas to auto-expand as users type to show all content without requiring scrolling for most use cases
+
+❌ **Don't:** Force users to scroll within small text areas when auto-expansion would provide a better experience
+
+✅ **Do:** Set a maximum height to prevent text areas from consuming excessive screen space in long-form inputs
+
+❌ **Don't:** Allow unlimited expansion on small screens, as it makes navigation and form completion difficult
+
+✅ **Do:** Disable manual resize handles to maintain consistent layout and prevent users from breaking the design
+
+❌ **Don't:** Allow users to resize text areas arbitrarily, especially on mobile, as it causes layout problems
+
+✅ **Do:** Test auto-resize behavior across different devices to ensure smooth transitions without layout shifts
+
+❌ **Don't:** Create jarring resize animations that distract users or cause content to jump unexpectedly
+
+✅ **Do:** Provide clear visual feedback when maximum height is reached and scrolling becomes necessary
+
+❌ **Don't:** Hide the fact that content has been truncated; make scrollability obvious with visible scrollbars
+
+✅ **Do:** Consider the typical length of expected responses when setting default and maximum heights
+
+❌ **Don't:** Use the same height settings for all text areas regardless of their purpose or expected content length
+
+✅ **Do:** Ensure auto-resize respects container boundaries and doesn't break parent layout constraints
+
+❌ **Don't:** Allow text areas to overflow their containers or overlap with adjacent content during expansion
+
 ---
 
-### Character counter
+## Character counter
 
 • **Character limit not exceeded**
 The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field's allowed limit.
@@ -87,204 +300,45 @@ If the user exceeds the set limit, the field enters an error state, but input is
 
 The user must reduce the number of characters entered for the text area to exit the error state.
 
----
+**Do & don'ts**
 
-### Label clarity drives completion 👈🤔
+✅ **Do:** Display character counters in real-time to give users immediate feedback on remaining capacity
 
-✅ **Do:** Use specific, action-oriented labels that explain what information is needed ("Describe your technical issue" rather than "Comments")  
-❌ **Don't:** Use generic labels like "Text" or "Input" that leave users guessing about expected content type or format
+❌ **Don't:** Wait until form submission to inform users they've exceeded character limits
 
----
+✅ **Do:** Position character counters in the helper text area where users naturally look for field-related information
 
-### Position helper text for scanning efficiency 👈🤔
+❌ **Don't:** Place character counters in locations that are hard to notice or that interrupt the typing flow
 
-✅ **Do:** Place character counters and formatting hints below the input where users naturally look after typing  
-❌ **Don't:** Position critical guidance above the input or far from the field, forcing users to scroll or search for context
+✅ **Do:** Show "X characters remaining" format to help users gauge how much more they can write
 
----
+❌ **Don't:** Only show total character count without indicating the limit, forcing users to do mental math
 
-### Placeholder text guides without replacing labels 👈🤔
+✅ **Do:** Transition to error state when limits are exceeded, using clear visual indicators like color change
 
-✅ **Do:** Use placeholder text to show format examples ("Minimum 50 characters for detailed feedback") that disappear on focus  
-❌ **Don't:** Rely on placeholder text alone without a persistent label, as placeholders vanish when users begin typing
+❌ **Don't:** Block user input when the limit is reached; allow typing and show the overflow amount instead
 
----
+✅ **Do:** Use clear, accessible language in character counters like "15 characters remaining" rather than just numbers
 
-### Error messages explain and guide recovery 👈🤔
+❌ **Don't:** Rely solely on color to communicate limit status; include text and icons for accessibility
 
-✅ **Do:** Replace helper text with specific error messages that explain what went wrong and how to fix it ("Exceeds limit by 45 characters—please shorten your response")  
-❌ **Don't:** Show vague errors like "Invalid input" without indicating the issue or next steps for correction
+✅ **Do:** Set character limits based on actual content requirements and database constraints, not arbitrary numbers
 
----
+❌ **Don't:** Use unnecessarily restrictive character limits that frustrate users trying to provide complete information
 
-### Helper links reduce interruption 👈🤔
+✅ **Do:** Update character counter announcements for screen readers using ARIA live regions
 
-✅ **Do:** Provide optional helper links for complex input requirements that open modals or external guides without losing user progress  
-❌ **Don't:** Interrupt the user's flow by opening help pages in the same window or removing them from the form context
+❌ **Don't:** Make character counter changes completely silent to assistive technology users
 
----
+✅ **Do:** Allow users to see and edit content that exceeds the limit so they can make informed decisions about what to cut
 
-### Character limits maintain consistency 👈🤔
-
-✅ **Do:** Communicate character limits clearly before users begin typing, showing real-time countdown as they approach the limit  
-❌ **Don't:** Block input abruptly at the limit without warning, or allow unlimited entry that later causes validation failures
-
----
-
-### Auto-expansion preserves context 👈🤔
-
-✅ **Do:** Let the field expand automatically up to 10 lines so users can see their full text while typing without scrolling  
-❌ **Don't:** Force users into a tiny 2-3 line box from the start, hiding content and making editing difficult
-
----
-
-### Read-only states communicate processing 👈🤔
-
-✅ **Do:** Use read-only state when displaying pre-filled content that users should review but not modify during a workflow step  
-❌ **Don't:** Use disabled state for content that's temporarily locked, as it suggests the field is permanently unavailable
-
----
-
-### Loading states reduce uncertainty 👈🤔
-
-✅ **Do:** Show loading indicators when the system validates input or fetches suggested content, reassuring users that processing is underway  
-❌ **Don't:** Leave the field in a silent enabled state during background operations, causing users to wonder if their action registered
-
----
-
-### Scrolling inside inputs creates friction on mobile 👈🤔
-
-✅ **Do:** Consider maximum heights carefully for mobile layouts where nested scrolling (page scroll + input scroll) degrades usability  
-❌ **Don't:** Set aggressive height limits on mobile that force frequent internal scrolling while the page itself is scrollable
-
----
-
-### How should I configure labels and helper text for user feedback collection? 👈🤔
-
-Use a specific label like "Share your experience" with helper text showing character requirements ("Minimum 50 characters") and a real-time counter below the input.
-
----
-
-### What should the error state look like when a character limit is exceeded? 👈🤔
-
-Display a red border, error icon, and message below the input stating "Exceeds limit by [X] characters—please shorten your response" while showing the exact overage count.
-
----
-
-### How do I display helper links for complex input requirements? 👈🤔
-
-Position the helper link below the helper text or error message with underlined text like "See formatting guidelines" that opens a modal without leaving the form.
-
----
-
-### What's the visual difference between enabled and read-only states for pre-filled content? 👈🤔
-
-Read-only state shows content with a muted background and no cursor interaction, while enabled state has standard background color and accepts focus and editing.
-
----
-
-### How should I configure the field for short feedback versus detailed descriptions? 👈🤔
-
-For short feedback (under 3 lines), use default 72px height; for detailed descriptions, let auto-expansion work up to 240px with visible scrollbar when limit is reached.
-
----
-
-### What does the loading state look like when validating input? 👈🤔
-
-Show a progress indicator inside the trailing container area (right side of input) while the field remains enabled but visually indicates processing is underway.
-
----
-
-### How do I show placeholder guidance for format expectations? 👈🤔
-
-Display placeholder text like "Describe your issue in detail (minimum 20 words)" that disappears on focus, with persistent label above and helper text below.
-
----
-
-### What's the visual layout when both character counter and helper link are present? 👈🤔
-
-Character counter appears in helper text position below input, followed by helper link on the next line, both left-aligned within the input container's padding.
-
----
-
-### How should I configure the disabled state for temporarily locked fields? 👈🤔
-
-Show grayed-out background, muted text, and disabled cursor with helper text also muted to indicate the field cannot currently accept input.
-
----
-
-### What does the skeleton loading state look like before content loads? 👈🤔
-
-Display animated skeleton placeholder matching the input's dimensions (label, 72px text container, helper text areas) using the OUDS Skeleton component with security margin disabled.
-
----
-
-## Screen Sizes
-
-### Desktop 👈🤖
-
-Text area displays at full width within its container, defaulting to 72px height (3 lines) and expanding up to 240px as users type. Character counters and helper links are easily readable with standard 14px font size and 20px line height.
-
-### Tablet 👈🤖
-
-Maintains desktop behavior with full-width display and auto-expansion, though nested scrolling within the input may occur more frequently as vertical space becomes constrained. Touch targets for helper links meet minimum 44px height requirements.
-
-### Mobile 👈🤖
-
-Auto-expansion is critical to prevent immediate scrollbar appearance in constrained vertical space. Character counters remain visible below input, and users should be aware of potential scroll-within-scroll friction when content exceeds 240px on smaller screens.
+❌ **Don't:** Truncate or delete user content automatically when limits are exceeded
 
 ---
 
 # Specs
 
-## Properties
-
-### Initial Config
-
-| Property | Default Value | Notes |
-|----------|---------------|-------|
-| Outlined | False | Standard filled style with subtle background and bottom border for form contexts |
-| Rounded corner | False | Square corners maintain consistency with standard business-oriented journeys |
-| Input status | Empty | Field starts blank without placeholder text visible by default |
-| State | Enabled | Interactive and ready to receive user input without restrictions |
-| Error | False | Field begins in valid state without error styling or messages |
-| Scrolled | False | Scrollbar hidden until content exceeds maximum height of 240px |
-| Label | True | Visible label provides context and accessibility for all users |
-| Helper text | False | Character counter or guidance text disabled by default |
-| Helper link | False | Optional assistance link hidden unless explicitly enabled |
-
----
-
-### Outlined
-
-**`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
-
-**`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
-
----
-
-### Rounded corner
-
-**`False`** For a square finish.
-
-**`True`** For a finish with rounded corner. To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
-
----
-
-### Input status
-
-**`Empty`** The Empty state indicates that the text area is blank with no content or placeholder, a neutral starting point.
-
-**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
-
-**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
-
----
-
-### States
+## States
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -302,23 +356,9 @@ Auto-expansion is critical to prevent immediate scrollbar appearance in constrai
 
 ---
 
-### Error
+## Layout and spacing
 
-The Error status indicates that the user input does not meet validation rules, for example, in this specific case, if the number of characters entered by the user exceeds the allowed limit. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
-
-This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
-
-**⚠️ Error message vs helper text / link** If a helper text accompanies the text input, it is replaced by the error message. However, a helper link must not be replaced and should remain positioned below the error message.
-
----
-
-### Other boolean options
-
-**Scrolled** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond **the maximum planned height of 240px, allowing the display of about 10 lines of text**. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
-
-**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
-
-**Helper link** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+🚧 Content to be added
 
 ---
 
@@ -326,43 +366,43 @@ This state helps users quickly identify and correct mistakes by explaining what 
 
 ## Accessibility intro
 
-Text area components must meet WCAG 2.2 Level AA standards for keyboard operability, label associations, error identification, and focus visibility to ensure all users can enter multi-line text effectively. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+Text areas must comply with WCAG 2.2 Level AA standards to ensure all users can enter multi-line text regardless of ability. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
 
 ---
 
 ## Accessibility Challenges
 
-Multi-line text inputs present unique accessibility challenges due to their dynamic height behavior, character counting requirements, and complex state management across typing, validation, and error recovery phases. Users relying on assistive technology need real-time feedback about character limits, validation states, and content overflow without losing context or position within longer text entries.
+Text areas present unique accessibility challenges due to their multi-line nature, dynamic character counting, auto-resize behaviors, and complex validation states. Unlike single-line inputs, text areas must communicate content length, scrollability, and overflow conditions to all users. Screen reader users need clear indication of character limits, current count, and error states without overwhelming them with excessive announcements. Keyboard users require predictable navigation patterns, especially when text areas expand or trigger validation. The combination of labels, helper text, character counters, and error messages must be properly associated and announced in a logical sequence.
 
 ### Key Challenges
-- Real-time character counter updates must announce changes to screen readers without interrupting typing flow
-- Auto-expansion behavior can cause unexpected screen reader position loss or focus disruption
-- Scrollable content within the input creates nested navigation complexity for keyboard and screen reader users
-- Error messages must clearly associate with the field while preserving helper text context when both are present
+- Character counters updating in real-time must announce changes without overwhelming screen reader users
+- Auto-resize behavior can cause unexpected focus and scroll position changes that disorient users
+- Error states with exceeded character limits must be communicated clearly without blocking input
+- Scrollable content within text areas creates nested scrolling challenges on mobile devices
 
 ### Critical Success Factors
-1. Semantic HTML with proper `<textarea>` element and explicit label associations via `for`/`id` or `aria-labelledby` (WCAG 4.1.2)
-2. Live region announcements for character counter changes using `aria-live="polite"` to avoid interrupting user input
-3. Error identification with `aria-describedby` linking to error messages and `aria-invalid="true"` on validation failure (WCAG 3.3.1, 4.1.2)
-4. Focus indicator with minimum 3:1 contrast ratio that remains visible during all interactions (WCAG 2.4.7)
+1. **Clear structure**: Proper semantic HTML with associated labels, described-by relationships linking to helper text, character counters, and error messages (WCAG 3.3.2, 4.1.2)
+2. **Visible focus indicators**: High-contrast focus outlines (≥3:1) that remain visible throughout interaction (WCAG 2.4.7)
+3. **Real-time feedback**: Polite ARIA live regions for character counter updates that don't interrupt user flow (WCAG 4.1.3)
+4. **Keyboard accessibility**: Full keyboard operability including Tab navigation, arrow keys for text editing, and Escape to exit without submission (WCAG 2.1.1)
 
 ---
 
 ## Design Requirements
 
 ### Structure & Labels
-- [ ] **Persistent visible label**: Label must remain visible at all times, not hidden inside placeholder text ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Programmatic label association**: Use `<label for="id">` with matching `id` on `<textarea>`, or `aria-labelledby` pointing to label element ID
-- [ ] **Character counter as live region**: Wrap counter in element with `aria-live="polite"` to announce updates without interrupting typing
+- [ ] **Visible labels required**: Every text area must have a permanently visible label positioned above the field, not just placeholder text ([Orange Forms Guidelines](https://a11y-guidelines.orange.com/en/web/develop/forms/))
+- [ ] **Programmatic association**: Use `<label for="id">` pointing to text area's `id` attribute to create proper association for assistive technology
+- [ ] **Helper text association**: Connect helper text using `aria-describedby` to ensure screen readers announce it when the field receives focus
 
 ### Visual Design
-- [ ] **Focus indicator contrast**: Focus outline must have ≥3:1 contrast against adjacent colors, typically 2px solid with sufficient color difference ([Orange Focus Visible](https://a11y-guidelines.orange.com/en/web/components-examples/keyboard-navigation/))
-- [ ] **Error state color + icon + text**: Never rely on color alone; combine red border with error icon and descriptive message below input ([Orange Color Contrast](https://a11y-guidelines.orange.com/en/web/components-examples/colors-and-contrasts/))
-- [ ] **Text contrast in all states**: Input text ≥4.5:1, placeholder text ≥4.5:1, helper text ≥4.5:1 against backgrounds
+- [ ] **Focus indicators**: Provide visible focus state with ≥3:1 contrast ratio against adjacent colors, never remove or hide focus outlines ([WCAG 2.4.7](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible))
+- [ ] **Color contrast**: Ensure text and borders meet 4.5:1 for normal text, 3:1 for large text and UI components ([WCAG 1.4.3, 1.4.11](https://a11y-guidelines.orange.com/en/web/develop/forms/))
+- [ ] **Clear boundaries**: Text area borders must be clearly visible with sufficient contrast to indicate the input region
 
 ### Content
-- [ ] **Specific error messages**: ❌ "Invalid input" / ✅ "Exceeds limit by 45 characters—please shorten your response" ([Orange Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/error-messages/))
-- [ ] **Helper text describes limits**: Communicate character limits, format requirements, and expectations before users begin typing
+- [ ] **Descriptive labels**: ❌ "Comments" / ✅ "Please describe the issue you experienced" ([Orange Forms Best Practices](https://a11y-guidelines.orange.com/en/web/develop/forms/))
+- [ ] **Clear error messages**: Explain what went wrong and how to fix it without technical jargon, programmatically associated via `aria-describedby`
 
 ---
 
@@ -370,36 +410,49 @@ Multi-line text inputs present unique accessibility challenges due to their dyna
 
 ### Screen Reader Testing
 - [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
-- [ ] Verify label announced on focus, character counter updates spoken via live region, error messages read when `aria-invalid="true"` set, placeholder text announced when field empty
+- [ ] Verify label announced first, then helper text, current character count (if applicable), then field role and current value
 
 ### Keyboard Testing
-- [ ] Tab navigates to field, Enter creates new line (not submit), all functionality keyboard-accessible without mouse
-- [ ] Focus indicator visible (≥3:1 contrast) throughout interaction including auto-expansion
+- [ ] Tab focuses text area, Shift+Tab moves backwards, all functionality keyboard-accessible
+- [ ] Focus indicator visible with ≥3:1 contrast throughout interaction, arrow keys navigate within text
+- [ ] Enter key creates new lines within text area without submitting form, Escape exits field without clearing content
 
 ### Character Counter Testing
-- [ ] Counter updates announce via `aria-live="polite"` without interrupting typing flow
-- [ ] When limit exceeded, error message replaces helper text and announces via `aria-describedby`
+- [ ] Character counter updates appear in helper text region and announce via ARIA live region without interrupting typing
+- [ ] Error state triggered when limit exceeded, communicated via visual indicators and screen reader announcement
 
-Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
+Resources: [Orange Accessibility Testing Methods](https://a11y-guidelines.orange.com/en/web/test/)
 
 ---
 
 ## Key WCAG Criteria
 
-- **2.1.1 Keyboard** (A): All functionality including text entry, scrolling overflow content, and accessing helper links must work via keyboard alone
-- **2.4.7 Focus Visible** (AA): Focus indicator with ≥3:1 contrast visible on `<textarea>`, helper links, and all interactive elements
-- **3.3.1 Error Identification** (A): Errors identified in text via error message and associated with input via `aria-describedby`, with `aria-invalid="true"` set
-- **3.3.2 Labels or Instructions** (A): Visible persistent label provided, with helper text clarifying character limits and format requirements
-- **4.1.2 Name, Role, Value** (A): Semantic `<textarea>` element with proper label association, `aria-invalid`, `aria-describedby` for error/helper text, live region for counter updates
+- **2.1.1 Keyboard** (A): All text area functionality including focus, text entry, character counting, and error recovery operable via keyboard
+- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast when text area receives keyboard focus
+- **3.3.1 Error Identification** (A): Character limit errors identified in text and associated with text area via `aria-describedby`
+- **3.3.2 Labels or Instructions** (A): Labels provided for text areas with helper text for complex requirements, both accessible to assistive technology
+- **4.1.2 Name, Role, Value** (A): Semantic `<textarea>` element with proper label association, helper text via `aria-describedby`, error state via `aria-invalid`, character counter updates via ARIA live regions
 
-For complete reference: [Orange Accessibility Guidelines - Form Examples](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+For complete reference: [Orange Accessibility Guidelines - Form Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
 
 ---
 
 ## Additional Resources
 
-- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
-- [Orange Accessibility Guidelines - Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/error-messages/)
-- [WCAG 2.2 Understanding - 4.1.2 Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
-- [WCAG 2.2 Understanding - 3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html)
-- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+- [Orange Accessibility Guidelines - Forms Development](https://a11y-guidelines.orange.com/en/web/develop/forms/)
+- [WCAG 2.2 Understanding - Success Criterion 3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions)
+- [Orange Unified Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+- [WAI-ARIA Authoring Practices - Text Area Pattern](https://www.w3.org/WAI/ARIA/apg/)
+- [Orange Guidelines - Disabling HTML Elements Accessibly](https://a11y-guidelines.orange.com/en/articles/disable-elements/)
+
+---
+
+# Changelog
+
+| Date | Number | Notes | Designer |
+|------|--------|-------|----------|
+| Nov 10, 2025 | 1.2.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component | Maxime Tonnerre |
+| Sep 30, 2025 | 1.1.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
+| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+
+---

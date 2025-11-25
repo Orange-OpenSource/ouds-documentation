@@ -1,61 +1,10 @@
-# Quantity Input - Definition & Properties
-
----
-
-### Definition
+## Definition
 
 A quantity input is a form component that allows users to specify a numerical value representing a quantity, often used in contexts like shopping carts, inventory management, or booking systems. It typically combines a numeric text field with increment and decrement controls (such as "+" and "–" buttons) to make adjustments easy and precise. The component must enforce valid input ranges (minimum of 1), prevent invalid characters, and support keyboard input, stepper controls, and assistive technologies.
 
 ---
 
-### Properties
-
-| property name | type |
-|---------------|------|
-| Outlined | 'False' \| 'True' |
-| Rounded corner | 'False' \| 'True' |
-| Actions placement | 'Trailing' \| 'Split' |
-| Input status | 'Empty' \| 'Empty (Placeholder)' \| 'Filled' |
-| State | 'Enabled' \| 'Hover' \| 'Focus' \| 'Loading' \| 'Read only' \| 'Disabled' \| 'Skeleton' |
-| Error | 'False' \| 'True' |
-| Leading icon | 'False' \| 'True' |
-| ⚠️ Label | boolean |
-| ✏️ Label | text |
-| ✏️ Placeholder | text |
-| ✏️ Input text | text |
-| Suffix | boolean |
-| Helper text | boolean |
-| ✏️ Helper text | text |
-| ✏️ Error empty text | text |
-| ✏️ Error filled text | text |
-
----
-
-### Initial settings
-
-**Outlined** Off
-
-**Rounded corner** Off
-
-**Actions placement** Trailing
-
-**Input status** Empty
-
-**State** Enabled
-
-**Error** Off
-
-**Leading icon** Off
-
-**⚠️ Label** On
-
-**Suffix** Off
-
-**Helper text** Off
-
----
-
-### Outlined
+## Outlined
 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
@@ -66,7 +15,7 @@ A quantity input is a form component that allows users to specify a numerical va
 
 ---
 
-### Rounded corner
+## Rounded corner
 
 **`False`** For a square finish.
 
@@ -84,7 +33,7 @@ A quantity input is a form component that allows users to specify a numerical va
 
 ---
 
-### Actions placement
+## Actions placement
 
 **`Trailing`** It places both the increment and decrement buttons on the right side of the input field, either stacked vertically or positioned side by side. This layout is compact and visually streamlined, making it ideal for dense interfaces or mobile views.
 
@@ -92,7 +41,7 @@ A quantity input is a form component that allows users to specify a numerical va
 
 ---
 
-### State
+## States
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -110,7 +59,42 @@ A quantity input is a form component that allows users to specify a numerical va
 
 ---
 
-### Error
+## ⚠️ Specific focus state rules
+
+**Keyboard input disabled**
+
+In the vast majority of modern UX/UI cases, a quantity input should be editable on focus. However, there are a few specific rare cases where direct editing by keyboard input might be disabled:
+• Highly guided or controlled usage→product configuration with mandatory steps
+• Risk of critical error→specific or technical values
+• Strict touch context→mobile app with simplified UI, no keyboard
+• Deliberate product decision→to enforce navigation or a business constraint
+
+In this specific context, it is therefore recommended to prefill the input by default.
+
+**Keyboard input + increment/decrement controls enabled**
+
+In the context of an editable quantity input, if the field is focused and already filled by the user, then clicking the + (increase) or – (decrease) buttons must follow a smooth and predictable behavior according to the following UX rules.
+
+When clicking + or – during editing:
+• The value is automatically validated
+• The action is applied to that value (+1 or –1)
+• The field is visually updated with the new value
+• The cursor is moved to the end of the field (optional)
+• The field remains focused
+
+Absolutely to avoid:
+• Losing the currently typed value if partially entered
+• Requiring defocus for the buttons to work
+• Failing to parse/validate the value before incrementing
+
+Specific error focus state:
+If the value in the field is invalid (empty or non-numeric), clicking + or – may:
+• Either fill in a default value (1)
+• Or display a temporary blocking error ("Please enter a number")
+
+---
+
+## Error
 
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -122,16 +106,28 @@ If the input is filled, an "error" status is triggered by the entry of a value t
 
 ---
 
-### Leading icon
+## Leading icon
 
 Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
 
 ---
 
-### Suffix and Helper text
+## ⚠️ Label
 
-**Suffix** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm…).
+Describes the purpose of the input. Why hide a quantity input label?
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
+However, hiding the label should only be done if:
+• The purpose of the input remains clear thanks to a placeholder or contextual icon.
+• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
-**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
+
+---
+
+## Other boolean options
+
+**`Suffix`** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm…).
+
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 ---
