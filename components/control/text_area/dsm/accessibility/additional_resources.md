@@ -1,0 +1,5 @@
+- [Orange Accessibility Guidelines - Forms Development](https://a11y-guidelines.orange.com/en/web/develop/forms/)
+- [WCAG 2.2 Understanding - Success Criterion 3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions)
+- [Orange Unified Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+- [WAI-ARIA Authoring Practices - Text Area Pattern](https://www.w3.org/WAI/ARIA/apg/)
+- [Orange Guidelines - Disabling HTML Elements Accessibly](https://a11y-guidelines.orange.com/en/articles/disable-elements/)

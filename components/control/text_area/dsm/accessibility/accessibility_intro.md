@@ -1,0 +1,1 @@
+Text areas must comply with WCAG 2.2 Level AA standards to ensure all users can enter multi-line text regardless of ability. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

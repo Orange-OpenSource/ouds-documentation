@@ -1,0 +1,1 @@
+Multi-line text area that allows users to enter detailed text like comments or feedback, with features for character limits, auto-expansion, and error validation.
