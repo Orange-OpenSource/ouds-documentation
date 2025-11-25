@@ -62,7 +62,7 @@ It typically includes features like a visible label, placeholder text, character
 • In a header (search field)
 • In a selection/filtering feature in a product catalog
 
-### Do & don'ts
+**Do & don'ts**
 
 ✅ **Do:** Use filled text areas in dense forms where multiple fields need clear visual separation and containment
 
@@ -94,7 +94,7 @@ It typically includes features like a visible label, placeholder text, character
 
 **`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
-### Do & don'ts
+**Do & don'ts**
 
 ✅ **Do:** Provide clear placeholder text that demonstrates the expected format or gives a concrete example
 
