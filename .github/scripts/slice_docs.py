@@ -3,6 +3,7 @@
 Documentation Slicer Script
 Automatically slices Markdown documents by heading hierarchy and saves to dsm/ directory
 Only generates slices for leaf sections (sections without children)
+H2 sections are always treated as leaves - H3+ content stays within H2 slices
 Removes H2 heading lines from slice content
 """
 
@@ -195,6 +196,7 @@ def collect_leaf_sections(section: MarkdownSection,
                          leaf_sections: Optional[List[MarkdownSection]] = None) -> List[MarkdownSection]:
     """
     Recursively collect only leaf sections (sections without children)
+    H2 sections are always treated as leaves - H3+ content stays within H2 slices
     
     Args:
         section: Current section node
@@ -210,6 +212,9 @@ def collect_leaf_sections(section: MarkdownSection,
     if section.title == 'root':
         for child in section.children:
             collect_leaf_sections(child, leaf_sections)
+    # H2 sections are always treated as leaves (don't slice H3+)
+    elif section.level == 2:
+        leaf_sections.append(section)
     # If this section has no children, it's a leaf node
     elif not section.children:
         leaf_sections.append(section)
