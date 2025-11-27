@@ -1,0 +1,1 @@
+A text input allows users to enter and edit single-line textual data in forms, dialogs, and search interfaces.
