@@ -1,5 +1,3 @@
-# Quantity Input - Changelog
-
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
 | Sep 30, 2025 | 1.2.0 | • For the property "Actions placement", the name of the variant "Right" is replaced by "Trailing" (RTL consideration)<br>• The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
