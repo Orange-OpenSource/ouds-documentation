@@ -14,7 +14,7 @@ This component is used when the number of choices is limited and known in advanc
 
 ---
 
-## Best for 👈🤔
+## Best for
 
 ✅ Selecting from 5-15 predefined options in a form
 
@@ -38,7 +38,7 @@ This component is used when the number of choices is limited and known in advanc
 
 ---
 
-## Anatomy 👈🤖
+## Anatomy
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
@@ -218,7 +218,7 @@ Conveys the nature or purpose of the select input field at a glance.
 
 ---
 
-## ⚠️ Label
+## Label
 
 Describes the purpose of the input. Why hide a select input label?
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
@@ -290,7 +290,7 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ---
 
-## ⚠️ Mandatory field indication
+## Mandatory field indication
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -361,7 +361,7 @@ UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
 
 ---
 
-# Accessibility 👈🤖
+# Accessibility
 
 ## Accessibility intro
 
