@@ -1,0 +1,1 @@
+Select inputs must meet WCAG 2.2 Level AA standards to ensure users can successfully make selections using keyboard navigation, screen readers, and other assistive technologies. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

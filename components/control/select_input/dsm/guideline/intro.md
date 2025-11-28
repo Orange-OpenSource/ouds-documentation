@@ -1,0 +1,1 @@
+A select input lets users choose a single option from a predefined list displayed in a dropdown menu.
