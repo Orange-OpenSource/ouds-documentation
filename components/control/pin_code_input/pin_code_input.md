@@ -1,12 +1,12 @@
 # Guideline
 
-## Intro 👈🤖
+## Intro
 
-A PIN Code Input captures short, fixed-length numeric codes through individual digit fields for secure authentication or verification flows.
+A PIN code input captures fixed-length numeric codes through individual digit fields, supporting authentication flows with automatic focus navigation and paste functionality.
 
 ---
 
-## Description
+## Definition
 
 A PIN code input is a specialized form field used to capture short, fixed-length numeric codes, typically for authentication or confirmation purposes, such as a 4, 6 or 8-digit personal identification number (PIN).
 
@@ -16,202 +16,47 @@ This component must support smooth keyboard navigation (automatic focus shift, b
 
 ---
 
-## Anatomy 👈🤖
+## Best for
 
-| # | Element | Purpose |
-|---|---------|---------|
-| 1 | PIN code container | Groups all digit input fields in a horizontal row with consistent spacing |
-| 2 | Digit input field | Individual field for a single numeric character, displays entered digit as masked bullet or visible number |
-| 3 | Focus indicator | Visual border highlighting the currently active digit input field |
-| 4 | Placeholder | Dash or hyphen displayed in empty digit fields to indicate expected input |
-| 5 | Helper text | Supporting message below inputs providing context (e.g., "Enter the 6-digit code sent to your phone") |
-| 6 | Error message | Red text below inputs explaining validation failure when error state is triggered |
-| 7 | Error indicator (combined) | Red border and background tint on digit fields when validation fails |
+✅ Two-factor authentication (2FA) requiring a numeric verification code
 
----
+✅ SMS or email one-time password (OTP) verification during account setup
 
-## Usage & Guidance
+✅ Transaction confirmation requiring a security PIN before completing payments
 
-### Best for 👈🤔
+✅ Mobile-first flows where numeric keypad input is preferred
 
-✅ SMS or email verification codes requiring 4, 6, or 8 digits
-✅ Two-factor authentication flows with time-sensitive codes
-✅ Transaction confirmation PINs for financial operations
-✅ Password reset verification with numeric codes
-✅ Account login requiring fixed-length numeric credentials
-✅ Device pairing or setup requiring numeric confirmation
-✅ Parental control or age verification requiring PIN entry
-✅ Secure document access with fixed-length numeric keys
-✅ One-time passwords (OTP) sent via SMS or authenticator apps
-✅ Registration completion with email verification codes
+✅ Login verification when additional identity confirmation is needed
+
+✅ Account recovery processes requiring code entry from email or SMS
+
+✅ Session timeout re-authentication with a short verification code
+
+✅ Secure actions requiring PIN confirmation (e.g., changing security settings)
+
+✅ Time-sensitive code entry where codes expire within 30-60 seconds
+
+✅ Device pairing or activation requiring numeric confirmation codes
 
 ---
 
-### Behaviour and interactions
+## Anatomy
 
-**Visible or Accessible Label**
-• The input must have a clear and unique label, either visible on screen or provided through aria-label or aria-labelledby.
-• Never rely solely on a placeholder to describe the field – placeholders do not replace labels, especially for screen reader users.
-
-**Clear separation of country selector, dial code, and input field**
-• The country selector must be keyboard-navigable (e.g., <button> or <select>) and properly labelled (e.g., aria-label="Select country").
-• If the dial code (e.g., +33) is displayed as a prefix, it should be readable by assistive technologies, with a clear semantic role (e.g., non-editable text, not focusable if decorative).
-• Ensure the visual and semantic reading order is coherent (e.g., "Select country, France, plus thirty-three, phone number").
-
-**Input formatting and guidance**
-• If a mask is used for formatting (e.g., (0X) XX XX XX XX), it must not interfere with keyboard navigation or screen reader output.
-• Provide clear instructions if a specific format is required, both visually and via aria-describedby.
-
-**Clear and accessible error feedback**
-• In case of errors (e.g., incomplete number, invalid format), display a clear, visible error message, linked to the field via aria-describedby.
-• Do not rely on color alone to indicate errors – combine text, icon, and visual state changes.
-
-**Smooth keyboard navigation**
-• All interactive elements (input field, country selector, etc.) must be fully keyboard-accessible in a logical order (e.g., using Tab and arrow keys).
-• Follow native interaction patterns (e.g., use arrow keys to navigate country list, Escape to close dropdown, etc.).
-
-**Logical screen reader announcements**
-• Ensure screen readers announce elements in a clear and logical order: field label, selected country, dial code, and then the input field.
-• Avoid complex composite fields that may not be well supported by assistive technologies. Prefer either a single field or clearly separated elements with appropriate ARIA roles.
-
-**Responsive and readable at all scales**
-• The component must remain readable and functional at all screen sizes, including zoom (up to 200%, per WCAG 2.2 AA) or in compact interfaces.
-• Related elements (label, icons, helper text, error messages) must remain visible, legible, and non-overlapping.
-• All field elements must remain functional under zoom: input, focus, keyboard interactions, visibility of states (error, helper, etc.).
-• No element (e.g., error message, action icon) should be truncated, hidden, or inaccessible due to zoom.
-• On mobile, pinch-to-zoom must be allowed (avoid meta tags like user-scalable=no).
-• Prefer column-based or flex-wrap layouts to prevent horizontal breaking.
-• Icons and interactive elements must scale with text during zoom.
-• Ensure touch targets remain large enough: at least 44x44 px in final display, regardless of scale.
+| # | Element | Purpose | Optional |
+|---|---------|---------|----------|
+| 1 | PIN code container | Groups all digit input fields as a cohesive unit | N |
+| 2 | Digit input field | Individual input box accepting a single numeric character | N |
+| 3 | Input border/underline | Visual boundary indicating the input area and state | N |
+| 4 | Focus indicator | Highlights the currently active digit field | N |
+| 5 | Error message | Displays validation feedback below the input group | Y |
+| 6 | Helper text | Provides supporting instructions or context | Y |
+| 7 | Separator | Visual divider between digit groups (e.g., 3-3 format) | Y |
 
 ---
 
-### Provide context before the input 👈🤔
+## Outlined
 
-✅ **Do:** Display clear instructions above the input explaining where the code was sent (e.g., "Enter the 6-digit code sent to +33 6 12 34 56 78") and how long it remains valid  
-❌ **Don't:** Show the PIN input without explaining the code source, expected format, or expiration time, leaving users uncertain about what to enter
-
-### Show resend options for time-sensitive codes 👈🤔
-
-✅ **Do:** Include a countdown timer with helper text like "Code expires in 2:30" and a "Resend code" link that becomes active after expiration  
-❌ **Don't:** Hide resend functionality or fail to indicate when users can request a new code if the first one expires or doesn't arrive
-
-### Display clear error messages for validation failures 👈🤔
-
-✅ **Do:** Show specific error text like "Incorrect code. 2 attempts remaining." or "This code has expired. Request a new one." with error state styling on inputs  
-❌ **Don't:** Display generic "Invalid code" errors without explaining the specific problem (wrong code, expired, already used, max attempts) or next steps
-
-### Position the input within the verification flow 👈🤔
-
-✅ **Do:** Place the PIN input as the final step after phone number entry, clearly separated from previous fields with its own heading and context  
-❌ **Don't:** Combine the PIN input with other form fields or show it before establishing where the code was sent, creating confusion about the input sequence
-
-### Handle successful verification gracefully 👈🤔
-
-✅ **Do:** Show immediate success feedback (green borders, checkmarks) and automatically proceed to the next screen after successful code entry  
-❌ **Don't:** Leave users waiting without confirmation after entering a correct code or require manual submission after all digits are filled
-
-### Accommodate different code lengths clearly 👈🤔
-
-✅ **Do:** Configure digit field quantity (4, 6, or 8) to match the exact code length your system sends, making it visually obvious how many digits are expected  
-❌ **Don't:** Use a generic text field for code entry or display more/fewer fields than the actual code length, causing user uncertainty
-
-### Consider security vs. usability for masking 👈🤔
-
-✅ **Do:** Mask digits as bullets (●) by default for sensitive contexts like banking PINs, while allowing temporary visibility on mobile keyboards  
-❌ **Don't:** Show unmasked digits in high-security contexts or mask verification codes that users may need to reference from another device
-
-### Support paste functionality for codes 👈🤔
-
-✅ **Do:** Allow users to paste complete codes (e.g., from SMS messages) that auto-populate all digit fields correctly  
-❌ **Don't:** Disable paste or fail to handle pasted codes, forcing manual digit-by-digit entry even when codes are copied from messages
-
-### Indicate code expiration timing 👈🤔
-
-✅ **Do:** Display countdown timers or expiration timestamps (e.g., "Valid for 5 minutes" or "Expires at 14:32") so users know urgency  
-❌ **Don't:** Send time-sensitive codes without indicating expiration, leading to confusion when codes fail after unknown time periods
-
-### Provide alternative verification methods 👈🤔
-
-✅ **Do:** Include fallback options like "Didn't receive a code? Try email verification" or "Call me instead" for users with SMS delivery issues  
-❌ **Don't:** Trap users in a single verification path without alternatives when codes fail to arrive or phone numbers are inaccessible
-
----
-
-### How should I configure the PIN input for SMS verification codes? 👈🤔
-
-Use 6 digit fields with a visible label like "Verification code" and helper text stating "Enter the 6-digit code sent to +33 6 12 34 56 78" with a countdown timer.
-
-### What should the error state look like when a user enters an incorrect code? 👈🤔
-
-Display red borders on all digit fields, show an error icon, and include specific error text below like "Incorrect code. 2 attempts remaining."
-
-### How do I display a 4-digit PIN input for transaction confirmation? 👈🤔
-
-Configure 4 digit fields with masked bullets (●), a clear label like "Transaction PIN", and helper text such as "Enter your 4-digit PIN to confirm this payment."
-
-### What's the visual configuration for an 8-digit PIN with expired code error? 👈🤔
-
-Show 8 empty digit fields with red error borders and error message "This code has expired. Request a new code to continue."
-
-### How should I show a resend option for time-sensitive verification? 👈🤔
-
-Include helper text with countdown timer "Code expires in 2:30" and a disabled "Resend code" link that becomes active after expiration.
-
-### What should the success state look like after correct code entry? 👈🤔
-
-Display green borders on filled digit fields with checkmarks and brief success message "Code verified" before auto-advancing to next screen.
-
-### How do I configure helper text for email verification vs. SMS? 👈🤔
-
-For email: "Enter the 6-digit code sent to user@example.com"; for SMS: "Enter the 6-digit code sent to +33 6 12 34 56 78".
-
-### What's the layout for partially filled PIN input during entry? 👈🤔
-
-Show first two fields with masked bullets (●), third field with blinking cursor and darker background (focus state), remaining fields with placeholder dashes (-).
-
-### How should I display maximum attempts exceeded error? 👈🤔
-
-Show all digit fields with red error state, error icon, and message "Maximum attempts exceeded. Request a new verification code."
-
-### What's the configuration for first-use PIN creation vs. verification? 👈🤔
-
-Creation: "Create your 6-digit PIN" with helper text "Choose a PIN you'll remember"; Verification: "Enter PIN" with helper text "Enter the PIN you just created".
-
----
-
-## Screen Sizes
-
-### Desktop 👈🤖
-The PIN code input displays horizontally with individual digit fields sized 56px wide × 60px tall, with 12px gaps between fields. Helper text and error messages appear below with full width, maintaining clear readability without wrapping.
-
-### Tablet 👈🤖
-Layout remains horizontal but digit fields scale to minimum 44px width while maintaining touch-friendly 60px height. Spacing between fields adjusts to 10-12px to fit viewport while preserving clear separation.
-
-### Mobile 👈🤖
-Digit fields use minimum 44px × 60px dimensions to meet touch target requirements. On narrow screens (320px-360px), 8-digit PINs may reduce field width slightly (44px minimum) or wrap helper text, but maintain full keyboard accessibility and paste support.
-
----
-
-# Specs
-
-## Properties
-
-### Initial Config
-
-| Property | Default Value | Notes |
-|----------|---------------|-------|
-| Outlined | False | Controls whether digit fields use subtle background (False) or transparent with visible stroke (True) |
-| Rounded corner | False | Determines square corners (False) or rounded corners (True) for digit field containers |
-| Length | 6 | Sets the number of individual digit input fields (4, 6, or 8) |
-| Error | False | Toggles error state styling with red borders, background tint, and error message display |
-| Helper text | False | Shows or hides supporting text below the PIN input fields |
-
----
-
-### Outlined
-
-**`False`** An input with a subtle background fill and visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
+**`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
 This style may be interesting for contexts other than form pages:
@@ -219,18 +64,52 @@ This style may be interesting for contexts other than form pages:
 • In a header (search field)
 • In a selection/filtering feature in a product catalog
 
+### Do & don'ts
+
+✅ **Do:** Use the filled (outlined=false) style in standard form contexts where the input needs prominence and clear boundaries.  
+❌ **Don't:** Mix outlined and filled styles for PIN inputs within the same authentication flow.
+
+✅ **Do:** Apply the outlined style consistently when multiple inputs appear in lightweight, non-form contexts like headers.  
+❌ **Don't:** Use the outlined style in complex forms where it may reduce visual hierarchy and scannability.
+
+✅ **Do:** Ensure both styles maintain sufficient contrast (≥3:1) against their background for accessibility compliance.  
+❌ **Don't:** Choose a style based solely on aesthetics without considering the surrounding UI context and user expectations.
+
+✅ **Do:** Consider the visual weight needed—use filled for emphasis in primary flows, outlined for secondary contexts.  
+❌ **Don't:** Apply outlined style in high-security flows where users expect clear, prominent input fields.
+
+✅ **Do:** Test both styles across light and dark themes to ensure consistent visibility and usability.  
+❌ **Don't:** Assume one style works universally—validate with users in context before finalizing the choice.
+
 ---
 
-### Rounded corner
+## Rounded corner
 
 **`False`** For a square finish.
 
 **`True`** For a finish with rounded corner.
 To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
 
+### Do & don'ts
+
+✅ **Do:** Use square corners (rounded=false) for enterprise, banking, or professional application contexts.  
+❌ **Don't:** Apply rounded corners in formal business flows unless explicitly aligned with brand guidelines.
+
+✅ **Do:** Apply rounded corners consistently across all digit input fields when the rounded style is selected.  
+❌ **Don't:** Mix rounded and square corners within the same PIN code input component.
+
+✅ **Do:** Consider rounded corners for consumer-facing apps, entertainment, or lifestyle products seeking a friendlier aesthetic.  
+❌ **Don't:** Use rounded corners as a default without considering whether they match the overall product design language.
+
+✅ **Do:** Maintain the same corner radius across all input states (default, focus, error, disabled) for visual consistency.  
+❌ **Don't:** Change corner styling between states, as this creates visual inconsistency and confusion.
+
+✅ **Do:** Validate that rounded corners maintain sufficient touch target size (minimum 44×44px) on mobile devices.  
+❌ **Don't:** Apply excessive border radius that makes individual digit fields appear as circles, reducing clarity.
+
 ---
 
-### Error
+## Error
 
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -241,71 +120,119 @@ The error state must be triggered by an explicit validation (submission, API res
 
 ⚠️ **Alert:** In the context of a PIN code input, in addition to the input's "Error" UI rendering, it is essential to also include an "Alert" component (also in its "Error" status) in the interface.
 
+### Do & don'ts
+
+✅ **Do:** Display error messages only after explicit validation (form submission or API response), not during typing.  
+❌ **Don't:** Show real-time error feedback on each keystroke, as this creates anxiety and interrupts the user's flow.
+
+✅ **Do:** Provide specific, actionable error messages explaining what went wrong (e.g., "Incorrect code" or "Code expired").  
+❌ **Don't:** Use vague error messages like "Error" or "Invalid input" that don't help users understand the problem.
+
+✅ **Do:** Keep the input editable in error state so users can correct their entry without clearing all fields.  
+❌ **Don't:** Clear all entered digits when an error occurs, forcing users to re-enter the entire code.
+
+✅ **Do:** Use the Alert component in conjunction with the input's error state for important security messages.  
+❌ **Don't:** Rely solely on the input field's visual error state without providing an accompanying error message.
+
+✅ **Do:** Indicate remaining attempts clearly when account lockout is imminent (e.g., "2 attempts remaining").  
+❌ **Don't:** Lock users out without warning or without providing clear recovery options after exceeding attempt limits.
+
 ---
 
-### Other boolean options
+## Other boolean options
 
 **Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
+### Do & don'ts
+
+✅ **Do:** Use helper text to provide context about code delivery (e.g., "Enter the 6-digit code sent to your phone").  
+❌ **Don't:** Use helper text for information that should be in a label or that duplicates visible instructions elsewhere.
+
+✅ **Do:** Keep helper text concise—ideally one line—to avoid cluttering the interface.  
+❌ **Don't:** Write lengthy helper text that wraps multiple lines and competes with the primary input for attention.
+
+✅ **Do:** Ensure helper text remains visible and readable in all states, including when the input is focused or in error.  
+❌ **Don't:** Hide or obscure helper text when displaying error messages; show both when both are relevant.
+
+✅ **Do:** Write helper text that adds value, such as timing information ("Code expires in 5 minutes") or delivery details.  
+❌ **Don't:** Include placeholder-style hints in helper text that merely repeat the input's purpose without adding context.
+
+✅ **Do:** Position helper text consistently below the input group across all instances of the PIN code input.  
+❌ **Don't:** Place helper text in inconsistent locations that confuse users about which input it relates to.
+
 ---
 
-# Accessibility 👈🤖
+# Specs
+
+## States
+
+🚧 Missing from source: States section in pin_code_input_overview.md
+
+---
+
+## Layout and spacing
+
+🚧 Content to be added
+
+---
+
+# Accessibility
 
 ## Accessibility intro
 
-The PIN Code Input must meet WCAG 2.2 Level AA requirements for keyboard navigation, screen reader announcements, focus visibility, error identification, and paste support. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+The PIN code input must meet WCAG 2.2 Level AA requirements for keyboard operability, focus visibility, and error identification to ensure all users can complete authentication flows successfully. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
 
 ---
 
 ## Accessibility Challenges
 
-PIN code inputs present unique accessibility challenges because they fragment a single conceptual value across multiple visual fields, requiring careful coordination of keyboard navigation, screen reader announcements, and state management. Users relying on assistive technology must understand the relationship between individual digit fields while maintaining awareness of the complete code entry process.
+PIN code inputs present unique accessibility challenges due to their split-field design, automatic focus management, and time-sensitive nature. Users must navigate between multiple fields while understanding which digit position they're entering, and error recovery must be clear without forcing complete re-entry.
 
 ### Key Challenges
-- **Fragmented input model** - Multiple individual fields must behave as a cohesive single input for screen readers
-- **Auto-advance behavior** - Automatic focus shifting between fields can confuse users if not properly announced
-- **Paste operation complexity** - Pasted codes must correctly distribute across fields and announce the result
-- **Error state ambiguity** - Validation failures must clearly indicate which attempt failed and remaining attempts
+- Multiple input fields require coordinated focus management and clear position indication
+- Automatic focus shifts can disorient screen reader users if not announced properly
+- Time-sensitive codes create pressure that affects users who need more time
+- Paste functionality must work seamlessly across all individual fields
 
 ### Critical Success Factors
-1. **Semantic grouping with fieldset/legend** ensuring screen readers announce the complete input purpose (2.4.6 Headings and Labels)
-2. **Individual field labeling** with aria-label describing position (e.g., "Digit 1 of 6") so users track progress (4.1.2 Name, Role, Value)
-3. **Coordinated ARIA live regions** announcing auto-advance, paste results, and validation outcomes without interrupting input flow (4.1.3 Status Messages)
-4. **Error recovery guidance** providing specific failure reasons and clear next steps in associated error messages (3.3.3 Error Suggestion)
+1. Each digit field must be programmatically labeled with its position (WCAG 1.3.1)
+2. Focus changes must be announced to assistive technology users (WCAG 4.1.2)
+3. Error messages must identify the issue and be associated with the input group (WCAG 3.3.1)
+4. All functionality must be operable via keyboard without timing constraints (WCAG 2.1.1)
 
 ---
 
 ## Design Requirements
 
 ### Structure & Labels
-- [ ] **Fieldset/legend wrapper**: Wrap all digit fields in `<fieldset>` with `<legend>` describing the complete input (e.g., "Enter 6-digit verification code") ([Orange Form Guidelines](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Individual field labels**: Each digit field needs `aria-label="Digit [n] of [total]"` so screen readers announce position context
-- [ ] **Helper text association**: Link helper text to the first digit field using `aria-describedby` to provide code source context
+- [ ] **Group label**: Provide a visible label for the entire PIN input group using `<fieldset>` and `<legend>` or `aria-labelledby`
+- [ ] **Individual labels**: Label each digit field with its position (visually hidden: "Digit 1 of 6") ([Orange Label Guidelines](https://a11y-guidelines.orange.com/en/web/develop/text-alternatives/))
+- [ ] **Live regions**: Use `aria-live="polite"` to announce focus changes and completion status
 
 ### Visual Design
-- [ ] **Focus indicators**: Minimum 3:1 contrast ratio against background on focused digit field with 2px border thickness ([Orange Focus Indicators](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-forms/#focus-indicator))
-- [ ] **Error state contrast**: Red error borders (#CC0000) and error text must meet 4.5:1 contrast against white background
-- [ ] **Touch target sizing**: Digit fields minimum 44×44px on mobile to meet touch accessibility requirements
+- [ ] **Focus indicator**: Visible focus with ≥3:1 contrast ratio and ≥2px outline ([Orange Focus Guidelines](https://a11y-guidelines.orange.com/en/web/design/focus/))
+- [ ] **Error styling**: Error state uses color plus icon/border, never color alone (WCAG 1.4.1)
+- [ ] **Touch targets**: Each digit field minimum 44×44px on touch devices
 
 ### Content
-- [ ] **Error message specificity**: ❌ "Invalid code" / ✅ "Incorrect code. 2 attempts remaining. Request new code if needed." ([Orange Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/forms/#error-messages))
-- [ ] **Helper text clarity**: Include code source and expiration (e.g., "Enter 6-digit code sent to +33 6 12 34 56 78. Valid for 5 minutes.")
+- [ ] **Error messages**: ❌ "Error" / ✅ "Incorrect code. Please check your SMS and try again." ([Orange Error Guidelines](https://a11y-guidelines.orange.com/en/web/develop/forms/#errors))
+- [ ] **Instructions**: Provide clear helper text explaining expected format and code source
 
 ---
 
 ## Testing Checklist
 
 ### Screen Reader Testing
-- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) to verify fieldset/legend announces on entry, individual digit positions read correctly, auto-advance announces "Moved to digit [n]", paste operations announce "Code entered", error messages read with field context
-- [ ] Verify masking announces as "Digit entered" not revealing actual values, empty fields announce with placeholder, focus changes don't interrupt announcement queue
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
+- [ ] Verify: group label announced, digit position announced, focus changes communicated, error messages read
 
 ### Keyboard Testing
-- [ ] Tab enters first field, Arrow keys/Tab move between fields, Number keys enter digits with auto-advance, Backspace deletes and moves to previous field, paste (Ctrl+V/Cmd+V) fills all fields, Enter submits when complete, Escape clears all fields, focus visible with ≥3:1 contrast
-- [ ] Verify no keyboard traps, all functionality operable without mouse, focus order matches visual layout
+- [ ] Tab enters first digit field, Arrow keys or Tab move between digits, Backspace clears and moves back
+- [ ] Focus indicator visible (≥3:1 contrast), all functionality accessible without mouse
 
 ### Paste Testing
-- [ ] Paste 6-digit code into first field distributes correctly across all fields, announces "6-digit code entered" to screen readers
-- [ ] Paste partial code (3 digits) fills only first 3 fields, leaves remaining empty with correct focus position
+- [ ] Pasting complete code distributes digits across fields correctly
+- [ ] Screen reader announces successful paste or any errors
 
 Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
 
@@ -313,22 +240,31 @@ Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.c
 
 ## Key WCAG Criteria
 
-- **2.1.1 Keyboard** (A): All digit field navigation, auto-advance, backspace, and paste operations operable via keyboard without timing requirements
-- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast on the currently active digit input field
-- **3.3.1 Error Identification** (A): Validation errors identified in text below fields, associated via `aria-describedby`, explaining specific failure reason
-- **3.3.3 Error Suggestion** (AA): Error messages provide guidance (e.g., "Request new code" when expired, "2 attempts remaining" when incorrect)
-- **4.1.2 Name, Role, Value** (A): Each digit field has accessible name via `aria-label`, fieldset/legend provides group context, state changes (filled, error) programmatically announced
+- **2.1.1 Keyboard** (A): All digit fields focusable and operable via keyboard; auto-focus doesn't trap users
+- **2.4.7 Focus Visible** (AA): Each digit field displays visible focus indicator with ≥3:1 contrast
+- **3.3.1 Error Identification** (A): Errors identified in text and associated with input group via `aria-describedby`
+- **3.3.2 Labels or Instructions** (A): Group label and individual digit labels available to assistive technology
+- **4.1.2 Name, Role, Value** (A): Each field has accessible name; role communicated; value/state changes announced
 
-For complete reference: [Orange Accessibility Guidelines - Form Components](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+For complete reference: [Orange Accessibility Guidelines - Form Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
 
 ---
 
 ## Additional Resources
 
-- [Orange Accessibility Guidelines - Form Examples](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
-- [Orange Accessibility Guidelines - Keyboard Navigation](https://a11y-guidelines.orange.com/en/web/components-examples/keyboard/)
-- [WCAG 2.2 Understanding 3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html)
-- [WCAG 2.2 Understanding 4.1.2 Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
+- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/develop/forms/)
+- [WCAG 2.2 Understanding Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+- [W3C WAI - Focus Visible Understanding](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)
 - [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+
+---
+
+# Changelog
+
+| Date | Number | Notes | Designer |
+|------|--------|-------|----------|
+| Sep 30, 2025 | 1.2.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
+| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
+| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
 
 ---
