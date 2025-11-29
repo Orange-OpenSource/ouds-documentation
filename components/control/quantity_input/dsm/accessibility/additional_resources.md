@@ -1,0 +1,4 @@
+- [W3C WAI-ARIA Spinbutton Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/)
+- [W3C Quantity Spin Button Example](https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/)
+- [Orange Accessibility Guidelines - Form Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
+- [MDN ARIA Spinbutton Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/spinbutton_role)

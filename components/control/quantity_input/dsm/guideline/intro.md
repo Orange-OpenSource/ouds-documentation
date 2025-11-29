@@ -1,0 +1,1 @@
+A quantity input enables users to specify numeric values through direct entry or increment/decrement controls, commonly used in e-commerce and booking flows.

@@ -1,0 +1,1 @@
+The quantity input must meet WCAG 2.2 Level AA requirements, implementing the spinbutton pattern with proper ARIA attributes and keyboard support. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
