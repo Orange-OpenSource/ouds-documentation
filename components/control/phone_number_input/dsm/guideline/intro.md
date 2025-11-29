@@ -1,0 +1,1 @@
+A phone number input captures and validates telephone numbers with integrated country selection, dial code display, and format-aware validation.

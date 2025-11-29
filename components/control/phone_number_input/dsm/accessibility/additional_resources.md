@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+- [GOV.UK Design System - Phone Numbers Pattern](https://design-system.service.gov.uk/patterns/phone-numbers/)
+- [W3C WAI - Labeling Controls Tutorial](https://www.w3.org/WAI/tutorials/forms/labels/)
+- [WCAG 2.2 Understanding 3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
