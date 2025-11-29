@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/develop/forms/)
+- [WCAG 2.2 Understanding Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+- [W3C WAI - Focus Visible Understanding](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

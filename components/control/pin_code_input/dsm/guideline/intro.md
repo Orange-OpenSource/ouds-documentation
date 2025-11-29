@@ -1,0 +1,1 @@
+A PIN code input captures fixed-length numeric codes through individual digit fields, supporting authentication flows with automatic focus navigation and paste functionality.
