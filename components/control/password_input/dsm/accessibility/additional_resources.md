@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Form Examples](https://a11y-guidelines.orange.com/en/web/components-examples/)
+- [GOV.UK Design System - Password Input](https://design-system.service.gov.uk/components/password-input/)
+- [WCAG 2.2 Understanding Docs - Input Purposes](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

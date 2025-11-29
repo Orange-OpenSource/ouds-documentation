@@ -1,0 +1,1 @@
+Password inputs must meet WCAG 2.2 Level AA requirements with particular attention to secure, accessible show/hide functionality and clear error communication. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

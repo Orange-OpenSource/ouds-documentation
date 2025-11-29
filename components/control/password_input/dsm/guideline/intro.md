@@ -1,0 +1,1 @@
+A password input securely captures confidential user credentials with character masking and optional visibility toggle for improved usability.
