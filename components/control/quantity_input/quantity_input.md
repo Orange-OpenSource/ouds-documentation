@@ -156,7 +156,7 @@ A quantity input is a form component that allows users to specify a numerical va
 
 ---
 
-## ⚠️ Specific focus state rules
+## Specific focus state rules
 
 **Keyboard input disabled**
 
@@ -216,7 +216,7 @@ This state helps users quickly identify and correct mistakes by explaining what 
 
 If the input is filled, an "error" status is triggered by the entry of a value that is too small, too large, or non-numeric.
 
-**⚠️ Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
+**Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
 
 ### Do & don'ts
 
@@ -260,7 +260,7 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 
 ---
 
-## ⚠️ Label
+## Label
 
 Describes the purpose of the input. Why hide a quantity input label?
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
@@ -424,10 +424,10 @@ For complete reference: [Orange Accessibility Guidelines - Forms](https://a11y-g
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Sep 30, 2025 | 1.2.0 | • For the property "Actions placement", the name of the variant "Right" is replaced by "Trailing" (RTL consideration)<br>• The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
-| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
-| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+| Date | Number | Notes |
+|------|--------|-------|
+| Sep 30, 2025 | 1.2.0 | • For the property "Actions placement", the name of the variant "Right" is replaced by "Trailing" (RTL consideration)<br>• The name of the "Style" variant has been replaced to "Outlined" with true/false variant |
+| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) |
+| Jun 30, 2025 | 1.0.0 | • Component creation |
 
 ---

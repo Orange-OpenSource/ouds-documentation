@@ -1,12 +1,12 @@
 # Guideline
 
-## Intro 👈🤖
+## Intro
 
-A password input securely captures confidential passwords while masking characters to protect privacy from nearby observers.
+A password input securely captures confidential user credentials with character masking and optional visibility toggle for improved usability.
 
 ---
 
-## Description
+## Definition
 
 A password input is a form field specifically designed to securely capture a user's confidential password. It masks the characters as they are typed, typically replacing them with dots, in order to protect the input from being read by others nearby.
 
@@ -14,38 +14,176 @@ While the primary goal is to enhance privacy and security, the field may also in
 
 ---
 
-## Anatomy 👈🤖
+## Best for
 
-| # | Element | Purpose |
-|---|---------|---------|
-| 1 | Label | Identifies the field purpose and maintains accessibility |
-| 2 | Leading icon | Provides visual context for password entry (optional) |
-| 3 | Input container | Houses prefix, masked password text, and placeholder |
-| 4 | Prefix text | Displays fixed prefix before user input (rare use cases) |
-| 5 | Password visibility toggle | Allows users to reveal or hide password characters |
-| 6 | Helper text | Provides guidance on password requirements or constraints |
-| 7 | Error message | Displays validation feedback when password is incorrect or invalid |
+✅ Account login and authentication flows requiring secure credential entry
 
----
+✅ New account registration where users create passwords for the first time
 
-## Usage & Guidance
+✅ Password change or reset journeys within account settings
 
-### Best for 👈🤔
+✅ Multi-factor authentication setups requiring PIN or passcode entry
 
-✅ User authentication and login scenarios
-✅ Account creation requiring new password input
-✅ Password change or reset flows
-✅ Secure credential management interfaces
-✅ Multi-factor authentication workflows
-✅ Administrative access requiring elevated permissions
-✅ Encrypted data access requiring password verification
-✅ Mobile applications with auto-fill capabilities
-✅ Forms requiring password confirmation fields
-✅ Security-sensitive operations requiring re-authentication
+✅ Sensitive data entry in banking, healthcare, or enterprise applications
+
+✅ Mobile-first interfaces where touch typing increases error likelihood
+
+✅ Forms requiring confirmation of user identity before proceeding
+
+✅ E-commerce checkout flows with saved payment authentication
+
+✅ Admin or back-office systems with elevated security requirements
+
+✅ Self-service portals where users manage their own account security
 
 ---
 
-### ⚠️ Label
+## Anatomy
+
+| # | Element | Purpose | Optional |
+|---|---------|---------|----------|
+| 1 | Label | Identifies the input field's purpose and provides accessible name | N |
+| 2 | Input container | Houses the input area and associated interactive elements | N |
+| 3 | Input area | Zone where users type their password characters | N |
+| 4 | Character masking | Visual dots or asterisks replacing typed characters for privacy | N |
+| 5 | Show/hide toggle | Button allowing users to reveal or conceal password characters | Y |
+| 6 | Leading icon | Visual indicator of field purpose (e.g., lock icon) | Y |
+| 7 | Helper text | Supporting guidance about password requirements or usage | Y |
+| 8 | Error message | Validation feedback when input fails requirements | Y |
+
+---
+
+## Outlined
+
+**`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
+
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
+• When inputs need to feel lightweight and unobtrusive
+• In a header (search field)
+• In a selection/filtering feature in a product catalog
+
+### Do & don'ts
+
+✅ **Do:** Use the outlined style in lightweight contexts such as headers, filters, or search interfaces where minimal visual weight improves the experience.  
+❌ **Don't:** Mix outlined and filled styles inconsistently within the same form—choose one style and apply it uniformly.
+
+✅ **Do:** Select the filled (non-outlined) variant for standard form pages to ensure sufficient visual prominence and discoverability.  
+❌ **Don't:** Use the outlined style in dense forms where users need strong visual boundaries to distinguish multiple adjacent fields.
+
+✅ **Do:** Ensure both outlined and filled variants maintain the same functional behaviors including focus states and error handling.  
+❌ **Don't:** Reduce the touch target size when using the outlined style—maintain minimum 44×44px interactive areas.
+
+✅ **Do:** Test both style variants for adequate contrast against their background contexts in light and dark modes.  
+❌ **Don't:** Assume the outlined style will work on busy backgrounds without verifying stroke visibility meets 3:1 contrast ratio.
+
+✅ **Do:** Apply the outlined style when aligning with brand guidelines that favor a modern, minimal aesthetic.  
+❌ **Don't:** Choose style variants based solely on personal preference—align with established design system patterns.
+
+---
+
+## Rounded corner
+
+**`False`** For a square finish.
+
+**`True`** For a finish with rounded corner. To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+
+### Do & don'ts
+
+✅ **Do:** Use rounded corners in consumer-facing, lifestyle, or emotionally-driven brand experiences where softness supports the visual identity.  
+❌ **Don't:** Apply rounded corners to enterprise or B2B applications where sharp corners better convey professionalism and precision.
+
+✅ **Do:** Maintain consistent corner radius values across all form inputs within the same interface to create visual harmony.  
+❌ **Don't:** Mix rounded and square inputs within the same form or page layout without intentional design rationale.
+
+✅ **Do:** Coordinate password input corner styles with adjacent buttons and other form elements for cohesive component grouping.  
+❌ **Don't:** Use extreme border-radius values that distort the input's proportions or reduce usable input area.
+
+✅ **Do:** Consider rounded corners for mobile interfaces where softer shapes often feel more touch-friendly and approachable.  
+❌ **Don't:** Override established platform conventions—follow iOS or Android native patterns where appropriate.
+
+✅ **Do:** Document your corner radius decision in design tokens to ensure consistency across the design system.  
+❌ **Don't:** Make corner style decisions in isolation—ensure they align with the broader component library and brand guidelines.
+
+---
+
+## Input status
+
+**`Empty`** The Empty state indicates that the password input is blank with no content or placeholder, a neutral starting point.
+
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
+
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
+
+### Do & don'ts
+
+✅ **Do:** Use placeholder text sparingly and only for supplementary hints—never as a replacement for visible labels.  
+❌ **Don't:** Put essential information like password requirements in placeholder text as it disappears once users start typing.
+
+✅ **Do:** Ensure placeholder text has sufficient contrast (4.5:1 minimum) against the input background for readability.  
+❌ **Don't:** Use placeholder text that could be mistaken for actual input, such as sample passwords or realistic credential formats.
+
+✅ **Do:** Provide clear visual distinction between empty, placeholder, and filled states through typography weight or color changes.  
+❌ **Don't:** Rely solely on placeholder presence to indicate whether a field has been interacted with—use proper state management.
+
+✅ **Do:** Consider keeping helper text visible outside the input rather than using placeholders for password format guidance.  
+❌ **Don't:** Use overly long placeholder text that gets truncated and loses meaning on smaller viewports.
+
+✅ **Do:** Test that the filled state visually masks characters appropriately while maintaining consistent input height.  
+❌ **Don't:** Allow the input to resize or shift layout when transitioning between empty and filled states.
+
+---
+
+## Error
+
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
+
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
+
+**Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
+
+### Do & don'ts
+
+✅ **Do:** Write error messages that specifically explain what went wrong and provide actionable guidance on how to fix it.  
+❌ **Don't:** Use generic error messages like "Invalid input" that leave users guessing about the actual problem.
+
+✅ **Do:** Associate error messages programmatically with the input using `aria-describedby` so screen readers announce them.  
+❌ **Don't:** Display error messages only through color changes—always include text descriptions for accessibility.
+
+✅ **Do:** Show error validation inline and in real-time where appropriate to help users correct mistakes before submission.  
+❌ **Don't:** Wait until form submission to reveal all errors, creating frustrating back-and-forth correction cycles.
+
+✅ **Do:** Maintain the error state until the user has successfully corrected the input and it passes validation.  
+❌ **Don't:** Clear error states automatically on focus or blur without verifying the input now meets requirements.
+
+✅ **Do:** Use error iconography consistently alongside text to provide redundant visual cues beyond color alone.  
+❌ **Don't:** Display both helper text and error message simultaneously—replace helper text with the error message.
+
+---
+
+## Leading icon
+
+Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
+
+### Do & don'ts
+
+✅ **Do:** Use universally recognized icons like a lock or key symbol that clearly communicate the password field's purpose.  
+❌ **Don't:** Add decorative icons that don't contribute meaningful context or could confuse users about the field's function.
+
+✅ **Do:** Ensure leading icons are marked as decorative (`aria-hidden="true"`) when the label already provides sufficient context.  
+❌ **Don't:** Rely on the icon alone to communicate field purpose—always pair with a visible text label.
+
+✅ **Do:** Maintain consistent icon sizing and alignment across all form inputs for visual coherence.  
+❌ **Don't:** Use leading icons that visually compete with or obscure the show/hide toggle button on the trailing side.
+
+✅ **Do:** Choose icon colors that meet 3:1 contrast requirements against the input background.  
+❌ **Don't:** Use brand-colored icons that may fail contrast in certain themes or modes (light/dark).
+
+✅ **Do:** Test that leading icons don't reduce the usable typing area or create cramped layouts on narrow viewports.  
+❌ **Don't:** Include leading icons by default—only add them when they provide genuine functional value.
+
+---
+
+## Label
 
 Describes the purpose of the input. Why hide a password input label?
 
@@ -57,167 +195,59 @@ However, hiding the label should only be done if:
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
----
+### Do & don'ts
 
-### Label visibility 👈🤔
+✅ **Do:** Always provide a programmatically associated label for every password input, even when visually hidden.  
+❌ **Don't:** Omit labels entirely—screen reader users depend on them to understand the field's purpose.
 
-✅ **Do:** Always provide a visible label for password inputs to clearly identify the field's purpose  
-❌ **Don't:** Hide labels unless the context is unmistakably clear and screen reader access is maintained
+✅ **Do:** Use visually hidden CSS techniques (`.sr-only`) to maintain accessibility when hiding labels for visual design reasons.  
+❌ **Don't:** Use `display: none` or `visibility: hidden` to hide labels as these remove them from the accessibility tree.
 
-### Password visibility toggle placement 👈🤔
+✅ **Do:** Write labels that clearly describe the expected input, such as "Password" or "Current password" for clarity.  
+❌ **Don't:** Use vague labels like "Enter here" or overly technical labels that don't help users understand what's required.
 
-✅ **Do:** Position the show/hide toggle as a trailing action within the input field for easy discovery  
-❌ **Don't:** Place the toggle outside the input container where it may be overlooked or confusing
+✅ **Do:** Position visible labels consistently above or beside inputs according to your design system's established patterns.  
+❌ **Don't:** Hide labels in contexts where users might not understand the field's purpose from context alone.
 
-### Helper text for password requirements 👈🤔
-
-✅ **Do:** Display password requirements in helper text before users begin typing to set clear expectations  
-❌ **Don't:** Wait until validation fails to inform users about password criteria
-
-### Error messaging clarity 👈🤔
-
-✅ **Do:** Provide specific error messages explaining why a password is invalid (e.g., "Password must include at least one number")  
-❌ **Don't:** Use vague errors like "Invalid password" that don't guide users toward a solution
-
-### Password confirmation patterns 👈🤔
-
-✅ **Do:** Place password and confirm password fields adjacent to each other in account creation flows  
-❌ **Don't:** Separate password fields across multiple steps, forcing users to remember their initial entry
-
-### Mobile keyboard optimization 👈🤔
-
-✅ **Do:** Ensure password fields trigger appropriate mobile keyboards with quick access to special characters  
-❌ **Don't:** Force users to switch keyboard layouts repeatedly to enter complex passwords
-
-### Prefix usage restraint 👈🤔
-
-✅ **Do:** Only use prefixes in highly specific scenarios like environment identifiers (dev-, test-, admin-)  
-❌ **Don't:** Add prefixes to standard password fields as they serve no purpose and confuse users
-
-### Context for password resets 👈🤔
-
-✅ **Do:** Clearly indicate when users are creating a new password versus entering an existing one  
-❌ **Don't:** Use ambiguous labels that don't distinguish between new password creation and authentication
-
-### Password strength indicators 👈🤔
-
-✅ **Do:** Consider showing password strength feedback in helper text during account creation  
-❌ **Don't:** Show strength indicators during login where they provide no value
-
-### Leading icon purposefulness 👈🤔
-
-✅ **Do:** Use leading icons sparingly and only when they add meaningful context (lock icon for security)  
-❌ **Don't:** Add decorative icons that clutter the interface without improving understanding
+✅ **Do:** Ensure labels remain visible in error states to help users understand which field requires attention.  
+❌ **Don't:** Rely on placeholder text as a label substitute—placeholders disappear when users begin typing.
 
 ---
 
-### How should I display labels and helper text for a login password field? 👈🤔
+## Other boolean options
 
-Use "Password" as the label with no helper text, since users already know their password and don't need creation guidance.
+**Prefix** A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
+• "corp-" Company password enforcing a prefix
+• "temp-" Temporary password during a testing phase
+• "dev-" For test accounts
+• "eu-, us-, prod-, stage-" To encode a target environment
+• "test@" Used in the context of automated or predictable tests
+• "admin-" Pattern used to define an admin password
 
-### What should the error state look like when a password is incorrect during login? 👈🤔
+**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
-Display a red border with an error message stating "Incorrect password. Please try again" below the field, with the password cleared for re-entry.
+### Do & don'ts
 
-### How do I configure the password visibility toggle in different states? 👈🤔
+✅ **Do:** Use helper text to communicate password requirements upfront (e.g., minimum length, required character types).  
+❌ **Don't:** Hide critical password requirements in tooltips or only reveal them after validation failures.
 
-The toggle appears as a trailing action button with an eye icon (closed eye when hidden, open eye when visible), maintaining visibility across enabled, hover, and focus states.
+✅ **Do:** Keep helper text concise—ideally one line—while still providing actionable guidance.  
+❌ **Don't:** Overload helper text with every possible requirement, making it overwhelming to read.
 
-### What's the visual difference between a new password field and a confirmation password field? 👈🤔
+✅ **Do:** Connect helper text programmatically to the input via `aria-describedby` for screen reader accessibility.  
+❌ **Don't:** Position helper text far from the input where the visual association becomes unclear.
 
-Use "Create password" for the first field and "Confirm password" for the second, both with identical styling and helper text showing requirements only on the first field.
+✅ **Do:** Reserve prefixes for very specific enterprise or system contexts where they're genuinely required by backend systems.  
+❌ **Don't:** Use prefixes in consumer-facing password fields as they add unnecessary complexity and confusion.
 
-### How should I display password requirements in helper text for account creation? 👈🤔
-
-Show all requirements in a single helper text line (e.g., "Password must be 8-20 characters with at least one number and one special character") before users begin typing.
-
-### What should the loading state look like during password verification? 👈🤔
-
-Display a loading spinner in place of the visibility toggle button while maintaining the field in a disabled-like state with existing input visible.
-
-### How do I show password strength feedback during creation? 👈🤔
-
-Update helper text dynamically to show strength (e.g., "Weak", "Medium", "Strong") along with specific improvement suggestions based on current input.
-
-### What's the proper configuration for a password reset field? 👈🤔
-
-Use "New password" as the label with helper text showing all requirements, followed by a "Confirm new password" field with matching styling.
-
-### How should I display a prefix in specialized password scenarios? 👈🤔
-
-Place the prefix (e.g., "admin-") before the password input with subtle styling to distinguish it from user-entered text, only in environment-specific contexts.
-
-### What should the disabled state look like for read-only password fields? 👈🤔
-
-Show a grayed-out field with dots representing the masked password, no visibility toggle, and muted label/helper text to indicate it cannot be modified.
-
----
-
-## Screen Sizes
-
-### Desktop 👈🤖
-
-Password inputs maintain full width within their container with ample padding for comfortable interaction. The visibility toggle and leading icons are clearly sized at 24px for easy mouse-based interaction, with helper text displayed in a readable 14px font below the field.
-
-### Tablet 👈🤖
-
-Components adapt to tablet viewports by maintaining their desktop sizing, ensuring touch targets remain at least 44x44px for the visibility toggle button. Labels and helper text retain their desktop proportions for readability across various tablet orientations.
-
-### Mobile 👈🤖
-
-On mobile devices, password inputs expand to full container width with increased touch target sizes for the visibility toggle (minimum 44x44px). Helper text may wrap to multiple lines when needed, and mobile keyboards automatically configure for password entry with appropriate character access.
+✅ **Do:** Display password strength indicators or requirement checklists as helper content to guide secure password creation.  
+❌ **Don't:** Show helper text and error messages simultaneously—error messages should replace helper text when active.
 
 ---
 
 # Specs
 
-## Properties
-
-### Initial Config
-
-| Property | Default Value | Notes |
-|----------|---------------|-------|
-| Outlined | Off | Controls whether the input has a visible stroke border or subtle background fill with bottom border |
-| Rounded corner | Off | Determines if corners are square (standard) or rounded (for emotional/branded contexts) |
-| Input status | Empty | Indicates whether the field contains no content, placeholder text, or filled user input |
-| State | Enabled | Defines the current interaction state including enabled, hover, focus, loading, read-only, disabled, or skeleton |
-| Error | Off | Controls visibility of error styling and error message below the field |
-| Leading icon | Off | Determines whether a contextual icon appears at the start of the input field |
-| Hidden password | On | Controls whether password characters are masked with dots or displayed as plain text |
-| ⚠️ Label | On | Boolean control for label visibility (should remain on for accessibility unless context is unmistakable) |
-| Helper text | Off | Controls whether supporting text appears below the input field |
-| Prefix | Off | Determines whether a fixed text prefix appears before user input (rare use cases only) |
-
-### Outlined
-
-**`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
-
-**`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
-
----
-
-### Rounded corner
-
-**`False`** For a square finish.
-
-**`True`** For a finish with rounded corner. To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
-
----
-
-### Input status
-
-**`Empty`** The Empty state indicates that the password input is blank with no content or placeholder, a neutral starting point.
-
-**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
-
-**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
-
----
-
-### State
+## States
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -235,113 +265,100 @@ On mobile devices, password inputs expand to full container width with increased
 
 ---
 
-### Error
+## Layout and spacing
 
-The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
-
-This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
-
-**⚠️ Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
+🚧 Content to be added
 
 ---
 
-### Leading icon
-
-Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
-
----
-
-### Other boolean options
-
-**Prefix** A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
-• "corp-" Company password enforcing a prefix
-• "temp-" Temporary password during a testing phase
-• "dev-" For test accounts
-• "eu-, us-, prod-, stage-" To encode a target environment
-• "test@" Used in the context of automated or predictable tests
-• "admin-" Pattern used to define an admin password
-
-**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
-
----
-
-# Accessibility 👈🤖
+# Accessibility
 
 ## Accessibility intro
 
-Password inputs must meet WCAG 2.2 Level AA standards for secure credential entry with proper labeling, keyboard navigation, and assistive technology support. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+Password inputs must meet WCAG 2.2 Level AA requirements with particular attention to secure, accessible show/hide functionality and clear error communication. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
 
 ---
 
 ## Accessibility Challenges
 
-Password inputs present unique accessibility challenges because they mask characters by design, creating tension between security and usability. Users with visual impairments, cognitive disabilities, or motor control issues face heightened difficulty when they cannot see what they've typed, cannot easily toggle visibility, or cannot understand why their password was rejected. The critical success factors involve maintaining security while ensuring all users can successfully enter, verify, and manage their passwords through clear labeling, keyboard access, and informative feedback.
+Password inputs present unique accessibility challenges because they must balance security (character masking) with usability (allowing users to verify their input). The show/hide toggle requires careful implementation to communicate state changes without inadvertently exposing passwords to nearby listeners, while error messages and password requirements must be programmatically associated for assistive technology users.
 
 ### Key Challenges
-- **Character masking** prevents visual verification of input, increasing error risk for users with visual or cognitive impairments
-- **Password visibility toggles** must be discoverable and operable by all users regardless of input method
-- **Error messages** need to provide specific, actionable guidance without exposing security vulnerabilities
-- **Password requirements** must be communicated clearly before users attempt entry
+- Masked characters prevent users from visually verifying input accuracy
+- Show/hide toggle state must be clearly communicated to screen readers without reading the password aloud
+- Password requirements need programmatic association with the input field
+- Error messages must be announced without disrupting user flow
 
 ### Critical Success Factors
-1. Provide visible, programmatic labels that persist and clearly identify the field as password entry (WCAG 3.3.2)
-2. Ensure password visibility toggle buttons are keyboard-accessible with clear announced states (WCAG 2.1.1, 4.1.2)
-3. Deliver specific, non-technical error messages that guide users toward correct password format (WCAG 3.3.1, 3.3.3)
-4. Support password manager integration and paste functionality for users who rely on assistive tools (WCAG 2.1.1)
+1. Implement show/hide toggle with proper `aria-pressed` or `role="switch"` with `aria-checked`
+2. Connect password requirements via `aria-describedby` for screen reader announcement
+3. Ensure visible focus indicator with ≥3:1 contrast on all interactive elements
+4. Provide clear, specific error messages that explain both the problem and solution
 
 ---
 
 ## Design Requirements
 
 ### Structure & Labels
-- [ ] **Persistent label**: Visible label remains above or beside the field at all times, programmatically associated via `for`/`id` attributes ([Orange: Labels](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Password visibility toggle**: Trailing button with clear icon states (eye/eye-slash) and `aria-label` describing current state (e.g., "Show password" or "Hide password")
-- [ ] **Helper text association**: Use `aria-describedby` to link helper text explaining password requirements to the input field ([Orange: Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
+- [ ] **Visible label**: Always provide a visible text label; if hidden, use visually-hidden CSS with `aria-label` or `aria-labelledby`
+- [ ] **Programmatic association**: Label connected via `for`/`id` pairing ([Orange: Form labels](https://a11y-guidelines.orange.com/en/web/develop/forms/))
+- [ ] **Helper text connection**: Password requirements linked via `aria-describedby` on the input element
 
 ### Visual Design
-- [ ] **Focus indicator contrast**: Visible focus ring with minimum 3:1 contrast ratio against adjacent colors, never relying on color alone (WCAG 2.4.7, 1.4.11)
-- [ ] **Error state contrast**: Error border and error icon meet 3:1 contrast minimum, with error text meeting 4.5:1 contrast against background (WCAG 1.4.3)
-- [ ] **Touch target size**: Password visibility toggle button minimum 44×44px for touch interfaces, 24×24px for desktop with adequate spacing (WCAG 2.5.5)
+- [ ] **Focus indicator**: 2px solid outline with ≥3:1 contrast against adjacent colors
+- [ ] **Toggle button contrast**: Show/hide icon or text meets 3:1 contrast against background ([Color contrast](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/))
+- [ ] **Error styling**: Red border with error icon; never rely on color alone to indicate errors
 
 ### Content
-- [ ] **Error specificity**: ❌ "Invalid password" / ✅ "Password must be 8-20 characters with at least one number" ([Orange: Error Messages](https://a11y-guidelines.orange.com/en/web/components-examples/forms/))
-- [ ] **Helper text timing**: Display password requirements before users begin typing, not only on validation failure
+- [ ] **Error messages**: ❌ "Invalid password" / ✅ "Password must be at least 8 characters"
+- [ ] **Toggle labels**: Use clear text ("Show password" / "Hide password") or accessible icon with `aria-label`
 
 ---
 
 ## Testing Checklist
 
 ### Screen Reader Testing
-- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android) to verify label announces field as "password", helper text reads before entry, error messages announce on validation failure, visibility toggle state changes announce clearly
-- [ ] Verify password characters announce as "dot" or "bullet" when masked, actual characters when visible, paste operations announce success
+- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
+- [ ] Verify label announced on focus, requirements read via `aria-describedby`, toggle state communicated, errors announced
 
 ### Keyboard Testing
-- [ ] Tab reaches password field and visibility toggle in logical order, Enter submits form from password field, Space activates visibility toggle button, focus remains visible with ≥3:1 contrast throughout
-- [ ] Test paste functionality (Ctrl/Cmd+V) works correctly, auto-fill from password managers functions without keyboard traps
+- [ ] Tab navigates to input and toggle button, Enter/Space activates toggle, focus visible throughout
+- [ ] Verify show/hide functionality works via keyboard without mouse interaction
 
 ### Paste Testing
-- [ ] Paste password text correctly fills field, screen reader announces paste success and character count/validation
+- [ ] Paste functionality works correctly—never block paste in password fields
 
-Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
+Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/toolbox/)
 
 ---
 
 ## Key WCAG Criteria
 
-- **2.1.1 Keyboard** (A): All password field interactions including typing, visibility toggle, and paste operations work via keyboard without timing requirements
-- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast appears on password field and visibility toggle button
-- **3.3.1 Error Identification** (A): Password validation errors identified in text with specific guidance, associated with input via `aria-describedby`
-- **3.3.2 Labels or Instructions** (A): Visible label and helper text provided for password field, available to assistive technology via proper HTML and ARIA
-- **4.1.2 Name, Role, Value** (A): Password input uses `type="password"`, visibility toggle communicates state changes, error states update `aria-invalid` attribute
+- **1.3.1 Info and Relationships** (A): Label, helper text, and error messages programmatically associated with input
+- **2.1.1 Keyboard** (A): All functionality including show/hide toggle operable via keyboard
+- **2.4.7 Focus Visible** (AA): Clear focus indicator on input field and toggle button with ≥3:1 contrast
+- **3.3.1 Error Identification** (A): Errors identified in text and associated with input via `aria-describedby`
+- **4.1.2 Name, Role, Value** (A): Toggle button has accessible name and communicates pressed/checked state
 
-For complete reference: [Orange Accessibility Guidelines - Form Components](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
+For complete reference: [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/)
 
 ---
 
 ## Additional Resources
 
-- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/components-examples/forms/)
-- [WCAG 2.2 Understanding Docs - 3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html)
-- [WCAG 2.2 Understanding Docs - 3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html)
+- [Orange Accessibility Guidelines - Form Examples](https://a11y-guidelines.orange.com/en/web/components-examples/)
+- [GOV.UK Design System - Password Input](https://design-system.service.gov.uk/components/password-input/)
+- [WCAG 2.2 Understanding Docs - Input Purposes](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)
 - [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
-- [W3C - Accessible Authentication](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html)
+
+---
+
+# Changelog
+
+| Date | Number | Notes | Designer |
+|------|--------|-------|----------|
+| Sep 30, 2025 | 1.2.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
+| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
+| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+
+---
