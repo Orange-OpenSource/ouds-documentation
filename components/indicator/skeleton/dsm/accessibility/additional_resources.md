@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Dynamic Content](https://a11y-guidelines.orange.com/en/web/develop/dynamic-content/)
+- [More Accessible Skeletons - Adrian Roselli](https://adrianroselli.com/2020/11/more-accessible-skeletons.html)
+- [WCAG 2.2 Understanding Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- [Carbon Design System - Loading Pattern](https://carbondesignsystem.com/patterns/loading-pattern/)

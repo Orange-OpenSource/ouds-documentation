@@ -1,0 +1,1 @@
+The skeleton component provides visual loading placeholders that represent content structure while data loads, reducing perceived wait time.
