@@ -280,18 +280,22 @@ def process_component_doc(file_path: Path) -> None:
     """
     print(f"\nProcessing: {file_path}")
     
-    # Validate file path format: components/[control_type]/[control_name]/[control_name].md
+    # Validate file path format: 
+    # - components/[control_type]/[control_name]/[control_name].md
+    # - components/[control_type]/[group]/[control_name]/[control_name].md
     parts = file_path.parts
     
+    # Minimum 4 parts: components/type/name/name.md
     if len(parts) < 4 or parts[0] != 'components':
-        print(f"  ⚠ Skipping: Invalid path format")
+        print(f"  ⚠ Skipping: Invalid path format (must start with 'components/' and have at least 4 parts)")
         return
     
-    control_type = parts[1]  # e.g., "control"
-    control_name = parts[2]  # e.g., "text_input"
-    file_name = parts[3]     # e.g., "text_input.md"
+    # Extract from end of path (works for any depth)
+    file_name = parts[-1]           # e.g., "expand_link.md"
+    control_name = parts[-2]        # e.g., "expand_link" (parent directory)
+    control_type = parts[1]         # e.g., "navigation" (first level after components)
     
-    # Verify filename matches control name
+    # Verify filename matches control name (parent directory)
     expected_filename = f"{control_name}.md"
     if file_name != expected_filename:
         print(f"  ⚠ Skipping: Expected {expected_filename}, got {file_name}")

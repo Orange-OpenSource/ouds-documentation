@@ -10,8 +10,10 @@ on:
   push:
     # Only watch for changes in component markdown files
     # Pattern: components/[control_type]/[control_name]/[control_name].md
+    # Also supports: components/[control_type]/[group]/[control_name]/[control_name].md
     paths:
       - 'components/*/*/*.md'
+      - 'components/*/*/*/*.md'
     # Only run on main branch
     branches:
       - main
@@ -47,12 +49,20 @@ jobs:
           # Check if this is a manual trigger or a push event
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             # Manual trigger: process ALL component documentation files
-            CHANGED_FILES=$(find components -type f -name "*.md" -path "components/*/*/*.md" ! -path "*/dsm/*" ! -path "*/figma/*")
+            # Match files where filename matches parent directory name (e.g., checkbox/checkbox.md)
+            CHANGED_FILES=$(find components -type f -name "*.md" ! -path "*/dsm/*" ! -path "*/figma/*" | while read f; do
+              dir=$(dirname "$f")
+              dirname=$(basename "$dir")
+              filename=$(basename "$f" .md)
+              if [ "$dirname" = "$filename" ]; then
+                echo "$f"
+              fi
+            done)
           else
             # Push trigger: only process files that changed in this commit
-            # Pattern matches: components/[type]/[name]/[name].md
+            # Pattern matches: components/.../[name]/[name].md (at least 3 levels, up to 4 levels)
             # Excludes: files in dsm/ and figma/ subdirectories
-            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^components/[^/]+/[^/]+/[^/]+\.md$' | grep -v '/dsm/' | grep -v '/figma/' || true)
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^components/[^/]+/[^/]+/[^/]+\.md$|^components/[^/]+/[^/]+/[^/]+/[^/]+\.md$' | grep -v '/dsm/' | grep -v '/figma/' || true)
           fi
           
           # Check if any files were found
