@@ -1,0 +1,1 @@
+A link is an interactive navigation element that directs users to another location within or outside the application.

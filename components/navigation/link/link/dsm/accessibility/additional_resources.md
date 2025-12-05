@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Textual Content](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
+- [WCAG 2.2 Understanding Link Purpose](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+- [Carbon Design System - Link Accessibility](https://carbondesignsystem.com/components/link/accessibility/)
