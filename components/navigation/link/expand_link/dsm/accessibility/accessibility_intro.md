@@ -1,0 +1,1 @@
+Expand Link must be fully operable via keyboard and communicate its expanded/collapsed state to assistive technologies per WCAG 2.2 AA requirements. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

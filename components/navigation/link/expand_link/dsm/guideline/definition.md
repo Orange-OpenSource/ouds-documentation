@@ -1,0 +1,1 @@
+An Expand link is a lightweight control used to reveal or collapse additional content through a text link, rather than a button. It is best suited for inline contexts where minimal visual weight is required, keeping the layout clean while still allowing access to extended information.

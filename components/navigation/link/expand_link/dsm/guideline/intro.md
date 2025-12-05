@@ -1,0 +1,1 @@
+Expand Link is a lightweight text control that reveals or collapses additional content through progressive disclosure.
