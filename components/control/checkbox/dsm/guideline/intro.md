@@ -1,0 +1,1 @@
+A checkbox allows users to select or deselect one or more options from a set independently.
