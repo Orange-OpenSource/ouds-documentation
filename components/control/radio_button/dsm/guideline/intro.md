@@ -1,0 +1,1 @@
+A radio button enables users to select exactly one option from a predefined set of mutually exclusive choices.
