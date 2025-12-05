@@ -1,0 +1,1 @@
+A switch is a binary control that allows users to toggle settings on or off with immediate effect.

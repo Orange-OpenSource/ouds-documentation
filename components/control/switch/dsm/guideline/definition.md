@@ -1,0 +1,5 @@
+A switch is a component that allows the user to toggle between two states, typically "on" and "off." It is often represented as a button or a slider that changes position or color to indicate the current state. Switches are used to enable or disable features, options, or settings in an intuitive and visual manner.
+
+This component family is available in two variants:
+• **Switch:** In this template, the component does not display any text or icon. This layout provides greater flexibility when creating other components that require a switch to be displayed.
+• **Switch item:** In this template, the component displays multiple additional text elements and icon assets.
