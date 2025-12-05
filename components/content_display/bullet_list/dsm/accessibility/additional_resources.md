@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Textual Content](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
+- [W3C WAI - Lists Tutorial](https://www.w3.org/WAI/tutorials/page-structure/lists/)
+- [WCAG 2.2 Understanding - Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

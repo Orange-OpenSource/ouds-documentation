@@ -1,0 +1,1 @@
+Bullet List displays related text items in a structured vertical format using bullets, numbers, or no markers.
