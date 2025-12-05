@@ -1,0 +1,1 @@
+Breadcrumbs must be keyboard accessible, properly labeled for assistive technologies, and follow WCAG 2.2 AA guidelines for navigation landmarks. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

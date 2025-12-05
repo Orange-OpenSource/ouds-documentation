@@ -1,0 +1,4 @@
+- [W3C WAI-ARIA Breadcrumb Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/)
+- [WCAG 2.2 Technique G65: Providing a breadcrumb trail](https://www.w3.org/TR/WCAG20-TECHS/G65.html)
+- [Orange Accessibility Guidelines - Navigation Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

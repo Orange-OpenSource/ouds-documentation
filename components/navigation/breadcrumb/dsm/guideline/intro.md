@@ -1,0 +1,1 @@
+Breadcrumbs display a hierarchical navigation path, helping users understand their location and navigate back to previous pages.
