@@ -1,0 +1,101 @@
+# GitHub Actions Workflow for Automatic Image Markdown Generation
+# This workflow detects new image files in component images/ directories
+# and creates corresponding markdown files with image references
+
+name: Auto Generate Image Markdown
+
+# Trigger conditions for this workflow
+on:
+  # Trigger on push events
+  push:
+    # Watch for changes in component image directories
+    # Supports both 3-level and 4-level deep component structures
+    paths:
+      - 'components/*/*/images/*'
+      - 'components/*/*/*/images/*'
+    # Only run on main branch
+    branches:
+      - main
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  generate-image-markdown:
+    # Use the latest Ubuntu runner
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch full git history (needed to detect changed files)
+          fetch-depth: 0
+          # Use GitHub token for authentication
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Step 2: Set up Python environment
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      # Step 3: Detect which image files have been added
+      - name: Detect new image files
+        id: changed-images
+        run: |
+          # Define supported image extensions
+          IMAGE_EXTENSIONS="png|jpg|jpeg|gif|svg|webp"
+          
+          # Check if this is a manual trigger or a push event
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual trigger: process ALL image files that don't have corresponding .md files
+            echo "Manual trigger: scanning all component image directories..."
+            
+            # Find all image files in images/ directories
+            CHANGED_FILES=$(find components -type f -path "*/images/*" | grep -iE "\.($IMAGE_EXTENSIONS)$" || true)
+          else
+            # Push trigger: only process image files that were added in this commit
+            # Using --diff-filter=A to only get Added files
+            echo "Push trigger: detecting newly added images..."
+            
+            CHANGED_FILES=$(git diff --name-only --diff-filter=A ${{ github.event.before }} ${{ github.sha }} | grep -iE "^components/.*/images/.*\.($IMAGE_EXTENSIONS)$" || true)
+          fi
+          
+          # Check if any files were found
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No new image files detected"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "New image files found:"
+            echo "$CHANGED_FILES"
+            # Save the list to a file for the Python script to read
+            echo "$CHANGED_FILES" > changed_images.txt
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      # Step 4: Run the Python script to generate markdown files
+      - name: Generate image markdown files
+        if: steps.changed-images.outputs.has_changes == 'true'
+        run: |
+          python .github/scripts/generate_image_md.py
+      
+      # Step 5: Commit the generated markdown files back to the repository
+      - name: Commit generated markdown files
+        if: steps.changed-images.outputs.has_changes == 'true'
+        run: |
+          # Configure git with GitHub Actions bot identity
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Stage all changes in components/ directory
+          git add -A components/
+          
+          # Check if there are any changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # Commit with [skip ci] to prevent triggering this workflow again
+            git commit -m "docs: auto-generate image markdown files [skip ci]"
+            git push
+          fi
