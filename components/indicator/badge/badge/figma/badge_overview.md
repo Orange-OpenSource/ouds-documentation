@@ -1,0 +1,53 @@
+## Definition
+
+The Badge is a small UI element used to highlight status, notifications, or categorization within an interface. It is often displayed as a label or indicator with a distinct background color and text.
+
+**Usage:**
+• Renders as a static label without a number.
+Used for status indicators (e.g., "New", "Pending", "Success").
+The size remains unchanged despite the increase in the interface size.
+
+---
+
+## State
+
+**`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (e.g., success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
+
+**`Disabled`** The inactive state of a badge. Used to indicate that the user isn't allowed to interact with an element, or when the status is unavailable. It appears less prominent and serves as a secondary indication.
+
+---
+
+## Status
+
+Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
+
+**Non fonctionnel**
+
+**`Neutral`** Used for general labels without specific emphasis.
+
+**`Accent`** Employed to highlight discovery or exploration-related content.
+
+**Fonctionnel**
+
+**`Positive`** Indicates success, completion, or approval.
+
+**`Info`** Provides informational context without urgency.
+
+**`Warning`** Negatives the user to potential risks or cautionary messages.
+
+**`Negative`** Draws attention to important or critical information.
+Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
+
+---
+
+## Size
+
+**`Xsmall`** A compact badge for minimal space usage, ideal for small UI elements like icons or tooltips.
+
+**`Small`** A slightly larger badge that remains subtle but improves readability, often used for inline labels.
+
+**`Medium`** The default size, providing a balance between visibility and space efficiency, suitable for most use cases.
+
+**`Large`** A prominent badge for drawing more attention, often used in dashboards or highlighted sections.
+
+---

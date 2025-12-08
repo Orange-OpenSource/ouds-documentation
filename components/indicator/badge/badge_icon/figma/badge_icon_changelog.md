@@ -1,0 +1,5 @@
+| Date | Number | Notes | Designer |
+|------|--------|-------|----------|
+| Oct 14, 2025 | 1.2.0 | • The component now has two states: Enabled and Disabled. • Documentation has been updated and published in Zeroeight, with use case examples provided for every state. • The colors and background tokens for the functional states of the positive and info statuses have been changed. • The minimum required contrast ratio has been corrected from 3:1 to 4.5:1 between content (icon) and background for Enable state. • Functional badges (Positive, Warning, Negative, Info) differ from non-functional ones: they can only use functional icons, while non-functional badges are not supported. For the "Status neutral" variant: • The content token "color-content-on-status-neutral-emphasized" has been replaced by the token "color-content-inverse" • The surface token "color-surface-status-neutral-emphasized" has been replaced by the token "color-surface-inverse-high" | Anton Astafev |
+| Jun 16, 2025 | 1.1.0 | • "Accent" variant added | Maxime Tonnerre |
+| Mai 9, 2025 | 1.0.0 | • Component creation | Anton Astafev |
