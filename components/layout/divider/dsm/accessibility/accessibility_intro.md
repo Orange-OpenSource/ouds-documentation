@@ -1,0 +1,1 @@
+Dividers must be implemented accessibly to ensure screen reader users understand content structure without being overwhelmed by unnecessary announcements. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

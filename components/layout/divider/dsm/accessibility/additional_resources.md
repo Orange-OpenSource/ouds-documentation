@@ -1,0 +1,4 @@
+- [MDN - ARIA: separator role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/separator_role)
+- [W3C WAI-ARIA - Window Splitter Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/)
+- [Orange Accessibility Guidelines](https://a11y-guidelines.orange.com/en/)
+- [WCAG 2.2 - Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)
