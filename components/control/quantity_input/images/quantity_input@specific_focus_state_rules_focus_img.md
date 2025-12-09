@@ -1,0 +1,1 @@
+![quantity_input@specific_focus_state_rules_focus_img](./quantity_input@specific_focus_state_rules_focus_img.png)
