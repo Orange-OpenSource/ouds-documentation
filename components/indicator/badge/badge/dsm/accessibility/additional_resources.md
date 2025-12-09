@@ -1,0 +1,5 @@
+- [Orange Accessibility Guidelines - Colors and Contrasts](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/)
+- [Orange Accessibility Guidelines - Textual Content](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
+- [WCAG 2.2 Understanding Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color)
+- [W3C ARIA Status Role](https://www.w3.org/TR/wai-aria-1.2/#status)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

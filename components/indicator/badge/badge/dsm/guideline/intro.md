@@ -1,0 +1,1 @@
+A badge is a compact visual indicator that highlights status, notifications, or categorization within an interface using color-coded labels.
