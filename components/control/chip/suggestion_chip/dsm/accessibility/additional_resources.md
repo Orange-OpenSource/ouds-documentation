@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Buttons and Interactive Elements](https://a11y-guidelines.orange.com/en/web/components-examples/)
+- [WCAG 2.2 Understanding 2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard)
+- [W3C ARIA Authoring Practices - Button Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

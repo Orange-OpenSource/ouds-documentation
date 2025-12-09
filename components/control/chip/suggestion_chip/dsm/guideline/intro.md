@@ -1,0 +1,1 @@
+A suggestion chip is a compact, interactive element that presents contextual recommendations or predictive options to streamline user input and selection.
