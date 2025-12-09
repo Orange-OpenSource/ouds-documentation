@@ -1,0 +1,1 @@
+A badge count is a non-interactive visual indicator that displays numeric values to communicate quantities or notification counts.
