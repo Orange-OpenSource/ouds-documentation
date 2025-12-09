@@ -1,0 +1,1 @@
+Filter chips must meet WCAG 2.2 Level AA requirements for keyboard operability, focus visibility, and state communication to assistive technologies. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

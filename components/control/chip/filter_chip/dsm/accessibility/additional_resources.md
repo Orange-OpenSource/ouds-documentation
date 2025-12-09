@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Custom Components](https://a11y-guidelines.orange.com/en/web/develop/custom-components/)
+- [W3C WAI-ARIA Authoring Practices - Button Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/)
+- [Material Design - Chip Accessibility](https://m3.material.io/components/chips/accessibility)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

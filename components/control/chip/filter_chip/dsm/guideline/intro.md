@@ -1,0 +1,1 @@
+A filter chip is a compact, toggleable element that enables users to refine displayed content by selecting or deselecting filter criteria.
