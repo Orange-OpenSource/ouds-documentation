@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Colors and Contrasts](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/)
+- [Carbon Design System - Status Indicator Pattern](https://carbondesignsystem.com/patterns/status-indicator-pattern/)
+- [W3C WCAG 2.2 - Understanding Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)
+- [Adobe Spectrum - Badge Accessibility](https://react-spectrum.adobe.com/react-spectrum/Badge.html)

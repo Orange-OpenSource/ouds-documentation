@@ -1,0 +1,1 @@
+A compact status indicator that uses color-coded icons to communicate system states, notifications, or categorization at a glance.
