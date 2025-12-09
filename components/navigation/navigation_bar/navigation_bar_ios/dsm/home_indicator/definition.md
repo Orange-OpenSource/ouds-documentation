@@ -1,0 +1,1 @@
+The Home Indicator is a system gesture area displayed at the bottom of the screen on devices without a physical Home button. It provides visual guidance for system-wide gestures, such as returning to the Home screen or switching apps. Apps must respect this area to avoid obstructing system gestures.

@@ -1,0 +1,3 @@
+The Tab bar is a system navigation component positioned at the bottom of the screen. It allows users to switch between the primary sections of an app. Each tab is represented by an icon, optionally paired with a label, and maintains persistent visibility across top-level destinations.  
+  
+For more information, we invite you to consult [**the official iOS Tab bar documentation.**](https://developer.apple.com/design/human-interface-guidelines/tab-bars)
