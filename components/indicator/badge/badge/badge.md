@@ -1,6 +1,6 @@
 # Guideline
 
-## Intro 👈🤖
+## Intro
 
 A badge is a compact visual indicator that highlights status, notifications, or categorization within an interface using color-coded labels.
 
@@ -17,7 +17,7 @@ The size remains unchanged despite the increase in the interface size.
 
 ---
 
-## Best for 👈🤔
+## Best for
 
 ✅ Indicating system or item status (success, warning, error, info)
 
