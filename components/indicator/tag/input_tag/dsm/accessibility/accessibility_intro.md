@@ -1,0 +1,1 @@
+Input tag components must meet WCAG 2.2 Level AA standards to ensure all users can add, view, and remove tags effectively using keyboard, mouse, or assistive technologies. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

@@ -1,0 +1,1 @@
+A tag is a compact, non-interactive element that displays labels, categories, or status information to help users quickly identify and organize content.

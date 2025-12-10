@@ -1,0 +1,1 @@
+Input tag allows users to enter and manage multiple values as removable tags within a text input field.

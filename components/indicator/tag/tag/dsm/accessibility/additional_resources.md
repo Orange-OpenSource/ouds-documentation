@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Web Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
+- [WCAG 2.2 Understanding - Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html)
+- [WCAG 2.2 Understanding - Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

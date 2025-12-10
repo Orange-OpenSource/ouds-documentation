@@ -1,0 +1,1 @@
+A Input tag is a component that allows users to enter multiple values, each represented as a tag. As users type and submit values (usually by pressing enter, comma, or tab), each value is transformed into a Tag. Input tags are often used for adding labels, categories, or participants.
