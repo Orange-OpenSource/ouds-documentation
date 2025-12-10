@@ -1,0 +1,1 @@
+An expand filter chip combines selection filtering with a dropdown menu to apply filters from predefined options.
