@@ -1,0 +1,1 @@
+Inline Alert is a lightweight, embedded notification component that delivers contextual feedback within the content flow without interrupting user workflow.

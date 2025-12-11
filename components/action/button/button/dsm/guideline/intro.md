@@ -1,0 +1,1 @@
+A button is an interactive element that triggers actions or events, enabling users to submit forms, navigate, or initiate workflows.

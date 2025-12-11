@@ -1,0 +1,1 @@
+Buttons must meet WCAG 2.2 Level AA compliance for keyboard operability, focus visibility, and semantic structure. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

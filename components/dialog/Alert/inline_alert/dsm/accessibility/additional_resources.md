@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - ARIA Roles & Live Regions](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
+- [WCAG 2.2 Understanding Status Messages (4.1.3)](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+- [W3C WAI - ARIA alert role](https://www.w3.org/WAI/ARIA/apg/patterns/alert/)
