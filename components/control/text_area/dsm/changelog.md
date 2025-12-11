@@ -1,7 +1,7 @@
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Nov 10, 2025 | 1.2.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component | Maxime Tonnerre |
-| Sep 30, 2025 | 1.1.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
-| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+| Date | Number | Notes |
+|------|--------|-------|
+| Nov 10, 2025 | 1.2.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component |
+| Sep 30, 2025 | 1.1.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant |
+| Jun 30, 2025 | 1.0.0 | • Component creation |
