@@ -1,13 +1,16 @@
 ### Structure & Labels
-- [ ] **Accessible context**: Provide descriptive text via `aria-label` or visually hidden text (e.g., "5 unread messages" not just "5") ([Orange labeling guidelines](https://a11y-guidelines.orange.com/en/web/develop/textual-content/))
-- [ ] **Non-interactive element**: Badge should not receive keyboard focus as it is purely informational (WCAG 2.4.3)
-- [ ] **Semantic association**: Position badge adjacent to its related element so context is clear to all users
+
+- [ ] **Accessible name**: Provide descriptive `aria-label` (e.g., "5 unread notifications") conveying count purpose ([Orange A11y - Accessible Name](https://a11y-guidelines.orange.com/en/web/develop/textual-content/))
+- [ ] **Hidden text alternative**: Include visually hidden text for screen readers when badge is purely visual
+- [ ] **Contextual association**: Ensure badge is programmatically associated with its parent element via proximity or `aria-describedby`
 
 ### Visual Design
-- [ ] **Text contrast**: Minimum 4.5:1 contrast ratio between count and background color ([Orange contrast guidelines](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/))
-- [ ] **Color independence**: Don't rely solely on color to convey status; combine with text labels or icons when critical
-- [ ] **Minimum size**: Ensure count text meets minimum 12px font size for readability
+
+- [ ] **Color contrast**: Minimum 4.5:1 ratio between count text and background color ([Orange A11y - Colors](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/))
+- [ ] **Non-color identification**: Status meaning conveyed through context/labels, not color alone
+- [ ] **Minimum size**: Ensure count text meets minimum target size for legibility
 
 ### Content
-- [ ] **Meaningful counts**: ❌ "5" / ✅ "5 notifications" (via accessible label) ([Orange content guidelines](https://a11y-guidelines.orange.com/en/web/develop/textual-content/))
-- [ ] **Truncation clarity**: Use "99+" pattern for large numbers with accessible full count available
+
+- [ ] **Meaningful counts**: ❌ "99+" without context / ✅ "99+ unread messages" with full context available
+- [ ] **Truncation handling**: Provide full count value to assistive technology when visually truncated

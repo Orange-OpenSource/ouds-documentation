@@ -1,19 +1,19 @@
-✅ Displaying unread notification counts on navigation icons or menu items
+✅ Displaying unread message or notification counts on navigation icons
 
-✅ Showing the number of items in a shopping cart or basket
+✅ Showing item quantities in shopping carts or baskets
 
-✅ Indicating active filter counts in search or data table interfaces
+✅ Indicating pending tasks or action items requiring attention
 
-✅ Communicating pending task or action quantities requiring user attention
+✅ Communicating status counts on tabs or navigation items
 
-✅ Displaying unread message counts in messaging or email applications
+✅ Highlighting new content arrivals in feeds or inboxes
 
-✅ Showing the number of updates or alerts in system status indicators
+✅ Representing active filter counts in data tables
 
-✅ Indicating quantities in tabbed interfaces where counts provide useful context
+✅ Showing selected item quantities in multi-select interfaces
 
-✅ Communicating real-time count changes for collaborative or dynamic content
+✅ Displaying error or warning counts in system dashboards
 
-✅ Displaying error or warning counts that need user acknowledgment
+✅ Indicating unprocessed queue items in workflow interfaces
 
-✅ Showing selection counts in multi-select or batch operation interfaces
+✅ Communicating real-time count changes in collaborative tools

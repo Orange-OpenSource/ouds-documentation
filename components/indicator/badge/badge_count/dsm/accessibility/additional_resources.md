@@ -1,4 +1,4 @@
+- [Orange Accessibility Guidelines - Textual Content](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
 - [Orange Accessibility Guidelines - Colors and Contrasts](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/)
-- [WCAG 2.2 Understanding Status Messages (4.1.3)](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
-- [W3C ARIA Live Regions](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19)
+- [W3C WAI - ARIA Live Regions](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19)
 - [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
