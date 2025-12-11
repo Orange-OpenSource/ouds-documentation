@@ -1,0 +1,1 @@
+Alert Message components must meet WCAG 2.2 Level AA requirements to ensure all users can perceive, understand, and interact with system feedback effectively. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

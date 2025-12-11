@@ -1,0 +1,5 @@
+- [Orange Accessibility Guidelines - ARIA Live Regions](https://a11y-guidelines.orange.com/en/web/develop/rich-interface-components/)
+- [Orange Accessibility Guidelines - Color and Contrast](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/)
+- [W3C WAI - ARIA Alert Role](https://www.w3.org/WAI/ARIA/apg/patterns/alert/)
+- [WCAG 2.2 Understanding 4.1.3 Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

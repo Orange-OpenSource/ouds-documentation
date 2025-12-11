@@ -1,0 +1,1 @@
+Alert Message displays persistent system feedback, status updates, or required actions using semantic colors, icons, and optional actions.
