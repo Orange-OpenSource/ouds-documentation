@@ -1,6 +1,6 @@
 ## Definition
 
--
+Inline Alert is a lightweight, embedded alert used within the content flow (e.g. inside a form, card, settings section). It is less visually prominent than Alert Message and does not include a dismiss button.
 
 ---
 
