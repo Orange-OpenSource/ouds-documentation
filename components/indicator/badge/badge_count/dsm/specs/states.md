@@ -1,7 +1,3 @@
-🚧 Missing from source: States section in badge_count_overview.md
+**`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (e.g., success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
 
-Based on Figma component data, the Badge Count supports the following states:
-
-**Enabled state**: The badge displays with full status color styling and readable count text. The contrast ratio between content and background meets the 4.5:1 minimum requirement.
-
-**Disabled state**: The badge displays with a muted background color (`color-action-disabled`) and reduced contrast text (`color-content-on-action-disabled`), indicating the associated element or feature is unavailable.
+**`Disabled`** The inactive state of a badge. Used to indicate that the user isn’t allowed to interact with an element, or when the status is unavailable.  It appears less prominent and serves as a secondary indication.Badges with content keep the Enabled content but change their visual appearance.
