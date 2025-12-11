@@ -118,10 +118,38 @@ def build_hierarchy(flat_sections: List[MarkdownSection]) -> List[MarkdownSectio
     return root.children
 
 
+# Mapping of title variations to their canonical form
+# This ensures consistent output paths regardless of singular/plural usage
+TITLE_NORMALIZATION_MAP = {
+    'state': 'states',
+    # Add more mappings here as needed, e.g.:
+    # 'variant': 'variants',
+    # 'property': 'properties',
+}
+
+
+def normalize_title(title: str) -> str:
+    """
+    Normalize section titles to their canonical form
+    Handles singular/plural variations (e.g., "State" -> "States")
+    
+    Args:
+        title: Original heading text
+        
+    Returns:
+        Normalized title
+    """
+    title_lower = title.lower().strip()
+    if title_lower in TITLE_NORMALIZATION_MAP:
+        return TITLE_NORMALIZATION_MAP[title_lower]
+    return title
+
+
 def sanitize_filename(name: str) -> str:
     """
     Clean filename by replacing special characters
     Converts "Basic Usage" to "basic_usage"
+    Also normalizes title variations (e.g., "State" -> "states")
     
     Args:
         name: Original heading text
@@ -129,6 +157,8 @@ def sanitize_filename(name: str) -> str:
     Returns:
         Sanitized filename safe for file systems
     """
+    # First normalize the title (handle singular/plural variations)
+    name = normalize_title(name)
     # Convert to lowercase
     name = name.lower()
     # Replace spaces with underscores
