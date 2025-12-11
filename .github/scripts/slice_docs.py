@@ -127,6 +127,15 @@ TITLE_NORMALIZATION_MAP = {
     # 'property': 'properties',
 }
 
+# Files that should ONLY be saved under specific parent directories
+# Key: filename (without .md), Value: list of allowed parent directories
+# If the file's path doesn't include one of these directories, it will be skipped
+FILES_ONLY_IN_DIRS = {
+    'states': ['specs'],
+    # Add more mappings here as needed, e.g.:
+    # 'anatomy': ['specs'],
+}
+
 
 def normalize_title(title: str) -> str:
     """
@@ -268,6 +277,15 @@ def save_slice(component_dir: Path, path_segments: List[str],
         content: File content to write
     """
     dsm_dir = component_dir / 'dsm'
+    
+    # Check if this file should only be saved in specific directories
+    # e.g., 'states' should only be saved under 'specs/' directory
+    if filename in FILES_ONLY_IN_DIRS:
+        allowed_dirs = FILES_ONLY_IN_DIRS[filename]
+        # Check if any of the path segments match an allowed directory
+        if not any(seg in allowed_dirs for seg in path_segments):
+            print(f"  ⊘ Skipped: {filename}.md (not in allowed directories: {allowed_dirs})")
+            return
     
     # Build target directory (excluding last segment which is the filename)
     if len(path_segments) > 1:
