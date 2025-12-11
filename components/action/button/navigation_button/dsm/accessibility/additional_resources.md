@@ -1,0 +1,5 @@
+- [Orange Accessibility Guidelines - Form Buttons](https://a11y-guidelines.orange.com/en/web/develop/form-buttons/)
+- [GOV.UK Design System - Pagination](https://design-system.service.gov.uk/components/pagination/)
+- [Carbon Design System - Pagination Accessibility](https://carbondesignsystem.com/components/pagination/accessibility/)
+- [WCAG 2.2 Understanding Docs - Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

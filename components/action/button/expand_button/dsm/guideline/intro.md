@@ -1,0 +1,1 @@
+Expand button toggles content visibility, enabling users to progressively reveal or collapse sections while reducing visual clutter.

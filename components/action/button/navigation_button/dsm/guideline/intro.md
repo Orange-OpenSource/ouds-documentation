@@ -1,0 +1,1 @@
+A Navigation button enables users to move between pages in multi-page interfaces like search results, product listings, or data tables.
