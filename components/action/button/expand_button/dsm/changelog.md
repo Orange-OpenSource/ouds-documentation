@@ -1,5 +1,3 @@
-# Changelog
-
 | Date | Number | Notes |
 |------|--------|-------|
 | Sep 28, 2025 | 3.1.0 | <ul><li>Brand variant: New background and content color tokens added for hover/pressed/loading/focus states <li>The name of the "Hierarchy" variant has been replaced to "Appearance"</ul> |
