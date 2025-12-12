@@ -1,5 +1,3 @@
-# Changelog
-
 | Date | Number | Notes |
 |------|--------|-------|
 | Nov 10, 2025 | 1.2.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component |
