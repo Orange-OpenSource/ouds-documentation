@@ -1,5 +1,3 @@
-# Changelog
-
 | Date | Number | Notes |
 |------|--------|-------|
 | Nov 12, 2025 | 1.5.0 | <ul><li>Label text with bold replaced by medium for small size of the component</ul> |
