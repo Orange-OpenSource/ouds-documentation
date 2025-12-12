@@ -1,5 +1,3 @@
-# Changelog
-
 | Date | Number | Notes |
 |------|--------|-------|
 | Nov 12, 2025 | 1.2.0 | • Label text with bold replaced by medium |
