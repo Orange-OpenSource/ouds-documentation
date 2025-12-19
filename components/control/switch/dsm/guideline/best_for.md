@@ -1,19 +1,7 @@
-✅ Enabling or disabling system settings that take effect immediately
+✅ When toggling a binary on/off state
 
-✅ Toggling application features on or off without additional confirmation
+✅ For immediate actions that take effect as soon as the control is changed
 
-✅ Controlling persistent binary states like dark mode or notifications
+✅ When the control represents a system or feature state, not a choice among options
 
-✅ Settings pages where users expect instant feedback upon interaction
-
-✅ Mobile-first interfaces where tap-to-toggle is the expected behavior
-
-✅ Preferences that can be quickly reversed without consequences
-
-✅ Standalone options that don't require form submission
-
-✅ Wi-Fi, Bluetooth, or connectivity controls with immediate activation
-
-✅ Enabling or disabling auto-save, auto-update, or background sync features
-
-✅ Privacy settings such as "Share my location" or "Allow analytics"
+✅ For settings that can be changed frequently without confirmation
