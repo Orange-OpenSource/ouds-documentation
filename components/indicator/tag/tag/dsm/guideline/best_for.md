@@ -1,19 +1,7 @@
-✅ Displaying status indicators such as "Active," "Pending," or "Completed" in dashboards and lists
+✅ To display short informational labels such as categories, statuses, or keywords
 
-✅ Categorizing content items with keywords or labels for quick visual scanning
+✅ When content needs to be quickly grouped or identified without interaction
 
-✅ Showing metadata like document types, priority levels, or content classifications
+✅ As a visual marker in lists, cards, or filter contexts
 
-✅ Indicating system states such as success, warning, error, or informational messages
-
-✅ Labeling items in data tables where space efficiency is important
-
-✅ Highlighting new features, promotions, or important notices in product interfaces
-
-✅ Communicating order or process statuses in e-commerce and workflow applications
-
-✅ Differentiating between content types in card-based layouts and galleries
-
-✅ Providing visual context for items in complex enterprise applications
-
-✅ Grouping related items with color-coded classification systems
+✅ When information should be always visible and easy to scan
