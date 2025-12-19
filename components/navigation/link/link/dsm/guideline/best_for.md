@@ -1,19 +1,7 @@
-✅ In-page navigation to specific sections or anchors
+✅ When navigation between pages, sections, or external resources is required
 
-✅ External navigation to related resources or documentation
+✅ For inline navigation within text or content-heavy layouts
 
-✅ Breadcrumb trails showing hierarchical page structure
+✅ When the primary purpose is navigation, not triggering an action
 
-✅ Table of contents linking to document sections
-
-✅ Footer navigation to legal pages, privacy policies, or site maps
-
-✅ Inline references within body text requiring contextual navigation
-
-✅ "Back" or "Next" sequential navigation patterns
-
-✅ Search results listings with clickable titles
-
-✅ Related content recommendations and cross-references
-
-✅ Help documentation with contextual links to detailed topics
+✅ To provide a clear, lightweight path to additional information
