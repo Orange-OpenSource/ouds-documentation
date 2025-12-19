@@ -1,4 +1,4 @@
-**Non fonctionnel** Used for informational or decorative messages not tied to system logic. They are flexible in tone and visual expression, allowing the use of custom or brand-related (decorative) iconsdepending on context. These alerts help highlight content or support communication in a subtle, branded way.
+**Non-functional** Used for informational or decorative messages not tied to system logic. They are flexible in tone and visual expression, allowing the use of custom or brand-related (decorative) iconsdepending on context. These alerts help highlight content or support communication in a subtle, branded way.
 
 **⚠️ Note:** Icons in non-functional alerts can be changed or customized depending on the message context.
 
@@ -6,7 +6,7 @@
 
 **`Accent`** Uses Orange brand colors and can include decorative icons to draw attention to key marketing or communication content. Perfect for promotional, inspirational, or brand-driven highlights that engage the user positively.
 
-**Fonctionnel** Used to communicate system statuses, results, or warnings tied directly to UX logic or user actions. These alerts follow strict semantic conventions for icon, color, and tone — ensuring clear, accessible communication across all Orange digital products.
+**Functional** Used to communicate system statuses, results, or warnings tied directly to UX logic or user actions. These alerts follow strict semantic conventions for icon, color, and tone — ensuring clear, accessible communication across all Orange digital products.
 
 **⚠️ Note:** Icons in functional alerts must never be replaced or customized. Each type has a dedicated, standardized icon that expresses its meaning clearly.
 
