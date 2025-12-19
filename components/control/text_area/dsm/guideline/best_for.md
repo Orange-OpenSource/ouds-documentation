@@ -1,9 +1,7 @@
-✅ Text editing where users need to see multiple lines simultaneously
+✅ To capture long-form or multi-line text
 
-✅ Comment sections where multi-line explanations are expected
+✅ When users need to provide comments, descriptions, or feedback
 
-✅ Description fields in forms that need more than a single sentence
+✅ If the text length is variable or exceeds a single line
 
-✅ Message composition requiring multiple paragraphs
-
-✅ Long-form content entry like reviews or testimonials
+✅ For scenarios requiring auto-expansion, character limits, and validation
