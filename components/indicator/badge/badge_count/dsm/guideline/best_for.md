@@ -1,19 +1,7 @@
-✅ Displaying unread message or notification counts on navigation icons
+✅ To display numeric values (notifications, unread items)
 
-✅ Showing item quantities in shopping carts or baskets
+✅ When it is important to draw quick attention to a count
 
-✅ Indicating pending tasks or action items requiring attention
+✅ In navigation, icons, or lists where the badge augments a primary element
 
-✅ Communicating status counts on tabs or navigation items
-
-✅ Highlighting new content arrivals in feeds or inboxes
-
-✅ Representing active filter counts in data tables
-
-✅ Showing selected item quantities in multi-select interfaces
-
-✅ Displaying error or warning counts in system dashboards
-
-✅ Indicating unprocessed queue items in workflow interfaces
-
-✅ Communicating real-time count changes in collaborative tools
+✅ For values that update frequently
