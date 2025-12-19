@@ -1,1 +1,1 @@
-The skeleton component is a visual element used to indicate that content is loading. It provides a smooth user experience by temporarily replacing content with gray areas or animations simulating the visual structure of the content to come.
+The skeleton component is a user interface element used to indicate that a content is loading. It provides a smooth user experience by temporarily replacing content with gray areas or animations simulating the visual structure of the content to come.
