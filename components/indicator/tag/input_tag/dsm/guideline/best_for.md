@@ -1,19 +1,7 @@
-✅ Adding multiple email recipients in a compose or sharing interface
+✅ When users need to enter multiple values within a single input
 
-✅ Creating user-defined labels, categories, or keywords for content organization
+✅ For adding tags, categories, participants, or keywords
 
-✅ Selecting multiple participants, assignees, or collaborators from a list
+✅ When each submitted value should be converted into a discrete visual element
 
-✅ Building custom filters or search criteria with multiple terms
-
-✅ Tagging content with metadata for categorization and discoverability
-
-✅ Managing skill sets, interests, or attributes in profile forms
-
-✅ Creating comma-separated lists that benefit from visual token representation
-
-✅ Situations where users need to easily add and remove multiple discrete values
-
-✅ Forms requiring multiple selections from an open-ended set of options
-
-✅ Interfaces where entered values need clear visual distinction from pending input
+✅ In forms where flexible input and clear value management are important
