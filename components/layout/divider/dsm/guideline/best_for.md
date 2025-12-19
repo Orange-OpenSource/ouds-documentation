@@ -1,19 +1,7 @@
-✅ Separating stacked content sections vertically (e.g., between main content and footer)
+✅ To visually separate content without introducing strong hierarchy
 
-✅ Dividing horizontally aligned elements (e.g., between columns in a layout)
+✅ When you need to distinguish logical sections within the same screen or layout
 
-✅ Grouping related menu items or navigation options
+✅ In lists, forms, or cards to improve readability and scannability
 
-✅ Creating visual breaks between list items in dense content
-
-✅ Separating form sections without adding hierarchical weight
-
-✅ Distinguishing content areas within cards or panels
-
-✅ Breaking up long scrolling pages into scannable sections
-
-✅ Separating toolbar actions or icon groups
-
-✅ Creating thematic breaks between paragraphs or articles
-
-✅ Visually organizing dashboard widgets or data regions
+✅ When a heading or container would be semantically or visually excessive
