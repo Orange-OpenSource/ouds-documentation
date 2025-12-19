@@ -1,12 +1,12 @@
-Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
+Badge have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
-**Non fonctionnel**
+**Non-functional**
 
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
 
-**Fonctionnel**
+**Functional**
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -14,5 +14,4 @@ Badges have seven states depending on the context of the information they repres
 
 **`Warning`** Negatives the user to potential risks or cautionary messages.
 
-**`Negative`** Draws attention to important or critical information.
-Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
+**`Negative`** Draws attention to important or critical information. Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
