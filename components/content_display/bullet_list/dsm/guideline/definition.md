@@ -1,5 +1,1 @@
-List allows users to view individual, but related, text items grouped together.
-
-It usually begins with either a number or a bullet, also known as Unordered list or Ordered list.
-
-By default, **this component is not interactive**, although it is possible to add a hypertext link to the content.
+A List allows users to view individual, but related, text items grouped together. It usually begins with either a number or a bullet, also known as Unordered list or Ordered list. By default, this component is not interactive, although it is possible to add a hypertext link to its content.
