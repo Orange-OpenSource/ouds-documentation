@@ -1,19 +1,7 @@
-✅ Multi-level site architectures with more than two hierarchy levels
+✅ You need to show the user’s current location within a page or product hierarchy
 
-✅ E-commerce product pages requiring category context
+✅ The interface has multiple levels of navigation (2+ levels)
 
-✅ Documentation sites with nested content structures
+✅ Users may want to quickly navigate back to higher-level pages
 
-✅ Content management systems with deep folder hierarchies
-
-✅ Enterprise applications with complex information architecture
-
-✅ Help center or support portals with categorized articles
-
-✅ Media libraries organized by taxonomy or collections
-
-✅ Government or institutional sites with regulatory content structures
-
-✅ Educational platforms with course and module hierarchies
-
-✅ Search results pages where users need to return to filtered views
+✅ The structure is complex and a page title alone is not enough for orientation
