@@ -1,1 +1,1 @@
-A Divider is a UI component used to visually structure an interface by clearly separating content sections. It helps improve readability and content organization without introducing a strong hierarchy like a heading or a container would.
+A Divider allows to visually structure an interface by clearly separating content sections. It helps improve readability and content organization without introducing a strong hierarchy, like a heading or a container would.
