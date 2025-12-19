@@ -1,19 +1,7 @@
-✅ Single selection from a small set of 2–7 mutually exclusive options
+✅ When users must select exactly one option from a predefined set
 
-✅ Settings or preferences where only one choice applies at a time
+✅ When all options should be visible and comparable at the same time
 
-✅ Forms requiring explicit user commitment to one option
+✅ For choices that are mutually exclusive and require clarity over flexibility
 
-✅ Yes/No or binary choice questions on a page
-
-✅ Filter controls where one category must be active
-
-✅ Survey questions with predefined answer choices
-
-✅ Configuration panels with exclusive mode selections
-
-✅ Checkout flows for shipping or payment method selection
-
-✅ User onboarding where one path must be chosen
-
-✅ Legal or compliance forms requiring explicit single selection
+✅ When the selection takes effect immediately or clearly defines the next step
