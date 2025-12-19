@@ -1,19 +1,7 @@
-✅ Progressive disclosure of supplementary information without page navigation
+✅ When revealing or hiding additional content inline without breaking the layout
 
-✅ FAQ sections where questions reveal detailed answers inline
+✅ For secondary or optional information that doesn’t require a full button
 
-✅ Mobile-first interfaces where vertical space is limited
+✅ When minimal visual weight is important to maintain content focus
 
-✅ Inline content expansion within paragraphs or compact layouts
-
-✅ Reducing visual clutter while maintaining access to extended details
-
-✅ Product descriptions with "Read more" functionality
-
-✅ Help text or contextual hints that users can optionally view
-
-✅ Nested information structures requiring lightweight toggle controls
-
-✅ Information-dense dashboards where content density must be managed
-
-✅ Form sections with optional additional fields or explanations
+✅ In dense layouts where space efficiency and clarity matter
