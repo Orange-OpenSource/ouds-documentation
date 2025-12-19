@@ -1,7 +1,7 @@
-✅ Form fields where values rarely exceed 20 and incremental changes are common
+✅ When users need to specify a numeric quantity within a limited range
 
-✅ Contexts requiring validation feedback for out-of-range values
+✅ For scenarios with incremental increase or decrease controls
 
-✅ Compact layouts needing space-efficient numeric input controls
+✅ In e-commerce, ordering, or settings where precision matters
 
-✅ Scenarios where preventing invalid character entry improves data quality
+✅ When direct input and + / − controls are both acceptable
