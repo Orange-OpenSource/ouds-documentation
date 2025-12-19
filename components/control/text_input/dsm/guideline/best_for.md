@@ -1,5 +1,7 @@
-✅ Collecting short, single-line responses where character count is relatively limited
+✅ To capture short, single-line text input
 
-✅ Numeric entries, Email, username, when combined with appropriate input masks or validation
+✅ In forms, dialogs, and search interfaces requiring quick and precise entry
 
-✅ Search queries requiring quick, single-line input with optional autocomplete
+✅ When the value has a defined format or limited length
+
+✅ For data that can be entered and validated inline
