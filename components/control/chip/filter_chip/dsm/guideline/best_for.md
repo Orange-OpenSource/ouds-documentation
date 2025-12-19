@@ -1,19 +1,7 @@
-✅ Filtering product catalogs by category, brand, size, or color attributes
+✅ To let users apply or remove filters quickly without leaving the current context
 
-✅ Refining search results with multiple concurrent filter criteria
+✅ When multiple filters can be combined and toggled independently
 
-✅ Organizing content by tags or keywords in content management interfaces
+✅ For refining lists, search results, or collections in a lightweight, visible way
 
-✅ Selecting date ranges or time periods for data visualization dashboards
-
-✅ Toggling quick filters in email or messaging applications
-
-✅ Narrowing options in restaurant menus or food delivery apps
-
-✅ Filtering map markers by location type or amenity in navigation apps
-
-✅ Selecting multiple categories in news or media content feeds
-
-✅ Applying status filters in task management or project tracking tools
-
-✅ Refining job listings by location, salary range, or experience level
+✅ When filters represent an active, persistent state in the UI
