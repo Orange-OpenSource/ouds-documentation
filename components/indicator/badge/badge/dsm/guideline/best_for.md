@@ -1,19 +1,7 @@
-✅ Indicating system or item status (success, warning, error, info)
+✅ To display status or categorization (e.g. online / offline, new, pending)
 
-✅ Highlighting new features, updates, or content discoveries
+✅ As an atomic element embedded within other components
 
-✅ Showing approval or completion states in workflows
+✅ When a non-intrusive visual indicator is sufficient
 
-✅ Categorizing content with color-coded visual labels
-
-✅ Drawing attention to important metadata without interrupting user flow
-
-✅ Communicating urgency levels in dashboard or list views
-
-✅ Displaying content states like "Draft", "Published", or "Archived"
-
-✅ Supplementing navigation items with status context
-
-✅ Providing quick visual feedback for data validation results
-
-✅ Marking items requiring user attention in compact spaces
+✅ For persistent states that do not change frequently
