@@ -1,5 +1,5 @@
-✅ Services requiring phone verification or two-factor authentication
+✅ To capture and validate phone numbers in international format
 
-✅ Services needing SMS confirmation capabilities
+✅ When country selection and automatic dial code insertion are required
 
-✅ Contact forms for service or support inquiries
+✅ In registration, profile, or two-factor authentication forms
