@@ -1,19 +1,7 @@
-✅ Submitting form data or completing a transaction flow
+✅ To trigger actions that change system state or initiate a process
 
-✅ Primary call-to-action requiring immediate user attention
+✅ For primary and secondary call-to-actions that require visual emphasis and explicit interaction
 
-✅ Confirming or canceling actions in modal dialogs
+✅ For confirming intent, managing states, scenario-based navigation, and destructive actions
 
-✅ Triggering navigation to a new screen or page section
-
-✅ Initiating file uploads, downloads, or data exports
-
-✅ Executing destructive actions with confirmation (delete, remove)
-
-✅ Toggling states or settings within compact interfaces
-
-✅ Launching external applications or opening new browser windows
-
-✅ Saving user progress or draft content
-
-✅ Adding or removing items from lists, carts, or collections
+✅ Use a button when an immediate system response is expected, rather than simple navigation via a link
