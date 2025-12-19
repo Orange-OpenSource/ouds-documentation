@@ -1,19 +1,7 @@
-✅ Multi-step form navigation where users move forward or backward through sequential steps
+✅ To move between pages, screens, or sections of the interface
 
-✅ Product catalog or search results pagination requiring next/previous page controls
+✅ For navigation within navigational surfaces such as headers, sidebars, or menus
 
-✅ Data table navigation with large datasets split across multiple pages
+✅ When the action does not modify data, but changes context or route
 
-✅ Article series or tutorial sequences where content flows linearly
-
-✅ Carousel or slideshow controls for browsing visual content
-
-✅ Checkout flow progression where users advance through purchasing steps
-
-✅ FAQ or documentation pages with related content split into sections
-
-✅ Mobile interfaces where compact icon-only navigation saves screen space
-
-✅ Admin dashboards with paginated lists of records or entries
-
-✅ Wizard-style interfaces guiding users through a defined sequence
+✅ When a compact and predictable navigation control is required
