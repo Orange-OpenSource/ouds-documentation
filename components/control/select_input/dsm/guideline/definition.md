@@ -1,3 +1,1 @@
-A select input is a form component that allows users to choose one (or sometimes multiple) options from a predefined list. It is typically rendered as a dropdown menu that displays available choices when interacted with, either by click or keyboard navigation.
-
-This component is used when the number of choices is limited and known in advance and when users should select from controlled or standardized values
+A select input is a form component that allows users to choose one (or sometimes multiple) options from a predefined list. It is typically rendered as a dropdown menu that displays available choices when interacted with, either by click or keyboard navigation. This component is used when the number of choices is limited and known in advance, and when users should select from controlled or standardized values.
