@@ -1,19 +1,7 @@
-✅ Selecting multiple options from a list where choices are not mutually exclusive
+✅ When users need to select one or more options from a set
 
-✅ Accepting terms, conditions, or consent agreements requiring explicit user acknowledgment
+✅ When selections are independent and can be combined freely
 
-✅ Filtering content in tables, lists, or search results
+✅ For bulk actions, filters, and preferences that do not require immediate commitment
 
-✅ Batch-selecting items for bulk actions like delete, move, or export
-
-✅ Creating parent-child hierarchical selections with indeterminate state support
-
-✅ Toggling feature settings that require form submission to take effect
-
-✅ Collecting survey responses where multiple answers apply
-
-✅ Enabling optional add-ons or features during checkout or configuration flows
-
-✅ Building preference panels with independent on/off choices
-
-✅ Confirming understanding of important information before proceeding
+✅When options represent a persistent or saved state, not a temporary choice
