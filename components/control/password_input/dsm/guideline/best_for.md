@@ -1,9 +1,5 @@
-✅ Account login and authentication flows requiring secure credential entry
+✅ To capture confidential credentials that require character masking
 
-✅ New account registration where users create passwords for the first time
+✅ In authentication, registration, and password reset flows
 
-✅ Password change or reset journeys within account settings
-
-✅ Admin or back-office systems with elevated security requirements
-
-✅ Self-service portals where users manage their own account security
+✅ For data that should not be visible by default
