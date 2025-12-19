@@ -2,6 +2,6 @@
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
 This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
