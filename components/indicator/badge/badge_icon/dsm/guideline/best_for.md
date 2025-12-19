@@ -1,19 +1,7 @@
-✅ Indicating system status (success, warning, error, info) alongside other UI elements
+✅ To reinforce meaning visually using an icon
 
-✅ Providing non-interactive visual feedback on process completion or validation states
+✅ When text is unnecessary or can be replaced by a symbol
 
-✅ Displaying functional alerts that require immediate user attention
+✅ For functional or non-functional state indicators
 
-✅ Communicating categorical information through semantic color coding
-
-✅ Enhancing navigation items with status context without adding text labels
-
-✅ Marking items in lists or cards that require attention or have specific states
-
-✅ Showing availability or activity status in compact spaces
-
-✅ Supplementing icons or avatars with contextual status information
-
-✅ Indicating feature discovery or new content availability
-
-✅ Providing secondary status information in dashboards and data tables
+✅ When an icon improves scannability without adding visual noise
