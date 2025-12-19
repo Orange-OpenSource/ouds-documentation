@@ -1,19 +1,7 @@
-✅ Grouping multiple filter options under a single category label
+✅ When a filter has multiple, dynamic, or changing values
 
-✅ Space-constrained interfaces where inline filter lists would be too wide
+✅ To keep the interface compact while still allowing detailed filter selection
 
-✅ Dynamic filter values that change based on data or context
+✅ For filters that require a dropdown or secondary choice to define their value
 
-✅ Multi-select filtering where users can choose several options within one category
-
-✅ Filter experiences requiring a counter badge to show active selection count
-
-✅ Mobile and responsive layouts where dropdown menus optimize touch targets
-
-✅ Contextual filtering that needs to remain visible while options are reviewed
-
-✅ Faceted search interfaces with hierarchical or grouped filter options
-
-✅ Data tables or lists requiring quick, non-disruptive filter application
-
-✅ Product catalogs with attribute-based filtering like size, color, or price range
+✅ When filter configuration should stay close to the results, not in a separate panel
