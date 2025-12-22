@@ -1,4 +1,4 @@
-**`False`** An input with a subtle background fill and un visible bottom border.
+**`False`** An input with a subtle background fill and a visible bottom border.
 
 **`True`** A minimalist input with a transparent background and visible stroke.
 
