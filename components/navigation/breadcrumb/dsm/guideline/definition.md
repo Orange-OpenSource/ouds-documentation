@@ -1,1 +1,1 @@
-Breadcrumbs are a navigational aid that displays a hierarchical path, helping users understand their location and easily navigate back to previous pages.
+Breadcrumb is a UI element that helps navigating and identifying current location in a website, by displaying a hierarchical path of web pages.

@@ -1,1 +1,1 @@
-Inline Alert is a lightweight, embedded alert used within the content flow (e.g. inside a form, card, settings section). It is less visually prominent than Alert Message and does not include a dismiss button.
+Inline alert is a lightweight UI element, placed in the content flow, that displays information, system feedback, status changes throughout short, prominent, persistent and non actionable communication. Inline alert includes functional icon and semantic colour, and does not include a close button and/or action link. Inline alert does not disappear and remains visible.

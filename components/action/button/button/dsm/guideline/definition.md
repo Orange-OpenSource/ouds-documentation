@@ -1,1 +1,1 @@
-A button is a fundamental interactive UI element that allows users to trigger an action or event within an interface, such as submitting a form, opening a dialog, or navigating to another page. Visually, it's typically styled to stand out as clickable, using shape, color, and label to convey its purpose.
+Button is a UI element that triggers an action or event, and is used to initiate tasks or confirming an action. Button appears in different layouts, styles and states to indicate hierarchy or emphasis.

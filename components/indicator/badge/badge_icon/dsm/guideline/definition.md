@@ -1,1 +1,1 @@
-The Badge is a small UI element used to highlight status, notifications, or categorization within an interface. It is often displayed as a label or indicator with a distinct background color and text. Badge with icons is used to visually reinforce meaning.
+Badge icon is a UI element that emphasizes system notifications, status, or the categorization of an information, throughout colour and iconography. Badge icon is rendered as a coloured shape, displaying icon; and its chosen size remains unchanged regardless of the changes of the interface size.
