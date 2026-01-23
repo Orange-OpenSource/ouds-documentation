@@ -1,4 +1,5 @@
 ### Composite token: elevation.none
+**Description:** No elevation (0 dp)
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
 | ouds.elevation.x.none | core-ouds.elevation.x.0 | 0px |
@@ -10,6 +11,7 @@
 <br>
 
 ### Composite token: elevation.raised
+**Description:** A slight elevation to detach an element from the surface
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
 | ouds.elevation.x.raised | core-ouds.elevation.x.0 | 0px |
@@ -22,6 +24,7 @@
 <br>
 
 ### Composite token: elevation.default
+**Description:** The standard elevation level for components
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
 | ouds.elevation.x.default | core-ouds.elevation.x.0 | 0px |
@@ -34,6 +37,7 @@
 <br>
 
 ### Composite token: elevation.emphasized
+**Description:** A higher elevation for emphasized elements
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
 | ouds.elevation.x.emphasized | core-ouds.elevation.x.0 | 0px |
@@ -46,6 +50,7 @@
 <br>
 
 ### Composite token: elevation.drag
+**Description:** The elevation applied to an element when it is being dragged
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
 | ouds.elevation.x.drag | core-ouds.elevation.x.0 | 0px |
@@ -58,6 +63,7 @@
 <br>
 
 ### Composite token: elevation.sticky
+**Description:** The elevation used for sticky elements
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
 | ouds.elevation.x.sticky | core-ouds.elevation.x.0 | 0px |
