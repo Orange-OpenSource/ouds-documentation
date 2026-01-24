@@ -1,4 +1,4 @@
-The App bar **(aka Top app bar on Material 2)** is a top-aligned component that displays the screen title and provides access to key actions and navigation elements. It may include an Up button, action icons, overflow menus, search, or tabs. It provides context and controls relevant to the current view.  
+**The App bar (aka Top app bar on Material 2)** is a top-aligned component that displays the screen title and provides access to key actions and navigation elements. It may include an Up button, action icons, overflow menus, search, or tabs. It provides context and controls relevant to the current view.  
   
 For more information, we invite you to consult the official Android:
 
