@@ -1,1 +1,1 @@
-Badge is a UI element that emphasizes system notifications, status, or the categorization of an information, throughout colour only. Badge is rendered as a coloured shape, without icon, text or number; and its chosen size remains unchanged regardless of the changes of the interface size.
+**Badge** is a UI element that emphasizes system notifications, status, or the categorization of an information, throughout colour only. Badge is rendered as a coloured shape, without icon, text or number; and its chosen size remains unchanged regardless of the changes of the interface size.
