@@ -1,1 +1,1 @@
-Button is a UI element that triggers an action or event, and is used to initiate tasks or confirming an action. Button appears in different layouts, styles and states to indicate hierarchy or emphasis.
+**Button** is a UI element that triggers an action or event, and is used to initiate tasks or confirming an action. Button appears in different layouts, styles and states to indicate hierarchy or emphasis.
