@@ -1,4 +1,4 @@
-The Status bar is a top system UI area displaying device information such as notifications, time, signal strength, and battery status. Its appearance (light/dark, transparent, etc.) can be influenced by the app but its content is controlled by the system.  
+**The Status bar** is a top system UI area displaying device information such as notifications, time, signal strength, and battery status. Its appearance (light/dark, transparent, etc.) can be influenced by the app but its content is controlled by the system.  
   
 For more information, we invite you to consult the official Android:
 
