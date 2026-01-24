@@ -1,4 +1,4 @@
-The System navigation bar provides system-level navigation controls such as Back, Home, and Overview. Depending on the device or mode, it may appear as a 3-button layout or as a gesture navigation area. Apps must preserve this zone to avoid interfering with system navigation.  
+**The System navigation bar** provides system-level navigation controls such as Back, Home, and Overview. Depending on the device or mode, it may appear as a 3-button layout or as a gesture navigation area. Apps must preserve this zone to avoid interfering with system navigation.  
   
 For more information, we invite you to consult the official Android:
 
