@@ -1,5 +1,6 @@
 | Date | Number | Notes |
 |------|--------|-------|
+| Jan 21, 2026 | - | <ul><li>Documentation writing: Rounded corners update<li>Documentation writing: Dedicated component: On coloured bg</ul> |
 | Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
 | Oct 10, 2025 | 3.2.0 | New component name: Navigation button (vs Pagination button) The specific component "On colored bg" has been split into two distinct components: <ul><li>A public version offering traditional management of dark and light modes <li>A private version (allowing the core team to nest the component with other components) offering customized mode management with four possible configurations: <ul><li>Always in light mode <li>Always in dark mode <li>Light to dark mode <li>Dark to light mode </ul><li>Consequently, for the private version, the name of the "Inverted color" variant has been replaced to "Mode control".</ul> | Maxime Tonnerre |
 | Sep 28, 2025 | 3.1.0 | <ul><li>Brand variant: New background and content color tokens added for hover/pressed/loading/focus states <li>The name of the "Hierarchy" variant has been replaced to "Appearance"</ul> |
