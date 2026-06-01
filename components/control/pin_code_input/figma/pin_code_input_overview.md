@@ -47,3 +47,42 @@ The error state must be triggered by an explicit validation (submission, API res
 **Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 ---
+
+## ⚠️ Mandatory field indication
+
+If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.
+
+---
+
+## Multiline and responsiveness
+
+**Multiline**
+
+This component doesn't allows multi-line text editing.
+
+**Min-width and max-width**
+
+This component has a min-width and a max-width. To avoid exceeding or reducing a width that would degrade readability and the perception of a compact interactive element, we applyied, for each digit input **a min-width of 44px and a max-width of 56px.**
+
+**User zoom in/out**
+
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+
+However, "Text input" components present an exception regarding the loss of textual information following the activation of user zoom in, since text truncation (label, placeholder, input text) is exceptionally allowed and enabled.
+• The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+• The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+• In order to preserve the minimun interactive area during user zoom out, each digit input have a min-width **of 44px** and a min-height **of 60px**.
+• Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+
+---
+
+## Rich text
+
+**Strong text**
+• Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
+• No other text styles or custom font weights should be used.
+
+**⚠️ Underline text**
+• Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
+
+---

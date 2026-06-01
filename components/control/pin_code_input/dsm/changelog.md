@@ -1,5 +1,8 @@
 | Date | Number | Notes |
 |------|--------|-------|
+| Apr 22, 2026 | 1.3.0 | Version 2.4 of the design tokens is required for the development of this update.<br>• The input text reference changes from a regular weight (font-weight-label-default) to a medium weight (font-weight-label-moderate). | Anton Astafev |
+| Apr 8, 2026 | - | • Documentation writing: Rich text | Anton Astafev |
+| Mar 16, 2026 | - | • Documentation writing:<br>• Mandatory field indication<br>• Multiline and responsiveness | Maxime Tonnerre |
 | Jan 21, 2026 | - | • Documentation writing: Rounded corners update | Cyriaque Billard |
 | Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
 | Sep 30, 2025 | 1.2.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant |
