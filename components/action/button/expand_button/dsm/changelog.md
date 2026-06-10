@@ -1,5 +1,6 @@
 | Date | Number | Notes |
 |------|--------|-------|
+| Mar 16, 2026 | - | <ul><li>Documentation writing:<ul><li>Rounded corners brand theme availability<li>Multiline and responsiveness</ul></ul> |
 | Jan 21, 2026 | - | <ul><li>Documentation writing: Rounded corners update</ul> |
 | Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
 | Sep 28, 2025 | 3.1.0 | <ul><li>Brand variant: New background and content color tokens added for hover/pressed/loading/focus states <li>The name of the "Hierarchy" variant has been replaced to "Appearance"</ul> |

@@ -11,3 +11,6 @@ package.json
 
 # Local-only helper scripts (machine-specific, not for remote)
 /scripts/
+
+# Local-only maintenance / update-tracking logs (not for remote)
+/maintenance/
