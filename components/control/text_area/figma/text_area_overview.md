@@ -116,3 +116,72 @@ If the user exceeds the set limit, the field enters an error state, but input is
 The user must reduce the number of characters entered for the text area to exit the error state.
 
 ---
+
+## ⚠️ Mandatory field indication
+
+**If all fields are mandatory (several fields present):**
+
+1. Display the message "All fields are mandatory." at the top.
+2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
+
+**If not all fields are mandatory (and there are several fields present):**
+
+1. Display the message "All fields marked with an * are mandatory." at the top.
+2. Use an asterisk (*) at the end of each mandatory field label. ⚠️ Important:
+   - In Figma, the asterisk must be entered manually by designers in the label text. UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
+   - Technically, for web/iOS/Android, the asterisk is positioned in a dedicated container after the label text. Spacing between label and asterisk: Empty state → 4px / Other states (reduced label) → 3px. If the label is truncated due to a large amount of text, the asterisk must remain visible at the end of the field.
+3. Either the technology allows a 'required' attribute to be managed on the fields (usually in Web), in which case any asterisks must be hidden from users using assistive technologies, or the technology does not allow the mandatory nature of the field to be indicated. In this case, the asterisk must be vocalised as well as a 'mandatory' mention. Please refer to the technical documentations for more information.
+4. Depending on the use case, an 'optional' label can be added to non-mandatory fields.
+
+**If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
+
+---
+
+## ⚠️ Truncated input area
+
+When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:
+
+• **On web**, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (bottom-aligned) and the beginning of the text becomes invisible (masked on the top). There should be no visual truncation indicator (...). This choice is intentional because, for many fields, showing the end often makes it easier to identify the value (file names, paths, emails).
+
+• **On Android**, by default (even if the project retains control over this setting), the behavior is the same as on the web.
+
+• **On iOS**, it is the opposite: the input area truncates the value on the right with a visual truncation indicator (...).
+
+**⚠️ In all cases:** the entire text must remain accessible when the field regains focus:
+- Either by refocusing the field, the text becomes horizontally scrollable again (the blinking cursor is visible).
+- Or via a tooltip on hover in certain desktop contexts.
+
+---
+
+## Multiline and responsiveness
+
+• **Multiline**
+This component allows multi-line text editing. Further details are available in the "Behavior by entered line count" section.
+
+• **Max-width vs full-width**
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 640px.**
+For mobile or tablet use (or if the component is positioned inside a specific container), it is possible to set this component to use the full available width (of the screen or the container). Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+
+• **User zoom in/out**
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information. However, "Text input" components present an exception regarding the loss of textual information following the activation of user zoom in, since text truncation (label, placeholder, input text) is exceptionally allowed and enabled.
+
+  - The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+  - Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+  - The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+  - In order to preserve the minimum interactive area during user zoom out, this component has a min-width **of 240px** and a min-height **of 92px**.
+  - Even if the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+  - In its "Leading icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
+  - As the error icon is functional, it must follow the same rules as text.
+  - The behaviors of the button (layout: icon only) component during user zoom are available in the corresponding documentation.
+
+---
+
+## Rich text
+
+• **Strong text**
+Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Large/Strong or Label/Medium/Strong) depending on the selected text style. No other text styles or custom font weights should be used.
+
+• **⚠️ Underline text and Hyperlinks**
+Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users. If a link is required, the dedicated helper link component must be used.
+
+---

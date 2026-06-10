@@ -4,3 +4,10 @@ package-lock.json
 package.json
 .claude
 .env.claude
+
+# Local secrets — Figma Personal Access Token (never commit)
+.figma-token
+*.pat
+
+# Local-only helper scripts (machine-specific, not for remote)
+/scripts/
