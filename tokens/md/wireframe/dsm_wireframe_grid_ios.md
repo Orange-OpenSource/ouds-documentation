@@ -10,7 +10,7 @@
 | ouds.grid.ios.compact.min-width | core-ouds.grid.min-width.ios-compact | 390px |
 | ouds.grid.ios.compact.max-width | core-ouds.grid.max-width.ios-compact | 852px |
 | ouds.grid.ios.compact.margin | core-ouds.grid.margin.300 | 24px |
-| ouds.grid.ios.compact.column-gap | core-ouds.grid.column-gap.100 | 8px |
+| ouds.grid.ios.compact.column-gap | core-ouds.grid.column-gap.200 | 16px |
 | ouds.grid.ios.compact.column-count | core-ouds.grid.column-count.400 | 4px |
 | ouds.grid.ios.regular.width | core-ouds.grid.width.400 | 768px |
 | ouds.grid.ios.regular.min-width | core-ouds.grid.min-width.ios-regular | 736px |
@@ -19,4 +19,4 @@
 | ouds.grid.ios.regular.column-gap | core-ouds.grid.column-gap.400 | 24px |
 | ouds.grid.ios.regular.column-count | core-ouds.grid.column-count.600 | 6px |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

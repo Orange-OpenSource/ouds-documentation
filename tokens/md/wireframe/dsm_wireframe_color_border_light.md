@@ -4,7 +4,7 @@
 | ouds.color.border.muted | core-wframe.color.opacity.black.80 | #05052e14 | <div style="width:20px; height:20px; background-color:#05052e14; border: 1px solid #000000;"></div> |
 | ouds.color.border.default | core-wframe.color.opacity.black.200 | #05052e33 | <div style="width:20px; height:20px; background-color:#05052e33; border: 1px solid #000000;"></div> |
 | ouds.color.border.emphasized | core-wframe.color.functional.gray.dark.960 | #08090d | <div style="width:20px; height:20px; background-color:#08090d; border: 1px solid #000000;"></div> |
-| ouds.color.border.focus | core-wframe.color.functional.gray.dark.960 | #08090d | <div style="width:20px; height:20px; background-color:#08090d; border: 1px solid #000000;"></div> |
+| ouds.color.border.focus | core-wframe.color.RoyalBlue.900 | #213787 | <div style="width:20px; height:20px; background-color:#213787; border: 1px solid #000000;"></div> |
 | ouds.color.border.focus-inset | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | ouds.color.border.brand-primary | core-wframe.color.RoyalBlue.600 | #2055e5 | <div style="width:20px; height:20px; background-color:#2055e5; border: 1px solid #000000;"></div> |
 | ouds.color.border.brand-secondary | core-wframe.color.RustyRed.600 | #db2345 | <div style="width:20px; height:20px; background-color:#db2345; border: 1px solid #000000;"></div> |
@@ -18,4 +18,4 @@
 | ouds.color.border.on.brand.secondary | N/A | N/A | N/A |
 | ouds.color.border.on.brand.tertiary | N/A | N/A | N/A |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

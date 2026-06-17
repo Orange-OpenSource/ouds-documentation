@@ -1,0 +1,178 @@
+### Composite token: type.display.large.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.display | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.display | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.display.large.tablet | core-ouds.font.size.750 | 36px |
+| ouds.font.line-height.display.large.tablet | core-ouds.font.line-height.950 | 44px |
+| ouds.font.letter-spacing.display.large.tablet | core-ouds.font.letter-spacing.750 | -0.36px |
+
+<br>
+
+### Composite token: type.display.medium.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.display | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.display | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.display.medium.tablet | core-ouds.font.size.650 | 32px |
+| ouds.font.line-height.display.medium.tablet | core-ouds.font.line-height.850 | 40px |
+| ouds.font.letter-spacing.display.medium.tablet | core-ouds.font.letter-spacing.650 | -0.32px |
+
+<br>
+
+### Composite token: type.display.small.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.display | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.display | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.display.small.tablet | core-ouds.font.size.550 | 28px |
+| ouds.font.line-height.display.small.tablet | core-ouds.font.line-height.750 | 36px |
+| ouds.font.letter-spacing.display.small.tablet | core-ouds.font.letter-spacing.550 | -0.28px |
+
+<br>
+
+### Composite token: type.heading.xlarge.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.heading | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.heading | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.heading.xlarge.tablet | core-ouds.font.size.450 | 24px |
+| ouds.font.line-height.heading.xlarge.tablet | core-ouds.font.line-height.650 | 32px |
+| ouds.font.letter-spacing.heading.xlarge.tablet | core-ouds.font.letter-spacing.450 | -0.12px |
+
+<br>
+
+### Composite token: type.heading.large.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.heading | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.heading | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.heading.large.tablet | core-ouds.font.size.350 | 20px |
+| ouds.font.line-height.heading.large.tablet | core-ouds.font.line-height.550 | 28px |
+| ouds.font.letter-spacing.heading.large.tablet | core-ouds.font.letter-spacing.350 | 0px |
+
+<br>
+
+### Composite token: type.heading.medium.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.heading | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.heading | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.heading.medium.tablet | core-ouds.font.size.300 | 18px |
+| ouds.font.line-height.heading.medium.tablet | core-ouds.font.line-height.450 | 24px |
+| ouds.font.letter-spacing.heading.medium.tablet | core-ouds.font.letter-spacing.300 | 0.18px |
+
+<br>
+
+### Composite token: type.heading.small.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.heading | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.heading | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.heading.small.tablet | core-ouds.font.size.250 | 16px |
+| ouds.font.line-height.heading.small.tablet | core-ouds.font.line-height.450 | 24px |
+| ouds.font.letter-spacing.heading.small.tablet | core-ouds.font.letter-spacing.250 | 0.2px |
+
+<br>
+
+### Composite token: type.body.large.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.body | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.body-default | core-ouds.font.weight.400 | Regular |
+| ouds.font.weight.ios.body-moderate | core-ouds.font.weight.500 | Medium |
+| ouds.font.weight.ios.body-strong | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.body.large.tablet | core-ouds.font.size.200 | 14px |
+| ouds.font.line-height.body.large.tablet | core-ouds.font.line-height.350 | 20px |
+| ouds.font.letter-spacing.body.large.tablet | core-ouds.font.letter-spacing.200 | 0.17px |
+
+<br>
+
+### Composite token: type.body.medium.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.body | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.body-default | core-ouds.font.weight.400 | Regular |
+| ouds.font.weight.ios.body-moderate | core-ouds.font.weight.500 | Medium |
+| ouds.font.weight.ios.body-strong | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.body.medium.tablet | core-ouds.font.size.175 | 13px |
+| ouds.font.line-height.body.medium.tablet | core-ouds.font.line-height.250 | 16px |
+| ouds.font.letter-spacing.body.medium.tablet | core-ouds.font.letter-spacing.175 | 0.19px |
+
+<br>
+
+### Composite token: type.body.small.tablet
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.body | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.body-default | core-ouds.font.weight.400 | Regular |
+| ouds.font.weight.ios.body-moderate | core-ouds.font.weight.500 | Medium |
+| ouds.font.weight.ios.body-strong | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.body.small.tablet | core-ouds.font.size.150 | 12px |
+| ouds.font.line-height.body.small.tablet | core-ouds.font.line-height.250 | 16px |
+| ouds.font.letter-spacing.body.small.tablet | core-ouds.font.letter-spacing.150 | 0.18px |
+
+<br>
+
+### Composite token: type.label.xlarge
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.label | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.label-default | core-ouds.font.weight.400 | Regular |
+| ouds.font.weight.ios.label-moderate | core-ouds.font.weight.500 | Medium |
+| ouds.font.weight.ios.label-strong | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.label.xlarge | core-ouds.font.size.250 | 16px |
+| ouds.font.line-height.label.xlarge | core-ouds.font.line-height.450 | 24px |
+| ouds.font.letter-spacing.label.xlarge | core-ouds.font.letter-spacing.250 | 0.2px |
+
+<br>
+
+### Composite token: type.label.large
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.label | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.label-default | core-ouds.font.weight.400 | Regular |
+| ouds.font.weight.ios.label-moderate | core-ouds.font.weight.500 | Medium |
+| ouds.font.weight.ios.label-strong | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.label.large | core-ouds.font.size.200 | 14px |
+| ouds.font.line-height.label.large | core-ouds.font.line-height.350 | 20px |
+| ouds.font.letter-spacing.label.large | core-ouds.font.letter-spacing.200 | 0.17px |
+
+<br>
+
+### Composite token: type.label.medium
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.label | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.label-default | core-ouds.font.weight.400 | Regular |
+| ouds.font.weight.ios.label-moderate | core-ouds.font.weight.500 | Medium |
+| ouds.font.weight.ios.label-strong | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.label.medium | core-ouds.font.size.175 | 13px |
+| ouds.font.line-height.label.medium | core-ouds.font.line-height.250 | 16px |
+| ouds.font.letter-spacing.label.medium | core-ouds.font.letter-spacing.175 | 0.19px |
+
+<br>
+
+### Composite token: type.label.small
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.label | core-orange.font.family.brand.default | Helvetica Neue |
+| ouds.font.weight.ios.label-default | core-ouds.font.weight.400 | Regular |
+| ouds.font.weight.ios.label-moderate | core-ouds.font.weight.500 | Medium |
+| ouds.font.weight.ios.label-strong | core-ouds.font.weight.700 | Bold |
+| ouds.font.size.label.small | core-ouds.font.size.150 | 12px |
+| ouds.font.line-height.label.small | core-ouds.font.line-height.250 | 16px |
+| ouds.font.letter-spacing.label.small | core-ouds.font.letter-spacing.150 | 0.18px |
+
+<br>
+
+### Composite token: type.code.medium
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.font.family.ios.code | core-ouds.font.family.monospace.sf-mono | SF Mono |
+| ouds.font.weight.ios.code | core-ouds.font.weight.400 | Regular |
+| ouds.font.size.code.medium | core-ouds.font.size.200 | 14px |
+| ouds.font.line-height.code.medium | core-ouds.font.line-height.350 | 20px |
+| ouds.font.letter-spacing.code.medium | core-ouds.font.letter-spacing.200 | 0.17px |
+
+<br>Tokens versions: sys.orange-compact: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
