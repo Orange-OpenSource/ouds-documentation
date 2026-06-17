@@ -25,4 +25,4 @@
 | ouds.font.family.tv.label | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.tv.code | core-ouds.font.family.monospace.menlo | Menlo |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

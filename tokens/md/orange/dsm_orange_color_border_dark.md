@@ -3,7 +3,7 @@
 | ouds.color.border.minimal | core-ouds.color.opacity.white.40 | #ffffff0a | <div style="width:20px; height:20px; background-color:#ffffff0a; border: 1px solid #000000;"></div> |
 | ouds.color.border.muted | core-ouds.color.opacity.white.80 | #ffffff14 | <div style="width:20px; height:20px; background-color:#ffffff14; border: 1px solid #000000;"></div> |
 | ouds.color.border.default | core-ouds.color.opacity.white.200 | #ffffff33 | <div style="width:20px; height:20px; background-color:#ffffff33; border: 1px solid #000000;"></div> |
-| ouds.color.border.emphasized | core-ouds.color.opacity.white.920 | #ffffffeb | <div style="width:20px; height:20px; background-color:#ffffffeb; border: 1px solid #000000;"></div> |
+| ouds.color.border.emphasized | core-ouds.color.functional.gray.light.160 | #eeeeee | <div style="width:20px; height:20px; background-color:#eeeeee; border: 1px solid #000000;"></div> |
 | ouds.color.border.focus | core-ouds.color.functional.gray.light.160 | #eeeeee | <div style="width:20px; height:20px; background-color:#eeeeee; border: 1px solid #000000;"></div> |
 | ouds.color.border.focus-inset | core-ouds.color.functional.gray.dark.880 | #141414 | <div style="width:20px; height:20px; background-color:#141414; border: 1px solid #000000;"></div> |
 | ouds.color.border.brand-primary | core-orange.color.orange.500 | #ff7900 | <div style="width:20px; height:20px; background-color:#ff7900; border: 1px solid #000000;"></div> |
@@ -18,4 +18,4 @@
 | ouds.color.border.on.brand.secondary | N/A | N/A | N/A |
 | ouds.color.border.on.brand.tertiary | N/A | N/A | N/A |
 
-<br>Tokens versions: sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

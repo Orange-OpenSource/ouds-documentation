@@ -10,7 +10,7 @@
 | ouds.grid.android.compact.min-width | core-ouds.grid.min-width.android-compact | 390px |
 | ouds.grid.android.compact.max-width | core-ouds.grid.max-width.android-compact | 599px |
 | ouds.grid.android.compact.margin | core-ouds.grid.margin.300 | 24px |
-| ouds.grid.android.compact.column-gap | core-ouds.grid.column-gap.100 | 8px |
+| ouds.grid.android.compact.column-gap | core-ouds.grid.column-gap.200 | 16px |
 | ouds.grid.android.compact.column-count | core-ouds.grid.column-count.400 | 4px |
 | ouds.grid.android.medium.width | core-ouds.grid.width.400 | 768px |
 | ouds.grid.android.medium.min-width | core-ouds.grid.min-width.android-medium | 600px |
@@ -19,4 +19,4 @@
 | ouds.grid.android.medium.column-gap | core-ouds.grid.column-gap.400 | 24px |
 | ouds.grid.android.medium.column-count | core-ouds.grid.column-count.600 | 6px |
 
-<br>Tokens versions: sys.sosh: 2.2.0 - core.ouds: 1.9.0 - core.sosh: 1.2.0
+<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

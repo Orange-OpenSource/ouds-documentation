@@ -21,15 +21,15 @@
 
 <br>
 
-### Composite token: elevation.default
+### Composite token: elevation.elevated
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
-| ouds.elevation.x.default | core-ouds.elevation.x.0 | 0px |
-| ouds.elevation.y.default | core-ouds.elevation.y.200 | 2px |
-| ouds.elevation.blur.default | core-ouds.elevation.blur.300 | 3px |
-| ouds.elevation.spread.default | core-ouds.elevation.spread.n100 | -1px |
-| ouds.elevation.color.default-light | core-ouds.color.opacity.black.240 | #0000003d |
-| ouds.elevation.color.default-dark | core-ouds.color.opacity.black.240 | #0000003d |
+| ouds.elevation.x.elevated | core-ouds.elevation.x.0 | 0px |
+| ouds.elevation.y.elevated | core-ouds.elevation.y.200 | 2px |
+| ouds.elevation.blur.elevated | core-ouds.elevation.blur.300 | 3px |
+| ouds.elevation.spread.elevated | core-ouds.elevation.spread.n100 | -1px |
+| ouds.elevation.color.elevated-light | core-ouds.color.opacity.black.240 | #0000003d |
+| ouds.elevation.color.elevated-dark | core-ouds.color.opacity.black.240 | #0000003d |
 
 <br>
 
@@ -67,4 +67,4 @@
 | ouds.elevation.color.sticky-light | core-ouds.color.opacity.black.160 | #00000029 |
 | ouds.elevation.color.sticky-dark | core-ouds.color.opacity.black.160 | #00000029 |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
