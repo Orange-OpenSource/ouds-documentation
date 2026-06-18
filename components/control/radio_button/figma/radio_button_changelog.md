@@ -1,5 +1,11 @@
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
+| Apr 8, 2026 | - | • Documentation writing: Rich text | Anton Astafev |
+| Mar 16, 2026 | - | • Documentation writing: | Maxime Tonnerre |
+| | | ‎ ‎ ‎ • Mandatory field indication | |
+| | | ‎ ‎ ‎ • Multiline and responsiveness | |
+| | | ‎ ‎ ‎ • Technical layout adjustments | |
+| Jan 6, 2026 | - | • Documentation writing: Definition update | Cyriaque Billard |
 | Nov 7, 2025 | 1.4.0 | • A new Read-only variant has been added for the .Radiobutton.Indicator component, supporting two boolean variants — Selected = True/False. This variant introduces two new color tokens: | Anton Astafev |
 | | | ‎ ‎ ‎ • ouds/color/action/read-only-primary — used for the indicator (shape) | |
 | | | ‎ ‎ ‎ • ouds/color/action/read-only-secondary — used for the stroke | |
