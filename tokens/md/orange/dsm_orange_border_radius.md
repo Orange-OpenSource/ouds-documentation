@@ -7,4 +7,4 @@
 | ouds.border.radius.large | core-ouds.border.radius.300 | 12px |
 | ouds.border.radius.pill | core-ouds.border.radius.9999 | 2000px |
 
-<br>Tokens versions: sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

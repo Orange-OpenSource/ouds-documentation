@@ -9,4 +9,4 @@
 | ouds.opacity.opaque | core-ouds.opacity.1000 | 100 |
 | ouds.opacity.disabled | core-ouds.opacity.200 | 20 |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

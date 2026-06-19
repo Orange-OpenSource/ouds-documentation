@@ -14,7 +14,7 @@
 | sys-android.color.onTertiaryContainer | core-ouds.color.functional.gray.light.160 | #eeeeee | <div style="width:20px; height:20px; background-color:#eeeeee; border: 1px solid #000000;"></div> |
 | sys-android.color.error | core-ouds.color.functional.scarlet.300 | #ff8081 | <div style="width:20px; height:20px; background-color:#ff8081; border: 1px solid #000000;"></div> |
 | sys-android.color.onError | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
-| sys-android.color.errorContainer | core-ouds.color.functional.scarlet.900 | #4d0001 | <div style="width:20px; height:20px; background-color:#4d0001; border: 1px solid #000000;"></div> |
+| sys-android.color.errorContainer | N/A | N/A | N/A |
 | sys-android.color.onErrorContainer | core-ouds.color.functional.gray.light.160 | #eeeeee | <div style="width:20px; height:20px; background-color:#eeeeee; border: 1px solid #000000;"></div> |
 | sys-android.color.primaryFixed | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.primaryFixedDim | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
@@ -49,4 +49,4 @@
 | sys-android.color.surfaceVariant | core-ouds.color.functional.gray.dark.720 | #272727 | <div style="width:20px; height:20px; background-color:#272727; border: 1px solid #000000;"></div> |
 | sys-android.color.surfaceTint | core-ouds.color.functional.gray.dark.720 | #272727 | <div style="width:20px; height:20px; background-color:#272727; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.android: 1.2.0 - sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.android: 1.2.0 - sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
