@@ -1,11 +1,6 @@
 ## Definition
 
-The Badge is a small UI element used to highlight status, notifications, or categorization within an interface. It is often displayed as a label or indicator with a distinct background color and text.
-
-**Usage:**
-• Renders as a static label without a number.
-Used for status indicators (e.g., "New", "Pending", "Success").
-The size remains unchanged despite the increase in the interface size.
+Badge is a UI element that emphasizes system notifications, status, or the categorization of an information. Badge is rendered as a coloured shape and its chosen size remains unchanged regardless of the changes of the interface size.
 
 ---
 
@@ -49,5 +44,41 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 **`Medium`** The default size, providing a balance between visibility and space efficiency, suitable for most use cases.
 
 **`Large`** A prominent badge for drawing more attention, often used in dashboards or highlighted sections.
+
+---
+
+## User zoom and responsiveness
+
+**Max-width vs full-width**
+This component have a max-width.
+It is not possible to set this component to use the full available width (of the screen or the container).
+
+**User zoom in/out**
+- Componet must always scale proportionally with user zoom.
+- In order to preserve the minimun interactive area during user zoom out, this component have:
+  - Large size: a min-width and a min-height **of 20px**
+  - Medium size: a min-width and a min-height **of 16px**
+  - Small size: a min-width and a min-height **of 12px**
+  - Xsmall size: a min-width and a min-height **of 8px**
+- Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+
+---
+
+## Context of Color Usage
+
+A color-only badge should not be used as the only way to show fonctional information.
+It needs to be clearly visible on its background, with enough contrast and a readable size, especially for people with low vision or color blindness.
+
+**Status context (badge + label)**
+
+- Color alone doesn't explain meaning. It can support the interface visually, but it shouldn't be the only way to show a status or state. If multiple badge colors are used within the same interface, each color must have an accessible equivalent (e.g. visible text).
+- In this example, the badge is used together with an Extra label that clearly conveys the status (positive and negative). The badge only reinforces this meaning visually, allowing multiple statuses to coexist within the same interface.
+
+**Non-status context (badge only)**
+
+- If it is not possible to provide an accessible alternative (text or label), the badge must be considered decorative and must not be used to convey information or differentiate states.
+- In this context, the red badge is not used to indicate an error or negative status, but rather as a visual accent to draw attention. No other badge colors are used in the interface to avoid interpreting color as a carrier of meaning.
+
+⚠️ Within a single interface, either a decorative or a functional color context should be used, but not both at the same time. This distinction ensures consistency and aligns with accessible design principles.
 
 ---
