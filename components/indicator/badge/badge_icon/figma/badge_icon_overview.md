@@ -1,9 +1,6 @@
 ## Definition
 
-The Badge is a small UI element used to highlight status, notifications, or categorization within an interface. It is often displayed as a label or indicator with a distinct background color and text.
-
-**Usage:**
-• Support badges with icons to visually reinforce meaning.
+Badge icon is a UI element that emphasizes system notifications, status, or the categorization of an information, throughout colour and iconography. Badge icon is rendered as a coloured shape, displaying icon; and its chosen size remains unchanged regardless of the changes of the interface size.
 
 ---
 
@@ -37,8 +34,27 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 ## Size
 
+**`Xsmall`** A compact badge for minimal space usage, ideal for small UI elements like icons or tooltips.
+
+**`Small`** A slightly larger badge that remains subtle but improves readability, often used for inline labels.
+
 **`Medium`** The default size, providing a balance between visibility and space efficiency, suitable for most use cases.
 
 **`Large`** A prominent badge for drawing more attention, often used in dashboards or highlighted sections.
+
+---
+
+## User zoom and responsiveness
+
+**Max-width vs full-width**
+This component have a max-width and a max-height.
+It is not possible to set this component to use the full available width (of the screen or the container).
+
+**User zoom in/out**
+- Icons must always scale proportionally with user zoom. Icon resizing must never be blocked.
+- In order to preserve the minimun interactive area during user zoom out, this component have:
+  - Large size: a min-width and a min-height **of 20px**
+  - Medium size: a min-width and a min-height **of 16px**
+- Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 
 ---
