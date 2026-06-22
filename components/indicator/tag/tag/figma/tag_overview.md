@@ -1,7 +1,6 @@
 ## Definition
 
-A tag is a small element that shows short info like a label, keyword, or category.
-It helps users quickly find, group, or understand content.
+A tag is a UI element that shows brief information, such as a label, keyword, or category. The tag assist users in quickly finding, grouping, or understanding content. They can remain in place or be removed and may include icons or actions such as "close" or "edit."
 
 ---
 
@@ -80,11 +79,22 @@ Always use the functional icon associated with information. ""
 
 ---
 
-## Shape
+## Rounded corner
 
-**`Rounded corner=True`** A tag with fully rounded corners, creating a pill-shaped appearance. Rounded tags offer a softer and more approachable look, suitable for most modern interfaces.
+The configuration of this rendering option is not applied across an entire product/service. It is possible to have one tag component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`Rounded corner=False`** A tag with sharp, square corners. Squared tags provide a more formal, structured, or technical feel. They are often used in business contexts to label promotions, offers, or important notices.
+**`True`** A tag with fully rounded corners, creating a pill-shaped appearance. Rounded tags offer a softer and more approachable look, suitable for most modern interfaces.
+
+**`False`** A tag with sharp, square corners. Squared tags provide a more formal, structured, or technical feel. They are often used in business contexts to label promotions, offers, or important notices.
+
+This option is available for all brand themes. Here's the list of rounded corners availability by brand theme:
+
+| Brand theme | Status |
+|---|---|
+| Orange | ✓ Available |
+| Orange Compact | ✓ Available |
+| Sosh | ✓ Available |
+| Wireframe | ✓ Available |
 
 ---
 
@@ -95,5 +105,28 @@ Commonly used for promotional content, highlights, or key information, where emp
 
 **`Small`** A compact tag with medium text, designed for tables or complex components where space efficiency matters.
 It helps maintain visual balance and prevents the interface from feeling overloaded with bold text.
+
+---
+
+## Multiline and responsiveness
+
+**Multiline**
+This component doesn't allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
+
+**Max-width vs full-width**
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 200px.**
+- In its "Rounded corner=True", it's not possible to set this component to use the full available width (of the screen or the container).
+- In its "Rounded corner=False", it's possible to set this component to use the full available width (of the screen or the container). As a result, the component's background will stretch across the entire available surface, but the text must be limited to its number of characters.
+
+**User zoom in/out**
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+- The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+- Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+- The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+- In order to preserve the minimun visible area during user zoom out, this component have:
+  - Default size: a min-width **of 48px** and a min-height **of 32px**
+  - Small size: a min-width **of 44px** and a min-height **of 24px**
+- Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+- Icons, bullets or loader must always scale proportionally with user zoom. Icon resizing must never be blocked.
 
 ---
