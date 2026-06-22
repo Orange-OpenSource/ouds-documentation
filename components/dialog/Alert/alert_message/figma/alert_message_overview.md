@@ -13,7 +13,7 @@ Uses the "Skeleton" component, variant "Security marge=False".
 
 ---
 
-## Layout
+## Action layout
 
 Alerts can be displayed with or without an action.
 The placement of the action depends on the amount of content and the available screen space.
@@ -25,11 +25,11 @@ For action elements, we use the Link component with the "Text only" layout. This
 
 **⚠️ Non-navigational usage:** A link can be used to trigger an action rather than navigation (for example, opening a modal, revealing additional content, or executing a function). This pattern should only be applied when the link appearance is preferred, while ensuring the component remains accessible and its intent is clear.
 
-**`Bottom action`** Used when the action is placed below the main message content. **Recommended for mobile** or narrow layouts, or when the text spans multiple lines. This vertical structure improves clarity and ensures the action remains visible after the message is read.
+**`None`** Used when no user action is required. Ideal for informational alerts that simply convey status or feedback without any interaction.
 
-**`Trailing action`** Used when the action is positioned to the right of the message. Best suited for wider layouts or short, single-line alerts where horizontal alignment keeps content compact and balanced.
+**`Trailing`** Used when the action is positioned to the right of the message. Best suited for wider layouts or short, single-line alerts where horizontal alignment keeps content compact and balanced.
 
-**`Without action`** Used when no user action is required. Ideal for informational alerts that simply convey status or feedback without any interaction.
+**`Bottom`** Used when the action is placed below the main message content. **Recommended for mobile** or narrow layouts, or when the text spans multiple lines. This vertical structure improves clarity and ensures the action remains visible after the message is read.
 
 ---
 
@@ -69,9 +69,20 @@ Warnings encourage awareness but typically do not block actions.
 
 ## Rounded corner
 
-**`False`** Use square corners for a neutral, utility-driven look.
+Even though in Figma this rendering option is available and editable from the properties of each alert component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one alert component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** Use rounded corners for a softer, more approachable feel. Works well in consumer-facing journeys, emotional contexts, or brand experiences where UI elements should feel more friendly and tactile.
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
+
+This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
+
+| Brand theme | Status |
+|---|---|
+| Orange | ✓ Available |
+| Orange Compact | ✓ Available |
+| Sosh | ⚠️ Unavailable |
+| Wireframe | ⚠️ Unavailable |
 
 ---
 
@@ -155,5 +166,39 @@ Ideal for short, self-contained alerts such as confirmations or simple feedback 
 **`True`** The alert includes a bullet list following the label (and optional body text).
 Use this state when you need to highlight multiple points, such as service features, plan details, or next steps.
 Each bullet should be short and written as a clear phrase or fragment — avoid long sentences or complex structures.
+
+---
+
+## Multiline and responsiveness
+
+**Multiline**
+This component allows multi-line text editing. The number of lines is not limited.
+
+**Max-width vs full-width**
+For greater flexibility, this component doesn't have a default max-width. The max-width is applied to the text within the component.
+As a result, if it is positioned across the full available width (of the screen or the container), the component's background will stretch across the entire available surface, but the text may be limited to its max-width if the display width is larger.
+
+**User zoom in/out**
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+* The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+* Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+* The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+* In order to preserve the minimun interactive area during user zoom out, this component have a min-width **of 160px** and a min-height **of 100px**.
+* If the component doesn't contain any interactive elements, it's not necessary to maintain the minimum interactive area during user zooms out.
+* Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+* Icons must always scale proportionally with user zoom. Icon resizing must never be blocked.
+* The behaviors of the other subcomponents during user zoom are available in the corresponding documentation.
+
+---
+
+## Rich text
+
+* **Strong text**
+  * Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Label/Medium/Strong** token only.
+  * No other text styles or custom font weights should be used.
+
+* **Underlined text and hyperlink**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a **hyperlink** is needed within the content, the typographic reference **Label/Medium/Underline** must be used.
 
 ---
