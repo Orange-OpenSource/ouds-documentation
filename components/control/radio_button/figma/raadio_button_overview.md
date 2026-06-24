@@ -132,6 +132,8 @@ The component has internal padding-inline, and its display position must be betw
 The display position of the component corresponds to the entire screen display area (edge to edge).
 Its internal padding-inline is therefore replaced by the grid-margin tokens.
 
+For a card-type display (Outlined=True), no adaptation is made; the component structure remains the same between web and native.
+
 ---
 
 ## Rich text
