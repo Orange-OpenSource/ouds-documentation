@@ -1,6 +1,8 @@
 ## Definition
 
-A button is a fundamental interactive UI element that allows users to trigger an action or event within an interface, such as submitting a form, opening a dialog, or navigating to another page. Visually, it's typically styled to stand out as clickable, using shape, color, and label to convey its purpose.
+A button is a UI element that triggers an action or event, used to initiate tasks or confirm an action. The button comes in various layouts, styles, and states to convey hierarchy or emphasis.
+
+---
 
 ---
 
@@ -19,14 +21,26 @@ To be used sparingly for high-value specific actions or to visually anchor a bra
 
 ---
 
+---
+
 ## Layouts
 
 **`Text only`** This is the default layout of the component.
 
 **`Text + icon`** This option includes functionality to choose any Solaris icon.
-Its use must be restricted and remain specific to certain clearly identified contexts (e.g., the use of an icon within a "Play" button is standard in the context of TV or video streaming).
+Its use must be restricted and remain specific to certain clearly identified contexts (the use of an icon within a "Play" button is standard in the context of TV or video streaming).
 
 **`Icon only`** Typically utilized in business or back-office interfaces, it is rarely standalone (usually part of a group of elements).
+
+---
+
+---
+
+## Sizes
+
+**`Default`** This is the default size of the component. This size is used for the vast majority of applications.
+
+**`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "List item" component, for example).
 
 ---
 
@@ -51,12 +65,17 @@ Uses the "Skeleton" component, variant "Security marge=False".
 
 ---
 
+---
+
 ## Rounded corner
 
-**`False`** For a square finish.
+Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** For a finish with rounded corner.
-To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+**`False`**
+The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`**
+The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
 **Brand theme availability**
 This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
@@ -70,13 +89,17 @@ This option is technically not available for all brand themes. Here's the list o
 
 ---
 
+---
+
 ## Specific component: On colored bg
 
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
 **To invert color**
-• In light mode: For a black finish
-• In dark mode: For a white finish
+* In light mode: For a black finish
+* In dark mode: For a white finish
+
+---
 
 ---
 
@@ -100,5 +123,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 * Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 * In its "Text + icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
 * As the text is missing, in its "Icon only" variant, the icons follow the same rules as the text.
-
----

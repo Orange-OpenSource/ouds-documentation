@@ -1,15 +1,11 @@
-An error is used to provide real-time feedback when the select input is in an invalid state:
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
-**Examples of invalid states:**
-* Required field left empty
-* Incorrect value format (invalid email, phone number, postal code)
-* Value that does not meet the established criteria (password not secure enough, text too short or too long)
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it.
 
-**Accessibility for error indication:**
-* Color alone is not sufficient: WCAG requires that color not be the only means of conveying information. Therefore, an icon and explicit text must accompany the error color.
-* Assistive technologies need contextual error messages: when a user submits a form or leaves a field, screen readers need to receive clear textual information about the error. Use the aria-describedby attribute to associate error messages with the corresponding select input element.
-* Error text is not just an ornament: WCAG guidelines require that error messages be sufficiently precise and descriptive.
+The input remains editable, encouraging users to revise their input without starting over.
 
-**`False`** The select input is in its neutral or valid state.
+In the context of the select field, if the user has correctly selected a value but an error message still appears, it often means that: the option has been deleted, blocked, or is invalid / the option does not comply with a business rule / the option is incompatible with the user's profile / the option is obsolete or expired / inconsistency with another value in the form / too many choices, limit exceeded / server issue or value rejected on the backend.
 
-**`True`** The user sees an error message detailing the nature of the problem, and the component is visually marked (e.g., with a specific color or icon) to draw attention to the error.
+**⚠️ Error message vs helper text / link**
+
+The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously. However, a helper link must not be replaced and should remain positioned below the error message.

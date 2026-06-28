@@ -17,12 +17,12 @@ Use case:
 
 Use case:
 • Displaying status before API data is available. For example, while the system fetches the real value, the tag shows "Loading".
-• Data updates or filtering. When a table or list is being updated (e.g., applying filters or refreshing data), the tag temporarily shows loading and is then replaced with the actual value.
+• Data updates or filtering. When a table or list is being updated (applying filters or refreshing data), the tag temporarily shows loading and is then replaced with the actual value.
 
 **`Disabled`** A non-active state of the tag. It appears "dimmed" to indicate that it is unavailable or not relevant.
 
 Use case:
-• Used when a status is no longer valid (e.g., an order is canceled and the tag is no longer meaningful).
+• Used when a status is no longer valid (an order is canceled and the tag is no longer meaningful).
 • When the tag is part of a status system but currently has no value to display.
 
 **`Skeleton`** A placeholder state shown before the actual data is loaded.
@@ -37,14 +37,14 @@ Use case:
 
 Tags have status depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
-**Non fonctionnel** Non-functional tags are used to display categories, default states, or to draw attention without carrying a specific functional meaning (unlike functional tags such as success, info, warning, and error).
+**Non-functional** Non-functional tags are used to display categories, default states, or to draw attention without carrying a specific functional meaning (unlike functional tags such as success, info, warning, and error).
 Icons related to the tag's context can be used to enhance recognition.
 
 **`Neutral`** Default or inactive state. Used for standard labels, categories, or when no specific status needs to be communicated.
 
 **`Accent`** Used to draw attention to new features, recommendations, or content suggestions. Invites users to explore and engage with new offerings, creating an exciting and engaging experience.
 
-**Fonctional** Functional tags communicate specific statuses or system feedback (e.g., success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.
+**Functional** Functional tags communicate specific statuses or system feedback (success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.
 **Other icons must not be used.**
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.
@@ -128,5 +128,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
   - Small size: a min-width **of 44px** and a min-height **of 24px**
 - Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 - Icons, bullets or loader must always scale proportionally with user zoom. Icon resizing must never be blocked.
-
----

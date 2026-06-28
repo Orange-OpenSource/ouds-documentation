@@ -37,5 +37,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 - In order to preserve the minimun interactive area during user zoom out, this component have a min-width and a min-height.
 - Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 - As the close icon is functional, it must follow the same rules as text.
-
----

@@ -5,7 +5,7 @@ Use case: Standard "next/previous" navigation in product listings or search resu
 Use case: Highlighting the active page in long catalog navigation.
 
 **`Brand`** A brand-colored alternative to the Strong Navigation button. It should be used sparingly for high-value navigation points or to visually anchor a brand moment. Avoid using it as the default for all pages.
-Use case: Emphasizing a key page (e.g., a promotional offer) with the brand's primary color.
+Use case: Emphasizing a key page (a promotional offer) with the brand's primary color.
 
 **`Minimal`** Minimal Navigation buttons are simplified and less emphasized, suitable when pagination is not the primary focus. They can be used independently or in combination with stronger buttons.
 Use case: Secondary interfaces, such as blogs or FAQs, where pagination is less critical.

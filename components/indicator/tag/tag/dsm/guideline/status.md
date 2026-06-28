@@ -7,7 +7,7 @@ Icons related to the tag's context can be used to enhance recognition.
 
 **`Accent`** Used to draw attention to new features, recommendations, or content suggestions. Invites users to explore and engage with new offerings, creating an exciting and engaging experience.
 
-**Functional** Functional tags communicate specific statuses or system feedback (e.g., success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.
+**Functional** Functional tags communicate specific statuses or system feedback (success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.
 **Other icons must not be used.**
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.

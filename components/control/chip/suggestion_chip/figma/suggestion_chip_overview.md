@@ -1,14 +1,14 @@
 ## Definition
 
-A suggestion chip is a compact UI element used to present recommended or predictive options based on user input or context. Often found in search bars, forms, or messaging interfaces, suggestion chips help users quickly select from relevant suggestions. They are typically non-selected by default and can be tapped or clicked to apply the suggestion, streamlining user input and enhancing usability.
+A suggestion chip is a UI element that presents recommended or predictive options based on the user's input or context, often utilised to capture filtering decisions. The suggestion chip is usually unselected by default and can be tapped or clicked to apply the suggestion, making input easier and improving usability.
 
 ---
 
 ## Layouts
 
-**`Text + icon`** Combines text with an icon to enhance clarity and recognition. Ideal when a visual cue helps reinforce the filter's meaning.
-
 **`Text only`** Displays only text, offering a clean and minimalistic look. Best suited for category-based filters that do not require additional visual elements.
+
+**`Text + icon`** Combines text with an icon to enhance clarity and recognition. Ideal when a visual cue helps reinforce the filter's meaning.
 
 **`Icon only`** Uses only an icon, making it a compact option for limited space. Works well with universally recognized symbols, such as a heart for favorites or a checkmark for selection.
 
@@ -24,7 +24,7 @@ A suggestion chip is a compact UI element used to present recommended or predict
 
 **`Disabled`** The chip is unavailable for interaction. It is visually represented with a muted color change in the content and border (reduced brightness and contrast).
 
-**`Focus`** The state when the chip receives focus (e.g., during keyboard navigation). It features a triple contrasting border to indicate the active element.
+**`Focus`** The state when the chip receives focus (during keyboard navigation). It features a triple contrasting border to indicate the active element.
 
 **`Skeleton`** Displays a placeholder chip while the content is loading. It appears as a semi-transparent gray block without content.
 
@@ -48,5 +48,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 * Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 * In its "Text + icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
 * As the text is missing, in its "Icon only" variant, the icons follow the same rules as the text.
-
----

@@ -1,3 +1,3 @@
-**`Empty`** By default, a select input is open with label, no input text, dropdown closed, and no helper text displayed below.
+**`Empty`** The Empty state indicates that the select input is blank with no content or placeholder, a neutral starting point.
 
-**`Filled`** The input text is the option selected by the user from the dropdown menu.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.

@@ -1,16 +1,14 @@
 ## Definition
 
-A select input is a form component that allows users to choose one (or sometimes multiple) options from a predefined list. It is typically rendered as a dropdown menu that displays available choices when interacted with, either by click or keyboard navigation.
-
-This component is used when the number of choices is limited and known in advance and when users should select from controlled or standardized values
+A select input is a UI element that enables users to choose one or, in some cases, multiple options from a predefined list. The select input appears as a dropdown that shows available options. It is used when the number of choices is limited and known ahead of time, allowing users to select from controlled or standardised values.
 
 ---
 
 ## Outlined
 
-**`False`** An input with a subtle background fill and un visible bottom border.
+**`False`** An input with a subtle background fill and a visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
-**`True`** A minimalist input with a transparent background and visible stroke.
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
 
 This style may be interesting for contexts other than form pages:
 • When inputs need to feel lightweight and unobtrusive
@@ -40,55 +38,53 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
-**`Empty`** By default, a select input is open with label, no input text, dropdown closed, and no helper text displayed below.
+**`Empty`** The Empty state indicates that the select input is blank with no content or placeholder, a neutral starting point.
 
-**`Filled`** The input text is the option selected by the user from the dropdown menu.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
 ---
 
 ## States
 
-**`Enabled`** Default state: the input is ready for interaction.
+**`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
-**`Hover`** When the user hovers over the input field (without the dropdown being opened), the appearance of the element changes slightly to indicate interactivity.
+**`Hover`** Slight visual contrast or border color change.
 
-**`Focus`** When the user clicks or tabs into the input field (without opening the dropdown), the field gains focus and applies specific visual styles.
+**`Focus`** The select input is focused and ready to receive user input. It visually highlights the field to indicate that it's currently editable and interactive.
 
-**`Expanded`** When the user opens the dropdown menu to view options.
+**`Expanded`** The component is actively displaying its full list of options. This state is typically triggered by a user interaction, such as a click or tap on the field, and replaces the collapsed state. Visually, it involves changes: an open dropdown panel, a rotated chevron icon, and a highlighted focus ring to indicate active engagement.
 
-**`Loading`** Indicates that options are being loaded asynchronously.
+**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the select input. A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
 
-**`Read only`** When the select input is in a read-only state, its value is visible, but the user cannot interact with it or change the selection.
+**`Read only`** Text visible but not editable (often with a muted or different background).
 
-**`Disabled`** The input cannot be interacted with (non clickable, can't receive focus, no hover effect) and its appearance indicates unavailability.
+**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
 
-**`Skeleton`** Displays a placeholder UI while content is loading.
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=False".
 
 ---
 
 ## Error
 
-An error is used to provide real-time feedback when the select input is in an invalid state:
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
-**Examples of invalid states:**
-• Required field left empty
-• Incorrect value format (invalid email, phone number, postal code)
-• Value that does not meet the established criteria (password not secure enough, text too short or too long)
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it.
 
-**Accessibility for error indication:**
-• Color alone is not sufficient: WCAG requires that color not be the only means of conveying information. Therefore, an icon and explicit text must accompany the error color.
-• Assistive technologies need contextual error messages: when a user submits a form or leaves a field, screen readers need to receive clear textual information about the error. Use the aria-describedby attribute to associate error messages with the corresponding select input element.
-• Error text is not just an ornament: WCAG guidelines require that error messages be sufficiently precise and descriptive.
+The input remains editable, encouraging users to revise their input without starting over.
 
-**`False`** The select input is in its neutral or valid state.
+In the context of the select field, if the user has correctly selected a value but an error message still appears, it often means that: the option has been deleted, blocked, or is invalid / the option does not comply with a business rule / the option is incompatible with the user's profile / the option is obsolete or expired / inconsistency with another value in the form / too many choices, limit exceeded / server issue or value rejected on the backend.
 
-**`True`** The user sees an error message detailing the nature of the problem, and the component is visually marked (e.g., with a specific color or icon) to draw attention to the error.
+**⚠️ Error message vs helper text / link**
+
+The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously. However, a helper link must not be replaced and should remain positioned below the error message.
 
 ---
 
 ## Leading icon
 
-Conveys the nature or purpose of the select input field at a glance.
+Helps indicate the purpose of the input.
+
+Only use a leading icon if it adds clear functional or contextual value.
 
 ---
 

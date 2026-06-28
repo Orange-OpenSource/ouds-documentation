@@ -1,4 +1,4 @@
-**`Default`** Default expand buttons are used for standard interactions where expanding or collapsing content does not require strong emphasis. They provide a balanced and neutral look suitable for most layouts.
+**`Default`** Default expand buttons are used for standard interactions where expanding or collapsing content doesn't require strong emphasis. They provide a balanced and neutral look suitable for most layouts.
 Use case: Expanding FAQ sections or showing additional text in articles.
 
 **`Strong`** The Strong expand button is prominent and visually emphasized, reserved for the most important expandable sections where visibility and clarity are critical.

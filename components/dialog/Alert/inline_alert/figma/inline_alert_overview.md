@@ -1,6 +1,6 @@
 ## Definition
 
-Inline Alert is a lightweight, embedded alert used within the content flow (e.g. inside a form, card, settings section). It is less visually prominent than Alert Message and does not include a dismiss button.
+An inline alert is a lightweight UI element integrated into the content flow. It conveys information, system feedback, and status changes through short, prominent, persistent, and non-actionable messages. The inline alert includes a functional icon and a semantic colour, but does not have a close button or an action link. The inline alert remains visible and does not disappear.
 
 ---
 
@@ -14,15 +14,15 @@ Inline Alert is a lightweight, embedded alert used within the content flow (e.g.
 
 ## Status
 
-**Non fonctionnel** Used for informational or decorative messages not tied to system logic. They are flexible in tone and visual expression, allowing the use of custom or brand-related (decorative) iconsdepending on context. These alerts help highlight content or support communication in a subtle, branded way.
+**Non fonctionnel** Used for informational or decorative messages not tied to system logic. They are flexible in tone and visual expression, allowing the use of custom or brand-related (decorative) icons depending on context. These alerts help highlight content or support communication in a subtle, branded way.
 
 **⚠️ Note:** Icons in non-functional alerts can be changed or customized depending on the message context.
 
 **`Neutral`** Used for generic informational messages that provide context but carry no semantic meaning. Ideal for subtle notices, contextual help, or content highlights within pages.
 
-**`Accent`** Uses Orange brand colors and can include decorative icons to draw attention to key marketing or communication content. Perfect for promotional, inspirational, or brand-driven highlights that engage the user positively.
+**`Accent`** Uses brand colors and can include decorative icons to draw attention to key marketing or communication content. Perfect for promotional, inspirational, or brand-driven highlights that engage the user positively.
 
-**Fonctionnel** Used to communicate system statuses, results, or warnings tied directly to UX logic or user actions. These alerts follow strict semantic conventions for icon, color, and tone — ensuring clear, accessible communication across all Orange digital products.
+**Fonctionnel** Used to communicate system statuses, results, or warnings tied directly to UX logic or user actions. These alerts follow strict semantic conventions for icon, color, and tone — ensuring clear, accessible communication across all digital products.
 
 **⚠️ Note:** Icons in functional alerts must never be replaced or customized. Each type has a dedicated, standardized icon that expresses its meaning clearly.
 
@@ -51,5 +51,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 * The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
 * Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 * Icons must always scale proportionally with user zoom. Icon resizing must never be blocked.
-
----

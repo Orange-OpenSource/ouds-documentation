@@ -1,5 +1,5 @@
-**`Empty`** The field is empty, showing only the label.
+**`Empty`** The Empty state indicates that the text input is blank with no content or placeholder, a neutral starting point.
 
-**`Empty (Placeholder)`** The field is empty but displays placeholder text to guide the user.
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
 
-**`Filled`** The field contains user-entered text.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.

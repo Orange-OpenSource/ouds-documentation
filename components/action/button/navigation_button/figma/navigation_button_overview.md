@@ -1,6 +1,6 @@
 ## Definition
 
-A Navigation button is a navigational UI element that allows users to move between different pages of content within a multi-page interface, such as lists, search results, or data tables. Typically arranged in a sequence, Navigation buttons indicate the user's current position and provide controls to access previous, next, or specific pages.
+A navigation button is a UI element that enables movement between different pages within a multi-page interface. The navigation button is typically arranged in a sequence to indicate the user's current position and provide controls for accessing previous, next, or specific pages.
 
 ---
 
@@ -13,7 +13,7 @@ Use case: Standard "next/previous" navigation in product listings or search resu
 Use case: Highlighting the active page in long catalog navigation.
 
 **`Brand`** A brand-colored alternative to the Strong Navigation button. It should be used sparingly for high-value navigation points or to visually anchor a brand moment. Avoid using it as the default for all pages.
-Use case: Emphasizing a key page (e.g., a promotional offer) with the brand's primary color.
+Use case: Emphasizing a key page (a promotional offer) with the brand's primary color.
 
 **`Minimal`** Minimal Navigation buttons are simplified and less emphasized, suitable when pagination is not the primary focus. They can be used independently or in combination with stronger buttons.
 Use case: Secondary interfaces, such as blogs or FAQs, where pagination is less critical.
@@ -66,10 +66,13 @@ Use case: Displayed during initial page load or while waiting for navigation con
 
 ## Rounded corner
 
-**`False`** For a square finish.
+Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** For a finish with rounded corner.
-To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+**`False`**
+The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`**
+The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
 **Brand theme availability**
 This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
@@ -88,8 +91,8 @@ This option is technically not available for all brand themes. Here's the list o
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
 **To invert color**
-• In light mode: For a black finish
-• In dark mode: For a white finish
+* In light mode: For a black finish
+* In dark mode: For a white finish
 
 ---
 
@@ -112,5 +115,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 * In order to preserve the minimun interactive area during user zoom out, this component have a min-width and a min-height **of 48px**.
 * Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 * As the chevron icon is functional, it must follow the same rules as text.
-
----

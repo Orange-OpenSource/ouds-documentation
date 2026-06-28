@@ -1,3 +1,3 @@
-**Radio button** is a UI element that allows to select a single option from a set of mutually exclusive choices. Radio button that does not show icon or text, provides greater flexibility when creating other components that require a Radio button to be displayed.
+A **radio button** is a UI element that allows users to select a single option from a set of mutually exclusive choices. The radio button, that lacks an additional icon asset or text label, provides greater flexibility when designing other components that incorporate a radio button.
 
-**Radio button Item** is a UI element that allows to select a single option from a set of mutually exclusive choices. Radio button Item covers a wider range of contexts by allowing to toggle the visibility of additional text labels and icon assets.
+A **radio button item** is a UI element that allows users to select a single option from a set of mutually exclusive choices. Unlike the radio button, the radio button item accommodates a broader range of contexts by enabling the toggling of visibility of additional text labels and icon assets.

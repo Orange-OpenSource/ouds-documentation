@@ -1,4 +1,4 @@
-**Prefix** A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
+**Prefix** - for Filled and Empty (Placeholder) Input states only A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
 * "corp-" Company password enforcing a prefix
 * "temp-" Temporary password during a testing phase
 *  "dev-" For test accounts

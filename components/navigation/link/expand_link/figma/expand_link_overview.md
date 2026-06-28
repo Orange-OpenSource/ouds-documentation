@@ -33,7 +33,7 @@ A link expand is a UI element that reveals or hides additional content through a
 **`Default`** This is the default size of the component.
 This size is used for the vast majority of applications.
 
-**`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "In-line alert" component, for example).
+**`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "List item" component, for example).
 
 ---
 
@@ -42,8 +42,8 @@ This size is used for the vast majority of applications.
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
 **To invert color**
-• In light mode: For a black finish
-• In dark mode: For a white finish
+* In light mode: For a black finish
+* In dark mode: For a white finish
 
 ---
 
@@ -68,5 +68,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
   - Small size: a min-width and a min-height **of 44px**
 - Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 - As the chevron icon is functional, it must follow the same rules as text.
-
----

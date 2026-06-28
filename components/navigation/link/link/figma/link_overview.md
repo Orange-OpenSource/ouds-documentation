@@ -14,12 +14,12 @@ A link is a UI element that allows to navigate from one location to another, eit
 
 **`Text + icon`** This option includes functionality to choose any Solaris icon.
 Used for navigation or actions within the same page.
-• When embedded in a text paragraph, its interaction states are the same as the "Text Only" variant.
-• When used as a standalone component (e.g., like the "Next" variant), it adopts the same interaction states as the "Next" and "Back" variants.
-• Typically utilized in business or back-office interfaces, it is rarely standalone (usually part of a group of elements).
+* When embedded in a text paragraph, its interaction states are the same as the "Text Only" variant.
+* When used as a standalone component (like the "Next" variant), it adopts the same interaction states as the "Next" and "Back" variants.
+* Typically utilized in business or back-office interfaces, it is rarely standalone (usually part of a group of elements).
 
 **`Visited`** Indicates to the user that the target URL has already been opened on the device.
-• Take care, the visited variant is reserved for text links only and even more so in a specific context, such as: search results with suggested redirect links.
+* Take care, the visited variant is reserved for text links only and even more so in a specific context, such as: search results with suggested redirect links.
 
 ---
 
@@ -51,7 +51,7 @@ Uses the "Skeleton" component, variant "Security marge=False".
 **`Default`** This is the default size of the component.
 This size is used for the vast majority of applications.
 
-**`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "In-line alert" component, for example).
+**`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "List item" component, for example).
 
 ---
 
@@ -60,8 +60,8 @@ This size is used for the vast majority of applications.
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
 **To invert color**
-• In light mode: For a black finish
-• In dark mode: For a white finish
+* In light mode: For a black finish
+* In dark mode: For a white finish
 
 ---
 
@@ -100,5 +100,3 @@ This subcomponent adopts the layout and interaction states of the "Next" variant
 • Includes an "Active" state parameter for toggling between folded and unfolded states (boolean).
 • The chevron icon for the folded state is "chevron down".
 • The chevron icon for the unfolded state is "chevron up".
-
----

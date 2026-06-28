@@ -1,1 +1,1 @@
-**Link** is a UI element that allows to navigate from one location to another, either within the same page or across different pages in the same resource, or to an external resource. The link's main function is navigation, and it visually and semantically conveys its interactive nature.
+A link is a UI element that allows to navigate from one location to another, either within the same page or across different pages in the same resource, or to an external resource. The link's main function is navigation, and it visually and semantically conveys its interactive nature.

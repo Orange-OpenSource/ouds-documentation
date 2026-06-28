@@ -1,6 +1,6 @@
 ## Definition
 
-An Expand filter chip is a compact UI component that combines the functionality of a filter chip with a dropdown menu. It allows users to apply a filter from a predefined list of options without leaving the current context. When activated, it reveals a dropdown containing selectable values, and the chip updates to reflect the selected filter. This component is useful for filters with multiple or dynamic options, offering both clarity and space efficiency in the interface.
+A filter chip expand is a UI element that allows users to control the selection or deselection of a choice from a defined list of options, frequently used to capture filtering decisions. The filter chip expand feature is displayed through a dropdown with selectable values, making it ideal for filters with multiple or dynamic options while providing clarity and saving space in the interface.
 
 ---
 
@@ -40,7 +40,7 @@ Accompanied by a color change in the content and border.
 **`Disabled`** The chip is unavailable for interaction.
 It is visually represented with a muted color change in the content and border (reduced brightness and contrast).
 
-**`Focus`** The state when the chip receives focus (e.g., during keyboard navigation).
+**`Focus`** The state when the chip receives focus (during keyboard navigation).
 It features a triple contrasting border to indicate the active element.
 
 **`Skeleton`** Displays a placeholder chip while the content is loading.
@@ -66,5 +66,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 * Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 * As the tick and the chevron icon are functional, they must follow the same rules as text.
 * [Learn more about the behavior of the badge count component.](https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil?node-id=92884-9275)
-
----

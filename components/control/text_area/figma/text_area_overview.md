@@ -1,8 +1,6 @@
 ## Definition
 
-A text area is a multi-line text area component that allows users to enter and edit longer blocks of text, such as comments, messages, or descriptions. Unlike a standard text area, which is limited to a single line, the text area can expand vertically and offers more space for content entry.
-
-It typically includes features like a visible label, placeholder text, character limits, and optional resize behavior. The text area is ideal for open-ended responses where users need to express detailed information.
+A text area is a UI element that allows users to type, edit, or select longer blocks of text, such as comments, messages, or descriptions, by expanding vertically to provide more space for input. The text area includes a visible label, placeholder text, character limits, and resize behavior, making it ideal for open-ended responses where users can provide detailed information.
 
 ---
 
@@ -11,17 +9,28 @@ It typically includes features like a visible label, placeholder text, character
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
 ---
 
 ## Rounded corner
 
-**`False`** For a square finish.
+Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** For a finish with rounded corner. To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
+
+| Brand theme | Availability |
+| --- | --- |
+| **Orange** | Available |
+| **Orange Compact** | Available |
+| **Sosh** | Unavailable |
+| **Wireframe** | Unavailable |
+
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
 ---
 
@@ -70,8 +79,8 @@ Describes the purpose of the input. Why hide a text area label?
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
 
 However, hiding the label should only be done if:
-• The purpose of the input remains clear thanks to a placeholder or contextual icon.
-• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+* The purpose of the input remains clear thanks to a placeholder or contextual icon.
+* The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
@@ -183,5 +192,3 @@ Strong text can be used sparingly to highlight key information within the conten
 
 • **⚠️ Underline text and Hyperlinks**
 Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users. If a link is required, the dedicated helper link component must be used.
-
----

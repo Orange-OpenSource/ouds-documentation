@@ -1,8 +1,6 @@
 ## Definition
 
-A password input is a form field specifically designed to securely capture a user's confidential password. It masks the characters as they are typed, typically replacing them with dots, in order to protect the input from being read by others nearby.
-
-While the primary goal is to enhance privacy and security, the field may also include usability features such as a "show/hide password" toggle and helper text to guide password creation.
+A password input is a UI element designed to securely and confidentially capture a user's password. The password input feature enhances privacy by replacing characters with dots as they are typed. It also includes usability features like the option to show or hide the password and helper text to assist with password creation.
 
 ---
 
@@ -11,9 +9,9 @@ While the primary goal is to enhance privacy and security, the field may also in
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
 ---
 
@@ -70,13 +68,13 @@ The Error status indicates that the user input does not meet validation rules or
 
 This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
 
-**⚠️ Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
+**Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
 
 ---
 
 ## Leading icon
 
-Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
+Helps indicate the purpose of the input. Only use a leading icon if it adds clear functional or contextual value.
 
 ---
 
@@ -84,11 +82,9 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 
 Describes the purpose of the input. Why hide a password input label?
 
-In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
-
-However, hiding the label should only be done if:
-• The purpose of the input remains clear thanks to a placeholder or contextual icon.
-• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface. However, hiding the label should only be done if:
+* The purpose of the input remains clear thanks to a placeholder or contextual icon.
+* The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
@@ -96,13 +92,13 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## Other boolean options
 
-**Prefix** A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
-• "corp-" Company password enforcing a prefix
-• "temp-" Temporary password during a testing phase
-• "dev-" For test accounts
-• "eu-, us-, prod-, stage-" To encode a target environment
-• "test@" Used in the context of automated or predictable tests
-• "admin-" Pattern used to define an admin password
+**Prefix** - for Filled and Empty (Placeholder) Input states only A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
+* "corp-" Company password enforcing a prefix
+* "temp-" Temporary password during a testing phase
+*  "dev-" For test accounts
+* "eu-, us-, prod-, stage-" To encode a target environment
+* "test@" Used in the context of automated or predictable tests
+* "admin-" Pattern used to define an admin password
 
 **Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
@@ -184,5 +180,3 @@ However, "Text input" components present an exception regarding the loss of text
 
 * **⚠️ Underline text**
   * Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
-
----

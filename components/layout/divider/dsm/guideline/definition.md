@@ -1,1 +1,1 @@
-**Divider** is a UI element that allows to structure the content by visually separating the content zones. Divider improves readability and content organization without introducing a stronger visual hierarchy like a heading or a container would.
+A divider is a UI element that structures content by visually separating different areas. The divider enhances readability and organises content without creating a stronger visual hierarchy, such as a heading or container.

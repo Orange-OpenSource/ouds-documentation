@@ -6,6 +6,6 @@
 
 **`Disabled`** The chip is unavailable for interaction. It is visually represented with a muted color change in the content and border (reduced brightness and contrast).
 
-**`Focus`** The state when the chip receives focus (e.g., during keyboard navigation). It features a triple contrasting border to indicate the active element.
+**`Focus`** The state when the chip receives focus (during keyboard navigation). It features a triple contrasting border to indicate the active element.
 
 **`Skeleton`** Displays a placeholder chip while the content is loading. It appears as a semi-transparent gray block without content.

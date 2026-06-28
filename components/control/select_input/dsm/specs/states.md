@@ -1,15 +1,15 @@
-**`Enabled`** Default state: the input is ready for interaction.
+**`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
-**`Hover`** When the user hovers over the input field (without the dropdown being opened), the appearance of the element changes slightly to indicate interactivity.
+**`Hover`** Slight visual contrast or border color change.
 
-**`Focus`** When the user clicks or tabs into the input field (without opening the dropdown), the field gains focus and applies specific visual styles.
+**`Focus`** The select input is focused and ready to receive user input. It visually highlights the field to indicate that it's currently editable and interactive.
 
-**`Expanded`** When the user opens the dropdown menu to view options.
+**`Expanded`** The component is actively displaying its full list of options. This state is typically triggered by a user interaction, such as a click or tap on the field, and replaces the collapsed state. Visually, it involves changes: an open dropdown panel, a rotated chevron icon, and a highlighted focus ring to indicate active engagement.
 
-**`Loading`** Indicates that options are being loaded asynchronously.
+**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the select input. A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
 
-**`Read only`** When the select input is in a read-only state, its value is visible, but the user cannot interact with it or change the selection.
+**`Read only`** Text visible but not editable (often with a muted or different background).
 
-**`Disabled`** The input cannot be interacted with (non clickable, can't receive focus, no hover effect) and its appearance indicates unavailability.
+**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
 
-**`Skeleton`** Displays a placeholder UI while content is loading.
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=False".

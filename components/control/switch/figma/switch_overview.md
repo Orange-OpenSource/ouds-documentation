@@ -1,10 +1,8 @@
 ## Definition
 
-A switch is a component that allows the user to toggle between two states, typically "on" and "off." It is often represented as a button or a slider that changes position or color to indicate the current state. Switches are used to enable or disable features, options, or settings in an intuitive and visual manner.
+A **switch** is a UI element that toggles between two states, typically "On" and "Off," and is used to enable or disable features, options, or settings. The switch, that lacks an additional icon asset or text label, provides greater flexibility when creating other components that require a switch.
 
-This component family is available in two variants:
-• **Switch:** In this template, the component does not display any text or icon. This layout provides greater flexibility when creating other components that require a switch to be displayed.
-• **Switch item:** In this template, the component displays multiple additional text elements and icon assets.
+A **switch item** is a UI element that toggles between two states, typically "On" and "Off," and is used to enable or disable features, options, or settings. Unlike the switch, the switch item accommodates a broader range of contexts by enabling the toggling of visibility of additional text labels and icon assets.
 
 ---
 
@@ -132,7 +130,3 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 
 **⚠️ Underline text**
 * Underlined text must not be applied manually (e.g. in error message), as it is commonly associated with hyperlinks and may mislead users.
-
----
-
-✅ Complete documentation extracted

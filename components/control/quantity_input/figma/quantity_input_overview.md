@@ -1,6 +1,6 @@
 ## Definition
 
-A quantity input is a form component that allows users to specify a numerical value representing a quantity, often used in contexts like shopping carts, inventory management, or booking systems. It typically combines a numeric text field with increment and decrement controls (such as "+" and "–" buttons) to make adjustments easy and precise. The component must enforce valid input ranges (minimum of 1), prevent invalid characters, and support keyboard input, stepper controls, and assistive technologies.
+A quantity input is a UI element that lets users specify a numerical value representing a quantity. The quantity input typically combines a numeric text field with increment and decrement controls (like "+" and "–" buttons) for easy and precise adjustments. It enforces valid input ranges (minimum of one), prevents invalid characters, and supports keyboard input, stepper controls, and assistive technologies.
 
 ---
 
@@ -9,9 +9,9 @@ A quantity input is a form component that allows users to specify a numerical va
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
 ---
 
@@ -31,16 +31,6 @@ This option is technically not available for all brand themes. Here's the list o
 | Orange Compact | ✓ Available |
 | Sosh | ⚠️ Unavailable |
 | Wireframe | ⚠️ Unavailable |
-
----
-
-### Input status
-
-**`Empty`** The Empty state indicates that the quantity input is blank with no content or placeholder, a neutral starting point.
-
-**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
-
-**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
 ---
 
@@ -75,10 +65,10 @@ This option is technically not available for all brand themes. Here's the list o
 **Keyboard input disabled**
 
 In the vast majority of modern UX/UI cases, a quantity input should be editable on focus. However, there are a few specific rare cases where direct editing by keyboard input might be disabled:
-• Highly guided or controlled usage→product configuration with mandatory steps
-• Risk of critical error→specific or technical values
-• Strict touch context→mobile app with simplified UI, no keyboard
-• Deliberate product decision→to enforce navigation or a business constraint
+* Highly guided or controlled usage→product configuration with mandatory steps
+* Risk of critical error→specific or technical values
+* Strict touch context→mobile app with simplified UI, no keyboard
+* Deliberate product decision→to enforce navigation or a business constraint
 
 In this specific context, it is therefore recommended to prefill the input by default.
 
@@ -86,22 +76,22 @@ In this specific context, it is therefore recommended to prefill the input by de
 
 In the context of an editable quantity input, if the field is focused and already filled by the user, then clicking the + (increase) or – (decrease) buttons must follow a smooth and predictable behavior according to the following UX rules.
 
-When clicking + or – during editing:
-• The value is automatically validated
-• The action is applied to that value (+1 or –1)
-• The field is visually updated with the new value
-• The cursor is moved to the end of the field (optional)
-• The field remains focused
+**When clicking + or – during editing:**
+* The value is automatically validated
+* The action is applied to that value (+1 or –1)
+* The field is visually updated with the new value
+* The cursor is moved to the end of the field (optional)
+* The field remains focused
 
-Absolutely to avoid:
-• Losing the currently typed value if partially entered
-• Requiring defocus for the buttons to work
-• Failing to parse/validate the value before incrementing
+**Absolutely to avoid:**
+* Losing the currently typed value if partially entered
+* Requiring defocus for the buttons to work
+* Failing to parse/validate the value before incrementing
 
-Specific error focus state:
+**Specific error focus state:**
 If the value in the field is invalid (empty or non-numeric), clicking + or – may:
-• Either fill in a default value (1)
-• Or display a temporary blocking error ("Please enter a number")
+* Either fill in a default value (1)
+* Or display a temporary blocking error ("Please enter a number")
 
 ---
 
@@ -126,10 +116,11 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 ## ⚠️ Label
 
 Describes the purpose of the input. Why hide a quantity input label?
+
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
 However, hiding the label should only be done if:
-• The purpose of the input remains clear thanks to a placeholder or contextual icon.
-• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+* The purpose of the input remains clear thanks to a placeholder or contextual icon.
+* The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
@@ -221,5 +212,3 @@ However, "Text input" components present an exception regarding the loss of text
 
 * **⚠️ Underline text**
   * Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
-
----

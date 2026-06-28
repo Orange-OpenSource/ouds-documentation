@@ -1,6 +1,6 @@
-**`False`** An input with a subtle background fill and a visible bottom border.
+**`False`** An input with a subtle background fill and a visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
-**`True`** A minimalist input with a transparent background and visible stroke.
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
 
 This style may be interesting for contexts other than form pages:
 * When inputs need to feel lightweight and unobtrusive

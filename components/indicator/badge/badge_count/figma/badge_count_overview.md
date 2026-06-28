@@ -1,6 +1,6 @@
 ## Definition
 
-Badge count is a UI element that emphasizes system notifications, status, or the categorization of an information, throughout colour and numerical value. Badge count is rendered as a coloured shape, displaying numerical values; and its chosen size remains unchanged regardless of the changes of the interface size.
+A badge count is a UI element that highlights system notifications, status, or the categorisation of information through colour and numerical value. The badge count is displayed as a coloured shape that shows numerical values, and its selected size remains consistent regardless of any changes to the interface size.
 
 ---
 
@@ -17,9 +17,13 @@ Badges with content keep the Enabled content but change their visual appearance.
 
 Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
+**Not functional**
+
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
+
+**Functional**
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -27,8 +31,7 @@ Badges have seven states depending on the context of the information they repres
 
 **`Warning`** Negatives the user to potential risks or cautionary messages.
 
-**`Negative`** Draws attention to important or critical information.
-Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
+**`Negative`** Draws attention to important or critical information. Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
 
 ---
 
@@ -79,5 +82,3 @@ The badge must remain clearly visible with sufficient contrast and readable size
 - In this example, the badge does not indicate error or status, but simply draws attention to new or unread items.
 
 ⚠️ Within a single interface, either a decorative or a functional color context should be used, but not both at the same time. This distinction ensures consistency and aligns with accessible design principles.
-
----

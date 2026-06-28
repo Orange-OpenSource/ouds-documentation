@@ -1,10 +1,8 @@
 ## Definition
 
-A checkbox component is a user interface element used to allow the user to selection-control or deselection-control an option. It is commonly used in forms, web interfaces, or applications to capture multiple or single choices.
+A **checkbox** is a UI element that enables users to select multiple options from a set of mutually non-exclusive choices. The checkbox, that lacks an additional icon asset or text label, offers greater flexibility when designing other components that incorporate a checkbox.
 
-This component family is available in two variants:
-• **Checkbox:** In this template, the component does not display any text or icon. This layout provides greater flexibility when creating other components that require a checkbox to be displayed.
-• **Checkbox item:** In this template, the component displays multiple additional text elements and icon assets.
+A **checkbox item** is a UI element that allows users to select multiple options from a set of mutually non-exclusive choices. Unlike the checkbox, the checkbox item accommodates a broader range of contexts by enabling the toggling of visibility of additional text labels and icon assets.
 
 ---
 
@@ -141,5 +139,3 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 
 **⚠️ Underline text**
 * Underlined text must not be applied manually (e.g. in error message), as it is commonly associated with hyperlinks and may mislead users.
-
----

@@ -1,10 +1,6 @@
 ## Definition
 
-List allows users to view individual, but related, text items grouped together.
-
-It usually begins with either a number or a bullet, also known as Unordered list or Ordered list.
-
-By default, **this component is not interactive**, although it is possible to add a hypertext link to the content.
+A bullet list is a UI element that allows users to view related individual text items grouped together, with items typically starting with a number or a bullet. The bullet list, also referred to as an 'unordered list' or 'ordered list,' is typically not an interactive element, although text items can include hypertext links.
 
 ---
 
@@ -64,6 +60,10 @@ In the technical implementation, **Bar lists are considered as Unordered lists**
 **`Skeleton`** Improves the perceived loading time by providing a visual cue of where switch will appear once fully loaded.
 Uses the "Skeleton" component, variant "Security marge=True".
 
+**`Brand color - True`** Use the brand color for bullets when the list highlights important, actionable, or user-facing information that requires attention.
+
+**`Brand color - False`** Use neutral (achromatic) bullets for descriptive or secondary content where emphasis is not needed and readability should remain the priority.
+
 Even if the "Bold" option is not active, it is also possible to add a hyperlink in the content of a list. In terms of design, and depending on the chosen text style, the typographic reference "Body/Large/Underline" or "Body/Medium/Underline" must be used.
 
 ---
@@ -120,5 +120,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
   * **Underlined text** and **hyperlink**
     * Underlined text must not be used for emphasis, as it is commonly associated with links.
     * If a hyperlink is needed within the content, the typographic reference **Body/Medium/Underline** must be used.
-
----

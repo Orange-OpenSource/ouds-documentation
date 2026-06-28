@@ -1,1 +1,1 @@
-**Tag** is a UI element that shows brief information, such as a label, keyword, or category. The tag assist users in quickly finding, grouping, or understanding content. They can remain in place or be removed and may include icons or actions such as "close" or "edit."
+A tag is a UI element that shows brief information, such as a label, keyword, or category. The tag assist users in quickly finding, grouping, or understanding content. They can remain in place or be removed and may include icons or actions such as "close" or "edit."

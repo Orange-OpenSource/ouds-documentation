@@ -1,6 +1,6 @@
 ## Definition
 
-Badge is a UI element that emphasizes system notifications, status, or the categorization of an information. Badge is rendered as a coloured shape and its chosen size remains unchanged regardless of the changes of the interface size.
+A badge is a UI element that highlights system notifications, statuses, or the categorisation of information through colour alone. The badge is displayed as a coloured shape, without an icon, text, or number; its selected size remains constant, regardless of any changes to the interface size.
 
 ---
 
@@ -16,13 +16,15 @@ Badge is a UI element that emphasizes system notifications, status, or the categ
 
 Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
-**Non fonctionnel**
+Using a badge without icons may require additional context, such as a label or description, to ensure accessibility for users with color blindness. For more details, see 'Context of Color Usage (badge without icon)'.
+
+**Not functional**
 
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
 
-**Fonctionnel**
+**Functional**
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -30,8 +32,7 @@ Badges have seven states depending on the context of the information they repres
 
 **`Warning`** Negatives the user to potential risks or cautionary messages.
 
-**`Negative`** Draws attention to important or critical information.
-Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
+**`Negative`** Draws attention to important or critical information. Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
 
 ---
 
@@ -80,5 +81,3 @@ It needs to be clearly visible on its background, with enough contrast and a rea
 - In this context, the red badge is not used to indicate an error or negative status, but rather as a visual accent to draw attention. No other badge colors are used in the interface to avoid interpreting color as a carrier of meaning.
 
 ⚠️ Within a single interface, either a decorative or a functional color context should be used, but not both at the same time. This distinction ensures consistency and aligns with accessible design principles.
-
----

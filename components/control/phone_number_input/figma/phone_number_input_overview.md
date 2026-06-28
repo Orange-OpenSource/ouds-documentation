@@ -1,8 +1,6 @@
 ## Definition
 
-A phone number input is a form field specifically designed to capture and validate telephone numbers, often in international format. It typically integrates a country selector, allowing users to choose their country and automatically apply the corresponding dialing code (such as +33 for France).
-
-The dialing code is usually displayed as a non-editable prefix within the field to guide the user and ensure consistent formatting. The component include real-time formatting or masking to improve readability during input, and validation rules tailored to the number structure of the selected country.
+A phone number input is a UI element that captures and validates telephone numbers in an international format. The phone number Input includes a country selector, enabling users to choose their country and automatically apply the corresponding dialing code (e.g., +33 for France). The dialing code appears as a non-editable prefix within the field to guide users and ensure consistent formatting. It also features real-time formatting or masking to enhance readability during input, along with validation rules tailored to the number structure of the selected country.
 
 ---
 
@@ -13,9 +11,9 @@ The dialing code is usually displayed as a non-editable prefix within the field 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
 
 This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
 ---
 
@@ -40,49 +38,51 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
-**`Empty`** The field is empty. The placeholder text is not visible: the label is displayed instead and remains visible when the user starts typing.
+**`Empty`** The Empty state indicates that the phone number input is blank with no content or placeholder, a neutral starting point.
 
-**`Empty (Placeholder)`** The field is empty. The placeholder text is displayed in lieu of the label as an additional way to provide a contextual hint.
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
 
-**`Filled`** The field has been filled out by the user.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
 ---
 
 ## States
 
-**`Enabled`** The default state when the user can interact with the text input. The field is ready to accept input when the user clicks or taps on it.
+**`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
-**`Hover`** Triggered when the user hovers the cursor over the input. This state provides visual feedback, signaling that the field can be interacted with.
+**`Hover`** Slight visual contrast or border color change.
 
-**`Focus`** Activated when the user clicks or taps into the input, indicating that the field is currently selected and ready for input. This state is critical for accessibility, as it shows exactly where the user's focus is within the form.
+**`Focus`** The phone number input is focused and ready to receive user input. It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
 
-**`Loading`** The component displays a loading indicator to inform the user that a process is underway, such as validating the input. The input remains disabled during this time.
+**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the phone number input. A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
 
-**`Read only`** The input contains data but is not editable. This state is useful for displaying pre-filled data that the user shouldn't alter, like information pulled from a database or data confirmed in a previous step.
+**`Read only`** Text visible but not editable (often with a muted or different background).
 
-**`Disabled`** The input is inactive and cannot be interacted with. This state indicates that the field is currently unavailable, such as in cases where a required previous action has not been completed.
+**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
 
-**`Skeleton`** A placeholder state to indicate that content is loading or being fetched. Useful in maintaining the layout structure while the actual data is being retrieved, providing a smooth user experience during initial page loads.
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=False".
 
 ---
 
 ## Error
 
-**`False`** The input is in a standard state, with no validation issues. It is ready for users to fill out without errors.
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory). This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
 
-**`True`** The input has detected a validation error. An error message provides guidance to the user about what needs to be corrected. Error handling can be done either when the user navigates away from the field (on blur) or upon submission (when the user submits the form).
+**⚠️ Error message vs helper text**
+
+The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
 
 ---
 
 ## Leading icon
 
-**`Leading icon`** When enabled, it is possible to display an icon on the left of the input text.
+Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
 
 ---
 
 ## Country selector
 
-**`Country selector`** When enabled, it is possible to display a country selector with its flag. Country selector is displayed as a secondary button with only an icon (flag) and a chevron.
+The country selector allows users to choose their country before entering a phone number. It automatically adjusts the international dialing code (+33 for France) and helps format the input accordingly.
 
 ---
 
@@ -100,26 +100,34 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ---
 
+---
+
 ## Other boolean options
 
-**Dial code** When enabled, it is possible to display the country dial code value. The dial code is read-only and cannot be edited directly by the user.
+**`Dial code`** Displaying the dial code (+XX) as a prefix helps users understand the expected phone number format and reinforces the international nature of the input.
 
-**Helper text** When enabled, a helper text appears below the input field to provide additional context or tips on how to fill out the field. Useful for offering suggestions or clarifying expected input formats (e.g., "Please enter a phone number in international format").
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 ---
 
 ## ⚠️ Mandatory field indication
 
 **If all fields are mandatory (several fields present):**
-1. Display the message "All fields are mandatory." at the top.
-2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
-   UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
+* Display the message "All fields are mandatory." at the top.
+* Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
 
-**If not all fields are mandatory (several fields present):**
-1. Display the message "All fields marked with an * are mandatory." at the top.
-2. Use an asterisk (*) at the end of each mandatory field label (the word "mandatory" is read aloud instead of the visible asterisk at the end of the label).
-   UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
-3. Use the mention "(optional)" at the end of each optional field label. Note that this rule is not systematic—it remains an option, to be used if needed.
+**If not all fields are mandatory (and there are several fields present):**
+* Display the message "All fields marked with an * are mandatory." at the top.
+* Use an asterisk (*) at the end of each mandatory field label.
+
+**⚠️ Important:**
+* In Figma, the asterisk must be entered manually by designers in the label text. UI rendering of the asterisk: **font-weight-bold** + **color-content-negative (red)**.
+* Technically, for web/iOS/Android, the asterisk is positioned in a dedicated container after the label text. Spacing between label and asterisk:
+  * Empty state → 4px
+  * Other states (reduced label) → 3px
+* If the label is truncated due to a large amount of text, the asterisk must remain visible at the end of the field.
+* Either the technology allows a 'required' attribute to be managed on the fields (usually in Web), in which case any asterisks must be hidden from users using assistive technologies, Or the technology does not allow the mandatory nature of the field to be indicated. In this case, the asterisk must be vocalised as well as a 'mandatory' mention. Please refer to the technical documentations for more information.
+* Depending on the use case, an 'optional' label can be added to non-mandatory fields.
 
 **If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
@@ -183,5 +191,3 @@ However, "Text input" components present an exception regarding the loss of text
 
 * **⚠️ Underline text**
   * Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
-
----

@@ -1,6 +1,6 @@
 ## Definition
 
-A Divider is a UI component used to visually structure an interface by clearly separating content sections. It helps improve readability and content organization without introducing a strong hierarchy like a heading or a container would.
+A divider is a UI element that structures content by visually separating different areas. The divider enhances readability and organises content without creating a stronger visual hierarchy, such as a heading or container.
 
 ---
 
@@ -14,14 +14,12 @@ A Divider is a UI component used to visually structure an interface by clearly s
 
 ## Authorized colors
 
-• color-border-default
-• color-border-muted
-• color-border-emphasized
-• color-border-brand-primary (secondary/tertiary)
-• color-border-on-brand-primary (secondary/tertiary)
-• color-always-black
-• color-always-white
-• color-always-on-black
+• color-border-default  
+• color-border-muted  
+• color-border-emphasized  
+• color-border-brand-primary (secondary/tertiary)  
+• color-border-on-brand-primary (secondary/tertiary)  
+• color-always-black  
+• color-always-white  
+• color-always-on-black  
 • color-always-on-white
-
----

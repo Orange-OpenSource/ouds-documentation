@@ -1,1 +1,1 @@
-**Skeleton** is a UI element that allows to indicate that content is loading. Skeleton provides a smooth user experience by temporarily replacing content with gray areas or animations simulating the visual structure of the content to come.
+A skeleton is a UI element that indicates when content is loading. The skeleton enhances user experience by temporarily replacing content with gray areas or animations that simulate the visual structure of the forthcoming content.

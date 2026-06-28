@@ -1,10 +1,6 @@
 ## Definition
 
-A PIN code input is a specialized form field used to capture short, fixed-length numeric codes, typically for authentication or confirmation purposes, such as a 4, 6 or 8-digit personal identification number (PIN).
-
-It is often presented as a series of individual input fields or boxes, each representing a single digit, to enhance readability and encourage accurate input.
-
-This component must support smooth keyboard navigation (automatic focus shift, backspace handling), secure input masking if needed. It is commonly used in sensitive flows like login, verification, or transaction confirmation.
+A **PIN code input** is a UI element that captures short, fixed-length numeric codes, typically used for authentication or confirmation, such as a four, six, or eight-digit personal identification number (PIN). The PIN code input is displayed as a series of individual fields or boxes, each representing a single digit. This design improves readability and encourages accurate input, while also supporting smooth keyboard navigation and secure input masking when necessary.
 
 ---
 
@@ -14,18 +10,28 @@ This component must support smooth keyboard navigation (automatic focus shift, b
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
 This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
 ---
 
 ## Rounded corner
 
-**`False`** For a square finish.
+Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** For a finish with rounded corner.
-To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
+
+This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
+
+| Brand theme | Status |
+|---|---|
+| Orange | ✓ Available |
+| Orange Compact | ✓ Available |
+| Sosh | ⚠️ Unavailable |
+| Wireframe | ⚠️ Unavailable |
 
 ---
 
@@ -69,20 +75,19 @@ This component has a min-width and a max-width. To avoid exceeding or reducing a
 The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
 
 However, "Text input" components present an exception regarding the loss of textual information following the activation of user zoom in, since text truncation (label, placeholder, input text) is exceptionally allowed and enabled.
-• The text must always scale proportionally with user zoom. Text resizing must never be blocked.
-• The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
-• In order to preserve the minimun interactive area during user zoom out, each digit input have a min-width **of 44px** and a min-height **of 60px**.
-• Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+
+* The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+* The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+* In order to preserve the minimun interactive area during user zoom out, each digit input have a min-width **of 44px** and a min-height **of 60px**.
+* Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 
 ---
 
 ## Rich text
 
-**Strong text**
-• Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
-• No other text styles or custom font weights should be used.
+* **Strong text**
+  * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
+  * No other text styles or custom font weights should be used.
 
-**⚠️ Underline text**
-• Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
-
----
+* **⚠️ Underline text**
+  * Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.

@@ -1,6 +1,6 @@
 ## Definition
 
-Badge icon is a UI element that emphasizes system notifications, status, or the categorization of an information, throughout colour and iconography. Badge icon is rendered as a coloured shape, displaying icon; and its chosen size remains unchanged regardless of the changes of the interface size.
+A badge icon is a UI element that highlights system notifications, statuses, or the categorisation of information through colour and iconography. The badge icon is presented as a coloured shape that displays an icon, and its selected size remains constant despite any changes to the interface size.
 
 ---
 
@@ -17,9 +17,13 @@ Badges with content keep the Enabled content but change their visual appearance.
 
 Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
+**Not functional**
+
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
+
+**Functional**
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -27,8 +31,7 @@ Badges have seven states depending on the context of the information they repres
 
 **`Warning`** Negatives the user to potential risks or cautionary messages.
 
-**`Negative`** Draws attention to important or critical information.
-Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
+**`Negative`** Draws attention to important or critical information. Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
 
 ---
 
@@ -56,5 +59,3 @@ It is not possible to set this component to use the full available width (of the
   - Large size: a min-width and a min-height **of 20px**
   - Medium size: a min-width and a min-height **of 16px**
 - Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
-
----

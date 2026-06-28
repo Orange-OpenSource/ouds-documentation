@@ -1,8 +1,6 @@
 ## Definition
 
-A text input is a user interface component that allows users to enter, edit, or select single-line textual data. It's one of the most fundamental form elements used to capture user input such as names, emails, passwords, or search queries.
-
-It provides a visual and interactive affordance for text entry while supporting labels, placeholders, icons, helper messages, and validation feedback.
+A **text input** is a UI element that enables users to type, edit, or select a single line of text, such as names, emails, or search queries. Text input features labels, placeholders, icons, helper messages, and validation feedback to provide visual and interactive cues.
 
 ---
 
@@ -11,9 +9,9 @@ It provides a visual and interactive affordance for text entry while supporting 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
 ---
 
@@ -38,11 +36,11 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
-**`Empty`** The field is empty, showing only the label.
+**`Empty`** The Empty state indicates that the text input is blank with no content or placeholder, a neutral starting point.
 
-**`Empty (Placeholder)`** The field is empty but displays placeholder text to guide the user.
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
 
-**`Filled`** The field contains user-entered text.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
 ---
 
@@ -82,7 +80,7 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 
 ## Trailing action
 
-Provides direct, quick interaction within the input field (show/hide password, clear field, open dropdown). This action must enhance efficiency without cluttering the interface.
+Used to provide actions related to the field: clear input, toggle password visibility, open a date picker, etc. Can also indicate status or feedback (error checkmark, loading spinner).
 
 ---
 
@@ -182,5 +180,3 @@ However, "Text input" components present an exception regarding the loss of text
 * **⚠️ Underline text and Hyperlinks**
   * Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
   * If a link is required, the dedicated helper link component must be used (e.g. **Where to find it**).
-
----
