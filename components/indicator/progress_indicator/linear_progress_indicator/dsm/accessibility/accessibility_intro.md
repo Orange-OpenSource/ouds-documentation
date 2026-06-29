@@ -1,0 +1,1 @@
+The linear progress indicator must meet WCAG 2.2 Level AA so that loading status is perceivable and understandable without relying on sight or motion alone. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

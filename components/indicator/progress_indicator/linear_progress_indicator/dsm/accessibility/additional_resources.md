@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines](https://a11y-guidelines.orange.com/en/)
+- [ARIA: progressbar role — MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/progressbar_role)
+- [WCAG 2.2 Understanding — 4.1.3 Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- [Orange Design System — Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
