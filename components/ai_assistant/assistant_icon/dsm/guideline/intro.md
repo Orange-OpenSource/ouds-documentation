@@ -1,0 +1,1 @@
+An AI assistant icon triggers an AI-powered action using only an icon — no container — keeping a light visual footprint within surrounding content.
