@@ -1,0 +1,1 @@
+A status icon communicates a system or message state — success, info, warning, or error — using standardized colors and symbols for consistent, at-a-glance meaning.
