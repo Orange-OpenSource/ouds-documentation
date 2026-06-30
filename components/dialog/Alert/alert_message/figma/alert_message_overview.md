@@ -35,7 +35,7 @@ For action elements, we use the Link component with the "Text only" layout. This
 
 ## Status
 
-**Non fonctionnel**
+**`Non fonctionnel`**
 Non-functional alerts are informational or decorative. They provide context or highlight content without implying a specific state, system event, or user action. These alerts are not tied to UX patterns such as success, error, or warning, and may use contextual or brand-related icons to enhance recognition or storytelling.
 
 **`Neutral`** Used as a generic informative alert without semantic meaning or colour association.
@@ -46,7 +46,7 @@ Appropriate for help sections, dashboards, or onboarding flows.
 Ideal for marketing content, announcements, or feature highlights, where you want to subtly engage users without introducing functional semantics.
 Ideal for promotional banners, product updates, or customer engagement moments.
 
-**Fonctional**
+**`Fonctional`**
 Functional alerts communicate specific system statuses, results, or user feedback.
 Each variant conveys a clear semantic meaning – such as success, warning, or error – and must always be paired with its dedicated functional icon to ensure clarity and accessibility.
 Other icons should not be substituted, as the semantic pairing between icon, colour, and message is essential for recognition and consistency.
@@ -193,10 +193,10 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Rich text
 
-* **Strong text**
-  * Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Label/Medium/Strong** token only.
-  * No other text styles or custom font weights should be used.
+**`Strong text`**
+* Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Label/Medium/Strong** token only.
+* No other text styles or custom font weights should be used.
 
-* **Underlined text and hyperlink**
-  * Underlined text must not be used for emphasis, as it is commonly associated with links.
-  * If a **hyperlink** is needed within the content, the typographic reference **Label/Medium/Underline** must be used.
+**`Underlined text and hyperlink`**
+* Underlined text must not be used for emphasis, as it is commonly associated with links.
+* If a **hyperlink** is needed within the content, the typographic reference **Label/Medium/Underline** must be used.

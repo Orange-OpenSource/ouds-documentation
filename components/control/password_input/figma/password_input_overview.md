@@ -92,7 +92,7 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## Other boolean options
 
-**Prefix** - for Filled and Empty (Placeholder) Input states only A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
+**`Prefix`** - for Filled and Empty (Placeholder) Input states only A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
 * "corp-" Company password enforcing a prefix
 * "temp-" Temporary password during a testing phase
 *  "dev-" For test accounts
@@ -100,7 +100,7 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 * "test@" Used in the context of automated or predictable tests
 * "admin-" Pattern used to define an admin password
 
-**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 ---
 
@@ -174,9 +174,9 @@ However, "Text input" components present an exception regarding the loss of text
 
 ## Rich text
 
-* **Strong text**
-  * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong and Label/Large/Strong) depending on the selected text style.
-  * No other text styles or custom font weights should be used.
+**`Strong text`**
+* Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong and Label/Large/Strong) depending on the selected text style.
+* No other text styles or custom font weights should be used.
 
-* **⚠️ Underline text**
-  * Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
+**`⚠️ Underline text`**
+* Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.

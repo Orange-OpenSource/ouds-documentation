@@ -6,7 +6,7 @@ A skeleton is a UI element that indicates when content is loading. The skeleton 
 
 ## Boolean options
 
-**Security margin** Depending on the position of components in the Skeleton screen template, two variants are possible:
+**`Security margin`** Depending on the position of components in the Skeleton screen template, two variants are possible:
 * If a margin (spacing) is present between two or more components, apply the version "Security margin=False" to the affected components.
 * If no spacing is present between two or more components, apply the version "Security margin=True" to the affected components.
 

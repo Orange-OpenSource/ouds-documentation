@@ -18,13 +18,13 @@ Badges have seven states depending on the context of the information they repres
 
 Using a badge without icons may require additional context, such as a label or description, to ensure accessibility for users with color blindness. For more details, see 'Context of Color Usage (badge without icon)'.
 
-**Not functional**
+**`Not functional`**
 
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
 
-**Functional**
+**`Functional`**
 
 **`Positive`** Indicates success, completion, or approval.
 
