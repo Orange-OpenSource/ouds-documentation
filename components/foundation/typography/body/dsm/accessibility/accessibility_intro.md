@@ -1,0 +1,1 @@
+Body styles must meet WCAG 2.2 Level AA, staying legible, resizable, and reflowable so everyone can read content comfortably. For comprehensive guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

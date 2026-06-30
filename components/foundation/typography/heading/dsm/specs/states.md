@@ -1,0 +1,1 @@
+🚧 Not applicable — Heading is a non-interactive typography style and has no interactive states.

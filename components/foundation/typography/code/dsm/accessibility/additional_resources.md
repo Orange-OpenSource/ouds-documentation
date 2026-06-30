@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Typography](https://a11y-guidelines.orange.com/en/web/design/typography/)
+- [W3C WAI - Content Structure](https://www.w3.org/WAI/tutorials/page-structure/)
+- [WCAG 2.2 Understanding Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

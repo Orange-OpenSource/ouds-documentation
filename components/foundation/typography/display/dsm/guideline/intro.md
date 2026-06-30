@@ -1,0 +1,1 @@
+Display is the largest type style, reserved for high-impact moments — hero headlines and key messages that must capture immediate attention.

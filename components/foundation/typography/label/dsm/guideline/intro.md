@@ -1,0 +1,1 @@
+Label is the compact, fixed-size text style for component content — buttons, fields, badges — kept consistent and predictable across every breakpoint.

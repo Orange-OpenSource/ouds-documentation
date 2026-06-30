@@ -1,0 +1,1 @@
+Heading styles must meet WCAG 2.2 Level AA and, crucially, map to a correct semantic heading structure so everyone — including screen-reader users — can navigate by headings. For comprehensive guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

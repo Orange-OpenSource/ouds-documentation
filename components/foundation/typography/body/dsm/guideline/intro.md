@@ -1,0 +1,1 @@
+Body is the workhorse text style for paragraphs and everyday content, tuned for comfortable, readable reading across every screen size.
