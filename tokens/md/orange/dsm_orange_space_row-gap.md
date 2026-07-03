@@ -8,4 +8,4 @@
 | ouds.space.row-gap.medium | core-ouds.dimension.150 | 12px |
 | ouds.space.row-gap.large | core-ouds.dimension.200 | 16px |
 
-<br>Tokens versions: sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

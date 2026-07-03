@@ -1,5 +1,5 @@
-**`Empty`** The field is empty. The placeholder text is not visible: the label is displayed instead and remains visible when the user starts typing.
+**`Empty`** The Empty state indicates that the phone number input is blank with no content or placeholder, a neutral starting point.
 
-**`Empty (Placeholder)`** The field is empty. The placeholder text is displayed in lieu of the label as an additional way to provide a contextual hint.
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
 
-**`Filled`** The field has been filled out by the user.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.

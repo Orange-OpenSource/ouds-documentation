@@ -1,3 +1,3 @@
-**`Dial code`** When enabled, it is possible to display the country dial code value. The dial code is read-only and cannot be edited directly by the user.
+**`Dial code`** Displaying the dial code (+XX) as a prefix helps users understand the expected phone number format and reinforces the international nature of the input.
 
-**`Helper text`** When enabled, a helper text appears below the input field to provide additional context or tips on how to fill out the field. Useful for offering suggestions or clarifying expected input formats (e.g., "Please enter a phone number in international format").
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.

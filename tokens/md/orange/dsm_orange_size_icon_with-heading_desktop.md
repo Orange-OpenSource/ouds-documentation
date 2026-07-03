@@ -13,4 +13,4 @@
 | ouds.size.icon.with-heading.small.size-medium.desktop | core-ouds.dimension.450 | 36px |
 | ouds.size.icon.with-heading.small.size-large.desktop | core-ouds.dimension.500 | 40px |
 
-<br>Tokens versions: sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

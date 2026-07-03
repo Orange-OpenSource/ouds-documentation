@@ -22,6 +22,5 @@
 | ouds.color.action.negative.pressed | core-ouds.color.functional.scarlet.800 | #800001 | <div style="width:20px; height:20px; background-color:#800001; border: 1px solid #000000;"></div> |
 | ouds.color.action.negative.loading | core-ouds.color.functional.scarlet.800 | #800001 | <div style="width:20px; height:20px; background-color:#800001; border: 1px solid #000000;"></div> |
 | ouds.color.action.negative.focus | core-ouds.color.functional.scarlet.700 | #b20002 | <div style="width:20px; height:20px; background-color:#b20002; border: 1px solid #000000;"></div> |
-| ouds.color.action.ios-accent | core-wframe.color.RoyalBlue.600 | #2055e5 | <div style="width:20px; height:20px; background-color:#2055e5; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

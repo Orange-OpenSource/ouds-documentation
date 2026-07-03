@@ -1,0 +1,1 @@
+A linear indicator shows the progress of a task using a horizontal line. It can show a specific value (determinate) or just that something is in progress (indeterminate). Best used inside layouts to show progress.

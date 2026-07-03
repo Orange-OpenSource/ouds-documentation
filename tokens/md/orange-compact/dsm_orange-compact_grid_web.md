@@ -1,0 +1,82 @@
+#### ouds.grid.2xs
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.2xs.width | core-ouds.grid.width.100 | 360px |
+| ouds.grid.2xs.min-width | core-ouds.grid.min-width.100 | 320px |
+| ouds.grid.2xs.max-width | core-ouds.grid.max-width.100 | 389px |
+| ouds.grid.2xs.margin | core-ouds.grid.margin.100 | 16px |
+| ouds.grid.2xs.column-gap | core-ouds.grid.column-gap.100 | 8px |
+| ouds.grid.2xs.column-count | core-ouds.grid.column-count.400 | 4px |
+
+#### ouds.grid.xs
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.xs.width | core-ouds.grid.width.200 | 390px |
+| ouds.grid.xs.min-width | core-ouds.grid.min-width.200 | 390px |
+| ouds.grid.xs.max-width | core-ouds.grid.max-width.200 | 479px |
+| ouds.grid.xs.margin | core-ouds.grid.margin.100 | 16px |
+| ouds.grid.xs.column-gap | core-ouds.grid.column-gap.200 | 16px |
+| ouds.grid.xs.column-count | core-ouds.grid.column-count.400 | 4px |
+
+#### ouds.grid.sm
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.sm.width | core-ouds.grid.width.300 | 480px |
+| ouds.grid.sm.min-width | core-ouds.grid.min-width.300 | 480px |
+| ouds.grid.sm.max-width | core-ouds.grid.max-width.300 | 735px |
+| ouds.grid.sm.margin | core-ouds.grid.margin.100 | 16px |
+| ouds.grid.sm.column-gap | core-ouds.grid.column-gap.200 | 16px |
+| ouds.grid.sm.column-count | core-ouds.grid.column-count.400 | 4px |
+
+#### ouds.grid.md
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.md.width | core-ouds.grid.width.400 | 768px |
+| ouds.grid.md.min-width | core-ouds.grid.min-width.400 | 736px |
+| ouds.grid.md.max-width | core-ouds.grid.max-width.400 | 1023px |
+| ouds.grid.md.margin | core-ouds.grid.margin.300 | 24px |
+| ouds.grid.md.column-gap | core-ouds.grid.column-gap.200 | 16px |
+| ouds.grid.md.column-count | core-ouds.grid.column-count.600 | 6px |
+
+#### ouds.grid.lg
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.lg.width | core-ouds.grid.width.500 | 1024px |
+| ouds.grid.lg.min-width | core-ouds.grid.min-width.500 | 1024px |
+| ouds.grid.lg.max-width | core-ouds.grid.max-width.500 | 1319px |
+| ouds.grid.lg.margin | core-ouds.grid.margin.300 | 24px |
+| ouds.grid.lg.column-gap | core-ouds.grid.column-gap.200 | 16px |
+| ouds.grid.lg.column-count | core-ouds.grid.column-count.600 | 6px |
+
+#### ouds.grid.xl
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.xl.width | core-ouds.grid.width.600 | 1440px |
+| ouds.grid.xl.min-width | core-ouds.grid.min-width.600 | 1320px |
+| ouds.grid.xl.max-width | core-ouds.grid.max-width.600 | 1639px |
+| ouds.grid.xl.margin | core-ouds.grid.margin.600 | 36px |
+| ouds.grid.xl.column-gap | core-ouds.grid.column-gap.300 | 20px |
+| ouds.grid.xl.column-count | core-ouds.grid.column-count.1200 | 12px |
+
+#### ouds.grid.2xl
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.2xl.width | core-ouds.grid.width.700 | 1680px |
+| ouds.grid.2xl.min-width | core-ouds.grid.min-width.700 | 1640px |
+| ouds.grid.2xl.max-width | core-ouds.grid.max-width.700 | 1879px |
+| ouds.grid.2xl.max-width-alt | core-ouds.grid.max-width.650 | 1680px |
+| ouds.grid.2xl.margin | core-ouds.grid.margin.600 | 36px |
+| ouds.grid.2xl.column-gap | core-ouds.grid.column-gap.300 | 20px |
+| ouds.grid.2xl.column-count | core-ouds.grid.column-count.1200 | 12px |
+
+#### ouds.grid.3xl
+| **Semantic token** | **Core token** | **Raw value** |
+| --- | --- | --- |
+| ouds.grid.3xl.width | core-ouds.grid.width.800 | 1920px |
+| ouds.grid.3xl.min-width | core-ouds.grid.min-width.800 | 1880px |
+| ouds.grid.3xl.max-width | core-ouds.grid.max-width.800 | 1920px |
+| ouds.grid.3xl.margin | core-ouds.grid.margin.1000 | 52px |
+| ouds.grid.3xl.column-gap | core-ouds.grid.column-gap.300 | 20px |
+| ouds.grid.3xl.column-count | core-ouds.grid.column-count.1200 | 12px |
+
+<br>Tokens versions: sys.orange-compact: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

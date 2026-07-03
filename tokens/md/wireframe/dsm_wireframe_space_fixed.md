@@ -13,4 +13,4 @@
 | ouds.space.fixed.4xlarge | core-ouds.dimension.700 | 56px |
 | ouds.space.fixed.5xlarge | core-ouds.dimension.800 | 64px |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

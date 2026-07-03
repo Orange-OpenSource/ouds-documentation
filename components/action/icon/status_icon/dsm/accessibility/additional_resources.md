@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Images](https://a11y-guidelines.orange.com/en/web/develop/images/)
+- [W3C WAI - Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html)
+- [WCAG 2.2 Understanding Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

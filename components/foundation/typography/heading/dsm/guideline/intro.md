@@ -1,0 +1,1 @@
+Heading styles structure content and signal hierarchy, giving users a clear, scannable entry point for navigating a page or section.

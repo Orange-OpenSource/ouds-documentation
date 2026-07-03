@@ -11,4 +11,4 @@
 | ouds.space.scaled.2xlarge.mobile | core-ouds.dimension.500 | 40px |
 | ouds.space.scaled.3xlarge.mobile | core-ouds.dimension.600 | 48px |
 
-<br>Tokens versions: sys.sosh: 2.2.0 - core.ouds: 1.9.0 - core.sosh: 1.2.0
+<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

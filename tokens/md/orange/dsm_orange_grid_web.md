@@ -2,7 +2,7 @@
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
 | ouds.grid.2xs.width | core-ouds.grid.width.100 | 360px |
-| ouds.grid.2xs.min-width | core-ouds.grid.min-width.100 | 1px |
+| ouds.grid.2xs.min-width | core-ouds.grid.min-width.100 | 320px |
 | ouds.grid.2xs.max-width | core-ouds.grid.max-width.100 | 389px |
 | ouds.grid.2xs.margin | core-ouds.grid.margin.100 | 16px |
 | ouds.grid.2xs.column-gap | core-ouds.grid.column-gap.100 | 8px |
@@ -74,8 +74,9 @@
 | --- | --- | --- |
 | ouds.grid.3xl.width | core-ouds.grid.width.800 | 1920px |
 | ouds.grid.3xl.min-width | core-ouds.grid.min-width.800 | 1880px |
+| ouds.grid.3xl.max-width | core-ouds.grid.max-width.800 | 1920px |
 | ouds.grid.3xl.margin | core-ouds.grid.margin.2500 | 112px |
 | ouds.grid.3xl.column-gap | core-ouds.grid.column-gap.800 | 40px |
 | ouds.grid.3xl.column-count | core-ouds.grid.column-count.1200 | 12px |
 
-<br>Tokens versions: sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

@@ -1,0 +1,1 @@
+Code is the monospace style for technical content — snippets, commands, and identifiers — preserving character alignment in a single, consistent size.

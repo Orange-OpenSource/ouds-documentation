@@ -1,0 +1,1 @@
+A circular progress indicator visually communicates that a task is loading or advancing, either by an exact amount or as ongoing activity.

@@ -11,6 +11,10 @@
 | ouds.color.content.status.info | core-ouds.color.functional.dodgerBlue.700 | #0073b2 | <div style="width:20px; height:20px; background-color:#0073b2; border: 1px solid #000000;"></div> |
 | ouds.color.content.status.warning | core-ouds.color.functional.sun.750 | #856a00 | <div style="width:20px; height:20px; background-color:#856a00; border: 1px solid #000000;"></div> |
 | ouds.color.content.status.negative | core-ouds.color.functional.scarlet.600 | #db0002 | <div style="width:20px; height:20px; background-color:#db0002; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.inverse.positive | core-ouds.color.functional.malachite.300 | #94f0a4 | <div style="width:20px; height:20px; background-color:#94f0a4; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.inverse.info | core-ouds.color.functional.dodgerBlue.300 | #8ad5ff | <div style="width:20px; height:20px; background-color:#8ad5ff; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.inverse.warning | core-ouds.color.functional.sun.300 | #ffe270 | <div style="width:20px; height:20px; background-color:#ffe270; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.inverse.negative | core-ouds.color.functional.scarlet.300 | #ff8081 | <div style="width:20px; height:20px; background-color:#ff8081; border: 1px solid #000000;"></div> |
 | ouds.color.content.status.accent | core-orange.color.orange.500 | #ff7900 | <div style="width:20px; height:20px; background-color:#ff7900; border: 1px solid #000000;"></div> |
 | ouds.color.content.inverse | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 
@@ -39,4 +43,4 @@
 | ouds.color.content.on.action.selected | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | ouds.color.content.on.action.highlighted | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

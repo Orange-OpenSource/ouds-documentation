@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Typography](https://a11y-guidelines.orange.com/en/web/design/typography/)
+- [W3C WAI - Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/)
+- [WCAG 2.2 Understanding Headings and Labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

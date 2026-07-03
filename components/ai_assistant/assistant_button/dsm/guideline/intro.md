@@ -1,0 +1,1 @@
+An AI assistant button triggers an interaction with an AI-powered feature, marked by a distinctive icon that clearly signals its intelligent capability.

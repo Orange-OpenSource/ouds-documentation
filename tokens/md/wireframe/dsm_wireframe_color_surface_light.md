@@ -19,4 +19,4 @@
 | ouds.color.surface.status.accent.muted | core-wframe.color.opacity.RustyRed.80 | #db234514 | <div style="width:20px; height:20px; background-color:#db234514; border: 1px solid #000000;"></div> |
 | ouds.color.surface.status.accent.emphasized | core-wframe.color.RustyRed.600 | #db2345 | <div style="width:20px; height:20px; background-color:#db2345; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

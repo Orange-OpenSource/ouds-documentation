@@ -1,1 +1,1 @@
-Provides direct, quick interaction within the input field (show/hide password, clear field, open dropdown). This action must enhance efficiency without cluttering the interface.
+Used to provide actions related to the field: clear input, toggle password visibility, open a date picker, etc. Can also indicate status or feedback (error checkmark, loading spinner).

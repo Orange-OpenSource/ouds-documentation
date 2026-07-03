@@ -1,0 +1,1 @@
+An interactive icon triggers an action using only an icon — no container — keeping a light visual footprint that integrates naturally with surrounding content.

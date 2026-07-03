@@ -1,5 +1,7 @@
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
-| Nov 12, 2025 | 1.2.0 | • Label text with bold replaced by medium | Anton Astafev |
+| Apr 22, 2026 | 1.2.0 | <b>Version 2.4 of the design tokens is required for the development of this update.</b> <ul><li>The text reference of the label changes from a bold weight (font-weight-label-strong) to a medium weight (font-weight-label-moderate).</ul> | Anton Astafev |
+| Mar 16, 2026 | - | <ul><li>Documentation writing: Multiline and responsiveness</ul> | Maxime Tonnerre |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> | Cyriaque Billard |
 | Jul 21, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.3.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
 | Mai 20, 2025 | 1.0.0 | • Component creation | Anton Astafev |

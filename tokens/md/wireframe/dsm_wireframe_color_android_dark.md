@@ -14,7 +14,7 @@
 | sys-android.color.onTertiaryContainer | core-wframe.color.functional.gray.light.160 | #e9ecf1 | <div style="width:20px; height:20px; background-color:#e9ecf1; border: 1px solid #000000;"></div> |
 | sys-android.color.error | core-ouds.color.functional.scarlet.300 | #ff8081 | <div style="width:20px; height:20px; background-color:#ff8081; border: 1px solid #000000;"></div> |
 | sys-android.color.onError | core-wframe.color.functional.gray.dark.960 | #08090d | <div style="width:20px; height:20px; background-color:#08090d; border: 1px solid #000000;"></div> |
-| sys-android.color.errorContainer | core-ouds.color.functional.scarlet.900 | #4d0001 | <div style="width:20px; height:20px; background-color:#4d0001; border: 1px solid #000000;"></div> |
+| sys-android.color.errorContainer | N/A | N/A | N/A |
 | sys-android.color.onErrorContainer | core-wframe.color.functional.gray.light.160 | #e9ecf1 | <div style="width:20px; height:20px; background-color:#e9ecf1; border: 1px solid #000000;"></div> |
 | sys-android.color.primaryFixed | core-wframe.color.functional.gray.dark.960 | #08090d | <div style="width:20px; height:20px; background-color:#08090d; border: 1px solid #000000;"></div> |
 | sys-android.color.primaryFixedDim | core-wframe.color.functional.gray.dark.960 | #08090d | <div style="width:20px; height:20px; background-color:#08090d; border: 1px solid #000000;"></div> |
@@ -49,4 +49,4 @@
 | sys-android.color.surfaceVariant | core-wframe.color.functional.gray.dark.720 | #1f2632 | <div style="width:20px; height:20px; background-color:#1f2632; border: 1px solid #000000;"></div> |
 | sys-android.color.surfaceTint | core-wframe.color.functional.gray.dark.720 | #1f2632 | <div style="width:20px; height:20px; background-color:#1f2632; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.android: 1.2.0 - sys.wireframe: 2.2.0 - core.ouds: 1.9.0 - core.wireframe: 1.3.0
+<br>Tokens versions: sys.android: 1.2.0 - sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

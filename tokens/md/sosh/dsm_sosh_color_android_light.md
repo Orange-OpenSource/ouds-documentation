@@ -1,12 +1,12 @@
 | **Semantic token light** | **Core token** | **Raw value** | **Color** |
 | --- | --- | --- | --- |
 | sys-android.color.primary | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
-| sys-android.color.onPrimary | core-ouds.color.functional.gray.light.160 | #eeeeee | <div style="width:20px; height:20px; background-color:#eeeeee; border: 1px solid #000000;"></div> |
+| sys-android.color.onPrimary | core-sosh.color.functional.gray.light.160 | #e9eef1 | <div style="width:20px; height:20px; background-color:#e9eef1; border: 1px solid #000000;"></div> |
 | sys-android.color.primaryContainer | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.onPrimaryContainer | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.secondary | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
-| sys-android.color.onSecondary | core-ouds.color.functional.gray.light.160 | #eeeeee | <div style="width:20px; height:20px; background-color:#eeeeee; border: 1px solid #000000;"></div> |
-| sys-android.color.secondaryContainer | core-ouds.color.opacity.black.40 | #0000000a | <div style="width:20px; height:20px; background-color:#0000000a; border: 1px solid #000000;"></div> |
+| sys-android.color.onSecondary | core-sosh.color.functional.gray.light.160 | #e9eef1 | <div style="width:20px; height:20px; background-color:#e9eef1; border: 1px solid #000000;"></div> |
+| sys-android.color.secondaryContainer | core-sosh.color.opacity.black.40 | #000f190a | <div style="width:20px; height:20px; background-color:#000f190a; border: 1px solid #000000;"></div> |
 | sys-android.color.onSecondaryContainer | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.tertiary | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.onTertiary | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
@@ -19,34 +19,34 @@
 | sys-android.color.primaryFixed | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.primaryFixedDim | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.onPrimaryFixed | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
-| sys-android.color.onPrimaryFixedVariant | core-ouds.color.opacity.white.640 | #ffffffa3 | <div style="width:20px; height:20px; background-color:#ffffffa3; border: 1px solid #000000;"></div> |
+| sys-android.color.onPrimaryFixedVariant | core-sosh.color.opacity.white.640 | #edf6fca3 | <div style="width:20px; height:20px; background-color:#edf6fca3; border: 1px solid #000000;"></div> |
 | sys-android.color.secondaryFixed | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.secondaryFixedDim | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.onSecondaryFixed | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
-| sys-android.color.onSecondaryFixedVariant | core-ouds.color.opacity.white.640 | #ffffffa3 | <div style="width:20px; height:20px; background-color:#ffffffa3; border: 1px solid #000000;"></div> |
+| sys-android.color.onSecondaryFixedVariant | core-sosh.color.opacity.white.640 | #edf6fca3 | <div style="width:20px; height:20px; background-color:#edf6fca3; border: 1px solid #000000;"></div> |
 | sys-android.color.tertiaryFixed | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
-| sys-android.color.tertiaryFixedDim | core-ouds.color.functional.gray.light.80 | #f4f4f4 | <div style="width:20px; height:20px; background-color:#f4f4f4; border: 1px solid #000000;"></div> |
+| sys-android.color.tertiaryFixedDim | core-sosh.color.functional.gray.light.80 | #f7f9fa | <div style="width:20px; height:20px; background-color:#f7f9fa; border: 1px solid #000000;"></div> |
 | sys-android.color.onTertiaryFixed | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
-| sys-android.color.onTertiaryFixedVariant | core-ouds.color.opacity.black.680 | #000000ad | <div style="width:20px; height:20px; background-color:#000000ad; border: 1px solid #000000;"></div> |
-| sys-android.color.surfaceDim | core-ouds.color.functional.gray.light.80 | #f4f4f4 | <div style="width:20px; height:20px; background-color:#f4f4f4; border: 1px solid #000000;"></div> |
+| sys-android.color.onTertiaryFixedVariant | core-sosh.color.opacity.black.720 | #000f19b8 | <div style="width:20px; height:20px; background-color:#000f19b8; border: 1px solid #000000;"></div> |
+| sys-android.color.surfaceDim | core-sosh.color.functional.gray.light.80 | #f7f9fa | <div style="width:20px; height:20px; background-color:#f7f9fa; border: 1px solid #000000;"></div> |
 | sys-android.color.surface | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.surfaceBright | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.onSurface | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
-| sys-android.color.onSurfaceVariant | core-ouds.color.opacity.black.680 | #000000ad | <div style="width:20px; height:20px; background-color:#000000ad; border: 1px solid #000000;"></div> |
+| sys-android.color.onSurfaceVariant | core-sosh.color.opacity.black.720 | #000f19b8 | <div style="width:20px; height:20px; background-color:#000f19b8; border: 1px solid #000000;"></div> |
 | sys-android.color.surfContainerLowest | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.surfContainerLow | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
-| sys-android.color.surfContainer | core-ouds.color.functional.gray.light.80 | #f4f4f4 | <div style="width:20px; height:20px; background-color:#f4f4f4; border: 1px solid #000000;"></div> |
-| sys-android.color.surfContainerHigh | core-ouds.color.functional.gray.light.80 | #f4f4f4 | <div style="width:20px; height:20px; background-color:#f4f4f4; border: 1px solid #000000;"></div> |
-| sys-android.color.surfContainerHighest | core-ouds.color.functional.gray.light.80 | #f4f4f4 | <div style="width:20px; height:20px; background-color:#f4f4f4; border: 1px solid #000000;"></div> |
-| sys-android.color.inverseSurface | core-ouds.color.functional.gray.dark.720 | #272727 | <div style="width:20px; height:20px; background-color:#272727; border: 1px solid #000000;"></div> |
+| sys-android.color.surfContainer | core-sosh.color.functional.gray.light.80 | #f7f9fa | <div style="width:20px; height:20px; background-color:#f7f9fa; border: 1px solid #000000;"></div> |
+| sys-android.color.surfContainerHigh | core-sosh.color.functional.gray.light.80 | #f7f9fa | <div style="width:20px; height:20px; background-color:#f7f9fa; border: 1px solid #000000;"></div> |
+| sys-android.color.surfContainerHighest | core-sosh.color.functional.gray.light.80 | #f7f9fa | <div style="width:20px; height:20px; background-color:#f7f9fa; border: 1px solid #000000;"></div> |
+| sys-android.color.inverseSurface | core-sosh.color.functional.gray.dark.720 | #1f2b32 | <div style="width:20px; height:20px; background-color:#1f2b32; border: 1px solid #000000;"></div> |
 | sys-android.color.inverseOnSurface | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.inversePrimary | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.outline | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
-| sys-android.color.outlineVariant | core-ouds.color.opacity.black.200 | #00000033 | <div style="width:20px; height:20px; background-color:#00000033; border: 1px solid #000000;"></div> |
+| sys-android.color.outlineVariant | core-sosh.color.opacity.black.200 | #000f1933 | <div style="width:20px; height:20px; background-color:#000f1933; border: 1px solid #000000;"></div> |
 | sys-android.color.scrim | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | sys-android.color.background | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | sys-android.color.onBackground | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
-| sys-android.color.surfaceVariant | core-ouds.color.functional.gray.light.80 | #f4f4f4 | <div style="width:20px; height:20px; background-color:#f4f4f4; border: 1px solid #000000;"></div> |
-| sys-android.color.surfaceTint | core-ouds.color.functional.gray.light.80 | #f4f4f4 | <div style="width:20px; height:20px; background-color:#f4f4f4; border: 1px solid #000000;"></div> |
+| sys-android.color.surfaceVariant | core-sosh.color.functional.gray.light.80 | #f7f9fa | <div style="width:20px; height:20px; background-color:#f7f9fa; border: 1px solid #000000;"></div> |
+| sys-android.color.surfaceTint | core-sosh.color.functional.gray.light.80 | #f7f9fa | <div style="width:20px; height:20px; background-color:#f7f9fa; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.android: 1.2.0 - sys.sosh: 2.2.0 - core.ouds: 1.9.0 - core.sosh: 1.2.0
+<br>Tokens versions: sys.android: 1.2.0 - sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

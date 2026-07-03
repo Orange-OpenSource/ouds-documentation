@@ -1,13 +1,14 @@
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
+| ouds.size.icon.with-label.xlarge.size-xsmall | core-ouds.dimension.350 | 28px |
 | ouds.size.icon.with-label.xlarge.size-small | core-ouds.dimension.400 | 32px |
-| ouds.size.icon.with-label.xlarge.size-medium | core-ouds.dimension.500 | 40px |
-| ouds.size.icon.with-label.xlarge.size-large | core-ouds.dimension.550 | 44px |
+| ouds.size.icon.with-label.xlarge.size-medium | core-ouds.dimension.450 | 36px |
+| ouds.size.icon.with-label.xlarge.size-large | core-ouds.dimension.500 | 40px |
 | ouds.size.icon.with-label.large.size-xsmall | core-ouds.dimension.250 | 20px |
 | ouds.size.icon.with-label.large.size-small | core-ouds.dimension.300 | 24px |
 | ouds.size.icon.with-label.large.size-medium | core-ouds.dimension.350 | 28px |
 | ouds.size.icon.with-label.large.size-large | core-ouds.dimension.400 | 32px |
-| ouds.size.icon.with-label.large.size-xlarge | core-ouds.dimension.550 | 44px |
+| ouds.size.icon.with-label.large.size-xlarge | core-ouds.dimension.450 | 36px |
 | ouds.size.icon.with-label.medium.size-xsmall | core-ouds.dimension.150 | 12px |
 | ouds.size.icon.with-label.medium.size-small | core-ouds.dimension.200 | 16px |
 | ouds.size.icon.with-label.medium.size-medium | core-ouds.dimension.250 | 20px |
@@ -17,4 +18,4 @@
 | ouds.size.icon.with-label.small.size-medium | core-ouds.dimension.200 | 16px |
 | ouds.size.icon.with-label.small.size-large | core-ouds.dimension.250 | 20px |
 
-<br>Tokens versions: sys.sosh: 2.2.0 - core.ouds: 1.9.0 - core.sosh: 1.2.0
+<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

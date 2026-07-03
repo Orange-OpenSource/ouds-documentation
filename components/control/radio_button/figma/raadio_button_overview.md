@@ -132,15 +132,17 @@ The component has internal padding-inline, and its display position must be betw
 The display position of the component corresponds to the entire screen display area (edge to edge).
 Its internal padding-inline is therefore replaced by the grid-margin tokens.
 
+For a card-type display (Outlined=True), no adaptation is made; the component structure remains the same between web and native.
+
 ---
 
 ## Rich text
 
-**Strong text**
+**`Strong text`**
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong).
 * No other text styles or custom font weights should be used.
 
-**⚠️ Underline text**
+**`⚠️ Underline text`**
 * Underlined text must not be applied manually (e.g. in error message), as it is commonly associated with hyperlinks and may mislead users.
 
 ---

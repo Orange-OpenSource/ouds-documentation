@@ -11,4 +11,4 @@
 | ouds.space.scaled.2xlarge.desktop | core-ouds.dimension.700 | 56px |
 | ouds.space.scaled.3xlarge.desktop | core-ouds.dimension.800 | 64px |
 
-<br>Tokens versions: sys.orange: 2.2.0 - core.ouds: 1.9.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

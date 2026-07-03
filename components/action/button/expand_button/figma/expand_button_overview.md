@@ -1,12 +1,12 @@
 ## Definition
 
-Expand button is a control that toggles content visibility, allowing users to expand or collapse sections. It reduces visual clutter by showing only key information and providing access to more details when needed.
+A button expand is a UI element that toggles content visibility, allowing users to expand or collapse content sections. The expand button minimises visual clutter by displaying only essential information and allowing access to additional details when necessary.
 
 ---
 
 ## Appearance
 
-**`Default`** Default expand buttons are used for standard interactions where expanding or collapsing content does not require strong emphasis. They provide a balanced and neutral look suitable for most layouts.
+**`Default`** Default expand buttons are used for standard interactions where expanding or collapsing content doesn't require strong emphasis. They provide a balanced and neutral look suitable for most layouts.
 Use case: Expanding FAQ sections or showing additional text in articles.
 
 **`Strong`** The Strong expand button is prominent and visually emphasized, reserved for the most important expandable sections where visibility and clarity are critical.
@@ -22,10 +22,10 @@ Use case: Expanding advanced options in a settings menu or filters in a search p
 
 ## Expanded
 
-**`False`** The Expanded = false state indicates that the content controlled by the button is currently hidden or collapsed. The button should visually suggest that more information is available (e.g., with a downward chevron).
+**`False`** The Expanded = false state indicates that the content controlled by the button is currently hidden or collapsed. The button should visually suggest that more information is available (with a downward chevron).
 Use case: Default state in FAQs, dropdowns, or collapsible panels before the user interacts with them.
 
-**`True`** The Expanded = true state indicates that the content has been revealed or expanded. The button should update its visual affordance to show that the section is open (e.g., with an upward chevron) and that it can be collapsed again.
+**`True`** The Expanded = true state indicates that the content has been revealed or expanded. The button should update its visual affordance to show that the section is open (with an upward chevron) and that it can be collapsed again.
 Use case: Active state when a user expands details, advanced options, or additional filters in a panel.
 
 ---
@@ -67,10 +67,13 @@ Use case: During initial page load when collapsible components are still being f
 
 ## Rounded corner
 
-**`False`** For a square finish.
+Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** For a finish with rounded corner.
-To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+**`False`**
+The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`**
+The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
 **Brand theme availability**
 This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
@@ -104,5 +107,3 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 * Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 * As the chevron icon is functional, it must follow the same rules as text.
 * As the text is missing, in its "Icon only" variant, the icons follow the same rules as the text.
-
----

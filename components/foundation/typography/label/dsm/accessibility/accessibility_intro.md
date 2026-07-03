@@ -1,0 +1,1 @@
+Label styles must meet WCAG 2.2 Level AA. Because labels are fixed-size and live inside components, contrast, accessible naming, and resilience to user text-spacing matter most. For comprehensive guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

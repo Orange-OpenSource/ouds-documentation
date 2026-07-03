@@ -1,0 +1,1 @@
+Status icons must meet WCAG 2.2 Level AA. Because they convey meaning, the status must be available to assistive technology and never communicated by color alone. For comprehensive guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

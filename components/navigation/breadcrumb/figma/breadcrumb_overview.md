@@ -1,6 +1,6 @@
 ## Definition
 
-Breadcrumbs are a navigational aid that displays a hierarchical path, helping users understand their location and easily navigate back to previous pages.
+A breadcrumb is a UI element that aids in navigation and identifies the current location on a website by displaying a hierarchical path of web pages.
 
 ---
 
@@ -15,5 +15,3 @@ Breadcrumbs can be categorized into different levels based on their complexity a
 **`N+3`** A deeper level of navigation, often product or content grouping.
 
 **`N+4`** A more refined selection, like a product variant or article.
-
----

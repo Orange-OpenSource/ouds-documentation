@@ -9,12 +9,12 @@ Use case:
 
 Use case:
 • Displaying status before API data is available. For example, while the system fetches the real value, the tag shows "Loading".
-• Data updates or filtering. When a table or list is being updated (e.g., applying filters or refreshing data), the tag temporarily shows loading and is then replaced with the actual value.
+• Data updates or filtering. When a table or list is being updated (applying filters or refreshing data), the tag temporarily shows loading and is then replaced with the actual value.
 
 **`Disabled`** A non-active state of the tag. It appears "dimmed" to indicate that it is unavailable or not relevant.
 
 Use case:
-• Used when a status is no longer valid (e.g., an order is canceled and the tag is no longer meaningful).
+• Used when a status is no longer valid (an order is canceled and the tag is no longer meaningful).
 • When the tag is part of a status system but currently has no value to display.
 
 **`Skeleton`** A placeholder state shown before the actual data is loaded.
