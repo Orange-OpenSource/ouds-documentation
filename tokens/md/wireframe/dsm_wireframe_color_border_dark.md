@@ -1,7 +1,7 @@
 | **Semantic token dark** | **Core token** | **Raw value** | **Color** |
 | --- | --- | --- | --- |
 | ouds.color.border.minimal | core-wframe.color.opacity.white.40 | #eff5ff0a | <div style="width:20px; height:20px; background-color:#eff5ff0a; border: 1px solid #000000;"></div> |
-| ouds.color.border.muted | core-wframe.color.opacity.white.80 | #eff5ff14 | <div style="width:20px; height:20px; background-color:#eff5ff14; border: 1px solid #000000;"></div> |
+| ouds.color.border.muted | core-wframe.color.opacity.white.120 | #eff5ff1f | <div style="width:20px; height:20px; background-color:#eff5ff1f; border: 1px solid #000000;"></div> |
 | ouds.color.border.default | core-wframe.color.opacity.white.200 | #eff5ff33 | <div style="width:20px; height:20px; background-color:#eff5ff33; border: 1px solid #000000;"></div> |
 | ouds.color.border.emphasized | core-wframe.color.functional.gray.light.160 | #e9ecf1 | <div style="width:20px; height:20px; background-color:#e9ecf1; border: 1px solid #000000;"></div> |
 | ouds.color.border.focus | core-wframe.color.RoyalBlue.100 | #dce9fd | <div style="width:20px; height:20px; background-color:#dce9fd; border: 1px solid #000000;"></div> |
@@ -18,4 +18,4 @@
 | ouds.color.border.on.brand.secondary | N/A | N/A | N/A |
 | ouds.color.border.on.brand.tertiary | N/A | N/A | N/A |
 
-<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

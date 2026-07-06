@@ -6,4 +6,4 @@
 | ouds.color.bg.inverse-low | core-sosh.color.lochmara.dark.720 | #003051 | <div style="width:20px; height:20px; background-color:#003051; border: 1px solid #000000;"></div> |
 | ouds.color.bg.inverse-high | core-sosh.color.lochmara.light.80 | #edf6fd | <div style="width:20px; height:20px; background-color:#edf6fd; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

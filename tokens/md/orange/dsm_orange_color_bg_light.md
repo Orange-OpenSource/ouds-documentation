@@ -6,4 +6,4 @@
 | ouds.color.bg.inverse-low | core-ouds.color.functional.gray.dark.880 | #141414 | <div style="width:20px; height:20px; background-color:#141414; border: 1px solid #000000;"></div> |
 | ouds.color.bg.inverse-high | core-ouds.color.functional.gray.dark.880 | #141414 | <div style="width:20px; height:20px; background-color:#141414; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

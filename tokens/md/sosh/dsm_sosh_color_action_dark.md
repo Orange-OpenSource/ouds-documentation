@@ -23,4 +23,4 @@
 | ouds.color.action.negative.loading | core-ouds.color.functional.scarlet.100 | #ffe5e6 | <div style="width:20px; height:20px; background-color:#ffe5e6; border: 1px solid #000000;"></div> |
 | ouds.color.action.negative.focus | core-ouds.color.functional.scarlet.200 | #ffb2b3 | <div style="width:20px; height:20px; background-color:#ffb2b3; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

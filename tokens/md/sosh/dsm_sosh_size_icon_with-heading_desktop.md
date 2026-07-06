@@ -13,4 +13,4 @@
 | ouds.size.icon.with-heading.small.size-medium.desktop | core-ouds.dimension.450 | 36px |
 | ouds.size.icon.with-heading.small.size-large.desktop | core-ouds.dimension.500 | 40px |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

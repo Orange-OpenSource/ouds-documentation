@@ -19,4 +19,4 @@
 | ouds.grid.android.medium.column-gap | core-ouds.grid.column-gap.400 | 24px |
 | ouds.grid.android.medium.column-count | core-ouds.grid.column-count.600 | 6px |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

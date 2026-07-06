@@ -49,4 +49,4 @@
 | sys-android.color.surfaceVariant | core-sosh.color.functional.gray.dark.720 | #1f2b32 | <div style="width:20px; height:20px; background-color:#1f2b32; border: 1px solid #000000;"></div> |
 | sys-android.color.surfaceTint | core-sosh.color.functional.gray.dark.720 | #1f2b32 | <div style="width:20px; height:20px; background-color:#1f2b32; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.android: 1.2.0 - sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.android: 1.2.0 - sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
