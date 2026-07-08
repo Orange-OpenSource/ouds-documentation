@@ -43,4 +43,4 @@
 | ouds.color.content.on.action.selected | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | ouds.color.content.on.action.highlighted | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

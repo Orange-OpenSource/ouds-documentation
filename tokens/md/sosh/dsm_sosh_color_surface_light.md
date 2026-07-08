@@ -19,4 +19,4 @@
 | ouds.color.surface.status.accent.muted | core-sosh.color.opacity.raspberry.100 | #fc69991a | <div style="width:20px; height:20px; background-color:#fc69991a; border: 1px solid #000000;"></div> |
 | ouds.color.surface.status.accent.emphasized | core-sosh.color.raspberry.500 | #de034b | <div style="width:20px; height:20px; background-color:#de034b; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

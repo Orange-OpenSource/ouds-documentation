@@ -49,4 +49,4 @@
 | sys-android.color.surfaceVariant | core-ouds.color.functional.gray.dark.720 | #272727 | <div style="width:20px; height:20px; background-color:#272727; border: 1px solid #000000;"></div> |
 | sys-android.color.surfaceTint | core-ouds.color.functional.gray.dark.720 | #272727 | <div style="width:20px; height:20px; background-color:#272727; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.android: 1.2.0 - sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.android: 1.2.0 - sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

@@ -5,5 +5,6 @@
 | ouds.color.overlay.drag | core-wframe.color.opacity.black.40 | #05052e0a | <div style="width:20px; height:20px; background-color:#05052e0a; border: 1px solid #000000;"></div> |
 | ouds.color.overlay.modal-sheet | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | ouds.color.overlay.backdrop | core-wframe.color.opacity.black.680 | #05052ead | <div style="width:20px; height:20px; background-color:#05052ead; border: 1px solid #000000;"></div> |
+| ouds.color.overlay.floating | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

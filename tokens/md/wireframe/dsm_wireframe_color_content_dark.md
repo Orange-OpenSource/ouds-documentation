@@ -43,4 +43,4 @@
 | ouds.color.content.on.action.selected | core-wframe.color.functional.gray.dark.960 | #08090d | <div style="width:20px; height:20px; background-color:#08090d; border: 1px solid #000000;"></div> |
 | ouds.color.content.on.action.highlighted | core-wframe.color.functional.gray.dark.960 | #08090d | <div style="width:20px; height:20px; background-color:#08090d; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

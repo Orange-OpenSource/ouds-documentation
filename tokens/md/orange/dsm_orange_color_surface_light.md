@@ -19,4 +19,4 @@
 | ouds.color.surface.status.accent.muted | core-orange.color.opacity.warmGray.80 | #bd793c14 | <div style="width:20px; height:20px; background-color:#bd793c14; border: 1px solid #000000;"></div> |
 | ouds.color.surface.status.accent.emphasized | core-orange.color.orange.500 | #ff7900 | <div style="width:20px; height:20px; background-color:#ff7900; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

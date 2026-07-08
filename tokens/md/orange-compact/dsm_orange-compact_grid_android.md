@@ -19,4 +19,4 @@
 | ouds.grid.android.medium.column-gap | core-ouds.grid.column-gap.200 | 16px |
 | ouds.grid.android.medium.column-count | core-ouds.grid.column-count.600 | 6px |
 
-<br>Tokens versions: sys.orange-compact: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

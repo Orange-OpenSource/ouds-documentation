@@ -10,4 +10,4 @@
 | ouds.size.icon.decorative.xlarge | core-ouds.dimension.650 | 52px |
 | ouds.size.icon.decorative.2xlarge | core-ouds.dimension.800 | 64px |
 
-<br>Tokens versions: sys.orange-compact: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

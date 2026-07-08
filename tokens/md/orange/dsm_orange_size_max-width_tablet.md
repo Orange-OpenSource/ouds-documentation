@@ -15,4 +15,4 @@
 | ouds.size.max-width.label.medium.tablet | core-ouds.dimension.6000 | 640px |
 | ouds.size.max-width.label.small.tablet | core-ouds.dimension.6000 | 640px |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
