@@ -10,4 +10,4 @@
 | ouds.size.icon.with-body.small.size-medium.mobile | core-ouds.dimension.200 | 16px |
 | ouds.size.icon.with-body.small.size-large.mobile | core-ouds.dimension.250 | 20px |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

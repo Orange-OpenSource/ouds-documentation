@@ -36,4 +36,4 @@
 | ouds.font.letter-spacing.label.small | core-ouds.font.letter-spacing.150 | 0.18px |
 | ouds.font.letter-spacing.code.medium | core-ouds.font.letter-spacing.200 | 0.17px |
 
-<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

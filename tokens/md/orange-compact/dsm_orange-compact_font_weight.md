@@ -49,4 +49,4 @@
 | ouds.font.weight.tv.label-strong | core-ouds.font.weight.700 | Bold |
 | ouds.font.weight.tv.code | core-ouds.font.weight.400 | Regular |
 
-<br>Tokens versions: sys.orange-compact: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

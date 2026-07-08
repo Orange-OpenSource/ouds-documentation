@@ -11,4 +11,4 @@
 | ouds.space.scaled.2xlarge.tablet | core-ouds.dimension.600 | 48px |
 | ouds.space.scaled.3xlarge.tablet | core-ouds.dimension.700 | 56px |
 
-<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

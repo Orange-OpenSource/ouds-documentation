@@ -9,4 +9,4 @@
 | ouds.border.width.focus | core-ouds.border.width.125 | 5px |
 | ouds.border.width.focus-inset | core-ouds.border.width.50 | 2px |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

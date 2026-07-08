@@ -11,4 +11,4 @@
 | ouds.space.scaled.2xlarge.mobile | core-ouds.dimension.450 | 36px |
 | ouds.space.scaled.3xlarge.mobile | core-ouds.dimension.550 | 44px |
 
-<br>Tokens versions: sys.orange-compact: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

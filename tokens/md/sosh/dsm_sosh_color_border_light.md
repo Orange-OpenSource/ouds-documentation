@@ -1,7 +1,7 @@
 | **Semantic token light** | **Core token** | **Raw value** | **Color** |
 | --- | --- | --- | --- |
 | ouds.color.border.minimal | core-sosh.color.opacity.black.40 | #000f190a | <div style="width:20px; height:20px; background-color:#000f190a; border: 1px solid #000000;"></div> |
-| ouds.color.border.muted | core-sosh.color.opacity.black.80 | #000f1914 | <div style="width:20px; height:20px; background-color:#000f1914; border: 1px solid #000000;"></div> |
+| ouds.color.border.muted | core-sosh.color.opacity.black.120 | #000f191f | <div style="width:20px; height:20px; background-color:#000f191f; border: 1px solid #000000;"></div> |
 | ouds.color.border.default | core-sosh.color.opacity.black.200 | #000f1933 | <div style="width:20px; height:20px; background-color:#000f1933; border: 1px solid #000000;"></div> |
 | ouds.color.border.emphasized | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 | ouds.color.border.focus | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
@@ -18,4 +18,4 @@
 | ouds.color.border.on.brand.secondary | core-ouds.color.functional.white | #ffffff | <div style="width:20px; height:20px; background-color:#ffffff; border: 1px solid #000000;"></div> |
 | ouds.color.border.on.brand.tertiary | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

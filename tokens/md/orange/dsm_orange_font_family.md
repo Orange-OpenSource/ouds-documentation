@@ -25,4 +25,4 @@
 | ouds.font.family.tv.label | core-orange.font.family.brand.tv | Helvetica Neue LT |
 | ouds.font.family.tv.code | core-ouds.font.family.monospace.menlo | Menlo |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

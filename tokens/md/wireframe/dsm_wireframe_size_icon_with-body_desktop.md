@@ -10,4 +10,4 @@
 | ouds.size.icon.with-body.small.size-medium.desktop | core-ouds.dimension.250 | 20px |
 | ouds.size.icon.with-body.small.size-large.desktop | core-ouds.dimension.300 | 24px |
 
-<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

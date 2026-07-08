@@ -27,7 +27,7 @@
 | ouds.elevation.x.elevated | core-ouds.elevation.x.0 | 0px |
 | ouds.elevation.y.elevated | core-ouds.elevation.y.200 | 2px |
 | ouds.elevation.blur.elevated | core-ouds.elevation.blur.300 | 3px |
-| ouds.elevation.spread.elevated | core-ouds.elevation.spread.n100 | -1px |
+| ouds.elevation.spread.elevated | core-ouds.elevation.spread.0 | 0px |
 | ouds.elevation.color.elevated-light | core-ouds.color.opacity.black.240 | #0000003d |
 | ouds.elevation.color.elevated-dark | core-ouds.color.opacity.black.240 | #0000003d |
 
@@ -39,7 +39,7 @@
 | ouds.elevation.x.emphasized | core-ouds.elevation.x.0 | 0px |
 | ouds.elevation.y.emphasized | core-ouds.elevation.y.500 | 12px |
 | ouds.elevation.blur.emphasized | core-ouds.elevation.blur.600 | 12px |
-| ouds.elevation.spread.emphasized | core-ouds.elevation.spread.n300 | -4px |
+| ouds.elevation.spread.emphasized | core-ouds.elevation.spread.n200 | -2px |
 | ouds.elevation.color.emphasized-light | core-ouds.color.opacity.black.160 | #00000029 |
 | ouds.elevation.color.emphasized-dark | core-ouds.color.opacity.black.160 | #00000029 |
 
@@ -67,4 +67,4 @@
 | ouds.elevation.color.sticky-light | core-ouds.color.opacity.black.160 | #00000029 |
 | ouds.elevation.color.sticky-dark | core-ouds.color.opacity.black.160 | #00000029 |
 
-<br>Tokens versions: sys.orange-compact: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

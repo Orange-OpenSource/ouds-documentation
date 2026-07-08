@@ -3,4 +3,4 @@
 | ouds.border.style.default | core-ouds.border.style.solid | solid |
 | ouds.border.style.drag | core-ouds.border.style.dashed | dashed |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

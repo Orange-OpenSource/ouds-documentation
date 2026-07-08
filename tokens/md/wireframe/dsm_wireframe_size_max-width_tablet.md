@@ -15,4 +15,4 @@
 | ouds.size.max-width.label.medium.tablet | core-ouds.dimension.6000 | 640px |
 | ouds.size.max-width.label.small.tablet | core-ouds.dimension.6000 | 640px |
 
-<br>Tokens versions: sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

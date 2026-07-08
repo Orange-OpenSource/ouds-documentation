@@ -8,4 +8,4 @@
 | ouds.space.row-gap.medium | core-ouds.dimension.150 | 12px |
 | ouds.space.row-gap.large | core-ouds.dimension.200 | 16px |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
