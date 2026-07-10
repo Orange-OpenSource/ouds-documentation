@@ -1,0 +1,746 @@
+{
+  "orange": {
+    "color": {
+      "1f4ca_dataviz": {
+        "gridlines-light": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.gray.light.400}"
+        },
+        "gridlines-dark": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.gray.dark.240}"
+        },
+        "border-light": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.white}"
+        },
+        "border-dark": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.gray.dark.880}"
+        },
+        "border-contrast-light": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.white}"
+        },
+        "border-contrast-dark": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.black}"
+        },
+        "highlight-light": {
+          "$type": "color",
+          "$value": "{core-orange.color.orange.550}"
+        },
+        "highlight-dark": {
+          "$type": "color",
+          "$value": "{core-orange.color.orange.500}"
+        },
+        "neutral-light": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.gray.light.880}"
+        },
+        "neutral-dark": {
+          "$type": "color",
+          "$value": "{core-ouds.color.functional.gray.light.960}"
+        },
+        "functional": {
+          "info-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.dodgerBlue.600}"
+          },
+          "info-dark": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.dodgerBlue.500}"
+          },
+          "positive-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.malachite.700}"
+          },
+          "positive-dark": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.malachite.600}"
+          },
+          "warning-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.sun.700}"
+          },
+          "warning-dark": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.sun.500}"
+          },
+          "negative-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.scarlet.600}"
+          },
+          "negative-dark": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.scarlet.400}"
+          }
+        },
+        "categorical": {
+          "tier-1-light": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amethyst.600}"
+          },
+          "tier-1-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amethyst.400}"
+          },
+          "tier-2-light": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.emerald.600}"
+          },
+          "tier-2-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.emerald.500}"
+          },
+          "tier-3-light": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.shockingPink.700}"
+          },
+          "tier-3-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.shockingPink.300}"
+          },
+          "tier-4-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.sun.700}"
+          },
+          "tier-4-dark": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.sun.600}"
+          },
+          "tier-5-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.dodgerBlue.700}"
+          },
+          "tier-5-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.sky.300}"
+          },
+          "tier-6-light": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amethyst.500}"
+          },
+          "tier-6-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amethyst.500}"
+          },
+          "tier-7-light": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.emerald.700}"
+          },
+          "tier-7-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.emerald.300}"
+          },
+          "tier-8-light": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.shockingPink.600}"
+          },
+          "tier-8-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.shockingPink.400}"
+          },
+          "tier-9-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.sun.800}"
+          },
+          "tier-9-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amber.300}"
+          },
+          "tier-10-light": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.dodgerBlue.600}"
+          },
+          "tier-10-dark": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.sky.500}"
+          }
+        },
+        "sequential": {
+          "accent-1": {
+            "tint-100-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.100}"
+            },
+            "tint-100-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.900}"
+            },
+            "tint-200-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.200}"
+            },
+            "tint-200-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.800}"
+            },
+            "tint-300-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.300}"
+            },
+            "tint-300-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.700}"
+            },
+            "tint-400-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.400}"
+            },
+            "tint-400-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.600}"
+            },
+            "tint-500-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.500}"
+            },
+            "tint-500-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.500}"
+            },
+            "tint-600-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.600}"
+            },
+            "tint-600-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.400}"
+            },
+            "tint-700-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.700}"
+            },
+            "tint-700-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.300}"
+            },
+            "tint-800-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.800}"
+            },
+            "tint-800-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.200}"
+            },
+            "tint-900-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.900}"
+            },
+            "tint-900-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.sky.100}"
+            }
+          },
+          "accent-2": {
+            "tint-100-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.100}"
+            },
+            "tint-100-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.900}"
+            },
+            "tint-200-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.200}"
+            },
+            "tint-200-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.800}"
+            },
+            "tint-300-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.300}"
+            },
+            "tint-300-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.700}"
+            },
+            "tint-400-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.400}"
+            },
+            "tint-400-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.600}"
+            },
+            "tint-500-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.500}"
+            },
+            "tint-500-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.500}"
+            },
+            "tint-600-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.600}"
+            },
+            "tint-600-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.400}"
+            },
+            "tint-700-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.700}"
+            },
+            "tint-700-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.300}"
+            },
+            "tint-800-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.800}"
+            },
+            "tint-800-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.200}"
+            },
+            "tint-900-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.900}"
+            },
+            "tint-900-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.emerald.100}"
+            }
+          },
+          "accent-3": {
+            "tint-100-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.100}"
+            },
+            "tint-100-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.900}"
+            },
+            "tint-200-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.200}"
+            },
+            "tint-200-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.800}"
+            },
+            "tint-300-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.300}"
+            },
+            "tint-300-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.700}"
+            },
+            "tint-400-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.400}"
+            },
+            "tint-400-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.600}"
+            },
+            "tint-500-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.500}"
+            },
+            "tint-500-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.500}"
+            },
+            "tint-600-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.600}"
+            },
+            "tint-600-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.400}"
+            },
+            "tint-700-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.700}"
+            },
+            "tint-700-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.300}"
+            },
+            "tint-800-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.800}"
+            },
+            "tint-800-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.200}"
+            },
+            "tint-900-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.900}"
+            },
+            "tint-900-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.shockingPink.100}"
+            }
+          },
+          "accent-4": {
+            "tint-100-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.100}"
+            },
+            "tint-100-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.900}"
+            },
+            "tint-200-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.200}"
+            },
+            "tint-200-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.800}"
+            },
+            "tint-300-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.300}"
+            },
+            "tint-300-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.700}"
+            },
+            "tint-400-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.400}"
+            },
+            "tint-400-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.600}"
+            },
+            "tint-500-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.500}"
+            },
+            "tint-500-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.500}"
+            },
+            "tint-600-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.600}"
+            },
+            "tint-600-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.400}"
+            },
+            "tint-700-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.700}"
+            },
+            "tint-700-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.300}"
+            },
+            "tint-800-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.800}"
+            },
+            "tint-800-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.200}"
+            },
+            "tint-900-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.900}"
+            },
+            "tint-900-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amethyst.100}"
+            }
+          },
+          "accent-5": {
+            "tint-100-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.100}"
+            },
+            "tint-100-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.900}"
+            },
+            "tint-200-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.200}"
+            },
+            "tint-200-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.800}"
+            },
+            "tint-300-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.300}"
+            },
+            "tint-300-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.700}"
+            },
+            "tint-400-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.400}"
+            },
+            "tint-400-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.600}"
+            },
+            "tint-500-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.500}"
+            },
+            "tint-500-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.500}"
+            },
+            "tint-600-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.600}"
+            },
+            "tint-600-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.400}"
+            },
+            "tint-700-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.700}"
+            },
+            "tint-700-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.300}"
+            },
+            "tint-800-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.800}"
+            },
+            "tint-800-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.200}"
+            },
+            "tint-900-light": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.900}"
+            },
+            "tint-900-dark": {
+              "$type": "color",
+              "$value": "{core-orange.color.decorative.amber.100}"
+            }
+          }
+        }
+      },
+      "1f3a8_decorative": {
+        "brand": {
+          "primary": {
+            "$type": "color",
+            "$value": "{core-orange.color.orange.500}"
+          },
+          "primary-muted": {
+            "$type": "color",
+            "$value": "#ff000000"
+          },
+          "primary-emphasized": {
+            "$type": "color",
+            "$value": "#ff000000"
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.black}"
+          },
+          "secondary-muted": {
+            "$type": "color",
+            "$value": "#ff000000"
+          },
+          "secondary-emphasized": {
+            "$type": "color",
+            "$value": "#ff000000"
+          },
+          "tertiary": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.white}"
+          },
+          "tertiary-muted": {
+            "$type": "color",
+            "$value": "#ff000000"
+          },
+          "tertiary-emphasized": {
+            "$type": "color",
+            "$value": "#ff000000"
+          }
+        },
+        "neutral": {
+          "muted": {
+            "lowest": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.light.80}"
+            },
+            "lower": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.light.160}"
+            },
+            "low": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.light.240}"
+            },
+            "medium": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.light.320}"
+            },
+            "high": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.light.400}"
+            },
+            "higher": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.light.800}"
+            },
+            "highest": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.light.960}"
+            }
+          },
+          "emphasized": {
+            "lowest": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.dark.240}"
+            },
+            "lower": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.dark.320}"
+            },
+            "low": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.dark.400}"
+            },
+            "medium": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.dark.480}"
+            },
+            "high": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.dark.560}"
+            },
+            "higher": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.dark.640}"
+            },
+            "highest": {
+              "$type": "color",
+              "$value": "{core-ouds.color.functional.gray.dark.720}"
+            }
+          }
+        },
+        "accent-1": {
+          "muted": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.emerald.200}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.emerald.500}"
+          },
+          "emphasized": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.emerald.700}"
+          }
+        },
+        "accent-2": {
+          "muted": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.sky.200}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.sky.400}"
+          },
+          "emphasized": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.sky.700}"
+          }
+        },
+        "accent-3": {
+          "muted": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.sun.200}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{core-ouds.color.functional.sun.500}"
+          },
+          "emphasized": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amber.500}"
+          }
+        },
+        "accent-4": {
+          "muted": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amethyst.200}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amethyst.400}"
+          },
+          "emphasized": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.amethyst.800}"
+          }
+        },
+        "accent-5": {
+          "muted": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.shockingPink.100}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.shockingPink.200}"
+          },
+          "emphasized": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.shockingPink.300}"
+          }
+        },
+        "skin": {
+          "tint-100": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.100}"
+          },
+          "tint-200": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.200}"
+          },
+          "tint-300": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.300}"
+          },
+          "tint-400": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.400}"
+          },
+          "tint-500": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.500}"
+          },
+          "tint-600": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.600}"
+          },
+          "tint-700": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.700}"
+          },
+          "tint-800": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.800}"
+          },
+          "tint-900": {
+            "$type": "color",
+            "$value": "{core-orange.color.decorative.deepPeach.900}"
+          }
+        }
+      }
+    }
+  }
+}

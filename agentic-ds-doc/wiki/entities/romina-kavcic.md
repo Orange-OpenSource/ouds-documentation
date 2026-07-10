@@ -1,0 +1,58 @@
+---
+type: entity
+tags: [personne, design-system, ia, auteur, conférencière]
+created: 2026-06-17
+updated: 2026-07-08
+sources:
+  - "[[design-system-most-important-asset-ai-era]]"
+  - "[[how-to-automate-design-system-documentation]]"
+  - "[[design-systems-that-document-ai]]"
+  - "[[self-healing-design-system]]"
+  - "[[50-design-token-files-one-problem]]"
+  - "[[your-design-system-is-not-ready-for-ai-agents]]"
+  - "[[agentic-ds-from-chatbot-to-orchestration]]"
+  - "[[20-ai-workflows-design-system-teams]]"
+  - "[[design-system-advantage-is-memory]]"
+related:
+  - "[[systeme-de-design-agentique]]"
+  - "[[into-design-systems-conference]]"
+  - "[[lisibilite-machine-design-system]]"
+  - "[[documentation-lag]]"
+  - "[[pipeline-figma-docs-automatise]]"
+  - "[[mintlify]]"
+  - "[[modele-maturite-ia-design-system]]"
+  - "[[quatre-regles-ia-ux]]"
+  - "[[deux-lectures-du-design-system-ia]]"
+  - "[[protocole-pas-produit]]"
+  - "[[boucle-feedback-infrastructure]]"
+  - "[[composant-comme-contrat]]"
+  - "[[orchestration-multi-agents]]"
+---
+
+## Romina Kavcic
+
+Romina Kavcic est designer spécialisée en design systems, auteure du newsletter et blog thedesignsystem.guide sur Substack. Elle produit des contenus hebdomadaires sur la construction et le scaling des design systems, et a développé le cours "Design Tokens Mastery".
+
+Elle est conférencière à l'[[into-design-systems-conference]], où elle est intervenue deux années consécutives : en 2025 sur les "context-aware design systems" (une vision prospective), et en 2026 sur les "agentic design systems" (outils, chiffres, retours d'expérience réels). La série "Agentic Design Systems" publiée en 2026 est la transcription enrichie de cette conférence.
+
+Son approche est pratique et basée sur l'expérimentation directe : elle documente des workflows concrets, des scripts CLI, des configurations MCP, et partage des résultats chiffrés (554 descriptions de composants générées en une session, tokens résolus en ligne de commande, patterns composés par script shell).
+
+Sa thèse centrale : "AI generates code. Design systems generate understanding" ([[design-system-most-important-asset-ai-era]]).
+
+Son article "How to Automate Design System Documentation" (octobre 2025) documente un pipeline pratique Figma → Claude Code → [[mintlify]] pour éliminer le [[documentation-lag]] — la conviction opérationnelle que "the only way to kill latency is to connect your tools so they document themselves" ([[how-to-automate-design-system-documentation]]).
+
+À l'AI Design Systems Conference 2026, elle présente **Tidy**, un plugin Figma avec 66 outils MCP : audit du naming, health score sur 6 catégories, validation de nouvelles variables, composition de patterns (formulaire login, confirmation destructive) à partir de composants existants ([[design-systems-mcp-complete-guide]]). Tidy est couplé à **Observatory**, un dashboard qui visualise le knowledge graph du design system à travers Figma, GitHub, Storybook, Linear, Chromatic, Playwright et PostHog. C'est l'instance la plus avancée du [[knowledge-graph-design-system]] documentée dans le vault — non plus comme concept mais comme produit en usage.
+
+La partie 3 de la série, "The Self-Healing Design System" (avril 2026), décrit l'architecture de production qu'elle maintient depuis un an : Claude Code au centre, connecté via MCP à 12 outils (Figma/Tidy, GitHub, Storybook, PostHog, Granola, Sentry, Notion, Jira, Stylelint, Linear, Mintlify, Chromatic). Elle y formalise la boucle self-healing Watch/Analyze/Execute/Observe, documente son benchmark multi-modèles (Claude Code > Cursor/Codex/Gemini/GPT/Llama/Mistral sur les tâches de design system), et énonce le principe [[protocole-pas-produit]] : construire sur MCP signifie que la couche d'orchestration IA est remplaçable sans reconstruire les intégrations. La partie 3 est tronquée dans le vault — les sections "what AI genuinely cannot do" et "three phases" manquent dans le raw ([[self-healing-design-system]]).
+
+Son article "50 design token files, one problem: your agents can't read the meaning" (juin 2026) est son travail empirique le plus rigoureux sur les tokens. Elle audite les fichiers sources de 50 design systems publics — pas leurs sites de documentation, mais les fichiers réels qu'un agent chargerait. Elle y documente l'absence quasi-universelle de couche de sens dans ces fichiers : ~15/50 ont une description, ~10/50 ont un champ de dépréciation, **1/50 a une règle de non-usage** (GitHub Primer). Elle démontre par expérience contrôlée (fichier nu vs fichier annoté DTCG) que la présence d'un `$description` par token est la différence entre un agent qui devine (2/3 erreurs) et un agent qui sait (0/2 erreurs). Elle formule la distinction centrale : **readable ≠ usable** — et publie le template DTCG complet avec `$description`, `$deprecated`, `$extensions`. Voir [[readable-vs-usable-token]], [[dtcg-annotation-schema]], [[delegation-lens]], [[priori-conflictuels-nommage]].
+
+À l'AI Design Systems Conference 2026, organisée par [[sil-bormuller]], Kavcic intervient sur les "failure modes" des design systems face aux agents IA. Deux contributions spécifiques à cette conférence s'ajoutent à sa série publiée : le chiffrage à **30-40 % du temps d'équipe consacré à la maintenance pure** (régressions d'accessibilité, mauvais usages de tokens, documentation désynchronisée), et la formalisation de son self-healing loop via le framework **IBM MAPE-K** (Observe, Detect, Suggest, Fix, Learn) avec un drift-scoring engine alimenté par l'API Figma, les hooks CI et les analytics d'usage. Elle y présente également le cadre de [[niveaux-confiance-actions-agentiques]] par action agentique (auto-merge / draft PR / suggest only). Voir [[your-design-system-is-not-ready-for-ai-agents]] pour la synthèse complète.
+
+Son article "From Chatbot to Orchestration" (mai 2026) ([[agentic-ds-from-chatbot-to-orchestration]]) reformule le paradigme agentique autour de deux décalages conceptuels. Le premier : la question centrale n'est pas "comment générer plus vite" mais "est-ce que l'agent comprend *pourquoi* ce composant existe". Le second — et c'est sa contribution conceptuelle la plus originale — est le renversement composant → contrat : un composant agentique n'est plus quelque chose qu'on importe mais un accord entre design, code, intent produit, accessibilité et comportement. Voir [[composant-comme-contrat]]. L'article introduit aussi l'architecture d'orchestration multi-agents (designer agent / developer agent / doc agent / QA agent + orchestrateur) et l'inventaire des quatre risques de l'autonomie agentique : design debt machine-speed, fausse confiance dans la doc générée, manipulation UX par adaptation runtime, governance gaps. Voir [[orchestration-multi-agents]] et [[gouvernance-design-system-ia]].
+
+Son article "20 AI workflows that save design system teams 10+ hours a week" (février 2026) ([[20-ai-workflows-design-system-teams]]) est son catalogue opérationnel le plus exhaustif : 20 workflows concrets groupés en cinq domaines (composants, documentation, stratégie, tokens, adoption). Il introduit le pattern [[audit-tokens-playwright]] (Planner/Generator/Healer), le concept de [[bypass-patterns-comme-user-research]], et [[assistant-ia-24h]] (OpenClaw). Il confirme l'architecture `.ai/` directory comme couche d'instructions projet, et propose les build-time metrics comme alternative aux métriques runtime invasives.
+
+Son article "Design Systems That Document AI" (juin 2026) change d'angle : après avoir traité de l'IA comme opérateur du design system, Kavcic analyse comment les design systems documentent les *fonctionnalités IA pour les utilisateurs humains*. L'étude porte sur 156 systèmes publics — 83 % sans aucune couche IA. Elle établit un [[modele-maturite-ia-design-system|modèle de maturité en cinq niveaux]] et identifie les [[quatre-regles-ia-ux|quatre règles convergentes]] issues des organisations les plus avancées. La distinction entre ces deux lectures du "design system et IA" est formalisée dans [[deux-lectures-du-design-system-ia]].
+
+Son article "The Design System Advantage Is Memory" (mai 2026) ([[design-system-advantage-is-memory]]) est peut-être sa contribution conceptuelle la plus tranchante. Partant de son expérience directe (105 outils MCP connectés, résultat insuffisant), elle reformule la question de l'IA-readiness : l'avantage n'est pas le modèle, le nombre d'outils ou le prompt — c'est la mémoire institutionnelle rendue retrievable. Elle structure le problème autour de la distinction "visible 10% / invisible 90%" (tokens et docs d'un côté, décisions et historiques de l'autre), propose une architecture en trois couches obligatoires (données → structure → agent), et documente son usage de QMD comme test minimal de signal avant d'investir dans un graphe complet. La thèse terminale — "The design system is no longer the deliverable. It is the dataset." — est la formulation la plus condensée de l'argument. Voir [[memoire-design-system]] et [[design-system-comme-dataset]].
