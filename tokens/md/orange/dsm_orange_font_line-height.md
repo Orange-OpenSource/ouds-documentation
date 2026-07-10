@@ -36,4 +36,4 @@
 | ouds.font.line-height.label.small | core-ouds.font.line-height.250 | 16px |
 | ouds.font.line-height.code.medium | core-ouds.font.line-height.350 | 20px |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

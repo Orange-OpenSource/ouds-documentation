@@ -19,4 +19,4 @@
 | ouds.grid.ios.regular.column-gap | core-ouds.grid.column-gap.400 | 24px |
 | ouds.grid.ios.regular.column-count | core-ouds.grid.column-count.600 | 6px |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

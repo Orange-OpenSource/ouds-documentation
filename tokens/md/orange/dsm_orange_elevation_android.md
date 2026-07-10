@@ -7,4 +7,4 @@
 | sys-android.elevation.emphasized | core-android.elevation.5 | 12px |
 | sys-android.elevation.sticky | core-android.elevation.3 | 6px |
 
-<br>Tokens versions: sys.android: 1.2.0 - sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.android: 1.2.0 - sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0

@@ -49,4 +49,4 @@
 | sys-android.color.surfaceVariant | core-wframe.color.functional.gray.dark.720 | #1f2632 | <div style="width:20px; height:20px; background-color:#1f2632; border: 1px solid #000000;"></div> |
 | sys-android.color.surfaceTint | core-wframe.color.functional.gray.dark.720 | #1f2632 | <div style="width:20px; height:20px; background-color:#1f2632; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.android: 1.2.0 - sys.wireframe: 2.5.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.android: 1.2.0 - sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0

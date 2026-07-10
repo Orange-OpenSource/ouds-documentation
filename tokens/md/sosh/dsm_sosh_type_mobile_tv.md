@@ -175,4 +175,4 @@
 | ouds.font.line-height.code.medium | core-ouds.font.line-height.350 | 20px |
 | ouds.font.letter-spacing.code.medium | core-ouds.font.letter-spacing.200 | 0.17px |
 
-<br>Tokens versions: sys.sosh: 2.5.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0

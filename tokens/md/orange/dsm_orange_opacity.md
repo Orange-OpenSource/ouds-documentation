@@ -9,4 +9,4 @@
 | ouds.opacity.opaque | core-ouds.opacity.1000 | 100 |
 | ouds.opacity.disabled | core-ouds.opacity.200 | 20 |
 
-<br>Tokens versions: sys.orange: 2.5.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
