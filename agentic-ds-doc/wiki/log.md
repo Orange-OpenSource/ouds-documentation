@@ -1,6 +1,78 @@
 ---
 type: log
-updated: 2026-07-09
+updated: 2026-07-16
+---
+
+## [2026-07-16] ingest | 4 Sev-1s in 90 Days: The Real Cost of Amazon's Vibe Coding Bet (Tom Piaggio) (via veille web)
+Thème de veille : échecs documentés et gouvernance organisationnelle réelle des design systems agentiques
+Pages créées : [amazon-vibe-coding-4-sev1-90-days](sources/amazon-vibe-coding-4-sev1-90-days.md) (source)
+Pages mises à jour : [accountability-gap-ia](concepts/accountability-gap-ia.md) (+premier incident documenté, nommé, chiffré du vault), [niveaux-confiance-actions-agentiques](concepts/niveaux-confiance-actions-agentiques.md) (+contre-exemple de calibration ratée), [gouvernance-organisationnelle-ia](concepts/gouvernance-organisationnelle-ia.md) (+cas de gouvernance construite après incident)
+Note : Comble le GAP le plus structurel du vault — jusqu'ici aucun incident réel d'échec de déploiement IA n'était documenté ; [accountability-gap-ia](concepts/accountability-gap-ia.md) restait entièrement théorique.
+
+---
+
+## [2026-07-16] ingest | Who Owns AI-Generated Code When It Ships to Production? (Lance Dacy, Big Agile) (via veille web)
+Thème de veille : échecs documentés et gouvernance organisationnelle réelle des design systems agentiques
+Pages créées : [big-agile-who-owns-ai-generated-code](sources/big-agile-who-owns-ai-generated-code.md) (source), [modele-accountability-trois-couches](concepts/modele-accountability-trois-couches.md) (concept)
+Pages mises à jour : [accountability-gap-ia](concepts/accountability-gap-ia.md) (+réponse structurelle : reviewer of record), [gouvernance-organisationnelle-ia](concepts/gouvernance-organisationnelle-ia.md) (+mécanisme concret pour les droits décisionnels)
+Note : Apporte le mécanisme correctif que le vault n'avait pas — un modèle à trois couches (individuelle/équipe/organisationnelle) à coût quasi nul, complémentaire au problème déjà documenté par Murphy Trueman.
+
+---
+
+## [2026-07-16] ingest | Why AI Breaks Your Design System (and How to Fix the Drift) (Jason Zhou, Superdesign) (via veille web)
+Thème de veille : échecs documentés et gouvernance organisationnelle réelle des design systems agentiques
+Pages créées : [superdesign-ai-design-system-drift](sources/superdesign-ai-design-system-drift.md) (source), [derive-design-system-ia](concepts/derive-design-system-ia.md) (concept)
+Pages mises à jour : [readable-vs-usable-token](concepts/readable-vs-usable-token.md) (+lien fabrication de tokens comme conséquence comportementale)
+Note : Premier document du vault à documenter des modes de défaillance design-system-spécifiques (fabrication de tokens, dérive intra-session, amnésie inter-session, ruptures silencieuses) avec un mécanisme causal, plutôt que l'affirmation générale que l'IA fait des erreurs.
+
+---
+
+## [2026-07-16] ingest | AI Now Writes the Code. Who's Accountable When It Breaks? (Pramin Pradeep) (via veille web)
+Thème de veille : échecs documentés et gouvernance organisationnelle réelle des design systems agentiques
+Pages créées : [ai-journal-who-accountable-ai-code-breaks](sources/ai-journal-who-accountable-ai-code-breaks.md) (source), [shadow-code](concepts/shadow-code.md) (concept)
+Pages mises à jour : [shadow-ia-design-system](concepts/shadow-ia-design-system.md) (+disambiguation shadow AI vs shadow code), [accountability-gap-ia](concepts/accountability-gap-ia.md) (+mécanisme d'opacité)
+Note : Introduit le shadow code, distinct du shadow AI déjà documenté — l'opacité du code produit plutôt que le contournement du design system.
+
+---
+
+## [2026-07-16] ingest | Vibe Coding Failures: Documented AI Code Incidents (Crackr AI) (via veille web)
+Thème de veille : échecs documentés et gouvernance organisationnelle réelle des design systems agentiques
+Pages créées : [crackr-vibe-coding-failures-directory](sources/crackr-vibe-coding-failures-directory.md) (source)
+Pages mises à jour : aucune (source de référence bibliographique)
+Note : Répertoire de 19 incidents documentés avec sources vérifiables — confirme que le cas Amazon n'est pas isolé.
+
+---
+
+## [2026-07-16] ingest | 5 MCP Connections Every Design System Team Needs Right Now (Romina Kavcic) (via veille web)
+Thème de veille : agentic design system
+Pages créées : [romina-kavcic-5-mcp-connections](sources/romina-kavcic-5-mcp-connections.md) (source)
+Pages mises à jour : [mcp-model-context-protocol](concepts/mcp-model-context-protocol.md) (+section inventaire pratique de connecteurs MCP par complexité d'installation), [romina-kavcic](entities/romina-kavcic.md) (+article août 2025, antérieur à la série Agentic Design Systems)
+Note : Premier document du vault à traiter GitLab et Slack comme connecteurs MCP à part entière avec usage détaillé, plutôt que comme mentions en passant.
+
+---
+
+## [2026-07-16] ingest | Design Systems Just Became AI Governance Infrastructure (Thiago Victorino) (via veille web)
+Thème de veille : agentic design system
+Pages créées : [victorino-design-governance-agent-era](sources/victorino-design-governance-agent-era.md) (source), [thiago-victorino](entities/thiago-victorino.md) (entité), [ecriture-agents-canvas-design](concepts/ecriture-agents-canvas-design.md) (concept)
+Pages mises à jour : [architecture-skills-rules-instructions](concepts/architecture-skills-rules-instructions.md) (+section Figma Skills comme gouvernance-as-code), [gouvernance-technique-ia](concepts/gouvernance-technique-ia.md) (+section complétude comme métrique de sécurité), [generation-spec-agentique](concepts/generation-spec-agentique.md) (+précédent uSpec pour l'écriture agentique dans le canvas), [figma](entities/figma.md) (+section passage lecture→écriture)
+Note : Premier document du vault à documenter le MCP Figma en écriture (beta mars 2026, pas seulement lecture) — nouveau concept créé car aucune page n'existait sur cette distinction lecture/écriture, structurellement différente de la gouvernance post-génération déjà bien couverte.
+
+---
+
+## [2026-07-16] ingest | Design systems and AI: Why MCP servers are the unlock (Ana Boyer, Figma) (via veille web)
+Thème de veille : agentic design system
+Pages créées : [figma-design-systems-ai-mcp](sources/figma-design-systems-ai-mcp.md) (source), [figma](entities/figma.md) (entité)
+Pages mises à jour : [mcp-model-context-protocol](concepts/mcp-model-context-protocol.md) (+section trois usages Figma MCP + génération automatique de fichier de règles), [architecture-skills-rules-instructions](concepts/architecture-skills-rules-instructions.md) (+détail mécanisme figma-create-design-system-rules), [metriques-adoption-ia-design-system](concepts/metriques-adoption-ia-design-system.md) (+écart 68%/32% adoption/confiance, Figma AI report 2025)
+Note : Première entité dédiée à Figma dans le vault malgré des dizaines de mentions préexistantes — source primaire éditeur qui comble ce trou de sourcing direct.
+
+---
+
+## [2026-07-16] ingest | Storybook MCP for AI-aware component libraries (Ikeh Akinyemi, LogRocket) (via veille web)
+Thème de veille : agentic design system
+Pages créées : [storybook-mcp-ai-aware-component-libraries](sources/storybook-mcp-ai-aware-component-libraries.md) (source), [storybook](entities/storybook.md) (entité)
+Pages mises à jour : [mcp-model-context-protocol](concepts/mcp-model-context-protocol.md) (+section démonstration avant/après sur le quatrième point d'entrée Storybook), [boucle-feedback-infrastructure](concepts/boucle-feedback-infrastructure.md) (+première instance entièrement automatisée du cycle Watch/Analyze/Execute/Observe, à l'échelle d'un composant), [composant-comme-contrat](concepts/composant-comme-contrat.md) (+preuve d'exécution contrôlée : même agent, même prompt, comportement radicalement différent avec/sans contrat)
+Note : Première source du vault à démontrer, avec code et chiffres avant/après, qu'un agent peut détecter, diagnostiquer et corriger seul un composant partagé sans validation humaine intermédiaire — la boucle self-healing documentée jusqu'ici seulement au niveau conceptuel (Kavcic) ou semi-manuel (Morales Achiardi) devient ici vérifiable à l'échelle d'un composant.
+
 ---
 
 ## [2026-07-09] ingest | Building language for design systems (Achiardi, juillet 2026) (via veille web)

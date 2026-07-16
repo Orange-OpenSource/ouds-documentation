@@ -2,11 +2,13 @@
 type: concept
 tags: [design-system, agents, specs, documentation, mcp, figma, accessibilite, uber]
 created: 2026-06-24
-updated: 2026-06-29
+updated: 2026-07-16
 sources:
   - "[uber-uspec-agentic-design-specs](../sources/uber-uspec-agentic-design-specs.md)"
   - "[figma-ouds-button-specs](../sources/figma-ouds-button-specs.md)"
+  - "[victorino-design-governance-agent-era](../sources/victorino-design-governance-agent-era.md)"
 related:
+  - "[ecriture-agents-canvas-design](ecriture-agents-canvas-design.md)"
   - "[pipeline-figma-docs-automatise](pipeline-figma-docs-automatise.md)"
   - "[processus-generation-metadata-echelle](processus-generation-metadata-echelle.md)"
   - "[skills-avant-mcp](skills-avant-mcp.md)"
@@ -45,6 +47,10 @@ Chaque section est un skill autonome : **Anatomy** (marqueurs numérotés sur l'
 La section screen reader est l'exemple le plus saillant de ce que l'automatisation débloque. Écrire correctement une spec d'accessibilité multi-plateforme requiert de cross-référencer manuellement les documentations VoiceOver (modificateurs et traits), TalkBack (semantics), et ARIA (rôles et états) — chacune avec des centaines de propriétés, chacune différente. Une erreur dans une propriété signifie une expérience cassée pour les utilisateurs d'assistive technology. ([uber-uspec-agentic-design-specs](../sources/uber-uspec-agentic-design-specs.md))
 
 uSpec génère une spec screen reader couvrant les 3 plateformes en moins de 2 minutes. En production chez Uber : ce qui nécessitait des heures de travail par composant est devenu une invocation d'agent. Un système avec des centaines de composants qui demandait des mois de rédaction peut désormais générer des specs complètes en jours.
+
+## Précédent de l'écriture agentique dans le canvas
+
+uSpec écrit directement dans Figma près d'un an avant l'ouverture officielle du Figma MCP en écriture (beta mars 2026, voir [ecriture-agents-canvas-design](ecriture-agents-canvas-design.md)). La différence de portée reste nette : uSpec écrit de la documentation structurée (specs, anatomie, annotations), pas des composants d'interface destinés à être livrés tels quels dans le produit. Mais le mécanisme de contrainte est apparenté — l'agent lit la structure réelle du composant via MCP avant d'écrire, il ne peut pas halluciner un nom de token qui n'existe pas dans le fichier.
 
 ## Rendu direct dans Figma
 

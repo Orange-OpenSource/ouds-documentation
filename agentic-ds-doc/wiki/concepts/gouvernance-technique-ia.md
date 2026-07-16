@@ -2,7 +2,7 @@
 type: concept
 tags: [gouvernance, design-system, ia, audit, tokens, contraintes-executables, metriques, orchestration, infrastructure]
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-16
 sources:
   - "[towards-agentic-design-system](../sources/towards-agentic-design-system.md)"
   - "[design-system-documentation-as-structured-metadata](../sources/design-system-documentation-as-structured-metadata.md)"
@@ -14,7 +14,9 @@ sources:
   - "[your-design-system-is-not-ready-for-ai-agents](../sources/your-design-system-is-not-ready-for-ai-agents.md)"
   - "[agentic-ds-from-chatbot-to-orchestration](../sources/agentic-ds-from-chatbot-to-orchestration.md)"
   - "[machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)"
+  - "[victorino-design-governance-agent-era](../sources/victorino-design-governance-agent-era.md)"
 related:
+  - "[ecriture-agents-canvas-design](ecriture-agents-canvas-design.md)"
   - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
   - "[gouvernance-organisationnelle-ia](gouvernance-organisationnelle-ia.md)"
   - "[protocole-arc](protocole-arc.md)"
@@ -102,6 +104,10 @@ Les règles doivent passer de descriptives à exécutables. Une page qui dit "ut
 [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) formule la limite fondamentale de cette couche dans [human-layer-agentic-design-systems](../sources/human-layer-agentic-design-systems.md) : "The system can enforce what you encode. It can audit against rules you define. What it can't do is know that you encoded something wrong in the first place."
 
 L'exemple concret : l'échelle de jaune primitif incorrectement calibrée chez Enara. Le token auditor a confirmé que tous les tokens étaient correctement utilisés — l'erreur était dans les valeurs primitives elles-mêmes, une couche que l'auditeur n'audite pas parce qu'elle est la source de vérité. Ce qui a fermé la boucle, c'est un humain qui a fait confiance au système assez pour tracer le problème plutôt que le contourner. La gouvernance technique est un amplificateur de la rigueur des humains qui l'alimentent, pas un substitut à cette rigueur.
+
+## La complétude comme métrique de sécurité (Victorino, mars 2026)
+
+[victorino-design-governance-agent-era](../sources/victorino-design-governance-agent-era.md) déplace le regard de la gouvernance technique en amont de l'audit post-génération : quand un agent peut écrire directement dans le canvas Figma (voir [ecriture-agents-canvas-design](ecriture-agents-canvas-design.md)) et se contraint à n'utiliser que ce qui existe dans la bibliothèque de composants, la *couverture* du design system devient elle-même le mécanisme de gouvernance. Un système qui ne couvre que 60 % des patterns d'un produit laisse l'agent improviser les 40 % restants sans aucune contrainte structurelle. La couverture cesse d'être un OKR d'équipe design pour devenir une métrique de risque — un complément en amont aux auditeurs v1/v2 et aux contraintes exécutables déjà documentés dans ce concept, qui opèrent tous en aval de la génération.
 
 ## ⚡ Tension : "Le prompt gagne sur les guidelines" (Laura Fehre)
 

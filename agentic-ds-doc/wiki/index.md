@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-07-09
+updated: 2026-07-16
 ---
 
 # Index du Wiki
@@ -64,9 +64,13 @@ updated: 2026-07-09
 
 ### Gouvernance et automatisation avancée
 - [shadow-ia-design-system](concepts/shadow-ia-design-system.md) — Usage IA par d'autres équipes sans le DS : 50% des équipes touchées, 6 modes de bypass, réponse économique pas réglementaire
+- [shadow-code](concepts/shadow-code.md) — Code produit par IA jamais pleinement compris ni audité, même quand il respecte le DS ; distinct du shadow AI (contournement)
+- [modele-accountability-trois-couches](concepts/modele-accountability-trois-couches.md) — Reviewer of record nommé + catégories d'équipe + politique organisationnelle : réponse structurelle à l'accountability gap
+- [derive-design-system-ia](concepts/derive-design-system-ia.md) — Quatre modes de dérive design-system induits par l'IA : fabrication de tokens, dérive intra-session, amnésie inter-session, ruptures silencieuses
 - [accessibilite-continue](concepts/accessibilite-continue.md) — Accessibilité baked-in plutôt que retrofit ; vérification à chaque composant/état/token
 - [systeme-design-proactif](concepts/systeme-design-proactif.md) — Design system qui détecte des patterns émergents et anticipe ses propres évolutions
 - [protocole-pas-produit](concepts/protocole-pas-produit.md) — Construire sur MCP rend la couche d'orchestration IA swappable sans reconstruire les intégrations
+- [ecriture-agents-canvas-design](concepts/ecriture-agents-canvas-design.md) — Le MCP Figma passe de la lecture à l'écriture ; la couverture du DS devient une métrique de sécurité
 
 ### Approches sans infrastructure MCP
 - [workflows-agent-sans-mcp](concepts/workflows-agent-sans-mcp.md) — ChatGPT Project + fichiers MD : 6 workflows opérationnels sans MCP, sans base vectorielle (Step 1 avant toute infrastructure)
@@ -100,6 +104,7 @@ updated: 2026-07-09
 - [jesse-gardner](entities/jesse-gardner.md) — Director User Research, New York State ; approche code-as-source-of-truth
 - [laura-fehre](entities/laura-fehre.md) — Designer Advocate Figma ; "Guidelines are not laws"
 - [pj-onori](entities/pj-onori.md) — Auteur et mainteneur de DSDS (Design System Documentation Spec)
+- [thiago-victorino](entities/thiago-victorino.md) — Fondateur Victorino Group, newsletter The Thinking Wire ; gouvernance IA mid-market
 
 ### Organisations & événements
 - [into-design-systems-conference](entities/into-design-systems-conference.md) — Conférence IDS 2025 et 2026
@@ -108,6 +113,8 @@ updated: 2026-07-09
 - [granola](entities/granola.md) — Notes de réunion IA avec support MCP
 - [mintlify](entities/mintlify.md) — Hébergement de documentation avec auto-deploy sur push Git
 - [arc-protocol-rpc](entities/arc-protocol-rpc.md) — Protocole RPC open-source pour communication inter-agents (endpoint unique, post-quantique, ARC Ledger + ARC Compass)
+- [storybook](entities/storybook.md) — Outil de développement isolé de composants ; addon MCP depuis la v10.3 ; toolset test permet auto-correction
+- [figma](entities/figma.md) — Outil de design ; MCP server (lecture puis écriture depuis mars 2026), Code Connect, Figma Skills
 
 ---
 
@@ -156,6 +163,15 @@ updated: 2026-07-09
 - [design-systems-contracts-not-libraries](sources/design-systems-contracts-not-libraries.md) — Achiardi, "Design systems are contracts, not libraries" (mai 2026) — atomic design comme hiérarchie de contrats ; distinction contrat vs bibliothèque
 - [building-language-design-systems](sources/building-language-design-systems.md) — Achiardi, "Building language for design systems" (juillet 2026) — vocabulaire d'intent + grammaire d'assemblage + contrats machine-lisibles = fondation conceptuelle de la Phase 3 Compose
 - [arc-protocol-agent-remote-communication](sources/arc-protocol-agent-remote-communication.md) — ARC Protocol (arc-protocol.org, 2026) — protocole RPC stateless inter-agents, chiffrement post-quantique, endpoint unique, ARC Ledger + ARC Compass
+- [storybook-mcp-ai-aware-component-libraries](sources/storybook-mcp-ai-aware-component-libraries.md) — Ikeh Akinyemi (LogRocket), "Storybook MCP for AI-aware component libraries" (2026-07-06) — démonstration avant/après + boucle self-healing entièrement automatisée sur un composant partagé
+- [figma-design-systems-ai-mcp](sources/figma-design-systems-ai-mcp.md) — Ana Boyer (Figma), "Design systems and AI: Why MCP servers are the unlock" (2025-08-06) — source primaire éditeur : trois usages MCP, génération automatique de fichier de règles, écart 68%/32% adoption/confiance
+- [victorino-design-governance-agent-era](sources/victorino-design-governance-agent-era.md) — Thiago Victorino, "Design Systems Just Became AI Governance Infrastructure" (2026-03-26) — MCP Figma en écriture, Figma Skills comme gouvernance-as-code, complétude du DS comme métrique de sécurité
+- [romina-kavcic-5-mcp-connections](sources/romina-kavcic-5-mcp-connections.md) — Romina Kavcic, "5 MCP Connections Every Design System Team Needs Right Now" (2025-08-22) — inventaire pratique de 6 connecteurs MCP par complexité d'installation
+- [amazon-vibe-coding-4-sev1-90-days](sources/amazon-vibe-coding-4-sev1-90-days.md) — Tom Piaggio (Autonoma AI), "4 Sev-1s in 90 Days" (2026-03-19) — premier incident nommé et chiffré du vault : 4 pannes de production Amazon liées à l'IA générative en 90 jours
+- [big-agile-who-owns-ai-generated-code](sources/big-agile-who-owns-ai-generated-code.md) — Lance Dacy, "Who Owns AI-Generated Code When It Ships to Production?" (2026-06-01) — modèle d'accountability à trois couches, reviewer of record
+- [superdesign-ai-design-system-drift](sources/superdesign-ai-design-system-drift.md) — Jason Zhou (Superdesign), "Why AI Breaks Your Design System" (2026-06-22) — taxonomie des quatre modes de dérive design-system induits par l'IA
+- [ai-journal-who-accountable-ai-code-breaks](sources/ai-journal-who-accountable-ai-code-breaks.md) — Pramin Pradeep, "AI Now Writes the Code. Who's Accountable When It Breaks?" (2026-07-05) — concept de shadow code, statistiques de blâme distribué
+- [crackr-vibe-coding-failures-directory](sources/crackr-vibe-coding-failures-directory.md) — Crackr AI, "Vibe Coding Failures: Documented AI Code Incidents" (2026-03) — répertoire de 19 incidents documentés avec sources
 
 ---
 

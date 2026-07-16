@@ -2,13 +2,14 @@
 type: concept
 tags: [métriques, adoption, ia, design-system, gouvernance, mcp, mesure, outils, satisfaction]
 created: 2026-06-22
-updated: 2026-07-06
+updated: 2026-07-16
 sources:
   - "[miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)"
   - "[atlassian-design-md-lessons](../sources/atlassian-design-md-lessons.md)"
   - "[zeroheight-design-systems-report-2026](../sources/zeroheight-design-systems-report-2026.md)"
   - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
   - "[20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)"
+  - "[figma-design-systems-ai-mcp](../sources/figma-design-systems-ai-mcp.md)"
 related:
   - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
   - "[boucle-feedback-infrastructure](boucle-feedback-infrastructure.md)"
@@ -60,6 +61,10 @@ Atlassian précise explicitement que ces résultats ne sont "pas conclusifs" hor
 Lecture croisée avec le vault : le gap n'est pas un problème de satisfaction envers les outils IA en général. Les outils fonctionnent. Le problème est que les équipes les appliquent sur des DS non préparés pour la consommation agentique — pas de metadata machine-readable, pas de MCP, nommage opaque — et obtiennent des sorties inconsistantes. La déception est structurelle, pas conjoncturelle.
 
 Donnée additionnelle : 12 % des équipes utilisent l'IA pour la livraison de documentation, 57 % souhaiteraient le faire — soit un gap aspirationnel de 45 points sur le cas d'usage le plus direct. Ce chiffre valide l'absence de pipeline pipeline Figma→docs comme lacune opérationnelle majeure dans les équipes. En attendant la transformation d'infrastructure, les 44 % restants documentent encore manuellement.
+
+## L'écart adoption/confiance (Figma AI report 2025)
+
+[figma-design-systems-ai-mcp](../sources/figma-design-systems-ai-mcp.md) cite un chiffre structurant du rapport IA interne de Figma (2025) : **68 % des développeurs utilisent déjà l'IA pour écrire du code, mais seulement 32 % font confiance à l'output généré**. Cet écart de 36 points est d'une nature différente du gap adoption/satisfaction de zeroheight documenté plus bas (qui mesure la satisfaction *a posteriori* par cas d'usage) : ici, c'est un écart entre usage et confiance *au moment même de l'usage* — les développeurs utilisent l'outil tout en doutant de son résultat. L'argument de Figma est que le contexte design system, pas un modèle plus puissant, est ce qui comble cet écart.
 
 ## Lien avec la gouvernance
 

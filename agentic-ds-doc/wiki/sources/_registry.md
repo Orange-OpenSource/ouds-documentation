@@ -2,7 +2,7 @@
 type: index
 tags: [registry, sources, deduplication]
 created: 2026-06-24
-updated: 2026-07-09
+updated: 2026-07-16
 ---
 
 ## Registre des sources ingérées
@@ -51,3 +51,13 @@ Ce fichier est maintenu automatiquement par le skill `web-veille`. Il liste tout
 | [design-systems-contracts-not-libraries](design-systems-contracts-not-libraries.md) | Design systems are contracts, not libraries (Achiardi) | https://www.designsystemscollective.com/design-systems-are-contracts-not-libraries-4876d8e1d401 | 2026-07-09 |
 | [building-language-design-systems](building-language-design-systems.md) | Building language for design systems (Achiardi) | https://www.designsystemscollective.com/building-language-for-design-systems-1b2f260b0bdf | 2026-07-09 |
 | [arc-protocol-agent-remote-communication](arc-protocol-agent-remote-communication.md) | Agent Remote Communication Protocol (ARC Protocol) | https://arc-protocol.org/ | 2026-07-09 |
+| [into-design-systems-agentic-guide](into-design-systems-agentic-guide.md) | Agentic Design Systems: The Complete Guide (Into Design Systems) | https://www.intodesignsystems.com/agentic-design-systems | 2026-06-24 |
+| [storybook-mcp-ai-aware-component-libraries](storybook-mcp-ai-aware-component-libraries.md) | Storybook MCP for AI-aware component libraries (Ikeh Akinyemi, LogRocket) | https://blog.logrocket.com/storybook-mcp-component-libraries/ | 2026-07-16 |
+| [figma-design-systems-ai-mcp](figma-design-systems-ai-mcp.md) | Design systems and AI: Why MCP servers are the unlock (Ana Boyer, Figma) | https://www.figma.com/blog/design-systems-ai-mcp/ | 2026-07-16 |
+| [victorino-design-governance-agent-era](victorino-design-governance-agent-era.md) | Design Systems Just Became AI Governance Infrastructure (Thiago Victorino) | https://victorinollc.com/thinking/design-governance-agent-era | 2026-07-16 |
+| [romina-kavcic-5-mcp-connections](romina-kavcic-5-mcp-connections.md) | 5 MCP Connections Every Design System Team Needs Right Now (Romina Kavcic) | https://learn.thedesignsystem.guide/p/5-mcp-connections-every-design-system | 2026-07-16 |
+| [amazon-vibe-coding-4-sev1-90-days](amazon-vibe-coding-4-sev1-90-days.md) | 4 Sev-1s in 90 Days: The Real Cost of Amazon's Vibe Coding Bet (Tom Piaggio) | https://getautonoma.com/blog/amazon-vibe-coding-lessons | 2026-07-16 |
+| [big-agile-who-owns-ai-generated-code](big-agile-who-owns-ai-generated-code.md) | Who Owns AI-Generated Code When It Ships to Production? (Lance Dacy) | https://big-agile.com/blog/who-owns-ai-generated-code-when-it-ships-building-a-chain-of-human-accountability | 2026-07-16 |
+| [superdesign-ai-design-system-drift](superdesign-ai-design-system-drift.md) | Why AI Breaks Your Design System (and How to Fix the Drift) (Jason Zhou) | https://superdesign.dev/blog/ai-design-system-drift | 2026-07-16 |
+| [ai-journal-who-accountable-ai-code-breaks](ai-journal-who-accountable-ai-code-breaks.md) | AI Now Writes the Code. Who's Accountable When It Breaks? (Pramin Pradeep) | https://aijourn.com/ai-now-writes-the-code-whos-accountable-when-it-breaks/ | 2026-07-16 |
+| [crackr-vibe-coding-failures-directory](crackr-vibe-coding-failures-directory.md) | Vibe Coding Failures: Documented AI Code Incidents (Crackr AI) | https://crackr.dev/vibe-coding-failures | 2026-07-16 |

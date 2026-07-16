@@ -2,11 +2,12 @@
 type: concept
 tags: [design-system, agentic, composants, contrats, ia, intent, gouvernance, langage]
 created: 2026-07-03
-updated: 2026-07-09
+updated: 2026-07-16
 sources:
   - "[agentic-ds-from-chatbot-to-orchestration](../sources/agentic-ds-from-chatbot-to-orchestration.md)"
   - "[design-systems-contracts-not-libraries](../sources/design-systems-contracts-not-libraries.md)"
   - "[building-language-design-systems](../sources/building-language-design-systems.md)"
+  - "[storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md)"
 related:
   - "[composants-context-aware](composants-context-aware.md)"
   - "[trois-couches-composants-agents](trois-couches-composants-agents.md)"
@@ -64,6 +65,12 @@ Achiardi radicalise cette formulation dans [design-systems-contracts-not-librari
 Cette lecture articule les niveaux : le composant-comme-contrat ([agentic-ds-from-chatbot-to-orchestration](../sources/agentic-ds-from-chatbot-to-orchestration.md)) est la vue micro — ce que *ce composant* engage. La formulation d'Achiardi est la vue macro — ce que *le système entier* engage vis-à-vis de ses consommateurs. Les deux niveaux sont nécessaires : un composant peut respecter son propre contrat tout en violant le contrat systémique (usage dans un contexte non prévu, combinaison non répertoriée dans la grammaire).
 
 La conséquence pour la [Phase 3 (Compose)](protocole-arc.md) : pour que l'agent compose en respectant les contrats à tous les niveaux, les contrats doivent être déclarés à tous les niveaux — des tokens aux composants aux patterns. C'est ce que [langage-design-system](langage-design-system.md) formalise comme la couche "contrat" du langage.
+
+## Preuve d'exécution : le contrat comme rempart anti-hallucination (Storybook MCP)
+
+[storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md) apporte au vault sa première démonstration contrôlée et reproductible de ce que fait concrètement un contrat de composant explicite. Le même agent (Claude Code), sur le même prompt, produit deux résultats radicalement différents selon qu'il a accès ou non au contrat de props via `get-documentation` : sans lui, il invente 263 lignes de HTML avec sa propre logique de validation, zéro appel d'outil ; avec lui, il fait six appels d'outils avant d'écrire du code, puis compose 188 lignes où chaque prop (`variant`, `size`, `error`, `onChange`) correspond exactement au contrat TypeScript documenté.
+
+C'est la validation empirique la plus directe de la thèse de ce concept : le contrat n'est pas une couche de documentation optionnelle, c'est ce qui détermine si l'agent *invente* ou *respecte*. La différence ne se mesure pas seulement au résultat final mais au comportement de génération lui-même — le nombre d'appels d'outils avant la première ligne de code est un indicateur direct de si l'agent consulte le contrat ou improvise.
 
 ## ⚡ Tension : contrat vs flexibilité
 

@@ -2,16 +2,19 @@
 type: concept
 tags: [gouvernance, design-system, ia, organisation, accountability, decision-rights, politique, plateforme]
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-16
 sources:
   - "[design-system-ai-ready-organisation-not](../sources/design-system-ai-ready-organisation-not.md)"
   - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
   - "[wwdc-2026-apple-ai-native-os-levinriegner](../sources/wwdc-2026-apple-ai-native-os-levinriegner.md)"
   - "[human-layer-agentic-design-systems](../sources/human-layer-agentic-design-systems.md)"
+  - "[amazon-vibe-coding-4-sev1-90-days](../sources/amazon-vibe-coding-4-sev1-90-days.md)"
+  - "[big-agile-who-owns-ai-generated-code](../sources/big-agile-who-owns-ai-generated-code.md)"
 related:
   - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
   - "[gouvernance-technique-ia](gouvernance-technique-ia.md)"
   - "[accountability-gap-ia](accountability-gap-ia.md)"
+  - "[modele-accountability-trois-couches](modele-accountability-trois-couches.md)"
   - "[concevoir-les-conditions](concevoir-les-conditions.md)"
   - "[murphy-trueman](../entities/murphy-trueman.md)"
   - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
@@ -53,6 +56,14 @@ WWDC 2026 documente une forme de gouvernance design system inédite dans le corp
 Ce cas éclaire une limite des modèles de gouvernance documentés dans ce vault (Kavcic, Six, Wolosin) : ils supposent une organisation qui contrôle son propre système. Quand la plateforme impose un changement, le contrôle est partiel. Les tokens sémantiques internes peuvent rester cohérents, mais si le rendu visuel de la plateforme change de façon non-négociable, la cohérence du design system est conditionnelle à la stabilité de la plateforme en dessous.
 
 La convergence avec [concevoir-les-conditions](concevoir-les-conditions.md) reste : les équipes qui ont architecturé leurs tokens de façon sémantique (role-based plutôt que value-based) absorbent mieux un tel changement de plateforme que celles qui avaient hardcodé des valeurs. La gouvernance interne ne protège pas contre les mandats plateforme, mais elle peut réduire le coût de l'adaptation.
+
+## Un mécanisme concret pour les droits décisionnels : le reviewer of record
+
+[modele-accountability-trois-couches](modele-accountability-trois-couches.md) répond directement à la première des quatre dimensions non résolues listées plus haut. Plutôt que de définir les droits décisionnels comme un document de politique abstrait, Lance Dacy propose une pratique testée à coût quasi nul : une ligne "Reviewer of record : [nom]" sur chaque PR assistée par IA. C'est une opérationnalisation minimale de "qui peut approuver de l'output IA pour la production" — la question posée par Trueman trouve ici une réponse au niveau du geste de travail quotidien plutôt qu'au niveau de la politique d'entreprise.
+
+## Le cas Amazon : gouvernance organisationnelle construite après l'incident
+
+[amazon-vibe-coding-4-sev1-90-days](../sources/amazon-vibe-coding-4-sev1-90-days.md) documente ce qui arrive quand les droits décisionnels ne sont pas établis avant la pression : un mandat d'adoption à 80 % lancé sans que les couches équipe et organisationnelle du modèle d'accountability soient définies, quatre incidents Sev-1 en 90 jours, puis un cadre de sécurité réactif (sign-off senior, review à deux personnes, audits VP) imposé dans l'urgence sur 335 systèmes. C'est un cas de manuel de la thèse de Trueman : "They're the ones who got serious about decision rights before AI forced the question" — Amazon ne l'a pas fait, et la question a été forcée par une panne de 6h à 6,3M commandes perdues plutôt que par une décision anticipée.
 
 ## ⚡ Tension : la gouvernance organisationnelle précède la gouvernance technique
 

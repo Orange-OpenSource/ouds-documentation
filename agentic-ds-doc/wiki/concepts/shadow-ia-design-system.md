@@ -2,10 +2,11 @@
 type: concept
 tags: [shadow-ai, design-system, gouvernance, bypass, ia, adoption, derive, accessibilite]
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-16
 sources:
   - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
 related:
+  - "[shadow-code](shadow-code.md)"
   - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
   - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
   - "[design-system-as-infrastructure](design-system-as-infrastructure.md)"
@@ -58,6 +59,10 @@ Ce diagnostic converge avec [lisibilite-machine-design-system](lisibilite-machin
 Le Shadow AI est une nouvelle couche au problème de [gouvernance-design-system-ia](gouvernance-design-system-ia.md). La gouvernance existante (auditeurs de tokens, drift scoring, niveaux de confiance) adresse les agents opérant à l'intérieur du DS — ceux qui lisent les métadonnées, utilisent le MCP, respectent les contrats. Le Shadow AI adresse les agents opérant en dehors, sans connexion au DS.
 
 La gouvernance du Shadow AI requiert une infrastructure distincte : des outils de détection de bypass à l'échelle (crawl d'applications, détection de composants non-DS), des signaux dans les outils que les équipes produit utilisent (linting dans Figma Make, alertes Cursor), et un modèle de partenariat plutôt que de contrôle — parce que les équipes qui bypassen le DS le font pour résoudre des problèmes réels, et la solution est de rendre le DS meilleur à résoudre ces problèmes.
+
+## ⚡ Disambiguation avec le shadow code
+
+À ne pas confondre avec [shadow-code](shadow-code.md), concept distinct introduit dans le vault le 2026-07-16 : le Shadow AI décrit ici est un problème de *contournement* (l'UI générée ne passe pas par le design system, avec ou sans intention). Le shadow code est un problème d'*opacité* (le code passe par les bons canaux, peut même respecter le design system, mais personne n'a tracé ses hypothèses ni son comportement sous conditions limites). Un artefact peut être Shadow AI sans être shadow code (un prototype Figma Make visible et reconnu comme hors-système) et inversement (du code généré via le MCP officiel du design system, donc non-Shadow AI, mais jamais audité en profondeur). Les deux se renforcent : un DS que les agents contournent structurellement produit plus de surface pour l'opacité, parce que moins de code passe par les contrôles centralisés de l'équipe DS.
 
 ## ⚡ Tension : le DS comme infrastructure vs. le DS comme goulot
 

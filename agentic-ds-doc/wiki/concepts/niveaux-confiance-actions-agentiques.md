@@ -2,10 +2,11 @@
 type: concept
 tags: [gouvernance, ia, design-system, confiance, automatisation, agentique, github, primer]
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-16
 sources:
   - "[your-design-system-is-not-ready-for-ai-agents](../sources/your-design-system-is-not-ready-for-ai-agents.md)"
   - "[wwdc-2026-apple-ai-native-os-levinriegner](../sources/wwdc-2026-apple-ai-native-os-levinriegner.md)"
+  - "[amazon-vibe-coding-4-sev1-90-days](../sources/amazon-vibe-coding-4-sev1-90-days.md)"
 related:
   - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
   - "[concevoir-les-conditions](concevoir-les-conditions.md)"
@@ -46,6 +47,10 @@ Le cadre triadique n'est pas sans coût. Placer trop d'actions au niveau "sugges
 ## Lien avec la boucle de feedback
 
 Les niveaux de confiance ne sont pas statiques. Ils doivent évoluer avec la maturité de l'infrastructure. Un agent qui produit des auto-merges fiables pendant 3 mois mérite probablement de voir son périmètre d'auto-merge élargi. La [boucle-feedback-infrastructure](boucle-feedback-infrastructure.md) fournit les métriques pour valider ce type de décision : taux d'erreur par type d'action, fréquence de rollback, violations détectées post-merge.
+
+## Un contre-exemple de calibration ratée : le cas Amazon
+
+[amazon-vibe-coding-4-sev1-90-days](../sources/amazon-vibe-coding-4-sev1-90-days.md) documente ce qui arrive quand les niveaux de confiance ne sont pas calibrés avant le déploiement à l'échelle. Amazon a effectivement laissé l'essentiel des changements de code assistés par IA opérer à un niveau proche de l'auto-merge (mandat de 80 % d'adoption, déploiements sans documentation ni approbation formelle dans au moins un des incidents) sans le cadre à trois niveaux de Kavcic ni la contrainte structurelle de Jan Six. Après quatre Sev-1 en 90 jours, la correction a été un recalibrage brutal vers l'extrême "suggest only" : sign-off senior obligatoire, review à deux personnes, audits VP sur 335 systèmes Tier-1 — la tension entre efficacité et contrôle décrite plus haut, mais vécue en sens inverse et sous contrainte de crise plutôt qu'anticipée. L'auteur de la source note que cette réponse n'est pas soutenable : elle réinsère la friction humaine à chaque étape plutôt que de construire une vérification automatisée qui scale à la vitesse de génération.
 
 ## L'approche Apple : "agentic with a human in the loop, not autonomous" (WWDC 2026)
 

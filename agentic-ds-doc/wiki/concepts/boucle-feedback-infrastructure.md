@@ -2,13 +2,14 @@
 type: concept
 tags: [design-system, ia, feedback, auto-amélioration, gouvernance, agentique, documentation, confiance, humain]
 created: 2026-06-17
-updated: 2026-07-07
+updated: 2026-07-16
 sources:
   - "[agent-orchestration-for-design-systems](../sources/agent-orchestration-for-design-systems.md)"
   - "[how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)"
   - "[automating-design-system-ai-efficiency](../sources/automating-design-system-ai-efficiency.md)"
   - "[self-healing-design-system](../sources/self-healing-design-system.md)"
   - "[human-layer-agentic-design-systems](../sources/human-layer-agentic-design-systems.md)"
+  - "[storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md)"
 related:
   - "[protocole-arc](protocole-arc.md)"
   - "[user-vs-maintainer-ia](user-vs-maintainer-ia.md)"
@@ -68,6 +69,14 @@ Cette formulation est plus granulaire et plus opérationnelle que la boucle de [
 L'incident de l'échelle de jaune chez Enara le montre a contrario. La développeuse avait plusieurs options : changer silencieusement le token, hardcoder une valeur qui rendait bien, ou signaler. Elle a signalé. Ce choix présuppose que le système mérite d'être exploré — que s'il y a une anomalie visuelle alors que les tokens sont corrects, c'est que quelque chose dans la couche inférieure est faux, et que cette chose peut être trouvée. Sans cette confiance, la boucle est court-circuitée au premier maillon.
 
 [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) formule ce résultat : "The developer trusted the system enough to trace the problem instead of working around it. That trust is the environment working." La confiance dans le système n'est pas une propriété psychologique de la développeuse — c'est un indicateur que l'environnement a été construit de façon suffisamment cohérente pour mériter d'être exploré. Un système incohérent, dont les annotations sont souvent fausses et les auditeurs peu fiables, produit rationnellement des comportements de contournement. La confiance est une métrique de qualité de l'infrastructure autant qu'une attitude individuelle.
+
+## Première instance entièrement automatisée (Storybook MCP, juillet 2026)
+
+[storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md) documente un cas qui déplace la frontière posée plus haut entre boucle semi-manuelle et Phase 3 automatisée. Un agent Claude Code, testant le formulaire qu'il vient de générer via `run-story-tests`, obtient 3 échecs sur 5. Il lit lui-même la sortie d'échec, identifie la cause (label non lié à l'input via `htmlFor`/`id`, à la fois échec de test et violation d'accessibilité), corrige le composant partagé `TextInput` sans validation humaine intermédiaire, puis relance les tests jusqu'à 5/5.
+
+Ce qui distingue ce cas des boucles déjà documentées : la correction ne porte pas sur l'artefact généré (le formulaire) mais sur le composant *partagé* du design system dont il dépend. Chaque autre story consommant `TextInput` bénéficie donc immédiatement du correctif, sans qu'aucun humain n'ait lu de rapport ni approuvé de PR entre la détection et la correction. C'est une instance à échelle réduite (un composant, un run de tests) mais complète du cycle Watch/Analyze/Execute/Observe de [romina-kavcic](../entities/romina-kavcic.md) — la première du vault où les quatre étapes sont exécutées par l'agent sans interruption humaine, même si le périmètre reste local plutôt que systémique.
+
+Cela ne résout pas la tension nommée plus haut entre Phase 2 et Phase 3 à l'échelle d'un système de production entier — mais cela démontre que le mécanisme lui-même n'est plus hypothétique à l'échelle d'un composant isolé.
 
 ## Extension : la documentation comme boucle de feedback
 

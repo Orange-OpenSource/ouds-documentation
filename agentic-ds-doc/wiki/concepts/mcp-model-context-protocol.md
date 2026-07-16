@@ -2,13 +2,16 @@
 type: concept
 tags: [mcp, ia, protocol, agents, outils, integration, rag, on-demand, adoption, statistiques]
 created: 2026-06-17
-updated: 2026-07-06
+updated: 2026-07-16
 sources:
   - "[design-system-most-important-asset-ai-era](../sources/design-system-most-important-asset-ai-era.md)"
   - "[machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)"
   - "[how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)"
   - "[design-systems-mcp-complete-guide](../sources/design-systems-mcp-complete-guide.md)"
   - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
+  - "[storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md)"
+  - "[figma-design-systems-ai-mcp](../sources/figma-design-systems-ai-mcp.md)"
+  - "[romina-kavcic-5-mcp-connections](../sources/romina-kavcic-5-mcp-connections.md)"
 related:
   - "[systeme-de-design-agentique](systeme-de-design-agentique.md)"
   - "[cli-vs-mcp](cli-vs-mcp.md)"
@@ -20,6 +23,7 @@ related:
   - "[code-source-de-verite-mcp](code-source-de-verite-mcp.md)"
   - "[pipeline-figma-docs-automatise](pipeline-figma-docs-automatise.md)"
   - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[storybook](../entities/storybook.md)"
 ---
 
 ## Model Context Protocol (MCP)
@@ -65,6 +69,33 @@ La conférence IDS 2026 documente trois architectures concrètes ([design-system
 Ces trois modèles ne sont pas concurrents — ils reflètent des topologies d'équipe différentes : documentation-led (Indeed), engineering-led (NY State), design-led (Kavcic/Tidy).
 
 **Storybook ([brad-frost](../entities/brad-frost.md))** — L'équipe Storybook a lancé un [Storybook MCP](https://storybook.js.org/addons/@storybook/addon-mcp) qui permet de générer de l'UI en s'appuyant sur les bibliothèques de composants du design system ([agentic-design-systems-2026-bradfrost](../sources/agentic-design-systems-2026-bradfrost.md)). Un quatrième point d'entrée dans l'écosystème, centré sur les stories comme source de vérité de la bibliothèque de composants.
+
+## Trois usages du Figma MCP côté équipe design system (Figma, août 2025)
+
+[figma-design-systems-ai-mcp](../sources/figma-design-systems-ai-mcp.md), publié par [figma](../entities/figma.md) elle-même, précise ce que le MCP Figma apporte spécifiquement à une équipe design system, au-delà de la lecture de specs déjà documentée par Kavcic ci-dessus : **génération de code de composant aligné** (combine le contexte MCP d'un nouveau composant avec le code des composants existants, dans le langage et framework réellement utilisés par l'équipe, pas seulement React/Tailwind par défaut), **automatisation du travail sur les tokens** (identifie où appliquer ou introduire des tokens, vérifie la conformité aux standards définis), et **audit d'alignement design/code** (compare l'usage des tokens dans le code vs le design sélectionné, signale les noms de layers à améliorer).
+
+Chiffre structurant de cette source : 68 % des développeurs utilisent déjà l'IA pour écrire du code, mais seulement 32 % font confiance à l'output généré (Figma AI report 2025). Voir [metriques-adoption-ia-design-system](metriques-adoption-ia-design-system.md).
+
+**Génération automatique de fichier de règles** : le MCP server peut scanner la codebase et produire un fichier de règles structuré (tokens, bibliothèques de composants, hiérarchies de style, conventions de nommage) qui sert de guide système à l'agent. C'est le mécanisme concret derrière le skill `figma-create-design-system-rules` déjà mentionné dans [architecture-skills-rules-instructions](architecture-skills-rules-instructions.md).
+
+## Inventaire pratique de connecteurs MCP (Kavcic, août 2025)
+
+[romina-kavcic-5-mcp-connections](../sources/romina-kavcic-5-mcp-connections.md) est l'article le plus ancien de Kavcic ingéré dans le vault — antérieur à toute sa série "Agentic Design Systems" — et le seul à structurer les connecteurs MCP par complexité d'installation plutôt que par cas d'usage narratif :
+
+- **Figma** : facile — lecture composants/tokens/variants, génération de specs et prototypes cliquables
+- **Mintlify** : facile (clé API) — documentation comme base de connaissances interrogeable depuis l'éditeur
+- **GitHub** : facile (PAT) — prévention de la dérive design/code, review de PR, changelog automatique
+- **GitLab** : modérée — nécessite le tier Premium/Ultimate, absent sur Free/Starter
+- **PostHog** : modérée — nécessite du tracking d'événements déjà en place ; valide les décisions de design system avec des données d'usage réelles
+- **Slack** : modérée — approbation admin + OAuth ; transforme l'historique de conversation en connaissance interrogeable (décisions de design review, feedback compilé, alertes sur patterns de duplication)
+
+GitLab et Slack n'avaient jusqu'ici que des mentions ponctuelles dans le vault (pipeline Indeed pour GitLab, baisse du volume de questions dans [metriques-adoption-ia-design-system](metriques-adoption-ia-design-system.md) pour Slack) — cette source est la première à documenter leur usage MCP de façon autonome et actionnable.
+
+## Storybook MCP en pratique (LogRocket, juillet 2026)
+
+[storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md) documente ce quatrième point d'entrée avec un niveau de détail inédit dans le vault : six outils MCP en trois toolsets (docs, dev, test), backés par des component manifests générés au build. La démonstration avant/après est la preuve la plus directe du vault sur l'effet du MCP : sans lui, Claude Code écrit 263 lignes de HTML natif inventé sans un seul appel d'outil ; avec lui, l'agent fait six appels d'outils avant d'écrire la moindre ligne, puis compose 188 lignes à partir des vrais composants avec des props exactement conformes au contrat documenté.
+
+Le toolset test (`run-story-tests`) ajoute une capacité absente des trois autres implémentations documentées (Indeed, NY State, Tidy) : la vérification et l'auto-correction. Voir [boucle-feedback-infrastructure](boucle-feedback-infrastructure.md) pour le détail de la boucle self-healing observée sur ce cas.
 
 ## Adoption MCP : première mesure sectorielle (zeroheight, mai 2026)
 

@@ -2,7 +2,7 @@
 type: entity
 tags: [personne, design-system, ia, auteur, conférencière]
 created: 2026-06-17
-updated: 2026-07-08
+updated: 2026-07-16
 sources:
   - "[design-system-most-important-asset-ai-era](../sources/design-system-most-important-asset-ai-era.md)"
   - "[how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)"
@@ -13,6 +13,7 @@ sources:
   - "[agentic-ds-from-chatbot-to-orchestration](../sources/agentic-ds-from-chatbot-to-orchestration.md)"
   - "[20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)"
   - "[design-system-advantage-is-memory](../sources/design-system-advantage-is-memory.md)"
+  - "[romina-kavcic-5-mcp-connections](../sources/romina-kavcic-5-mcp-connections.md)"
 related:
   - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
   - "[into-design-systems-conference](into-design-systems-conference.md)"
@@ -54,5 +55,7 @@ Son article "From Chatbot to Orchestration" (mai 2026) ([agentic-ds-from-chatbot
 Son article "20 AI workflows that save design system teams 10+ hours a week" (février 2026) ([20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)) est son catalogue opérationnel le plus exhaustif : 20 workflows concrets groupés en cinq domaines (composants, documentation, stratégie, tokens, adoption). Il introduit le pattern [audit-tokens-playwright](../concepts/audit-tokens-playwright.md) (Planner/Generator/Healer), le concept de [bypass-patterns-comme-user-research](../concepts/bypass-patterns-comme-user-research.md), et [assistant-ia-24h](../concepts/assistant-ia-24h.md) (OpenClaw). Il confirme l'architecture `.ai/` directory comme couche d'instructions projet, et propose les build-time metrics comme alternative aux métriques runtime invasives.
 
 Son article "Design Systems That Document AI" (juin 2026) change d'angle : après avoir traité de l'IA comme opérateur du design system, Kavcic analyse comment les design systems documentent les *fonctionnalités IA pour les utilisateurs humains*. L'étude porte sur 156 systèmes publics — 83 % sans aucune couche IA. Elle établit un [modèle de maturité en cinq niveaux](../concepts/modele-maturite-ia-design-system.md) et identifie les [quatre règles convergentes](../concepts/quatre-regles-ia-ux.md) issues des organisations les plus avancées. La distinction entre ces deux lectures du "design system et IA" est formalisée dans [deux-lectures-du-design-system-ia](../syntheses/deux-lectures-du-design-system-ia.md).
+
+Son article le plus ancien ingéré dans le vault, "5 MCP Connections Every Design System Team Needs Right Now" (août 2025, [romina-kavcic-5-mcp-connections](../sources/romina-kavcic-5-mcp-connections.md)), précède toute sa série "Agentic Design Systems" et adopte un angle purement pratique : inventaire de 6 connecteurs MCP (Figma, Mintlify, GitHub, GitLab, PostHog, Slack) avec niveau de complexité d'installation et exemples de prompts concrets par outil. C'est le premier document du corpus à traiter GitLab et Slack comme connecteurs MCP à part entière plutôt que comme mentions en passant.
 
 Son article "The Design System Advantage Is Memory" (mai 2026) ([design-system-advantage-is-memory](../sources/design-system-advantage-is-memory.md)) est peut-être sa contribution conceptuelle la plus tranchante. Partant de son expérience directe (105 outils MCP connectés, résultat insuffisant), elle reformule la question de l'IA-readiness : l'avantage n'est pas le modèle, le nombre d'outils ou le prompt — c'est la mémoire institutionnelle rendue retrievable. Elle structure le problème autour de la distinction "visible 10% / invisible 90%" (tokens et docs d'un côté, décisions et historiques de l'autre), propose une architecture en trois couches obligatoires (données → structure → agent), et documente son usage de QMD comme test minimal de signal avant d'investir dans un graphe complet. La thèse terminale — "The design system is no longer the deliverable. It is the dataset." — est la formulation la plus condensée de l'argument. Voir [memoire-design-system](../concepts/memoire-design-system.md) et [design-system-comme-dataset](../concepts/design-system-comme-dataset.md).

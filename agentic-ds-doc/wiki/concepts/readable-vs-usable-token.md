@@ -7,6 +7,7 @@ sources:
   - "[50-design-token-files-one-problem](../sources/50-design-token-files-one-problem.md)"
   - "[miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)"
 related:
+  - "[derive-design-system-ia](derive-design-system-ia.md)"
   - "[intent-token](intent-token.md)"
   - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
   - "[existence-vs-intent-violations](existence-vs-intent-violations.md)"
@@ -21,6 +22,8 @@ related:
 La distinction centrale introduite par [romina-kavcic](../entities/romina-kavcic.md) dans son audit de 50 fichiers de tokens ([50-design-token-files-one-problem](../sources/50-design-token-files-one-problem.md)) : un fichier de tokens peut être parfaitement **machine-readable** — il compile, le build pipeline tourne, les valeurs sont extraites correctement — et rester **agent-unusable** — l'agent qui le lit ne peut pas raisonner sur quel token choisir dans quel contexte.
 
 Ces deux états ne sont pas synonymes parce qu'ils répondent à des questions différentes. Un build pipeline pose : "quelle est la valeur de ce token ?" Un agent pose : "quel token dois-je utiliser pour ce cas d'usage ?" La réponse à la première question est dans le fichier. La réponse à la seconde, pour la majorité des 50 systèmes audités, ne l'est pas.
+
+[derive-design-system-ia](derive-design-system-ia.md) documente la conséquence comportementale directe de cette absence : privé de la réponse à "quel token utiliser", l'agent ne s'arrête pas — il fabrique un nom de token plausible. La fabrication de tokens est donc moins un bug isolé qu'une réponse prévisible à un fichier readable-mais-pas-usable.
 
 ## Les 7 questions qu'un agent a besoin
 

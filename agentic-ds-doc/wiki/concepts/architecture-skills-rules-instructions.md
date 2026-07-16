@@ -2,14 +2,17 @@
 type: concept
 tags: [design-system, orchestration, ia, skills, rules, instructions, claude-md, plugin, agents-md, skill-md]
 created: 2026-06-17
-updated: 2026-07-07
+updated: 2026-07-16
 sources:
   - "[agent-orchestration-for-design-systems](../sources/agent-orchestration-for-design-systems.md)"
   - "[machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)"
   - "[agent-workflows-design-system-teams](../sources/agent-workflows-design-system-teams.md)"
   - "[20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)"
   - "[your-design-system-fragmenting-agent-files](../sources/your-design-system-fragmenting-agent-files.md)"
+  - "[figma-design-systems-ai-mcp](../sources/figma-design-systems-ai-mcp.md)"
+  - "[victorino-design-governance-agent-era](../sources/victorino-design-governance-agent-era.md)"
 related:
+  - "[ecriture-agents-canvas-design](ecriture-agents-canvas-design.md)"
   - "[trois-couches-composants-agents](trois-couches-composants-agents.md)"
   - "[systeme-de-design-agentique](systeme-de-design-agentique.md)"
   - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
@@ -77,6 +80,10 @@ Cette approche confirme le principe fondamental de la couche Rules : ce qui comp
 Deux propriétés importantes du format SKILL.md : la portabilité du fichier est réelle (n'importe quel agent qui supporte le format peut lire le Markdown), mais l'exécution n'est pas consistante. "Different tools load Skills differently, invoke them with different triggers, and handle their nested scripts and references with their own conventions. The file will be readable everywhere, though that doesn't mean it will run the same way everywhere." Le format est une convention de facto portée par Anthropic et OpenAI, pas un standard normalisé. Les équipes qui écrivent des Skills customs doivent valider le comportement spécifiquement sur chaque agent qu'elles ciblent.
 
 Les Skills Figma bundlés couvrent la majorité des workflows courants — `figma-use`, `figma-generate-design`, `figma-implement-design`, `figma-create-design-system-rules` — et sont disponibles via le MCP server Figma et le répertoire OpenAI curated skills. Pour les conventions non standards (mode sombre spécifique, taxonomie de tokens atypique, étapes CI propres), écrire un Skill custom est le mécanisme pour encoder ce savoir de façon persistante. Mais l'investissement est plus élevé qu'AGENTS.md, et la plupart des équipes n'en ont pas encore besoin.
+
+Le mécanisme concret derrière `figma-create-design-system-rules` : le MCP server scanne la codebase et produit un fichier de règles structuré (définitions de tokens, bibliothèques de composants, hiérarchies de style, conventions de nommage), qui devient ensuite la Rule always-on consultée par l'agent ([figma-design-systems-ai-mcp](../sources/figma-design-systems-ai-mcp.md)). C'est une instance concrète de la couche Rules décrite plus haut, générée automatiquement plutôt qu'écrite à la main.
+
+[victorino-design-governance-agent-era](../sources/victorino-design-governance-agent-era.md) reformule `figma-use` et les skills Figma custom comme de la **gouvernance-as-code** : une règle du type "utilise toujours le composant NavBar de la librairie core, ne crée jamais d'élément de navigation custom" n'est plus une consigne lue par un designer, c'est une instruction chargée dans le contexte de l'agent au moment de l'exécution. La gouvernance devient structurelle plutôt que déclarative — l'enforcement n'est plus une question de lecture humaine mais de chargement systématique. Voir [ecriture-agents-canvas-design](ecriture-agents-canvas-design.md) pour le changement de régime plus large (agents qui écrivent dans le canvas Figma) dans lequel s'inscrivent ces Skills.
 
 Note sécurité : les fichiers SKILL.md et les payloads MCP sont des instructions exécutables pour les agents — tout acteur pouvant les éditer peut influencer le comportement agent. Voir [prompt-injection-design-system](prompt-injection-design-system.md).
 

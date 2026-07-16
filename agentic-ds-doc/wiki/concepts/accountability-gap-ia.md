@@ -2,15 +2,18 @@
 type: concept
 tags: [gouvernance, accountability, ia, design-system, accessibilite, responsabilite, composite-failure, traçabilité]
 created: 2026-07-06
-updated: 2026-07-07
+updated: 2026-07-16
 sources:
   - "[design-system-ai-ready-organisation-not](../sources/design-system-ai-ready-organisation-not.md)"
   - "[human-layer-agentic-design-systems](../sources/human-layer-agentic-design-systems.md)"
+  - "[amazon-vibe-coding-4-sev1-90-days](../sources/amazon-vibe-coding-4-sev1-90-days.md)"
 related:
   - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
   - "[murphy-trueman](../entities/murphy-trueman.md)"
   - "[accessibilite-continue](accessibilite-continue.md)"
   - "[shadow-ia-design-system](shadow-ia-design-system.md)"
+  - "[shadow-code](shadow-code.md)"
+  - "[modele-accountability-trois-couches](modele-accountability-trois-couches.md)"
   - "[niveaux-confiance-actions-agentiques](niveaux-confiance-actions-agentiques.md)"
   - "[existence-vs-intent-violations](existence-vs-intent-violations.md)"
   - "[concevoir-les-conditions](concevoir-les-conditions.md)"
@@ -54,6 +57,18 @@ La connexion avec [niveaux-confiance-actions-agentiques](niveaux-confiance-actio
 ## ⚡ Tension : la vitesse comme amplificateur
 
 Le corpus existant documente que l'IA accélère la génération d'interfaces. L'accountability gap révèle que la vitesse est aussi l'amplificateur du risque : plus la création est rapide, plus les failures composites s'accumulent vite avant que quelqu'un les détecte. La gouvernance technique (auditeurs, constraints exécutables) ne suffit pas — elle valide des propriétés locales, pas la cohérence d'ensemble. La gouvernance organisationnelle (ownership clair, seuils de review, chemins d'escalade) est la seule réponse aux failures qui émergent à l'intersection des composants plutôt que dans chaque composant pris séparément.
+
+## Le premier incident documenté : le cas Amazon (mars 2026)
+
+Jusqu'ici, ce concept restait entièrement théorique dans le vault : Trueman décrit un scénario de défaillance composite plausible, mais aucune source ne documentait d'incident réel, nommé, chiffré. [amazon-vibe-coding-4-sev1-90-days](../sources/amazon-vibe-coding-4-sev1-90-days.md) comble ce trou, à une échelle différente de celle envisagée par Trueman : pas une interface individuelle inaccessible, mais une organisation entière où la vélocité de génération de code (mandat à 80 % d'adoption de l'assistant IA Kiro) a dépassé la capacité de vérification, produisant quatre incidents Sev-1 en 90 jours dont une panne de 6h à ~6,3M commandes perdues.
+
+Le parallèle structurel avec la thèse de Trueman est direct : les contrôles automatiques existants (tests, analyse statique) n'ont pas détecté le problème avant production, parce qu'ils valident des propriétés locales du code, pas le comportement émergent du système à l'échelle. La différence de nature : ici il ne s'agit pas de composants individuellement corrects s'assemblant en un tout défaillant, mais de code individuellement plausible s'accumulant en un système que plus personne ne peut tracer de bout en bout — voir [shadow-code](shadow-code.md) pour ce mécanisme spécifique.
+
+Point notable pour la lecture de ce type de source : Amazon a affirmé publiquement que les incidents n'impliquaient pas de code écrit par IA, tout en documentant en interne une "tendance d'incidents" liée aux "changements assistés par Gen-AI" — documents ensuite édités avant la réunion de discussion. Cette gestion du narratif est elle-même une donnée sur la façon dont les organisations répondent à un échec d'infrastructure IA, distincte de la question technique.
+
+## La réponse structurelle : le modèle à trois couches
+
+[modele-accountability-trois-couches](modele-accountability-trois-couches.md) (Lance Dacy) apporte ce que ce concept n'avait pas encore : un mécanisme correctif à coût quasi nul plutôt qu'un problème seulement nommé. Un humain nommé ("reviewer of record") par changement assisté par IA, des catégories d'exception définies par l'équipe, une politique organisationnelle écrite — trois couches, chacune nécessitant un nom humain plutôt qu'une responsabilité collective diffuse. Les contre-mesures qu'Amazon a mises en place après incident (sign-off senior, review à deux personnes, audits VP sur 335 systèmes) sont une version réactive et coûteuse de ce même modèle — la comparaison entre les deux mesure le prix de construire l'accountability avant ou après l'incident.
 
 ## Le cas inverse : quand l'accountability gap est résolu
 
