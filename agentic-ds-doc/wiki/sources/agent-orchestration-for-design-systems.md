@@ -3,7 +3,8 @@ type: source
 tags: [design-system, orchestration, ia, skills, rules, instructions, feedback, deep-tracing]
 created: 2026-06-17
 updated: 2026-06-17
-sources:
+sources: []
+related:
   - "[architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md)"
   - "[boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md)"
   - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"

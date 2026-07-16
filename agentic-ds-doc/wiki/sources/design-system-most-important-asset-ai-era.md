@@ -3,7 +3,8 @@ type: source
 tags: [design-system, ia, agentic, mcp, tokens, composants, gouvernance]
 created: 2026-06-17
 updated: 2026-06-17
-sources:
+sources: []
+related:
   - "[design-system-as-infrastructure](../concepts/design-system-as-infrastructure.md)"
   - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
   - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"

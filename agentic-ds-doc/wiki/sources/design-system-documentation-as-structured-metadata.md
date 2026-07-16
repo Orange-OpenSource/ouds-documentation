@@ -3,7 +3,8 @@ type: source
 tags: [design-system, metadata, documentation, ia, schema, composants]
 created: 2026-06-17
 updated: 2026-06-17
-sources:
+sources: []
+related:
   - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
   - "[processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md)"
   - "[workflows-ia-metadata](../concepts/workflows-ia-metadata.md)"

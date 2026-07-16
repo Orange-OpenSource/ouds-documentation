@@ -3,7 +3,8 @@ type: source
 tags: [design-system, gouvernance, ia, tokens, auditeur, contraintes, intent]
 created: 2026-06-17
 updated: 2026-06-17
-sources:
+sources: []
+related:
   - "[existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md)"
   - "[concevoir-les-conditions](../concepts/concevoir-les-conditions.md)"
   - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"

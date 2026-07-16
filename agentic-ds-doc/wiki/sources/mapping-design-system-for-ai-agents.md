@@ -3,7 +3,8 @@ type: source
 tags: [design-system, index, codebase, ia, graphe, toon, drift, navigation]
 created: 2026-06-17
 updated: 2026-06-17
-sources:
+sources: []
+related:
   - "[mode-exploration-vs-navigation](../concepts/mode-exploration-vs-navigation.md)"
   - "[knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md)"
   - "[format-toon](../concepts/format-toon.md)"

@@ -3,7 +3,8 @@ type: source
 tags: [design-system, gouvernance, ia, accountability, designops, devops, humain, rôle-designer]
 created: 2026-07-07
 updated: 2026-07-07
-sources:
+sources: []
+related:
   - "[concevoir-les-conditions](../concepts/concevoir-les-conditions.md)"
   - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
   - "[accountability-gap-ia](../concepts/accountability-gap-ia.md)"

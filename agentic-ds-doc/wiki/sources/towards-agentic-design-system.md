@@ -3,7 +3,8 @@ type: source
 tags: [design-system, agentic, ia, benchmark, gouvernance, arc, metadata]
 created: 2026-06-17
 updated: 2026-06-17
-sources:
+sources: []
+related:
   - "[protocole-arc](../concepts/protocole-arc.md)"
   - "[user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md)"
   - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"

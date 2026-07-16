@@ -3,7 +3,8 @@ type: source
 tags: [design-system, ia, machine-readable, mcp, benchmark, json, metadata, indeed]
 created: 2026-06-17
 updated: 2026-06-17
-sources:
+sources: []
+related:
   - "[diana-wolosin](../entities/diana-wolosin.md)"
   - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
   - "[mcp-on-demand-vs-rules-always-on](../concepts/mcp-on-demand-vs-rules-always-on.md)"
