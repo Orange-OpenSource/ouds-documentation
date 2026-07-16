@@ -4,20 +4,20 @@ tags: [assistant-ia, self-hosted, design-system, openclaw, automatisation, infra
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[20-ai-workflows-design-system-teams]]"
+  - "[20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)"
 related:
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[metriques-adoption-ia-design-system]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[niveaux-confiance-actions-agentiques]]"
+  - "[architecture-skills-rules-instructions](architecture-skills-rules-instructions.md)"
+  - "[metriques-adoption-ia-design-system](metriques-adoption-ia-design-system.md)"
+  - "[boucle-feedback-infrastructure](boucle-feedback-infrastructure.md)"
+  - "[mcp-model-context-protocol](mcp-model-context-protocol.md)"
+  - "[niveaux-confiance-actions-agentiques](niveaux-confiance-actions-agentiques.md)"
 ---
 
 ## L'assistant IA 24/7 comme infrastructure d'équipe
 
 Un des problèmes récurrents dans l'adoption de l'IA par les équipes design system est la dépendance à des interfaces SaaS avec des sessions sans mémoire. Chaque conversation repart de zéro. Les membres de l'équipe ne partagent pas de contexte accumulé. Les jobs récurrents (audit hebdomadaire, veille concurrents) doivent être relancés manuellement.
 
-**OpenClaw** (anciennement clawdbot) adresse ce problème via un assistant self-hosted tournant 24/7 sur un serveur propre ([[20-ai-workflows-design-system-teams]]). Le coût d'entrée est bas : un VPS Hetzner à ~5$/mois suffit.
+**OpenClaw** (anciennement clawdbot) adresse ce problème via un assistant self-hosted tournant 24/7 sur un serveur propre ([20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)). Le coût d'entrée est bas : un VPS Hetzner à ~5$/mois suffit.
 
 ## Capacités
 
@@ -29,13 +29,13 @@ Un cron job matinal lance un token drift scan et poste les résultats dans un ca
 
 ## Contrainte de sécurité critique
 
-[[romina-kavcic]] formule explicitement la frontière : accès en **lecture seule** sur un **clone** des fichiers de tokens et de la documentation, pas sur le codebase de production. L'assistant est un "team assistant with a read-only badge, not an engineer with push access."
+[romina-kavcic](../entities/romina-kavcic.md) formule explicitement la frontière : accès en **lecture seule** sur un **clone** des fichiers de tokens et de la documentation, pas sur le codebase de production. L'assistant est un "team assistant with a read-only badge, not an engineer with push access."
 
-Cette contrainte est cohérente avec [[niveaux-confiance-actions-agentiques]] : un agent avec accès en écriture au codebase de production opère à un niveau de confiance qui requiert une supervision humaine systématique. Un agent avec accès en lecture seule à un clone peut opérer de manière autonome sans risque de dommage irréversible.
+Cette contrainte est cohérente avec [niveaux-confiance-actions-agentiques](niveaux-confiance-actions-agentiques.md) : un agent avec accès en écriture au codebase de production opère à un niveau de confiance qui requiert une supervision humaine systématique. Un agent avec accès en lecture seule à un clone peut opérer de manière autonome sans risque de dommage irréversible.
 
 ## Position dans l'écosystème d'outils
 
-Ce pattern complète les Skills ([[architecture-skills-rules-instructions]]) et le MCP ([[mcp-model-context-protocol]]) en ajoutant la dimension temporelle : alors que les Skills et MCP répondent à des requêtes synchrones dans une session de travail, l'assistant 24/7 opère de manière asynchrone et permanente. C'est moins un outil de génération de composants qu'une infrastructure de support et de monitoring.
+Ce pattern complète les Skills ([architecture-skills-rules-instructions](architecture-skills-rules-instructions.md)) et le MCP ([mcp-model-context-protocol](mcp-model-context-protocol.md)) en ajoutant la dimension temporelle : alors que les Skills et MCP répondent à des requêtes synchrones dans une session de travail, l'assistant 24/7 opère de manière asynchrone et permanente. C'est moins un outil de génération de composants qu'une infrastructure de support et de monitoring.
 
 ## ⚡ Tension
 

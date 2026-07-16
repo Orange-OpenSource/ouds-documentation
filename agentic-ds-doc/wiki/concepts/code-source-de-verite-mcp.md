@@ -4,19 +4,19 @@ tags: [design-system, mcp, code, jsDoc, web-components, source-de-verite, ia]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[design-systems-mcp-complete-guide]]"
+  - "[design-systems-mcp-complete-guide](../sources/design-systems-mcp-complete-guide.md)"
 related:
-  - "[[jesse-gardner]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[processus-generation-metadata-echelle]]"
-  - "[[schema-metadata-composant]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[pipeline-figma-docs-automatise]]"
+  - "[jesse-gardner](../entities/jesse-gardner.md)"
+  - "[mcp-model-context-protocol](mcp-model-context-protocol.md)"
+  - "[processus-generation-metadata-echelle](processus-generation-metadata-echelle.md)"
+  - "[schema-metadata-composant](schema-metadata-composant.md)"
+  - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
+  - "[pipeline-figma-docs-automatise](pipeline-figma-docs-automatise.md)"
 ---
 
 ## Code comme source de vérité pour le MCP
 
-[[jesse-gardner]] documente chez New York State une approche d'implémentation MCP distincte des deux modèles déjà présents dans le vault : là où [[diana-wolosin]] part de la documentation MDX existante (MDX → parsers JavaScript → JSON → Vectra) et [[romina-kavcic]] part de Figma (Figma MCP → Claude Code → MDX), Gardner fait du code la source de vérité primaire pour les humains et les machines simultanément ([[design-systems-mcp-complete-guide]]).
+[jesse-gardner](../entities/jesse-gardner.md) documente chez New York State une approche d'implémentation MCP distincte des deux modèles déjà présents dans le vault : là où [diana-wolosin](../entities/diana-wolosin.md) part de la documentation MDX existante (MDX → parsers JavaScript → JSON → Vectra) et [romina-kavcic](../entities/romina-kavcic.md) part de Figma (Figma MCP → Claude Code → MDX), Gardner fait du code la source de vérité primaire pour les humains et les machines simultanément ([design-systems-mcp-complete-guide](../sources/design-systems-mcp-complete-guide.md)).
 
 ## Le principe
 
@@ -34,7 +34,7 @@ Dans l'approche Gardner, le code Lit/TypeScript est la source primaire. Ni Figma
 
 ## Le résultat mesuré
 
-[[jesse-gardner]] documente un cas de production : un PDF de 5 pages décrivant un processus administratif complexe (formulaire pour parents adoptifs) transformé en formulaire multi-étapes fonctionnel, stylé aux normes New York State, en 13 minutes. Le MCP a fourni les composants et tokens; Claude Code a composé le formulaire en respectant les contraintes du système.
+[jesse-gardner](../entities/jesse-gardner.md) documente un cas de production : un PDF de 5 pages décrivant un processus administratif complexe (formulaire pour parents adoptifs) transformé en formulaire multi-étapes fonctionnel, stylé aux normes New York State, en 13 minutes. Le MCP a fourni les composants et tokens; Claude Code a composé le formulaire en respectant les contraintes du système.
 
 ## ⚡ Tension / Contradiction
 

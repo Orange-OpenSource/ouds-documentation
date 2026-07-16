@@ -4,18 +4,18 @@ tags: [gouvernance, design-system, ia, tokens, auditeur, intent, linter]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[encoding-governance-agentic-design-systems]]"
+  - "[encoding-governance-agentic-design-systems](../sources/encoding-governance-agentic-design-systems.md)"
 related:
-  - "[[intent-token]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[concevoir-les-conditions]]"
-  - "[[user-vs-maintainer-ia]]"
-  - "[[lisibilite-machine-design-system]]"
+  - "[intent-token](intent-token.md)"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[concevoir-les-conditions](concevoir-les-conditions.md)"
+  - "[user-vs-maintainer-ia](user-vs-maintainer-ia.md)"
+  - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
 ---
 
 ## Existence vs violations d'intent
 
-La distinction existence/intent est la contribution conceptuelle centrale de la partie 6 de la série de [[cristian-morales-achiardi]] ([[encoding-governance-agentic-design-systems]]). Elle formalise la différence entre deux niveaux de vérification d'un design system par un agent IA — et donc entre un linter et de la gouvernance réelle.
+La distinction existence/intent est la contribution conceptuelle centrale de la partie 6 de la série de [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) ([encoding-governance-agentic-design-systems](../sources/encoding-governance-agentic-design-systems.md)). Elle formalise la différence entre deux niveaux de vérification d'un design system par un agent IA — et donc entre un linter et de la gouvernance réelle.
 
 ## La violation d'existence
 
@@ -33,12 +33,12 @@ Ces violations sont invisibles à v1. Elles ne sont détectées que si le systè
 
 ## La formule
 
-"v1 checked existence. v2 checks intent. The difference between those two things is the difference between a linter and governance" ([[encoding-governance-agentic-design-systems]]). Un linter vérifie la syntaxe et l'existence. La gouvernance vérifie la sémantique et l'intent — ce qui requiert que les règles d'intent soient encodées de manière exécutable dans le système.
+"v1 checked existence. v2 checks intent. The difference between those two things is the difference between a linter and governance" ([encoding-governance-agentic-design-systems](../sources/encoding-governance-agentic-design-systems.md)). Un linter vérifie la syntaxe et l'existence. La gouvernance vérifie la sémantique et l'intent — ce qui requiert que les règles d'intent soient encodées de manière exécutable dans le système.
 
 ## Ce que ça implique pour l'infrastructure
 
-Pour détecter les violations d'intent, l'auditeur doit avoir accès à la couche de raisonnement (couche 3 des [[trois-couches-composants-agents]]) et à l'[[intent-token]] encodé. Il ne suffit pas de lister les tokens valides — il faut documenter leur rôle dans la hiérarchie, leurs contextes d'usage légitimes, et les patterns qu'ils ne doivent pas remplacer. C'est exactement le type de connaissance que [[concevoir-les-conditions]] cherche à rendre exécutable.
+Pour détecter les violations d'intent, l'auditeur doit avoir accès à la couche de raisonnement (couche 3 des [trois-couches-composants-agents](trois-couches-composants-agents.md)) et à l'[intent-token](intent-token.md) encodé. Il ne suffit pas de lister les tokens valides — il faut documenter leur rôle dans la hiérarchie, leurs contextes d'usage légitimes, et les patterns qu'ils ne doivent pas remplacer. C'est exactement le type de connaissance que [concevoir-les-conditions](concevoir-les-conditions.md) cherche à rendre exécutable.
 
 ## ⚡ Tension avec la lisibilité machine standard
 
-La plupart des approches de [[lisibilite-machine-design-system]] se concentrent sur la couche 1 (index) et la couche 2 (métadonnées d'usage). La détection des violations d'intent requiert une couche supplémentaire : les règles de hiérarchie et de cohérence entre tokens. Ce n'est pas documenté dans les métadonnées individuelles de composants — c'est une connaissance systémique sur les relations entre tokens et contextes. Le fossé entre "documenter les composants" et "encoder la grammaire visuelle complète" reste ouvert dans le vault.
+La plupart des approches de [lisibilite-machine-design-system](lisibilite-machine-design-system.md) se concentrent sur la couche 1 (index) et la couche 2 (métadonnées d'usage). La détection des violations d'intent requiert une couche supplémentaire : les règles de hiérarchie et de cohérence entre tokens. Ce n'est pas documenté dans les métadonnées individuelles de composants — c'est une connaissance systémique sur les relations entre tokens et contextes. Le fossé entre "documenter les composants" et "encoder la grammaire visuelle complète" reste ouvert dans le vault.

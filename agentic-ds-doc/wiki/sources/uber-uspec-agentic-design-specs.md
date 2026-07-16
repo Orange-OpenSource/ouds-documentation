@@ -5,14 +5,14 @@ created: 2026-06-24
 updated: 2026-06-24
 sources: []
 related:
-  - "[[ian-guisard]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[generation-spec-agentique]]"
-  - "[[pipeline-figma-docs-automatise]]"
-  - "[[accessibilite-continue]]"
-  - "[[processus-generation-metadata-echelle]]"
-  - "[[skills-avant-mcp]]"
-  - "[[niveaux-confiance-actions-agentiques]]"
+  - "[ian-guisard](../entities/ian-guisard.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[generation-spec-agentique](../concepts/generation-spec-agentique.md)"
+  - "[pipeline-figma-docs-automatise](../concepts/pipeline-figma-docs-automatise.md)"
+  - "[accessibilite-continue](../concepts/accessibilite-continue.md)"
+  - "[processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md)"
+  - "[skills-avant-mcp](../concepts/skills-avant-mcp.md)"
+  - "[niveaux-confiance-actions-agentiques](../concepts/niveaux-confiance-actions-agentiques.md)"
 ---
 
 ## Uber Engineering Blog — "How Uber Built an Agentic System to Automate Design Specs in Minutes"
@@ -48,9 +48,9 @@ Le cas le plus frappant est la génération des specs d'accessibilité : une sec
 
 ## Connexions avec le wiki
 
-- Enrichit [[generation-spec-agentique]] — nouveau concept créé lors de cette ingestion
-- Enrichit [[pipeline-figma-docs-automatise]] — variant de génération (specs structurées vs documentation narrative)
-- Enrichit [[accessibilite-continue]] — cas concret de génération multi-plateforme des specs screen reader
-- Renforce [[skills-avant-mcp]] — chaque section de spec est un skill distinct avec ses propres règles
-- Renforce [[processus-generation-metadata-echelle]] — nouvelle implémentation à grande échelle (centaines de composants, 7 stacks)
-- Renforce [[mcp-model-context-protocol]] — MCP comme couche d'accès déterministe aux données Figma
+- Enrichit [generation-spec-agentique](../concepts/generation-spec-agentique.md) — nouveau concept créé lors de cette ingestion
+- Enrichit [pipeline-figma-docs-automatise](../concepts/pipeline-figma-docs-automatise.md) — variant de génération (specs structurées vs documentation narrative)
+- Enrichit [accessibilite-continue](../concepts/accessibilite-continue.md) — cas concret de génération multi-plateforme des specs screen reader
+- Renforce [skills-avant-mcp](../concepts/skills-avant-mcp.md) — chaque section de spec est un skill distinct avec ses propres règles
+- Renforce [processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md) — nouvelle implémentation à grande échelle (centaines de composants, 7 stacks)
+- Renforce [mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md) — MCP comme couche d'accès déterministe aux données Figma

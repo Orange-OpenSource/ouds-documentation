@@ -4,11 +4,11 @@ tags: [recommandations, design-tokens, ouds, ai-readiness, tokenator, actions]
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[2026-07-06_audit-tokens-tokenator-2.6.0]]"
+  - "[2026-07-06_audit-tokens-tokenator-2.6.0](2026-07-06_audit-tokens-tokenator-2.6.0.md)"
 related:
-  - "[[2026-06-19_audit-ai-readiness-ouds-documentation]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[schema-metadata-composant]]"
+  - "[2026-06-19_audit-ai-readiness-ouds-documentation](../questions/2026-06-19_audit-ai-readiness-ouds-documentation.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
 ---
 
 # Recommandations d'actions — Tokens OUDS Tokenator 2.6.0

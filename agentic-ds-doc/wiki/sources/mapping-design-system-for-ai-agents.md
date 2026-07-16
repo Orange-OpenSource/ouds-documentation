@@ -4,17 +4,17 @@ tags: [design-system, index, codebase, ia, graphe, toon, drift, navigation]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[mode-exploration-vs-navigation]]"
-  - "[[knowledge-graph-design-system]]"
-  - "[[format-toon]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[cristian-morales-achiardi]]"
+  - "[mode-exploration-vs-navigation](../concepts/mode-exploration-vs-navigation.md)"
+  - "[knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md)"
+  - "[format-toon](../concepts/format-toon.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
 ---
 
 ## Mapping your design system for AI agents
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective (Medium), 14 janvier 2026
 **URL** : https://www.designsystemscollective.com/codebase-indexing-for-design-systems-agents-c0f6b563a39e
 **Série** : "Agentic Design System" de Cristian Morales Achiardi, partie 4
@@ -24,7 +24,7 @@ sources:
 
 ## Résumé structuré
 
-Article technique sur la couche 1 des [[trois-couches-composants-agents]] : l'index de codebase. Là où la partie 3 ([[design-system-documentation-as-structured-metadata]]) documentait le *quoi* de chaque composant (métadonnées), celle-ci documente le *où* et le *comment* les composants se relient. L'argument central : sans carte, l'IA explore (mode déterministe impossible). Avec une carte, l'IA navigue (comportement prévisible, zéro dérive).
+Article technique sur la couche 1 des [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md) : l'index de codebase. Là où la partie 3 ([design-system-documentation-as-structured-metadata](design-system-documentation-as-structured-metadata.md)) documentait le *quoi* de chaque composant (métadonnées), celle-ci documente le *où* et le *comment* les composants se relient. L'argument central : sans carte, l'IA explore (mode déterministe impossible). Avec une carte, l'IA navigue (comportement prévisible, zéro dérive).
 
 Le problème motivant l'article est concret et documenté : Claude importait ThoughtCard mais en recréait le markup depuis zéro juste en dessous. L'import inutilisé était là. La raison : Claude savait que le composant *existait* (quoi), mais pas qu'il était *pertinent dans ce contexte* (où et comment s'intègre-t-il). La métadonnée ne suffit pas. Il faut le graphe.
 
@@ -52,4 +52,4 @@ Index de 55 composants, 302 relations, ~4 000 tokens pour chargement complet. Ic
 
 ## Connexions identifiées
 
-Complète et approfondit [[knowledge-graph-design-system]] (graphe de relations, deep tracing, instance counting). Enrichit [[format-toon]] (détail d'implémentation Python). Introduit [[mode-exploration-vs-navigation]] comme cadre conceptuel central. Le ROI / dette technique composée enrichit [[gouvernance-design-system-ia]]. La distinction métadonnées ("quoi") / index ("où") / les deux ("devrait-on ?") clarifie la complémentarité des couches 1 et 2 de [[trois-couches-composants-agents]].
+Complète et approfondit [knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md) (graphe de relations, deep tracing, instance counting). Enrichit [format-toon](../concepts/format-toon.md) (détail d'implémentation Python). Introduit [mode-exploration-vs-navigation](../concepts/mode-exploration-vs-navigation.md) comme cadre conceptuel central. Le ROI / dette technique composée enrichit [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md). La distinction métadonnées ("quoi") / index ("où") / les deux ("devrait-on ?") clarifie la complémentarité des couches 1 et 2 de [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md).

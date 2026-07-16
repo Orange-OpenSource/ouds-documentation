@@ -4,12 +4,12 @@ tags: [personne, design-system, uber, agentic, mcp, accessibilite]
 created: 2026-06-24
 updated: 2026-06-24
 sources:
-  - "[[uber-uspec-agentic-design-specs]]"
+  - "[uber-uspec-agentic-design-specs](../sources/uber-uspec-agentic-design-specs.md)"
 related:
-  - "[[generation-spec-agentique]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[accessibilite-continue]]"
-  - "[[pipeline-figma-docs-automatise]]"
+  - "[generation-spec-agentique](../concepts/generation-spec-agentique.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[accessibilite-continue](../concepts/accessibilite-continue.md)"
+  - "[pipeline-figma-docs-automatise](../concepts/pipeline-figma-docs-automatise.md)"
 ---
 
 ## Ian Guisard
@@ -23,4 +23,4 @@ Il a présenté un framework pour créer des specs détaillées à l'échelle da
 Formule emblématique : "Programmatic plugins can extract component data from Figma, but they can't interpret what that data means."
 
 **uSpec** : https://github.com/redongreen/uSpec — https://uspec.design
-**Article** : [[uber-uspec-agentic-design-specs]]
+**Article** : [uber-uspec-agentic-design-specs](../sources/uber-uspec-agentic-design-specs.md)

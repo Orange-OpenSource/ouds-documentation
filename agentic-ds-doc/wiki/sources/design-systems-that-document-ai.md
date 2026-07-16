@@ -5,17 +5,17 @@ created: 2026-06-17
 updated: 2026-06-17
 sources: []
 related:
-  - "[[romina-kavcic]]"
-  - "[[modele-maturite-ia-design-system]]"
-  - "[[quatre-regles-ia-ux]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[deux-lectures-du-design-system-ia]]"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md)"
+  - "[quatre-regles-ia-ux](../concepts/quatre-regles-ia-ux.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[deux-lectures-du-design-system-ia](../syntheses/deux-lectures-du-design-system-ia.md)"
 ---
 
 ## Design Systems That Document AI
 
-**Auteure** : [[romina-kavcic]]
+**Auteure** : [romina-kavcic](../entities/romina-kavcic.md)
 **Date** : 2026-06-01
 **Source** : thedesignsystem.guide (Substack)
 **Fichier brut** : `raw/Design Systems That Document AI.md`
@@ -24,7 +24,7 @@ related:
 
 La majorité des design systems ignorent encore totalement la question de l'IA comme *contenu à documenter* — c'est-à-dire les patterns d'interface pour les fonctionnalités IA destinées aux utilisateurs humains. Sur 156 systèmes publics analysés, seuls 26 documentent l'IA. Ces 26 systèmes ont convergé indépendamment vers les mêmes quatre règles fondamentales. La convergence est le signal. Le corpus établit une taxonomie de maturité en cinq niveaux.
 
-**Point d'attention pour le vault** : cet article documente comment les design systems documentent les *fonctionnalités IA pour utilisateurs humains* — dimension entièrement différente de la question centrale du reste du corpus (comment les agents IA opèrent des design systems). Voir [[deux-lectures-du-design-system-ia]] pour la distinction formalisée.
+**Point d'attention pour le vault** : cet article documente comment les design systems documentent les *fonctionnalités IA pour utilisateurs humains* — dimension entièrement différente de la question centrale du reste du corpus (comment les agents IA opèrent des design systems). Voir [deux-lectures-du-design-system-ia](../syntheses/deux-lectures-du-design-system-ia.md) pour la distinction formalisée.
 
 ## Dataset
 
@@ -32,7 +32,7 @@ La majorité des design systems ignorent encore totalement la question de l'IA c
 
 ## Le modèle de maturité en cinq niveaux
 
-Le [[modele-maturite-ia-design-system]] décompose la progression ainsi :
+Le [modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md) décompose la progression ainsi :
 
 - **Niveau 0** — Aucune couche IA (130/156 systèmes). Aucun composant, token, ni guideline dédié.
 - **Niveau 1** — IA comme décoration : rôles de couleur spéciaux, tokens nommés, styling distinctif. Exemple : Shopify Polaris avec le rôle "Magic" (`--p-color-bg-surface-magic`).
@@ -43,7 +43,7 @@ Le [[modele-maturite-ia-design-system]] décompose la progression ainsi :
 
 ## Les quatre règles convergentes
 
-Ces quatre règles ont émergé indépendamment chez IBM, AWS, GitLab, Red Hat, SAP, Workday et Apple — voir [[quatre-regles-ia-ux]] :
+Ces quatre règles ont émergé indépendamment chez IBM, AWS, GitLab, Red Hat, SAP, Workday et Apple — voir [quatre-regles-ia-ux](../concepts/quatre-regles-ia-ux.md) :
 
 1. **Marquer toujours** — label IA, styling réservé, sans sur-marquer.
 2. **Expliquer en couches** — Quoi/Pourquoi/Comment, révélation progressive selon les enjeux.
@@ -52,7 +52,7 @@ Ces quatre règles ont émergé indépendamment chez IBM, AWS, GitLab, Red Hat, 
 
 ## Le value gate
 
-IBM, GitLab, Red Hat et Apple positionnent tous comme *première* guideline : la permission de *ne pas utiliser l'IA*. Avant de définir comment documenter les features IA, ces systèmes établissent le droit de les désactiver. C'est un signal de gouvernance, pas d'ergonomie — intégré dans [[gouvernance-design-system-ia]].
+IBM, GitLab, Red Hat et Apple positionnent tous comme *première* guideline : la permission de *ne pas utiliser l'IA*. Avant de définir comment documenter les features IA, ces systèmes établissent le droit de les désactiver. C'est un signal de gouvernance, pas d'ergonomie — intégré dans [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md).
 
 ## Le vrai pattern : 15 questions
 
@@ -60,8 +60,8 @@ Un pattern d'interaction IA complet exige 15 éléments documentés : intent uti
 
 ## Citations clés
 
-- "83% of design systems have no AI layer at all." ([[romina-kavcic]])
-- "The convergence is the signal — these teams never talked to each other." ([[romina-kavcic]])
+- "83% of design systems have no AI layer at all." ([romina-kavcic](../entities/romina-kavcic.md))
+- "The convergence is the signal — these teams never talked to each other." ([romina-kavcic](../entities/romina-kavcic.md))
 - "Permission not to use AI is the first guideline." (IBM, GitLab, Red Hat, Apple — indépendamment)
 
 ## Ce qui manque publiquement
@@ -70,4 +70,4 @@ Les zones documentées par moins de 5 systèmes sur 26 : confiance/incertitude, 
 
 ## Connexions identifiées
 
-L'article crée une connexion directe avec [[gouvernance-design-system-ia]] via le Level 4 (Fluent RAI rubric comme instance de gouvernance formalisée). Il enrichit [[systeme-de-design-agentique]] en ajoutant une deuxième lecture du terme "agentique" : non plus le DS opéré par des agents, mais le DS qui documente les agents au service des humains. La tension entre ces deux lectures est formalisée dans [[deux-lectures-du-design-system-ia]].
+L'article crée une connexion directe avec [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) via le Level 4 (Fluent RAI rubric comme instance de gouvernance formalisée). Il enrichit [systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md) en ajoutant une deuxième lecture du terme "agentique" : non plus le DS opéré par des agents, mais le DS qui documente les agents au service des humains. La tension entre ces deux lectures est formalisée dans [deux-lectures-du-design-system-ia](../syntheses/deux-lectures-du-design-system-ia.md).

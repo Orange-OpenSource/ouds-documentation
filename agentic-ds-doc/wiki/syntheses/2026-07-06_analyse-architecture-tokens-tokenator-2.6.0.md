@@ -4,10 +4,10 @@ tags: [analyse, architecture, design-tokens, ouds, robustesse, maintenabilite, d
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[2026-07-06_audit-tokens-tokenator-2.6.0]]"
+  - "[2026-07-06_audit-tokens-tokenator-2.6.0](2026-07-06_audit-tokens-tokenator-2.6.0.md)"
 related:
-  - "[[2026-07-06_recommandations-tokens-tokenator-2.6.0]]"
-  - "[[2026-06-19_audit-ai-readiness-ouds-documentation]]"
+  - "[2026-07-06_recommandations-tokens-tokenator-2.6.0](2026-07-06_recommandations-tokens-tokenator-2.6.0.md)"
+  - "[2026-06-19_audit-ai-readiness-ouds-documentation](../questions/2026-06-19_audit-ai-readiness-ouds-documentation.md)"
 ---
 
 # Analyse architecturale — Tokens OUDS Tokenator 2.6.0

@@ -4,10 +4,10 @@ tags: [personne, ux, figma, design-system, ia]
 created: 2026-06-18
 updated: 2026-06-18
 sources:
-  - "[[designing-figma-design-system-ai-understand]]"
+  - "[designing-figma-design-system-ai-understand](../sources/designing-figma-design-system-ai-understand.md)"
 related:
-  - "[[lisibilite-machine-design-system]]"
-  - "[[designing-figma-design-system-ai-understand]]"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[designing-figma-design-system-ai-understand](../sources/designing-figma-design-system-ai-understand.md)"
 ---
 
 ## Alpesh Karanpuria

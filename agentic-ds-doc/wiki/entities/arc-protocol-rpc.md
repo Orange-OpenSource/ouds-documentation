@@ -4,17 +4,17 @@ tags: [protocole, infrastructure, multi-agent, rpc, communication, open-source]
 created: 2026-07-09
 updated: 2026-07-09
 sources:
-  - "[[arc-protocol-agent-remote-communication]]"
+  - "[arc-protocol-agent-remote-communication](../sources/arc-protocol-agent-remote-communication.md)"
 related:
-  - "[[mcp-model-context-protocol]]"
-  - "[[orchestration-multi-agents]]"
-  - "[[protocole-pas-produit]]"
-  - "[[protocole-arc]]"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[orchestration-multi-agents](../concepts/orchestration-multi-agents.md)"
+  - "[protocole-pas-produit](../concepts/protocole-pas-produit.md)"
+  - "[protocole-arc](../concepts/protocole-arc.md)"
 ---
 
 ## ARC Protocol (Agent Remote Communication Protocol)
 
-> ⚠️ Disambiguation : à ne pas confondre avec le [[protocole-arc]] d'Achiardi (cadre de maturité Audit → Report → Compose pour design systems agentiques). La coïncidence de l'acronyme est fortuite.
+> ⚠️ Disambiguation : à ne pas confondre avec le [protocole-arc](../concepts/protocole-arc.md) d'Achiardi (cadre de maturité Audit → Report → Compose pour design systems agentiques). La coïncidence de l'acronyme est fortuite.
 
 ARC Protocol (arc-protocol.org) est un protocole RPC open-source pour la communication entre agents dans des systèmes multi-agents. Il répond au problème de prolifération d'endpoints : comment router des centaines d'agents spécialisés depuis un point d'accès unique, avec sécurité et observabilité garanties.
 

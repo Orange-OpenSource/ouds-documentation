@@ -5,12 +5,12 @@ created: 2026-06-26
 updated: 2026-06-26
 sources: []
 related:
-  - "[[design-md-format]]"
-  - "[[mcp-on-demand-vs-rules-always-on]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[metriques-adoption-ia-design-system]]"
-  - "[[readable-vs-usable-token]]"
-  - "[[systeme-de-design-agentique]]"
+  - "[design-md-format](../concepts/design-md-format.md)"
+  - "[mcp-on-demand-vs-rules-always-on](../concepts/mcp-on-demand-vs-rules-always-on.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[metriques-adoption-ia-design-system](../concepts/metriques-adoption-ia-design-system.md)"
+  - "[readable-vs-usable-token](../concepts/readable-vs-usable-token.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
 ---
 
 ## Atlassian's DESIGN.md is here: what we learned testing portable design context in practice
@@ -58,4 +58,4 @@ Direction artistique haut niveau ; prototypage rapide dans des environnements in
 
 ## Connexions identifiées
 
-La limite #1 (chargement all-at-once) est la preuve empirique du problème théorisé dans [[mcp-on-demand-vs-rules-always-on]] : la distinction on-demand/always-on est maintenant quantifiée en tokens et en temps de réponse. La limite #3 (spec for reimplementing) introduit une dimension que le wiki n'avait pas : la différence entre décrire le système pour le refaire et le documenter pour l'utiliser. Le cas customer theming est un nouveau pattern d'usage agentique non encore présent dans le vault.
+La limite #1 (chargement all-at-once) est la preuve empirique du problème théorisé dans [mcp-on-demand-vs-rules-always-on](../concepts/mcp-on-demand-vs-rules-always-on.md) : la distinction on-demand/always-on est maintenant quantifiée en tokens et en temps de réponse. La limite #3 (spec for reimplementing) introduit une dimension que le wiki n'avait pas : la différence entre décrire le système pour le refaire et le documenter pour l'utiliser. Le cas customer theming est un nouveau pattern d'usage agentique non encore présent dans le vault.

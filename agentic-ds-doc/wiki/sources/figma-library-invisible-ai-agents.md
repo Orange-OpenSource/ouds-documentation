@@ -5,14 +5,14 @@ created: 2026-06-29
 updated: 2026-06-29
 sources: []
 related:
-  - "[[lisibilite-machine-design-system]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[priori-conflictuels-nommage]]"
-  - "[[inversion-economique-code-comprehension]]"
-  - "[[readable-vs-usable-token]]"
-  - "[[intent-token]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[user-vs-maintainer-ia]]"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md)"
+  - "[inversion-economique-code-comprehension](../concepts/inversion-economique-code-comprehension.md)"
+  - "[readable-vs-usable-token](../concepts/readable-vs-usable-token.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md)"
 ---
 
 ## Your Figma library is invisible to AI agents
@@ -65,8 +65,8 @@ Semantic token naming (`color-border-error` vs `red-300`) → **43% meilleure qu
 
 ## Connexions identifiées
 
-Le "contrat implicite" est la version narrative de ce que [[priori-conflictuels-nommage]] décrit techniquement : les agents arrivent avec 10 grammaires de nommage incompatibles ; les conventions implicites d'une équipe ne sont accessibles ni via les noms ni via les priors. Deux faces du même problème d'encodage.
+Le "contrat implicite" est la version narrative de ce que [priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md) décrit techniquement : les agents arrivent avec 10 grammaires de nommage incompatibles ; les conventions implicites d'une équipe ne sont accessibles ni via les noms ni via les priors. Deux faces du même problème d'encodage.
 
-Le "judgment gap" (intentionnel vs accidentel) est la limite permanente qui définit la valeur humaine dans [[user-vs-maintainer-ia]] : l'agent peut être Maintainer sur les tâches déterministes ; la distinction signifié/bruit dans un fichier Figma reste dans le registre du User humain.
+Le "judgment gap" (intentionnel vs accidentel) est la limite permanente qui définit la valeur humaine dans [user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md) : l'agent peut être Maintainer sur les tâches déterministes ; la distinction signifié/bruit dans un fichier Figma reste dans le registre du User humain.
 
-Le skill shift (craft visuel → architecture structurelle) est la conséquence opérationnelle de [[inversion-economique-code-comprehension]] : le coût a migré de l'écriture du code vers la structuration de la connaissance — mais la compétence de structuration n'est pas distribuée dans les équipes de la même façon que la compétence de design.
+Le skill shift (craft visuel → architecture structurelle) est la conséquence opérationnelle de [inversion-economique-code-comprehension](../concepts/inversion-economique-code-comprehension.md) : le coût a migré de l'écriture du code vers la structuration de la connaissance — mais la compétence de structuration n'est pas distribuée dans les équipes de la même façon que la compétence de design.

@@ -6,15 +6,15 @@ updated: 2026-07-06
 sources:
   - "[[ouds-tokenator-main-fm-tokens-2.6.0-early-access]]"
 related:
-  - "[[2026-06-19_audit-ai-readiness-ouds-documentation]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[modele-maturite-ia-design-system]]"
-  - "[[schema-metadata-composant]]"
+  - "[2026-06-19_audit-ai-readiness-ouds-documentation](../questions/2026-06-19_audit-ai-readiness-ouds-documentation.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
 ---
 
 # Audit AI-Readiness — Tokens OUDS Tokenator 2.6.0 Early Access
 
-> Audit fondé sur l'inspection directe du dossier `ouds-tokenator-main-fm-tokens-2.6.0-early-access-tokens`. Prend en compte les conclusions de [[2026-06-19_audit-ai-readiness-ouds-documentation]] et les approfondit sur la totalité du corpus token.
+> Audit fondé sur l'inspection directe du dossier `ouds-tokenator-main-fm-tokens-2.6.0-early-access-tokens`. Prend en compte les conclusions de [2026-06-19_audit-ai-readiness-ouds-documentation](../questions/2026-06-19_audit-ai-readiness-ouds-documentation.md) et les approfondit sur la totalité du corpus token.
 
 ---
 
@@ -138,7 +138,7 @@ Les emojis comme `🚧` et `🚫` ont une sémantique de gouvernance (WIP, depre
 
 ## Comparaison avec l'audit précédent
 
-L'audit [[2026-06-19_audit-ai-readiness-ouds-documentation]] portait sur un export GitHub avec un dossier `tokens/jsonl-ai/` (64 fichiers, format différent). Ce corpus Tokenator 2.6.0 est une source Figma native. Les deux partagent le même gap fondamental — champs `description` vides — mais ce corpus présente des problèmes supplémentaires absents du précédent : emojis dans les noms, tokens WIP non isolés, et une relation de fichiers ambiguë.
+L'audit [2026-06-19_audit-ai-readiness-ouds-documentation](../questions/2026-06-19_audit-ai-readiness-ouds-documentation.md) portait sur un export GitHub avec un dossier `tokens/jsonl-ai/` (64 fichiers, format différent). Ce corpus Tokenator 2.6.0 est une source Figma native. Les deux partagent le même gap fondamental — champs `description` vides — mais ce corpus présente des problèmes supplémentaires absents du précédent : emojis dans les noms, tokens WIP non isolés, et une relation de fichiers ambiguë.
 
 Le point positif distinct de ce corpus : l'architecture multi-brand est plus explicite et le versioning des composants est présent (Comp changelog).
 

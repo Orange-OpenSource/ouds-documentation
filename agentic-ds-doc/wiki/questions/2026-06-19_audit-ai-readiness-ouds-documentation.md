@@ -5,15 +5,15 @@ created: 2026-06-19
 updated: 2026-06-19
 sources: []
 related:
-  - "[[lisibilite-machine-design-system]]"
-  - "[[schema-metadata-composant]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[protocole-arc]]"
-  - "[[modele-maturite-ia-design-system]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[intent-token]]"
-  - "[[processus-generation-metadata-echelle]]"
-  - "[[workflows-ia-metadata]]"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[protocole-arc](../concepts/protocole-arc.md)"
+  - "[modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md)"
+  - "[workflows-ia-metadata](../concepts/workflows-ia-metadata.md)"
 ---
 
 # Audit AI readiness — ouds-documentation (juin 2026)
@@ -61,7 +61,7 @@ Deux signaux montrent que l'équipe pense déjà à l'IA : le dossier `tokens/js
 
 ---
 
-## Évaluation par couche (framework de [[trois-couches-composants-agents]])
+## Évaluation par couche (framework de [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md))
 
 ### Couche 1 — Index (qu'est-ce qui existe ?)
 
@@ -85,9 +85,9 @@ C'est le paradoxe central du repo. Le schéma JSON des tokens est exactement ce 
 }}
 ```
 
-Le champ `description` existe dans le schéma. Il est **toujours vide** sur l'intégralité des 64 fichiers inspectés. Un agent qui interroge `ouds.color.action.negative.enabled` obtient `#ff8081` et son core token, mais aucune réponse à "quand l'utiliser" ou "pourquoi pas `ouds.color.action.enabled`". L'[[intent-token|intent]] — la raison d'être d'un token sémantique — n'est encodé nulle part.
+Le champ `description` existe dans le schéma. Il est **toujours vide** sur l'intégralité des 64 fichiers inspectés. Un agent qui interroge `ouds.color.action.negative.enabled` obtient `#ff8081` et son core token, mais aucune réponse à "quand l'utiliser" ou "pourquoi pas `ouds.color.action.enabled`". L'[intent](../concepts/intent-token.md) — la raison d'être d'un token sémantique — n'est encodé nulle part.
 
-Du côté composants, `button.md` (16 Ko) est un document dense couvrant définition, "Best for", anatomie, variantes avec do&don'ts, états, accessibilité WCAG, et changelog. Le contenu est riche. Mais il est en Markdown structuré pour la lecture humaine, non queryable programmatiquement. La [[lisibilite-machine-design-system]] exige une traduction de ce savoir en format structuré — ce que [[cristian-morales-achiardi]] appelle "reformatter existing knowledge, not create new documentation."
+Du côté composants, `button.md` (16 Ko) est un document dense couvrant définition, "Best for", anatomie, variantes avec do&don'ts, états, accessibilité WCAG, et changelog. Le contenu est riche. Mais il est en Markdown structuré pour la lecture humaine, non queryable programmatiquement. La [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) exige une traduction de ce savoir en format structuré — ce que [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) appelle "reformatter existing knowledge, not create new documentation."
 
 ### Couche 3 — Raisonnement (quelle logique de composition ?)
 
@@ -97,7 +97,7 @@ Aucune règle de composition formalisée. Pas de "Dialog + Alert + Button Cancel
 
 ---
 
-## Position sur le modèle de maturité ([[modele-maturite-ia-design-system]])
+## Position sur le modèle de maturité ([modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md))
 
 Sur l'axe "infrastructure agentique" (distinct du modèle de maturité des features IA pour utilisateurs humains de Kavcic) :
 
@@ -126,7 +126,7 @@ Résultat : chaque repo plateforme re-documente le même vocabulaire (raw/semant
 
 ---
 
-## Ce que le [[protocole-arc]] implique
+## Ce que le [protocole-arc](../concepts/protocole-arc.md) implique
 
 **Phase 1 (Audit — l'agent consomme) :** partiellement accessible. Un agent peut lire les 64 fichiers JSON de tokens. Mais faute de descriptions, il ne peut pas raisonner sur l'intent — seulement sur les valeurs. Les benchmarks de Morales Achiardi montrent 26,5 % de variance sans infrastructure d'intent, contre 0,04 % avec.
 
@@ -158,8 +158,8 @@ Ajouter à chaque fichier composant `.md` (ou dans un fichier JSON compagnon) la
 
 **4. Métadonnées JSON par composant — effort : moyen-élevé, impact : élevé**
 
-Générer des fichiers `.metadata.json` co-localisés avec chaque composant, couvrant les sections critiques du [[schema-metadata-composant]] : `usage` (useCases, antiPatterns avec scénario/raison/alternative), `aiHints` (selectionCriteria par variante), `variants` (options + intent), `composition` (contraintes d'imbrication). Le contenu existe dans les `.md` — il s'agit de le traduire en format queryable. Le [[processus-generation-metadata-echelle]] détaille les 5 étapes de cette génération assistée.
+Générer des fichiers `.metadata.json` co-localisés avec chaque composant, couvrant les sections critiques du [schema-metadata-composant](../concepts/schema-metadata-composant.md) : `usage` (useCases, antiPatterns avec scénario/raison/alternative), `aiHints` (selectionCriteria par variante), `variants` (options + intent), `composition` (contraintes d'imbrication). Le contenu existe dans les `.md` — il s'agit de le traduire en format queryable. Le [processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md) détaille les 5 étapes de cette génération assistée.
 
 **5. Patterns de composition — effort : élevé, impact : moyen-terme**
 
-Un répertoire `patterns/` documentant les assemblages validés : confirmation destructive, formulaire d'erreur, notification persistante. C'est la couche 3 du framework de [[trois-couches-composants-agents]] — la logique de raisonnement qui permet à un agent de passer d'une liste d'ingrédients à une recette.
+Un répertoire `patterns/` documentant les assemblages validés : confirmation destructive, formulaire d'erreur, notification persistante. C'est la couche 3 du framework de [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md) — la logique de raisonnement qui permet à un agent de passer d'une liste d'ingrédients à une recette.

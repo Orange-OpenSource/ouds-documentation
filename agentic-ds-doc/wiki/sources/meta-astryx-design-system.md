@@ -5,13 +5,13 @@ created: 2026-06-29
 updated: 2026-06-29
 sources: []
 related:
-  - "[[systeme-de-design-agentique]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[protocole-pas-produit]]"
-  - "[[schema-metadata-composant]]"
-  - "[[design-md-format]]"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[protocole-pas-produit](../concepts/protocole-pas-produit.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[design-md-format](../concepts/design-md-format.md)"
 ---
 
 ## Introducing Astryx by Meta: an open source design system built for how we build now
@@ -33,7 +33,7 @@ Astryx est le premier DS majeur conçu **ground-up pour être AI-operable** — 
 
 **Le MCP comme API agentique.** Le MCP server Astryx est compatible Cursor, Claude Code, GitHub Copilot. Les agents scaffoldent, naviguent et documentent via la même API structurée qu'un développeur humain utiliserait.
 
-**Theming via CSS variable cascade.** Les 10 thèmes (neutral, daily, butter, chocolate, matcha, stone, gothic, brutalist, y2k, default) s'appliquent en changeant des CSS variables — le code composant ne change jamais. Même mécanique que le customer theming identifié dans [[design-md-format]].
+**Theming via CSS variable cascade.** Les 10 thèmes (neutral, daily, butter, chocolate, matcha, stone, gothic, brutalist, y2k, default) s'appliquent en changeant des CSS variables — le code composant ne change jamais. Même mécanique que le customer theming identifié dans [design-md-format](../concepts/design-md-format.md).
 
 ## Citations clés (≤ 15 mots)
 
@@ -61,8 +61,8 @@ Astryx est le premier DS majeur conçu **ground-up pour être AI-operable** — 
 
 ## Connexions identifiées
 
-Astryx concrétise la thèse de [[protocole-pas-produit]] (Kavcic) : l'infrastructure de distribution prime sur les fonctionnalités. Le MCP + CLI + manifest JSON est l'infrastructure ; les composants sont le contenu.
+Astryx concrétise la thèse de [protocole-pas-produit](../concepts/protocole-pas-produit.md) (Kavcic) : l'infrastructure de distribution prime sur les fonctionnalités. Le MCP + CLI + manifest JSON est l'infrastructure ; les composants sont le contenu.
 
-La distinction "AI-operable vs retrofitted" est une nouvelle entrée dans [[lisibilite-machine-design-system]] : il ne s'agit plus seulement de documenter pour la machine, mais de concevoir l'architecture du système pour qu'elle soit nativement lisible.
+La distinction "AI-operable vs retrofitted" est une nouvelle entrée dans [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) : il ne s'agit plus seulement de documenter pour la machine, mais de concevoir l'architecture du système pour qu'elle soit nativement lisible.
 
-Le JSON manifest répond au problème documenté dans [[ia-comme-utilisateur]] (l'agent lit le fichier sans contexte) par une solution d'infrastructure : donner à l'agent une spec formelle de ce qu'il peut faire, au format qu'il sait lire.
+Le JSON manifest répond au problème documenté dans [ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md) (l'agent lit le fichier sans contexte) par une solution d'infrastructure : donner à l'agent une spec formelle de ce qu'il peut faire, au format qu'il sait lire.

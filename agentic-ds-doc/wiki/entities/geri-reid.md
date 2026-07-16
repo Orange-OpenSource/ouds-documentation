@@ -4,11 +4,11 @@ tags: [auteur, documentation, design-system, product, accessibility, ia]
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[making-product-docs-work-humans-ai-gerireid]]"
+  - "[making-product-docs-work-humans-ai-gerireid](../sources/making-product-docs-work-humans-ai-gerireid.md)"
 related:
-  - "[[cinq-questions-documentation-produit]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[documentation-lag]]"
+  - "[cinq-questions-documentation-produit](../concepts/cinq-questions-documentation-produit.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[documentation-lag](../concepts/documentation-lag.md)"
 ---
 
 ## Geri Reid
@@ -21,4 +21,4 @@ L'angle distinctif de Reid dans le corpus du vault : elle aborde la documentatio
 
 ## Articles référencés dans le vault
 
-"Making product documentation work for humans and AI" (avril 2026) — [[making-product-docs-work-humans-ai-gerireid]]. Thèse centrale : les cinq questions qui structurent toute documentation produit ([[cinq-questions-documentation-produit]]) et le diagnostic que la documentation médiocre, qui ralentissait seulement les humains, crée désormais des mauvais outcomes actifs avec les agents IA.
+"Making product documentation work for humans and AI" (avril 2026) — [making-product-docs-work-humans-ai-gerireid](../sources/making-product-docs-work-humans-ai-gerireid.md). Thèse centrale : les cinq questions qui structurent toute documentation produit ([cinq-questions-documentation-produit](../concepts/cinq-questions-documentation-produit.md)) et le diagnostic que la documentation médiocre, qui ralentissait seulement les humains, crée désormais des mauvais outcomes actifs avec les agents IA.

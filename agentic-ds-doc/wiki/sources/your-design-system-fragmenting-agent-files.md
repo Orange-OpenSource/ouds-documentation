@@ -5,20 +5,20 @@ created: 2026-07-07
 updated: 2026-07-07
 sources: []
 related:
-  - "[[agents-md-format]]"
-  - "[[design-md-format]]"
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[dispersion-decision-design]]"
-  - "[[prompt-injection-design-system]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[murphy-trueman]]"
-  - "[[diana-wolosin]]"
+  - "[agents-md-format](../concepts/agents-md-format.md)"
+  - "[design-md-format](../concepts/design-md-format.md)"
+  - "[architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[dispersion-decision-design](../concepts/dispersion-decision-design.md)"
+  - "[prompt-injection-design-system](../concepts/prompt-injection-design-system.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[murphy-trueman](../entities/murphy-trueman.md)"
+  - "[diana-wolosin](../entities/diana-wolosin.md)"
 ---
 
 ## Your design system is fragmenting into agent files
 
-**Auteur** : [[murphy-trueman]] — Design Systems Collective, 14 mai 2026.
+**Auteur** : [murphy-trueman](../entities/murphy-trueman.md) — Design Systems Collective, 14 mai 2026.
 **URL** : https://www.designsystemscollective.com/your-design-system-is-fragmenting-into-agent-files-26a9b19a2fad
 
 ## Thèse principale
@@ -33,7 +33,7 @@ Trois formats — AGENTS.md, SKILL.md, DESIGN.md — ont émergé en douze mois 
 
 **SKILL.md** est la couche procédurale. Un Skill est un répertoire avec un SKILL.md à la racine, plus des scripts ou templates. Le fichier est une recette, pas une description : il dit à l'agent *comment faire* quelque chose, étape par étape. Figma's MCP server livre plusieurs Skills bundlés : `figma-use`, `figma-generate-design`, `figma-implement-design`, `figma-create-design-system-rules`. La portabilité du fichier est réelle (readable everywhere) mais l'exécution n'est pas consistante (different agents load Skills differently, invoke them with different triggers).
 
-**DESIGN.md** est la couche d'identité visuelle compressée. Format open source Google Labs (alpha, 21 avril 2026). YAML front matter pour les valeurs de tokens, corps Markdown pour les règles d'usage en prose. Sa limite structurelle (déjà documentée depuis [[atlassian-design-md-lessons]]) : c'est une spec for reimplementing, pas un guide for using. Optimal pour les environnements sans codebase existante ; insuffisant quand une bibliothèque de composants est en production.
+**DESIGN.md** est la couche d'identité visuelle compressée. Format open source Google Labs (alpha, 21 avril 2026). YAML front matter pour les valeurs de tokens, corps Markdown pour les règles d'usage en prose. Sa limite structurelle (déjà documentée depuis [atlassian-design-md-lessons](atlassian-design-md-lessons.md)) : c'est une spec for reimplementing, pas un guide for using. Optimal pour les environnements sans codebase existante ; insuffisant quand une bibliothèque de composants est en production.
 
 ### La plomberie sous-jacente
 
@@ -55,7 +55,7 @@ AGENTS.md, SKILL.md, et les component manifests sont des *instructions exécutab
 
 ### L'empirisme de Wolosin confirmé
 
-Trueman cite le benchmark de [[diana-wolosin]] chez Indeed : 77 composants extraits de MDX, 1 056 prompts, 8 configurations de métadonnées. Markdown : ~30 000 tokens, couverture 82%, hallucinations visibles. JSON : précision plus haute, 80% moins de tokens, coût annuel 5× inférieur. Règle opérationnelle : "JSON for MCP, Markdown for LLM." Données structurées (APIs, props, variants) en JSON. Guidance en prose pour le modèle en Markdown. DESIGN.md (YAML+Markdown) correspond à cette bipartition.
+Trueman cite le benchmark de [diana-wolosin](../entities/diana-wolosin.md) chez Indeed : 77 composants extraits de MDX, 1 056 prompts, 8 configurations de métadonnées. Markdown : ~30 000 tokens, couverture 82%, hallucinations visibles. JSON : précision plus haute, 80% moins de tokens, coût annuel 5× inférieur. Règle opérationnelle : "JSON for MCP, Markdown for LLM." Données structurées (APIs, props, variants) en JSON. Guidance en prose pour le modèle en Markdown. DESIGN.md (YAML+Markdown) correspond à cette bipartition.
 
 ### Séquence d'adoption recommandée
 
@@ -66,14 +66,14 @@ Trueman cite le benchmark de [[diana-wolosin]] chez Indeed : 77 composants extra
 
 ## Citations clés
 
-"AGENTS.md is not, in itself, documentation about your design system. It's the orchestration layer." ([[murphy-trueman]])
+"AGENTS.md is not, in itself, documentation about your design system. It's the orchestration layer." ([murphy-trueman](../entities/murphy-trueman.md))
 
 "Long files slow the agent and bury signal." (Factory docs, cité par Trueman)
 
-"A Skill is best understood as a recipe rather than a description of your design system." ([[murphy-trueman]])
+"A Skill is best understood as a recipe rather than a description of your design system." ([murphy-trueman](../entities/murphy-trueman.md))
 
-"The question for your team is whether you're shaping the formats that touch your system or accepting whatever the next release decides." ([[murphy-trueman]])
+"The question for your team is whether you're shaping the formats that touch your system or accepting whatever the next release decides." ([murphy-trueman](../entities/murphy-trueman.md))
 
 ## Connexions identifiées
 
-La thèse "JSON for MCP, Markdown for LLM" de Wolosin valide rétrospectivement l'architecture YAML+Markdown de DESIGN.md. La séquence d'adoption recommandée par Trueman (AGENTS.md d'abord) converge avec la conclusion opérationnelle de [[mcp-on-demand-vs-rules-always-on]] (les Rules/AGENTS.md sont la couche nécessaire que le MCP ne peut pas couvrir). Le risque de prompt injection est un angle absent de [[gouvernance-design-system-ia]] avant cette source. La dispersion d'une décision en 5 emplacements est un nouveau concept qui n'existait pas dans le corpus.
+La thèse "JSON for MCP, Markdown for LLM" de Wolosin valide rétrospectivement l'architecture YAML+Markdown de DESIGN.md. La séquence d'adoption recommandée par Trueman (AGENTS.md d'abord) converge avec la conclusion opérationnelle de [mcp-on-demand-vs-rules-always-on](../concepts/mcp-on-demand-vs-rules-always-on.md) (les Rules/AGENTS.md sont la couche nécessaire que le MCP ne peut pas couvrir). Le risque de prompt injection est un angle absent de [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) avant cette source. La dispersion d'une décision en 5 emplacements est un nouveau concept qui n'existait pas dans le corpus.

@@ -5,17 +5,17 @@ created: 2026-06-17
 updated: 2026-06-17
 sources:
 related:
-  - "[[romina-kavcic]]"
-  - "[[documentation-lag]]"
-  - "[[pipeline-figma-docs-automatise]]"
-  - "[[mintlify]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[boucle-feedback-infrastructure]]"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[documentation-lag](../concepts/documentation-lag.md)"
+  - "[pipeline-figma-docs-automatise](../concepts/pipeline-figma-docs-automatise.md)"
+  - "[mintlify](../entities/mintlify.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md)"
 ---
 
 ## How to Automate Design System Documentation
 
-**Auteure** : [[romina-kavcic]]
+**Auteure** : [romina-kavcic](../entities/romina-kavcic.md)
 **Publication** : thedesignsystem.guide (Substack), 17 octobre 2025
 **URL** : https://learn.thedesignsystem.guide/p/how-to-automate-design-system-documentation
 **Sous-titre** : "From Figma to Mintlify"
@@ -59,4 +59,4 @@ Figma (API Personal Access Token + MCP Figma) + Claude Code + Mintlify (héberge
 
 ## Connexions identifiées
 
-[[documentation-lag]] formalise le problème central. [[pipeline-figma-docs-automatise]] documente le flux complet. [[mintlify]] est une nouvelle entité à créer. Enrichit [[boucle-feedback-infrastructure]] (la documentation auto-mise à jour est une boucle de feedback concrète entre Figma et les docs), [[mcp-model-context-protocol]] (usage Figma MCP pour la documentation), [[processus-generation-metadata-echelle]] (variante plus automatisée du pipeline de génération). Les writing guidelines mentionnées rejoignent [[architecture-skills-rules-instructions]] (Rules comme contexte de génération).
+[documentation-lag](../concepts/documentation-lag.md) formalise le problème central. [pipeline-figma-docs-automatise](../concepts/pipeline-figma-docs-automatise.md) documente le flux complet. [mintlify](../entities/mintlify.md) est une nouvelle entité à créer. Enrichit [boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md) (la documentation auto-mise à jour est une boucle de feedback concrète entre Figma et les docs), [mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md) (usage Figma MCP pour la documentation), [processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md) (variante plus automatisée du pipeline de génération). Les writing guidelines mentionnées rejoignent [architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md) (Rules comme contexte de génération).

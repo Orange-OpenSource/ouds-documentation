@@ -4,23 +4,23 @@ tags: [ia, design-system, onboarding, métaphore, documentation, miro]
 created: 2026-06-22
 updated: 2026-06-22
 sources:
-  - "[[miro-ai-design-system-mcp-claude-code-skills]]"
+  - "[miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)"
 related:
-  - "[[ia-comme-utilisateur]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[seeds-vs-trees]]"
-  - "[[andressa-lombardo]]"
-  - "[[aura-miro]]"
-  - "[[documentation-lag]]"
+  - "[ia-comme-utilisateur](ia-comme-utilisateur.md)"
+  - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
+  - "[seeds-vs-trees](seeds-vs-trees.md)"
+  - "[andressa-lombardo](../entities/andressa-lombardo.md)"
+  - "[aura-miro](../entities/aura-miro.md)"
+  - "[documentation-lag](documentation-lag.md)"
 ---
 
 ## L'IA comme nouvelle recrue
 
-"L'IA comme nouvelle recrue" est la reformulation que [[andressa-lombardo]] et [[eddie-machado]] ont adoptée chez Miro pour définir leur travail ([[miro-ai-design-system-mcp-claude-code-skills]]). Elle se distingue de la thèse "IA comme utilisateur" de [[diana-wolosin]] ([[ia-comme-utilisateur]]) par son angle : non pas le format du système (readable, queryable), mais le processus de préparation du système (onboarding, matériel pédagogique).
+"L'IA comme nouvelle recrue" est la reformulation que [andressa-lombardo](../entities/andressa-lombardo.md) et [eddie-machado](../entities/eddie-machado.md) ont adoptée chez Miro pour définir leur travail ([miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)). Elle se distingue de la thèse "IA comme utilisateur" de [diana-wolosin](../entities/diana-wolosin.md) ([ia-comme-utilisateur](ia-comme-utilisateur.md)) par son angle : non pas le format du système (readable, queryable), mais le processus de préparation du système (onboarding, matériel pédagogique).
 
 ## La distinction avec "IA comme utilisateur"
 
-[[diana-wolosin]] pose la question : "comment le design system doit-il être structuré pour qu'une IA puisse le requêter ?" La réponse : métadonnées structurées, JSON, MCP. [[andressa-lombardo]] pose la question : "comment embarque-t-on un nouveau membre d'équipe ?" La réponse : on lui écrit les règles, on lui montre les exemples et les contre-exemples, on lui laisse de la place pour expérimenter et se corriger.
+[diana-wolosin](../entities/diana-wolosin.md) pose la question : "comment le design system doit-il être structuré pour qu'une IA puisse le requêter ?" La réponse : métadonnées structurées, JSON, MCP. [andressa-lombardo](../entities/andressa-lombardo.md) pose la question : "comment embarque-t-on un nouveau membre d'équipe ?" La réponse : on lui écrit les règles, on lui montre les exemples et les contre-exemples, on lui laisse de la place pour expérimenter et se corriger.
 
 Ces deux questions ont des réponses qui se recoupent — l'onboarding matériel et les métadonnées structurées servent les deux audiences — mais l'angle change ce qu'on priorise. La thèse Wolosin pointe vers l'architecture du MCP. La thèse Lombardo pointe vers la qualité de ce qu'on met dedans : les descriptions "do not use", les exemples et contre-exemples, la cohérence des règles.
 

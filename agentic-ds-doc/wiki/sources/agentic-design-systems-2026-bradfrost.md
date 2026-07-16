@@ -5,15 +5,15 @@ created: 2026-06-18
 updated: 2026-06-18
 sources: []
 related:
-  - "[[brad-frost]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[seeds-vs-trees]]"
+  - "[brad-frost](../entities/brad-frost.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[seeds-vs-trees](../concepts/seeds-vs-trees.md)"
 ---
 
 ## Agentic Design Systems in 2026
 
-**Auteur** : [[brad-frost]]
+**Auteur** : [brad-frost](../entities/brad-frost.md)
 **Publication** : bradfrost.com
 **Date** : 2025-12-16
 **URL** : https://bradfrost.com/blog/post/agentic-design-systems-in-2026/
@@ -27,7 +27,7 @@ Article-billet de Brad Frost (auteur d'Atomic Design) documentant sa participati
 
 ## Thèses principales
 
-**DS+AI vs vibe coding.** "This is what distinguishes DS+AI from vibe coding; the AI is deliberately constrained to using the high-quality design system materials to ensure what's being generated adheres to the organization's established standards." La contrainte au design system n'est pas une limitation — c'est précisément ce qui rend la génération IA exploitable en production, par opposition au vibe coding qui laisse l'IA improviser librement. Voir [[systeme-de-design-agentique]].
+**DS+AI vs vibe coding.** "This is what distinguishes DS+AI from vibe coding; the AI is deliberately constrained to using the high-quality design system materials to ensure what's being generated adheres to the organization's established standards." La contrainte au design system n'est pas une limitation — c'est précisément ce qui rend la génération IA exploitable en production, par opposition au vibe coding qui laisse l'IA improviser librement. Voir [systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md).
 
 **Mouth coding.** Des membres non-techniques d'une équipe (PMs, chercheurs, content designers) peuvent "mouth coder" — verbaliser des features produit pendant une session collaborative — et voir le résultat émerger en temps réel via les composants du design system. C'est un nouveau mode de collaboration cross-disciplinaire rendu possible par DS+AI.
 
@@ -35,10 +35,10 @@ Article-billet de Brad Frost (auteur d'Atomic Design) documentant sa participati
 
 ## Citations clés
 
-"This is what distinguishes DS+AI from vibe coding; the AI is deliberately constrained to using the high-quality design system materials to ensure what's being generated adheres to the organization's established standards." ([[brad-frost]])
+"This is what distinguishes DS+AI from vibe coding; the AI is deliberately constrained to using the high-quality design system materials to ensure what's being generated adheres to the organization's established standards." ([brad-frost](../entities/brad-frost.md))
 
-"Non-technical team members can 'mouth code' a product feature during a collaboration session and collectively we can see things come to life using the production-grade foundations of the design system." ([[brad-frost]])
+"Non-technical team members can 'mouth code' a product feature during a collaboration session and collectively we can see things come to life using the production-grade foundations of the design system." ([brad-frost](../entities/brad-frost.md))
 
 ## Connexions identifiées
 
-La contrainte DS+AI confirme [[seeds-vs-trees]] et [[lisibilite-machine-design-system]] depuis un angle différent : la valeur du design system est précisément sa capacité à contraindre la génération IA vers des standards établis. Storybook MCP s'ajoute aux outils documentés dans [[mcp-model-context-protocol]] (aux côtés de Figma MCP et MCP Indeed). Mouth coding est un concept d'usage, pas d'infrastructure — il illustre la valeur finale de DS+AI pour les équipes cross-disciplinaires.
+La contrainte DS+AI confirme [seeds-vs-trees](../concepts/seeds-vs-trees.md) et [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) depuis un angle différent : la valeur du design system est précisément sa capacité à contraindre la génération IA vers des standards établis. Storybook MCP s'ajoute aux outils documentés dans [mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md) (aux côtés de Figma MCP et MCP Indeed). Mouth coding est un concept d'usage, pas d'infrastructure — il illustre la valeur finale de DS+AI pour les équipes cross-disciplinaires.

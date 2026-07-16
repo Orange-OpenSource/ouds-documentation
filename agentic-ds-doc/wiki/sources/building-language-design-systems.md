@@ -5,25 +5,25 @@ created: 2026-07-09
 updated: 2026-07-09
 sources: []
 related:
-  - "[[cristian-morales-achiardi]]"
-  - "[[protocole-arc]]"
-  - "[[langage-design-system]]"
-  - "[[grammaire-composition-composants]]"
-  - "[[intent-token]]"
-  - "[[dtcg-annotation-schema]]"
-  - "[[composant-comme-contrat]]"
-  - "[[priori-conflictuels-nommage]]"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
+  - "[protocole-arc](../concepts/protocole-arc.md)"
+  - "[langage-design-system](../concepts/langage-design-system.md)"
+  - "[grammaire-composition-composants](../concepts/grammaire-composition-composants.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[dtcg-annotation-schema](../concepts/dtcg-annotation-schema.md)"
+  - "[composant-comme-contrat](../concepts/composant-comme-contrat.md)"
+  - "[priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md)"
 ---
 
 ## Building language for design systems
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective, juillet 2026
 **URL** : https://www.designsystemscollective.com/building-language-for-design-systems-1b2f260b0bdf
 
 ## Résumé
 
-Article central de la série Achiardi 2026. La thèse : un design system est un langage, pas seulement une bibliothèque. Il est composé d'un vocabulaire (les tokens, les props, les noms de composants — termes d'intent) et d'une grammaire (les règles d'assemblage des composants, les flux d'état, les conventions de nommage). Ces deux couches doivent être déclarées explicitement et encodées de façon machine-lisible pour que la Phase 3 du [[protocole-arc]] (Compose) devienne praticable.
+Article central de la série Achiardi 2026. La thèse : un design system est un langage, pas seulement une bibliothèque. Il est composé d'un vocabulaire (les tokens, les props, les noms de composants — termes d'intent) et d'une grammaire (les règles d'assemblage des composants, les flux d'état, les conventions de nommage). Ces deux couches doivent être déclarées explicitement et encodées de façon machine-lisible pour que la Phase 3 du [protocole-arc](../concepts/protocole-arc.md) (Compose) devienne praticable.
 
 ## Thèses principales
 
@@ -41,6 +41,6 @@ Le contract est la table de correspondance partagée contre laquelle design et c
 
 ## Apport au vault
 
-Cet article fournit le socle conceptuel manquant pour la [[protocole-arc|Phase 3 (Compose)]] : la "composition" agentique présuppose un langage déclaré — sans vocabulaire et grammaire explicites, l'agent improvise, accumule des priors contradictoires ([[priori-conflictuels-nommage]]), et produit des assemblages visuellement plausibles mais sémantiquement incorrects. C'est la dimension "langage" que les articles précédents de la série (indexation, orchestration, gouvernance) n'avaient pas encore nommée.
+Cet article fournit le socle conceptuel manquant pour la [Phase 3 (Compose)](../concepts/protocole-arc.md) : la "composition" agentique présuppose un langage déclaré — sans vocabulaire et grammaire explicites, l'agent improvise, accumule des priors contradictoires ([priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md)), et produit des assemblages visuellement plausibles mais sémantiquement incorrects. C'est la dimension "langage" que les articles précédents de la série (indexation, orchestration, gouvernance) n'avaient pas encore nommée.
 
-Crée le concept [[langage-design-system]] comme couche liant [[intent-token]] (vocabulaire valeurs), [[grammaire-composition-composants]] (vocabulaire assemblage), et [[composant-comme-contrat]] (vocabulaire composant).
+Crée le concept [langage-design-system](../concepts/langage-design-system.md) comme couche liant [intent-token](../concepts/intent-token.md) (vocabulaire valeurs), [grammaire-composition-composants](../concepts/grammaire-composition-composants.md) (vocabulaire assemblage), et [composant-comme-contrat](../concepts/composant-comme-contrat.md) (vocabulaire composant).

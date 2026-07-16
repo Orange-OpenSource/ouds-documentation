@@ -4,20 +4,20 @@ tags: [documentation, design-system, ia, structure, dual-audience, framework, pr
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[making-product-docs-work-humans-ai-gerireid]]"
+  - "[making-product-docs-work-humans-ai-gerireid](making-product-docs-work-humans-ai-gerireid.md)"
 related:
-  - "[[geri-reid]]"
-  - "[[cinq-questions-documentation-produit]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[documentation-lag]]"
-  - "[[ia-comme-nouvelle-recrue]]"
-  - "[[schema-metadata-composant]]"
-  - "[[design-system-as-infrastructure]]"
+  - "[geri-reid](../entities/geri-reid.md)"
+  - "[cinq-questions-documentation-produit](../concepts/cinq-questions-documentation-produit.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[documentation-lag](../concepts/documentation-lag.md)"
+  - "[ia-comme-nouvelle-recrue](../concepts/ia-comme-nouvelle-recrue.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[design-system-as-infrastructure](../concepts/design-system-as-infrastructure.md)"
 ---
 
 ## Making product documentation work for humans and AI
 
-**Auteur** : [[geri-reid]] | **Publié** : avril 2026 | **Source** : https://gerireid.com/blog/making-product-docs-work-for-humans-and-ai/
+**Auteur** : [geri-reid](../entities/geri-reid.md) | **Publié** : avril 2026 | **Source** : https://gerireid.com/blog/making-product-docs-work-for-humans-and-ai/
 
 ## Thèse principale
 
@@ -27,13 +27,13 @@ La documentation d'équipe produit doit désormais servir deux audiences simulta
 
 Jusqu'à récemment, les équipes muddlaient avec une documentation médiocre. Les humains sont bons pour contourner les mauvais systèmes — ils demandent sur Slack, cherchent dans les archives. C'est inefficace, mais ça fonctionne à peu près.
 
-Les LLMs ne fonctionnent pas ainsi. Face à une documentation mal structurée, contradictoire, ou obsolète, le modèle "ne reconnaît pas son ignorance. Il trouve des patterns et construit une réponse. Une réponse confiante, bien formatée, complètement fausse, livrée comme un fait." [[geri-reid]] illustre avec un cas personnel : en utilisant l'IA pour écrire de la documentation d'accessibilité sur des composants, le modèle "wildly hallucinated components based on their name" avant qu'une liste de composants approuvés soit fournie.
+Les LLMs ne fonctionnent pas ainsi. Face à une documentation mal structurée, contradictoire, ou obsolète, le modèle "ne reconnaît pas son ignorance. Il trouve des patterns et construit une réponse. Une réponse confiante, bien formatée, complètement fausse, livrée comme un fait." [geri-reid](../entities/geri-reid.md) illustre avec un cas personnel : en utilisant l'IA pour écrire de la documentation d'accessibilité sur des composants, le modèle "wildly hallucinated components based on their name" avant qu'une liste de composants approuvés soit fournie.
 
-La distinction avec le corpus existant est nette : [[documentation-lag]] traite le problème en termes de dérive temporelle (le lag entre Figma et la doc). Reid traite le problème en termes d'amplification qualitative : la documentation médiocre *ralentissait* les humains, elle *crée activement des mauvais outcomes* avec les agents. "Your team's messy Confluence space that nobody reads? Suddenly, it doesn't look quite so harmless."
+La distinction avec le corpus existant est nette : [documentation-lag](../concepts/documentation-lag.md) traite le problème en termes de dérive temporelle (le lag entre Figma et la doc). Reid traite le problème en termes d'amplification qualitative : la documentation médiocre *ralentissait* les humains, elle *crée activement des mauvais outcomes* avec les agents. "Your team's messy Confluence space that nobody reads? Suddenly, it doesn't look quite so harmless."
 
 ## Le cadre des cinq questions
 
-Reid propose de structurer toute documentation produit autour de cinq questions. Voir [[cinq-questions-documentation-produit]] pour le détail complet.
+Reid propose de structurer toute documentation produit autour de cinq questions. Voir [cinq-questions-documentation-produit](../concepts/cinq-questions-documentation-produit.md) pour le détail complet.
 
 "What exists?" → Référence (catalogues de composants, props, endpoints API, structures d'équipe, RACI)
 "What are the rules?" → Spécifications (conventions de nommage, token architecture, standards d'accessibilité, schémas API)
@@ -49,13 +49,13 @@ Diátaxis (tutorials / how-to guides / reference / explanation) est respecté da
 
 ## Citations clés
 
-"The interesting part is that the same things that make documentation more accessible for people also make it more useful for AI. Clear structure. Plain language. Accessible formats." ([[geri-reid]])
+"The interesting part is that the same things that make documentation more accessible for people also make it more useful for AI. Clear structure. Plain language. Accessible formats." ([geri-reid](../entities/geri-reid.md))
 
-"Outdated documentation used to just slow humans down but now it can actively create bad outcomes." ([[geri-reid]])
+"Outdated documentation used to just slow humans down but now it can actively create bad outcomes." ([geri-reid](../entities/geri-reid.md))
 
-"Specifications turn decisions into infrastructure. Once written, they guide behaviour across teams and systems." ([[geri-reid]])
+"Specifications turn decisions into infrastructure. Once written, they guide behaviour across teams and systems." ([geri-reid](../entities/geri-reid.md))
 
-"Those boring docs no one reads are quietly becoming infrastructure." ([[geri-reid]])
+"Those boring docs no one reads are quietly becoming infrastructure." ([geri-reid](../entities/geri-reid.md))
 
 ## Artefact associé
 
@@ -63,4 +63,4 @@ Product Documentation Canvas — une page unique qui mappe les cinq questions su
 
 ## Connexions au vault
 
-L'article complète [[lisibilite-machine-design-system]] par l'angle dual-audience (même effort, deux audiences) et [[documentation-lag]] par le diagnostic de l'amplification qualitative (médiocre → dangereux). Il fournit un cadre de structuration accessible là où le corpus existant documente des solutions avancées (DTCG, MCP, métadonnées JSON) — les deux opèrent sur des niveaux de maturité différents et sont complémentaires.
+L'article complète [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) par l'angle dual-audience (même effort, deux audiences) et [documentation-lag](../concepts/documentation-lag.md) par le diagnostic de l'amplification qualitative (médiocre → dangereux). Il fournit un cadre de structuration accessible là où le corpus existant documente des solutions avancées (DTCG, MCP, métadonnées JSON) — les deux opèrent sur des niveaux de maturité différents et sont complémentaires.

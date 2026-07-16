@@ -46,7 +46,11 @@ vault/
 - Fichiers : `kebab-case.md` (minuscules, tirets)
 - Titres de pages : `# Titre en prose naturelle`
 - Dates : `AAAA-MM-JJ` en préfixe pour les fichiers `raw/` et les entrées `log.md`
-- Liens internes Obsidian : `[[nom-du-fichier]]` ou `[[nom-du-fichier|Texte affiché]]`
+- Liens internes : liens markdown standards avec chemin relatif, `[Texte affiché](chemin/relatif/vers/fichier.md)`.
+  Pas de wikilinks `[[...]]` : ce format n'est pas rendu par GitHub, qui doit pouvoir afficher le vault tel quel.
+  Le chemin est relatif au fichier courant (ex. depuis `wiki/concepts/x.md` vers `wiki/entities/y.md` : `[y](../entities/y.md)`).
+  Obsidian affiche et suit très bien ce format (réglable dans Paramètres → Fichiers et liens → Format des liens internes,
+  mais fonctionne aussi tel quel) : le graph view et les backlinks restent intacts.
 
 ---
 
@@ -59,13 +63,14 @@ tags: [tag1, tag2]
 created: AAAA-MM-JJ
 updated: AAAA-MM-JJ
 sources:
-  - "[[source-slug-1]]"
-  - "[[source-slug-2]]"
+  - "[source-slug-1](../sources/source-slug-1.md)"
+  - "[source-slug-2](../sources/source-slug-2.md)"
 related:
-  - "[[concept-lié]]"
-  - "[[entité-liée]]"
+  - "[concept-lié](concept-lie.md)"
+  - "[entité-liée](../entities/entite-liee.md)"
 ---
 ```
+(adapter les chemins relatifs à l'emplacement réel du fichier courant)
 
 ---
 
@@ -83,7 +88,7 @@ related:
 6. Ajoute une entrée dans `wiki/log.md` :
    ```
    ## [AAAA-MM-JJ] ingest | <titre de la source>
-   Pages touchées : [[page1]], [[page2]], [[page3]]...
+   Pages touchées : [page1](chemin/page1.md), [page2](chemin/page2.md), [page3](chemin/page3.md)...
    Note : <une phrase sur ce que cette source apporte ou change>
    ```
 7. Mets à jour `wiki/index.md` si une nouvelle catégorie thématique émerge.
@@ -106,7 +111,7 @@ Pages orphelines potentielles : lister
 **Séquence** :
 
 1. Lis les pages wiki pertinentes (pas les sources brutes).
-2. Réponds en t'appuyant exclusivement sur le contenu du wiki, avec des liens `[[page]]`.
+2. Réponds en t'appuyant exclusivement sur le contenu du wiki, avec des liens `[page](chemin/page.md)`.
 3. Si la réponse est substantielle (> 300 mots) et susceptible d'être utile plus tard : crée `wiki/questions/AAAA-MM-JJ_<slug>.md` et archive la réponse.
 4. Si la synthèse révèle une lacune : note-la dans `wiki/log.md` sous `[GAP]`.
 5. Si la réponse nécessite une comparaison : crée `wiki/comparisons/<slug>.md`.
@@ -182,9 +187,9 @@ Pages mises à jour : N
 - **Prose continue** de préférence aux listes à puces, sauf pour des éléments vraiment atomiques.
 - **Pas de headers H1** dans les pages wiki (le titre est dans le frontmatter). Commence à H2.
 - **Densité d'information** : chaque phrase doit apporter quelque chose. Pas de remplissage.
-- **Liens systématiques** : tout nom propre, concept ou œuvre déjà présent dans le vault doit être un lien `[[wikilink]]`.
+- **Liens systématiques** : tout nom propre, concept ou œuvre déjà présent dans le vault doit être un lien markdown `[texte](chemin/relatif.md)`.
 - **Tensions visibles** : ne pas lisser les contradictions. Les rendre apparentes avec `## ⚡ Tension`.
-- **Attribution** : toute affirmation non synthétique doit citer sa source entre parenthèses : `([[source-slug]])`.
+- **Attribution** : toute affirmation non synthétique doit citer sa source entre parenthèses : `([source-slug](chemin/relatif/vers/sources/source-slug.md))`.
 - **Jamais de tiret cadratin** (—). Utiliser une virgule, un point, ou reformuler la phrase.
 
 ---

@@ -4,24 +4,24 @@ tags: [design-system, ia, agentic, mcp, tokens, composants, gouvernance]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[design-system-as-infrastructure]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[composants-context-aware]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[cli-vs-mcp]]"
-  - "[[intent-token]]"
-  - "[[seeds-vs-trees]]"
-  - "[[pipeline-intent-context-systeme]]"
-  - "[[knowledge-graph-design-system]]"
-  - "[[romina-kavcic]]"
-  - "[[into-design-systems-conference]]"
+  - "[design-system-as-infrastructure](../concepts/design-system-as-infrastructure.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[composants-context-aware](../concepts/composants-context-aware.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[cli-vs-mcp](../concepts/cli-vs-mcp.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[seeds-vs-trees](../concepts/seeds-vs-trees.md)"
+  - "[pipeline-intent-context-systeme](../concepts/pipeline-intent-context-systeme.md)"
+  - "[knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md)"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[into-design-systems-conference](../entities/into-design-systems-conference.md)"
 ---
 
 ## Why your design system is the most important asset in the AI era
 
-**Auteur** : [[romina-kavcic]]
+**Auteur** : [romina-kavcic](../entities/romina-kavcic.md)
 **Publication** : thedesignsystem.guide (Substack), 29 mars 2026
 **URL** : https://learn.thedesignsystem.guide/p/why-your-design-system-is-the-most
 **Série** : Agentic Design Systems, partie 2
@@ -31,7 +31,7 @@ sources:
 
 ## Résumé structuré
 
-Cet article est la transcription enrichie d'une conférence donnée à l'[[into-design-systems-conference]] 2026. Il argumente que le design system est devenu l'actif stratégique le plus critique à l'ère de l'IA, non pas malgré la génération de code automatisée, mais précisément à cause d'elle. L'argument central : l'IA génère du code, mais c'est le design system qui encode la compréhension — et c'est la compréhension qui est rare et précieuse.
+Cet article est la transcription enrichie d'une conférence donnée à l'[into-design-systems-conference](../entities/into-design-systems-conference.md) 2026. Il argumente que le design system est devenu l'actif stratégique le plus critique à l'ère de l'IA, non pas malgré la génération de code automatisée, mais précisément à cause d'elle. L'argument central : l'IA génère du code, mais c'est le design system qui encode la compréhension — et c'est la compréhension qui est rare et précieuse.
 
 L'article couvre : le changement économique (le code est gratuit, la compréhension est chère), le fonctionnement d'un agent sur un design system, les trois couches nécessaires pour rendre un système lisible par une machine, la distinction CLI vs MCP, et la métaphore des graines vs les arbres pour penser l'adoption de l'IA.
 
@@ -63,4 +63,4 @@ L'article couvre : le changement économique (le code est gratuit, la compréhen
 
 ## Connexions identifiées
 
-Ce texte est en relation directe avec [[systeme-de-design-agentique]] (concept central de la série), [[lisibilite-machine-design-system]] (les trois couches), [[mcp-model-context-protocol]] (infrastructure de connexion), et [[seeds-vs-trees]] (posture adoptive). Il préfigure la partie 3 annoncée, "The Self-Healing Design System", qui abordera l'architecture MCP et la boucle auto-correctrice.
+Ce texte est en relation directe avec [systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md) (concept central de la série), [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) (les trois couches), [mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md) (infrastructure de connexion), et [seeds-vs-trees](../concepts/seeds-vs-trees.md) (posture adoptive). Il préfigure la partie 3 annoncée, "The Self-Healing Design System", qui abordera l'architecture MCP et la boucle auto-correctrice.

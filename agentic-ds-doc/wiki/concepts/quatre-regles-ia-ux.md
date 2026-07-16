@@ -4,18 +4,18 @@ tags: [design-system, ia, ux, patterns, règles, gouvernance, convergence]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[design-systems-that-document-ai]]"
+  - "[design-systems-that-document-ai](../sources/design-systems-that-document-ai.md)"
 related:
-  - "[[romina-kavcic]]"
-  - "[[modele-maturite-ia-design-system]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[user-vs-maintainer-ia]]"
-  - "[[deux-lectures-du-design-system-ia]]"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[modele-maturite-ia-design-system](modele-maturite-ia-design-system.md)"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[user-vs-maintainer-ia](user-vs-maintainer-ia.md)"
+  - "[deux-lectures-du-design-system-ia](../syntheses/deux-lectures-du-design-system-ia.md)"
 ---
 
 ## Les quatre règles convergentes de l'IA UX
 
-[[romina-kavcic]] identifie quatre règles qui ont émergé *indépendamment* dans les design systems d'IBM, AWS, GitLab, Red Hat, SAP, Workday et Apple ([[design-systems-that-document-ai]]). Ces organisations n'ont pas coordonné leurs approches. Elles ont convergé. La convergence est le signal que ces règles décrivent des contraintes profondes de l'interface IA avec les humains — pas des choix stylistiques.
+[romina-kavcic](../entities/romina-kavcic.md) identifie quatre règles qui ont émergé *indépendamment* dans les design systems d'IBM, AWS, GitLab, Red Hat, SAP, Workday et Apple ([design-systems-that-document-ai](../sources/design-systems-that-document-ai.md)). Ces organisations n'ont pas coordonné leurs approches. Elles ont convergé. La convergence est le signal que ces règles décrivent des contraintes profondes de l'interface IA avec les humains — pas des choix stylistiques.
 
 ## La règle préalable : le value gate
 
@@ -25,7 +25,7 @@ Ce positionnement est révélateur. Ces organisations reconnaissent que l'IA n'e
 
 ## Règle 1 : Marquer toujours
 
-Toute sortie IA doit être marquée comme telle. Ce marquage prend trois formes : un label texte explicite ("Généré par IA", "Suggestion IA"), un styling réservé (voir [[modele-maturite-ia-design-system|Niveau 1 du modèle de maturité]]), et une iconographie distincte. La règle comporte aussi une contrainte inverse : ne pas sur-marquer. Tout couvrir de labels IA crée une fatigue visuelle qui neutralise le signal.
+Toute sortie IA doit être marquée comme telle. Ce marquage prend trois formes : un label texte explicite ("Généré par IA", "Suggestion IA"), un styling réservé (voir [Niveau 1 du modèle de maturité](modele-maturite-ia-design-system.md)), et une iconographie distincte. La règle comporte aussi une contrainte inverse : ne pas sur-marquer. Tout couvrir de labels IA crée une fatigue visuelle qui neutralise le signal.
 
 Le marquage systématique répond à un besoin d'agentivité cognitive : les utilisateurs calibrent leur confiance et leur niveau d'attention différemment selon la source du contenu. Confondre contenu IA et contenu humain, même involontairement, est une forme de manipulation.
 
@@ -39,7 +39,7 @@ IBM Carbon encode ce principe dans son composant : le label IA est la couche de 
 
 Toute action IA doit être réversible. L'override doit être toujours disponible. Le niveau de consentement requis avant l'action est proportionnel à sa criticité : pour une suggestion de formulation, l'acceptation implicite suffit ; pour une action destructive ou irréversible, un consentement explicite est obligatoire.
 
-Cette règle fait écho à la distinction [[user-vs-maintainer-ia]] : même quand l'IA est en position de Maintainer (capable de prendre des décisions systémiques), elle ne doit jamais retirer à l'humain la possibilité de dire non. La criticité détermine le niveau de consentement, pas les préférences de l'équipe produit.
+Cette règle fait écho à la distinction [user-vs-maintainer-ia](user-vs-maintainer-ia.md) : même quand l'IA est en position de Maintainer (capable de prendre des décisions systémiques), elle ne doit jamais retirer à l'humain la possibilité de dire non. La criticité détermine le niveau de consentement, pas les préférences de l'équipe produit.
 
 Un pattern documenté dans plusieurs systèmes : la "confirmation graduelle" — pour les actions à faible enjeu, l'IA agit et notifie ; pour les actions à enjeu moyen, l'IA propose et attend validation ; pour les actions à haut enjeu, l'IA expose ses hypothèses et demande confirmation explicite avant même de formuler une proposition.
 

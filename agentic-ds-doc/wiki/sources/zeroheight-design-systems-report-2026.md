@@ -5,11 +5,11 @@ created: 2026-06-29
 updated: 2026-06-29
 sources: []
 related:
-  - "[[metriques-adoption-ia-design-system]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[inversion-economique-code-comprehension]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[lisibilite-machine-design-system]]"
+  - "[metriques-adoption-ia-design-system](../concepts/metriques-adoption-ia-design-system.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[inversion-economique-code-comprehension](../concepts/inversion-economique-code-comprehension.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
 ---
 
 ## Design Systems Report 2026: The Findings — zeroheight
@@ -51,6 +51,6 @@ La chute du buy-in (42%→32%) mérite attention : elle coïncide avec la monté
 
 ## Connexions identifiées
 
-Le gap 56%/15% valide empiriquement le corpus [[lisibilite-machine-design-system]] : sans AI readiness structurelle, l'adoption IA produit de la déception plutôt que de la valeur.
+Le gap 56%/15% valide empiriquement le corpus [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) : sans AI readiness structurelle, l'adoption IA produit de la déception plutôt que de la valeur.
 
-La chute du buy-in est une nouvelle tension pour [[gouvernance-design-system-ia]] : comment justifier l'investissement DS à l'heure où les agents peuvent générer de l'UI directement ? La réponse du corpus est [[design-system-as-infrastructure]] — mais le rapport montre que cette réponse n'est pas encore gagnée sur le terrain.
+La chute du buy-in est une nouvelle tension pour [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) : comment justifier l'investissement DS à l'heure où les agents peuvent générer de l'UI directement ? La réponse du corpus est [design-system-as-infrastructure](../concepts/design-system-as-infrastructure.md) — mais le rapport montre que cette réponse n'est pas encore gagnée sur le terrain.

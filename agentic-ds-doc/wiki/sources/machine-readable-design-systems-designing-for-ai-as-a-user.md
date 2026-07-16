@@ -4,23 +4,23 @@ tags: [design-system, ia, machine-readable, mcp, benchmark, json, metadata, inde
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[diana-wolosin]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[mcp-on-demand-vs-rules-always-on]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[format-toon]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[schema-metadata-composant]]"
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[into-design-systems-conference]]"
+  - "[diana-wolosin](../entities/diana-wolosin.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[mcp-on-demand-vs-rules-always-on](../concepts/mcp-on-demand-vs-rules-always-on.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[format-toon](../concepts/format-toon.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md)"
+  - "[into-design-systems-conference](../entities/into-design-systems-conference.md)"
 ---
 
 ## Machine-Readable Design Systems: Designing for AI as a User
 
-**Auteure** : [[diana-wolosin]]
+**Auteure** : [diana-wolosin](../entities/diana-wolosin.md)
 **Publication** : Design Systems Collective (Medium), mars 2026
 **URL** : https://www.designsystemscollective.com/machine-readable-design-systems-designing-for-ai-as-a-user-28077c9f2144
-**Présenté à** : [[into-design-systems-conference]] AI Conference for Designers 2026
+**Présenté à** : [into-design-systems-conference](../entities/into-design-systems-conference.md) AI Conference for Designers 2026
 **Fichier brut** : `raw/machine-readable-design-systems-designing-for-ai-as-a-user.md`
 
 ---
@@ -71,4 +71,4 @@ Indeed : 77 composants, documentation MDX, 4 parsers JS par domaine (accessibili
 
 ## Connexions identifiées
 
-[[ia-comme-utilisateur]] est la thèse fondatrice. [[mcp-on-demand-vs-rules-always-on]] est la découverte opérationnelle centrale — absente des articles précédents du vault. Enrichit [[lisibilite-machine-design-system]] (benchmark empirique à grande échelle), [[format-toon]] (TOON testé mais battu par JSON), [[schema-metadata-composant]] (implémentation Indeed concrète), [[mcp-model-context-protocol]] (architecture RAG détaillée), [[architecture-skills-rules-instructions]] (plugin = Rules + MCP + AGENTS.md). Crée [[diana-wolosin]] (entity orpheline jusqu'ici).
+[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md) est la thèse fondatrice. [mcp-on-demand-vs-rules-always-on](../concepts/mcp-on-demand-vs-rules-always-on.md) est la découverte opérationnelle centrale — absente des articles précédents du vault. Enrichit [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) (benchmark empirique à grande échelle), [format-toon](../concepts/format-toon.md) (TOON testé mais battu par JSON), [schema-metadata-composant](../concepts/schema-metadata-composant.md) (implémentation Indeed concrète), [mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md) (architecture RAG détaillée), [architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md) (plugin = Rules + MCP + AGENTS.md). Crée [diana-wolosin](../entities/diana-wolosin.md) (entity orpheline jusqu'ici).

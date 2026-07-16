@@ -4,26 +4,26 @@ tags: [design-system, ia, sécurité, gouvernance, prompt-injection, agents-md, 
 created: 2026-07-07
 updated: 2026-07-07
 sources:
-  - "[[your-design-system-fragmenting-agent-files]]"
+  - "[your-design-system-fragmenting-agent-files](../sources/your-design-system-fragmenting-agent-files.md)"
 related:
-  - "[[agents-md-format]]"
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[murphy-trueman]]"
+  - "[agents-md-format](agents-md-format.md)"
+  - "[architecture-skills-rules-instructions](architecture-skills-rules-instructions.md)"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[mcp-model-context-protocol](mcp-model-context-protocol.md)"
+  - "[murphy-trueman](../entities/murphy-trueman.md)"
 ---
 
 ## Prompt injection via la documentation du design system
 
-Les formats de la pile agent-facing (AGENTS.md, SKILL.md, component manifests, MCP server payloads) sont des instructions exécutables pour les agents — pas des documents passifs. Ce changement de statut introduit une surface de risque que la plupart des équipes de design system n'ont pas encore intégrée à leurs modèles de gouvernance ([[your-design-system-fragmenting-agent-files]]).
+Les formats de la pile agent-facing (AGENTS.md, SKILL.md, component manifests, MCP server payloads) sont des instructions exécutables pour les agents — pas des documents passifs. Ce changement de statut introduit une surface de risque que la plupart des équipes de design system n'ont pas encore intégrée à leurs modèles de gouvernance ([your-design-system-fragmenting-agent-files](../sources/your-design-system-fragmenting-agent-files.md)).
 
 ## La nature du risque
 
 Quand un agent lit AGENTS.md, il suit ces instructions. Quand il interroge un MCP server, il exécute ce que les payloads lui prescrivent. Quand il charge un Skill, il suit la procédure définie dans SKILL.md. Ces fichiers ne sont pas des guidelines que l'agent interprète librement — ils orientent et contraignent son comportement de façon directe.
 
-"Anyone who can edit your AGENTS.md, SKILL.md, or component manifest can shape agent behaviour, and instructions delivered through MCP payloads increasingly need the same review discipline teams already apply to code and CI configuration." ([[murphy-trueman]])
+"Anyone who can edit your AGENTS.md, SKILL.md, or component manifest can shape agent behaviour, and instructions delivered through MCP payloads increasingly need the same review discipline teams already apply to code and CI configuration." ([murphy-trueman](../entities/murphy-trueman.md))
 
-"Prompt injection isn't theoretical when your design system documentation is an executable input." ([[murphy-trueman]])
+"Prompt injection isn't theoretical when your design system documentation is an executable input." ([murphy-trueman](../entities/murphy-trueman.md))
 
 ## Ce que ça implique pour la gouvernance
 
@@ -39,7 +39,7 @@ La difficulté est que ces fichiers sont souvent traités comme de la documentat
 
 ## Relation avec la gouvernance technique existante
 
-La gouvernance technique documentée dans [[gouvernance-design-system-ia]] (auditeurs de tokens, niveaux de confiance par action, contraintes exécutables) adresse les agents qui *opèrent à l'intérieur* du design system. La prompt injection adresse une menace orthogonale : la manipulation des *instructions* que ces agents reçoivent, avant même qu'ils commencent à opérer. Les deux niveaux de gouvernance sont complémentaires — l'un contrôle ce que l'agent fait, l'autre contrôle ce qu'on lui dit de faire.
+La gouvernance technique documentée dans [gouvernance-design-system-ia](gouvernance-design-system-ia.md) (auditeurs de tokens, niveaux de confiance par action, contraintes exécutables) adresse les agents qui *opèrent à l'intérieur* du design system. La prompt injection adresse une menace orthogonale : la manipulation des *instructions* que ces agents reçoivent, avant même qu'ils commencent à opérer. Les deux niveaux de gouvernance sont complémentaires — l'un contrôle ce que l'agent fait, l'autre contrôle ce qu'on lui dit de faire.
 
 ## ⚡ Tension : accessibilité vs sécurité des fichiers d'instructions
 

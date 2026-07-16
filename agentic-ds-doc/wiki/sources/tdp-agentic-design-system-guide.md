@@ -5,14 +5,14 @@ created: 2026-06-29
 updated: 2026-06-29
 sources: []
 related:
-  - "[[schema-metadata-composant]]"
-  - "[[processus-generation-metadata-echelle]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[intent-token]]"
-  - "[[priori-conflictuels-nommage]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[cristian-morales-achiardi]]"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
 ---
 
 ## Agentic design system: how to build a component library AI agents can actually use
@@ -53,8 +53,8 @@ Client B2B SaaS, ~20 composants structurés : feature work 5 jours → 1 après-
 
 ## Connexions identifiées
 
-La structure 6-fichiers est une implémentation alternative à celle de [[cristian-morales-achiardi]] (`.metadata.ts` co-localisé). Les deux partagent la même logique (co-localisation, purpose, anti-patterns, tokens) mais divergent sur le format (`.meta.json` vs `.metadata.ts`) et le nombre de champs.
+La structure 6-fichiers est une implémentation alternative à celle de [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) (`.metadata.ts` co-localisé). Les deux partagent la même logique (co-localisation, purpose, anti-patterns, tokens) mais divergent sur le format (`.meta.json` vs `.metadata.ts`) et le nombre de champs.
 
-La distinction `emphasis/default/subtle` vs `primary/secondary/tertiary` pour les variables Figma est une application directe de [[priori-conflictuels-nommage]] à la couche Figma — non plus au niveau des tokens de code, mais des variables de design.
+La distinction `emphasis/default/subtle` vs `primary/secondary/tertiary` pour les variables Figma est une application directe de [priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md) à la couche Figma — non plus au niveau des tokens de code, mais des variables de design.
 
-Le skill `ai-component-metadata` de Chris Carini (référencé dans la source) est potentiellement une entité à documenter dans [[cristian-morales-achiardi]] ou dans une entité séparée — Chris Carini semble être la même personne que Cristian Morales Achiardi.
+Le skill `ai-component-metadata` de Chris Carini (référencé dans la source) est potentiellement une entité à documenter dans [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) ou dans une entité séparée — Chris Carini semble être la même personne que Cristian Morales Achiardi.

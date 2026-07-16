@@ -5,14 +5,14 @@ created: 2026-06-24
 updated: 2026-06-24
 sources: []
 related:
-  - "[[dsds-format]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[schema-metadata-composant]]"
-  - "[[dtcg-annotation-schema]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[documentation-lag]]"
-  - "[[pj-onori]]"
+  - "[dsds-format](../concepts/dsds-format.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[dtcg-annotation-schema](../concepts/dtcg-annotation-schema.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[documentation-lag](../concepts/documentation-lag.md)"
+  - "[pj-onori](../entities/pj-onori.md)"
 ---
 
 ## Design System Documentation Spec (DSDS) 0.12.0
@@ -49,7 +49,7 @@ La distinction centrale de la spec : DSDS documente le *comment et le pourquoi* 
 
 ## Connexions identifiées
 
-DSDS est la première spécification ouverte qui formalise ce que le corpus a décrit comme architecture nécessaire d'un [[systeme-de-design-agentique]]. Les concepts développés dans le vault — [[lisibilite-machine-design-system]], [[schema-metadata-composant]], [[ia-comme-utilisateur]], [[dtcg-annotation-schema]] — trouvent ici une implémentation formelle standardisée. Le duo DSDS + DTCG (W3C) couvre l'ensemble : quoi (valeurs) + comment/pourquoi (documentation structurée). L'auteur [[pj-onori]] est le seul mainteneur actuel de la spec.
+DSDS est la première spécification ouverte qui formalise ce que le corpus a décrit comme architecture nécessaire d'un [systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md). Les concepts développés dans le vault — [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md), [schema-metadata-composant](../concepts/schema-metadata-composant.md), [ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md), [dtcg-annotation-schema](../concepts/dtcg-annotation-schema.md) — trouvent ici une implémentation formelle standardisée. Le duo DSDS + DTCG (W3C) couvre l'ensemble : quoi (valeurs) + comment/pourquoi (documentation structurée). L'auteur [pj-onori](../entities/pj-onori.md) est le seul mainteneur actuel de la spec.
 
 ## Périmètre et limites
 

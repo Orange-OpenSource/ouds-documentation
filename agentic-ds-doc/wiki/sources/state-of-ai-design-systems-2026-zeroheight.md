@@ -5,14 +5,14 @@ created: 2026-07-06
 updated: 2026-07-06
 sources: []
 related:
-  - "[[metriques-adoption-ia-design-system]]"
-  - "[[shadow-ia-design-system]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[documentation-lag]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[design-system-as-infrastructure]]"
-  - "[[zeroheight-design-systems-report-2026]]"
+  - "[metriques-adoption-ia-design-system](../concepts/metriques-adoption-ia-design-system.md)"
+  - "[shadow-ia-design-system](../concepts/shadow-ia-design-system.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[documentation-lag](../concepts/documentation-lag.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[design-system-as-infrastructure](../concepts/design-system-as-infrastructure.md)"
+  - "[zeroheight-design-systems-report-2026](zeroheight-design-systems-report-2026.md)"
 ---
 
 ## The State of AI in Design Systems 2026 — zeroheight
@@ -21,9 +21,9 @@ related:
 **Auteur** : zeroheight (rapport annuel dédié à l'IA)
 **Date** : mai 2026
 **Échantillon** : N=123 praticiens DS, majorité in-house, entreprises 100+ personnes, systèmes centralisés
-**Fichier brut** : [[2026-07-06_state-of-ai-design-systems-2026-zeroheight]]
+**Fichier brut** : [2026-07-06_state-of-ai-design-systems-2026-zeroheight](../../raw/2026-07-06_state-of-ai-design-systems-2026-zeroheight.md)
 
-Ce rapport est distinct du [[zeroheight-design-systems-report-2026]] (mars 2026, rapport général DS). Celui-ci est entièrement centré sur l'IA. Il constitue le benchmarking sectoriel le plus complet disponible sur l'adoption IA dans les design systems à mi-2026.
+Ce rapport est distinct du [zeroheight-design-systems-report-2026](zeroheight-design-systems-report-2026.md) (mars 2026, rapport général DS). Celui-ci est entièrement centré sur l'IA. Il constitue le benchmarking sectoriel le plus complet disponible sur l'adoption IA dans les design systems à mi-2026.
 
 ## Thèses principales
 
@@ -85,13 +85,13 @@ Ce rapport est distinct du [[zeroheight-design-systems-report-2026]] (mars 2026,
 
 ## Connexions identifiées
 
-Les 17 % de AI-readiness valident empiriquement la thèse de [[lisibilite-machine-design-system]] : la quasi-totalité des équipes DS n'a pas encore atteint l'état machine-readable au niveau où les agents peuvent l'utiliser de façon consistante.
+Les 17 % de AI-readiness valident empiriquement la thèse de [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) : la quasi-totalité des équipes DS n'a pas encore atteint l'état machine-readable au niveau où les agents peuvent l'utiliser de façon consistante.
 
-Les 47 % d'adoption MCP sont la première donnée sectorielle disponible sur le déploiement réel du MCP dans les équipes DS. Elle ancre les cas d'usage documentés dans [[mcp-model-context-protocol]] dans une réalité de terrain plutôt que dans des cas isolés.
+Les 47 % d'adoption MCP sont la première donnée sectorielle disponible sur le déploiement réel du MCP dans les équipes DS. Elle ancre les cas d'usage documentés dans [mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md) dans une réalité de terrain plutôt que dans des cas isolés.
 
-Le shadow AI (50 % de problèmes signalés) est un nouveau concept absent du corpus antérieur du vault, documenté dans [[shadow-ia-design-system]]. Il représente une menace symétrique à la promesse de l'infrastructure agentique : les agents externes contournent le DS avec autant de facilité que les agents internes peuvent le respecter.
+Le shadow AI (50 % de problèmes signalés) est un nouveau concept absent du corpus antérieur du vault, documenté dans [shadow-ia-design-system](../concepts/shadow-ia-design-system.md). Il représente une menace symétrique à la promesse de l'infrastructure agentique : les agents externes contournent le DS avec autant de facilité que les agents internes peuvent le respecter.
 
-Le gap leadership (39 %) est cohérent avec la chute du buy-in documentée dans [[zeroheight-design-systems-report-2026]] (42 %→32 %) mais l'explique différemment : le problème n'est plus le manque de soutien, c'est un excès d'attentes non calibrées.
+Le gap leadership (39 %) est cohérent avec la chute du buy-in documentée dans [zeroheight-design-systems-report-2026](zeroheight-design-systems-report-2026.md) (42 %→32 %) mais l'explique différemment : le problème n'est plus le manque de soutien, c'est un excès d'attentes non calibrées.
 
 ## ⚡ Tension avec le corpus existant
 

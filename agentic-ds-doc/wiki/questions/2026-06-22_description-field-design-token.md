@@ -5,11 +5,11 @@ created: 2026-06-22
 updated: 2026-06-22
 sources: []
 related:
-  - "[[intent-token]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[existence-vs-intent-violations]]"
-  - "[[schema-metadata-composant]]"
-  - "[[2026-06-19_audit-ai-readiness-ouds-documentation]]"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[2026-06-19_audit-ai-readiness-ouds-documentation](2026-06-19_audit-ai-readiness-ouds-documentation.md)"
 ---
 
 # Que doit contenir le champ "description" d'un design token ?
@@ -20,7 +20,7 @@ related:
 
 ## Ce que le champ doit faire
 
-Un token sémantique porte déjà 80 % de l'information dans son nom. `ouds.color.action.negative.enabled` dit : couleur, action, valence négative, état actif. La description doit couvrir les 20 % restants que le nom seul ne peut pas encoder ([[intent-token]]) :
+Un token sémantique porte déjà 80 % de l'information dans son nom. `ouds.color.action.negative.enabled` dit : couleur, action, valence négative, état actif. La description doit couvrir les 20 % restants que le nom seul ne peut pas encoder ([intent-token](../concepts/intent-token.md)) :
 
 - le **contexte exclusif d'usage** — dans quelles situations précises ce token s'applique
 - la **distinction par rapport aux tokens adjacents** — ce qui le différencie de tokens proches en valeur ou en nom
@@ -32,9 +32,9 @@ Sans ces trois éléments, la description est décorative. Un agent qui la lit d
 
 ## Format : prose compacte dans une string JSON
 
-Le champ `description` est une string JSON. Pas de sous-objets, pas de listes, pas de Markdown. La règle de [[diana-wolosin]] — "JSON for MCP, Markdown for LLM" — distingue les deux couches d'infrastructure mais ne prescrit pas du Markdown *à l'intérieur* du JSON. À l'intérieur d'une string, la prose brute compacte est plus économe en tokens et aussi lisible par le LLM qu'une liste à puces.
+Le champ `description` est une string JSON. Pas de sous-objets, pas de listes, pas de Markdown. La règle de [diana-wolosin](../entities/diana-wolosin.md) — "JSON for MCP, Markdown for LLM" — distingue les deux couches d'infrastructure mais ne prescrit pas du Markdown *à l'intérieur* du JSON. À l'intérieur d'une string, la prose brute compacte est plus économe en tokens et aussi lisible par le LLM qu'une liste à puces.
 
-Le principe de [[lisibilite-machine-design-system]] s'applique : "JSON is like a contract — explicit keys, explicit values, no ambiguity." La description est un champ du contrat, pas une documentation narrative.
+Le principe de [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) s'applique : "JSON is like a contract — explicit keys, explicit values, no ambiguity." La description est un champ du contrat, pas une documentation narrative.
 
 ---
 
@@ -65,16 +65,16 @@ Ce n'est pas long — c'est dense. Chaque phrase répond à une question différ
 
 ## La structure de l'anti-pattern
 
-Le [[schema-metadata-composant]] formalise pour les composants ce que devrait encoder une description de token : chaque anti-pattern exige trois éléments — *scénario* (quoi ne pas faire), *raison* (pourquoi c'est un problème), *alternative* (quoi faire à la place). Dans une string de description, la formule compressée est : "Ne pas utiliser pour [X] — [X] est [raison] ; utiliser [[token-correct]] à la place." Cette structure force la précision que la prose libre permet d'éviter ([[schema-metadata-composant]]).
+Le [schema-metadata-composant](../concepts/schema-metadata-composant.md) formalise pour les composants ce que devrait encoder une description de token : chaque anti-pattern exige trois éléments — *scénario* (quoi ne pas faire), *raison* (pourquoi c'est un problème), *alternative* (quoi faire à la place). Dans une string de description, la formule compressée est : "Ne pas utiliser pour [X] — [X] est [raison] ; utiliser [[token-correct]] à la place." Cette structure force la précision que la prose libre permet d'éviter ([schema-metadata-composant](../concepts/schema-metadata-composant.md)).
 
 ---
 
 ## Lien avec la gouvernance des violations
 
-La distinction [[existence-vs-intent-violations]] montre pourquoi ce champ est non-négociable pour la gouvernance agentique. Un auditeur v1 vérifie l'existence d'un token. Un auditeur v2 vérifie son intent — s'il est utilisé dans le bon contexte. Pour qu'un agent puisse détecter une violation d'intent (utiliser `--foreground-muted` pour du body copy, utiliser `color.action.negative` pour un état d'erreur passif), il doit avoir accès à la définition du rôle légitime du token. Sans `description` remplie, l'auditeur reste à v1 — il ne peut que constater l'existence, pas l'usage correct.
+La distinction [existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md) montre pourquoi ce champ est non-négociable pour la gouvernance agentique. Un auditeur v1 vérifie l'existence d'un token. Un auditeur v2 vérifie son intent — s'il est utilisé dans le bon contexte. Pour qu'un agent puisse détecter une violation d'intent (utiliser `--foreground-muted` pour du body copy, utiliser `color.action.negative` pour un état d'erreur passif), il doit avoir accès à la définition du rôle légitime du token. Sans `description` remplie, l'auditeur reste à v1 — il ne peut que constater l'existence, pas l'usage correct.
 
 ---
 
 ## Gap documenté dans le vault
 
-Aucune source ingérée ne propose un modèle de description par *catégorie* de token (couleurs d'action, couleurs de statut, élévation, espacement, typographie, border-radius). L'[[intent-token]] couvre le principe. Le [[schema-metadata-composant]] couvre les composants. Mais la déclinaison pratique par catégorie OUDS reste à construire. C'est le prochain niveau d'opérationnalisation de l'audit [[2026-06-19_audit-ai-readiness-ouds-documentation]].
+Aucune source ingérée ne propose un modèle de description par *catégorie* de token (couleurs d'action, couleurs de statut, élévation, espacement, typographie, border-radius). L'[intent-token](../concepts/intent-token.md) couvre le principe. Le [schema-metadata-composant](../concepts/schema-metadata-composant.md) couvre les composants. Mais la déclinaison pratique par catégorie OUDS reste à construire. C'est le prochain niveau d'opérationnalisation de l'audit [2026-06-19_audit-ai-readiness-ouds-documentation](2026-06-19_audit-ai-readiness-ouds-documentation.md).

@@ -4,40 +4,40 @@ tags: [métriques, adoption, ia, design-system, gouvernance, mcp, mesure, outils
 created: 2026-06-22
 updated: 2026-07-06
 sources:
-  - "[[miro-ai-design-system-mcp-claude-code-skills]]"
-  - "[[atlassian-design-md-lessons]]"
-  - "[[zeroheight-design-systems-report-2026]]"
-  - "[[state-of-ai-design-systems-2026-zeroheight]]"
-  - "[[20-ai-workflows-design-system-teams]]"
+  - "[miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)"
+  - "[atlassian-design-md-lessons](../sources/atlassian-design-md-lessons.md)"
+  - "[zeroheight-design-systems-report-2026](../sources/zeroheight-design-systems-report-2026.md)"
+  - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
+  - "[20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)"
 related:
-  - "[[gouvernance-design-system-ia]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[andressa-lombardo]]"
-  - "[[aura-miro]]"
-  - "[[design-md-format]]"
-  - "[[mcp-on-demand-vs-rules-always-on]]"
-  - "[[shadow-ia-design-system]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[bypass-patterns-comme-user-research]]"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[boucle-feedback-infrastructure](boucle-feedback-infrastructure.md)"
+  - "[andressa-lombardo](../entities/andressa-lombardo.md)"
+  - "[aura-miro](../entities/aura-miro.md)"
+  - "[design-md-format](design-md-format.md)"
+  - "[mcp-on-demand-vs-rules-always-on](mcp-on-demand-vs-rules-always-on.md)"
+  - "[shadow-ia-design-system](shadow-ia-design-system.md)"
+  - "[mcp-model-context-protocol](mcp-model-context-protocol.md)"
+  - "[bypass-patterns-comme-user-research](bypass-patterns-comme-user-research.md)"
 ---
 
 ## Métriques d'adoption IA pour un design system
 
 Le problème de mesure de l'adoption IA dans un design system est paradoxal : quand l'infrastructure fonctionne bien, elle devient invisible. Les agents opèrent en background, les calls MCP disparaissent des dashboards actifs, le call count — la métrique instinctive — s'effondre précisément au moment où l'adoption est la plus forte.
 
-[[andressa-lombardo]] chez Miro l'a formulé directement : "It sounds like a problem, but it meant it's working" ([[miro-ai-design-system-mcp-claude-code-skills]]). Ils avaient volontairement rendu le MCP "frictionless" — l'agent l'utilise sans que l'utilisateur ait à l'invoquer explicitement — et l'adoption avait grimpé, mais les traces actives avaient disparu.
+[andressa-lombardo](../entities/andressa-lombardo.md) chez Miro l'a formulé directement : "It sounds like a problem, but it meant it's working" ([miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)). Ils avaient volontairement rendu le MCP "frictionless" — l'agent l'utilise sans que l'utilisateur ait à l'invoquer explicitement — et l'adoption avait grimpé, mais les traces actives avaient disparu.
 
 ## Ce qu'il faut mesurer à la place
 
 Le remplacement du call count : les questions qu'on n'a plus à répondre.
 
-**Volume de questions dans le canal Slack design system.** C'est la métrique la plus directe. Une baisse de 70 à 80 % des questions dans le canal Miro est ce qu'[[andressa-lombardo]] et [[eddie-machado]] ont mesuré après la mise en place du MCP + instruction de routage. Les ingénieurs obtenaient leurs réponses dans l'IDE — le support canal devenait inutile pour les questions simples.
+**Volume de questions dans le canal Slack design system.** C'est la métrique la plus directe. Une baisse de 70 à 80 % des questions dans le canal Miro est ce qu'[andressa-lombardo](../entities/andressa-lombardo.md) et [eddie-machado](../entities/eddie-machado.md) ont mesuré après la mise en place du MCP + instruction de routage. Les ingénieurs obtenaient leurs réponses dans l'IDE — le support canal devenait inutile pour les questions simples.
 
 **Time-to-answer pour les questions design system.** La vitesse de réponse aux questions de contribution peut être mesurée même sans savoir si c'est l'agent ou un humain qui a répondu. Une baisse de la latence de réponse indique que l'agent prend en charge le premier niveau de support.
 
-**Contributions depuis l'extérieur de l'équipe core.** Si les contributeurs externes posent moins de questions préalables avant de soumettre un PR, c'est un signal que l'agent leur a fourni le contexte nécessaire. [[eddie-machado]] observe : "we see people more eager to contribute because there's less of a restriction now" — le wrap-up skill réduit la friction de contribution, pas seulement les questions de support.
+**Contributions depuis l'extérieur de l'équipe core.** Si les contributeurs externes posent moins de questions préalables avant de soumettre un PR, c'est un signal que l'agent leur a fourni le contexte nécessaire. [eddie-machado](../entities/eddie-machado.md) observe : "we see people more eager to contribute because there's less of a restriction now" — le wrap-up skill réduit la friction de contribution, pas seulement les questions de support.
 
-**Témoignages qualitatifs.** [[andressa-lombardo]] pose un principe pragmatique : "Any figure is better than no figure." Même une estimation approximative, un témoignage d'ingénieur, ou un exemple documenté constituent une base pour construire le cas auprès du management. La rigueur méthodologique idéale ne doit pas empêcher de collecter ce qu'on peut avoir.
+**Témoignages qualitatifs.** [andressa-lombardo](../entities/andressa-lombardo.md) pose un principe pragmatique : "Any figure is better than no figure." Même une estimation approximative, un témoignage d'ingénieur, ou un exemple documenté constituent une base pour construire le cas auprès du management. La rigueur méthodologique idéale ne doit pas empêcher de collecter ce qu'on peut avoir.
 
 ## Le problème en amont : visibilité des appels
 
@@ -47,7 +47,7 @@ Ce n'est pas spécifique au design system : c'est le même problème dans tout s
 
 ## Benchmark de performance comparée (Atlassian, 2026)
 
-[[atlassian-design-md-lessons]] publie les premières métriques de performance comparées entre approches de contexte design system. L'intérêt pour ce wiki est double : d'une part, les chiffres eux-mêmes (tokens, temps, turns) ; d'autre part, la méthodologie — une tâche fixe (écran login), quatre configurations, mesurée sur un échantillon de runs avec calcul de variance.
+[atlassian-design-md-lessons](../sources/atlassian-design-md-lessons.md) publie les premières métriques de performance comparées entre approches de contexte design system. L'intérêt pour ce wiki est double : d'une part, les chiffres eux-mêmes (tokens, temps, turns) ; d'autre part, la méthodologie — une tâche fixe (écran login), quatre configurations, mesurée sur un échantillon de runs avec calcul de variance.
 
 Les résultats clés : ADS MCP (80% contexte, 3,75M tokens, 5m1s, 35,1 turns) surpasse DESIGN.md (30% contexte, 7,21M tokens, 6m46s, 45,3 turns) et surpasse même l'absence de contexte (4,20M tokens, 6m19s, 43 turns). La surprise : no-context est plus économique que DESIGN.md — ce qui reflète la saturation du contexte par un fichier trop dense chargé all-at-once.
 
@@ -55,7 +55,7 @@ Atlassian précise explicitement que ces résultats ne sont "pas conclusifs" hor
 
 ## Données macro sectorielles : le gap adoption/satisfaction (zeroheight, 2026)
 
-[[zeroheight-design-systems-report-2026]] publie la mesure d'adoption IA la plus large disponible dans le secteur. Sur l'ensemble des équipes DS interrogées : **56 % utilisent l'IA**, mais seulement **15 % estiment qu'elle est à la hauteur de leurs attentes**. Ce gap de 41 points est la métrique sectorielle la plus utile de l'année — il chiffre le problème d'AI readiness à l'échelle de l'industrie, pas seulement dans les cas documentés du corpus.
+[zeroheight-design-systems-report-2026](../sources/zeroheight-design-systems-report-2026.md) publie la mesure d'adoption IA la plus large disponible dans le secteur. Sur l'ensemble des équipes DS interrogées : **56 % utilisent l'IA**, mais seulement **15 % estiment qu'elle est à la hauteur de leurs attentes**. Ce gap de 41 points est la métrique sectorielle la plus utile de l'année — il chiffre le problème d'AI readiness à l'échelle de l'industrie, pas seulement dans les cas documentés du corpus.
 
 Lecture croisée avec le vault : le gap n'est pas un problème de satisfaction envers les outils IA en général. Les outils fonctionnent. Le problème est que les équipes les appliquent sur des DS non préparés pour la consommation agentique — pas de metadata machine-readable, pas de MCP, nommage opaque — et obtiennent des sorties inconsistantes. La déception est structurelle, pas conjoncturelle.
 
@@ -63,11 +63,11 @@ Donnée additionnelle : 12 % des équipes utilisent l'IA pour la livraison de do
 
 ## Lien avec la gouvernance
 
-Cette problématique de mesure est une extension de [[gouvernance-design-system-ia]] : la gouvernance agentique nécessite non seulement de monitorer la qualité des outputs (drift scoring, audits) mais aussi de mesurer l'utilité perçue de l'infrastructure. Un système parfaitement gouverné mais non adopté a le même impact qu'une absence de système. Les métriques d'adoption ferment la boucle entre infrastructure et valeur réelle.
+Cette problématique de mesure est une extension de [gouvernance-design-system-ia](gouvernance-design-system-ia.md) : la gouvernance agentique nécessite non seulement de monitorer la qualité des outputs (drift scoring, audits) mais aussi de mesurer l'utilité perçue de l'infrastructure. Un système parfaitement gouverné mais non adopté a le même impact qu'une absence de système. Les métriques d'adoption ferment la boucle entre infrastructure et valeur réelle.
 
 ## Adoption et outils IA : benchmark sectoriel complet (zeroheight, mai 2026)
 
-[[state-of-ai-design-systems-2026-zeroheight]] apporte le benchmark d'adoption le plus complet disponible sur le secteur (N=123, mai 2026). Le chiffre macro : **82 % des équipes DS utilisent l'IA sous une forme quelconque**, dont 32 % l'ont opérationnalisée ("part of workflow") et 50 % expérimentent encore. La progression est rapide : 61 % disent que l'usage a "crû significativement" dans les 12 derniers mois.
+[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md) apporte le benchmark d'adoption le plus complet disponible sur le secteur (N=123, mai 2026). Le chiffre macro : **82 % des équipes DS utilisent l'IA sous une forme quelconque**, dont 32 % l'ont opérationnalisée ("part of workflow") et 50 % expérimentent encore. La progression est rapide : 61 % disent que l'usage a "crû significativement" dans les 12 derniers mois.
 
 La répartition des outils (multi-select) est la première donnée publique sur les parts de marché réelles dans ce segment :
 
@@ -98,14 +98,14 @@ Implication : les équipes qui commencent par la documentation gagnent en confia
 
 47 % des équipes DS ont déjà un serveur MCP en production — soit le signal sectoriel le plus fort qu'un changement d'infrastructure est en cours. 31 % planifient l'adoption. Seulement 3 % ne sont "pas convaincus de la valeur" — le débat "si" est clos, le débat "comment" est ouvert.
 
-Ce chiffre complète la mesure qualitative de l'adoption MCP documentée dans [[mcp-model-context-protocol]] avec un ancrage quantitatif : à mi-2026, presque la moitié des équipes DS ont fait le pas de l'infrastructure, pas seulement de l'expérimentation avec des clients IA.
+Ce chiffre complète la mesure qualitative de l'adoption MCP documentée dans [mcp-model-context-protocol](mcp-model-context-protocol.md) avec un ancrage quantitatif : à mi-2026, presque la moitié des équipes DS ont fait le pas de l'infrastructure, pas seulement de l'expérimentation avec des clients IA.
 
 ## Build-time signals comme alternative aux métriques runtime
 
-[[romina-kavcic]] ([[20-ai-workflows-design-system-teams]]) propose une architecture de métriques build-time comme substitut aux métriques runtime invasives. Le tracking runtime (qui utilise quel composant en production, en temps réel) est perçu comme une surveillance par les équipes consommatrices. Les métriques build-time — extraites du code au moment du build, pas de l'exécution — décrivent l'état du codebase sans observer les personnes.
+[romina-kavcic](../entities/romina-kavcic.md) ([20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)) propose une architecture de métriques build-time comme substitut aux métriques runtime invasives. Le tracking runtime (qui utilise quel composant en production, en temps réel) est perçu comme une surveillance par les équipes consommatrices. Les métriques build-time — extraites du code au moment du build, pas de l'exécution — décrivent l'état du codebase sans observer les personnes.
 
 Quatre signaux build-time concrets : **component imports/usage counts** (combien de fois un composant est importé dans des fichiers réels), **token drift counts** (nombre de valeurs hardcodées détectées dans le codebase), **bypass signals** (occurrences de `<button>` brut, de inline styles, d'autres patterns de contournement), et **PR drift delta** (variation du drift entre deux états du code). Ces métriques sont des faits extraits du code, pas des inférences comportementales.
 
-La recommandation : construire d'abord avec ces quatre métriques, prouver qu'elles sont utiles, puis ajouter de la complexité seulement si le besoin est démontré. C'est cohérent avec la posture de [[andressa-lombardo]] : "Any figure is better than no figure." — une estimation approximative vaut mieux qu'un dashboard parfait qu'on n'a pas.
+La recommandation : construire d'abord avec ces quatre métriques, prouver qu'elles sont utiles, puis ajouter de la complexité seulement si le besoin est démontré. C'est cohérent avec la posture de [andressa-lombardo](../entities/andressa-lombardo.md) : "Any figure is better than no figure." — une estimation approximative vaut mieux qu'un dashboard parfait qu'on n'a pas.
 
-Les bypass signals build-time sont la face quantitative de [[bypass-patterns-comme-user-research]] : ils mesurent la fréquence du problème, l'analyse IA du drift report en diagnostique les causes.
+Les bypass signals build-time sont la face quantitative de [bypass-patterns-comme-user-research](bypass-patterns-comme-user-research.md) : ils mesurent la fréquence du problème, l'analyse IA du drift report en diagnostique les causes.

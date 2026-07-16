@@ -4,17 +4,17 @@ tags: [design-system, orchestration, ia, skills, rules, instructions, feedback, 
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[knowledge-graph-design-system]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[cristian-morales-achiardi]]"
+  - "[architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md)"
+  - "[boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
 ---
 
 ## Agent orchestration for design systems
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective (Medium), 21 janvier 2026
 **URL** : https://www.designsystemscollective.com/agent-orchestration-for-design-systems-da0f6a5f24fb
 **Série** : "Agentic Design System" de Cristian Morales Achiardi, partie 5
@@ -54,4 +54,4 @@ L'article approfondit également quatre stratégies opérationnelles : deep trac
 
 ## Connexions identifiées
 
-L'architecture Skills/Rules/Instructions précise et enrichit la couche 3 de [[trois-couches-composants-agents]] (le raisonnement). La boucle de feedback est la mécanique concrète de la transition User → Maintainer de [[user-vs-maintainer-ia]] et des phases 2→3 du [[protocole-arc]]. L'algorithme de deep tracing détaillé enrichit [[knowledge-graph-design-system]]. L'efficiency rate comme diagnostic enrichit [[gouvernance-design-system-ia]].
+L'architecture Skills/Rules/Instructions précise et enrichit la couche 3 de [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md) (le raisonnement). La boucle de feedback est la mécanique concrète de la transition User → Maintainer de [user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md) et des phases 2→3 du [protocole-arc](../concepts/protocole-arc.md). L'algorithme de deep tracing détaillé enrichit [knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md). L'efficiency rate comme diagnostic enrichit [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md).

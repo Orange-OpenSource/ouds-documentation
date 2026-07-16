@@ -4,28 +4,28 @@ tags: [design-system, gouvernance, tokens, format, standard, pipeline, synchroni
 created: 2026-07-07
 updated: 2026-07-07
 sources:
-  - "[[your-design-system-fragmenting-agent-files]]"
+  - "[your-design-system-fragmenting-agent-files](../sources/your-design-system-fragmenting-agent-files.md)"
 related:
-  - "[[agents-md-format]]"
-  - "[[design-md-format]]"
-  - "[[dtcg-annotation-schema]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[intent-token]]"
-  - "[[readable-vs-usable-token]]"
-  - "[[murphy-trueman]]"
+  - "[agents-md-format](agents-md-format.md)"
+  - "[design-md-format](design-md-format.md)"
+  - "[dtcg-annotation-schema](dtcg-annotation-schema.md)"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[intent-token](intent-token.md)"
+  - "[readable-vs-usable-token](readable-vs-usable-token.md)"
+  - "[murphy-trueman](../entities/murphy-trueman.md)"
 ---
 
 ## La dispersion des décisions de design
 
-La multiplication des formats agent-facing (AGENTS.md, SKILL.md, DESIGN.md, Storybook Component Manifest, Zeroheight MCP) crée un phénomène structurel nouveau : une décision de design unique se réplique dans plusieurs emplacements sans lien automatique entre eux ([[your-design-system-fragmenting-agent-files]]).
+La multiplication des formats agent-facing (AGENTS.md, SKILL.md, DESIGN.md, Storybook Component Manifest, Zeroheight MCP) crée un phénomène structurel nouveau : une décision de design unique se réplique dans plusieurs emplacements sans lien automatique entre eux ([your-design-system-fragmenting-agent-files](../sources/your-design-system-fragmenting-agent-files.md)).
 
 ## Le cas de la couleur primaire
 
-Trueman trace concrètement où se propage une décision unique — par exemple la couleur primaire d'un produit. La source de vérité canonique vit dans un fichier JSON de tokens au format DTCG ([[dtcg-annotation-schema]]), compilé via Style Dictionary vers des CSS variables et une bibliothèque Figma Variables. De là, la valeur se propage dans quatre autres emplacements.
+Trueman trace concrètement où se propage une décision unique — par exemple la couleur primaire d'un produit. La source de vérité canonique vit dans un fichier JSON de tokens au format DTCG ([dtcg-annotation-schema](dtcg-annotation-schema.md)), compilé via Style Dictionary vers des CSS variables et une bibliothèque Figma Variables. De là, la valeur se propage dans quatre autres emplacements.
 
 DESIGN.md encode la valeur en dur dans le front matter YAML, sans lien programmatique vers le fichier JSON source. Toute modification du token JSON n'est pas répercutée automatiquement dans DESIGN.md — c'est une mise à jour manuelle. AGENTS.md la référence de façon indirecte, via une règle comme "use tokens from @acme/tokens, never hardcode colours" : la règle est durable mais ne contient pas la valeur réelle. Un Figma Skill encode la procédure pour *trouver* la valeur (lire le contexte de design, identifier la variable, trouver le token projet correspondant) sans stocker la valeur elle-même. Le Storybook Component Manifest la fait émerger comme prop default ou token reference, généré automatiquement depuis les stories.
 
-La même décision vit donc dans cinq emplacements, chacun avec un mode de représentation distinct. "Derivable in principle from the tokens file but rarely derived in practice unless someone has built the pipeline." ([[murphy-trueman]])
+La même décision vit donc dans cinq emplacements, chacun avec un mode de représentation distinct. "Derivable in principle from the tokens file but rarely derived in practice unless someone has built the pipeline." ([murphy-trueman](../entities/murphy-trueman.md))
 
 ## La nature du problème : gouvernance, pas technologie
 
@@ -37,7 +37,7 @@ Le lien entre ces représentations n'existe que si une équipe construit le pipe
 
 Trueman propose une répartition par couche. Les tokens restent en JSON, sous ownership du design system. Les conventions d'ingénierie vont dans AGENTS.md, maintenu par l'engineering. L'identité visuelle va dans DESIGN.md, sous ownership de quiconque détient la marque dans l'organisation. Les métadonnées de composants sont générées automatiquement depuis Storybook — pas de fichier séparé à maintenir. Le savoir procédural sur les workflows va dans SKILL.md, sous ownership de l'équipe qui pilote le tooling agent.
 
-Cette répartition est plus claire que ce que la plupart des équipes ont aujourd'hui. Elle est aussi plus de travail que ce pour quoi la plupart des équipes sont dimensionnées. "That's a clearer architecture than most teams have today. It's also more work than most teams are scoped for, which is the real problem nobody is solving." ([[murphy-trueman]])
+Cette répartition est plus claire que ce que la plupart des équipes ont aujourd'hui. Elle est aussi plus de travail que ce pour quoi la plupart des équipes sont dimensionnées. "That's a clearer architecture than most teams have today. It's also more work than most teams are scoped for, which is the real problem nobody is solving." ([murphy-trueman](../entities/murphy-trueman.md))
 
 ## Lien avec la pile de formats agent-facing
 

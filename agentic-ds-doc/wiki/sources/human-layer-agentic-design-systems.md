@@ -4,17 +4,17 @@ tags: [design-system, gouvernance, ia, accountability, designops, devops, humain
 created: 2026-07-07
 updated: 2026-07-07
 sources:
-  - "[[concevoir-les-conditions]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[accountability-gap-ia]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[designops-devops-seam]]"
-  - "[[cristian-morales-achiardi]]"
+  - "[concevoir-les-conditions](../concepts/concevoir-les-conditions.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[accountability-gap-ia](../concepts/accountability-gap-ia.md)"
+  - "[boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md)"
+  - "[designops-devops-seam](../concepts/designops-devops-seam.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
 ---
 
 ## The human layer in agentic design systems
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective (Medium), 7 mars 2026
 **URL** : https://www.designsystemscollective.com/the-human-layer-in-agentic-design-systems-d8f54d1bb2e5
 **Série** : "Agentic Design System" de Cristian Morales Achiardi, partie 7 (conclusive)
@@ -38,7 +38,7 @@ Article de clôture de la série, qui déplace le regard de l'infrastructure tec
 
 **Thèse 4 — La couture designops-devops.** Le design system agentique n'appartient ni complètement à designops, ni complètement à devops. Il opère au joint : "My token auditor doesn't just check that tokens exist (that's a linter). It checks whether the relationships between tokens violate the design intent (that's governance)." Catcher une failure designops à l'endroit où devops ne regarderait normalement pas.
 
-**Thèse 5 — Concevoir des environnements, pas des interfaces.** "I'm not just a product designer anymore. I'm designing environments." Le rôle du designer est passé de la production d'interfaces à la conception des conditions sous lesquelles les interfaces se construisent correctement — extension directe de [[concevoir-les-conditions]].
+**Thèse 5 — Concevoir des environnements, pas des interfaces.** "I'm not just a product designer anymore. I'm designing environments." Le rôle du designer est passé de la production d'interfaces à la conception des conditions sous lesquelles les interfaces se construisent correctement — extension directe de [concevoir-les-conditions](../concepts/concevoir-les-conditions.md).
 
 ---
 
@@ -66,4 +66,4 @@ Incident Enara : erreur dans l'échelle de jaune primitif détectée visuellemen
 
 ## Connexions identifiées
 
-Enrichit [[concevoir-les-conditions]] avec l'angle accountability : concevoir les conditions n'est pas seulement un gain d'efficacité, c'est ce qui rend possible de savoir *dont* c'est l'erreur quand quelque chose se trompe. Enrichit [[accountability-gap-ia]] avec le cas inverse : ici le gap est résolu — le système trace l'erreur jusqu'à son propriétaire. Enrichit [[boucle-feedback-infrastructure]] avec la dimension humaine de la boucle : la boucle ne fonctionne que si un humain fait confiance au système assez pour tracer plutôt que contourner. Crée [[designops-devops-seam]] comme nouveau concept. Met à jour [[cristian-morales-achiardi]] (série complétée à 7 parties).
+Enrichit [concevoir-les-conditions](../concepts/concevoir-les-conditions.md) avec l'angle accountability : concevoir les conditions n'est pas seulement un gain d'efficacité, c'est ce qui rend possible de savoir *dont* c'est l'erreur quand quelque chose se trompe. Enrichit [accountability-gap-ia](../concepts/accountability-gap-ia.md) avec le cas inverse : ici le gap est résolu — le système trace l'erreur jusqu'à son propriétaire. Enrichit [boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md) avec la dimension humaine de la boucle : la boucle ne fonctionne que si un humain fait confiance au système assez pour tracer plutôt que contourner. Crée [designops-devops-seam](../concepts/designops-devops-seam.md) comme nouveau concept. Met à jour [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) (série complétée à 7 parties).

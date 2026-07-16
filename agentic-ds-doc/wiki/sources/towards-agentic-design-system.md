@@ -4,20 +4,20 @@ tags: [design-system, agentic, ia, benchmark, gouvernance, arc, metadata]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[protocole-arc]]"
-  - "[[user-vs-maintainer-ia]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[format-toon]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[knowledge-graph-design-system]]"
-  - "[[cristian-morales-achiardi]]"
+  - "[protocole-arc](../concepts/protocole-arc.md)"
+  - "[user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[format-toon](../concepts/format-toon.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
 ---
 
 ## Towards an agentic design system
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective (Medium), 2 janvier 2026
 **URL** : https://www.designsystemscollective.com/towards-an-agentic-design-system-c7e0a6469bb1
 **Série** : "Agentic Design System" de Cristian Morales Achiardi, partie 2
@@ -29,7 +29,7 @@ sources:
 
 Article qui pose la question centrale : "quand est-ce que l'IA cesse de *consommer* le design system et commence à le *gouverner* ?" Pour y répondre, l'auteur décrit une expérience contrôlée (11 essais, 5 contrôle + 6 agentiques) sur la même base de code, avec et sans infrastructure machine-readable, et documente les résultats chiffrés. Il introduit ensuite le protocole ARC (Audit → Report → Compose) comme cadre de maturation vers un système auto-gouverné.
 
-La particularité de cet article par rapport à [[design-system-most-important-asset-ai-era]] : il est empirique là où Kavcic est conceptuelle. Il fournit des données, du code concret (.metadata.ts, TOON index, CLAUDE.md protocols), et une validation expérimentale de la thèse de lisibilité machine.
+La particularité de cet article par rapport à [design-system-most-important-asset-ai-era](design-system-most-important-asset-ai-era.md) : il est empirique là où Kavcic est conceptuelle. Il fournit des données, du code concret (.metadata.ts, TOON index, CLAUDE.md protocols), et une validation expérimentale de la thèse de lisibilité machine.
 
 ---
 
@@ -67,6 +67,6 @@ Investissement infrastructure : ~28K tokens en protocols structurés. Gains : 2,
 
 ## Connexions identifiées
 
-Complète et valide empiriquement [[lisibilite-machine-design-system]] et [[trois-couches-composants-agents]] (Kavcic). Introduit [[protocole-arc]] comme cadre de maturité. Affine [[systeme-de-design-agentique]] avec la distinction [[user-vs-maintainer-ia]]. Le [[format-toon]] est une contribution technique spécifique à ce contexte.
+Complète et valide empiriquement [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) et [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md) (Kavcic). Introduit [protocole-arc](../concepts/protocole-arc.md) comme cadre de maturité. Affine [systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md) avec la distinction [user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md). Le [format-toon](../concepts/format-toon.md) est une contribution technique spécifique à ce contexte.
 
 La série complète de l'auteur comprend 6 parties déjà publiées dans le vault raw/ : Building an AI-Ready design system, Towards an agentic design system, Design system documentation as structured metadata, Codebase indexing for design systems agents, Agent orchestration for agentic design systems, Encoding governance on agentic design systems.

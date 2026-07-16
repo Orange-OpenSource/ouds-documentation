@@ -4,21 +4,21 @@ tags: [design-system, metadata, processus, ia, documentation, echelle, pipeline,
 created: 2026-06-17
 updated: 2026-06-22
 sources:
-  - "[[design-system-documentation-as-structured-metadata]]"
-  - "[[machine-readable-design-systems-designing-for-ai-as-a-user]]"
-  - "[[how-to-automate-design-system-documentation]]"
-  - "[[typeform-design-system-documentation-scale-ai]]"
+  - "[design-system-documentation-as-structured-metadata](../sources/design-system-documentation-as-structured-metadata.md)"
+  - "[machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)"
+  - "[how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)"
+  - "[typeform-design-system-documentation-scale-ai](../sources/typeform-design-system-documentation-scale-ai.md)"
 related:
-  - "[[schema-metadata-composant]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[cristian-morales-achiardi]]"
-  - "[[diana-wolosin]]"
+  - "[schema-metadata-composant](schema-metadata-composant.md)"
+  - "[trois-couches-composants-agents](trois-couches-composants-agents.md)"
+  - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
+  - "[diana-wolosin](../entities/diana-wolosin.md)"
 ---
 
 ## Processus de génération de métadonnées à l'échelle
 
-Générer des fichiers de métadonnées pour l'ensemble des composants d'un design system semble être un effort colossal. [[cristian-morales-achiardi]] propose un processus en 5 étapes qui s'appuie sur l'IA pour l'extraction et les scripts pour les parties mécaniques, en partant du principe que la connaissance existe déjà — il s'agit de la rendre explicite, pas de la créer ([[design-system-documentation-as-structured-metadata]]).
+Générer des fichiers de métadonnées pour l'ensemble des composants d'un design system semble être un effort colossal. [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) propose un processus en 5 étapes qui s'appuie sur l'IA pour l'extraction et les scripts pour les parties mécaniques, en partant du principe que la connaissance existe déjà — il s'agit de la rendre explicite, pas de la créer ([design-system-documentation-as-structured-metadata](../sources/design-system-documentation-as-structured-metadata.md)).
 
 ## Étape 1 : Auditer la documentation existante
 
@@ -26,7 +26,7 @@ Recenser où vit la connaissance du design system : Storybook et docs, descripti
 
 ## Étape 2 : Créer un template de métadonnées
 
-Définir la structure du [[schema-metadata-composant]] dans un fichier template avec des commentaires inline expliquant ce que chaque champ doit contenir. Ce template devient le contrat : toute la génération en découlera.
+Définir la structure du [schema-metadata-composant](schema-metadata-composant.md) dans un fichier template avec des commentaires inline expliquant ce que chaque champ doit contenir. Ce template devient le contrat : toute la génération en découlera.
 
 ## Étape 3 : Laisser l'IA extraire et peupler
 
@@ -42,20 +42,20 @@ Le premier composant est lent — on apprend ce qui compte, on fait émerger les
 
 ## Ce que ça implique
 
-Le processus confirme l'argument central : ce n'est pas du travail de documentation additionnel, c'est une traduction. La connaissance existait. L'effort est de changer son format, non de la produire. Et comme [[romina-kavcic]] le note dans un contexte similaire ([[design-system-most-important-asset-ai-era]]), écrire 554 descriptions de composants peut tenir en une session avec l'IA.
+Le processus confirme l'argument central : ce n'est pas du travail de documentation additionnel, c'est une traduction. La connaissance existait. L'effort est de changer son format, non de la produire. Et comme [romina-kavcic](../entities/romina-kavcic.md) le note dans un contexte similaire ([design-system-most-important-asset-ai-era](../sources/design-system-most-important-asset-ai-era.md)), écrire 554 descriptions de composants peut tenir en une session avec l'IA.
 
 ## Le pipeline Figma → docs (Kavcic)
 
-[[romina-kavcic]] documente une variante du processus de génération appliquée non pas aux métadonnées machines mais à la documentation humaine ([[how-to-automate-design-system-documentation]]). Voir [[pipeline-figma-docs-automatise]] pour le détail complet. La différence principale avec le processus de Morales Achiardi est la source (Figma via MCP plutôt que Storybook/Notion) et la sortie (fichiers MDX pour documentation humaine plutôt que JSON pour agents IA). Les deux partagent le même principe : l'extraction automatisée depuis les sources existantes évite le travail de production manuelle.
+[romina-kavcic](../entities/romina-kavcic.md) documente une variante du processus de génération appliquée non pas aux métadonnées machines mais à la documentation humaine ([how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)). Voir [pipeline-figma-docs-automatise](pipeline-figma-docs-automatise.md) pour le détail complet. La différence principale avec le processus de Morales Achiardi est la source (Figma via MCP plutôt que Storybook/Notion) et la sortie (fichiers MDX pour documentation humaine plutôt que JSON pour agents IA). Les deux partagent le même principe : l'extraction automatisée depuis les sources existantes évite le travail de production manuelle.
 
 ## Pipeline Typeform : Notion comme source, trois destinations
 
-[[fernando-coelho]] chez Typeform documente une variante encore différente ([[typeform-design-system-documentation-scale-ai]]) : la source n'est pas Storybook/Figma ni MDX mais Notion, converti en Markdown via l'API Notion. Ce Markdown alimente trois destinations simultanément — documentation (Docusaurus), MCP server, et Sandbox. Un package de code snippets partagé garantit la cohérence des exemples de code entre les trois destinations.
+[fernando-coelho](../entities/fernando-coelho.md) chez Typeform documente une variante encore différente ([typeform-design-system-documentation-scale-ai](../sources/typeform-design-system-documentation-scale-ai.md)) : la source n'est pas Storybook/Figma ni MDX mais Notion, converti en Markdown via l'API Notion. Ce Markdown alimente trois destinations simultanément — documentation (Docusaurus), MCP server, et Sandbox. Un package de code snippets partagé garantit la cohérence des exemples de code entre les trois destinations.
 
-La différence principale avec les pipelines de Morales Achiardi et Wolosin : l'optimisation n'est pas pour la précision agentique (JSON) mais pour la contribution humaine (Notion comme interface familière). Le Markdown produit est lisible par les agents, mais pas dans le format optimal — c'est un compromis délibéré qui résout d'abord le problème de contribution avant le problème de format. Voir [[notion-cms-design-system]] et [[pipeline-multi-destinations]].
+La différence principale avec les pipelines de Morales Achiardi et Wolosin : l'optimisation n'est pas pour la précision agentique (JSON) mais pour la contribution humaine (Notion comme interface familière). Le Markdown produit est lisible par les agents, mais pas dans le format optimal — c'est un compromis délibéré qui résout d'abord le problème de contribution avant le problème de format. Voir [notion-cms-design-system](notion-cms-design-system.md) et [pipeline-multi-destinations](pipeline-multi-destinations.md).
 
 ## Pipeline Indeed : régénération automatique
 
-[[diana-wolosin]] documente un pipeline de génération en production chez Indeed ([[machine-readable-design-systems-designing-for-ai-as-a-user]]) qui résout le problème de la maintenance des métadonnées. Le pipeline : documentation MDX → 4 parsers JavaScript (un par domaine : accessibilité, développement, localisation, design) → fusion en 1 JSON par composant → ingestion dans Vectra (base vectorielle open source) → service via MCP.
+[diana-wolosin](../entities/diana-wolosin.md) documente un pipeline de génération en production chez Indeed ([machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)) qui résout le problème de la maintenance des métadonnées. Le pipeline : documentation MDX → 4 parsers JavaScript (un par domaine : accessibilité, développement, localisation, design) → fusion en 1 JSON par composant → ingestion dans Vectra (base vectorielle open source) → service via MCP.
 
 La propriété clé : **le pipeline se relance automatiquement à chaque mise à jour de documentation par un maintainer**. Les métadonnées servies par le MCP sont donc toujours fraîches — sans action manuelle. C'est la résolution concrète du problème de synchronisation entre documentation humaine et métadonnées machines. En production sur 77 composants, le pipeline a produit 4 300 prototypes en 4 mois sans intervention manuelle sur les métadonnées.

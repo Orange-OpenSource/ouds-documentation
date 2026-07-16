@@ -5,18 +5,18 @@ created: 2026-07-08
 updated: 2026-07-08
 sources: []
 related:
-  - "[[memoire-design-system]]"
-  - "[[design-system-comme-dataset]]"
-  - "[[knowledge-graph-design-system]]"
-  - "[[mode-exploration-vs-navigation]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[inversion-economique-code-comprehension]]"
-  - "[[romina-kavcic]]"
+  - "[memoire-design-system](../concepts/memoire-design-system.md)"
+  - "[design-system-comme-dataset](../concepts/design-system-comme-dataset.md)"
+  - "[knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md)"
+  - "[mode-exploration-vs-navigation](../concepts/mode-exploration-vs-navigation.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[inversion-economique-code-comprehension](../concepts/inversion-economique-code-comprehension.md)"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
 ---
 
 ## The Design System Advantage Is Memory
 
-**Auteure** : [[romina-kavcic]]
+**Auteure** : [romina-kavcic](../entities/romina-kavcic.md)
 **Publication** : 25 mai 2026
 **Source** : https://learn.thedesignsystem.guide/p/the-design-system-advantage-is-memory
 
@@ -36,7 +36,7 @@ La thèse centrale : l'avantage concurrentiel d'un design system dans l'ère age
 
 **Le graphe est supérieur à la pile de fichiers.** Une collection de documents plate ne suffit pas : l'agent peut lire les fichiers individuellement mais ne peut pas raisonner à travers eux. La question "qu'est-ce qui a changé sur Alert cette année et pourquoi ?" requiert de connecter un commentaire Figma, un thread Slack, une PR fermée et un ADR — ce qu'un grep ne peut pas faire. Le graphe encode ces relations : token → composant → décision → outcome → token. L'agent marche le graphe au lieu de fouiller la pile.
 
-**QMD comme premier pas.** [[romina-kavcic]] documente son expérience avec QMD (Tobi Lütke) : un outil local de recherche hybride (BM25 + vecteur + reranking LLM) qui indexe des dossiers localement en quelques minutes. Ce n'est pas un graphe — c'est le test minimal pour savoir si un corpus a du signal avant d'investir dans l'architecture graphe. Elle l'a utilisé sur 1 511 documents répartis en 6 collections (décisions Tidy, specs clients, brouillons Substack, recherche utilisateur, transcriptions de réunions, matériel de conférence). La recherche hybride a surfacé des connexions que ni le keyword search ni le vector search seuls n'auraient trouvées.
+**QMD comme premier pas.** [romina-kavcic](../entities/romina-kavcic.md) documente son expérience avec QMD (Tobi Lütke) : un outil local de recherche hybride (BM25 + vecteur + reranking LLM) qui indexe des dossiers localement en quelques minutes. Ce n'est pas un graphe — c'est le test minimal pour savoir si un corpus a du signal avant d'investir dans l'architecture graphe. Elle l'a utilisé sur 1 511 documents répartis en 6 collections (décisions Tidy, specs clients, brouillons Substack, recherche utilisateur, transcriptions de réunions, matériel de conférence). La recherche hybride a surfacé des connexions que ni le keyword search ni le vector search seuls n'auraient trouvées.
 
 **Deux phases, deux réalités.** En phase 0→1 (founding), l'équipe est dans le mode "faire marcher le système" — les données générées sont majoritairement jetables et ne méritent pas d'être indexées. En phase 1→100 (scaling), l'équipe dispose déjà de trois ans de renommages documentés, d'une douzaine de deprecations et leurs raisons, de rapports de drift, de critiques récurrentes — une mémoire institutionnelle considérable. La plupart des équipes 1→100 ont déjà cette mémoire. Elles ne l'ont juste pas rendue retrievable.
 
@@ -58,4 +58,4 @@ Microsoft a commencé à annuler les licences Claude Code dans son groupe Experi
 
 ## Connexions identifiées
 
-Cette source enrichit directement : [[knowledge-graph-design-system]] (graphe vs pile + QMD), [[mode-exploration-vs-navigation]] (QMD comme solution lightweight), [[gouvernance-design-system-ia]] (coût économique du mauvais contexte), [[inversion-economique-code-comprehension]] (données chiffrées nouvelles). Elle crée deux nouveaux concepts : [[memoire-design-system]] et [[design-system-comme-dataset]].
+Cette source enrichit directement : [knowledge-graph-design-system](../concepts/knowledge-graph-design-system.md) (graphe vs pile + QMD), [mode-exploration-vs-navigation](../concepts/mode-exploration-vs-navigation.md) (QMD comme solution lightweight), [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) (coût économique du mauvais contexte), [inversion-economique-code-comprehension](../concepts/inversion-economique-code-comprehension.md) (données chiffrées nouvelles). Elle crée deux nouveaux concepts : [memoire-design-system](../concepts/memoire-design-system.md) et [design-system-comme-dataset](../concepts/design-system-comme-dataset.md).

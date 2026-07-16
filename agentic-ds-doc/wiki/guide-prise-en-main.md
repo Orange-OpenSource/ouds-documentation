@@ -27,7 +27,7 @@ L'idée centrale : Claude écrit, toi tu lis et tu décides. Tu choisis les sour
 Ce wiki fonctionne avec Claude dans son mode Cowork, accessible via l'application de bureau Claude. C'est ce mode qui permet à Claude d'accéder à un dossier sur ton ordinateur, d'y lire et d'y écrire des fichiers entre les sessions, et de maintenir une mémoire persistante du vault.
 
 **Obsidian** — [obsidian.md](https://obsidian.md) (gratuit, Mac / Windows / Linux / iOS / Android)
-Obsidian est l'interface de lecture et de navigation du wiki. C'est une application de prise de notes qui travaille directement sur des fichiers Markdown stockés localement — sans compte, sans cloud obligatoire, sans vendor lock-in. Tout ce que Claude écrit dans le vault est visible et navigable dans Obsidian : les liens `[[wikilink]]` deviennent des connexions cliquables, le panneau Properties affiche le frontmatter de façon lisible, et la vue graphique rend visible la structure du réseau de connaissances au fil des ingestions. Obsidian ne modifie jamais les fichiers de façon opaque : ce que tu vois est ce qui est écrit sur le disque.
+Obsidian est l'interface de lecture et de navigation du wiki. C'est une application de prise de notes qui travaille directement sur des fichiers Markdown stockés localement — sans compte, sans cloud obligatoire, sans vendor lock-in. Tout ce que Claude écrit dans le vault est visible et navigable dans Obsidian : les liens markdown relatifs `[texte](chemin.md)` deviennent des connexions cliquables, le panneau Properties affiche le frontmatter de façon lisible, et la vue graphique rend visible la structure du réseau de connaissances au fil des ingestions. Ce format de lien (plutôt que le wikilink `[[...]]` propriétaire d'Obsidian) a été choisi pour que le vault reste aussi lisible et navigable sur GitHub. Obsidian ne modifie jamais les fichiers de façon opaque : ce que tu vois est ce qui est écrit sur le disque.
 
 ---
 
@@ -76,7 +76,7 @@ ingère ces notes de réunion : [colle le texte]
 
 ### QUERY — interroger le wiki
 
-Tu poses une question. Claude lit les pages pertinentes du wiki (pas les sources brutes) et répond en citant ses sources internes avec des liens `[[wikilink]]`.
+Tu poses une question. Claude lit les pages pertinentes du wiki (pas les sources brutes) et répond en citant ses sources internes avec des liens markdown `[texte](chemin.md)`.
 
 **Exemples de déclencheurs :**
 ```
@@ -181,9 +181,9 @@ tags:
 created: 2026-07-01
 updated: 2026-07-01
 sources:
-  - "[[source-slug]]"  ← liens wikilink entre guillemets
+  - "[source-slug](../sources/source-slug.md)"  ← liens markdown relatifs entre guillemets
 related:
-  - "[[autre-page]]"
+  - "[autre-page](autre-page.md)"
 ---
 ```
 

@@ -4,18 +4,18 @@ tags: [design-system, astryx, mui, shadcn, atlaskit, marche, composition, ia, ag
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[meta-astryx-harsha-sridhar]]"
-  - "[[meta-astryx-design-system]]"
+  - "[meta-astryx-harsha-sridhar](../sources/meta-astryx-harsha-sridhar.md)"
+  - "[meta-astryx-design-system](../sources/meta-astryx-design-system.md)"
 related:
-  - "[[systeme-de-design-agentique]]"
-  - "[[grammaire-composition-composants]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[protocole-pas-produit]]"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[grammaire-composition-composants](../concepts/grammaire-composition-composants.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[protocole-pas-produit](../concepts/protocole-pas-produit.md)"
 ---
 
 ## Astryx vs MUI vs Atlaskit vs Shadcn/ui
 
-Cette comparaison est construite depuis deux sources : la fiche officielle Meta ([[meta-astryx-design-system]]) et l'analyse externe de Harsha Sridhar ([[meta-astryx-harsha-sridhar]]). Elle se lit sur deux axes : l'architecture de composition (composants scellés vs ouverts) et l'opérabilité agentique (ce que le système expose aux agents IA).
+Cette comparaison est construite depuis deux sources : la fiche officielle Meta ([meta-astryx-design-system](../sources/meta-astryx-design-system.md)) et l'analyse externe de Harsha Sridhar ([meta-astryx-harsha-sridhar](../sources/meta-astryx-harsha-sridhar.md)). Elle se lit sur deux axes : l'architecture de composition (composants scellés vs ouverts) et l'opérabilité agentique (ce que le système expose aux agents IA).
 
 ## Les quatre systèmes
 
@@ -45,7 +45,7 @@ Astryx occupe l'intersection de Shadcn (philosophie de composition ouverte) et d
 
 Sur l'axe styling, il décapsule le moteur (StyleX reste interne) et laisse le choix : CSS vanilla, Tailwind, CSS modules. Les thèmes sont des CSS custom properties, pas une dépendance de build.
 
-Sur l'axe agentique, c'est le différenciateur principal : CLI structuré dont chaque commande retourne un output canonical parseable (`npx astryx component Button`), JSON manifest auto-descriptif de toutes les commandes et flags, serveur MCP compatible Cursor, Claude Code, GitHub Copilot, et un "Quick Start with AI" dans la documentation officielle. Voir [[meta-astryx-design-system]] pour le détail de l'architecture.
+Sur l'axe agentique, c'est le différenciateur principal : CLI structuré dont chaque commande retourne un output canonical parseable (`npx astryx component Button`), JSON manifest auto-descriptif de toutes les commandes et flags, serveur MCP compatible Cursor, Claude Code, GitHub Copilot, et un "Quick Start with AI" dans la documentation officielle. Voir [meta-astryx-design-system](../sources/meta-astryx-design-system.md) pour le détail de l'architecture.
 
 ## Tableau synthétique
 
@@ -63,7 +63,7 @@ Sur l'axe agentique, c'est le différenciateur principal : CLI structuré dont c
 
 Avant Astryx, chaque design system était jugé sur deux axes : qualité visuelle et richesse fonctionnelle. Les différenciateurs étaient la beauté du storybook, la complétude des composants, la cohérence du système de tokens.
 
-Sridhar formule l'axe de différenciation qui émerge en 2026 : "how well they compose, how much of their internals they expose, and how legibly they present themselves to both a human and a model." Ce n'est pas un axe de qualité — c'est un axe d'architecture. Un système peut être excellent sur les deux premiers axes historiques et invisibles aux agents ([[figma-library-invisible-ai-agents]]).
+Sridhar formule l'axe de différenciation qui émerge en 2026 : "how well they compose, how much of their internals they expose, and how legibly they present themselves to both a human and a model." Ce n'est pas un axe de qualité — c'est un axe d'architecture. Un système peut être excellent sur les deux premiers axes historiques et invisibles aux agents ([figma-library-invisible-ai-agents](../sources/figma-library-invisible-ai-agents.md)).
 
 La conséquence pour les équipes DS qui construisent leur propre système : les décisions de composition (scellé vs ouvert) et de styling (couplé vs découplé) ne sont plus seulement des décisions de DX développeur — elles sont des décisions d'opérabilité agentique. Un composant scellé est opaque à l'agent autant qu'au développeur qui veut le modifier.
 

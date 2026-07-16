@@ -4,17 +4,17 @@ tags: [design-system, metadata, documentation, ia, schema, composants]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[schema-metadata-composant]]"
-  - "[[processus-generation-metadata-echelle]]"
-  - "[[workflows-ia-metadata]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[cristian-morales-achiardi]]"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[processus-generation-metadata-echelle](../concepts/processus-generation-metadata-echelle.md)"
+  - "[workflows-ia-metadata](../concepts/workflows-ia-metadata.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
 ---
 
 ## Design system documentation as structured metadata
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective (Medium), 9 janvier 2026
 **URL** : https://www.designsystemscollective.com/design-system-documentation-as-structured-metadata-315f62c6eab1
 **Série** : "Agentic Design System" de Cristian Morales Achiardi, partie 3
@@ -24,7 +24,7 @@ sources:
 
 ## Résumé structuré
 
-Article de fond sur la couche 2 des [[trois-couches-composants-agents]] : les métadonnées de composants. L'argument central est que la documentation structurée comme métadonnées n'est pas une nouvelle documentation — c'est la même documentation, traduite dans un format que les machines peuvent interroger. Aucune connaissance nouvelle n'est créée : on rend explicite et queryable ce qui existait déjà dans Figma, Storybook, Notion, les revues de code, les conversations Slack.
+Article de fond sur la couche 2 des [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md) : les métadonnées de composants. L'argument central est que la documentation structurée comme métadonnées n'est pas une nouvelle documentation — c'est la même documentation, traduite dans un format que les machines peuvent interroger. Aucune connaissance nouvelle n'est créée : on rend explicite et queryable ce qui existait déjà dans Figma, Storybook, Notion, les revues de code, les conversations Slack.
 
 L'article détaille le schéma complet à 9 sections, explique la distinction entre sections critiques pour l'IA (décisions) et sections de complétude (référence), présente le processus de génération en 5 étapes, compare les formats (TypeScript, JSON, Markdown), et décrit les 4 types de workflows que les métadonnées activent.
 
@@ -56,4 +56,4 @@ L'article détaille le schéma complet à 9 sections, explique la distinction en
 
 ## Connexions identifiées
 
-Développe en profondeur la couche 2 de [[trois-couches-composants-agents]]. Complète [[lisibilite-machine-design-system]] avec l'argument de la traduction (pas de création). Les 4 workflows activés par les métadonnées font écho à [[protocole-arc]] phases 1 et 2. La validation pre-génération (vérification des anti-patterns avant de générer du code) opérationnalise [[user-vs-maintainer-ia]].
+Développe en profondeur la couche 2 de [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md). Complète [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) avec l'argument de la traduction (pas de création). Les 4 workflows activés par les métadonnées font écho à [protocole-arc](../concepts/protocole-arc.md) phases 1 et 2. La validation pre-génération (vérification des anti-patterns avant de générer du code) opérationnalise [user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md).

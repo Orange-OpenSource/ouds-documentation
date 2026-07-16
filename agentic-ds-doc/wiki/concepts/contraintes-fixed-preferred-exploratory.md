@@ -4,19 +4,19 @@ tags: [design-system, agentique, ia, gouvernance, contraintes, autonomie, géné
 created: 2026-06-30
 updated: 2026-06-30
 sources:
-  - "[[ai-ready-design-system-olha-bondar]]"
+  - "[ai-ready-design-system-olha-bondar](../sources/ai-ready-design-system-olha-bondar.md)"
 related:
-  - "[[gouvernance-design-system-ia]]"
-  - "[[niveaux-confiance-actions-agentiques]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[protocole-arc]]"
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[concevoir-les-conditions]]"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[niveaux-confiance-actions-agentiques](niveaux-confiance-actions-agentiques.md)"
+  - "[systeme-de-design-agentique](systeme-de-design-agentique.md)"
+  - "[protocole-arc](protocole-arc.md)"
+  - "[architecture-skills-rules-instructions](architecture-skills-rules-instructions.md)"
+  - "[concevoir-les-conditions](concevoir-les-conditions.md)"
 ---
 
 ## Contraintes fixed / preferred / exploratory
 
-La tripartition fixed / preferred / exploratory est un cadre de calibration de l'autonomie des agents IA dans un design system. Elle répond à une tension fondamentale : sans contraintes, l'IA génère de l'incohérence ; avec des contraintes totales, elle génère des produits répétitifs. Le cadre distingue trois régimes selon le degré de liberté accordé ([[ai-ready-design-system-olha-bondar]]).
+La tripartition fixed / preferred / exploratory est un cadre de calibration de l'autonomie des agents IA dans un design system. Elle répond à une tension fondamentale : sans contraintes, l'IA génère de l'incohérence ; avec des contraintes totales, elle génère des produits répétitifs. Le cadre distingue trois régimes selon le degré de liberté accordé ([ai-ready-design-system-olha-bondar](../sources/ai-ready-design-system-olha-bondar.md)).
 
 ## Les trois régimes
 
@@ -30,13 +30,13 @@ La tripartition fixed / preferred / exploratory est un cadre de calibration de l
 
 La confusion entre les trois régimes est une source fréquente d'échec dans les workflows agentiques. Traiter une règle preferred comme fixed bloque des décisions légitimes et force les équipes à contourner le système. Traiter une règle fixed comme preferred ouvre la porte à des violations d'accessibilité ou de cohérence qui passent inaperçues dans la génération à grande échelle.
 
-La tripartition rend la distinction explicite et machine-lisible — l'agent peut interroger le régime d'une règle avant de décider s'il peut dévier. C'est une forme de [[gouvernance-design-system-ia|gouvernance encodée]] plutôt que mémorisée.
+La tripartition rend la distinction explicite et machine-lisible — l'agent peut interroger le régime d'une règle avant de décider s'il peut dévier. C'est une forme de [gouvernance encodée](gouvernance-design-system-ia.md) plutôt que mémorisée.
 
-## Relation avec les [[niveaux-confiance-actions-agentiques]]
+## Relation avec les [niveaux-confiance-actions-agentiques](niveaux-confiance-actions-agentiques.md)
 
-Les niveaux de confiance des actions agentiques ([[niveaux-confiance-actions-agentiques]]) et la tripartition fixed/preferred/exploratory sont deux grilles orthogonales qui se combinent. Un agent peut opérer sur une règle fixed (haute confiance requise) ou une règle exploratory (faible confiance suffisante). La grille de confiance décrit le niveau de supervision nécessaire pour exécuter une action ; la tripartition décrit le degré de liberté accordé pour la décider.
+Les niveaux de confiance des actions agentiques ([niveaux-confiance-actions-agentiques](niveaux-confiance-actions-agentiques.md)) et la tripartition fixed/preferred/exploratory sont deux grilles orthogonales qui se combinent. Un agent peut opérer sur une règle fixed (haute confiance requise) ou une règle exploratory (faible confiance suffisante). La grille de confiance décrit le niveau de supervision nécessaire pour exécuter une action ; la tripartition décrit le degré de liberté accordé pour la décider.
 
-## Relation avec [[architecture-skills-rules-instructions]]
+## Relation avec [architecture-skills-rules-instructions](architecture-skills-rules-instructions.md)
 
 Le cadre rejoint l'architecture skills/rules/instructions dans sa logique de séparation : les principes opérationnels durables (fixed) appartiennent aux règles globales, les approches recommandées (preferred) peuvent être encodées dans des skills ou des instructions de tâche, et les zones exploratory définissent les espaces où aucune règle n'est invoquée. La tripartition peut donc servir de grille de classification pour décider où encoder chaque décision de design system.
 

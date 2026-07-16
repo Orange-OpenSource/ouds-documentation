@@ -4,24 +4,24 @@ tags: [documentation, design-system, lag, automatisation, processus, latence, ai
 created: 2026-06-17
 updated: 2026-07-06
 sources:
-  - "[[how-to-automate-design-system-documentation]]"
-  - "[[your-design-system-is-not-ready-for-ai-agents]]"
-  - "[[state-of-ai-design-systems-2026-zeroheight]]"
-  - "[[making-product-docs-work-humans-ai-gerireid]]"
-  - "[[20-ai-workflows-design-system-teams]]"
+  - "[how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)"
+  - "[your-design-system-is-not-ready-for-ai-agents](../sources/your-design-system-is-not-ready-for-ai-agents.md)"
+  - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
+  - "[making-product-docs-work-humans-ai-gerireid](../sources/making-product-docs-work-humans-ai-gerireid.md)"
+  - "[20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)"
 related:
-  - "[[pipeline-figma-docs-automatise]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[design-system-as-infrastructure]]"
-  - "[[romina-kavcic]]"
-  - "[[geri-reid]]"
-  - "[[cinq-questions-documentation-produit]]"
+  - "[pipeline-figma-docs-automatise](pipeline-figma-docs-automatise.md)"
+  - "[boucle-feedback-infrastructure](boucle-feedback-infrastructure.md)"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[design-system-as-infrastructure](design-system-as-infrastructure.md)"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[geri-reid](../entities/geri-reid.md)"
+  - "[cinq-questions-documentation-produit](cinq-questions-documentation-produit.md)"
 ---
 
 ## Le lag de documentation
 
-Le lag de documentation désigne le délai structurel entre la mise à jour d'un composant dans Figma et la mise à jour correspondante dans la documentation — typiquement 3 semaines selon [[romina-kavcic]] ([[how-to-automate-design-system-documentation]]). Ce lag n'est pas un problème de discipline ou de process. C'est une conséquence de l'absence de connexion entre les outils.
+Le lag de documentation désigne le délai structurel entre la mise à jour d'un composant dans Figma et la mise à jour correspondante dans la documentation — typiquement 3 semaines selon [romina-kavcic](../entities/romina-kavcic.md) ([how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)). Ce lag n'est pas un problème de discipline ou de process. C'est une conséquence de l'absence de connexion entre les outils.
 
 ## Symptômes documentés
 
@@ -37,23 +37,23 @@ La formulation de Romina Kavcic : "The only way to kill latency is to connect yo
 
 ## La dérive documentaire comme failure mode pour les agents
 
-La dérive documentaire devient une menace d'un ordre de magnitude supérieur dès qu'on introduit des agents IA dans le système. Pour un humain, l'incohérence entre docs, tokens et composants est une source de friction — il peut juger quelle version est correcte. Pour un agent, c'est catastrophique : confronté à trois sources contradictoires, il n'a pas de critère de jugement. Il prend la première source rencontrée, ou fait la moyenne des trois. Le résultat est un composant qui "fonctionne" mais viole la cohérence du système ([[your-design-system-is-not-ready-for-ai-agents]]).
+La dérive documentaire devient une menace d'un ordre de magnitude supérieur dès qu'on introduit des agents IA dans le système. Pour un humain, l'incohérence entre docs, tokens et composants est une source de friction — il peut juger quelle version est correcte. Pour un agent, c'est catastrophique : confronté à trois sources contradictoires, il n'a pas de critère de jugement. Il prend la première source rencontrée, ou fait la moyenne des trois. Le résultat est un composant qui "fonctionne" mais viole la cohérence du système ([your-design-system-is-not-ready-for-ai-agents](../sources/your-design-system-is-not-ready-for-ai-agents.md)).
 
-[[romina-kavcic]] chiffre le poids de cette dérive : **30 à 40 % du temps des équipes design system** est consacré à la maintenance pure — régressions d'accessibilité, mauvais usages de tokens, documentation désynchronisée. Ce chiffre est cohérent avec les données NN/g documentées dans [[gouvernance-design-system-ia]] (40 %+ en maintenance). La dérive n'est pas un état exceptionnel — c'est l'état par défaut de tout système sans infrastructure de synchronisation active.
+[romina-kavcic](../entities/romina-kavcic.md) chiffre le poids de cette dérive : **30 à 40 % du temps des équipes design system** est consacré à la maintenance pure — régressions d'accessibilité, mauvais usages de tokens, documentation désynchronisée. Ce chiffre est cohérent avec les données NN/g documentées dans [gouvernance-design-system-ia](gouvernance-design-system-ia.md) (40 %+ en maintenance). La dérive n'est pas un état exceptionnel — c'est l'état par défaut de tout système sans infrastructure de synchronisation active.
 
 ## Le self-healing loop basé sur MAPE-K
 
-[[romina-kavcic]] propose de traiter la dérive documentaire comme un failure mode monitoré, pas comme un backlog item ([[your-design-system-is-not-ready-for-ai-agents]]). L'approche s'inspire du framework IBM MAPE-K (Monitor, Analyze, Plan, Execute + Knowledge) — un modèle d'auto-gestion des systèmes adaptatifs. Adapté au design system, la boucle se décompose en cinq étapes :
+[romina-kavcic](../entities/romina-kavcic.md) propose de traiter la dérive documentaire comme un failure mode monitoré, pas comme un backlog item ([your-design-system-is-not-ready-for-ai-agents](../sources/your-design-system-is-not-ready-for-ai-agents.md)). L'approche s'inspire du framework IBM MAPE-K (Monitor, Analyze, Plan, Execute + Knowledge) — un modèle d'auto-gestion des systèmes adaptatifs. Adapté au design system, la boucle se décompose en cinq étapes :
 
 **Observe** — collecte de signaux depuis l'API Figma, les hooks CI et les analytics d'usage. **Detect** — identification des incohérences entre couches (est-ce que le nom du token correspond à la description du composant ? est-ce que la documentation reflète l'API actuelle ?). **Suggest** — proposition de corrections priorisées par un drift-scoring engine. **Fix** — génération automatique de PRs correctifs. **Learn** — mise à jour du modèle de scoring à partir des corrections validées.
 
-Ce modèle est une spécialisation de la [[boucle-feedback-infrastructure]] pour le problème spécifique de la dérive documentaire. La boucle Watch/Analyze/Execute/Observe de la série Self-Healing de Kavcic ([[self-healing-design-system]]) est la même logique à l'échelle du système entier ; la boucle MAPE-K ici décrite s'applique spécifiquement à la couche documentation-tokens-composants.
+Ce modèle est une spécialisation de la [boucle-feedback-infrastructure](boucle-feedback-infrastructure.md) pour le problème spécifique de la dérive documentaire. La boucle Watch/Analyze/Execute/Observe de la série Self-Healing de Kavcic ([self-healing-design-system](../sources/self-healing-design-system.md)) est la même logique à l'échelle du système entier ; la boucle MAPE-K ici décrite s'applique spécifiquement à la couche documentation-tokens-composants.
 
 La règle opérationnelle issue de cette approche : valider la cohérence sémantique entre couches avant de connecter quoi que ce soit à un MCP. "Does the token name match the component description? Does the documentation reflect the current API?" Si ces trois couches ne s'alignent pas, le problème doit être résolu avant l'intégration agentique.
 
 ## La documentation comme goulot d'étranglement IA : données sectorielles (zeroheight, 2026)
 
-[[state-of-ai-design-systems-2026-zeroheight]] introduit une formulation nouvelle du problème : **la documentation n'est pas seulement en retard — elle est le goulot** qui plafonne l'ensemble de l'adoption IA. Seulement 17 % des équipes DS estiment leur documentation "très prête pour l'IA" ; 83 % ont une documentation insuffisamment structurée pour en tirer le plein bénéfice agentique.
+[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md) introduit une formulation nouvelle du problème : **la documentation n'est pas seulement en retard — elle est le goulot** qui plafonne l'ensemble de l'adoption IA. Seulement 17 % des équipes DS estiment leur documentation "très prête pour l'IA" ; 83 % ont une documentation insuffisamment structurée pour en tirer le plein bénéfice agentique.
 
 Le rapport établit le lien de causalité directement : "The success of using MCP servers to help with most tasks hinges on the quality of the documentation. If you put bad in, you'll likely get bad out." Ce n'est plus seulement un problème de lag humain (la documentation retarde sur Figma) — c'est un problème d'AI-readiness structurelle. Une documentation à jour mais non structurée produit des outputs IA aussi décevants qu'une documentation obsolète.
 
@@ -63,11 +63,11 @@ Le gap aspirationnel révèle l'ampleur de la transition : **25 % des équipes u
 
 ## Lag de documentation vs dérive agentique
 
-Le lag de documentation et la dérive agentique ([[gouvernance-design-system-ia]], [[mode-exploration-vs-navigation]]) sont deux phénomènes distincts mais liés. Le lag de documentation affecte les humains : développeurs qui implémentent depuis des specs obsolètes, designers qui prennent des décisions basées sur une documentation périmée. La dérive agentique affecte les agents IA : ils génèrent du code avec les mauvais tokens, dupliquent des composants existants, introduisent des incohérences. Les deux ont la même cause racine — l'absence de synchronisation entre la source de vérité (Figma, le codebase) et les représentations qui en dépendent (docs, metadata). La solution est également commune : automatiser la synchronisation plutôt qu'espérer la discipline humaine.
+Le lag de documentation et la dérive agentique ([gouvernance-design-system-ia](gouvernance-design-system-ia.md), [mode-exploration-vs-navigation](mode-exploration-vs-navigation.md)) sont deux phénomènes distincts mais liés. Le lag de documentation affecte les humains : développeurs qui implémentent depuis des specs obsolètes, designers qui prennent des décisions basées sur une documentation périmée. La dérive agentique affecte les agents IA : ils génèrent du code avec les mauvais tokens, dupliquent des composants existants, introduisent des incohérences. Les deux ont la même cause racine — l'absence de synchronisation entre la source de vérité (Figma, le codebase) et les représentations qui en dépendent (docs, metadata). La solution est également commune : automatiser la synchronisation plutôt qu'espérer la discipline humaine.
 
 ## De la friction à l'outcome actif : le saut qualitatif (Reid, 2026)
 
-[[geri-reid]] introduit une distinction qui manquait au corpus : la documentation médiocre ne produit pas le même type de problème selon l'audience ([[making-product-docs-work-humans-ai-gerireid]]). Pour un humain, une documentation obsolète ou mal structurée crée de la *friction* — il demande sur Slack, cherche dans les archives, finit par trouver ou par approximer. C'est inefficace, mais ça fonctionne à peu près. Pour un LLM, la même documentation produit un *mauvais outcome actif* : "it finds patterns and constructs an answer. A confident, well-formatted, completely wrong answer delivered as fact."
+[geri-reid](../entities/geri-reid.md) introduit une distinction qui manquait au corpus : la documentation médiocre ne produit pas le même type de problème selon l'audience ([making-product-docs-work-humans-ai-gerireid](../sources/making-product-docs-work-humans-ai-gerireid.md)). Pour un humain, une documentation obsolète ou mal structurée crée de la *friction* — il demande sur Slack, cherche dans les archives, finit par trouver ou par approximer. C'est inefficace, mais ça fonctionne à peu près. Pour un LLM, la même documentation produit un *mauvais outcome actif* : "it finds patterns and constructs an answer. A confident, well-formatted, completely wrong answer delivered as fact."
 
 Le cas illustratif de Reid : en utilisant l'IA pour générer de la documentation d'accessibilité sur des composants, le modèle a "wildly hallucinated components based on their name" avant qu'une liste de composants approuvés soit fournie. La documentation existante était incomplète, pas obsolète — mais cela suffisait pour que le modèle comble les lacunes par invention plausible.
 
@@ -75,7 +75,7 @@ Ce saut qualitatif a une conséquence directe sur la priorisation : les document
 
 ## Migration guides et release notes comme documentation anti-lag
 
-[[romina-kavcic]] ([[20-ai-workflows-design-system-teams]]) identifie deux artefacts documentaires spécifiques que les équipes produisent trop rarement et trop tard : les migration guides et les release notes utilisables.
+[romina-kavcic](../entities/romina-kavcic.md) ([20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)) identifie deux artefacts documentaires spécifiques que les équipes produisent trop rarement et trop tard : les migration guides et les release notes utilisables.
 
 **Les migration guides** adressent une forme spécifique du lag : le changelog liste ce qui a changé, mais ne dit pas quoi faire. Résultat : trois équipes cassent lors d'un breaking change, personne ne lit le changelog. Une migration guide générée par IA depuis le diff ancien/nouveau API + la raison du changement produit en quelques minutes l'artefact qui sera réellement consulté — qui est affecté, exemples avant/après, checklist de migration, erreurs fréquentes. Sauvegardée dans `migration-guides/[component]-[version].md`, elle remplace la réponse répétée à la même question sur Slack.
 

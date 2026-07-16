@@ -5,18 +5,18 @@ created: 2026-06-18
 updated: 2026-06-18
 sources: []
 related:
-  - "[[mehmet-celik]]"
-  - "[[accessibilite-continue]]"
-  - "[[systeme-design-proactif]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[intent-token]]"
-  - "[[documentation-lag]]"
+  - "[mehmet-celik](../entities/mehmet-celik.md)"
+  - "[accessibilite-continue](../concepts/accessibilite-continue.md)"
+  - "[systeme-design-proactif](../concepts/systeme-design-proactif.md)"
+  - "[boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[documentation-lag](../concepts/documentation-lag.md)"
 ---
 
 ## Automating Your Design System with AI: The Next Frontier of Efficiency
 
-**Auteur** : [[mehmet-celik]]
+**Auteur** : [mehmet-celik](../entities/mehmet-celik.md)
 **Publication** : ux mate (Medium)
 **Date** : 2025-10-04
 **URL** : https://medium.com/ux-mate/automating-your-design-system-with-ai-the-next-frontier-of-efficiency-93f62d057410
@@ -30,19 +30,19 @@ Article de synthèse en 7 minutes sur l'automatisation IA des design systems, or
 
 L'article pose le coût invisible de la maintenance manuelle comme le problème central : les contributeurs consacrent **plus de 40% de leur temps à la maintenance**, pas à l'innovation (Nielsen Norman Group, 2022). L'IA n'est pas présentée comme un remplacement des designers, mais comme un "membre d'équipe supplémentaire" qui gère le travail répétitif pour libérer la capacité créative.
 
-La thèse la plus dense est celle sur l'**accessibilité continue** — un renversement du modèle réactif (audit en fin de cycle) vers un modèle proactif (vérification à chaque composant, chaque état, chaque token). L'accessibilité comme garantie structurelle plutôt que comme projet ponctuel. Voir [[accessibilite-continue]].
+La thèse la plus dense est celle sur l'**accessibilité continue** — un renversement du modèle réactif (audit en fin de cycle) vers un modèle proactif (vérification à chaque composant, chaque état, chaque token). L'accessibilité comme garantie structurelle plutôt que comme projet ponctuel. Voir [accessibilite-continue](../concepts/accessibilite-continue.md).
 
 La section sur les tokens introduit la problématique de la **synchronisation cross-platform** : un changement de token en Figma doit se propager de façon cohérente vers CSS, iOS et Android. Sans synchronisation, des incohérences subtiles s'accumulent et érodent la confiance dans le système. L'IA surveille les mismatches et peut auto-corriger — voire anticiper la création de nouveaux tokens quand elle détecte des overrides récurrents.
 
-La vision finale — les **systèmes proactifs** — est le concept le plus prospectif de l'article : un design system qui remarque qu'un pattern émerge dans plusieurs projets et suggère de le formaliser en composant, prédit les risques d'accessibilité avant les tests, recommande des ajustements de tokens d'après les overrides observés. Voir [[systeme-design-proactif]].
+La vision finale — les **systèmes proactifs** — est le concept le plus prospectif de l'article : un design system qui remarque qu'un pattern émerge dans plusieurs projets et suggère de le formaliser en composant, prédit les risques d'accessibilité avant les tests, recommande des ajustements de tokens d'après les overrides observés. Voir [systeme-design-proactif](../concepts/systeme-design-proactif.md).
 
 ## Citations clés
 
-"Design systems are supposed to make our lives easier [...] it can feel like a never-ending game of whack-a-mole." ([[mehmet-celik]])
+"Design systems are supposed to make our lives easier [...] it can feel like a never-ending game of whack-a-mole." ([mehmet-celik](../entities/mehmet-celik.md))
 
-"AI doesn't just reduce effort—it compounds efficiency." ([[mehmet-celik]])
+"AI doesn't just reduce effort—it compounds efficiency." ([mehmet-celik](../entities/mehmet-celik.md))
 
-"Governance models that balance automation's efficiency with human oversight." ([[mehmet-celik]])
+"Governance models that balance automation's efficiency with human oversight." ([mehmet-celik](../entities/mehmet-celik.md))
 
 ## Cas industriels mentionnés
 
@@ -54,8 +54,8 @@ La vision finale — les **systèmes proactifs** — est le concept le plus pros
 
 ## Question de gouvernance ouverte
 
-L'article pose sans la résoudre la question de la responsabilité pour les updates automatisées : "Who's accountable for automated updates that go live?" Cette question est absente du corpus plus technique du vault — qui se concentre sur *comment* encoder la gouvernance, pas sur *qui* répond quand l'automatisation se trompe. Voir [[gouvernance-design-system-ia]].
+L'article pose sans la résoudre la question de la responsabilité pour les updates automatisées : "Who's accountable for automated updates that go live?" Cette question est absente du corpus plus technique du vault — qui se concentre sur *comment* encoder la gouvernance, pas sur *qui* répond quand l'automatisation se trompe. Voir [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md).
 
 ## Connexions identifiées
 
-Ce que l'article apporte qui n'était pas encore formalisé dans le vault : la distinction accessibility-as-retrofit vs accessibility-as-structure ([[accessibilite-continue]]), le concept de système proactif auto-améliorant ([[systeme-design-proactif]]), la synchronisation cross-platform des tokens comme problème spécifique, et la question de responsabilité pour les décisions automatisées ([[gouvernance-design-system-ia]]).
+Ce que l'article apporte qui n'était pas encore formalisé dans le vault : la distinction accessibility-as-retrofit vs accessibility-as-structure ([accessibilite-continue](../concepts/accessibilite-continue.md)), le concept de système proactif auto-améliorant ([systeme-design-proactif](../concepts/systeme-design-proactif.md)), la synchronisation cross-platform des tokens comme problème spécifique, et la question de responsabilité pour les décisions automatisées ([gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)).

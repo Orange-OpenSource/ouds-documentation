@@ -5,18 +5,18 @@ created: 2026-06-18
 updated: 2026-06-18
 sources: []
 related:
-  - "[[romina-kavcic]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[protocole-pas-produit]]"
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[seeds-vs-trees]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[systeme-design-proactif]]"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md)"
+  - "[protocole-pas-produit](../concepts/protocole-pas-produit.md)"
+  - "[architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md)"
+  - "[seeds-vs-trees](../concepts/seeds-vs-trees.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[systeme-design-proactif](../concepts/systeme-design-proactif.md)"
 ---
 
 ## The Self-Healing Design System
 
-**Auteur** : [[romina-kavcic]]
+**Auteur** : [romina-kavcic](../entities/romina-kavcic.md)
 **Publication** : thedesignsystem.guide (Substack)
 **Date** : 2026-04-04
 **URL** : https://learn.thedesignsystem.guide/p/the-self-healing-design-system
@@ -37,7 +37,7 @@ La liste complète de MCP dans cet usage : Figma/Tidy, GitHub, Storybook, Chroma
 
 ## Le principe "protocole, pas produit"
 
-La proposition architecturale clé : **la couche d'orchestration est remplaçable**. Parce que tout s'intègre via MCP, Kavcic a testé Cursor, Codex et d'autres outils dans la même architecture. Le fait de construire sur un protocole plutôt que sur un produit signifie que si un meilleur outil émerge demain, il remplace le centre sans qu'aucune des intégrations ne soit reconstruite. Voir [[protocole-pas-produit]].
+La proposition architecturale clé : **la couche d'orchestration est remplaçable**. Parce que tout s'intègre via MCP, Kavcic a testé Cursor, Codex et d'autres outils dans la même architecture. Le fait de construire sur un protocole plutôt que sur un produit signifie que si un meilleur outil émerge demain, il remplace le centre sans qu'aucune des intégrations ne soit reconstruite. Voir [protocole-pas-produit](../concepts/protocole-pas-produit.md).
 
 ## Benchmark multi-modèles
 
@@ -45,16 +45,16 @@ Kavcic exécute les mêmes exercices sur tous les nouveaux modèles à leur sort
 
 ## La boucle self-healing
 
-La boucle est formalisée en 4 étapes : **Watch** (détecter la dérive dans les tokens, composants, documentation) → **Analyze** (scorer la sévérité, prioriser les correctifs) → **Execute** (générer des PRs, mettre à jour la documentation, synchroniser les tokens) → **Observe** (vérifier les résultats et reboucler). C'est la forme la plus opérationnelle et la plus concrète de la [[boucle-feedback-infrastructure]] dans le vault. Voir aussi [[systeme-design-proactif]] pour la version prospective.
+La boucle est formalisée en 4 étapes : **Watch** (détecter la dérive dans les tokens, composants, documentation) → **Analyze** (scorer la sévérité, prioriser les correctifs) → **Execute** (générer des PRs, mettre à jour la documentation, synchroniser les tokens) → **Observe** (vérifier les résultats et reboucler). C'est la forme la plus opérationnelle et la plus concrète de la [boucle-feedback-infrastructure](../concepts/boucle-feedback-infrastructure.md) dans le vault. Voir aussi [systeme-design-proactif](../concepts/systeme-design-proactif.md) pour la version prospective.
 
 ## La fondation comme prérequis absolu
 
-"This architecture only works because the foundation is solid. Without clean token naming, without component descriptions, without intent documentation, the agent has nothing meaningful to work with." Cette phrase est la validation empirique la plus directe de [[seeds-vs-trees]] dans le vault — non pas comme principe théorique mais comme constat opérationnel après un an de production.
+"This architecture only works because the foundation is solid. Without clean token naming, without component descriptions, without intent documentation, the agent has nothing meaningful to work with." Cette phrase est la validation empirique la plus directe de [seeds-vs-trees](../concepts/seeds-vs-trees.md) dans le vault — non pas comme principe théorique mais comme constat opérationnel après un an de production.
 
 ## Citations clés
 
-"The architecture doesn't lock you in. If a better tool shows up tomorrow, you swap the center, and everything else stays the same. That's the point of building on a protocol, not a product." ([[romina-kavcic]])
+"The architecture doesn't lock you in. If a better tool shows up tomorrow, you swap the center, and everything else stays the same. That's the point of building on a protocol, not a product." ([romina-kavcic](../entities/romina-kavcic.md))
 
-"Claude Code consistently delivered the best results for design system work, particularly in reasoning about component relationships and token semantics." ([[romina-kavcic]])
+"Claude Code consistently delivered the best results for design system work, particularly in reasoning about component relationships and token semantics." ([romina-kavcic](../entities/romina-kavcic.md))
 
-"Without clean token naming, without component descriptions, without intent documentation, the agent has nothing meaningful to work with." ([[romina-kavcic]])
+"Without clean token naming, without component descriptions, without intent documentation, the agent has nothing meaningful to work with." ([romina-kavcic](../entities/romina-kavcic.md))

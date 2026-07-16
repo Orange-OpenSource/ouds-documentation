@@ -4,19 +4,19 @@ tags: [audit, tokens, playwright, ia, automatisation, test, drift, accessibilite
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[20-ai-workflows-design-system-teams]]"
+  - "[20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)"
 related:
-  - "[[architecture-skills-rules-instructions]]"
-  - "[[metriques-adoption-ia-design-system]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[boucle-feedback-infrastructure]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[bypass-patterns-comme-user-research]]"
+  - "[architecture-skills-rules-instructions](architecture-skills-rules-instructions.md)"
+  - "[metriques-adoption-ia-design-system](metriques-adoption-ia-design-system.md)"
+  - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
+  - "[boucle-feedback-infrastructure](boucle-feedback-infrastructure.md)"
+  - "[gouvernance-design-system-ia](gouvernance-design-system-ia.md)"
+  - "[bypass-patterns-comme-user-research](bypass-patterns-comme-user-research.md)"
 ---
 
 ## Audit continu avec Playwright et agents IA
 
-La plupart des équipes de design system font leurs audits manuellement, juste avant une release majeure : ils identifient des problèmes, les mettent dans un backlog, et n'y reviennent pas avant la prochaine release. C'est un cycle d'accumulation de dette, pas de maintenance. Le pattern Playwright + agents IA propose une alternative : des audits qui tournent en continu, sans intervention manuelle ([[20-ai-workflows-design-system-teams]]).
+La plupart des équipes de design system font leurs audits manuellement, juste avant une release majeure : ils identifient des problèmes, les mettent dans un backlog, et n'y reviennent pas avant la prochaine release. C'est un cycle d'accumulation de dette, pas de maintenance. Le pattern Playwright + agents IA propose une alternative : des audits qui tournent en continu, sans intervention manuelle ([20-ai-workflows-design-system-teams](../sources/20-ai-workflows-design-system-teams.md)).
 
 ## Le pattern Planner / Generator / Healer
 
@@ -42,9 +42,9 @@ Cinq catégories d'audit deviennent automatisables avec ce pattern.
 
 ## Relation avec les Skills
 
-Ce pattern est complémentaire aux [[architecture-skills-rules-instructions]] mais opère à un niveau différent. Les Skills définissent les règles de génération et de validation *dans les prompts*. Le pattern Playwright exécute les vérifications *sur le composant rendu dans un navigateur*. L'un est statique (analyse du code), l'autre est dynamique (audit du comportement).
+Ce pattern est complémentaire aux [architecture-skills-rules-instructions](architecture-skills-rules-instructions.md) mais opère à un niveau différent. Les Skills définissent les règles de génération et de validation *dans les prompts*. Le pattern Playwright exécute les vérifications *sur le composant rendu dans un navigateur*. L'un est statique (analyse du code), l'autre est dynamique (audit du comportement).
 
-Une [[boucle-feedback-infrastructure]] complète combine les deux : les Skills définissent les règles, Playwright vérifie leur application dans le rendu.
+Une [boucle-feedback-infrastructure](boucle-feedback-infrastructure.md) complète combine les deux : les Skills définissent les règles, Playwright vérifie leur application dans le rendu.
 
 ## Ce que ce pattern change
 

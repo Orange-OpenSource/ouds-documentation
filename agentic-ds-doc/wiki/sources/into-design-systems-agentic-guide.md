@@ -5,18 +5,18 @@ created: 2026-06-24
 updated: 2026-06-24
 sources: []
 related:
-  - "[[romina-kavcic]]"
-  - "[[diana-wolosin]]"
-  - "[[jesse-gardner]]"
-  - "[[jan-six]]"
-  - "[[brad-frost]]"
-  - "[[into-design-systems-conference]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[design-system-as-infrastructure]]"
-  - "[[mcp-on-demand-vs-rules-always-on]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[seeds-vs-trees]]"
-  - "[[niveaux-confiance-actions-agentiques]]"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[diana-wolosin](../entities/diana-wolosin.md)"
+  - "[jesse-gardner](../entities/jesse-gardner.md)"
+  - "[jan-six](../entities/jan-six.md)"
+  - "[brad-frost](../entities/brad-frost.md)"
+  - "[into-design-systems-conference](../entities/into-design-systems-conference.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[design-system-as-infrastructure](../concepts/design-system-as-infrastructure.md)"
+  - "[mcp-on-demand-vs-rules-always-on](../concepts/mcp-on-demand-vs-rules-always-on.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[seeds-vs-trees](../concepts/seeds-vs-trees.md)"
+  - "[niveaux-confiance-actions-agentiques](../concepts/niveaux-confiance-actions-agentiques.md)"
 ---
 
 ## Into Design Systems — "Agentic Design Systems: The Complete Guide"
@@ -48,7 +48,7 @@ GitHub Primer utilise des sous-agents spécialisés (ex : un "accessibility revi
 28 modèles frontier sortis en 9 mois, $200B+ investis en IA dans l'année, croissance MCP de 100K → 8M+ downloads en moins d'un an. Signaux qui justifient l'urgence.
 
 **FigmaLint (Brad Frost / Southleft) :**
-Plugin Figma qui score les composants (26/100 → 100/100 après corrections), vérifie l'usage des tokens, le naming de layers, l'accessibilité, les descriptions de composants. Démo Figma Console MCP : "Create a new theme called Lavender" déploie instantanément les nouveaux tokens sur Figma, Storybook et React Native. C'est une implémentation de [[generation-spec-agentique]] en sens inverse : non pas specs → docs, mais thème → déploiement multi-destinations.
+Plugin Figma qui score les composants (26/100 → 100/100 après corrections), vérifie l'usage des tokens, le naming de layers, l'accessibilité, les descriptions de composants. Démo Figma Console MCP : "Create a new theme called Lavender" déploie instantanément les nouveaux tokens sur Figma, Storybook et React Native. C'est une implémentation de [generation-spec-agentique](../concepts/generation-spec-agentique.md) en sens inverse : non pas specs → docs, mais thème → déploiement multi-destinations.
 
 ## Ce que cette source confirme sans ajouter
 

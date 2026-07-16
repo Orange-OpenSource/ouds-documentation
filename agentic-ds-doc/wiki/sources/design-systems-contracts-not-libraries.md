@@ -5,17 +5,17 @@ created: 2026-07-09
 updated: 2026-07-09
 sources: []
 related:
-  - "[[cristian-morales-achiardi]]"
-  - "[[composant-comme-contrat]]"
-  - "[[langage-design-system]]"
-  - "[[protocole-arc]]"
-  - "[[grammaire-composition-composants]]"
-  - "[[existence-vs-intent-violations]]"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
+  - "[composant-comme-contrat](../concepts/composant-comme-contrat.md)"
+  - "[langage-design-system](../concepts/langage-design-system.md)"
+  - "[protocole-arc](../concepts/protocole-arc.md)"
+  - "[grammaire-composition-composants](../concepts/grammaire-composition-composants.md)"
+  - "[existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md)"
 ---
 
 ## Design systems are contracts, not libraries
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective, mai 2026
 **URL** : https://www.designsystemscollective.com/design-systems-are-contracts-not-libraries-4876d8e1d401
 
@@ -31,7 +31,7 @@ Presque tout dans un système fonctionnel est un "compound" : un composant compo
 
 ## Position dans la série Achiardi
 
-Cet article est le maillon conceptuel entre les articles techniques (indexation, orchestration, gouvernance — déjà ingérés) et l'article de juillet 2026 sur le langage ([[building-language-design-systems]]). La progression de la série est maintenant lisible :
+Cet article est le maillon conceptuel entre les articles techniques (indexation, orchestration, gouvernance — déjà ingérés) et l'article de juillet 2026 sur le langage ([building-language-design-systems](building-language-design-systems.md)). La progression de la série est maintenant lisible :
 
 1. Infrastructure AI-ready (index, métadonnées, orchestration) → *comment rendre le système lisible*
 2. Gouvernance encodée → *comment enforcer les règles*
@@ -40,6 +40,6 @@ Cet article est le maillon conceptuel entre les articles techniques (indexation,
 
 ## Apport au vault
 
-Enrichit [[composant-comme-contrat]] avec la dimension architecturale : le contrat n'est pas seulement dans les métadonnées du composant (intent, variants, anti-patterns) mais dans les décisions d'architecture qui définissent ce que les consommateurs peuvent composer. Un composant scellé impose un contrat d'usage plus strict qu'un composant à primitives ouvertes — mais ce contrat doit être explicite dans les deux cas pour être enforçable.
+Enrichit [composant-comme-contrat](../concepts/composant-comme-contrat.md) avec la dimension architecturale : le contrat n'est pas seulement dans les métadonnées du composant (intent, variants, anti-patterns) mais dans les décisions d'architecture qui définissent ce que les consommateurs peuvent composer. Un composant scellé impose un contrat d'usage plus strict qu'un composant à primitives ouvertes — mais ce contrat doit être explicite dans les deux cas pour être enforçable.
 
-Consolide le lien entre [[existence-vs-intent-violations]] et la composition : une violation de contrat de design system est toujours une violation d'intent, rarement une violation d'existence (le composant existe, il est simplement utilisé hors contrat).
+Consolide le lien entre [existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md) et la composition : une violation de contrat de design system est toujours une violation d'intent, rarement une violation d'existence (le composant existe, il est simplement utilisé hors contrat).

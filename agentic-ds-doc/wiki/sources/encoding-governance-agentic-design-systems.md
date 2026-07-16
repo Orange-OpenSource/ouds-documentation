@@ -4,17 +4,17 @@ tags: [design-system, gouvernance, ia, tokens, auditeur, contraintes, intent]
 created: 2026-06-17
 updated: 2026-06-17
 sources:
-  - "[[existence-vs-intent-violations]]"
-  - "[[concevoir-les-conditions]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[user-vs-maintainer-ia]]"
-  - "[[intent-token]]"
-  - "[[cristian-morales-achiardi]]"
+  - "[existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md)"
+  - "[concevoir-les-conditions](../concepts/concevoir-les-conditions.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)"
 ---
 
 ## Encoding governance on agentic design systems
 
-**Auteur** : [[cristian-morales-achiardi]]
+**Auteur** : [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md)
 **Publication** : Design Systems Collective (Medium), 20 février 2026
 **URL** : https://www.designsystemscollective.com/encoding-governance-on-agentic-design-systems-1a8c70420fec
 **Série** : "Agentic Design System" de Cristian Morales Achiardi, partie 6
@@ -66,4 +66,4 @@ Système Enara : construit sur un weekend (après 3 mois d'approche classique ra
 
 ## Connexions identifiées
 
-[[existence-vs-intent-violations]] est la contribution conceptuelle centrale de cet article. [[concevoir-les-conditions]] capture le changement de niveau d'abstraction du rôle designer. Enrichit directement [[gouvernance-design-system-ia]] (token auditor, executable constraints), [[user-vs-maintainer-ia]] (le designer comme garant), [[intent-token]] (intent violations distinctes des existence violations). La notion de "self-healing not autonomous" nuance [[protocole-arc]] Phase 3.
+[existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md) est la contribution conceptuelle centrale de cet article. [concevoir-les-conditions](../concepts/concevoir-les-conditions.md) capture le changement de niveau d'abstraction du rôle designer. Enrichit directement [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) (token auditor, executable constraints), [user-vs-maintainer-ia](../concepts/user-vs-maintainer-ia.md) (le designer comme garant), [intent-token](../concepts/intent-token.md) (intent violations distinctes des existence violations). La notion de "self-healing not autonomous" nuance [protocole-arc](../concepts/protocole-arc.md) Phase 3.

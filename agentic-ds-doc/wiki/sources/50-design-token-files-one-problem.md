@@ -5,20 +5,20 @@ created: 2026-06-22
 updated: 2026-06-22
 sources: []
 related:
-  - "[[romina-kavcic]]"
-  - "[[intent-token]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[readable-vs-usable-token]]"
-  - "[[delegation-lens]]"
-  - "[[priori-conflictuels-nommage]]"
-  - "[[dtcg-annotation-schema]]"
-  - "[[existence-vs-intent-violations]]"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[readable-vs-usable-token](../concepts/readable-vs-usable-token.md)"
+  - "[delegation-lens](../concepts/delegation-lens.md)"
+  - "[priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md)"
+  - "[dtcg-annotation-schema](../concepts/dtcg-annotation-schema.md)"
+  - "[existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md)"
 ---
 
 ## Source
 
 **Titre** : "50 design token files, one problem: your agents can't read the meaning"
-**Auteur** : [[romina-kavcic]]
+**Auteur** : [romina-kavcic](../entities/romina-kavcic.md)
 **Date** : 2026-06-19
 **URL** : https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem
 
@@ -34,9 +34,9 @@ Un fichier de tokens peut être parfaitement valide pour un build pipeline et re
 
 **Aucun standard commun.** Ni format (8 formats en usage actif : DTCG JSON, Style Dictionary JSON, Theo YAML, JSON brut, TypeScript, CSS custom properties, SCSS, LESS), ni emplacement, ni taille, ni convention de nommage. Un agent qui apprend une convention ne sait rien sur la suivante.
 
-**La taille est une décision de délégation.** Chaque token que tu peux nommer et dont tu peux écrire une règle d'usage est une décision pre-made. Chaque token sans règle est une décision ouverte — que quelqu'un, humain ou agent, prendra mal à un moment. Voir [[delegation-lens]].
+**La taille est une décision de délégation.** Chaque token que tu peux nommer et dont tu peux écrire une règle d'usage est une décision pre-made. Chaque token sans règle est une décision ouverte — que quelqu'un, humain ou agent, prendra mal à un moment. Voir [delegation-lens](../concepts/delegation-lens.md).
 
-**Les agents arrivent avec des priors conflictuels.** Toutes les conventions de nommage documentées dans les 50 systèmes font partie des données d'entraînement. Un agent ne génère pas un nom ignorant — il génère un nom *plausible qui mélange plusieurs grammaires*, ce qui est plus difficile à détecter. Voir [[priori-conflictuels-nommage]].
+**Les agents arrivent avec des priors conflictuels.** Toutes les conventions de nommage documentées dans les 50 systèmes font partie des données d'entraînement. Un agent ne génère pas un nom ignorant — il génère un nom *plausible qui mélange plusieurs grammaires*, ce qui est plus difficile à détecter. Voir [priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md).
 
 **La couche de sens est la plus jeune.** Sur 50 systèmes : ~15 ont une description écrite dans le fichier, ~10 ont un champ de dépréciation lisible par machine, **1 seul a une règle explicite de non-usage** — GitHub Primer.
 
@@ -96,10 +96,10 @@ C'est une **valeur + un rôle + une règle de non-usage**. Le pattern complet.
 
 ## Connexions identifiées
 
-- Confirme et opérationnalise [[intent-token]] avec un benchmark empirique (50 systèmes + expérience contrôlée)
-- Confirme [[lisibilite-machine-design-system]] en distinguant readable (build pipeline) vs usable (agent reasoning)
-- Complète [[existence-vs-intent-violations]] : les fichiers sans description ne permettent que la v1 (existence), jamais la v2 (intent)
-- Introduit [[delegation-lens]] comme cadre pour évaluer la taille d'une échelle de tokens
-- Introduit [[priori-conflictuels-nommage]] comme explication du comportement de génération de noms par les agents
-- Introduit [[dtcg-annotation-schema]] comme template opérationnel concret
-- S'aligne avec [[2026-06-19_audit-ai-readiness-ouds-documentation]] : OUDS est exactement dans la case "readable, pas usable"
+- Confirme et opérationnalise [intent-token](../concepts/intent-token.md) avec un benchmark empirique (50 systèmes + expérience contrôlée)
+- Confirme [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) en distinguant readable (build pipeline) vs usable (agent reasoning)
+- Complète [existence-vs-intent-violations](../concepts/existence-vs-intent-violations.md) : les fichiers sans description ne permettent que la v1 (existence), jamais la v2 (intent)
+- Introduit [delegation-lens](../concepts/delegation-lens.md) comme cadre pour évaluer la taille d'une échelle de tokens
+- Introduit [priori-conflictuels-nommage](../concepts/priori-conflictuels-nommage.md) comme explication du comportement de génération de noms par les agents
+- Introduit [dtcg-annotation-schema](../concepts/dtcg-annotation-schema.md) comme template opérationnel concret
+- S'aligne avec [2026-06-19_audit-ai-readiness-ouds-documentation](../questions/2026-06-19_audit-ai-readiness-ouds-documentation.md) : OUDS est exactement dans la case "readable, pas usable"

@@ -5,12 +5,12 @@ created: 2026-07-06
 updated: 2026-07-06
 sources: []
 related:
-  - "[[meta-astryx-design-system]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[grammaire-composition-composants]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[protocole-pas-produit]]"
-  - "[[cli-vs-mcp]]"
+  - "[meta-astryx-design-system](meta-astryx-design-system.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[grammaire-composition-composants](../concepts/grammaire-composition-composants.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[protocole-pas-produit](../concepts/protocole-pas-produit.md)"
+  - "[cli-vs-mcp](../concepts/cli-vs-mcp.md)"
 ---
 
 ## Meta Just Open-Sourced Its Design System. Here's Why It Matters!
@@ -23,7 +23,7 @@ related:
 
 Astryx est "the first system from a major vendor that's answered the 'and what about agents?' question with actual product, not a footnote." Cette formulation est celle d'un observateur externe, non d'une communication Meta — c'est une validation de marché indépendante de la thèse centrale du vault sur les systèmes agentiques.
 
-## Ce que cette source apporte vs [[meta-astryx-design-system]]
+## Ce que cette source apporte vs [meta-astryx-design-system](meta-astryx-design-system.md)
 
 La fiche existante est basée sur la documentation officielle Meta (juin 2026). Harsha Sridhar apporte trois angles distincts : (1) un regard de marché comparant Astryx à MUI, Atlaskit et Shadcn/ui ; (2) la mise en relief de l'architecture "open internals" comme choix architectural délibéré emprunté à Shadcn/Radix ; (3) la formulation externe selon laquelle c'est le premier grand acteur à répondre "avec du produit, pas une note en bas de page".
 
@@ -60,7 +60,7 @@ npx astryx docs tokens          # reference all design tokens
 npx astryx template --list      # available page templates
 ```
 
-"Every command returns structured, canonical output. Not a marketing site. Not a search box. A tool an agent can call and get a reliable answer from." La distinction est précise : le CLI n'est pas une interface humaine tolérée par un agent — c'est une API structurée destinée autant aux agents qu'aux humains. Convergence avec la thèse du JSON manifest dans [[meta-astryx-design-system]].
+"Every command returns structured, canonical output. Not a marketing site. Not a search box. A tool an agent can call and get a reliable answer from." La distinction est précise : le CLI n'est pas une interface humaine tolérée par un agent — c'est une API structurée destinée autant aux agents qu'aux humains. Convergence avec la thèse du JSON manifest dans [meta-astryx-design-system](meta-astryx-design-system.md).
 
 ## Citations clés (≤ 15 mots)
 
@@ -74,8 +74,8 @@ npx astryx template --list      # available page templates
 
 ## Connexions identifiées
 
-La partition MUI / Atlaskit / Shadcn / Astryx est la première comparaison systématique dans le corpus du vault. Elle justifie la création d'une page [[astryx-vs-mui-atlaskit-shadcn]].
+La partition MUI / Atlaskit / Shadcn / Astryx est la première comparaison systématique dans le corpus du vault. Elle justifie la création d'une page [astryx-vs-mui-atlaskit-shadcn](../comparisons/astryx-vs-mui-atlaskit-shadcn.md).
 
-Le concept d'"open internals" (composants avec building blocks exposés vs composants scellés) enrichit [[grammaire-composition-composants]] : l'exposabilité des sous-composants est une propriété de l'architecture de composition, pas seulement une décision API.
+Le concept d'"open internals" (composants avec building blocks exposés vs composants scellés) enrichit [grammaire-composition-composants](../concepts/grammaire-composition-composants.md) : l'exposabilité des sous-composants est une propriété de l'architecture de composition, pas seulement une décision API.
 
-La formulation "first from a major vendor to answer with product, not a footnote" est la validation de marché externe la plus directe dans le corpus — elle complète [[systeme-de-design-agentique]] qui documente Astryx depuis la documentation officielle Meta.
+La formulation "first from a major vendor to answer with product, not a footnote" est la validation de marché externe la plus directe dans le corpus — elle complète [systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md) qui documente Astryx depuis la documentation officielle Meta.

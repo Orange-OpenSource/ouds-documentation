@@ -5,10 +5,10 @@ created: 2026-07-09
 updated: 2026-07-09
 sources: []
 related:
-  - "[[arc-protocol-rpc]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[orchestration-multi-agents]]"
-  - "[[protocole-pas-produit]]"
+  - "[arc-protocol-rpc](../entities/arc-protocol-rpc.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[orchestration-multi-agents](../concepts/orchestration-multi-agents.md)"
+  - "[protocole-pas-produit](../concepts/protocole-pas-produit.md)"
 ---
 
 ## Agent Remote Communication Protocol (ARC Protocol)
@@ -18,7 +18,7 @@ related:
 **GitHub** : https://github.com/arcprotocol/arcprotocol
 **Ingestion** : 2026-07-09
 
-> ⚠️ Disambiguation : "ARC Protocol" ici désigne le protocole réseau de arc-protocol.org. Ne pas confondre avec le [[protocole-arc]] d'Achiardi (Audit → Report → Compose), qui est un cadre de maturité pour design systems agentiques.
+> ⚠️ Disambiguation : "ARC Protocol" ici désigne le protocole réseau de arc-protocol.org. Ne pas confondre avec le [protocole-arc](../concepts/protocole-arc.md) d'Achiardi (Audit → Report → Compose), qui est un cadre de maturité pour design systems agentiques.
 
 ## Résumé
 
@@ -32,4 +32,4 @@ La métaphore du site : "Route hundreds of specialized agents through a single e
 
 ## Apport au vault
 
-Ajoute un protocole infrastructure au corpus existant — complémentaire à [[mcp-model-context-protocol]] et [[cli-vs-mcp]]. L'approche "single endpoint + intelligent routing" est une réponse architecturale au problème de prolifération d'endpoints multi-agents documenté dans [[orchestration-multi-agents]]. La sécurité post-quantique est un angle nouveau dans le corpus.
+Ajoute un protocole infrastructure au corpus existant — complémentaire à [mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md) et [cli-vs-mcp](../concepts/cli-vs-mcp.md). L'approche "single endpoint + intelligent routing" est une réponse architecturale au problème de prolifération d'endpoints multi-agents documenté dans [orchestration-multi-agents](../concepts/orchestration-multi-agents.md). La sécurité post-quantique est un angle nouveau dans le corpus.

@@ -5,13 +5,13 @@ created: 2026-07-03
 updated: 2026-07-03
 sources: []
 related:
-  - "[[romina-kavcic]]"
-  - "[[systeme-de-design-agentique]]"
-  - "[[composant-comme-contrat]]"
-  - "[[orchestration-multi-agents]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[intent-token]]"
-  - "[[composants-context-aware]]"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[composant-comme-contrat](../concepts/composant-comme-contrat.md)"
+  - "[orchestration-multi-agents](../concepts/orchestration-multi-agents.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[composants-context-aware](../concepts/composants-context-aware.md)"
 ---
 
 ## Agentic Design System — From Chatbot to Orchestration
@@ -47,4 +47,4 @@ Troisième thèse — structure > prompts. Les entreprises qui gagnent seront ce
 
 ## Connexions identifiées
 
-L'article étend [[systeme-de-design-agentique]] avec le modèle d'orchestration multi-agents (4 agents spécialisés + orchestrateur), qui n'était pas encore formalisé dans le vault. Il introduit le concept de [[composant-comme-contrat]] comme renversement du paradigme traditionnel. Il enrichit [[gouvernance-design-system-ia]] avec un inventaire des risques spécifiques à l'autonomie agentique (design debt machine-speed, fausse confiance, manipulation UX, governance gaps). Il précise [[intent-token]] avec des exemples de métadonnées riches `useFor`/`avoidFor`/`accessibility` — plus élaborés que le champ `$description` DTCG déjà documenté. Il converge avec [[concevoir-les-conditions]] via la notion de "governed autonomy" : déléguer juste assez pour que le système accélère sans perdre la supervision.
+L'article étend [systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md) avec le modèle d'orchestration multi-agents (4 agents spécialisés + orchestrateur), qui n'était pas encore formalisé dans le vault. Il introduit le concept de [composant-comme-contrat](../concepts/composant-comme-contrat.md) comme renversement du paradigme traditionnel. Il enrichit [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) avec un inventaire des risques spécifiques à l'autonomie agentique (design debt machine-speed, fausse confiance, manipulation UX, governance gaps). Il précise [intent-token](../concepts/intent-token.md) avec des exemples de métadonnées riches `useFor`/`avoidFor`/`accessibility` — plus élaborés que le champ `$description` DTCG déjà documenté. Il converge avec [concevoir-les-conditions](../concepts/concevoir-les-conditions.md) via la notion de "governed autonomy" : déléguer juste assez pour que le système accélère sans perdre la supervision.

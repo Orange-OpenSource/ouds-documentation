@@ -4,28 +4,28 @@ tags: [design-system, metadata, schema, composants, ia, documentation, json, ind
 created: 2026-06-17
 updated: 2026-06-29
 sources:
-  - "[[figma-ouds-button-specs]]"
-  - "[[design-system-documentation-as-structured-metadata]]"
-  - "[[towards-agentic-design-system]]"
-  - "[[machine-readable-design-systems-designing-for-ai-as-a-user]]"
-  - "[[miro-ai-design-system-mcp-claude-code-skills]]"
-  - "[[design-system-documentation-spec]]"
-  - "[[tdp-agentic-design-system-guide]]"
-  - "[[ai-ready-design-system-olha-bondar]]"
+  - "[figma-ouds-button-specs](../sources/figma-ouds-button-specs.md)"
+  - "[design-system-documentation-as-structured-metadata](../sources/design-system-documentation-as-structured-metadata.md)"
+  - "[towards-agentic-design-system](../sources/towards-agentic-design-system.md)"
+  - "[machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)"
+  - "[miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)"
+  - "[design-system-documentation-spec](../sources/design-system-documentation-spec.md)"
+  - "[tdp-agentic-design-system-guide](../sources/tdp-agentic-design-system-guide.md)"
+  - "[ai-ready-design-system-olha-bondar](../sources/ai-ready-design-system-olha-bondar.md)"
 related:
-  - "[[trois-couches-composants-agents]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[processus-generation-metadata-echelle]]"
-  - "[[workflows-ia-metadata]]"
-  - "[[intent-token]]"
-  - "[[diana-wolosin]]"
-  - "[[grammaire-composition-composants]]"
+  - "[trois-couches-composants-agents](trois-couches-composants-agents.md)"
+  - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
+  - "[processus-generation-metadata-echelle](processus-generation-metadata-echelle.md)"
+  - "[workflows-ia-metadata](workflows-ia-metadata.md)"
+  - "[intent-token](intent-token.md)"
+  - "[diana-wolosin](../entities/diana-wolosin.md)"
+  - "[grammaire-composition-composants](grammaire-composition-composants.md)"
 updated: 2026-06-30
 ---
 
 ## Schéma de métadonnées de composant
 
-Le schéma de métadonnées est la spécification formelle de ce que doit contenir un fichier `.metadata.ts` (ou `.json`, `.md`) pour rendre un composant de design system lisible et utilisable par un agent IA. [[cristian-morales-achiardi]] propose un schéma à 9 sections, avec une hiérarchie claire entre sections critiques (décisions) et sections de complétude (référence) ([[design-system-documentation-as-structured-metadata]]).
+Le schéma de métadonnées est la spécification formelle de ce que doit contenir un fichier `.metadata.ts` (ou `.json`, `.md`) pour rendre un composant de design system lisible et utilisable par un agent IA. [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) propose un schéma à 9 sections, avec une hiérarchie claire entre sections critiques (décisions) et sections de complétude (référence) ([design-system-documentation-as-structured-metadata](../sources/design-system-documentation-as-structured-metadata.md)).
 
 ## Les 9 sections
 
@@ -63,7 +63,7 @@ Le schéma peut s'implémenter en TypeScript (`.metadata.ts`), JSON (`.metadata.
 
 ## Application aux icônes : le schéma Miro (3 champs + do-not-use)
 
-[[eddie-machado]] chez Miro documente une instance du schéma appliquée non pas aux composants complexes mais aux icônes — souvent négligées dans les approches de métadonnées ([[miro-ai-design-system-mcp-claude-code-skills]]). Quand Aura a généré une toolbar avec les mauvaises icônes ("confidently wrong"), la cause n'était pas le modèle mais le nommage : une icône nommée selon sa forme visuelle alors qu'elle sert une fonction différente, sans aucun champ explicitant la distinction.
+[eddie-machado](../entities/eddie-machado.md) chez Miro documente une instance du schéma appliquée non pas aux composants complexes mais aux icônes — souvent négligées dans les approches de métadonnées ([miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)). Quand Aura a généré une toolbar avec les mauvaises icônes ("confidently wrong"), la cause n'était pas le modèle mais le nommage : une icône nommée selon sa forme visuelle alors qu'elle sert une fonction différente, sans aucun champ explicitant la distinction.
 
 La solution : trois champs obligatoires par icône.
 
@@ -77,21 +77,21 @@ Et surtout, la règle de non-usage explicite dans la description : "Do not use t
 
 Ce pattern — trois champs + do-not-use — s'applique identiquement aux tokens de background dans le cas Miro : "Background for toolbars, panels and dropdowns. Do not use for cards or flat content. Use background-surface instead." Après l'ajout de ces champs, les mêmes prompts produisent des sorties correctes.
 
-La leçon de Miro étend le [[schema-metadata-composant]] au-delà des composants : les icônes et tokens nécessitent le même niveau d'intent encodé. Ce n'est pas une différence de principe — c'est le même principe appliqué à des assets sous-documentés par tradition.
+La leçon de Miro étend le [schema-metadata-composant](schema-metadata-composant.md) au-delà des composants : les icônes et tokens nécessitent le même niveau d'intent encodé. Ce n'est pas une différence de principe — c'est le même principe appliqué à des assets sous-documentés par tradition.
 
 ## Le principe de précision forcée
 
-Un bénéfice collatéral de la structuration : la forme exige la précision que la prose permet d'éviter. "Évitez les boutons primaires multiples" est acceptable en prose. En metadata, il faut écrire : scénario (`"Multiple primary buttons in same section"`), raison (`"Creates visual hierarchy confusion"`), alternative (`"Use one primary and secondary/ghost for other actions"`). Cette précision profite autant aux humains (développeurs juniors, onboarding) qu'aux agents IA ([[design-system-documentation-as-structured-metadata]]).
+Un bénéfice collatéral de la structuration : la forme exige la précision que la prose permet d'éviter. "Évitez les boutons primaires multiples" est acceptable en prose. En metadata, il faut écrire : scénario (`"Multiple primary buttons in same section"`), raison (`"Creates visual hierarchy confusion"`), alternative (`"Use one primary and secondary/ghost for other actions"`). Cette précision profite autant aux humains (développeurs juniors, onboarding) qu'aux agents IA ([design-system-documentation-as-structured-metadata](../sources/design-system-documentation-as-structured-metadata.md)).
 
 ## L'implémentation Indeed (Wolosin)
 
-[[diana-wolosin]] documente une variante de ce schéma à grande échelle ([[machine-readable-design-systems-designing-for-ai-as-a-user]]). Chez Indeed, les métadonnées sont générées depuis la documentation MDX existante via des parsers JavaScript — un parser par domaine de connaissance (accessibilité, développement, localisation, design) — puis fusionnées en un JSON unique par composant. Ce JSON est ensuite ingéré, chunké et indexé dans Vectra (base vectorielle open source) pour être servi par le MCP.
+[diana-wolosin](../entities/diana-wolosin.md) documente une variante de ce schéma à grande échelle ([machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)). Chez Indeed, les métadonnées sont générées depuis la documentation MDX existante via des parsers JavaScript — un parser par domaine de connaissance (accessibilité, développement, localisation, design) — puis fusionnées en un JSON unique par composant. Ce JSON est ensuite ingéré, chunké et indexé dans Vectra (base vectorielle open source) pour être servi par le MCP.
 
 La différence architecturale avec le schéma de Morales Achiardi : Indeed sépare la génération des métadonnées (parsing MDX → JSON) du service au LLM (RAG sur Vectra). Le résultat est fonctionnellement similaire — un JSON structuré par composant, queryable par l'agent — mais l'organisation des domaines (accessibilité, développement, localisation, design) comme axes de parsing est une taxonomie différente des 9 sections de Morales Achiardi. Les deux approches s'alignent sur le principe : JSON explicite et structuré plutôt que prose ambiguë.
 
 ## L'implémentation The Design Project : 6 fichiers par composant (Alter, 2026)
 
-[[tdp-agentic-design-system-guide]] documente une troisième implémentation du schéma, orientée terrain et accessible. Dianne Alter propose une structure de 6 fichiers co-localisés par composant : `.tsx` (implémentation), `.meta.json` (metadata), `.tokens.css` (tokens propres au composant), `.stories.tsx` (Storybook), `.test.tsx` (tests d'usage correct), `index.ts` (export). La distinction clé : Storybook reste la vue *humaine*, le `.meta.json` est la vue *agentique* — même composant, deux lectures.
+[tdp-agentic-design-system-guide](../sources/tdp-agentic-design-system-guide.md) documente une troisième implémentation du schéma, orientée terrain et accessible. Dianne Alter propose une structure de 6 fichiers co-localisés par composant : `.tsx` (implémentation), `.meta.json` (metadata), `.tokens.css` (tokens propres au composant), `.stories.tsx` (Storybook), `.test.tsx` (tests d'usage correct), `index.ts` (export). La distinction clé : Storybook reste la vue *humaine*, le `.meta.json` est la vue *agentique* — même composant, deux lectures.
 
 La structure du `.meta.json` converge avec les 9 sections de Morales Achiardi sur les champs critiques : `purpose`, `variants`, `commonPatterns`, `antiPatterns`, `tokens`. La différence notable est l'accent mis sur les **anti-patterns spécifiques au produit** : les génériques ("pas deux boutons primaires côte à côte") sont utiles mais insuffisants. Ce sont les anti-patterns que seule l'équipe connaît ("jamais un bouton destructif dans l'onboarding", "jamais minimal dans un card header", "loading state après 200ms minimum") qui distinguent une sortie *correcte* d'une sortie *proche*. Ces règles ne peuvent pas être générées — elles doivent être écrites manuellement.
 
@@ -99,7 +99,7 @@ Résultat mesuré chez un client B2B SaaS après structuration de ~20 composants
 
 ## Le contrat complet Bondar : useWhen / doNotUseWhen / accessibility
 
-[[ai-ready-design-system-olha-bondar]] propose une formulation alternative et complémentaire du contrat de composant, centrée sur la logique de décision que ni les 9 sections de Morales Achiardi ni le `.meta.json` TDP ne formalisent aussi explicitement. La structure `useWhen` / `doNotUseWhen` remplace les `antiPatterns[]` par une articulation symétrique :
+[ai-ready-design-system-olha-bondar](../sources/ai-ready-design-system-olha-bondar.md) propose une formulation alternative et complémentaire du contrat de composant, centrée sur la logique de décision que ni les 9 sections de Morales Achiardi ni le `.meta.json` TDP ne formalisent aussi explicitement. La structure `useWhen` / `doNotUseWhen` remplace les `antiPatterns[]` par une articulation symétrique :
 
 ```json
 {
@@ -118,11 +118,11 @@ Résultat mesuré chez un client B2B SaaS après structuration de ~20 composants
 }
 ```
 
-La valeur ajoutée : `doNotUseWhen` est symétrique à `useWhen`, forçant la documentation des deux faces du critère de sélection. Le champ `accessibility` encode les contrats comportementaux (where focus goes, is it returned) au niveau du composant, rendant le contrat auto-suffisant pour la validation. Voir [[grammaire-composition-composants]] pour la couche complémentaire gérant les relations *entre* composants.
+La valeur ajoutée : `doNotUseWhen` est symétrique à `useWhen`, forçant la documentation des deux faces du critère de sélection. Le champ `accessibility` encode les contrats comportementaux (where focus goes, is it returned) au niveau du composant, rendant le contrat auto-suffisant pour la validation. Voir [grammaire-composition-composants](grammaire-composition-composants.md) pour la couche complémentaire gérant les relations *entre* composants.
 
 ## Cas réel : la description Figma du Button OUDS comme implémentation partielle
 
-Le Button OUDS ([[figma-ouds-button-specs]]) offre un exemple concret de ce que le schéma produit quand il est appliqué partiellement, directement dans le champ description d'un composant Figma. La description encode les sections `usage` (quatre cas d'usage explicites) et une forme condensée de `aiHints` (les keywords + la règle anti-pattern avec alternative). Elle couvre deux des neuf sections critiques sans aucune infrastructure supplémentaire — juste le champ texte natif de Figma.
+Le Button OUDS ([figma-ouds-button-specs](../sources/figma-ouds-button-specs.md)) offre un exemple concret de ce que le schéma produit quand il est appliqué partiellement, directement dans le champ description d'un composant Figma. La description encode les sections `usage` (quatre cas d'usage explicites) et une forme condensée de `aiHints` (les keywords + la règle anti-pattern avec alternative). Elle couvre deux des neuf sections critiques sans aucune infrastructure supplémentaire — juste le champ texte natif de Figma.
 
 Ce qui est absent : `variants` (les variantes ne sont pas nommées dans la description — elles vivent dans le frame de documentation visuel), `composition` (l'anatomie est dans le frame, pas dans la description), `props` (aucune définition API), `accessibility` (un seul rappel sur le contraste, sans valeurs). Les sections les plus coûteuses à renseigner sont précisément celles que la description Figma ne permet pas d'encoder de façon structurée. Cela confirme la thèse de Morales Achiardi : un seul champ texte libre est insuffisant — il faut un format structuré externe (JSON, TypeScript) pour couvrir les 9 sections.
 

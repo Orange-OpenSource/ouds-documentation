@@ -5,16 +5,16 @@ created: 2026-06-30
 updated: 2026-06-30
 sources: []
 related:
-  - "[[systeme-de-design-agentique]]"
-  - "[[modele-maturite-ia-design-system]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[schema-metadata-composant]]"
-  - "[[readable-vs-usable-token]]"
-  - "[[grammaire-composition-composants]]"
-  - "[[contraintes-fixed-preferred-exploratory]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[mcp-model-context-protocol]]"
-  - "[[architecture-contexte-agentique]]"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
+  - "[modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
+  - "[readable-vs-usable-token](../concepts/readable-vs-usable-token.md)"
+  - "[grammaire-composition-composants](../concepts/grammaire-composition-composants.md)"
+  - "[contraintes-fixed-preferred-exploratory](../concepts/contraintes-fixed-preferred-exploratory.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
+  - "[architecture-contexte-agentique](../concepts/architecture-contexte-agentique.md)"
 ---
 
 ## What Is an AI-Ready Design System? — Olha Bondar
@@ -45,17 +45,17 @@ L'article structure le problème en huit couches ordonnées par dépendance : (1
 
 ## Concepts créés ou enrichis
 
-- **Créé** : [[grammaire-composition-composants]] — layer 4 : règles parent/enfant, ownership de l'espacement, combinaisons interdites
-- **Créé** : [[contraintes-fixed-preferred-exploratory]] — tripartition fixed/preferred/exploratory pour calibrer la liberté des agents
-- **Enrichi** : [[schema-metadata-composant]] — avec le format JSON de contrat de composant (useWhen/doNotUseWhen/accessibility)
-- **Enrichi** : [[modele-maturite-ia-design-system]] — avec les niveaux 0–4 de Bondar (distinct du modèle Kavcic centré sur les features IA pour humains)
-- **Enrichi** : [[lisibilite-machine-design-system]] — avec la layer 6 (contenu structuré) et la layer 7 (validation exécutable)
-- **Enrichi** : [[architecture-contexte-agentique]] — avec "context architecture vs context volume"
+- **Créé** : [grammaire-composition-composants](../concepts/grammaire-composition-composants.md) — layer 4 : règles parent/enfant, ownership de l'espacement, combinaisons interdites
+- **Créé** : [contraintes-fixed-preferred-exploratory](../concepts/contraintes-fixed-preferred-exploratory.md) — tripartition fixed/preferred/exploratory pour calibrer la liberté des agents
+- **Enrichi** : [schema-metadata-composant](../concepts/schema-metadata-composant.md) — avec le format JSON de contrat de composant (useWhen/doNotUseWhen/accessibility)
+- **Enrichi** : [modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md) — avec les niveaux 0–4 de Bondar (distinct du modèle Kavcic centré sur les features IA pour humains)
+- **Enrichi** : [lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md) — avec la layer 6 (contenu structuré) et la layer 7 (validation exécutable)
+- **Enrichi** : [architecture-contexte-agentique](../concepts/architecture-contexte-agentique.md) — avec "context architecture vs context volume"
 
 ## Connexions identifiées
 
-Forte résonance avec [[trois-couches-composants-agents]] (même logique de stratification), [[protocole-arc]] (même vision de la maturité par seuils), [[readable-vs-usable-token]] (même argument sur la sémantique des tokens). La section "mistakes" enrichit [[gouvernance-design-system-ia]] (piège du gros fichier d'instructions) et rejoint [[architecture-skills-rules-instructions]].
+Forte résonance avec [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md) (même logique de stratification), [protocole-arc](../concepts/protocole-arc.md) (même vision de la maturité par seuils), [readable-vs-usable-token](../concepts/readable-vs-usable-token.md) (même argument sur la sémantique des tokens). La section "mistakes" enrichit [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) (piège du gros fichier d'instructions) et rejoint [architecture-skills-rules-instructions](../concepts/architecture-skills-rules-instructions.md).
 
 ## Limites et biais
 
-Article de praticien, pas de recherche empirique. Pas de données sur des systèmes réels ayant atteint les niveaux 3-4. Le modèle de maturité en 5 niveaux (0-4) est autonome et non référencé à d'autres taxonomies existantes dans le domaine — à croiser avec [[modele-maturite-ia-design-system]] (Kavcic) pour voir si les deux modèles mesurent bien des axes orthogonaux.
+Article de praticien, pas de recherche empirique. Pas de données sur des systèmes réels ayant atteint les niveaux 3-4. Le modèle de maturité en 5 niveaux (0-4) est autonome et non référencé à d'autres taxonomies existantes dans le domaine — à croiser avec [modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md) (Kavcic) pour voir si les deux modèles mesurent bien des axes orthogonaux.

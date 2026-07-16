@@ -4,18 +4,18 @@ tags: [figma, naming, tokens, component-properties, auto-layout, lisibilite-mach
 created: 2026-06-18
 updated: 2026-06-18
 sources:
-  - "[[designing-figma-design-system-ai-understand]]"
+  - "[designing-figma-design-system-ai-understand](designing-figma-design-system-ai-understand.md)"
 related:
-  - "[[alpesh-karanpuria]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[intent-token]]"
-  - "[[trois-couches-composants-agents]]"
-  - "[[schema-metadata-composant]]"
+  - "[alpesh-karanpuria](../entities/alpesh-karanpuria.md)"
+  - "[lisibilite-machine-design-system](../concepts/lisibilite-machine-design-system.md)"
+  - "[intent-token](../concepts/intent-token.md)"
+  - "[trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md)"
+  - "[schema-metadata-composant](../concepts/schema-metadata-composant.md)"
 ---
 
 ## Designing a Figma Design System That AI Can Understand (Karanpuria, 2026)
 
-[[alpesh-karanpuria]], publié sur Design Systems Collective (2026-03-10). Guide pratique Figma-centrique en 10 recommandations pour rendre un DS lisible par les agents IA. Audience : designers en début de parcours. Pas de données empiriques, pas de benchmark. Style : pédagogique, visuel (nombreux exemples de code).
+[alpesh-karanpuria](../entities/alpesh-karanpuria.md), publié sur Design Systems Collective (2026-03-10). Guide pratique Figma-centrique en 10 recommandations pour rendre un DS lisible par les agents IA. Audience : designers en début de parcours. Pas de données empiriques, pas de benchmark. Style : pédagogique, visuel (nombreux exemples de code).
 
 **Thèse** : "Most design systems today are built only for humans. They are visually organized but structurally unclear for machines." Sans structure explicite, l'IA voit des formes et des calques — pas un système de relations.
 
@@ -32,13 +32,13 @@ Karanpuria propose une taxonomie 4 couches pour le DS AI-ready :
 **Logic Layer** — Component Properties et règles d'interaction.  
 **Knowledge Layer** — documentation et contraintes d'usage.
 
-Comparaison avec les modèles du vault : les 3 couches de [[trois-couches-composants-agents]] (Index / Métadonnées / Raisonnement) opèrent à un niveau d'abstraction plus élevé et sont centrées sur l'architecture d'un agent. Le modèle Karanpuria est Figma-natif — il décrit la structure du fichier Figma lui-même. Les deux sont complémentaires : Karanpuria décrit le contenu à produire dans Figma, Kavcic/Morales Achiardi décrivent comment l'architecture agentique le consomme.
+Comparaison avec les modèles du vault : les 3 couches de [trois-couches-composants-agents](../concepts/trois-couches-composants-agents.md) (Index / Métadonnées / Raisonnement) opèrent à un niveau d'abstraction plus élevé et sont centrées sur l'architecture d'un agent. Le modèle Karanpuria est Figma-natif — il décrit la structure du fichier Figma lui-même. Les deux sont complémentaires : Karanpuria décrit le contenu à produire dans Figma, Kavcic/Morales Achiardi décrivent comment l'architecture agentique le consomme.
 
 ## Citations clés
 
-"Without structure, AI only sees shapes and layers. With structure, it sees a system of relationships." ([[alpesh-karanpuria]])
+"Without structure, AI only sees shapes and layers. With structure, it sees a system of relationships." ([alpesh-karanpuria](../entities/alpesh-karanpuria.md))
 
-"This transforms the design system into a knowledge base, not just a component library." ([[alpesh-karanpuria]])
+"This transforms the design system into a knowledge base, not just a component library." ([alpesh-karanpuria](../entities/alpesh-karanpuria.md))
 
 ## Évaluation
 

@@ -4,71 +4,71 @@ tags: [mcp, ia, protocol, agents, outils, integration, rag, on-demand, adoption,
 created: 2026-06-17
 updated: 2026-07-06
 sources:
-  - "[[design-system-most-important-asset-ai-era]]"
-  - "[[machine-readable-design-systems-designing-for-ai-as-a-user]]"
-  - "[[how-to-automate-design-system-documentation]]"
-  - "[[design-systems-mcp-complete-guide]]"
-  - "[[state-of-ai-design-systems-2026-zeroheight]]"
+  - "[design-system-most-important-asset-ai-era](../sources/design-system-most-important-asset-ai-era.md)"
+  - "[machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)"
+  - "[how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)"
+  - "[design-systems-mcp-complete-guide](../sources/design-systems-mcp-complete-guide.md)"
+  - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
 related:
-  - "[[systeme-de-design-agentique]]"
-  - "[[cli-vs-mcp]]"
-  - "[[knowledge-graph-design-system]]"
-  - "[[mcp-on-demand-vs-rules-always-on]]"
-  - "[[diana-wolosin]]"
-  - "[[jesse-gardner]]"
-  - "[[laura-fehre]]"
-  - "[[code-source-de-verite-mcp]]"
-  - "[[pipeline-figma-docs-automatise]]"
-  - "[[romina-kavcic]]"
+  - "[systeme-de-design-agentique](systeme-de-design-agentique.md)"
+  - "[cli-vs-mcp](cli-vs-mcp.md)"
+  - "[knowledge-graph-design-system](knowledge-graph-design-system.md)"
+  - "[mcp-on-demand-vs-rules-always-on](mcp-on-demand-vs-rules-always-on.md)"
+  - "[diana-wolosin](../entities/diana-wolosin.md)"
+  - "[jesse-gardner](../entities/jesse-gardner.md)"
+  - "[laura-fehre](../entities/laura-fehre.md)"
+  - "[code-source-de-verite-mcp](code-source-de-verite-mcp.md)"
+  - "[pipeline-figma-docs-automatise](pipeline-figma-docs-automatise.md)"
+  - "[romina-kavcic](../entities/romina-kavcic.md)"
 ---
 
 ## Model Context Protocol (MCP)
 
-Le Model Context Protocol est un standard qui permet aux agents IA de se connecter à des outils externes de manière structurée. [[romina-kavcic]] le décrit comme "USB for AI" : au lieu de construire une intégration personnalisée pour chaque outil, on expose les outils comme des serveurs MCP, et n'importe quel agent compatible peut les utiliser ([[design-system-most-important-asset-ai-era]]).
+Le Model Context Protocol est un standard qui permet aux agents IA de se connecter à des outils externes de manière structurée. [romina-kavcic](../entities/romina-kavcic.md) le décrit comme "USB for AI" : au lieu de construire une intégration personnalisée pour chaque outil, on expose les outils comme des serveurs MCP, et n'importe quel agent compatible peut les utiliser ([design-system-most-important-asset-ai-era](../sources/design-system-most-important-asset-ai-era.md)).
 
 L'analogie USB est précise : MCP standardise le protocole de connexion, pas le contenu de l'outil. Figma, GitHub, Storybook, Chromatic, Notion, Jira, Linear — chacun expose une tranche différente de contexte que l'agent peut interroger dans un même flux de travail.
 
 ## Adoption et momentum
 
-L'adoption est rapide. L'écosystème MCP est passé de 100 000 à 8 millions de téléchargements en quelques mois ([[design-system-most-important-asset-ai-era]]). Gartner prévoit que 40 % des applications enterprise embarqueront des agents IA d'ici fin 2026.
+L'adoption est rapide. L'écosystème MCP est passé de 100 000 à 8 millions de téléchargements en quelques mois ([design-system-most-important-asset-ai-era](../sources/design-system-most-important-asset-ai-era.md)). Gartner prévoit que 40 % des applications enterprise embarqueront des agents IA d'ici fin 2026.
 
 ## Ce que MCP apporte au design system
 
-Pour un système de design agentique, MCP permet d'orchestrer plusieurs sources de contexte en un seul flux. Exemple concret : un token change dans Figma → l'agent interroge GitHub pour identifier les composants qui l'utilisent → interroge PostHog pour identifier les pages affectées et leur trafic → décide si un PR doit être ouvert. Ce flux traverse quatre sources de données différentes (Figma, GitHub, PostHog, knowledge graph). CLI ne peut pas faire ça. MCP peut. Voir [[cli-vs-mcp]] pour la comparaison complète.
+Pour un système de design agentique, MCP permet d'orchestrer plusieurs sources de contexte en un seul flux. Exemple concret : un token change dans Figma → l'agent interroge GitHub pour identifier les composants qui l'utilisent → interroge PostHog pour identifier les pages affectées et leur trafic → décide si un PR doit être ouvert. Ce flux traverse quatre sources de données différentes (Figma, GitHub, PostHog, knowledge graph). CLI ne peut pas faire ça. MCP peut. Voir [cli-vs-mcp](cli-vs-mcp.md) pour la comparaison complète.
 
 ## MCP dans le workflow de Romina Kavcic
 
-Les MCPs les plus utilisés dans son setup : Figma, GitHub, Storybook, Chromatic, Granola ([[granola]]), Notion, Jira, Stylelint, Linear, Mintlify. Chacun représente une couche de contexte différente dans l'architecture agentique.
+Les MCPs les plus utilisés dans son setup : Figma, GitHub, Storybook, Chromatic, Granola ([granola](../entities/granola.md)), Notion, Jira, Stylelint, Linear, Mintlify. Chacun représente une couche de contexte différente dans l'architecture agentique.
 
 ## MCP Figma pour la documentation automatisée
 
-[[romina-kavcic]] documente un usage concret du MCP Figma pour l'automatisation de la documentation ([[how-to-automate-design-system-documentation]]). Via un Personal Access Token Figma (scope `File content`, lecture seule), Claude Code peut accéder en temps réel aux specs courantes d'un composant (espacement, couleurs, typographie), aux noms exacts des tokens depuis Figma Variables, aux variants et états interactifs, et exporter des screenshots haute résolution (PNG 2x). Ce qui nécessitait auparavant une exportation manuelle, une copie-colle de specs et une mise à jour de documentation (30 minutes) prend 30 secondes via MCP.
+[romina-kavcic](../entities/romina-kavcic.md) documente un usage concret du MCP Figma pour l'automatisation de la documentation ([how-to-automate-design-system-documentation](../sources/how-to-automate-design-system-documentation.md)). Via un Personal Access Token Figma (scope `File content`, lecture seule), Claude Code peut accéder en temps réel aux specs courantes d'un composant (espacement, couleurs, typographie), aux noms exacts des tokens depuis Figma Variables, aux variants et états interactifs, et exporter des screenshots haute résolution (PNG 2x). Ce qui nécessitait auparavant une exportation manuelle, une copie-colle de specs et une mise à jour de documentation (30 minutes) prend 30 secondes via MCP.
 
 La formulation de Kavcic : "MCP lets Claude read [Figma files] directly. Think of it as giving Claude read-only access to your design files." C'est la même logique USB de connexion standardisée, appliquée ici non pas à l'orchestration agentique multi-outils mais à la synchronisation de documentation.
 
 ## Le flux RAG détaillé (Wolosin)
 
-[[diana-wolosin]] décompose le flux MCP complet en 7 étapes ([[machine-readable-design-systems-designing-for-ai-as-a-user]]) : (1) l'humain envoie un prompt depuis la context window ; (2) le LLM extrait les mots-clés et formule une requête ; (3) le MCP reçoit la requête ; (4) RAG agit comme un bibliothécaire, cherchant la similarité sémantique entre la requête et les métadonnées ; (5) la base vectorielle retourne les résultats ; (6) le serveur MCP renvoie les résultats au LLM ; (7) le LLM raisonne sur les résultats et génère.
+[diana-wolosin](../entities/diana-wolosin.md) décompose le flux MCP complet en 7 étapes ([machine-readable-design-systems-designing-for-ai-as-a-user](../sources/machine-readable-design-systems-designing-for-ai-as-a-user.md)) : (1) l'humain envoie un prompt depuis la context window ; (2) le LLM extrait les mots-clés et formule une requête ; (3) le MCP reçoit la requête ; (4) RAG agit comme un bibliothécaire, cherchant la similarité sémantique entre la requête et les métadonnées ; (5) la base vectorielle retourne les résultats ; (6) le serveur MCP renvoie les résultats au LLM ; (7) le LLM raisonne sur les résultats et génère.
 
-Sa définition condensée : "A model context protocol is how you give an AI on-demand access to your design system knowledge." Le mot "on-demand" est central — c'est lui qui explique pourquoi le MCP seul est insuffisant pour les fondations. Voir [[mcp-on-demand-vs-rules-always-on]] pour les implications architecturales complètes.
+Sa définition condensée : "A model context protocol is how you give an AI on-demand access to your design system knowledge." Le mot "on-demand" est central — c'est lui qui explique pourquoi le MCP seul est insuffisant pour les fondations. Voir [mcp-on-demand-vs-rules-always-on](mcp-on-demand-vs-rules-always-on.md) pour les implications architecturales complètes.
 
 ## Trois modèles d'implémentation
 
-La conférence IDS 2026 documente trois architectures concrètes ([[design-systems-mcp-complete-guide]]) :
+La conférence IDS 2026 documente trois architectures concrètes ([design-systems-mcp-complete-guide](../sources/design-systems-mcp-complete-guide.md)) :
 
-**Indeed (Wolosin)** — Documentation MDX comme source primaire. Pipeline : MDX dans GitLab → parsers JavaScript par domaine (a11y, dev, localization, design) → JSON → Vectra (base vectorielle open source) → MCP. Infrastructure construite par Tony Rucker (partenaire développeur). Auto-déclenché à chaque update de documentation. 77 composants, 4 300 prototypes en 4 mois. Précision : ces prototypes n'utilisaient **pas** le MCP Figma et n'utilisaient **pas** Tailwind — composants React du DS Indeed directement. Implémentation documentation-led pure ([[diana-wolosin]]).
+**Indeed (Wolosin)** — Documentation MDX comme source primaire. Pipeline : MDX dans GitLab → parsers JavaScript par domaine (a11y, dev, localization, design) → JSON → Vectra (base vectorielle open source) → MCP. Infrastructure construite par Tony Rucker (partenaire développeur). Auto-déclenché à chaque update de documentation. 77 composants, 4 300 prototypes en 4 mois. Précision : ces prototypes n'utilisaient **pas** le MCP Figma et n'utilisaient **pas** Tailwind — composants React du DS Indeed directement. Implémentation documentation-led pure ([diana-wolosin](../entities/diana-wolosin.md)).
 
-**New York State ([[jesse-gardner]])** — Code comme source primaire. Pipeline : web components Lit/TypeScript + JSDoc riche → custom element manifest → MCP server. Parité Figma via Code Connect. Cas documenté : PDF de 5 pages → formulaire multi-étapes fonctionnel en 13 minutes. Chiffre critique : 50–80K tokens gaspillés quand l'IA pointe sur la codebase brute sans MCP. Voir [[code-source-de-verite-mcp]].
+**New York State ([jesse-gardner](../entities/jesse-gardner.md))** — Code comme source primaire. Pipeline : web components Lit/TypeScript + JSDoc riche → custom element manifest → MCP server. Parité Figma via Code Connect. Cas documenté : PDF de 5 pages → formulaire multi-étapes fonctionnel en 13 minutes. Chiffre critique : 50–80K tokens gaspillés quand l'IA pointe sur la codebase brute sans MCP. Voir [code-source-de-verite-mcp](code-source-de-verite-mcp.md).
 
 **The Design System Guide (Kavcic)** — Plugin Figma comme interface. Tidy : 66 MCP tools couvrant audit du naming, health score sur 6 catégories, validation de variables, composition de patterns. Couplé à Observatory, un dashboard visualisant le knowledge graph à travers Figma, GitHub, Storybook, Linear, Chromatic, Playwright et PostHog.
 
 Ces trois modèles ne sont pas concurrents — ils reflètent des topologies d'équipe différentes : documentation-led (Indeed), engineering-led (NY State), design-led (Kavcic/Tidy).
 
-**Storybook ([[brad-frost]])** — L'équipe Storybook a lancé un [Storybook MCP](https://storybook.js.org/addons/@storybook/addon-mcp) qui permet de générer de l'UI en s'appuyant sur les bibliothèques de composants du design system ([[agentic-design-systems-2026-bradfrost]]). Un quatrième point d'entrée dans l'écosystème, centré sur les stories comme source de vérité de la bibliothèque de composants.
+**Storybook ([brad-frost](../entities/brad-frost.md))** — L'équipe Storybook a lancé un [Storybook MCP](https://storybook.js.org/addons/@storybook/addon-mcp) qui permet de générer de l'UI en s'appuyant sur les bibliothèques de composants du design system ([agentic-design-systems-2026-bradfrost](../sources/agentic-design-systems-2026-bradfrost.md)). Un quatrième point d'entrée dans l'écosystème, centré sur les stories comme source de vérité de la bibliothèque de composants.
 
 ## Adoption MCP : première mesure sectorielle (zeroheight, mai 2026)
 
-[[state-of-ai-design-systems-2026-zeroheight]] publie la première donnée sectorielle sur l'adoption MCP dans les équipes DS (N=123) : **47 % font déjà tourner un serveur MCP**. 31 % planifient l'adoption. Seulement 3 % ne sont pas convaincus de la valeur.
+[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md) publie la première donnée sectorielle sur l'adoption MCP dans les équipes DS (N=123) : **47 % font déjà tourner un serveur MCP**. 31 % planifient l'adoption. Seulement 3 % ne sont pas convaincus de la valeur.
 
 Ce chiffre change le statut du MCP dans le discours : ce n'est plus une approche d'avant-garde documentée par quelques équipes publiées, c'est une infrastructure adoptée par près de la moitié des équipes interrogées. "78 % are using or planning to use MCP" — le débat "si" est réglé, le débat "comment" est ouvert.
 

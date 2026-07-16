@@ -4,24 +4,24 @@ tags: [gouvernance, design-system, ia, organisation, accountability, contributio
 created: 2026-07-06
 updated: 2026-07-06
 sources:
-  - "[[design-system-ai-ready-organisation-not]]"
+  - "[design-system-ai-ready-organisation-not](design-system-ai-ready-organisation-not.md)"
 related:
-  - "[[murphy-trueman]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[accountability-gap-ia]]"
-  - "[[shadow-ia-design-system]]"
-  - "[[modele-maturite-ia-design-system]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[systeme-de-design-agentique]]"
+  - "[murphy-trueman](../entities/murphy-trueman.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[accountability-gap-ia](../concepts/accountability-gap-ia.md)"
+  - "[shadow-ia-design-system](../concepts/shadow-ia-design-system.md)"
+  - "[modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[systeme-de-design-agentique](../concepts/systeme-de-design-agentique.md)"
 ---
 
 ## Your design system might be AI-ready. Your organisation probably isn't.
 
-**Auteur** : [[murphy-trueman]] | **Publié** : 2026-03-05 | **Source** : https://blog.murphytrueman.com/your-design-system-might-be-ai-ready/
+**Auteur** : [murphy-trueman](../entities/murphy-trueman.md) | **Publié** : 2026-03-05 | **Source** : https://blog.murphytrueman.com/your-design-system-might-be-ai-ready/
 
 ## Thèse principale
 
-[[murphy-trueman]] sépare deux problèmes que la communauté design system traite comme un seul : la préparation technique (rendre le système lisible par les machines) et la préparation organisationnelle (être prêt à ce que ça fonctionne). L'argument central : "Technical readiness answers one question: can AI successfully consume your design system and produce something that follows the rules? It doesn't touch the harder ones."
+[murphy-trueman](../entities/murphy-trueman.md) sépare deux problèmes que la communauté design system traite comme un seul : la préparation technique (rendre le système lisible par les machines) et la préparation organisationnelle (être prêt à ce que ça fonctionne). L'argument central : "Technical readiness answers one question: can AI successfully consume your design system and produce something that follows the rules? It doesn't touch the harder ones."
 
 La donnée de départ : **55 % des product builders prennent désormais en charge des tâches hors de leur périmètre habituel** (Figma research) — PMs qui prototypent dans des outils design, marketers qui génèrent des interfaces, ingénieurs qui influencent les décisions de design bien plus tôt dans le processus. Paige Costello (VP Product Figma) formule le diagnostic : le workflow linéaire a "collapsed". Trueman le reprend comme point de départ d'une crise de gouvernance que la plupart des organisations n'ont pas commencé à adresser.
 
@@ -29,7 +29,7 @@ La donnée de départ : **55 % des product builders prennent désormais en charg
 
 **La qualité ne scale pas automatiquement.** Les design systems existent précisément parce qu'une organisation a appris ce qui arrive quand chacun fait le sien : entropie, dérive, accumulation d'exceptions "juste cette fois" qui finissent par éroder le système. L'IA accélère exactement cette dynamique, y compris la vitesse à laquelle le système peut être mal utilisé par des personnes bien intentionnées. Un PM qui génère une interface techniquement conforme (chaque token correct, chaque composant utilisé comme documenté, zéro violation automatique) peut produire une composition médiocre — hiérarchie confuse, flux sans gestion des cas limites — que les designers auraient rattrapé instinctivement. Qui rejette ça ? Sur quelle autorité ?
 
-**Le gap de responsabilité (accountability gap).** Voir [[accountability-gap-ia]]. Si l'IA génère une interface avec votre design system et qu'elle est déployée avec une erreur d'accessibilité, qui est responsable ? L'équipe DS qui a construit les composants ? La personne qui a prompté l'IA ? L'ingénieur qui a implémenté ? Le QA qui n'a pas détecté ? Les composants peuvent être accessibles en isolation, mais l'accessibilité porte aussi sur le contexte, le flux, la charge cognitive, et les relations entre éléments — une IA peut assembler des parties accessibles en un tout inaccessible. "Your existing accountability structures were designed for human authors with legible intent — not for outputs where nobody made a deliberate choice."
+**Le gap de responsabilité (accountability gap).** Voir [accountability-gap-ia](../concepts/accountability-gap-ia.md). Si l'IA génère une interface avec votre design system et qu'elle est déployée avec une erreur d'accessibilité, qui est responsable ? L'équipe DS qui a construit les composants ? La personne qui a prompté l'IA ? L'ingénieur qui a implémenté ? Le QA qui n'a pas détecté ? Les composants peuvent être accessibles en isolation, mais l'accessibilité porte aussi sur le contexte, le flux, la charge cognitive, et les relations entre éléments — une IA peut assembler des parties accessibles en un tout inaccessible. "Your existing accountability structures were designed for human authors with legible intent — not for outputs where nobody made a deliberate choice."
 
 **Les modèles de contribution conçus pour des proposants humains.** Les processus de contribution supposent un humain derrière la requête — un contexte, un problème à résoudre, une conversation sur si ça appartient au système ou reste un one-off. Quand l'IA identifie que des équipes combinent trois composants de la même façon, est-ce un pattern à promouvoir ? La boucle de feedback devient étrange quand l'outil qui propose des contributions est aussi l'outil qui génère les données d'usage : on ne peut plus distinguer "ça revient parce que c'est utile" de "ça revient parce que l'IA continue de le suggérer".
 
@@ -49,16 +49,16 @@ Trueman propose quatre questions fondatrices (à régler avant d'en avoir besoin
 
 ## Citations clés
 
-"Design systems exist precisely because quality doesn't scale automatically." ([[murphy-trueman]])
+"Design systems exist precisely because quality doesn't scale automatically." ([murphy-trueman](../entities/murphy-trueman.md))
 
-"AI accelerates everything I described there, including the rate at which your system can be misused by well-meaning people." ([[murphy-trueman]])
+"AI accelerates everything I described there, including the rate at which your system can be misused by well-meaning people." ([murphy-trueman](../entities/murphy-trueman.md))
 
-"The teams handling this best aren't the ones with the most sophisticated AI tooling. They're the ones who got serious about decision rights before AI forced the question." ([[murphy-trueman]])
+"The teams handling this best aren't the ones with the most sophisticated AI tooling. They're the ones who got serious about decision rights before AI forced the question." ([murphy-trueman](../entities/murphy-trueman.md))
 
-"Your design system might be ready for AI. Whether your organisation is ready for what happens when AI actually starts using it is a harder question. And it's not one you can answer with better token architecture." ([[murphy-trueman]])
+"Your design system might be ready for AI. Whether your organisation is ready for what happens when AI actually starts using it is a harder question. And it's not one you can answer with better token architecture." ([murphy-trueman](../entities/murphy-trueman.md))
 
 ## Connexions identifiées
 
-L'article est en dialogue direct avec [[gouvernance-design-system-ia]] — il adresse la dimension organisationnelle que le corpus existant n'avait pas encore formalisée (la gouvernance technique y est centrale, la gouvernance des décisions humaines était signalée comme lacune). Il complète [[shadow-ia-design-system]] en nommant le problème non plus comme "des agents qui contournent le DS" mais comme "des humains qui utilisent l'IA avec le DS sans cadre décisionnel". Il introduit [[accountability-gap-ia]] comme concept propre. Et il précise [[modele-maturite-ia-design-system]] en ajoutant un quatrième axe orthogonal : la maturité organisationnelle, distincte de la maturité technique, de la maturité de documentation IA, et de la maturité d'opérabilité agent.
+L'article est en dialogue direct avec [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) — il adresse la dimension organisationnelle que le corpus existant n'avait pas encore formalisée (la gouvernance technique y est centrale, la gouvernance des décisions humaines était signalée comme lacune). Il complète [shadow-ia-design-system](../concepts/shadow-ia-design-system.md) en nommant le problème non plus comme "des agents qui contournent le DS" mais comme "des humains qui utilisent l'IA avec le DS sans cadre décisionnel". Il introduit [accountability-gap-ia](../concepts/accountability-gap-ia.md) comme concept propre. Et il précise [modele-maturite-ia-design-system](../concepts/modele-maturite-ia-design-system.md) en ajoutant un quatrième axe orthogonal : la maturité organisationnelle, distincte de la maturité technique, de la maturité de documentation IA, et de la maturité d'opérabilité agent.
 
 Ressource additionnelle mentionnée par l'auteur : designsystemsforai.com — outil d'évaluation de la readiness organisationnelle (gouvernance, accountability, modèles de contribution).

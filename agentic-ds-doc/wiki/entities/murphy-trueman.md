@@ -4,12 +4,12 @@ tags: [auteur, design-system, gouvernance, ia, blog, formats, agents-md, skill-m
 created: 2026-07-06
 updated: 2026-07-07
 sources:
-  - "[[design-system-ai-ready-organisation-not]]"
-  - "[[your-design-system-fragmenting-agent-files]]"
+  - "[design-system-ai-ready-organisation-not](../sources/design-system-ai-ready-organisation-not.md)"
+  - "[your-design-system-fragmenting-agent-files](../sources/your-design-system-fragmenting-agent-files.md)"
 related:
-  - "[[gouvernance-design-system-ia]]"
-  - "[[accountability-gap-ia]]"
-  - "[[shadow-ia-design-system]]"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[accountability-gap-ia](../concepts/accountability-gap-ia.md)"
+  - "[shadow-ia-design-system](../concepts/shadow-ia-design-system.md)"
 ---
 
 ## Murphy Trueman
@@ -18,13 +18,13 @@ Praticien et auteur spécialisé dans les design systems, avec une orientation p
 
 ## Positionnement éditorial
 
-L'angle distinctif de Trueman dans le corpus du vault : il aborde les design systems comme des systèmes sociotechniques — les questions techniques ont une surface humaine, et c'est la surface humaine qui résiste le plus à la mise à l'échelle. Son article [[design-system-ai-ready-organisation-not]] articule l'argument le plus direct du corpus sur le fait que la préparation organisationnelle est le problème non résolu, là où la communauté s'est concentrée sur la préparation technique.
+L'angle distinctif de Trueman dans le corpus du vault : il aborde les design systems comme des systèmes sociotechniques — les questions techniques ont une surface humaine, et c'est la surface humaine qui résiste le plus à la mise à l'échelle. Son article [design-system-ai-ready-organisation-not](../sources/design-system-ai-ready-organisation-not.md) articule l'argument le plus direct du corpus sur le fait que la préparation organisationnelle est le problème non résolu, là où la communauté s'est concentrée sur la préparation technique.
 
 ## Articles référencés dans le vault
 
-"Your design system might be AI-ready. Your organisation probably isn't." (2026-03-05) — [[design-system-ai-ready-organisation-not]]. Thèse centrale : la readiness technique (tokens machine-readable, Code Connect, documentation d'intent) résout un problème ; les problèmes de gouvernance organisationnelle (droits décisionnels, accountability pour les failures composites, modèles de contribution) restent entiers.
+"Your design system might be AI-ready. Your organisation probably isn't." (2026-03-05) — [design-system-ai-ready-organisation-not](../sources/design-system-ai-ready-organisation-not.md). Thèse centrale : la readiness technique (tokens machine-readable, Code Connect, documentation d'intent) résout un problème ; les problèmes de gouvernance organisationnelle (droits décisionnels, accountability pour les failures composites, modèles de contribution) restent entiers.
 
-"Your design system is fragmenting into agent files" (2026-05-14, Design Systems Collective) — [[your-design-system-fragmenting-agent-files]]. Thèse centrale : trois formats (AGENTS.md, SKILL.md, DESIGN.md) ont émergé en douze mois comme conventions de facto. Ils n'adressent pas la même couche et ne se substituent pas. L'article trace aussi la dispersion d'une décision de design dans cinq emplacements sans lien automatique ([[dispersion-decision-design]]), le risque de prompt injection via les fichiers d'instructions ([[prompt-injection-design-system]]), et le problème de gouvernance des coutures entre formats.
+"Your design system is fragmenting into agent files" (2026-05-14, Design Systems Collective) — [your-design-system-fragmenting-agent-files](../sources/your-design-system-fragmenting-agent-files.md). Thèse centrale : trois formats (AGENTS.md, SKILL.md, DESIGN.md) ont émergé en douze mois comme conventions de facto. Ils n'adressent pas la même couche et ne se substituent pas. L'article trace aussi la dispersion d'une décision de design dans cinq emplacements sans lien automatique ([dispersion-decision-design](../concepts/dispersion-decision-design.md)), le risque de prompt injection via les fichiers d'instructions ([prompt-injection-design-system](../concepts/prompt-injection-design-system.md)), et le problème de gouvernance des coutures entre formats.
 
 Articles non ingérés dans le vault :
 "Your next design system user is an agent" — sur la préparation technique du DS à l'usage agent.

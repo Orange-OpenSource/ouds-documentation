@@ -4,20 +4,20 @@ tags: [apple, app-intents, ios27, siri, agentique, visibilite, plateforme, os, d
 created: 2026-06-30
 updated: 2026-06-30
 sources:
-  - "[[wwdc-2026-apple-ai-native-os-levinriegner]]"
+  - "[wwdc-2026-apple-ai-native-os-levinriegner](../sources/wwdc-2026-apple-ai-native-os-levinriegner.md)"
 related:
-  - "[[figma-library-invisible-ai-agents]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[architecture-contexte-agentique]]"
-  - "[[protocole-pas-produit]]"
-  - "[[concevoir-les-conditions]]"
-  - "[[lisibilite-machine-design-system]]"
-  - "[[mcp-model-context-protocol]]"
+  - "[figma-library-invisible-ai-agents](../sources/figma-library-invisible-ai-agents.md)"
+  - "[ia-comme-utilisateur](ia-comme-utilisateur.md)"
+  - "[architecture-contexte-agentique](architecture-contexte-agentique.md)"
+  - "[protocole-pas-produit](protocole-pas-produit.md)"
+  - "[concevoir-les-conditions](concevoir-les-conditions.md)"
+  - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
+  - "[mcp-model-context-protocol](mcp-model-context-protocol.md)"
 ---
 
 ## Invisibilité produit dans un OS agentique
 
-L'invisibilité produit est la condition dans laquelle une application est techniquement installée sur un appareil mais inaccessible à la couche d'intelligence agentique du système d'exploitation. La formule d'Ivan Leider (L+R) est la plus précise : "your product may be technically installed and practically invisible" ([[wwdc-2026-apple-ai-native-os-levinriegner]]). Dans l'écosystème Apple post-WWDC 2026, cette invisibilité survient quand une app n'expose pas ses actions et entités via le framework App Intents.
+L'invisibilité produit est la condition dans laquelle une application est techniquement installée sur un appareil mais inaccessible à la couche d'intelligence agentique du système d'exploitation. La formule d'Ivan Leider (L+R) est la plus précise : "your product may be technically installed and practically invisible" ([wwdc-2026-apple-ai-native-os-levinriegner](../sources/wwdc-2026-apple-ai-native-os-levinriegner.md)). Dans l'écosystème Apple post-WWDC 2026, cette invisibilité survient quand une app n'expose pas ses actions et entités via le framework App Intents.
 
 ## Le mécanisme
 
@@ -29,21 +29,21 @@ Apple le formule explicitement dans sa documentation développeur WWDC 2026 : "A
 
 ## Parallèle avec l'invisibilité dans les design systems
 
-Ce mécanisme est structurellement identique à celui décrit par Nurkhon ([[figma-library-invisible-ai-agents]]) pour les bibliothèques Figma : un composant peut être parfaitement construit et rester invisible à un agent de code si son nom décrit son apparence plutôt que sa fonction. Les deux cas partagent la même racine : **les agents parsent, ils n'infèrent pas**. Siri ne devine pas ce que l'app peut faire ; elle parse les App Intents exposés. Un agent de code ne devine pas à quoi sert un composant ; il parse son nom et ses métadonnées.
+Ce mécanisme est structurellement identique à celui décrit par Nurkhon ([figma-library-invisible-ai-agents](../sources/figma-library-invisible-ai-agents.md)) pour les bibliothèques Figma : un composant peut être parfaitement construit et rester invisible à un agent de code si son nom décrit son apparence plutôt que sa fonction. Les deux cas partagent la même racine : **les agents parsent, ils n'infèrent pas**. Siri ne devine pas ce que l'app peut faire ; elle parse les App Intents exposés. Un agent de code ne devine pas à quoi sert un composant ; il parse son nom et ses métadonnées.
 
 La différence est le niveau d'opération : l'invisibilité Figma affecte les agents de génération de code. L'invisibilité App Intents affecte les agents d'orchestration OS. Les deux constituent des formes distinctes d'invisibilité agentique, et les deux ont la même correction : rendre explicite ce qui était implicite.
 
 ## App Intents comme équivalent Apple du MCP
 
-App Intents fonctionne comme un [[mcp-model-context-protocol]] côté client Apple : il définit un contrat structuré entre l'app et le système d'exploitation, permettant à l'orchestrateur (Siri/Spotlight/Apple Intelligence) d'invoquer des actions sans ouvrir l'app. La différence architecturale est que MCP est un standard ouvert orienté serveur, tandis qu'App Intents est un framework propriétaire Apple côté device.
+App Intents fonctionne comme un [mcp-model-context-protocol](mcp-model-context-protocol.md) côté client Apple : il définit un contrat structuré entre l'app et le système d'exploitation, permettant à l'orchestrateur (Siri/Spotlight/Apple Intelligence) d'invoquer des actions sans ouvrir l'app. La différence architecturale est que MCP est un standard ouvert orienté serveur, tandis qu'App Intents est un framework propriétaire Apple côté device.
 
-Les deux répondent au même problème fondamental : sans contrat structuré, l'orchestrateur ne peut pas agir. Avec un contrat, il peut invoquer, composer, et orchestrer. C'est pourquoi Leider recommande l'audit App Intents comme première action — avant même de construire quoi que ce soit de nouveau — exactement comme [[concevoir-les-conditions]] recommande d'auditer le design system avant de générer.
+Les deux répondent au même problème fondamental : sans contrat structuré, l'orchestrateur ne peut pas agir. Avec un contrat, il peut invoquer, composer, et orchestrer. C'est pourquoi Leider recommande l'audit App Intents comme première action — avant même de construire quoi que ce soit de nouveau — exactement comme [concevoir-les-conditions](concevoir-les-conditions.md) recommande d'auditer le design system avant de générer.
 
 ## L'audit comme acte de conception
 
 La recommandation de Leider reformule l'activité de design dans un OS agentique. Le travail n'est pas d'ajouter un chatbot. C'est d'auditer l'exposabilité du produit : quel contenu doit être indexable par Spotlight ? Quelles actions doivent être disponibles sans ouvrir l'app ? Quel contexte peut être exposé de façon sûre ? Quels workflows peuvent être déclenchés par une description en langage naturel ?
 
-Cette liste de questions est fonctionnellement équivalente à l'audit que le corpus du vault préconise pour les design systems agentiques ([[ai-ready-design-system-olha-bondar]], [[protocole-arc]]) : identifier ce qui est exposé, ce qui est implicite, et ce qui doit être rendu explicite pour qu'un agent puisse agir correctement. La différence est l'artefact cible — App Intents plutôt que métadonnées de composant — mais la logique est identique.
+Cette liste de questions est fonctionnellement équivalente à l'audit que le corpus du vault préconise pour les design systems agentiques ([ai-ready-design-system-olha-bondar](../sources/ai-ready-design-system-olha-bondar.md), [protocole-arc](protocole-arc.md)) : identifier ce qui est exposé, ce qui est implicite, et ce qui doit être rendu explicite pour qu'un agent puisse agir correctement. La différence est l'artefact cible — App Intents plutôt que métadonnées de composant — mais la logique est identique.
 
 ## ⚡ Tension / Contradiction
 

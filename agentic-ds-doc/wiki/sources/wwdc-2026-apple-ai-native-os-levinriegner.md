@@ -5,14 +5,14 @@ created: 2026-06-30
 updated: 2026-06-30
 sources: []
 related:
-  - "[[invisibilite-produit-os-agentique]]"
-  - "[[ia-comme-utilisateur]]"
-  - "[[architecture-contexte-agentique]]"
-  - "[[protocole-pas-produit]]"
-  - "[[niveaux-confiance-actions-agentiques]]"
-  - "[[gouvernance-design-system-ia]]"
-  - "[[figma-library-invisible-ai-agents]]"
-  - "[[mcp-model-context-protocol]]"
+  - "[invisibilite-produit-os-agentique](../concepts/invisibilite-produit-os-agentique.md)"
+  - "[ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md)"
+  - "[architecture-contexte-agentique](../concepts/architecture-contexte-agentique.md)"
+  - "[protocole-pas-produit](../concepts/protocole-pas-produit.md)"
+  - "[niveaux-confiance-actions-agentiques](../concepts/niveaux-confiance-actions-agentiques.md)"
+  - "[gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md)"
+  - "[figma-library-invisible-ai-agents](figma-library-invisible-ai-agents.md)"
+  - "[mcp-model-context-protocol](../concepts/mcp-model-context-protocol.md)"
 ---
 
 ## Key topics from Apple's WWDC 2026: Preparing apps for an AI-native operating system — Ivan Leider (L+R)
@@ -48,18 +48,18 @@ D'après cette source et MacRumors ([[wwdc-2026-macrumors-state-of-union]]) :
 
 ## Concepts créés ou enrichis
 
-- **Créé** : [[invisibilite-produit-os-agentique]] — invisibilité par non-exposition des App Intents au système OS
-- **Enrichi** : [[ia-comme-utilisateur]] (le système OS comme nouvelle audience intermédiaire)
-- **Enrichi** : [[architecture-contexte-agentique]] (l'OS comme orchestrateur d'intent — extension de la notion de MCP)
-- **Enrichi** : [[protocole-pas-produit]] (App Intents = équivalent Apple du MCP)
-- **Enrichi** : [[niveaux-confiance-actions-agentiques]] (Apple = agentic with human in the loop, délibérément)
-- **Enrichi** : [[gouvernance-design-system-ia]] (Liquid Glass forcé = gouvernance design par mandat plateforme)
+- **Créé** : [invisibilite-produit-os-agentique](../concepts/invisibilite-produit-os-agentique.md) — invisibilité par non-exposition des App Intents au système OS
+- **Enrichi** : [ia-comme-utilisateur](../concepts/ia-comme-utilisateur.md) (le système OS comme nouvelle audience intermédiaire)
+- **Enrichi** : [architecture-contexte-agentique](../concepts/architecture-contexte-agentique.md) (l'OS comme orchestrateur d'intent — extension de la notion de MCP)
+- **Enrichi** : [protocole-pas-produit](../concepts/protocole-pas-produit.md) (App Intents = équivalent Apple du MCP)
+- **Enrichi** : [niveaux-confiance-actions-agentiques](../concepts/niveaux-confiance-actions-agentiques.md) (Apple = agentic with human in the loop, délibérément)
+- **Enrichi** : [gouvernance-design-system-ia](../concepts/gouvernance-design-system-ia.md) (Liquid Glass forcé = gouvernance design par mandat plateforme)
 
 ## Connexions identifiées
 
-Forte résonance avec [[figma-library-invisible-ai-agents]] (Nurkhon) : même problème d'invisibilité à deux niveaux distincts — invisible au design system pour les agents de code, invisible à l'OS pour les agents Siri. La formule de Nurkhon "AI agents parse, not infer" s'applique au niveau OS : Siri ne devine pas ce que l'app peut faire, elle parse les App Intents exposés. Sans exposition, pas d'existence dans le layer agentique.
+Forte résonance avec [figma-library-invisible-ai-agents](figma-library-invisible-ai-agents.md) (Nurkhon) : même problème d'invisibilité à deux niveaux distincts — invisible au design system pour les agents de code, invisible à l'OS pour les agents Siri. La formule de Nurkhon "AI agents parse, not infer" s'applique au niveau OS : Siri ne devine pas ce que l'app peut faire, elle parse les App Intents exposés. Sans exposition, pas d'existence dans le layer agentique.
 
-Connexion à [[concevoir-les-conditions]] : l'audit App Intents recommandé par Leider est exactement ce que désigne Morales Achiardi — concevoir les conditions sous lesquelles le système peut agir correctement.
+Connexion à [concevoir-les-conditions](../concepts/concevoir-les-conditions.md) : l'audit App Intents recommandé par Leider est exactement ce que désigne Morales Achiardi — concevoir les conditions sous lesquelles le système peut agir correctement.
 
 ## Limites
 
