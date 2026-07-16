@@ -421,3 +421,9 @@ Note : Article charnière qui reformule le paradigme sur deux axes : (1) le comp
 ## [2026-07-16] maintenance | Migration wikilinks → liens markdown standards
 
 Note : Le vault doit devenir consultable directement sur GitHub, qui ne rend pas la syntaxe `[[wikilink]]` d'Obsidian. Convention CLAUDE.md changée : tous les liens internes utilisent désormais des liens markdown relatifs `[texte](chemin/fichier.md)`, compatibles à la fois avec Obsidian (graph view et backlinks préservés) et avec le rendu natif de GitHub. Migration automatique de 3334 liens sur 3341 dans 158 fichiers `wiki/*.md`. 7 occurrences laissées en `[[...]]` : 5 sont des exemples illustratifs dans [guide-prise-en-main](../wiki/guide-prise-en-main.md) et [2026-06-22_description-field-design-token](questions/2026-06-22_description-field-design-token.md) (pas de vraies cibles), 2 sont des liens cassés préexistants pointant vers des pages jamais créées (dans [wwdc-2026-apple-ai-native-os-levinriegner](sources/wwdc-2026-apple-ai-native-os-levinriegner.md) et [2026-07-06_audit-tokens-tokenator-2.6.0](syntheses/2026-07-06_audit-tokens-tokenator-2.6.0.md)) à traiter lors d'un prochain `lint`. Fichiers `raw/` non touchés (règle d'immutabilité). Sauvegarde de l'état pré-migration conservée hors du vault.
+
+---
+
+## [2026-07-16] maintenance | README.md à la racine comme point d'entrée
+
+Note : Un `README.md` existait déjà à la racine mais datait du template initial (workflow copier-coller CLAUDE.md, trois opérations seulement, aucun lien vers overview/index). Réécrit pour pointer explicitement vers [overview](overview.md) et [index](index.md) comme portes d'entrée du wiki, refléter le mode Cowork et les quatre opérations (dont Évolutions), et documenter la convention de liens markdown. CLAUDE.md mis à jour (diagramme de structure) pour inclure README.md et Journal/ et noter le rôle du README comme point d'orientation à maintenir en cas de changement de structure.

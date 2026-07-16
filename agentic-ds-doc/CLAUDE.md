@@ -23,6 +23,7 @@ Tu **construis et maintiens** une base de connaissances persistante et auto-réf
 
 ```
 vault/
+├── README.md          ← point d'entrée visible à la racine (orientation nouveau lecteur, liens vers overview/index)
 ├── CLAUDE.md          ← ce fichier (schéma + instructions)
 ├── raw/               ← sources brutes, immuables — jamais modifiées
 │   └── AAAA-MM-JJ_<slug>.md
@@ -36,8 +37,11 @@ vault/
 │   ├── comparisons/   ← tableaux comparatifs, face-à-face
 │   ├── questions/     ← réponses à des questions spécifiques, archivées
 │   └── sources/       ← une fiche par source ingérée
+├── Journal/           ← bilans périodiques (opération Évolutions)
 └── _meta/             ← fichiers de configuration Obsidian (ne pas modifier)
 ```
+
+`README.md` est le fichier que GitHub affiche automatiquement à la racine du dépôt : c'est le point d'orientation principal pour un nouveau lecteur. Il ne remplace ni `wiki/overview.md` (synthèse) ni `wiki/index.md` (carte thématique) — il pointe vers eux. Mets-le à jour si la structure du vault change (nouveaux dossiers, nouvelle opération).
 
 ---
 
@@ -210,7 +214,7 @@ Pages mises à jour : N
 domaine: [à définir par l'humain à l'initialisation]
 langue: français
 profondeur: recherche personnelle
-horizon: long terme (base de connaissance cumulante)
+horizon: long terme (base de connaissance cumulative)
 style_prose: continu, analytique, sans bullets
 ```
 
