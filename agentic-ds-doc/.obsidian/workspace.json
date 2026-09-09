@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -185,6 +187,15 @@
   },
   "active": "f7553eff4564f61d",
   "lastOpenFiles": [
+    "wiki/questions/2026-08-17_argumentaire-ds-infrastructure-cofinancement.md",
+    "wiki/entities/tj-southleft.md",
+    "wiki/sources/anatomy-ai-ready-design-system-southleft.md",
+    "raw/2026-08-17_anatomy-ai-ready-design-system-southleft.md",
+    "wiki/entities/damini-patil.md",
+    "wiki/sources/semantic-souls-design-systems-meaning.md",
+    "raw/2026-08-17_semantic-souls-design-systems-meaning.md",
+    "scripts/sync-wiki.sh",
+    "scripts",
     "llm-wiki-template.zip",
     "Journal/2026-07-16_evolutions-jour.md",
     "wiki/concepts/shadow-code.md",
@@ -204,12 +215,6 @@
     "wiki/questions/2026-07-16_theme-veille-angles-morts-du-vault.md",
     "wiki/sources/romina-kavcic-5-mcp-connections.md",
     "wiki/concepts/ecriture-agents-canvas-design.md",
-    "wiki/entities/thiago-victorino.md",
-    "wiki/sources/victorino-design-governance-agent-era.md",
-    "wiki/entities/figma.md",
-    "wiki/sources/figma-design-systems-ai-mcp.md",
-    "raw/2025-08-22_romina-kavcic-5-mcp-connections.md",
-    "raw/2026-03-26_victorino-design-governance-agent-era.md",
-    "raw/2025-08-06_figma-design-systems-ai-mcp.md"
+    "wiki/entities/thiago-victorino.md"
   ]
 }

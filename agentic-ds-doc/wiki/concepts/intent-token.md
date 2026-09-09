@@ -10,6 +10,7 @@ sources:
   - "[50-design-token-files-one-problem](../sources/50-design-token-files-one-problem.md)"
   - "[google-design-md-spec](../sources/google-design-md-spec.md)"
   - "[agentic-ds-from-chatbot-to-orchestration](../sources/agentic-ds-from-chatbot-to-orchestration.md)"
+  - "[semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md)"
 related:
   - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
   - "[trois-couches-composants-agents](trois-couches-composants-agents.md)"
@@ -22,7 +23,8 @@ related:
   - "[priori-conflictuels-nommage](priori-conflictuels-nommage.md)"
   - "[delegation-lens](delegation-lens.md)"
   - "[design-md-format](design-md-format.md)"
-updated: 2026-06-26
+  - "[damini-patil](../entities/damini-patil.md)"
+updated: 2026-08-17
 ---
 
 ## Intent des tokens
@@ -100,6 +102,10 @@ Le champ `$description` DTCG (documenté dans [dtcg-annotation-schema](dtcg-anno
 Cette structure diffère du `$description` en prose sur trois points. Les champs `useFor` et `avoidFor` sont des listes énumérables — un agent peut les traverser algorithmiquement pour vérifier si son usage courant correspond à un cas licite ou interdit, sans avoir à interpréter du langage naturel. Le champ `accessibility` encode des contraintes non-négociables séparément des règles d'usage — ce qui permet à un auditeur de les traiter comme des violations d'existence (le ratio de contraste est une propriété vérifiable) plutôt que comme des violations d'intent (qui nécessitent une interprétation). Les `responsiveRules` encodent des règles de substitution conditionnelle que le token lui-même peut transporter.
 
 La relation avec le [dtcg-annotation-schema](dtcg-annotation-schema.md) existant est d'extension, pas de remplacement. Le `$description` DTCG reste le format interopérable standardisé. La structure useFor/avoidFor/accessibility est une convention d'extensions privées (`$extensions`) ou un format propriétaire pour les équipes qui veulent aller plus loin dans l'encodage d'intent. Le point de cohérence avec [50-design-token-files-one-problem](../sources/50-design-token-files-one-problem.md) est maintenu : l'intent doit être dans le fichier source, pas dans la documentation humaine séparée.
+
+## Convergence indépendante : intent tokens comme catégorie stabilisée
+
+[damini-patil](../entities/damini-patil.md) arrive au même terme et à la même distinction dans [semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md), sans citer ni [romina-kavcic](../entities/romina-kavcic.md) ni [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) : un intent token décrit le but d'un usage ("destructive", "confirmatory") plutôt qu'une valeur brute. Elle ajoute au diagnostic déjà établi une formule de risque absente du reste du corpus : sans cette couche, les agents IA autonomes deviennent des "dangerous amplifiers of inconsistency", optimisant pour des métriques visibles (le rendu a l'air correct) au détriment des objectifs utilisateur et de l'intention d'accessibilité. Cette convergence terminologique entre deux auteurs indépendants, qui ne se citent pas, est un signal que la notion d'intent token s'est stabilisée dans le champ comme catégorie reconnue, au-delà des équipes qui la documentent avec le niveau de détail technique de Kavcic ou Achiardi.
 
 ## L'état du terrain en 2026
 

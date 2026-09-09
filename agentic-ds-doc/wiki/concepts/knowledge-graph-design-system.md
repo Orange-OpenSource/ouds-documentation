@@ -9,6 +9,7 @@ sources:
   - "[mapping-design-system-for-ai-agents](../sources/mapping-design-system-for-ai-agents.md)"
   - "[agent-orchestration-for-design-systems](../sources/agent-orchestration-for-design-systems.md)"
   - "[design-system-advantage-is-memory](../sources/design-system-advantage-is-memory.md)"
+  - "[semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md)"
 related:
   - "[systeme-de-design-agentique](systeme-de-design-agentique.md)"
   - "[lisibilite-machine-design-system](lisibilite-machine-design-system.md)"
@@ -21,6 +22,8 @@ related:
   - "[architecture-skills-rules-instructions](architecture-skills-rules-instructions.md)"
   - "[memoire-design-system](memoire-design-system.md)"
   - "[design-system-comme-dataset](design-system-comme-dataset.md)"
+  - "[damini-patil](../entities/damini-patil.md)"
+updated: 2026-08-17
 ---
 
 ## Knowledge graph du design system
@@ -64,6 +67,10 @@ Le graph trace les *imports* (combien de fichiers référencent un composant) ma
 Dans cette perspective, les noeuds d'un graphe de design system sont plus larges que des fichiers : token, composant, pattern, décision, owner, surface, marque. Les arêtes sont : uses, supersedes, depends_on, was_decided_by, drifted_from. C'est cette carte relationnelle que Kavcic a reconstruite dans Tidy — chaque composant connaît ses variants, ses tokens, son owner, son historique de décisions, son drift score.
 
 **QMD comme étape intermédiaire.** Avant de construire le graphe complet, [romina-kavcic](../entities/romina-kavcic.md) recommande QMD (Tobi Lütke) : un outil local de recherche hybride (BM25 + vecteur + reranking LLM) qui indexe un corpus localement en quelques minutes et s'expose comme outil MCP. Ce n'est pas un graphe — c'est un test de signal. Si QMD ne peut pas répondre aux vraies questions de l'équipe sur son corpus, le problème est soit que les documents manquent, soit que leur langage est trop vague pour être retrouvé. Un miss sur QMD est un signal d'investissement : écrire le document manquant, ou clarifier le langage du document existant. Ce n'est qu'après avoir validé le signal du corpus qu'il vaut la peine d'investir dans l'architecture graphe.
+
+## Convergence indépendante : "relationship maps" (Patil)
+
+[damini-patil](../entities/damini-patil.md), dans [semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md), désigne le même objet sous le terme "relationship maps" : des cartes explicitant les connexions entre patterns, l'une des trois briques de sa couche sémantique aux côtés des intent tokens ([intent-token](intent-token.md)) et des contrats comportementaux ([composant-comme-contrat](composant-comme-contrat.md)). Sa formulation reste au niveau du principe, sans le détail d'implémentation que [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) ou [romina-kavcic](../entities/romina-kavcic.md) apportent (nœuds, arêtes, format TOON, deep tracing). Sa contribution propre est le cadrage du risque : sans cartes de relations ni les deux autres briques, l'agent autonome devient un "dangerous amplifiers of inconsistency", optimisant pour ce qui est visible plutôt que pour ce qui est correct.
 
 ## La distinction quoi / où / devrait-on
 

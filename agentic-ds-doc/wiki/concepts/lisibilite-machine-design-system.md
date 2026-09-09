@@ -18,6 +18,7 @@ sources:
   - "[ai-ready-design-system-olha-bondar](../sources/ai-ready-design-system-olha-bondar.md)"
   - "[state-of-ai-design-systems-2026-zeroheight](../sources/state-of-ai-design-systems-2026-zeroheight.md)"
   - "[making-product-docs-work-humans-ai-gerireid](../sources/making-product-docs-work-humans-ai-gerireid.md)"
+  - "[anatomy-ai-ready-design-system-southleft](../sources/anatomy-ai-ready-design-system-southleft.md)"
 related:
   - "[systeme-de-design-agentique](systeme-de-design-agentique.md)"
   - "[trois-couches-composants-agents](trois-couches-composants-agents.md)"
@@ -43,7 +44,8 @@ related:
   - "[contraintes-fixed-preferred-exploratory](contraintes-fixed-preferred-exploratory.md)"
   - "[geri-reid](../entities/geri-reid.md)"
   - "[cinq-questions-documentation-produit](cinq-questions-documentation-produit.md)"
-updated: 2026-07-06
+  - "[tj-southleft](../entities/tj-southleft.md)"
+updated: 2026-08-17
 ---
 
 ## Lisibilité machine du design system
@@ -189,3 +191,11 @@ Cela confirme empiriquement le benchmark de [diana-wolosin](../entities/diana-wo
 Ce renversement est tactiquement important. Le corpus existant présente la lisibilité machine comme un surcoût : ajouter des annotations DTCG, structurer les métadonnées JSON, relier design et code via Code Connect. Ce cadrage génère de la résistance dans les équipes qui ont déjà du mal à maintenir la documentation existante. Reid propose le cadrage inverse : améliorer la documentation pour les humains *est* améliorer la documentation pour les machines. L'investissement IA devient le levier pour remettre à plat des pratiques médiocres qui existaient bien avant les agents.
 
 Le cadre des [cinq-questions-documentation-produit](cinq-questions-documentation-produit.md) opérationnalise cet insight : "What exists?" (référence), "What are the rules?" (spécifications), "What needs to be done?" (tâches), "How do I do something?" (how-to guides), "What changed?" (changelogs). Chaque question structure simultanément la consultation humaine et l'interprétation machine. C'est complémentaire au corpus avancé du vault (DTCG, MCP, métadonnées JSON) qui s'adresse aux équipes en phase d'optimisation agentique — Reid s'adresse aux équipes en phase de structuration initiale, là où 83 % du secteur se trouve encore.
+
+## Confirmation indépendante par la pratique : préparer sans accès (TJ, 2026)
+
+[tj-southleft](../entities/tj-southleft.md) apporte une confirmation indépendante de la thèse de [geri-reid](../entities/geri-reid.md), par un canal différent : non pas un article éditorial mais un atelier de conseil mené avec une équipe design system enterprise réelle ([anatomy-ai-ready-design-system-southleft](../sources/anatomy-ai-ready-design-system-southleft.md)). Son sous-titre condense la convergence : "The practices that make a design system AI-ready are the same ones that make it readable, period." La formulation de terrain confirme celle de Reid sans la citer : "None of the practices we were prescribing were actually AI-specific. They were just design system hygiene that nobody had bothered to write down."
+
+L'apport propre de cette source est un contexte absent du reste du corpus : l'équipe de l'atelier n'a *pas encore* accès aux outils IA, retenue par les sas organisationnels habituels d'une entreprise (revue IT, procurement, sign-off sécurité) — une situation que TJ présente comme la norme plutôt que l'exception pour les équipes enterprise. La préparation à la lisibilité machine y devient un exercice à blanc, qui ne peut pas être validé contre un agent réel au moment où il est fait. C'est un angle nouveau sur la tension "readiness technique vs readiness organisationnelle" déjà documentée dans [gouvernance-organisationnelle-ia](gouvernance-organisationnelle-ia.md) : ici, l'organisation n'est pas en retard sur la volonté d'adopter l'IA, elle est en retard sur l'*accès* à l'IA, pour des raisons de gouvernance IT sans rapport avec le design system lui-même.
+
+Cette confirmation n'entre pas en tension avec la position Kavcic/Achiardi sur les champs d'intent explicites ([intent-token](intent-token.md), [readable-vs-usable-token](readable-vs-usable-token.md)), malgré une lecture rapide qui pourrait l'y voir. L'expérience crimson/red600 montre qu'une lisibilité humaine *tacite* (un collègue à qui demander) ne suffit pas à un agent ; la formule de TJ, "hygiene that nobody had bothered to write down", vise précisément une lisibilité humaine *écrite et explicite* qui, de fait, n'existait pas non plus pour les humains dans la plupart des équipes. Les deux positions convergent sur l'exigence d'explicitation, pas sur son absence.

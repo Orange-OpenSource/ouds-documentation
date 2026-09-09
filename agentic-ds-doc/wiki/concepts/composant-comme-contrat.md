@@ -8,6 +8,7 @@ sources:
   - "[design-systems-contracts-not-libraries](../sources/design-systems-contracts-not-libraries.md)"
   - "[building-language-design-systems](../sources/building-language-design-systems.md)"
   - "[storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md)"
+  - "[semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md)"
 related:
   - "[composants-context-aware](composants-context-aware.md)"
   - "[trois-couches-composants-agents](trois-couches-composants-agents.md)"
@@ -18,6 +19,8 @@ related:
   - "[concevoir-les-conditions](concevoir-les-conditions.md)"
   - "[grammaire-composition-composants](grammaire-composition-composants.md)"
   - "[langage-design-system](langage-design-system.md)"
+  - "[damini-patil](../entities/damini-patil.md)"
+updated: 2026-08-17
 ---
 
 ## Le composant comme contrat
@@ -71,6 +74,10 @@ La conséquence pour la [Phase 3 (Compose)](protocole-arc.md) : pour que l'agent
 [storybook-mcp-ai-aware-component-libraries](../sources/storybook-mcp-ai-aware-component-libraries.md) apporte au vault sa première démonstration contrôlée et reproductible de ce que fait concrètement un contrat de composant explicite. Le même agent (Claude Code), sur le même prompt, produit deux résultats radicalement différents selon qu'il a accès ou non au contrat de props via `get-documentation` : sans lui, il invente 263 lignes de HTML avec sa propre logique de validation, zéro appel d'outil ; avec lui, il fait six appels d'outils avant d'écrire du code, puis compose 188 lignes où chaque prop (`variant`, `size`, `error`, `onChange`) correspond exactement au contrat TypeScript documenté.
 
 C'est la validation empirique la plus directe de la thèse de ce concept : le contrat n'est pas une couche de documentation optionnelle, c'est ce qui détermine si l'agent *invente* ou *respecte*. La différence ne se mesure pas seulement au résultat final mais au comportement de génération lui-même — le nombre d'appels d'outils avant la première ligne de code est un indicateur direct de si l'agent consulte le contrat ou improvise.
+
+## Convergence indépendante : "behavioral contracts" (Patil)
+
+[damini-patil](../entities/damini-patil.md) nomme le même déplacement conceptuel sous un autre terme, indépendamment de [romina-kavcic](../entities/romina-kavcic.md) et de [cristian-morales-achiardi](../entities/cristian-morales-achiardi.md) : un "behavioral contract" définit la réponse d'un composant selon le contexte, l'une des trois briques de sa couche sémantique proposée dans [semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md) (avec les intent tokens, voir [intent-token](intent-token.md), et les cartes de relations, voir [knowledge-graph-design-system](knowledge-graph-design-system.md)). Elle n'apporte pas de structure supplémentaire aux cinq dimensions déjà documentées ici (intent, variants, rules, accessibility, anti-patterns) — sa contribution est de confirmer, depuis un angle éditorial différent de celui des praticiens techniques déjà cités dans le vault, que le composant-comme-contrat est devenu un cadre partagé du champ, pas une formulation isolée de Kavcic.
 
 ## ⚡ Tension : contrat vs flexibilité
 

@@ -2,7 +2,7 @@
 type: index
 tags: [registry, sources, deduplication]
 created: 2026-06-24
-updated: 2026-07-16
+updated: 2026-08-17
 ---
 
 ## Registre des sources ingérées
@@ -66,3 +66,5 @@ Ce fichier est maintenu automatiquement par le skill `web-veille`. Il liste tout
 | [superdesign-ai-design-system-drift](superdesign-ai-design-system-drift.md) | Why AI Breaks Your Design System (and How to Fix the Drift) (Jason Zhou) | https://superdesign.dev/blog/ai-design-system-drift | 2026-07-16 |
 | [ai-journal-who-accountable-ai-code-breaks](ai-journal-who-accountable-ai-code-breaks.md) | AI Now Writes the Code. Who's Accountable When It Breaks? (Pramin Pradeep) | https://aijourn.com/ai-now-writes-the-code-whos-accountable-when-it-breaks/ | 2026-07-16 |
 | [crackr-vibe-coding-failures-directory](crackr-vibe-coding-failures-directory.md) | Vibe Coding Failures: Documented AI Code Incidents (Crackr AI) | https://crackr.dev/vibe-coding-failures | 2026-07-16 |
+| [semantic-souls-design-systems-meaning](semantic-souls-design-systems-meaning.md) | Semantic Souls: Why 2026 Design Systems Must Speak Meaning, Not Just Pixels (Damini Patil) | https://www.designsystemscollective.com/semantic-souls-why-2026-design-systems-must-speak-meaning-not-just-pixels-f2093d9b4f65 | 2026-08-17 |
+| [anatomy-ai-ready-design-system-southleft](anatomy-ai-ready-design-system-southleft.md) | Anatomy of an AI-Ready Design System (TJ, southleft) | https://southleft.substack.com/p/anatomy-of-an-ai-ready-design-system | 2026-08-17 |

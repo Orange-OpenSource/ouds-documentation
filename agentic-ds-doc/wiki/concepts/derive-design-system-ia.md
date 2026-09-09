@@ -5,12 +5,15 @@ created: 2026-07-16
 updated: 2026-07-16
 sources:
   - "[superdesign-ai-design-system-drift](../sources/superdesign-ai-design-system-drift.md)"
+  - "[semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md)"
 related:
   - "[readable-vs-usable-token](readable-vs-usable-token.md)"
   - "[composant-comme-contrat](composant-comme-contrat.md)"
   - "[boucle-feedback-infrastructure](boucle-feedback-infrastructure.md)"
   - "[50-design-token-files-one-problem](../sources/50-design-token-files-one-problem.md)"
   - "[accountability-gap-ia](accountability-gap-ia.md)"
+  - "[damini-patil](../entities/damini-patil.md)"
+updated: 2026-08-17
 ---
 
 ## La dérive de design system induite par l'IA
@@ -48,6 +51,12 @@ Geler les tokens dans un fichier unique que l'agent lit et ne régénère jamais
 ## Limite reconnue par la source
 
 Un fichier de règles figé (type DESIGN.md) est nécessaire mais pas suffisant : il fixe les tokens, mais les agents dérivent encore sur l'*application* de ces tokens (comment composer un layout, quand une règle s'assouplit, un composant que le fichier ne mentionne jamais). Un fichier écrit une fois devient obsolète dès que le système réel évolue — la contrainte doit être un flux vivant, pas un artefact statique.
+
+## Dérive sémantique : un mode adjacent, pas un cinquième mode
+
+[damini-patil](../entities/damini-patil.md) introduit dans [semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md) un terme voisin, "semantic drift", et recommande des "governance agents to flag semantic drift". Le terme est adjacent aux quatre modes ci-dessus, pas synonyme. Les quatre modes déjà documentés sont mécaniques et détectables par comparaison structurelle : un token fabriqué se compare au registre des tokens réels, une prop renommée se compare à l'API réelle du composant. La dérive sémantique telle que Patil la pose est différente de nature : une interface peut ne fabriquer aucun token, respecter toutes les props, et malgré tout "look on-brand but feel strangely hollow" — visuellement conforme, vide de l'intention que le composant est censé transporter. Ce n'est pas une divergence par rapport au registre du système (ce que les auditeurs v1/v2 détectent), c'est une divergence par rapport au *pourquoi* du système, qui ne se lit dans aucun diff de tokens ou de props.
+
+Patil ne documente pas de mécanisme concret pour ces "governance agents" ni de cas réel comme les contre-mesures déjà répertoriées ici (gel des tokens, verrouillage des régions stables, boucle render-screenshot-compare). L'écart entre les deux sources illustre la limite du diagnostic éditorial par rapport à l'implémentation technique : nommer la dérive sémantique comme risque est utile, mais le vault ne dispose pas encore d'une source qui documente comment la détecter en production, à la différence des quatre modes mécaniques ci-dessus.
 
 ## Lien avec accountability-gap-ia
 

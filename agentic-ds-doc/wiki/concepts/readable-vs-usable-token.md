@@ -6,6 +6,7 @@ updated: 2026-06-22
 sources:
   - "[50-design-token-files-one-problem](../sources/50-design-token-files-one-problem.md)"
   - "[miro-ai-design-system-mcp-claude-code-skills](../sources/miro-ai-design-system-mcp-claude-code-skills.md)"
+  - "[semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md)"
 related:
   - "[derive-design-system-ia](derive-design-system-ia.md)"
   - "[intent-token](intent-token.md)"
@@ -15,6 +16,8 @@ related:
   - "[delegation-lens](delegation-lens.md)"
   - "[priori-conflictuels-nommage](priori-conflictuels-nommage.md)"
   - "[romina-kavcic](../entities/romina-kavcic.md)"
+  - "[damini-patil](../entities/damini-patil.md)"
+updated: 2026-08-17
 ---
 
 ## Readable ≠ Usable
@@ -80,6 +83,10 @@ Ce cas étend la distinction readable/usable au-delà des tokens DTCG vers les a
 La réponse de Miro : trois champs de métadonnées par icône (description visuelle, cas d'usage, catégorie) + règle de non-usage explicite. Après ajout : les mêmes prompts produisent des sorties correctes. Voir [schema-metadata-composant](schema-metadata-composant.md) pour le schéma complet.
 
 Ce cas confirme que la distinction readable/usable n'est pas limitée aux fichiers de tokens — elle s'applique à tout asset du design system (composants, icônes, tokens) dont l'usage correct dépend d'une logique non encodée dans le nom ou la valeur brute.
+
+## Extension au niveau de l'interface (Patil)
+
+[damini-patil](../entities/damini-patil.md) formule, sans référence au vocabulaire readable/usable ni à [romina-kavcic](../entities/romina-kavcic.md), le même écart à l'échelle de l'interface entière plutôt qu'au niveau du fichier de tokens ([semantic-souls-design-systems-meaning](../sources/semantic-souls-design-systems-meaning.md)) : une interface générée peut "look on-brand but feel strangely hollow", c'est-à-dire être visuellement conforme (readable au sens où les règles de rendu sont respectées) sans être fondée sur une intention comprise (usable au sens où l'agent qui l'a produite ne savait pas *pourquoi* il faisait ces choix). C'est la même distinction que celle démontrée par l'expérience crimson/red600, transposée d'un token isolé à la composition entière d'un écran : le symptôme change d'échelle, le mécanisme causal reste identique, l'intent absent du fichier source.
 
 ## ⚡ Tension avec la notion de "machine-readable"
 

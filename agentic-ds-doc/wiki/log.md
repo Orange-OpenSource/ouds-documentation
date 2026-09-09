@@ -1,6 +1,24 @@
 ---
 type: log
-updated: 2026-07-16
+updated: 2026-08-17
+---
+
+## [2026-08-17] ingest | Anatomy of an AI-Ready Design System (TJ, southleft) (via veille web)
+
+Thème de veille : agentic design system
+Pages créées : [anatomy-ai-ready-design-system-southleft](sources/anatomy-ai-ready-design-system-southleft.md) (source), [tj-southleft](entities/tj-southleft.md) (entité)
+Pages mises à jour : [lisibilite-machine-design-system](concepts/lisibilite-machine-design-system.md) (+confirmation indépendante de la thèse Reid, +contexte inédit des équipes enterprise sans accès IA)
+Note : Article payant, ingest proportionnel au contenu disponible (aperçu gratuit seulement). Confirme par un canal différent (atelier de conseil, pas un article) la thèse déjà présente de [geri-reid](entities/geri-reid.md) : AI-readiness = hygiène de lisibilité générale jamais écrite, pas une technique spécifique à l'IA. Écarté comme candidat Tension après vérification : compatible avec l'exigence d'explicitation déjà démontrée par l'expérience crimson/red600, pas contradictoire avec elle.
+
+---
+
+## [2026-08-17] ingest | Semantic Souls: Why 2026 Design Systems Must Speak Meaning, Not Just Pixels (Damini Patil) (via veille web)
+
+Thème de veille : agentic design system
+Pages créées : [semantic-souls-design-systems-meaning](sources/semantic-souls-design-systems-meaning.md) (source), [damini-patil](entities/damini-patil.md) (entité)
+Pages mises à jour : [intent-token](concepts/intent-token.md) (+convergence indépendante sur la notion d'intent token), [composant-comme-contrat](concepts/composant-comme-contrat.md) (+convergence indépendante "behavioral contracts"), [knowledge-graph-design-system](concepts/knowledge-graph-design-system.md) (+convergence indépendante "relationship maps"), [derive-design-system-ia](concepts/derive-design-system-ia.md) (+distinction dérive mécanique vs dérive sémantique), [readable-vs-usable-token](concepts/readable-vs-usable-token.md) (+extension de la distinction au niveau interface)
+Note : Source éditoriale (pas technique) qui n'apporte pas de mécanisme nouveau mais confirme, par convergence terminologique indépendante avec Kavcic et Morales Achiardi, que intent token / contrat de composant / knowledge graph sont devenus un vocabulaire stabilisé du champ plutôt qu'une formulation isolée du corpus déjà présent dans le vault.
+
 ---
 
 ## [2026-07-16] ingest | 4 Sev-1s in 90 Days: The Real Cost of Amazon's Vibe Coding Bet (Tom Piaggio) (via veille web)

@@ -1,6 +1,6 @@
 ---
 type: overview
-updated: 2026-07-16
+updated: 2026-08-17
 ---
 
 # Vue d'ensemble
@@ -73,6 +73,10 @@ Les concepts centraux du domaine s'articulent ainsi :
 [seeds-vs-trees](concepts/seeds-vs-trees.md) → est la posture stratégique pour l'adoption
 
 ---
+
+*Mise à jour précédente : 2026-08-17 — ingestion "Anatomy of an AI-Ready Design System" (TJ/southleft, [anatomy-ai-ready-design-system-southleft](sources/anatomy-ai-ready-design-system-southleft.md), article payant ingéré depuis son seul aperçu gratuit) : confirmation indépendante de la thèse de [geri-reid](entities/geri-reid.md) (AI-readiness = hygiène de lisibilité générale jamais écrite) par un atelier de conseil réel plutôt qu'un article éditorial ; apporte le contexte inédit des équipes enterprise qui préparent leur système sans accès IA, retenues par des sas organisationnels (IT, procurement, sécurité)*
+
+*Mise à jour précédente : 2026-08-17 — ingestion "Semantic Souls" (Damini Patil, [semantic-souls-design-systems-meaning](sources/semantic-souls-design-systems-meaning.md)) : source éditoriale indépendante qui n'apporte pas de mécanisme nouveau mais confirme par convergence terminologique non citée que intent token, contrat de composant et knowledge graph sont un vocabulaire stabilisé du champ ; introduit la distinction entre dérive mécanique (les quatre modes déjà documentés dans [derive-design-system-ia](concepts/derive-design-system-ia.md)) et dérive sémantique (érosion du sens sans erreur structurelle détectable)*
 
 *Dernière mise à jour substantielle : 2026-07-16 — veille "échecs documentés et gouvernance organisationnelle" (5 sources) : le cas Amazon (4 Sev-1 en 90 jours, [amazon-vibe-coding-4-sev1-90-days](sources/amazon-vibe-coding-4-sev1-90-days.md)) est le premier incident réel, nommé et chiffré du vault, comblant le vide théorique d'[accountability-gap-ia](concepts/accountability-gap-ia.md) ; le modèle à trois couches de Lance Dacy ([modele-accountability-trois-couches](concepts/modele-accountability-trois-couches.md)) apporte la réponse structurelle correspondante (reviewer of record) ; la taxonomie de dérive design-system de Superdesign ([derive-design-system-ia](concepts/derive-design-system-ia.md)) nomme quatre modes de défaillance design-system-spécifiques ; le concept de shadow code ([shadow-code](concepts/shadow-code.md)) distingue l'opacité du code généré du contournement déjà documenté (shadow AI) ; le répertoire Crackr confirme que le cas Amazon n'est pas isolé*
 
