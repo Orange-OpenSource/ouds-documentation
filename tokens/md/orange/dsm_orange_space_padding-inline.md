@@ -12,5 +12,7 @@
 | ouds.space.padding-inline.2xlarge | core-ouds.dimension.300 | 24px |
 | ouds.space.padding-inline.3xlarge | core-ouds.dimension.350 | 28px |
 | ouds.space.padding-inline.4xlarge | core-ouds.dimension.400 | 32px |
+| ouds.space.padding-inline.5xlarge | core-ouds.dimension.450 | 36px |
+| ouds.space.padding-inline.6xlarge | core-ouds.dimension.500 | 40px |
 
-<br>Tokens versions: sys.orange: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.7.0 - core.ouds: 1.11.0 - core.orange: 1.2.0

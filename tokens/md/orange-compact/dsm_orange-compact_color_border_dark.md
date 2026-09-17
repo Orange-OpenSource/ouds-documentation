@@ -18,4 +18,4 @@
 | ouds.color.border.on.brand.secondary | N/A | N/A | N/A |
 | ouds.color.border.on.brand.tertiary | N/A | N/A | N/A |
 
-<br>Tokens versions: sys.orange-compact: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.7.0 - core.ouds: 1.11.0 - core.orange: 1.2.0
