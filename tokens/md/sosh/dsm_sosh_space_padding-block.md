@@ -12,5 +12,6 @@
 | ouds.space.padding-block.2xlarge | core-ouds.dimension.300 | 24px |
 | ouds.space.padding-block.3xlarge | core-ouds.dimension.350 | 28px |
 | ouds.space.padding-block.4xlarge | core-ouds.dimension.400 | 32px |
+| ouds.space.padding-block.5xlarge | core-ouds.dimension.450 | 36px |
 
-<br>Tokens versions: sys.sosh: 2.6.0 - core.ouds: 1.10.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.7.0 - core.ouds: 1.11.0 - core.sosh: 1.4.0

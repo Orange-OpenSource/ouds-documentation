@@ -17,6 +17,6 @@
 | ouds.color.surface.status.negative.muted | core-ouds.color.opacity.scarlet.80 | #db000214 | <div style="width:20px; height:20px; background-color:#db000214; border: 1px solid #000000;"></div> |
 | ouds.color.surface.status.negative.emphasized | core-ouds.color.functional.scarlet.600 | #db0002 | <div style="width:20px; height:20px; background-color:#db0002; border: 1px solid #000000;"></div> |
 | ouds.color.surface.status.accent.muted | core-orange.color.opacity.warmGray.80 | #bd793c14 | <div style="width:20px; height:20px; background-color:#bd793c14; border: 1px solid #000000;"></div> |
-| ouds.color.surface.status.accent.emphasized | core-orange.color.orange.500 | #ff7900 | <div style="width:20px; height:20px; background-color:#ff7900; border: 1px solid #000000;"></div> |
+| ouds.color.surface.status.accent.emphasized | core-orange.color.orange.550 | #f15e00 | <div style="width:20px; height:20px; background-color:#f15e00; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.orange-compact: 2.6.0 - core.ouds: 1.10.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.7.0 - core.ouds: 1.11.0 - core.orange: 1.2.0

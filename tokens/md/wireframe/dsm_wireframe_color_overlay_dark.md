@@ -7,4 +7,4 @@
 | ouds.color.overlay.backdrop | core-wframe.color.opacity.black.680 | #05052ead | <div style="width:20px; height:20px; background-color:#05052ead; border: 1px solid #000000;"></div> |
 | ouds.color.overlay.floating | core-wframe.color.functional.gray.dark.560 | #2f384b | <div style="width:20px; height:20px; background-color:#2f384b; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.wireframe: 2.6.0 - core.ouds: 1.10.0 - core.wireframe: 1.4.0
+<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
