@@ -1,5 +1,8 @@
 | Date | Number | Notes |
 |------|--------|-------|
+| Jul 31, 2026 | 3.4.0 | Version 2.7 of the design tokens is required for the development of this update.<ul><li>A maximum width is now applied to the component.</ul> |
+| Jul 1, 2026 | - | <ul><li>Updated the Progress Indicator version. Components with Rounded Corner = True now use the Progress Indicator (Rounded Corner = True) variant.</ul> |
+| Jun 5, 2026 | 3.3.0 | Version 2.6 of the design tokens is required for the development of this update.<ul><li>New small size.<li>The loader frame has been renamed to Progress indicator container.<ul><li>It now contains the new Circular Progress Indicator component.</ul><li>For the "Icon only" variant, absolute positioning has been removed and replaced with Auto Layout.<ul><li>icon-only-default (ouds/space/inset/medium) for the Default size<li>icon-only-small (ouds/space/inset/small) for the Small size</ul><li>Inside the container, the Circular Progress Indicator uses:<ul><li>progress-indicator-only-default<li>progress-indicator-only-small</ul></ul> |
 | Mar 16, 2026 | - | <ul><li>Documentation writing:<ul><li>Rounded corners brand theme availability<li>Multiline and responsiveness</ul></ul> |
 | Jan 21, 2026 | - | <ul><li>Documentation writing: Rounded corners update<li>Documentation writing: Dedicated component: On coloured bg</ul> |
 | Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
