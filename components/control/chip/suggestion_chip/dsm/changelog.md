@@ -1,5 +1,6 @@
 | Date | Number | Notes |
 |------|--------|-------|
+| Jul 1, 2026 | 1.5.0 | <ul><li>The label text is no longer centred but left-aligned.</ul> |
 | Apr 22, 2026 | 1.4.0 | <ul><li>Version 2.4 of the design tokens is required for the development of this update.<li>The text reference of the label changes from a bold weight (font-weight-label-strong) to a medium weight (font-weight-label-moderate).</ul> |
 | Mar 16, 2026 | - | <ul><li>Documentation writing: Multiline and responsiveness</ul> |
 | Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
