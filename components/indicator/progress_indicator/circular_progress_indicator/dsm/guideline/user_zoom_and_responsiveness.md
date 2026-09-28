@@ -11,9 +11,3 @@ The component should preserve its visual structure and proportions regardless of
 • The component should adapt to its container without breaking its proportions
 • When embedded (e.g. button, tag, toast), it must align with surrounding elements while keeping its original ratio
 • The component must not stretch to fill available space
-
-**Accessibility**
-• The loader must remain visible and distinguishable at all zoom levels
-• It must respect reduced motion settings when applicable
-• It must not lose meaning or become ambiguous when scaled
-• Progress labels must clearly communicate the ongoing process and the affected content for accessibility purposes.

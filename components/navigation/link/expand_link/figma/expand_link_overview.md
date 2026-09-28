@@ -37,6 +37,16 @@ This size is used for the vast majority of applications.
 
 ---
 
+## Density
+
+**`Default`** This is the default density of the component, recommended for most interfaces and primary navigation contexts.
+This density wich is used for the vast majority of applications, provides a comfortable touch target that meets accessibility recommendations.
+
+**`Compact`** Reduces the vertical footprint while preserving the same interaction and visual behavior.
+Use in dense layouts where space is limited and a smaller touch target is acceptable (desktop or pointer-based contexts).
+
+---
+
 ## Specific component: On colored bg
 
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
@@ -55,8 +65,8 @@ Nevertheless, if the label spans multiple lines, the chevron icon remains remain
 
 **Max-width vs full-width**
 The max-width is applied at the label level and depends on the max-width value assigned to the typographic reference used.
-The component can also naturally wrap within the parent container (or the screen in a mobile use context for exemple) and use the full available width. In this context, the responsive behavior of the label must be changed from hug to fill.
-Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+Since the navigation indicator's position always remains close to the last letter of the text label (Reverse=False), it is not possible to use the "Expand link" component in a full-width context. The component cannot adapt to the parent container (or to the screen in a mobile context, for example) and occupy the full available width.
+In a full-width context, you should prioritize using the "Accordion list item" component (for "Next" or "Previous" layout).
 
 **User zoom in/out**
 The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.

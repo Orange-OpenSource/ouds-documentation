@@ -10,5 +10,5 @@
 ✅ **Do:** Use "Text only" layout for inline links within body copy to maintain reading flow  
 ❌ **Don't:** Pair inline text links with icons as this disrupts the reading experience
 
-✅ **Do:** Use "Back" layout consistently for returning to previous pages or steps in a flow  
-❌ **Don't:** Mix "Back" and "Next" layouts inconsistently within the same navigation context
+✅ **Do:** Use "Previous" layout consistently for returning to previous pages or steps in a flow  
+❌ **Don't:** Mix "Previous" and "Next" layouts inconsistently within the same navigation context

@@ -13,7 +13,7 @@ It combines standard button behaviors with AI-specific visual attributes to clea
 
 ---
 
-## Sizes
+## Size
 
 **`Default`** This is the default size of the component.
 This size is used for the vast majority of applications.
