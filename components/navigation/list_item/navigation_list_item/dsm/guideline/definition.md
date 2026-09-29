@@ -1,0 +1,2 @@
+A navigation list item is an interactive horizontal row that takes users to another internal or external destination when activated.
+It is intended for structured lists where users need to scan and access related destinations quickly. The entire item acts as a single navigation target and supports the required hover, pressed and keyboard focus states.
