@@ -6,10 +6,10 @@ The following types reuse the properties and guidance documented under Leading c
 • Flag
 • Slot
 
-Their meaning and nested properties remain the same. Only their position within the item changes.
+Their meaning and nested properties remain the same. Only their position within the card changes.
 
-⚠️ All trailing content remains part of the same navigation target and must not receive independent focus or activation.
-⚠️ Do not use the same container type in both the leading and trailing positions within the same item. If a type is used as leading content, choose a different trailing type or disable the trailing container.
+⚠️ All Trailing content remains part of the same navigation card and must not receive independent focus or activation.
+⚠️ Do not use the same container type in both the Leading and Trailing positions within the same card. If a type is used as Leading content, choose a different Trailing type or disable the Trailing container.
 
 **`Text`** Use Text to display a short value or secondary piece of information associated with the navigation destination.
 
@@ -19,13 +19,13 @@ Their meaning and nested properties remain the same. Only their position within 
 
 **`Label`** Use Label for standard secondary information that should remain clearly readable without drawing more attention than the primary label.
 
-**`Label muted`** Use Label muted for low-priority metadata that supports the item but is not essential to its immediate understanding.
+**`Label muted`** Use Label muted for low-priority metadata that supports the card but is not essential to its immediate understanding.
 
-**`Label strong`** Use Label strong when the trailing value requires additional visual emphasis, for example when users need to compare important values across a navigation list.
+**`Label strong`** Use Label strong when the trailing value requires additional visual emphasis, for example when users need to compare important values across a collection of navigation cards.
 
 **`Label + Extra label`** Use Label + Extra label when a value requires a short qualifier, unit or supporting label.
 
-**`Badge`** Use a Badge to communicate a compact status or notification associated with the item. A badge should contain secondary information and must not replace the primary label or description.
+**`Badge`** Use a Badge to communicate a compact status or notification associated with the card’s destination. A Badge should contain secondary information and must not replace the primary Label or Description.
 
 **Type**
 
@@ -33,18 +33,17 @@ Their meaning and nested properties remain the same. Only their position within 
 
 **`Badge count`** Use Badge count to display a short numerical quantity, such as unread items, notifications or occurrences associated with the destination.
 
-⚠️ The count must have a clear relationship with the primary item. Users should not need to guess what is being counted.
-⚠️ The complete meaning should be available through visible or accessible text, for example “2 unread messages”, rather than an isolated “2”.
+⚠️ The count must have a clear relationship with the card’s primary subject. Users should not need to guess what is being counted.
 
-**Status**
-The Status property defines the semantic colour and meaning of the badge.
+**`Status`** The Status property defines the semantic colour and meaning of the badge.
+
 ⚠️ Colour must not be the only way the meaning is communicated. Provide an equivalent accessible description.
 
 **`Not functional`**
 
 **`Neutral`** Used for general labels without specific emphasis.
 
-**`Accent`** Use to highlight branded, selected or noteworthy information that does not correspond to another semantic status. Do not use Accent solely to make an item more visually prominent.
+**`Accent`** Use to highlight branded, selected or noteworthy information that does not correspond to another semantic status. Do not use Accent solely to make a card more visually prominent.
 
 **`Functional`**
 
@@ -59,19 +58,19 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 **Badge size**
 
-**`XSmall`** Use for very compact badge with small list items or dense layouts.
+**`XSmall`** Use for a very compact Badge within Small cards or dense card layouts.
 
-**`Small`** Use for standard compact notification badge.
+**`Small`** Use for a standard compact notification Badge.
 
-**`Medium`** Use when the badge requires stronger visibility or accompanies a larger item.
+**`Medium`** Use when the Badge requires stronger visibility or accompanies a larger card.
 
-**`Large`** Use only in spacious layouts where the badge is a significant secondary element.
+**`Large`** Use only in spacious layouts where the Badge is a significant secondary element.
 
 **Badge count size**
 
-**`Medium`** Use Medium for standard or compact list items.
+**`Medium`** Use Medium for standard or compact cards.
 
-**`Large`** Use Large when the list item uses larger dimensions or when a larger badge is required to remain visually balanced with the surrounding content.
+**`Large`** Use Large when the card uses larger dimensions or when a larger Badge is required to remain visually balanced with the surrounding content.
 
 **State**
 
@@ -79,11 +78,11 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 **`Disabled`** Use when the status represented by the Badge is inactive, unavailable or no longer applicable.
 
-The Badge state does not control whether the Navigation list item itself can be activated. Use the main item’s State property when the navigation destination must be disabled.
+The Badge state does not control whether the Navigation card item itself can be activated. Use the card’s main State property when the navigation destination must be disabled.
 
 ⚠️ Do not use Disabled merely to reduce the visual emphasis of the Badge.
 
-**`Tag`** Use a Tag to communicate a category, attribute, classification or compact status associated with the navigation destination.
+**`Tag`** Use a Tag to communicate a category, attribute, classification or compact status associated with the card’s navigation destination.
 
 **Appearance**
 
@@ -120,9 +119,9 @@ Do not use Accent solely to attract attention to the destination.
 
 **Size**
 
-**`Small`** Use Small as the standard and recommended tag size within the list item. It keeps the tag visually secondary, preserves space for the main content and works well in compact or information-dense lists.
+**`Small`** Use Small as the standard and recommended Tag size within the card. It keeps the Tag visually secondary, preserves space for the main content and works well in compact or information-dense card layouts.
 
-**`Default`** Use Default when the list item uses a larger layout or when the tag must align with other Default-size tags in the same interface.
+**`Default`** Use Default when the card uses a larger layout or when the Tag must align with other Default-size Tags in the same interface.
 
 **State**
 
@@ -131,7 +130,8 @@ Do not use Accent solely to attract attention to the destination.
 **`Loading`** A state where the tag shows a loader together with text.
 
 **`Disabled`** A non-active state used when the information represented by the Tag is unavailable or no longer applicable.
-⚠️ The Tag state does not disable the Navigation list item. Use the main item’s Disabled state when the destination itself is unavailable.
+
+⚠️ The Tag state does not disable the Navigation card item. Use the card’s main Disabled state when the destination itself is unavailable.
 
 **`Skeleton`** A placeholder state shown before the actual data is loaded.
 

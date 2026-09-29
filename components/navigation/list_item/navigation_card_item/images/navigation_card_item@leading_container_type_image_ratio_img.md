@@ -1,0 +1,1 @@
+![navigation_card_item@leading_container_type_image_ratio_img](./navigation_card_item@leading_container_type_image_ratio_img.png)

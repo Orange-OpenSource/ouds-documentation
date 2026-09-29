@@ -412,7 +412,7 @@ The Badge state does not control whether the Navigation list item itself can be 
 
 **`Neutral`** Use Neutral for general categories, attributes or metadata without a specific semantic meaning.
 
-**`Accent`** se Accent for branded or noteworthy information that does not correspond to a functional status.
+**`Accent`** Use Accent for branded or noteworthy information that does not correspond to a functional status.
 Do not use Accent solely to attract attention to the destination.
 
 **`Functional`**

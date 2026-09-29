@@ -1,0 +1,1 @@
+A navigation card item is a clickable card that leads users to one page or view, giving a destination more visual weight than a list row.

@@ -1,0 +1,1 @@
+![navigation_card_item@multiline_and_responsiveness_img](./navigation_card_item@multiline_and_responsiveness_img.png)
