@@ -1,0 +1,1 @@
+![static_list_item@multiline_and_responsiveness_img](./static_list_item@multiline_and_responsiveness_img.png)
