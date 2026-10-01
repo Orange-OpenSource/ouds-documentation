@@ -1,0 +1,3 @@
+**`Top`** Use Top alignment when the toast contains multiple lines of content, such as a label and a description. Aligning actions and leading container to the top keeps interactive elements visually associated with the primary message and improves readability.
+
+**`Center`** Use Center alignment when the toast contains short or single-line content. Center alignment creates better visual balance and keeps the notification compact.

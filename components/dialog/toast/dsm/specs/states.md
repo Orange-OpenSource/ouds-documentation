@@ -1,0 +1,3 @@
+**`Enabled`** Use the Enabled state to display a standard toast once the notification content is ready. The toast presents feedback immediately and allows users to interact with optional actions or dismiss it.
+
+**`Loading`** Use the Loading state when an action or background process is still in progress. Replace the leading icon with a progress indicator to communicate that the operation has not yet completed. Once finished, update the toast to the enabled state with the final result.
