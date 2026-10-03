@@ -1,4 +1,4 @@
-Breadcrumbs can be categorized into different levels based on their complexity and hierarchy.
+Breadcrumbs can be categorized into different levels based on their complexity and hierarchy. The current page is never interactive.
 
 **`N+1`** The first level beyond the home page.
 

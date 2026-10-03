@@ -1,0 +1,1 @@
+![static_card_item@trailing_container_type_badge_state_img](./static_card_item@trailing_container_type_badge_state_img.png)

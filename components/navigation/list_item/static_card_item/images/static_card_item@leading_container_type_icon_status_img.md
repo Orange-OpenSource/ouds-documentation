@@ -1,0 +1,1 @@
+![static_card_item@leading_container_type_icon_status_img](./static_card_item@leading_container_type_icon_status_img.png)

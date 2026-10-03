@@ -1,0 +1,1 @@
+A static card item is a read-only card that groups related information about one subject, with optional visuals, values and statuses.

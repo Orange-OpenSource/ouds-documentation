@@ -1,0 +1,1 @@
+A navigation list item is a clickable row that leads users to another page or view, with optional visuals and supporting details.

@@ -1,0 +1,1315 @@
+---
+title: OUDS Core Tokens
+description: Raw design tokens for the OUDS design system — Core-OUDS set, v1.10.0. These are primitive values that semantic and component tokens build upon.
+version: 1.10.0
+source: Core tokens.Raw value.tokens.json
+---
+
+import { Callout } from '@/components/callout'
+
+# OUDS Core Tokens
+
+Core tokens are the **foundational layer** of the OUDS design system. They define the raw, resolved values — exact hex codes, pixel sizes, font names — that all semantic tokens reference. You should generally consume these indirectly through semantic tokens (`color.action.primary`, `space.inset.md`, etc.). Use core tokens directly only when no semantic token exists, or when building the token layer itself.
+
+> **Convention** — CSS custom properties follow the pattern `--core-ouds-{category}-{subcategory}-{step}`. For example, `core.ouds.color.functional.gray.light.80` becomes `--core-ouds-color-functional-gray-light-80`.
+
+---
+
+## Typography
+
+The typography tokens form a complete type scale covering font families, sizes, weights, line heights, and letter spacing. The numeric suffixes on scale tokens are **relative scale identifiers**, not pixel values — larger numbers always mean larger/heavier. The pixel value is the resolved output.
+
+---
+
+### Font Families
+
+Two sub-groups are provided: system UI fonts and monospace fonts. Platform-appropriate fallbacks ensure consistency across iOS, Android, and web.
+
+#### System fonts
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.font.family.system.arial` | `Arial` | `--core-ouds-font-family-system-arial` |
+| `core.ouds.font.family.system.helvetica` | `Helvetica` | `--core-ouds-font-family-system-helvetica` |
+| `core.ouds.font.family.system.noto-sans` | `Noto Sans` | `--core-ouds-font-family-system-noto-sans` |
+| `core.ouds.font.family.system.sf-pro` | `SF Pro` | `--core-ouds-font-family-system-sf-pro` |
+| `core.ouds.font.family.system.roboto` | `Roboto` | `--core-ouds-font-family-system-roboto` |
+
+**Name:** `core.ouds.font.family.system.sf-pro`
+**Value:** `SF Pro`
+**Description:** Apple's system typeface, used for iOS and macOS surfaces. Resolves to the system font stack on Apple platforms.
+**Usage:** Apply via the semantic token for body text on Apple platforms; do not hard-code platform checks in component styles.
+
+```css
+font-family: var(--core-ouds-font-family-system-sf-pro);
+```
+
+✅ **Do:** Let the semantic `font.family.body` token select the correct platform font.
+❌ **Don't:** Assign `SF Pro` directly on Android components — it renders as a fallback with unpredictable metrics.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.font.family.system.roboto`
+**Value:** `Roboto`
+**Description:** Google's system typeface, used for Android surfaces.
+**Usage:** Referenced by semantic body/label tokens on Android.
+
+```css
+font-family: var(--core-ouds-font-family-system-roboto);
+```
+
+✅ **Do:** Use via the semantic font-family token so the design system picks the right face per platform.
+❌ **Don't:** Pair Roboto with SF Pro metrics — the two have different cap heights and need different line-height values.
+**Aliases:** None.
+
+---
+
+#### Monospace fonts
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.font.family.monospace.menlo` | `Menlo` | `--core-ouds-font-family-monospace-menlo` |
+| `core.ouds.font.family.monospace.monaco` | `Monaco` | `--core-ouds-font-family-monospace-monaco` |
+| `core.ouds.font.family.monospace.courier-new` | `Courier New` | `--core-ouds-font-family-monospace-courier-new` |
+| `core.ouds.font.family.monospace.sf-mono` | `SF Mono` | `--core-ouds-font-family-monospace-sf-mono` |
+
+**Name:** `core.ouds.font.family.monospace.sf-mono`
+**Value:** `SF Mono`
+**Description:** Apple's monospace typeface, used for code blocks and inline code on Apple platforms.
+**Usage:** Use via semantic `font.family.code`.
+
+```css
+font-family: var(--core-ouds-font-family-monospace-sf-mono);
+```
+
+✅ **Do:** Use for all code/pre elements via the semantic code font token.
+❌ **Don't:** Apply monospace fonts to body copy or headings — it harms readability at paragraph scale.
+**Aliases:** None.
+
+---
+
+### Font Sizes
+
+The size scale uses a numeric suffix that approximates the pixel value × 10 (e.g., `150` → 12px, `250` → 16px). The scale is non-linear to provide finer granularity at small sizes and coarser steps at display sizes.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.font.size.150` | `12px` | `--core-ouds-font-size-150` |
+| `core.ouds.font.size.175` | `13px` | `--core-ouds-font-size-175` |
+| `core.ouds.font.size.200` | `14px` | `--core-ouds-font-size-200` |
+| `core.ouds.font.size.250` | `16px` | `--core-ouds-font-size-250` |
+| `core.ouds.font.size.300` | `18px` | `--core-ouds-font-size-300` |
+| `core.ouds.font.size.350` | `20px` | `--core-ouds-font-size-350` |
+| `core.ouds.font.size.450` | `24px` | `--core-ouds-font-size-450` |
+| `core.ouds.font.size.550` | `28px` | `--core-ouds-font-size-550` |
+| `core.ouds.font.size.650` | `32px` | `--core-ouds-font-size-650` |
+| `core.ouds.font.size.750` | `36px` | `--core-ouds-font-size-750` |
+| `core.ouds.font.size.850` | `40px` | `--core-ouds-font-size-850` |
+| `core.ouds.font.size.950` | `44px` | `--core-ouds-font-size-950` |
+| `core.ouds.font.size.1050` | `48px` | `--core-ouds-font-size-1050` |
+| `core.ouds.font.size.1150` | `52px` | `--core-ouds-font-size-1150` |
+| `core.ouds.font.size.1250` | `56px` | `--core-ouds-font-size-1250` |
+| `core.ouds.font.size.1450` | `64px` | `--core-ouds-font-size-1450` |
+| `core.ouds.font.size.1850` | `72px` | `--core-ouds-font-size-1850` |
+
+**Name:** `core.ouds.font.size.250`
+**Value:** `16px`
+**Description:** Base body font size. 16px is the browser default and the anchor point for the type scale.
+**Usage:** Referenced by semantic tokens for body, paragraph, and default UI text.
+
+```css
+font-size: var(--core-ouds-font-size-250);
+```
+
+✅ **Do:** Use this as the base when establishing a modular scale for a new surface.
+❌ **Don't:** Use raw pixel values in component styles — reference the token so that a future rem-based conversion stays in one place.
+**Aliases:** None. Semantic alias: typically `font.size.body-md` or similar.
+
+---
+
+**Name:** `core.ouds.font.size.1850`
+**Value:** `72px`
+**Description:** Maximum display size. Reserved for hero headings and large-format print/screen contexts.
+**Usage:** Use only via a semantic display heading token; verify line-height pairing.
+
+```css
+font-size: var(--core-ouds-font-size-1850);
+```
+
+✅ **Do:** Pair with `core.ouds.font.line-height.1850` (72px) for tight display leading.
+❌ **Don't:** Use this size for body text or sub-headings — it breaks visual hierarchy.
+**Aliases:** None.
+
+---
+
+### Font Weights
+
+Weight tokens map a numeric scale (100–950) to named CSS font-weight keywords. Not all weights are available in every typeface; confirm availability in the active font before using.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.font.weight.100` | `Thin` | `--core-ouds-font-weight-100` |
+| `core.ouds.font.weight.200` | `ExtraLight` | `--core-ouds-font-weight-200` |
+| `core.ouds.font.weight.300` | `Light` | `--core-ouds-font-weight-300` |
+| `core.ouds.font.weight.400` | `Regular` | `--core-ouds-font-weight-400` |
+| `core.ouds.font.weight.500` | `Medium` | `--core-ouds-font-weight-500` |
+| `core.ouds.font.weight.600` | `SemiBold` | `--core-ouds-font-weight-600` |
+| `core.ouds.font.weight.700` | `Bold` | `--core-ouds-font-weight-700` |
+| `core.ouds.font.weight.800` | `ExtraBold` | `--core-ouds-font-weight-800` |
+| `core.ouds.font.weight.900` | `Black` | `--core-ouds-font-weight-900` |
+| `core.ouds.font.weight.950` | `ExtraBlack` | `--core-ouds-font-weight-950` |
+
+**Name:** `core.ouds.font.weight.400`
+**Value:** `Regular`
+**Description:** Default reading weight for body text. Maps to CSS `font-weight: 400`.
+**Usage:** The baseline weight for all paragraph-level content.
+
+```css
+font-weight: var(--core-ouds-font-weight-400);
+```
+
+✅ **Do:** Use Regular for body copy and form inputs to ensure comfortable reading at small sizes.
+❌ **Don't:** Apply Thin (100) or ExtraLight (200) to body text — these weights lose legibility below 18px, especially on low-contrast screens.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.font.weight.700`
+**Value:** `Bold`
+**Description:** Standard emphasis weight. Use for headings, labels, and interactive states that need visual prominence.
+**Usage:** Referenced by semantic heading and label tokens.
+
+```css
+font-weight: var(--core-ouds-font-weight-700);
+```
+
+✅ **Do:** Apply to headings (H1–H4) and call-to-action labels.
+❌ **Don't:** Mix Bold and SemiBold (600) within the same typographic hierarchy — pick one for sub-headings and stick to it.
+**Aliases:** None.
+
+---
+
+### Line Heights
+
+Line-height tokens are absolute pixel values matched to specific font sizes. Each line-height value is designed to produce correct optical rhythm when paired with its corresponding size step.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.font.line-height.250` | `16px` | `--core-ouds-font-line-height-250` |
+| `core.ouds.font.line-height.350` | `20px` | `--core-ouds-font-line-height-350` |
+| `core.ouds.font.line-height.450` | `24px` | `--core-ouds-font-line-height-450` |
+| `core.ouds.font.line-height.550` | `28px` | `--core-ouds-font-line-height-550` |
+| `core.ouds.font.line-height.650` | `32px` | `--core-ouds-font-line-height-650` |
+| `core.ouds.font.line-height.750` | `36px` | `--core-ouds-font-line-height-750` |
+| `core.ouds.font.line-height.850` | `40px` | `--core-ouds-font-line-height-850` |
+| `core.ouds.font.line-height.950` | `44px` | `--core-ouds-font-line-height-950` |
+| `core.ouds.font.line-height.1050` | `48px` | `--core-ouds-font-line-height-1050` |
+| `core.ouds.font.line-height.1150` | `52px` | `--core-ouds-font-line-height-1150` |
+| `core.ouds.font.line-height.1250` | `56px` | `--core-ouds-font-line-height-1250` |
+| `core.ouds.font.line-height.1350` | `60px` | `--core-ouds-font-line-height-1350` |
+| `core.ouds.font.line-height.1450` | `64px` | `--core-ouds-font-line-height-1450` |
+| `core.ouds.font.line-height.1850` | `72px` | `--core-ouds-font-line-height-1850` |
+| `core.ouds.font.line-height.2050` | `80px` | `--core-ouds-font-line-height-2050` |
+
+**Name:** `core.ouds.font.line-height.450`
+**Value:** `24px`
+**Description:** Line height paired with the 16px body size (`font.size.250`). Produces a 1.5 ratio — the standard for comfortable paragraph reading.
+**Usage:** Used by semantic body text tokens.
+
+```css
+line-height: var(--core-ouds-font-line-height-450);
+```
+
+✅ **Do:** Pair this line height with `font.size.250` (16px) for body paragraphs.
+❌ **Don't:** Use body line heights on single-line labels or buttons — tighter leading looks better in UI controls.
+**Aliases:** None.
+
+---
+
+### Letter Spacing
+
+Letter-spacing tokens apply optical compensation across the scale: small sizes receive a slight positive tracking to improve readability, while large display sizes use negative values to tighten character pairs.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.font.letter-spacing.150` | `0.18px` | `--core-ouds-font-letter-spacing-150` |
+| `core.ouds.font.letter-spacing.175` | `0.19px` | `--core-ouds-font-letter-spacing-175` |
+| `core.ouds.font.letter-spacing.200` | `0.17px` | `--core-ouds-font-letter-spacing-200` |
+| `core.ouds.font.letter-spacing.250` | `0.2px` | `--core-ouds-font-letter-spacing-250` |
+| `core.ouds.font.letter-spacing.300` | `0.18px` | `--core-ouds-font-letter-spacing-300` |
+| `core.ouds.font.letter-spacing.350` | `0px` | `--core-ouds-font-letter-spacing-350` |
+| `core.ouds.font.letter-spacing.450` | `-0.12px` | `--core-ouds-font-letter-spacing-450` |
+| `core.ouds.font.letter-spacing.550` | `-0.28px` | `--core-ouds-font-letter-spacing-550` |
+| `core.ouds.font.letter-spacing.650` | `-0.32px` | `--core-ouds-font-letter-spacing-650` |
+| `core.ouds.font.letter-spacing.750` | `-0.36px` | `--core-ouds-font-letter-spacing-750` |
+| `core.ouds.font.letter-spacing.850` | `-0.4px` | `--core-ouds-font-letter-spacing-850` |
+| `core.ouds.font.letter-spacing.950` | `-0.55px` | `--core-ouds-font-letter-spacing-950` |
+| `core.ouds.font.letter-spacing.1050` | `-0.6px` | `--core-ouds-font-letter-spacing-1050` |
+| `core.ouds.font.letter-spacing.1150` | `-0.65px` | `--core-ouds-font-letter-spacing-1150` |
+| `core.ouds.font.letter-spacing.1250` | `-0.7px` | `--core-ouds-font-letter-spacing-1250` |
+| `core.ouds.font.letter-spacing.1450` | `-0.96px` | `--core-ouds-font-letter-spacing-1450` |
+| `core.ouds.font.letter-spacing.1850` | `-1.08px` | `--core-ouds-font-letter-spacing-1850` |
+
+**Name:** `core.ouds.font.letter-spacing.250`
+**Value:** `0.2px`
+**Description:** Slight positive tracking applied at the base 16px body size. Improves readability at small sizes by opening up character spacing.
+**Usage:** Applied automatically via semantic body text tokens.
+
+```css
+letter-spacing: var(--core-ouds-font-letter-spacing-250);
+```
+
+✅ **Do:** Trust the semantic token to apply the correct tracking — sizes and their letter-spacing values are always paired.
+❌ **Don't:** Manually override letter-spacing on individual text elements — it breaks the optical consistency of the scale.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.font.letter-spacing.1850`
+**Value:** `-1.08px`
+**Description:** Maximum negative tracking for 72px display type. Compensates for optical loosening that occurs at very large sizes.
+**Usage:** Applied only via semantic display heading tokens at the largest size step.
+
+```css
+letter-spacing: var(--core-ouds-font-letter-spacing-1850);
+```
+
+✅ **Do:** Pair this with `font.size.1850` (72px) for display headings.
+❌ **Don't:** Apply negative tracking to body text or small UI labels — it makes them harder to read.
+**Aliases:** None.
+
+---
+
+## Color
+
+The color palette is split into two sub-groups: **functional** colors (fully opaque, named by hue) and **opacity** colors (semi-transparent variants for layering, overlays, and scrim effects). The numeric suffixes on functional palettes represent luminance steps within the hue — lower numbers are lighter, higher numbers are darker.
+
+---
+
+### Functional Colors
+
+#### White & Black
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.white` | `#ffffff` | `--core-ouds-color-functional-white` |
+| `core.ouds.color.functional.black` | `#000000` | `--core-ouds-color-functional-black` |
+
+**Name:** `core.ouds.color.functional.white`
+**Value:** `#ffffff`
+**Description:** Pure white. The baseline light-surface color and a key contrast anchor for dark text.
+**Usage:** Referenced by semantic background and surface tokens on light themes.
+
+```css
+background-color: var(--core-ouds-color-functional-white);
+```
+
+✅ **Do:** Use as the source value for semantic light-theme surface tokens.
+❌ **Don't:** Use this core token directly in components — prefer semantic tokens that adapt to light/dark contexts.
+**Aliases:** None.
+
+---
+
+#### Gray — Light (80–960)
+
+A 12-step neutral ramp from near-white to mid-gray. Used for backgrounds, borders, dividers, and disabled states on light surfaces.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.gray.light.80` | `#f4f4f4` | `--core-ouds-color-functional-gray-light-80` |
+| `core.ouds.color.functional.gray.light.160` | `#eeeeee` | `--core-ouds-color-functional-gray-light-160` |
+| `core.ouds.color.functional.gray.light.240` | `#e0e0e0` | `--core-ouds-color-functional-gray-light-240` |
+| `core.ouds.color.functional.gray.light.320` | `#d6d6d6` | `--core-ouds-color-functional-gray-light-320` |
+| `core.ouds.color.functional.gray.light.400` | `#cccccc` | `--core-ouds-color-functional-gray-light-400` |
+| `core.ouds.color.functional.gray.light.480` | `#c2c2c2` | `--core-ouds-color-functional-gray-light-480` |
+| `core.ouds.color.functional.gray.light.560` | `#bbbbbb` | `--core-ouds-color-functional-gray-light-560` |
+| `core.ouds.color.functional.gray.light.640` | `#adadad` | `--core-ouds-color-functional-gray-light-640` |
+| `core.ouds.color.functional.gray.light.720` | `#a3a3a3` | `--core-ouds-color-functional-gray-light-720` |
+| `core.ouds.color.functional.gray.light.800` | `#999999` | `--core-ouds-color-functional-gray-light-800` |
+| `core.ouds.color.functional.gray.light.880` | `#8f8f8f` | `--core-ouds-color-functional-gray-light-880` |
+| `core.ouds.color.functional.gray.light.960` | `#858585` | `--core-ouds-color-functional-gray-light-960` |
+
+**Name:** `core.ouds.color.functional.gray.light.80`
+**Value:** `#f4f4f4`
+**Description:** The lightest step in the gray ramp. Used for subtle background fills, zebra-stripe rows, and off-white containers.
+**Usage:** Referenced by semantic tokens for subdued surface backgrounds.
+
+```css
+background-color: var(--core-ouds-color-functional-gray-light-80);
+```
+
+✅ **Do:** Use for page sections or card backgrounds that need subtle contrast against a white canvas.
+❌ **Don't:** Use this as text color — it fails WCAG AA contrast requirements against white backgrounds.
+**Aliases:** None.
+
+---
+
+#### Gray — Dark (80–960)
+
+A 12-step neutral ramp from mid-gray to near-black. Used for text, icons, and strong borders.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.gray.dark.80` | `#7a7a7a` | `--core-ouds-color-functional-gray-dark-80` |
+| `core.ouds.color.functional.gray.dark.160` | `#707070` | `--core-ouds-color-functional-gray-dark-160` |
+| `core.ouds.color.functional.gray.dark.240` | `#666666` | `--core-ouds-color-functional-gray-dark-240` |
+| `core.ouds.color.functional.gray.dark.320` | `#5c5c5c` | `--core-ouds-color-functional-gray-dark-320` |
+| `core.ouds.color.functional.gray.dark.400` | `#555555` | `--core-ouds-color-functional-gray-dark-400` |
+| `core.ouds.color.functional.gray.dark.480` | `#444444` | `--core-ouds-color-functional-gray-dark-480` |
+| `core.ouds.color.functional.gray.dark.560` | `#3b3b3b` | `--core-ouds-color-functional-gray-dark-560` |
+| `core.ouds.color.functional.gray.dark.640` | `#333333` | `--core-ouds-color-functional-gray-dark-640` |
+| `core.ouds.color.functional.gray.dark.720` | `#272727` | `--core-ouds-color-functional-gray-dark-720` |
+| `core.ouds.color.functional.gray.dark.800` | `#1f1f1f` | `--core-ouds-color-functional-gray-dark-800` |
+| `core.ouds.color.functional.gray.dark.880` | `#141414` | `--core-ouds-color-functional-gray-dark-880` |
+| `core.ouds.color.functional.gray.dark.960` | `#0a0a0a` | `--core-ouds-color-functional-gray-dark-960` |
+
+**Name:** `core.ouds.color.functional.gray.dark.640`
+**Value:** `#333333`
+**Description:** Strong dark gray, commonly used for secondary text on light backgrounds. Passes WCAG AA at normal sizes on white.
+**Usage:** Referenced by semantic secondary text tokens.
+
+```css
+color: var(--core-ouds-color-functional-gray-dark-640);
+```
+
+✅ **Do:** Use for secondary labels, captions, and helper text on white or light backgrounds.
+❌ **Don't:** Use dark grays from this ramp as background colors for text — use the light ramp instead.
+**Aliases:** None.
+
+---
+
+#### Scarlet
+
+A warm red scale from pale tint (100) to deep shade (900). Used for error, destructive, and alert states.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.scarlet.100` | `#ffe5e6` | `--core-ouds-color-functional-scarlet-100` |
+| `core.ouds.color.functional.scarlet.200` | `#ffb2b3` | `--core-ouds-color-functional-scarlet-200` |
+| `core.ouds.color.functional.scarlet.300` | `#ff8081` | `--core-ouds-color-functional-scarlet-300` |
+| `core.ouds.color.functional.scarlet.400` | `#ff4d4e` | `--core-ouds-color-functional-scarlet-400` |
+| `core.ouds.color.functional.scarlet.500` | `#ff1a1b` | `--core-ouds-color-functional-scarlet-500` |
+| `core.ouds.color.functional.scarlet.600` | `#db0002` | `--core-ouds-color-functional-scarlet-600` |
+| `core.ouds.color.functional.scarlet.700` | `#b20002` | `--core-ouds-color-functional-scarlet-700` |
+| `core.ouds.color.functional.scarlet.800` | `#800001` | `--core-ouds-color-functional-scarlet-800` |
+| `core.ouds.color.functional.scarlet.900` | `#4d0001` | `--core-ouds-color-functional-scarlet-900` |
+
+**Name:** `core.ouds.color.functional.scarlet.600`
+**Value:** `#db0002`
+**Description:** The primary action-ready red. Used as the base for error and destructive semantic tokens. Achieves 4.5:1 contrast ratio against white.
+**Usage:** Referenced by semantic error/danger state tokens.
+
+```css
+color: var(--core-ouds-color-functional-scarlet-600);
+```
+
+✅ **Do:** Use via semantic error color tokens for form validation messages and destructive action labels.
+❌ **Don't:** Use scarlet as a general accent or brand color — it carries semantic meaning (danger/error) and will confuse users.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.color.functional.scarlet.100`
+**Value:** `#ffe5e6`
+**Description:** Pale scarlet tint. Used for error state background fills (e.g., input field backgrounds, alert banners) where full red would be overwhelming.
+**Usage:** Error container backgrounds, paired with `scarlet.700` or `scarlet.800` text for contrast.
+
+```css
+background-color: var(--core-ouds-color-functional-scarlet-100);
+```
+
+✅ **Do:** Use as the background for inline error alerts, pairing with a dark scarlet text token for legibility.
+❌ **Don't:** Use as a standalone color without a contrasting text token — the tint alone fails to communicate urgency.
+**Aliases:** None.
+
+---
+
+#### Sun
+
+A golden yellow scale from pale cream (100) to deep amber (900). Used for warning states and attention cues.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.sun.100` | `#fff7d6` | `--core-ouds-color-functional-sun-100` |
+| `core.ouds.color.functional.sun.200` | `#ffed99` | `--core-ouds-color-functional-sun-200` |
+| `core.ouds.color.functional.sun.300` | `#ffe270` | `--core-ouds-color-functional-sun-300` |
+| `core.ouds.color.functional.sun.400` | `#ffd73d` | `--core-ouds-color-functional-sun-400` |
+| `core.ouds.color.functional.sun.500` | `#ffd000` | `--core-ouds-color-functional-sun-500` |
+| `core.ouds.color.functional.sun.600` | `#d6aa00` | `--core-ouds-color-functional-sun-600` |
+| `core.ouds.color.functional.sun.700` | `#a38200` | `--core-ouds-color-functional-sun-700` |
+| `core.ouds.color.functional.sun.750` | `#856a00` | `--core-ouds-color-functional-sun-750` |
+| `core.ouds.color.functional.sun.800` | `#665100` | `--core-ouds-color-functional-sun-800` |
+| `core.ouds.color.functional.sun.900` | `#3d3100` | `--core-ouds-color-functional-sun-900` |
+
+**Name:** `core.ouds.color.functional.sun.500`
+**Value:** `#ffd000`
+**Description:** Pure mid-yellow. The anchor of the warning palette. Note that yellow at 500 does not meet WCAG AA contrast against white — always pair with dark text.
+**Usage:** Warning backgrounds and badge fills; always use with dark text (sun.800/900 or black).
+
+```css
+background-color: var(--core-ouds-color-functional-sun-500);
+color: var(--core-ouds-color-functional-sun-900);
+```
+
+✅ **Do:** Pair sun.500 backgrounds with sun.800 or sun.900 text to meet contrast requirements.
+❌ **Don't:** Use sun.500 as text or icon color on white — it fails WCAG AA at any size.
+**Aliases:** None.
+
+---
+
+#### Malachite
+
+A fresh green scale from near-white mint (100) to deep forest green (900). Used for success and positive feedback states.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.malachite.100` | `#edfcf0` | `--core-ouds-color-functional-malachite-100` |
+| `core.ouds.color.functional.malachite.200` | `#c1f6ca` | `--core-ouds-color-functional-malachite-200` |
+| `core.ouds.color.functional.malachite.300` | `#94f0a4` | `--core-ouds-color-functional-malachite-300` |
+| `core.ouds.color.functional.malachite.400` | `#67e97e` | `--core-ouds-color-functional-malachite-400` |
+| `core.ouds.color.functional.malachite.500` | `#3de35a` | `--core-ouds-color-functional-malachite-500` |
+| `core.ouds.color.functional.malachite.600` | `#1ecd3c` | `--core-ouds-color-functional-malachite-600` |
+| `core.ouds.color.functional.malachite.700` | `#17a02f` | `--core-ouds-color-functional-malachite-700` |
+| `core.ouds.color.functional.malachite.750` | `#138126` | `--core-ouds-color-functional-malachite-750` |
+| `core.ouds.color.functional.malachite.800` | `#0e621d` | `--core-ouds-color-functional-malachite-800` |
+| `core.ouds.color.functional.malachite.900` | `#0a4715` | `--core-ouds-color-functional-malachite-900` |
+
+**Name:** `core.ouds.color.functional.malachite.700`
+**Value:** `#17a02f`
+**Description:** AA-compliant green for success text and icons on white backgrounds. Step 700 is the minimum weight that reliably passes 4.5:1 contrast.
+**Usage:** Referenced by semantic success/positive text and icon tokens.
+
+```css
+color: var(--core-ouds-color-functional-malachite-700);
+```
+
+✅ **Do:** Use step 700 or darker for success text labels and check icons on light backgrounds.
+❌ **Don't:** Use the lighter steps (100–500) for text color — they fail WCAG AA contrast on white.
+**Aliases:** None.
+
+---
+
+#### Dodger Blue
+
+A clear blue scale from near-white (100) to deep navy (900). Used for informational and interactive (link/action) semantic tokens.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.dodgerBlue.100` | `#f0faff` | `--core-ouds-color-functional-dodgerBlue-100` |
+| `core.ouds.color.functional.dodgerBlue.200` | `#bde7ff` | `--core-ouds-color-functional-dodgerBlue-200` |
+| `core.ouds.color.functional.dodgerBlue.300` | `#8ad5ff` | `--core-ouds-color-functional-dodgerBlue-300` |
+| `core.ouds.color.functional.dodgerBlue.400` | `#57c3ff` | `--core-ouds-color-functional-dodgerBlue-400` |
+| `core.ouds.color.functional.dodgerBlue.500` | `#26b2ff` | `--core-ouds-color-functional-dodgerBlue-500` |
+| `core.ouds.color.functional.dodgerBlue.600` | `#009bf0` | `--core-ouds-color-functional-dodgerBlue-600` |
+| `core.ouds.color.functional.dodgerBlue.700` | `#0073b2` | `--core-ouds-color-functional-dodgerBlue-700` |
+| `core.ouds.color.functional.dodgerBlue.800` | `#00598a` | `--core-ouds-color-functional-dodgerBlue-800` |
+| `core.ouds.color.functional.dodgerBlue.900` | `#003857` | `--core-ouds-color-functional-dodgerBlue-900` |
+
+**Name:** `core.ouds.color.functional.dodgerBlue.600`
+**Value:** `#009bf0`
+**Description:** Vivid interactive blue for links and primary action affordances. Meets WCAG AA for large text on white; use 700 for small text links.
+**Usage:** Referenced by semantic link and informational color tokens.
+
+```css
+color: var(--core-ouds-color-functional-dodgerBlue-600);
+```
+
+✅ **Do:** Use step 700 (`#0073b2`) for small body-size hyperlinks to ensure WCAG AA compliance.
+❌ **Don't:** Use the vivid 500–600 range for informational text in dense layouts — it can visually compete with primary CTAs.
+**Aliases:** None.
+
+---
+
+#### Amethyst
+
+A two-step purple swatch. Used sparingly for accent or brand differentiation purposes.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.functional.amethyst.400` | `#a885d8` | `--core-ouds-color-functional-amethyst-400` |
+| `core.ouds.color.functional.amethyst.600` | `#5b2f98` | `--core-ouds-color-functional-amethyst-600` |
+
+**Name:** `core.ouds.color.functional.amethyst.600`
+**Value:** `#5b2f98`
+**Description:** Deep purple, AA-compliant on white backgrounds. Used for accent or brand elements requiring purple.
+**Usage:** Use via semantic accent tokens where a purple distinction is intentional.
+
+```css
+color: var(--core-ouds-color-functional-amethyst-600);
+```
+
+✅ **Do:** Use for clearly differentiated accent elements (e.g., premium badges, brand tags).
+❌ **Don't:** Combine amethyst with other status colors (scarlet, sun, malachite, dodgerBlue) on the same element — the semantic signals conflict.
+**Aliases:** None.
+
+---
+
+### Opacity Colors
+
+Semi-transparent variants of key palette colors, encoded as 8-digit hex values. Used for overlays, hover states, focus rings, and layered surface fills. The numeric suffix represents the alpha channel step (0 = transparent, 960 = near-opaque). These use the same 0–960 scale as the standalone opacity tokens but are pre-composed with a specific color.
+
+#### White opacity (0–960)
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.opacity.white.0` | `#ffffff00` | `--core-ouds-color-opacity-white-0` |
+| `core.ouds.color.opacity.white.40` | `#ffffff0a` | `--core-ouds-color-opacity-white-40` |
+| `core.ouds.color.opacity.white.80` | `#ffffff14` | `--core-ouds-color-opacity-white-80` |
+| `core.ouds.color.opacity.white.120` | `#ffffff1f` | `--core-ouds-color-opacity-white-120` |
+| `core.ouds.color.opacity.white.160` | `#ffffff29` | `--core-ouds-color-opacity-white-160` |
+| `core.ouds.color.opacity.white.200` | `#ffffff33` | `--core-ouds-color-opacity-white-200` |
+| `core.ouds.color.opacity.white.240` | `#ffffff3d` | `--core-ouds-color-opacity-white-240` |
+| `core.ouds.color.opacity.white.280` | `#ffffff47` | `--core-ouds-color-opacity-white-280` |
+| `core.ouds.color.opacity.white.320` | `#ffffff52` | `--core-ouds-color-opacity-white-320` |
+| `core.ouds.color.opacity.white.360` | `#ffffff5c` | `--core-ouds-color-opacity-white-360` |
+| `core.ouds.color.opacity.white.400` | `#ffffff66` | `--core-ouds-color-opacity-white-400` |
+| `core.ouds.color.opacity.white.440` | `#ffffff70` | `--core-ouds-color-opacity-white-440` |
+| `core.ouds.color.opacity.white.480` | `#ffffff7a` | `--core-ouds-color-opacity-white-480` |
+| `core.ouds.color.opacity.white.520` | `#ffffff85` | `--core-ouds-color-opacity-white-520` |
+| `core.ouds.color.opacity.white.560` | `#ffffff8f` | `--core-ouds-color-opacity-white-560` |
+| `core.ouds.color.opacity.white.600` | `#ffffff99` | `--core-ouds-color-opacity-white-600` |
+| `core.ouds.color.opacity.white.640` | `#ffffffa3` | `--core-ouds-color-opacity-white-640` |
+| `core.ouds.color.opacity.white.680` | `#ffffffad` | `--core-ouds-color-opacity-white-680` |
+| `core.ouds.color.opacity.white.720` | `#ffffffb8` | `--core-ouds-color-opacity-white-720` |
+| `core.ouds.color.opacity.white.760` | `#ffffffc2` | `--core-ouds-color-opacity-white-760` |
+| `core.ouds.color.opacity.white.800` | `#ffffffcc` | `--core-ouds-color-opacity-white-800` |
+| `core.ouds.color.opacity.white.840` | `#ffffffd6` | `--core-ouds-color-opacity-white-840` |
+| `core.ouds.color.opacity.white.880` | `#ffffffe0` | `--core-ouds-color-opacity-white-880` |
+| `core.ouds.color.opacity.white.920` | `#ffffffeb` | `--core-ouds-color-opacity-white-920` |
+| `core.ouds.color.opacity.white.960` | `#fffffff5` | `--core-ouds-color-opacity-white-960` |
+
+**Name:** `core.ouds.color.opacity.white.800`
+**Value:** `#ffffffcc` (white at ~80% opacity)
+**Description:** Strong white overlay used for modal backdrops, frosted glass panels, and content-over-image scrim effects on dark surfaces.
+**Usage:** Apply as a background on elements layered above photographic or dark backgrounds.
+
+```css
+background-color: var(--core-ouds-color-opacity-white-800);
+backdrop-filter: blur(8px);
+```
+
+✅ **Do:** Use for glassmorphism panels or frosted navigation bars on dark imagery.
+❌ **Don't:** Use semi-transparent whites on light backgrounds — the result is nearly invisible and creates accessibility issues.
+**Aliases:** None.
+
+---
+
+#### Black opacity (0–960)
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.color.opacity.black.0` | `#00000000` | `--core-ouds-color-opacity-black-0` |
+| `core.ouds.color.opacity.black.40` | `#0000000a` | `--core-ouds-color-opacity-black-40` |
+| `core.ouds.color.opacity.black.80` | `#00000014` | `--core-ouds-color-opacity-black-80` |
+| `core.ouds.color.opacity.black.120` | `#0000001f` | `--core-ouds-color-opacity-black-120` |
+| `core.ouds.color.opacity.black.160` | `#00000029` | `--core-ouds-color-opacity-black-160` |
+| `core.ouds.color.opacity.black.200` | `#00000033` | `--core-ouds-color-opacity-black-200` |
+| `core.ouds.color.opacity.black.240` | `#0000003d` | `--core-ouds-color-opacity-black-240` |
+| `core.ouds.color.opacity.black.280` | `#00000047` | `--core-ouds-color-opacity-black-280` |
+| `core.ouds.color.opacity.black.320` | `#00000052` | `--core-ouds-color-opacity-black-320` |
+| `core.ouds.color.opacity.black.360` | `#0000005c` | `--core-ouds-color-opacity-black-360` |
+| `core.ouds.color.opacity.black.400` | `#00000066` | `--core-ouds-color-opacity-black-400` |
+| `core.ouds.color.opacity.black.440` | `#00000070` | `--core-ouds-color-opacity-black-440` |
+| `core.ouds.color.opacity.black.480` | `#0000007a` | `--core-ouds-color-opacity-black-480` |
+| `core.ouds.color.opacity.black.520` | `#00000085` | `--core-ouds-color-opacity-black-520` |
+| `core.ouds.color.opacity.black.560` | `#0000008f` | `--core-ouds-color-opacity-black-560` |
+| `core.ouds.color.opacity.black.600` | `#00000099` | `--core-ouds-color-opacity-black-600` |
+| `core.ouds.color.opacity.black.640` | `#000000a3` | `--core-ouds-color-opacity-black-640` |
+| `core.ouds.color.opacity.black.680` | `#000000ad` | `--core-ouds-color-opacity-black-680` |
+| `core.ouds.color.opacity.black.720` | `#000000b8` | `--core-ouds-color-opacity-black-720` |
+| `core.ouds.color.opacity.black.760` | `#000000c2` | `--core-ouds-color-opacity-black-760` |
+| `core.ouds.color.opacity.black.800` | `#000000cc` | `--core-ouds-color-opacity-black-800` |
+| `core.ouds.color.opacity.black.840` | `#000000d6` | `--core-ouds-color-opacity-black-840` |
+| `core.ouds.color.opacity.black.880` | `#000000e0` | `--core-ouds-color-opacity-black-880` |
+| `core.ouds.color.opacity.black.920` | `#000000eb` | `--core-ouds-color-opacity-black-920` |
+| `core.ouds.color.opacity.black.960` | `#000000f5` | `--core-ouds-color-opacity-black-960` |
+
+**Name:** `core.ouds.color.opacity.black.480`
+**Value:** `#0000007a` (black at ~48% opacity)
+**Description:** Medium-weight dark overlay used for modal scrims, drawer backdrops, and image overlay gradients.
+**Usage:** Standard modal overlay background.
+
+```css
+background-color: var(--core-ouds-color-opacity-black-480);
+```
+
+✅ **Do:** Use for dialog/modal scrims — it dims the background content while keeping it recognizable.
+❌ **Don't:** Use black overlays on dark-mode surfaces where the background is already dark — the contrast difference will be imperceptible.
+**Aliases:** None.
+
+---
+
+#### Hue-specific opacity variants
+
+A small set of pre-composed semi-transparent hue values for state feedback (hover, focus) and tinted surface fills.
+
+| Token | Value | Description |
+|-------|-------|-------------|
+| `core.ouds.color.opacity.gray.dark-880.800` | `#141414cc` | Dark gray scrim at 80% |
+| `core.ouds.color.opacity.scarlet.80` | `#db000214` | Scarlet at ~8% — subtle error tint |
+| `core.ouds.color.opacity.scarlet.320` | `#db000252` | Scarlet at ~32% — medium error overlay |
+| `core.ouds.color.opacity.sun.160` | `#ffd00029` | Sun at ~16% — subtle warning tint |
+| `core.ouds.color.opacity.sun.480` | `#6651007a` | Amber at ~48% — medium warning overlay |
+| `core.ouds.color.opacity.malachite.120` | `#3de35a1f` | Malachite at ~12% — subtle success tint |
+| `core.ouds.color.opacity.malachite.640` | `#0e621da3` | Malachite at ~64% — strong success overlay |
+| `core.ouds.color.opacity.dodgerBlue.80` | `#26b2ff14` | Blue at ~8% — subtle info tint |
+| `core.ouds.color.opacity.dodgerBlue.520` | `#00598a85` | Blue at ~52% — medium info overlay |
+
+**Name:** `core.ouds.color.opacity.scarlet.80`
+**Value:** `#db000214`
+**Description:** Very faint scarlet tint (~8% opacity). Used as the background fill for error input fields and inline validation containers, providing a non-alarming but visible state indicator.
+**Usage:** Error input background; pair with full-opacity scarlet text for the message.
+
+```css
+background-color: var(--core-ouds-color-opacity-scarlet-80);
+border-color: var(--core-ouds-color-functional-scarlet-600);
+```
+
+✅ **Do:** Use this for the input field background on validation error — it signals the state without overwhelming the form.
+❌ **Don't:** Use as the only visual error indicator — always pair with a visible error message and/or icon.
+**Aliases:** None.
+
+---
+
+## Opacity
+
+The opacity scale defines a set of discrete transparency levels (0–100, expressed as integers 0–1000) for use in CSS `opacity`, `rgba()` calculations, and filter effects. The numeric suffix × 0.1 gives the percentage (e.g., `400` → 40%).
+
+| Token | Value | Percentage | CSS Variable |
+|-------|-------|------------|--------------|
+| `core.ouds.opacity.0` | `0` | 0% | `--core-ouds-opacity-0` |
+| `core.ouds.opacity.40` | `4` | 4% | `--core-ouds-opacity-40` |
+| `core.ouds.opacity.80` | `8` | 8% | `--core-ouds-opacity-80` |
+| `core.ouds.opacity.120` | `12` | 12% | `--core-ouds-opacity-120` |
+| `core.ouds.opacity.160` | `16` | 16% | `--core-ouds-opacity-160` |
+| `core.ouds.opacity.200` | `20` | 20% | `--core-ouds-opacity-200` |
+| `core.ouds.opacity.240` | `24` | 24% | `--core-ouds-opacity-240` |
+| `core.ouds.opacity.280` | `28` | 28% | `--core-ouds-opacity-280` |
+| `core.ouds.opacity.320` | `32` | 32% | `--core-ouds-opacity-320` |
+| `core.ouds.opacity.360` | `36` | 36% | `--core-ouds-opacity-360` |
+| `core.ouds.opacity.400` | `40` | 40% | `--core-ouds-opacity-400` |
+| `core.ouds.opacity.440` | `44` | 44% | `--core-ouds-opacity-440` |
+| `core.ouds.opacity.480` | `48` | 48% | `--core-ouds-opacity-480` |
+| `core.ouds.opacity.520` | `52` | 52% | `--core-ouds-opacity-520` |
+| `core.ouds.opacity.560` | `56` | 56% | `--core-ouds-opacity-560` |
+| `core.ouds.opacity.600` | `60` | 60% | `--core-ouds-opacity-600` |
+| `core.ouds.opacity.640` | `64` | 64% | `--core-ouds-opacity-640` |
+| `core.ouds.opacity.680` | `68` | 68% | `--core-ouds-opacity-680` |
+| `core.ouds.opacity.720` | `72` | 72% | `--core-ouds-opacity-720` |
+| `core.ouds.opacity.760` | `76` | 76% | `--core-ouds-opacity-760` |
+| `core.ouds.opacity.800` | `80` | 80% | `--core-ouds-opacity-800` |
+| `core.ouds.opacity.880` | `88` | 88% | `--core-ouds-opacity-880` |
+| `core.ouds.opacity.920` | `92` | 92% | `--core-ouds-opacity-920` |
+| `core.ouds.opacity.960` | `96` | 96% | `--core-ouds-opacity-960` |
+| `core.ouds.opacity.1000` | `100` | 100% | `--core-ouds-opacity-1000` |
+
+**Name:** `core.ouds.opacity.400`
+**Value:** `40` (40%)
+**Description:** Mid-opacity value commonly used for disabled state overlays and ghost element fills.
+**Usage:** Apply as `opacity` on disabled interactive elements.
+
+```css
+opacity: calc(var(--core-ouds-opacity-400) / 100);
+```
+
+✅ **Do:** Use `opacity.400` (40%) for disabled UI components — it's low enough to signal unavailability while keeping the element readable.
+❌ **Don't:** Apply opacity to entire sections containing interactive children — it will disable the visibility of nested focusable elements for keyboard users.
+**Aliases:** None. Note: these are raw integer values; divide by 100 when using as CSS `opacity`.
+
+---
+
+## Elevation
+
+Elevation tokens define the raw components of a box-shadow: horizontal offset (`x`), vertical offset (`y`), blur radius, and spread. Combine them via semantic shadow tokens to construct the full shadow shorthand.
+
+---
+
+### Elevation X
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.elevation.x.0` | `0px` | `--core-ouds-elevation-x-0` |
+
+**Name:** `core.ouds.elevation.x.0`
+**Value:** `0px`
+**Description:** Zero horizontal shadow offset. All OUDS shadows are purely vertical to mimic a consistent top-down light source.
+**Usage:** Always used as the X component in all system shadow compositions.
+
+```css
+box-shadow: var(--core-ouds-elevation-x-0) ... ;
+```
+
+✅ **Do:** Use 0px X-offset on all shadows to maintain the system's unified lighting model.
+❌ **Don't:** Introduce non-zero X offsets for custom shadows — it creates visual inconsistency with system components.
+**Aliases:** None.
+
+---
+
+### Elevation Y
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.elevation.y.0` | `0px` | `--core-ouds-elevation-y-0` |
+| `core.ouds.elevation.y.100` | `1px` | `--core-ouds-elevation-y-100` |
+| `core.ouds.elevation.y.200` | `2px` | `--core-ouds-elevation-y-200` |
+| `core.ouds.elevation.y.300` | `4px` | `--core-ouds-elevation-y-300` |
+| `core.ouds.elevation.y.400` | `8px` | `--core-ouds-elevation-y-400` |
+| `core.ouds.elevation.y.500` | `12px` | `--core-ouds-elevation-y-500` |
+| `core.ouds.elevation.y.600` | `20px` | `--core-ouds-elevation-y-600` |
+
+**Name:** `core.ouds.elevation.y.300`
+**Value:** `4px`
+**Description:** Mid-low vertical shadow offset for cards and raised containers at the second elevation level.
+**Usage:** Used in the semantic `elevation.raised` shadow composition.
+
+```css
+box-shadow: 0px var(--core-ouds-elevation-y-300) ...;
+```
+
+✅ **Do:** Combine y-offset with a matching blur and spread token from the same elevation level.
+❌ **Don't:** Mix Y offsets and blur values from different elevation levels — it produces visually incoherent shadows.
+**Aliases:** None.
+
+---
+
+### Elevation Blur
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.elevation.blur.0` | `0px` | `--core-ouds-elevation-blur-0` |
+| `core.ouds.elevation.blur.100` | `1px` | `--core-ouds-elevation-blur-100` |
+| `core.ouds.elevation.blur.200` | `2px` | `--core-ouds-elevation-blur-200` |
+| `core.ouds.elevation.blur.300` | `3px` | `--core-ouds-elevation-blur-300` |
+| `core.ouds.elevation.blur.400` | `4px` | `--core-ouds-elevation-blur-400` |
+| `core.ouds.elevation.blur.500` | `8px` | `--core-ouds-elevation-blur-500` |
+| `core.ouds.elevation.blur.600` | `12px` | `--core-ouds-elevation-blur-600` |
+| `core.ouds.elevation.blur.700` | `20px` | `--core-ouds-elevation-blur-700` |
+
+**Name:** `core.ouds.elevation.blur.600`
+**Value:** `12px`
+**Description:** Medium blur radius for floating surfaces like dropdowns, tooltips, and popovers.
+**Usage:** Paired with `elevation.y.500` (12px) in the semantic floating shadow.
+
+```css
+box-shadow: 0px 12px var(--core-ouds-elevation-blur-600) ...;
+```
+
+✅ **Do:** Use proportional blur-to-offset ratios — a 12px Y offset naturally pairs with 12px blur.
+❌ **Don't:** Use large blur values with small Y offsets — it creates a "glowing" rather than "lifting" effect.
+**Aliases:** None.
+
+---
+
+### Elevation Spread
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.elevation.spread.0` | `0px` | `--core-ouds-elevation-spread-0` |
+| `core.ouds.elevation.spread.300` | `3px` | `--core-ouds-elevation-spread-300` |
+| `core.ouds.elevation.spread.n100` | `-1px` | `--core-ouds-elevation-spread-n100` |
+| `core.ouds.elevation.spread.n200` | `-2px` | `--core-ouds-elevation-spread-n200` |
+| `core.ouds.elevation.spread.n300` | `-4px` | `--core-ouds-elevation-spread-n300` |
+| `core.ouds.elevation.spread.n400` | `-8px` | `--core-ouds-elevation-spread-n400` |
+
+**Name:** `core.ouds.elevation.spread.n100`
+**Value:** `-1px`
+**Description:** Slight negative spread. Prevents box-shadow "bleed" at the container edges, producing cleaner shadow edges for cards and modals.
+**Usage:** Typically the default spread value in semantic card shadow compositions.
+
+```css
+box-shadow: 0px 4px 8px var(--core-ouds-elevation-spread-n100) rgba(0,0,0,0.12);
+```
+
+✅ **Do:** Use slight negative spread on card shadows to keep shadow contained and crisp.
+❌ **Don't:** Use `spread.300` (positive spread) for standard elevation shadows — it creates an artificial halo effect.
+**Aliases:** None.
+
+---
+
+## Effect
+
+Background blur tokens for frosted-glass effects and focus backdrops. These are independent of the shadow system.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.effect.blur.320` | `32px` | `--core-ouds-effect-blur-320` |
+| `core.ouds.effect.blur.480` | `48px` | `--core-ouds-effect-blur-480` |
+
+**Name:** `core.ouds.effect.blur.320`
+**Value:** `32px`
+**Description:** Standard blur radius for glassmorphism panels, navigation bars with a translucent background, and modal backdrop blur.
+**Usage:** Apply via `backdrop-filter: blur()` on semi-transparent containers.
+
+```css
+backdrop-filter: blur(var(--core-ouds-effect-blur-320));
+```
+
+✅ **Do:** Combine with an opacity color token (`color.opacity.white.800`) for a complete frosted-glass effect.
+❌ **Don't:** Apply `backdrop-filter` without a semi-transparent background — the blur has no visible effect on a fully opaque surface.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.effect.blur.480`
+**Value:** `48px`
+**Description:** Heavy blur radius for full-screen overlay states (e.g., sheet presentation blur, focus-trap backgrounds). More aggressive than the standard panel blur.
+**Usage:** Use for full-screen bottom sheets or when the content behind must be strongly obscured.
+
+```css
+backdrop-filter: blur(var(--core-ouds-effect-blur-480));
+```
+
+✅ **Do:** Use this for modal full-screen overlays where content behind should be completely de-emphasized.
+❌ **Don't:** Apply this to inline cards or small panels — it is visually heavy and can cause performance issues on low-end devices.
+**Aliases:** None.
+
+---
+
+## Dimension
+
+The dimension scale provides a universal sizing vocabulary for spacing, sizing, and layout. The scale is built on a **4px base unit** (`core.ouds.dimension.base = 4px`), and all primary steps are multiples of it. Non-multiples live in the `out-of-system` sub-group and should be used with caution.
+
+**Base unit:** `core.ouds.dimension.base` = `4px`
+
+### Main dimension scale
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.dimension.0` | `0px` | `--core-ouds-dimension-0` |
+| `core.ouds.dimension.50` | `4px` | `--core-ouds-dimension-50` |
+| `core.ouds.dimension.100` | `8px` | `--core-ouds-dimension-100` |
+| `core.ouds.dimension.150` | `12px` | `--core-ouds-dimension-150` |
+| `core.ouds.dimension.200` | `16px` | `--core-ouds-dimension-200` |
+| `core.ouds.dimension.250` | `20px` | `--core-ouds-dimension-250` |
+| `core.ouds.dimension.300` | `24px` | `--core-ouds-dimension-300` |
+| `core.ouds.dimension.350` | `28px` | `--core-ouds-dimension-350` |
+| `core.ouds.dimension.400` | `32px` | `--core-ouds-dimension-400` |
+| `core.ouds.dimension.450` | `36px` | `--core-ouds-dimension-450` |
+| `core.ouds.dimension.500` | `40px` | `--core-ouds-dimension-500` |
+| `core.ouds.dimension.550` | `44px` | `--core-ouds-dimension-550` |
+| `core.ouds.dimension.600` | `48px` | `--core-ouds-dimension-600` |
+| `core.ouds.dimension.650` | `52px` | `--core-ouds-dimension-650` |
+| `core.ouds.dimension.700` | `56px` | `--core-ouds-dimension-700` |
+| `core.ouds.dimension.750` | `60px` | `--core-ouds-dimension-750` |
+| `core.ouds.dimension.800` | `64px` | `--core-ouds-dimension-800` |
+| `core.ouds.dimension.850` | `68px` | `--core-ouds-dimension-850` |
+| `core.ouds.dimension.900` | `72px` | `--core-ouds-dimension-900` |
+| `core.ouds.dimension.950` | `76px` | `--core-ouds-dimension-950` |
+| `core.ouds.dimension.1000` | `80px` | `--core-ouds-dimension-1000` |
+| `core.ouds.dimension.1050` | `84px` | `--core-ouds-dimension-1050` |
+| `core.ouds.dimension.1100` | `88px` | `--core-ouds-dimension-1100` |
+| `core.ouds.dimension.1200` | `96px` | `--core-ouds-dimension-1200` |
+| `core.ouds.dimension.1250` | `100px` | `--core-ouds-dimension-1250` |
+| `core.ouds.dimension.1400` | `112px` | `--core-ouds-dimension-1400` |
+| `core.ouds.dimension.1600` | `128px` | `--core-ouds-dimension-1600` |
+| `core.ouds.dimension.1800` | `144px` | `--core-ouds-dimension-1800` |
+| `core.ouds.dimension.2000` | `160px` | `--core-ouds-dimension-2000` |
+| `core.ouds.dimension.2225` | `200px` | `--core-ouds-dimension-2225` |
+| `core.ouds.dimension.2500` | `240px` | `--core-ouds-dimension-2500` |
+| `core.ouds.dimension.3000` | `320px` | `--core-ouds-dimension-3000` |
+| `core.ouds.dimension.4000` | `480px` | `--core-ouds-dimension-4000` |
+| `core.ouds.dimension.5000` | `560px` | `--core-ouds-dimension-5000` |
+| `core.ouds.dimension.6000` | `640px` | `--core-ouds-dimension-6000` |
+| `core.ouds.dimension.7000` | `720px` | `--core-ouds-dimension-7000` |
+| `core.ouds.dimension.9000` | `880px` | `--core-ouds-dimension-9000` |
+| `core.ouds.dimension.11000` | `1040px` | `--core-ouds-dimension-11000` |
+
+**Name:** `core.ouds.dimension.200`
+**Value:** `16px`
+**Description:** 4× the base unit. The standard comfortable inset for component padding and the default gap in most layouts. Corresponds to the base body font size for harmonious proportions.
+**Usage:** Referenced by semantic spacing tokens for comfortable padding and gap defaults.
+
+```css
+padding: var(--core-ouds-dimension-200);
+gap: var(--core-ouds-dimension-200);
+```
+
+✅ **Do:** Use as the default padding for cards, panels, and form fields where a comfortable breathing room is needed.
+❌ **Don't:** Use arbitrary values like `15px` or `17px` — always pick the nearest dimension token to stay on-grid.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.dimension.50`
+**Value:** `4px`
+**Description:** The base unit. Used for micro-spacing: icon-to-label gaps, badge offsets, and fine-grained layout adjustments.
+**Usage:** Smallest meaningful spacing increment.
+
+```css
+gap: var(--core-ouds-dimension-50);
+```
+
+✅ **Do:** Use for tight internal gaps within components (e.g., icon + text in a button).
+❌ **Don't:** Use as section or page-level spacing — it creates uncomfortably dense layouts at macro scale.
+**Aliases:** `core.ouds.dimension.base` resolves to the same `4px` value.
+
+---
+
+### Out-of-system dimensions
+
+These values fall outside the 4px grid and should only be used for specific platform constraints or border/stroke widths where exact pixel values are required.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.dimension.out-of-system.25` | `1px` | `--core-ouds-dimension-out-of-system-25` |
+| `core.ouds.dimension.out-of-system.50` | `2px` | `--core-ouds-dimension-out-of-system-50` |
+| `core.ouds.dimension.out-of-system.75` | `3px` | `--core-ouds-dimension-out-of-system-75` |
+| `core.ouds.dimension.out-of-system.150` | `6px` | `--core-ouds-dimension-out-of-system-150` |
+| `core.ouds.dimension.out-of-system.250` | `10px` | `--core-ouds-dimension-out-of-system-250` |
+
+**Name:** `core.ouds.dimension.out-of-system.25`
+**Value:** `1px`
+**Description:** One pixel. Used exclusively for hairline borders and dividers where a 4px border would be visually heavy.
+**Usage:** Dividers, table borders, fine input field strokes.
+
+```css
+border-width: var(--core-ouds-dimension-out-of-system-25);
+```
+
+✅ **Do:** Use for hairline dividers and input strokes where a visible but unobtrusive line is needed.
+❌ **Don't:** Use out-of-system values for spacing, padding, or margins — that defeats the 4px grid.
+**Aliases:** Also available as `core.ouds.border.width.25` for border-specific usage.
+
+---
+
+## Border
+
+Border tokens cover the three properties of a CSS border: width, radius, and style. Combined, they cover the full border shorthand for any OUDS component.
+
+---
+
+### Border Width
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.border.width.0` | `0px` | `--core-ouds-border-width-0` |
+| `core.ouds.border.width.25` | `1px` | `--core-ouds-border-width-25` |
+| `core.ouds.border.width.50` | `2px` | `--core-ouds-border-width-50` |
+| `core.ouds.border.width.75` | `3px` | `--core-ouds-border-width-75` |
+| `core.ouds.border.width.100` | `4px` | `--core-ouds-border-width-100` |
+| `core.ouds.border.width.125` | `5px` | `--core-ouds-border-width-125` |
+| `core.ouds.border.width.150` | `6px` | `--core-ouds-border-width-150` |
+| `core.ouds.border.width.200` | `8px` | `--core-ouds-border-width-200` |
+
+**Name:** `core.ouds.border.width.25`
+**Value:** `1px`
+**Description:** Standard hairline border width. The default for input fields, cards, dividers, and most structural borders.
+**Usage:** Default border width for all contained components.
+
+```css
+border-width: var(--core-ouds-border-width-25);
+```
+
+✅ **Do:** Use as the default border for inputs, cards, and chips in resting state.
+❌ **Don't:** Use widths beyond 100 (4px) for decorative borders — thick borders feel heavy and can interfere with spacing calculations.
+**Aliases:** `core.ouds.dimension.out-of-system.25` resolves to the same 1px.
+
+---
+
+**Name:** `core.ouds.border.width.50`
+**Value:** `2px`
+**Description:** Focus ring and active state border width. Provides a visible, accessible indicator without overwhelming the element's visual footprint.
+**Usage:** Focus rings, selected states, active tabs.
+
+```css
+outline-width: var(--core-ouds-border-width-50);
+```
+
+✅ **Do:** Use for keyboard focus rings and selected state borders — it's visible enough to meet WCAG 2.4.11.
+❌ **Don't:** Use 2px borders on subtle container dividers — reserve the additional weight for interactive state communication.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.border.base`
+**Value:** `4px`
+**Description:** The base unit for the border system, equivalent to `core.ouds.dimension.base`. Used as a reference value, not typically applied directly.
+**Usage:** Internal reference; prefer explicit width tokens (`border.width.*`) in components.
+
+```css
+/* Internal reference only */
+--core-ouds-border-base: 4px;
+```
+
+✅ **Do:** Reference this to understand the border scale's anchor point.
+❌ **Don't:** Apply `border.base` directly to components — use the named width steps instead.
+**Aliases:** `core.ouds.dimension.base` = same 4px value.
+
+---
+
+### Border Radius
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.border.radius.0` | `0px` | `--core-ouds-border-radius-0` |
+| `core.ouds.border.radius.25` | `1px` | `--core-ouds-border-radius-25` |
+| `core.ouds.border.radius.50` | `2px` | `--core-ouds-border-radius-50` |
+| `core.ouds.border.radius.75` | `3px` | `--core-ouds-border-radius-75` |
+| `core.ouds.border.radius.100` | `4px` | `--core-ouds-border-radius-100` |
+| `core.ouds.border.radius.150` | `6px` | `--core-ouds-border-radius-150` |
+| `core.ouds.border.radius.200` | `8px` | `--core-ouds-border-radius-200` |
+| `core.ouds.border.radius.300` | `12px` | `--core-ouds-border-radius-300` |
+| `core.ouds.border.radius.400` | `16px` | `--core-ouds-border-radius-400` |
+| `core.ouds.border.radius.500` | `20px` | `--core-ouds-border-radius-500` |
+| `core.ouds.border.radius.600` | `24px` | `--core-ouds-border-radius-600` |
+| `core.ouds.border.radius.800` | `32px` | `--core-ouds-border-radius-800` |
+| `core.ouds.border.radius.9999` | `2000px` | `--core-ouds-border-radius-9999` |
+
+**Name:** `core.ouds.border.radius.200`
+**Value:** `8px`
+**Description:** Default component border radius for cards, inputs, and dialogs. Produces a softly rounded rectangle appropriate for most UI containers.
+**Usage:** Referenced by semantic radius tokens for cards, inputs, and panels.
+
+```css
+border-radius: var(--core-ouds-border-radius-200);
+```
+
+✅ **Do:** Use for cards, modals, and input fields as the standard container radius.
+❌ **Don't:** Mix multiple radius values within the same component hierarchy — pick one radius level and apply it consistently.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.border.radius.9999`
+**Value:** `2000px`
+**Description:** Pill / fully-rounded radius. The large value (2000px) ensures the radius resolves to 50% of the element height regardless of actual size, producing a perfect pill shape.
+**Usage:** Chips, tags, badges, pill-shaped buttons.
+
+```css
+border-radius: var(--core-ouds-border-radius-9999);
+```
+
+✅ **Do:** Apply to chips, badges, and toggle switches where a pill shape is the intended design.
+❌ **Don't:** Apply to tall elements (> 200px height) — the 2000px value will still resolve correctly, but verify visually.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.border.radius.0`
+**Value:** `0px`
+**Description:** Zero radius. Sharp corners. Used for full-bleed images, system-level banners that span edge to edge, and table cells.
+**Usage:** Full-width banners, data table cells, image frames.
+
+```css
+border-radius: var(--core-ouds-border-radius-0);
+```
+
+✅ **Do:** Use for elements that intentionally span edge-to-edge (page-width banners, header bars).
+❌ **Don't:** Apply zero radius to all components as a stylistic override — it removes the visual hierarchy that radius conveys.
+**Aliases:** None.
+
+---
+
+### Border Style
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.border.style.none` | `none` | `--core-ouds-border-style-none` |
+| `core.ouds.border.style.solid` | `solid` | `--core-ouds-border-style-solid` |
+| `core.ouds.border.style.dashed` | `dashed` | `--core-ouds-border-style-dashed` |
+| `core.ouds.border.style.dotted` | `dotted` | `--core-ouds-border-style-dotted` |
+
+**Name:** `core.ouds.border.style.solid`
+**Value:** `solid`
+**Description:** Standard solid border line. The default style for all structural borders in the system.
+**Usage:** Input fields, cards, containers, dividers.
+
+```css
+border-style: var(--core-ouds-border-style-solid);
+```
+
+✅ **Do:** Use solid for all structural borders — inputs, cards, separators.
+❌ **Don't:** Use dashed or dotted styles for structural borders — reserve them for drag targets, upload zones, or optional/empty states.
+**Aliases:** None.
+
+---
+
+**Name:** `core.ouds.border.style.dashed`
+**Value:** `dashed`
+**Description:** Dashed border line. Conventionally used to indicate a drop target, an empty/fillable slot, or an optional boundary.
+**Usage:** Drag-and-drop zones, empty state placeholders, optional field wrappers.
+
+```css
+border-style: var(--core-ouds-border-style-dashed);
+```
+
+✅ **Do:** Use for upload dropzones and empty slot placeholders to signal interactivity or optionality.
+❌ **Don't:** Use dashed borders as a decorative alternative to solid — the dashed style carries semantic meaning.
+**Aliases:** None.
+
+---
+
+## Grid
+
+Grid tokens define breakpoint widths, layout margins, gutter sizes, and column counts for the responsive grid system. They cover web (numeric step keys) and native app platforms (iOS and Android named keys).
+
+---
+
+### Grid Width (breakpoint viewport widths)
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.grid.width.100` | `360px` | `--core-ouds-grid-width-100` |
+| `core.ouds.grid.width.200` | `390px` | `--core-ouds-grid-width-200` |
+| `core.ouds.grid.width.300` | `480px` | `--core-ouds-grid-width-300` |
+| `core.ouds.grid.width.400` | `768px` | `--core-ouds-grid-width-400` |
+| `core.ouds.grid.width.500` | `1024px` | `--core-ouds-grid-width-500` |
+| `core.ouds.grid.width.600` | `1440px` | `--core-ouds-grid-width-600` |
+| `core.ouds.grid.width.700` | `1680px` | `--core-ouds-grid-width-700` |
+| `core.ouds.grid.width.800` | `1920px` | `--core-ouds-grid-width-800` |
+
+---
+
+### Grid Min-Width
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.grid.min-width.100` | `320px` | `--core-ouds-grid-min-width-100` |
+| `core.ouds.grid.min-width.200` | `390px` | `--core-ouds-grid-min-width-200` |
+| `core.ouds.grid.min-width.300` | `480px` | `--core-ouds-grid-min-width-300` |
+| `core.ouds.grid.min-width.400` | `736px` | `--core-ouds-grid-min-width-400` |
+| `core.ouds.grid.min-width.500` | `1024px` | `--core-ouds-grid-min-width-500` |
+| `core.ouds.grid.min-width.600` | `1320px` | `--core-ouds-grid-min-width-600` |
+| `core.ouds.grid.min-width.700` | `1640px` | `--core-ouds-grid-min-width-700` |
+| `core.ouds.grid.min-width.800` | `1880px` | `--core-ouds-grid-min-width-800` |
+| `core.ouds.grid.min-width.ios-extra-compact` | `320px` | `--core-ouds-grid-min-width-ios-extra-compact` |
+| `core.ouds.grid.min-width.ios-compact` | `390px` | `--core-ouds-grid-min-width-ios-compact` |
+| `core.ouds.grid.min-width.ios-regular` | `736px` | `--core-ouds-grid-min-width-ios-regular` |
+| `core.ouds.grid.min-width.android-extra-compact` | `320px` | `--core-ouds-grid-min-width-android-extra-compact` |
+| `core.ouds.grid.min-width.android-compact` | `390px` | `--core-ouds-grid-min-width-android-compact` |
+| `core.ouds.grid.min-width.android-medium` | `600px` | `--core-ouds-grid-min-width-android-medium` |
+
+---
+
+### Grid Max-Width
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.grid.max-width.100` | `389px` | `--core-ouds-grid-max-width-100` |
+| `core.ouds.grid.max-width.200` | `479px` | `--core-ouds-grid-max-width-200` |
+| `core.ouds.grid.max-width.300` | `735px` | `--core-ouds-grid-max-width-300` |
+| `core.ouds.grid.max-width.400` | `1023px` | `--core-ouds-grid-max-width-400` |
+| `core.ouds.grid.max-width.500` | `1319px` | `--core-ouds-grid-max-width-500` |
+| `core.ouds.grid.max-width.600` | `1639px` | `--core-ouds-grid-max-width-600` |
+| `core.ouds.grid.max-width.650` | `1680px` | `--core-ouds-grid-max-width-650` |
+| `core.ouds.grid.max-width.700` | `1879px` | `--core-ouds-grid-max-width-700` |
+| `core.ouds.grid.max-width.800` | `1920px` | `--core-ouds-grid-max-width-800` |
+| `core.ouds.grid.max-width.ios-extra-compact` | `389px` | `--core-ouds-grid-max-width-ios-extra-compact` |
+| `core.ouds.grid.max-width.ios-compact` | `852px` | `--core-ouds-grid-max-width-ios-compact` |
+| `core.ouds.grid.max-width.ios-regular` | `1336px` | `--core-ouds-grid-max-width-ios-regular` |
+| `core.ouds.grid.max-width.android-extra-compact` | `389px` | `--core-ouds-grid-max-width-android-extra-compact` |
+| `core.ouds.grid.max-width.android-compact` | `599px` | `--core-ouds-grid-max-width-android-compact` |
+| `core.ouds.grid.max-width.android-medium` | `1200px` | `--core-ouds-grid-max-width-android-medium` |
+
+**Name:** `core.ouds.grid.min-width.400` / `core.ouds.grid.max-width.300`
+**Value:** `736px` / `735px`
+**Description:** The tablet breakpoint range. Min-width 736px marks the start of the tablet viewport; max-width 735px is the upper bound of the compact/mobile range. The 1px overlap avoids conflicting media queries.
+**Usage:** Use as `@media` breakpoint boundaries in CSS or conditional layout logic in native.
+
+```css
+/* Mobile → Tablet transition */
+@media (min-width: 736px) {
+  /* Tablet layout */
+}
+```
+
+✅ **Do:** Use the min/max pairs together to define clean, non-overlapping breakpoint ranges.
+❌ **Don't:** Define ad-hoc breakpoints like `@media (min-width: 750px)` — always use the token values to stay in sync with the grid system.
+**Aliases:** `core.ouds.grid.min-width.ios-regular` = same 736px. `core.ouds.grid.max-width.300` = 735px (the matching max).
+
+---
+
+### Grid Margin
+
+The margin token defines the outer horizontal padding between the viewport edge and the layout content area at each breakpoint.
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.grid.margin.100` | `16px` | `--core-ouds-grid-margin-100` |
+| `core.ouds.grid.margin.300` | `24px` | `--core-ouds-grid-margin-300` |
+| `core.ouds.grid.margin.400` | `28px` | `--core-ouds-grid-margin-400` |
+| `core.ouds.grid.margin.500` | `32px` | `--core-ouds-grid-margin-500` |
+| `core.ouds.grid.margin.600` | `36px` | `--core-ouds-grid-margin-600` |
+| `core.ouds.grid.margin.700` | `40px` | `--core-ouds-grid-margin-700` |
+| `core.ouds.grid.margin.1000` | `52px` | `--core-ouds-grid-margin-1000` |
+| `core.ouds.grid.margin.1100` | `56px` | `--core-ouds-grid-margin-1100` |
+| `core.ouds.grid.margin.1700` | `80px` | `--core-ouds-grid-margin-1700` |
+| `core.ouds.grid.margin.2500` | `112px` | `--core-ouds-grid-margin-2500` |
+
+**Name:** `core.ouds.grid.margin.100`
+**Value:** `16px`
+**Description:** The default layout margin for compact/mobile viewports. Provides a consistent horizontal safe zone between content and screen edges.
+**Usage:** Applied as horizontal padding to the outermost page container on mobile.
+
+```css
+padding-inline: var(--core-ouds-grid-margin-100);
+```
+
+✅ **Do:** Use as the mobile horizontal margin on page-level layout wrappers.
+❌ **Don't:** Apply different margins to individual sections within a page — the margin should be consistent at the layout level.
+**Aliases:** None.
+
+---
+
+### Grid Column Gap
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.grid.column-gap.10` | `1px` | `--core-ouds-grid-column-gap-10` |
+| `core.ouds.grid.column-gap.100` | `8px` | `--core-ouds-grid-column-gap-100` |
+| `core.ouds.grid.column-gap.200` | `16px` | `--core-ouds-grid-column-gap-200` |
+| `core.ouds.grid.column-gap.300` | `20px` | `--core-ouds-grid-column-gap-300` |
+| `core.ouds.grid.column-gap.400` | `24px` | `--core-ouds-grid-column-gap-400` |
+| `core.ouds.grid.column-gap.600` | `32px` | `--core-ouds-grid-column-gap-600` |
+| `core.ouds.grid.column-gap.800` | `40px` | `--core-ouds-grid-column-gap-800` |
+
+**Name:** `core.ouds.grid.column-gap.200`
+**Value:** `16px`
+**Description:** Standard column gutter for mobile and tablet grids. Provides comfortable visual separation between adjacent columns.
+**Usage:** `column-gap` on CSS grid container.
+
+```css
+column-gap: var(--core-ouds-grid-column-gap-200);
+```
+
+✅ **Do:** Use consistent column-gap values across all columns in a grid — mixing values breaks the visual rhythm.
+❌ **Don't:** Use `column-gap.10` (1px) for standard column gutters — it is intended for compact wireframe/edge-case use only.
+**Aliases:** None.
+
+---
+
+### Grid Column Count
+
+| Token | Value | CSS Variable |
+|-------|-------|--------------|
+| `core.ouds.grid.column-count.100` | `1` | `--core-ouds-grid-column-count-100` |
+| `core.ouds.grid.column-count.200` | `2` | `--core-ouds-grid-column-count-200` |
+| `core.ouds.grid.column-count.400` | `4` | `--core-ouds-grid-column-count-400` |
+| `core.ouds.grid.column-count.600` | `6` | `--core-ouds-grid-column-count-600` |
+| `core.ouds.grid.column-count.800` | `8` | `--core-ouds-grid-column-count-800` |
+| `core.ouds.grid.column-count.1000` | `10` | `--core-ouds-grid-column-count-1000` |
+| `core.ouds.grid.column-count.1200` | `12` | `--core-ouds-grid-column-count-1200` |
+
+**Name:** `core.ouds.grid.column-count.1200`
+**Value:** `12`
+**Description:** Maximum 12-column grid for desktop and wide-screen layouts. The 12-column system supports flexible subdivision into halves, thirds, quarters, and sixths.
+**Usage:** `grid-template-columns: repeat(12, 1fr)` on desktop containers.
+
+```css
+grid-template-columns: repeat(var(--core-ouds-grid-column-count-1200), 1fr);
+```
+
+✅ **Do:** Use 12 columns on desktop and reduce to 4 (tablet) or 1–2 (mobile) as the viewport narrows — follow the semantic grid layout token guidance.
+❌ **Don't:** Use intermediate column counts like 5, 7, or 9 — they don't divide cleanly and create unequal column spans.
+**Aliases:** None.
+
+---
+
+## Version
+
+| Token | Value |
+|-------|-------|
+| `core.ouds.version` | `1.10.0` |
+
+This token records the version of the core token file. It is informational and should not be consumed in production code.

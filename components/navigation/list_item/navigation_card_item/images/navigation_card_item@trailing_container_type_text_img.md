@@ -1,0 +1,1 @@
+![navigation_card_item@trailing_container_type_text_img](./navigation_card_item@trailing_container_type_text_img.png)

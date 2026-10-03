@@ -1,0 +1,168 @@
+{
+  "action": {
+    "button": {
+      "$type": "string",
+      "$value": "3.2.0"
+    },
+    "navigation-button": {
+      "$type": "string",
+      "$value": "3.2.1"
+    },
+    "expand-button": {
+      "$type": "string",
+      "$value": "3.1.0"
+    },
+    "fab": {
+      "$type": "string",
+      "$value": "0.0.0"
+    }
+  },
+  "navigation": {
+    "link": {
+      "$type": "string",
+      "$value": "2.2.0"
+    },
+    "expand-link": {
+      "$type": "string",
+      "$value": "2.3.0"
+    },
+    "breadcrumb": {
+      "$type": "string",
+      "$value": "1.1.0"
+    },
+    "android": {
+      "navigation-bar": {
+        "$type": "string",
+        "$value": "1.0.0"
+      },
+      "app-bar": {
+        "$type": "string",
+        "$value": "1.0.0"
+      },
+      "toolbar": {
+        "$type": "string",
+        "$value": "1.0.0"
+      }
+    },
+    "ios": {
+      "tab-bar": {
+        "$type": "string",
+        "$value": "1.0.0"
+      },
+      "toolbar-top": {
+        "$type": "string",
+        "$value": "1.0.0"
+      },
+      "toolbar-bottom": {
+        "$type": "string",
+        "$value": "1.0.0"
+      }
+    }
+  },
+  "control": {
+    "filter-chip": {
+      "$type": "string",
+      "$value": "1.4.0"
+    },
+    "suggestion-chip": {
+      "$type": "string",
+      "$value": "1.4.0"
+    },
+    "filter-chip-expand": {
+      "$type": "string",
+      "$value": "1.4.0"
+    },
+    "checkbox": {
+      "$type": "string",
+      "$value": "2.4.0"
+    },
+    "radio-button": {
+      "$type": "string",
+      "$value": "1.4.0"
+    },
+    "switch": {
+      "$type": "string",
+      "$value": "1.5.0"
+    },
+    "password-input": {
+      "$type": "string",
+      "$value": "1.3.0"
+    },
+    "phone-number-input": {
+      "$type": "string",
+      "$value": "1.3.0"
+    },
+    "pin-code-input": {
+      "$type": "string",
+      "$value": "1.3.0"
+    },
+    "quantity-input": {
+      "$type": "string",
+      "$value": "1.3.0"
+    },
+    "select-input": {
+      "$type": "string",
+      "$value": "1.3.0"
+    },
+    "text-input": {
+      "$type": "string",
+      "$value": "1.4.0"
+    },
+    "text-area": {
+      "$type": "string",
+      "$value": "1.2.0"
+    }
+  },
+  "dialog": {
+    "alert-message": {
+      "$type": "string",
+      "$value": "1.1.1"
+    },
+    "inline-alert": {
+      "$type": "string",
+      "$value": "1.0.0"
+    }
+  },
+  "indicator": {
+    "badge": {
+      "$type": "string",
+      "$value": "1.2.0"
+    },
+    "badge-count": {
+      "$type": "string",
+      "$value": "1.2.0"
+    },
+    "badge-icon": {
+      "$type": "string",
+      "$value": "1.3.0"
+    },
+    "skeleton": {
+      "$type": "string",
+      "$value": "1.0.0"
+    },
+    "tag": {
+      "$type": "string",
+      "$value": "1.5.0"
+    },
+    "input-tag": {
+      "$type": "string",
+      "$value": "1.2.0"
+    }
+  },
+  "layout": {
+    "divider": {
+      "$type": "string",
+      "$value": "1.0.0"
+    },
+    "bottom_sheet": {
+      "$type": "string",
+      "$value": "0.0.0"
+    }
+  },
+  "content-display": {
+    "bullet-list": {
+      "$type": "string",
+      "$value": "1.1.0"
+    }
+  }
+}

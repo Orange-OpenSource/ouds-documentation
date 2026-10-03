@@ -1,0 +1,1 @@
+A static list item is a read-only row that presents one piece of information in a list, with optional visuals, values and statuses.

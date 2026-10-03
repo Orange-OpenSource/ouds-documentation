@@ -1,0 +1,1 @@
+A toast is a brief, temporary message that confirms an action or reports a status without interrupting the user’s task.

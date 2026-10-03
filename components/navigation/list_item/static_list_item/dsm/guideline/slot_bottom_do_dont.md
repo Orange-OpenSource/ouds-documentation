@@ -1,0 +1,14 @@
+✅ **Do:** Use the Bottom slot for non-interactive supporting content: progress, metadata, preview  
+❌ **Don't:** Put buttons, links or controls in the Bottom slot
+
+✅ **Do:** Use it only when Description or Helper text cannot express the content  
+❌ **Don't:** Use it as the default place for supporting text
+
+✅ **Do:** Keep Bottom slot content visually secondary to the label  
+❌ **Don't:** Let the slot content dominate the item
+
+✅ **Do:** Give meaningful slot content, such as progress, a text equivalent  
+❌ **Don't:** Rely on a visual-only indicator in the slot
+
+✅ **Do:** Use Top alignment when the Bottom slot is enabled  
+❌ **Don't:** Keep Center alignment on items that use the Bottom slot

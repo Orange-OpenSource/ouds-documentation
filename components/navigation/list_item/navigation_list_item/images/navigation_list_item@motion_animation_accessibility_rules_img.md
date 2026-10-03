@@ -1,0 +1,1 @@
+![navigation_list_item@motion_animation_accessibility_rules_img](./navigation_list_item@motion_animation_accessibility_rules_img.png)

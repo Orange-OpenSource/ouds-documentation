@@ -51,7 +51,11 @@ It appears as a semi-transparent gray block without content.
 ## Multiline and responsiveness
 
 **Multiline**
-This component doesn't allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
+Depending on the use case, permissions for editing multi-line text vary:
+- In a "chips bar" context (the chips are positioned one after another in a horizontal carousel with no width limit), this component doesn't allow multi-line text editing.
+- In a "Quick Replies" context (the chips are used as action and disambiguation elements in a conversational interface), this component allows multi-line text editing.
+
+This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
 
 **Max-width vs full-width**
 For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 200px.**
