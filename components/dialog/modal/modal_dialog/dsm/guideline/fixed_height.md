@@ -1,0 +1,3 @@
+**`False`** The modal height adapts to the content and uses an Auto Layout Hug behavior. The maximum height is not reached, allowing the modal to remain as compact as possible.
+
+**`True`** The modal uses its maximum defined height. This option can be used to simulate a modal containing a large amount of content that requires vertical scrolling, or to define a fixed-height modal for multi-step flows or content with a consistent layout.

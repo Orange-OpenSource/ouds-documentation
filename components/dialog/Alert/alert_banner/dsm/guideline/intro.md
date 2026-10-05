@@ -1,0 +1,1 @@
+An alert banner is a full-width message at the top of a page that communicates a global, system-level or service-wide state.

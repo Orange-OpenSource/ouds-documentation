@@ -1,0 +1,1 @@
+A modal dialog appears above the page to focus users on one decision, task or piece of information before they continue.
