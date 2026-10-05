@@ -519,85 +519,31 @@ Reduced Motion: instantaneous appearance and closing
 
 ### Size: Default
 
-**Modal dialog**
-
-![modal_dialog@spec_layout_spacing_size_default_01](../../images/modal_dialog@spec_layout_spacing_size_default_01.png)
-
-**Modal dialog**
-
-![modal_dialog@spec_layout_spacing_size_default_02](../../images/modal_dialog@spec_layout_spacing_size_default_02.png)
-
-**Close button**
-
-![modal_dialog@spec_layout_spacing_size_default_03](../../images/modal_dialog@spec_layout_spacing_size_default_03.png)
-
-**Header**
-
-![modal_dialog@spec_layout_spacing_size_default_04](../../images/modal_dialog@spec_layout_spacing_size_default_04.png)
-
-**Subtitle container**
-
-![modal_dialog@spec_layout_spacing_size_default_05](../../images/modal_dialog@spec_layout_spacing_size_default_05.png)
-
-**Title container**
-
-![modal_dialog@spec_layout_spacing_size_default_06](../../images/modal_dialog@spec_layout_spacing_size_default_06.png)
-
-**Text container**
-
-![modal_dialog@spec_layout_spacing_size_default_07](../../images/modal_dialog@spec_layout_spacing_size_default_07.png)
-
-**Footer**
-
-![modal_dialog@spec_layout_spacing_size_default_08](../../images/modal_dialog@spec_layout_spacing_size_default_08.png)
+- Modal dialog — `modal_dialog@spec_layout_spacing_size_default_01`
+- Modal dialog — `modal_dialog@spec_layout_spacing_size_default_02`
+- Close button — `modal_dialog@spec_layout_spacing_size_default_03`
+- Header — `modal_dialog@spec_layout_spacing_size_default_04`
+- Subtitle container — `modal_dialog@spec_layout_spacing_size_default_05`
+- Title container — `modal_dialog@spec_layout_spacing_size_default_06`
+- Text container — `modal_dialog@spec_layout_spacing_size_default_07`
+- Footer — `modal_dialog@spec_layout_spacing_size_default_08`
 
 ### Size: Small
 
-**Modal dialog**
-
-![modal_dialog@spec_layout_spacing_size_small_01](../../images/modal_dialog@spec_layout_spacing_size_small_01.png)
-
-**Modal dialog**
-
-![modal_dialog@spec_layout_spacing_size_small_02](../../images/modal_dialog@spec_layout_spacing_size_small_02.png)
-
-**Close button**
-
-![modal_dialog@spec_layout_spacing_size_small_03](../../images/modal_dialog@spec_layout_spacing_size_small_03.png)
-
-**Title container**
-
-![modal_dialog@spec_layout_spacing_size_small_04](../../images/modal_dialog@spec_layout_spacing_size_small_04.png)
-
-**Text container**
-
-![modal_dialog@spec_layout_spacing_size_small_05](../../images/modal_dialog@spec_layout_spacing_size_small_05.png)
-
-**Footer**
-
-![modal_dialog@spec_layout_spacing_size_small_06](../../images/modal_dialog@spec_layout_spacing_size_small_06.png)
+- Modal dialog — `modal_dialog@spec_layout_spacing_size_small_01`
+- Modal dialog — `modal_dialog@spec_layout_spacing_size_small_02`
+- Close button — `modal_dialog@spec_layout_spacing_size_small_03`
+- Title container — `modal_dialog@spec_layout_spacing_size_small_04`
+- Text container — `modal_dialog@spec_layout_spacing_size_small_05`
+- Footer — `modal_dialog@spec_layout_spacing_size_small_06`
 
 ### Max height: True
 
-**Modal dialog**
-
-![modal_dialog@spec_layout_spacing_max_height_true_01](../../images/modal_dialog@spec_layout_spacing_max_height_true_01.png)
-
-**Modal dialog**
-
-![modal_dialog@spec_layout_spacing_max_height_true_02](../../images/modal_dialog@spec_layout_spacing_max_height_true_02.png)
-
-**Body**
-
-![modal_dialog@spec_layout_spacing_max_height_true_03](../../images/modal_dialog@spec_layout_spacing_max_height_true_03.png)
-
-**Text container**
-
-![modal_dialog@spec_layout_spacing_max_height_true_04](../../images/modal_dialog@spec_layout_spacing_max_height_true_04.png)
-
-**Footer**
-
-![modal_dialog@spec_layout_spacing_max_height_true_05](../../images/modal_dialog@spec_layout_spacing_max_height_true_05.png)
+- Modal dialog — `modal_dialog@spec_layout_spacing_max_height_true_01`
+- Modal dialog — `modal_dialog@spec_layout_spacing_max_height_true_02`
+- Body — `modal_dialog@spec_layout_spacing_max_height_true_03`
+- Text container — `modal_dialog@spec_layout_spacing_max_height_true_04`
+- Footer — `modal_dialog@spec_layout_spacing_max_height_true_05`
 
 ---
 
