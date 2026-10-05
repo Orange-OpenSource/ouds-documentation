@@ -7,8 +7,8 @@
 ✅ **Do:** Use Bottom on mobile, with multiline messages or with longer action labels  
 ❌ **Don't:** Keep a trailing action on a narrow screen when the message already wraps
 
-✅ **Do:** Limit the toast to one clear action, such as Undo, Retry or View  
-❌ **Don't:** Offer several actions or a decision that needs careful thought in a toast
+✅ **Do:** Limit the toast to one short action whose label names the result, such as Undo, Retry or View order  
+❌ **Don't:** Offer several actions, a vague label such as Learn more, or a decision that needs careful thought
 
 ✅ **Do:** Use a button with the link style for in-app actions and a real link for navigation  
 ❌ **Don't:** Use a link element to trigger an action that does not navigate

@@ -1,0 +1,1 @@
+An accordion list item is a row that expands and collapses to reveal related content, so users open only the sections they need.

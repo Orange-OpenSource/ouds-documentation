@@ -12,8 +12,8 @@
 
 ✅ Warnings that need awareness but do not block the current task
 
-✅ Feedback that must stay visible while users continue to work on the page
+✅ Short, non-critical feedback of one or two lines that users can read at a glance
 
 ✅ Confirming an item was added, moved or removed, with an image for recognition
 
-✅ Messages whose information is also available elsewhere in the interface
+✅ Messages whose information stays available elsewhere after the toast disappears

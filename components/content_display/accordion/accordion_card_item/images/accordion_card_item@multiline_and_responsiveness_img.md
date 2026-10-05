@@ -1,0 +1,1 @@
+![accordion_card_item@multiline_and_responsiveness_img](./accordion_card_item@multiline_and_responsiveness_img.png)

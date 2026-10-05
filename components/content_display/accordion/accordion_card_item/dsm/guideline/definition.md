@@ -1,0 +1,2 @@
+An Accordion card item is an interactive, self-contained card used to reveal or hide related content within the current context. Use it when an accordion section requires stronger visual grouping or prominence than a standard Accordion list item.
+The card may be displayed independently or within a card-based accordion collection and may use a distinct Background, Outline or Rounded corners.

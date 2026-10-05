@@ -1,0 +1,3 @@
+**`Strong`** Used for primary or high-visibility actions. It uses bold styling and solid backgrounds, making the button stand out. Suitable for prominent placements where social interaction (sharing or following) is a key part of the user flow.
+
+**`Minimal`** Offers a more subtle appearance with lighter backgrounds or outlines. Intended for secondary or less intrusive placements. Works well in footers, cards, or alongside other actions where a social button is not the primary action.

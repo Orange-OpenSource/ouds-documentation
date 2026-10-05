@@ -1,0 +1,1 @@
+Categorical tag components must meet WCAG 2.2 Level AA standards so that all users can read the category and understand it without relying on colour. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).

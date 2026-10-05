@@ -1,0 +1,1 @@
+An accordion Q&A is a question that expands and collapses to reveal its answer, so users open only the questions that matter to them.

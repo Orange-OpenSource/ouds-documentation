@@ -10,5 +10,5 @@
 ✅ **Do:** Use Neutral or Accent for guidance, promotions and featured content  
 ❌ **Don't:** Use an Accent banner for an urgent message or a system issue
 
-✅ **Do:** Keep functional banners visible until the condition is resolved or no longer relevant  
-❌ **Don't:** Show a functional banner without a technical condition that triggers it
+✅ **Do:** Announce urgent Negative and Warning banners as alerts and other banners as polite status messages  
+❌ **Don't:** Use an assertive alert for promotional or informational banners, or show a functional banner without a real system condition

@@ -1,0 +1,1 @@
+![accordion_card_item@motion_animation_accessibility_rules_img](./accordion_card_item@motion_animation_accessibility_rules_img.png)

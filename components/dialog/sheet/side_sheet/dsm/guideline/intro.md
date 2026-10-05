@@ -1,0 +1,1 @@
+A side sheet is a dialog that slides in from one side of the viewport to hold a secondary task or details while the page stays in view.

@@ -1,0 +1,1 @@
+A categorical tag is a non-interactive label that uses a categorical colour to tell non-functional categories apart at a glance.

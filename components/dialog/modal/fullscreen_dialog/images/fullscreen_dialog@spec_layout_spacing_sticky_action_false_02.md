@@ -1,0 +1,1 @@
+![fullscreen_dialog@spec_layout_spacing_sticky_action_false_02](./fullscreen_dialog@spec_layout_spacing_sticky_action_false_02.png)

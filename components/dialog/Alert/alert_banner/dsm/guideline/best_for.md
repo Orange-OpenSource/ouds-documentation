@@ -4,7 +4,7 @@
 
 ✅ Announcing scheduled maintenance or an upcoming service disruption
 
-✅ Account-level notices that apply across several screens or features
+✅ Account-level notices, such as an approaching deadline, that apply across several screens
 
 ✅ Platform or service updates that do not require immediate action
 
@@ -16,4 +16,4 @@
 
 ✅ Global messages with a single follow-up action, such as View details
 
-✅ Short messages centred below the header on wide desktop screens
+✅ The single most important global message: banners are used sparingly, one at a time

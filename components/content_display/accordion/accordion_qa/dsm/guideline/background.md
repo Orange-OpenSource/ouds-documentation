@@ -1,0 +1,3 @@
+**`False`** The Q&A item uses the surrounding container surface without an individual Background. Use this option for standard Q&A lists where spacing or Dividers already provide sufficient visual separation.
+
+**`True`** A Background is applied to the complete Q&A item. Use it when individual questions require stronger visual grouping from the surrounding content. When expanded, the Background must visually contain both the question and its answer.

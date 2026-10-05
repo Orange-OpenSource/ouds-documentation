@@ -1,0 +1,1 @@
+![accordion_list_item@leading_container_type_avatar_badge_type_img](./accordion_list_item@leading_container_type_avatar_badge_type_img.png)

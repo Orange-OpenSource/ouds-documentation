@@ -1,0 +1,1 @@
+A fullscreen dialog takes over the whole viewport to let users complete a complex or content-heavy task before returning to the page.

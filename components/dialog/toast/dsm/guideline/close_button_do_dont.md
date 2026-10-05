@@ -4,11 +4,11 @@
 ✅ **Do:** Let short confirmations disappear automatically without a close button  
 ❌ **Don't:** Keep a simple “Changes saved” message on screen until users close it
 
-✅ **Do:** Adapt the display duration to the length of the message  
+✅ **Do:** Adapt the display duration to the length of the message so users have time to read it  
 ❌ **Don't:** Use the same short duration for one-line and three-line messages
 
-✅ **Do:** Keep important warnings and errors visible until users dismiss them  
-❌ **Don't:** Auto-dismiss information that is not available anywhere else
+✅ **Do:** Keep warnings and errors visible until users dismiss them  
+❌ **Don't:** Auto-dismiss an error, a warning or information that is not available anywhere else
 
 ✅ **Do:** Give the close button a descriptive accessible name, such as “Dismiss notification”  
 ❌ **Don't:** Leave the close button announced by the name of its icon

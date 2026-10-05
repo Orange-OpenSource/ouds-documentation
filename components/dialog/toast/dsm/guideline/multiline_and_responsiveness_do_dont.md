@@ -1,7 +1,7 @@
 ✅ **Do:** Let the toast grow vertically when the text wraps  
 ❌ **Don't:** Truncate the message with an ellipsis
 
-✅ **Do:** Keep the message short so it rarely exceeds three lines  
+✅ **Do:** Keep the message to one or two lines where possible, three at most  
 ❌ **Don't:** Write messages so long that the toast covers the content behind it
 
 ✅ **Do:** Let text and icons scale with user zoom  

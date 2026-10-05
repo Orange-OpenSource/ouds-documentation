@@ -1,0 +1,1 @@
+An Accordion list item is an interactive row used to reveal or hide related content within the current context. Accordion items are typically stacked vertically, allowing users to scan available sections and expand only the information they need.

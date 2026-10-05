@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Textual content](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
+- [WCAG 2.2 Understanding - Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html)
+- [WCAG 2.2 Understanding - Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

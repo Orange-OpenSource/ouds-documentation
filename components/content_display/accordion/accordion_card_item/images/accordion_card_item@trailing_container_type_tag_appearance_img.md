@@ -1,0 +1,1 @@
+![accordion_card_item@trailing_container_type_tag_appearance_img](./accordion_card_item@trailing_container_type_tag_appearance_img.png)

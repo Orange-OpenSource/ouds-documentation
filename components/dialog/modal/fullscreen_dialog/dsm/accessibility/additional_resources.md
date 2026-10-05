@@ -1,0 +1,4 @@
+- [Orange Accessibility Guidelines - Dialogs](https://a11y-guidelines.orange.com/en/articles/dialogs/1/)
+- [WAI-ARIA Authoring Practices - Dialog (Modal) Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)
+- [WCAG 2.2 Understanding - Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)
+- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

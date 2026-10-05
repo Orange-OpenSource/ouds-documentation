@@ -10,5 +10,5 @@
 ✅ **Do:** Tell users what they can do next when the banner requires an action  
 ❌ **Don't:** Describe a problem without any guidance when a recovery step exists
 
-✅ **Do:** Use plain, friendly and service-oriented language  
-❌ **Don't:** Use jargon, error codes or technical terms users do not know
+✅ **Do:** Use plain, service-oriented language and say “we” for system faults, such as “We’ve lost the connection”  
+❌ **Don't:** Blame users or use jargon, error codes or technical terms they do not know

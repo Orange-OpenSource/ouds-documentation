@@ -1,0 +1,1 @@
+![side_sheet@spec_layout_spacing_sticky_action_false_01](./side_sheet@spec_layout_spacing_sticky_action_false_01.png)
