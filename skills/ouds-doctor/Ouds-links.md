@@ -1,7 +1,7 @@
 ---
 title: OUDS redirection links
 description: Index of the links to Orange Unified Design System (OUDS) documentation, design and code pages, per component and per platform, plus other OUDS resources.
-updated: 2026-09-30
+updated: 2026-10-04
 ---
 
 # OUDS redirection links
@@ -175,6 +175,17 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - iOS: https://r.orange.fr/r/S-ouds-ios-checkbox
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-checkbox
 
+### Circular progress indicator
+
+- id: `circular-progress-indicator`
+- DSM: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator_changelog ⚠️ Temporary
+- Design: https://r.orange.fr/r/S-ouds-design-circular-progress-indicator
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-circular-progress-indicator
+- iOS: https://r.orange.fr/r/S-ouds-ios-circular-progress-indicator
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-circular-progress-indicator
+
 ### Divider
 
 - id: `divider`
@@ -233,8 +244,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Fullscreen dialog
 
 - id: `fullscreen-dialog`
-- DSM: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-fullscreen-dialog
 - Web: Not available
 - Android: Not available
@@ -259,9 +270,9 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-inline-alert_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-inline-alert
 - Web: https://r.orange.fr/r/S-ouds-web-inline-alert
-- Android: Not available
-- iOS: Not available
-- Flutter: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-inline-alert
+- iOS: https://r.orange.fr/r/S-ouds-ios-inline-alert
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-inline-alert
 
 ### Input tag
 
@@ -277,8 +288,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Interactive icon
 
 - id: `interactive-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-interactive-icon
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-interactive-icon_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-interactive-icon ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-interactive-icon_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-interactive-icon
 - Web: Not available
 - Android: Not available
@@ -290,7 +301,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - id: `ios-tab-bar`
 - DSM: https://r.orange.fr/r/S-ouds-doc-ios-tab-bar
 - DSM Changelog: Not applicable
-- Design: Not available
+- Design: Not applicable
 - Web: Not applicable
 - Android: Not applicable
 - iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar
@@ -301,7 +312,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - id: `ios-tool-bar-bottom`
 - DSM: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-bottom
 - DSM Changelog: Not applicable
-- Design: Not available
+- Design: Not applicable
 - Web: Not applicable
 - Android: Not applicable
 - iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar
@@ -312,11 +323,21 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - id: `ios-tool-bar-top`
 - DSM: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-top
 - DSM Changelog: Not applicable
-- Design: Not available
+- Design: Not applicable
 - Web: Not applicable
 - Android: Not applicable
 - iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-top-bar
+
+### Linear progress indicator
+- id: `linear-progress-indicator`
+- DSM: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator_changelog ⚠️ Temporary
+- Design: https://r.orange.fr/r/S-ouds-design-linear-progress-indicator
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-linear-progress-indicator
+- iOS: https://r.orange.fr/r/S-ouds-ios-linear-progress-indicator
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-linear-progress-indicator
 
 ### Link
 
@@ -332,8 +353,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Modal dialog
 
 - id: `modal-dialog`
-- DSM: https://r.orange.fr/r/S-ouds-doc-modal-dialog
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-modal-dialog_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-modal-dialog ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-modal-dialog_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-modal-dialog
 - Web: Not available
 - Android: Not available
@@ -346,16 +367,16 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM: https://r.orange.fr/r/S-ouds-doc-navigation-button
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-button_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-button
-- Web: Not available
-- Android: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-navigation-button
+- Android: https://r.orange.fr/r/S-ouds-android-navigation-button
 - iOS: Not available
 - Flutter: Not available
 
 ### Navigation card item
 
 - id: `navigation-card-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-card-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-card-item_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-card-item ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-card-item_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-card-item
 - Web: Not available
 - Android: Not available
@@ -365,12 +386,12 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Navigation list item
 
 - id: `navigation-list-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-list-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-list-item_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-list-item ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-list-item_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-list-item
 - Web: Not available
 - Android: Not available
-- iOS: Not available
+- iOS: https://r.orange.fr/r/S-ouds-ios-navigation-list-item
 - Flutter: Not available
 
 ### Password input
@@ -380,8 +401,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-password-input_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-password-input
 - Web: https://r.orange.fr/r/S-ouds-web-password-input
-- Android: Not available
-- iOS: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-password-input
+- iOS: https://r.orange.fr/r/S-ouds-ios-password-input
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-password-input
 
 ### Phone number input
@@ -402,8 +423,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-pin-code-input_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-pin-code-input
 - Web: Not available
-- Android: Not available
-- iOS: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-pin-code-input
+- iOS: https://r.orange.fr/r/S-ouds-ios-pin-code-input
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-pin-code-input
 
 ### Quantity input
@@ -453,8 +474,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Static card item
 
 - id: `static-card-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-static-card-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-card-item_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-static-card-item ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-card-item_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-static-card-item
 - Web: Not available
 - Android: Not available
@@ -464,19 +485,19 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Static list item
 
 - id: `static-list-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-static-list-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-list-item_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-static-list-item ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-list-item_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-static-list-item
 - Web: Not available
 - Android: Not available
-- iOS: Not available
+- iOS: https://r.orange.fr/r/S-ouds-ios-static-list-item
 - Flutter: Not available
 
 ### Status icon
 
 - id: `status-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-status-icon
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-status-icon_changelog
+- DSM: https://r.orange.fr/r/S-ouds-doc-status-icon ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-status-icon_changelog ⚠️ Temporary
 - Design: https://r.orange.fr/r/S-ouds-design-status-icon
 - Web: Not available
 - Android: Not available
@@ -523,8 +544,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-text-area_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-text-area
 - Web: https://r.orange.fr/r/S-ouds-web-text-area
-- Android: Not available
-- iOS: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-text-area
+- iOS: https://r.orange.fr/r/S-ouds-ios-text-area
 - Flutter: Not available
 
 ### Text input
@@ -589,6 +610,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 
 - OUDS introduction: https://oran.ge/ouds-discovery
 - OUDS component status list: https://oran.ge/ouds-component-status
+- OUDS roadmap (components): https://unified-design-system.orange.com/472794e18/p/73c701-components/b/7771da
 - Dual-Mode web information: https://web.unified-design-system.orange.com/orange/docs/dual-mode/
 - New Orange illustrations: https://oran.ge/illustrations
 - Design Toolbox (mobile app to test and interact with OUDS components): https://oran.ge/designtoolbox
