@@ -3,7 +3,7 @@ Use an icon to reinforce the meaning of the destination or help users identify a
 
 ⚠️ Do not use an action icon that suggests a separate operation inside the navigation item.
 
-### Size
+#### Size
 Controls the visual prominence of the icon.
 
 ⚠️ Use the same icon size for equivalent items within the same list. Do not mix sizes arbitrarily. Different sizes may suggest a hierarchy or importance that does not exist.
@@ -12,7 +12,7 @@ Controls the visual prominence of the icon.
 
 **`Large`** Use when the icon needs stronger prominence or when the item has a larger height, multiline content or additional supporting information.
 
-### Status
+#### Status
 Defines the semantic colour applied to the icon.
 
 **`Not functional`**
@@ -29,17 +29,18 @@ Defines the semantic colour applied to the icon.
 
 **`Negative`** Use for errors, failures, destructive outcomes or critical problems.
 
-**Badge**
+### Badge
 Display a badge when a notification or secondary status must be associated with the destination represented by the icon.
 
 **`False`** Display the icon without a badge.
 
 **`True`** Display a badge when a notification must be associated with the icon.
 
-**`Image`** Use an image when visual identification of the destination is important, for example for a product, service, article or media page.
+### Image
+Use an image when visual identification of the destination is important, for example for a product, service, article or media page.
 Do not use an image when it does not add useful information or when it could be mistaken for a separate interactive preview.
 
-### Size
+#### Size
 Controls the dimensions and visual prominence of the image.
 
 ⚠️ Use the same image size for equivalent items within the same list. Do not mix sizes arbitrarily. Different sizes may suggest a hierarchy or importance that does not exist.
@@ -50,7 +51,7 @@ Controls the dimensions and visual prominence of the image.
 
 **`Xlarge`** Use when the image is a significant part of the content, such as a product or media preview.
 
-### Ratio
+#### Ratio
 Defines the aspect ratio of the image container.
 
 ⚠️ Do not crop meaningful content in a way that makes the image difficult to understand. Use an appropriate focal point when the source image is cropped automatically.
@@ -59,28 +60,28 @@ Defines the aspect ratio of the image container.
 
 **`16x9`** Use for landscape content such as editorial images or wide media thumbnails.
 
-### Rounded corner
+#### Rounded corner
 Defines whether the image is displayed with square or rounded corners. The corner style should reflect the type of content and remain consistent with the visual language used elsewhere in the product.
 
 **`False`** Displays the image with square corners.
 
 **`True`** Displays the image with rounded corners.
 
-### Animated
+#### Animated
 Defines whether the image can contain animated content. Use animation only when it provides meaningful value to the user and does not distract from the primary content or interaction.
 
 **`False`** Displays a static image. Use when animation does not provide meaningful information or when a still representation is sufficient.
 
 **`True`** Displays animated content, such as a GIF or WEBP file. Use when the animation provides meaningful visual information or helps communicate the nature of the content.
 
-### ⚠️ Motion & Animation accessibility rules
+**⚠️ Motion & Animation accessibility rules**
 The use of motion and animation in our products and components requires particular attention to the accessibility guidelines available in the dedicated section of this documentation.
 
 ### Avatar
 Use an avatar when the destination represents a person, profile, team, organisation or account.
 The avatar supports visual recognition but must always be accompanied by a visible text label identifying the destination.
 
-### Size
+#### Size
 
 **`Medium`** Use in compact lists or when the avatar is secondary to the content.
 
@@ -88,7 +89,7 @@ The avatar supports visual recognition but must always be accompanied by a visib
 
 **`Xlarge`** Use when identity is a primary part of the item or when additional avatar details must remain visible.
 
-### Type
+#### Type
 Defines the content displayed inside the avatar.
 
 **`Image`** Use when a profile image, portrait or organisation logo is available. Avoid images containing small text or complex details.
@@ -97,7 +98,7 @@ Defines the content displayed inside the avatar.
 
 **`Icon`** Use for generic accounts, anonymous profiles, teams or entities that do not have an individual image or initials.
 
-### Badge
+#### Badge
 Controls whether a badge is displayed on the avatar.
 
 **`False`** Display the avatar without additional status information.
@@ -107,7 +108,7 @@ Controls whether a badge is displayed on the avatar.
 ⚠️ Do not use the badge as the only way to communicate an important state. The same information should be available through text or assistive technology.
 When Badge is enabled, additional properties become available.
 
-### Badge type
+#### Badge type
 Defines the visual content used in the avatar.
 
 **`Badge`** Use for simple state indicators. Do not rely on colour alone to communicate a functional status. Provide an additional text label or accessible description.
@@ -116,7 +117,7 @@ Defines the visual content used in the avatar.
 
 ⚠️ For Neutral and Accent statuses, the icon can be adapted to the context. For functional statuses, the icon is predefined and must not be changed, ensuring consistent and accessible status communication across the design system.
 
-### Badge status
+#### Badge status
 Defines the semantic colour of the badge.
 
 ⚠️ Colour alone must not communicate the state. Provide a visible label, description, tooltip where appropriate, or an accessible text equivalent in implementation.
@@ -137,12 +138,14 @@ Defines the semantic colour of the badge.
 
 **`Negative`** Use for unavailable, failed, blocked or notification states.
 
-**`Flag`** Use a flag to represent a country, territory or regional context. A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
+### Flag
+Use a flag to represent a country, territory or regional context. A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
 
 ⚠️ Always provide the corresponding country, territory or language name as visible text.
 The accessible name should describe the represented country or territory, not the visual appearance of the flag.
 
-**`Slot`** Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag. Slot provides flexibility for specific product requirements, but it should be used as an exception rather than the default solution.
+### `Slot`
+Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag. Slot provides flexibility for specific product requirements, but it should be used as an exception rather than the default solution.
 
 ⚠️ Interaction
 The Navigation list item already acts as one complete interactive link.
