@@ -1,4 +1,4 @@
-#### Badge size
+### Badge size
 
 **`XSmall`** Use for very compact Badges within Small accordion items or dense layouts.
 

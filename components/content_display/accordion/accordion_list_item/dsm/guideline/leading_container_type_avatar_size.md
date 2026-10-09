@@ -1,4 +1,4 @@
-#### Size
+### Size
 
 **`Medium`** Use in compact accordions or when the avatar is secondary to the content.
 

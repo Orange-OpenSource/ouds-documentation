@@ -1,4 +1,4 @@
-#### Badge
+### Badge
 Controls whether a badge is displayed on the avatar.
 
 **`False`** Display the avatar without additional status information.

@@ -1,4 +1,4 @@
-#### State
+### State
 
 **`Enabled`** The default state of the Tag, used to display current information or status.
 

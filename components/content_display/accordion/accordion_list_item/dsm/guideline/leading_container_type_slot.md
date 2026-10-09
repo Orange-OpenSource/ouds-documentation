@@ -2,7 +2,7 @@
 Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag.  
 Slot provides flexibility for specific product requirements but should be used as an exception rather than the default solution.
 
-**⚠️ Interaction**  
+### ⚠️ Interaction
 The complete Accordion trigger already controls whether its associated content is expanded or collapsed.
 
 Custom Slot content inside the trigger must not contain:  

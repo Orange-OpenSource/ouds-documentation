@@ -1,4 +1,4 @@
-#### Badge count size
+### Badge count size
 
 **`Medium`** Use Medium for standard or compact accordion items.
 

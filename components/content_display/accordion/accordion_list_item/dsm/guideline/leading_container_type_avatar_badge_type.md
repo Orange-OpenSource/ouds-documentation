@@ -1,4 +1,4 @@
-#### Badge type
+### Badge type
 Defines the visual content used in the avatar.
 
 **`Badge`** Use for simple state indicators. Do not rely on colour alone to communicate a functional status. Provide an additional text label or accessible description.
