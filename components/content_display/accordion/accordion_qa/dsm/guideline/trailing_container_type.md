@@ -1,4 +1,4 @@
-**`Trailing Text`** Use Text to display a short value or secondary piece of information associated with the accordion section.
+**Trailing Text** Use Text to display a short value or secondary piece of information associated with the accordion section.
 
 ⚠️ Keep Trailing text concise. When the information requires a sentence or explanation, use the Description or place the information inside the expanded content instead.
 ⚠️ Trailing text must not look like a separate link or action.

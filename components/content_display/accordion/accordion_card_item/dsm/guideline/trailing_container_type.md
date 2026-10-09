@@ -7,13 +7,13 @@ Their meaning and nested properties remain the same. Only their position within 
 ⚠️ All Trailing content remains part of the same accordion trigger and must not suggest an independent action.
 ⚠️ Avoid using the same container type in both Leading and Trailing positions unless each element communicates clearly different information.
 
-**`Trailing Text`** Use Text to display a short value or secondary piece of information associated with the accordion section.
+**Trailing Text** Use Text to display a short value or secondary piece of information associated with the accordion section.
 
 ⚠️ Keep Trailing text concise. When the information requires a sentence or explanation, use the Description or place the information inside the expanded content instead.
 ⚠️ Trailing text must not look like a separate link or action.
 ⚠️ Keep trailing text to 1–2 words whenever possible. Longer content can reduce the space available for the primary label and cause excessive wrapping, especially when users zoom in or increase the text size.
 
-**`Label`** Use Label for standard secondary information that should remain clearly readable without drawing more attention than the primary Label.
+**Label** Use Label for standard secondary information that should remain clearly readable without drawing more attention than the primary Label.
 
 **`Label muted`** Use Label muted for low-priority metadata that supports the card but is
 not essential to understanding the accordion topic.
@@ -22,7 +22,7 @@ not essential to understanding the accordion topic.
 
 **`Label + Extra label`** Use Label + Extra label when a value requires a short qualifier, unit or supporting label.
 
-**`Trailing Badge`** Use a Badge to communicate a compact status or notification associated with the accordion section. A Badge contains secondary information and must not replace the primary Label or Description.
+**Trailing Badge** Use a Badge to communicate a compact status or notification associated with the accordion section. A Badge contains secondary information and must not replace the primary Label or Description.
 
 **Type**
 
@@ -45,7 +45,7 @@ The Status property defines the semantic colour and meaning of the Badge.
 
 **`Accent`** Use to highlight branded or noteworthy information that does not correspond to a functional status. Do not use Accent only to make the accordion card more visually prominent.
 
-**`Functional`**
+**Functional**
 
 **`Positive`** Use for successful, active, available or completed states.
 
@@ -96,13 +96,13 @@ The Badge state is independent from the Accordion card item state. A Disabled Ba
 
 **Status**
 
-**`Not functional`**
+**Not functional**
 
 **`Neutral`** Use Neutral for general categories, attributes or metadata without a specific semantic meaning.
 
 **`Accent`** Use Accent for branded or noteworthy information that does not correspond to a functional status.
 
-**`Functional`** ⚠️ Always use the functional text associated with success.
+**Functional** ⚠️ Always use the functional text associated with success.
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.
 
@@ -152,7 +152,7 @@ This option is available for all brand themes
 
 | Brand theme | Status |
 |---|---|
-| Orange | Available |
-| Orange Compact | Available |
-| Sosh | Available |
-| Wireframe | Available |
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ✅ Available |
+| Wireframe | ✅ Available |
