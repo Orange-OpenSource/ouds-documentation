@@ -1,5 +1,5 @@
-**Shared container type**
-The following types reuse the properties and guidance documented under Leading container type:
+**Shared container type**  
+The following types reuse the properties and guidance documented under Leading container type:  
 Icon, Image, Avatar, Flag and Slot.
 
 Their meaning and nested properties remain the same. Only their position within the trigger changes.

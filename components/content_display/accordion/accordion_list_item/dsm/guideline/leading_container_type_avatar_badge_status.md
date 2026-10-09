@@ -1,4 +1,4 @@
-**Badge status**
+**Badge status**  
 Defines the semantic colour of the badge.
 
 ⚠️ Colour alone must not communicate the state. Provide a visible label, description, tooltip where appropriate, or an accessible text equivalent in implementation.

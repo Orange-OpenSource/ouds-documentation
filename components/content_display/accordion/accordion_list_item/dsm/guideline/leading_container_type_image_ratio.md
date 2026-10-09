@@ -1,4 +1,4 @@
-**Ratio**
+**Ratio**  
 Defines the aspect ratio of the image container.
 
 ⚠️ Do not crop meaningful content in a way that makes the image difficult to understand. Use an appropriate focal point when the source image is cropped automatically.

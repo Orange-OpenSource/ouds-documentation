@@ -166,7 +166,8 @@ Leading content appears before the main Label and supports recognition or identi
 
 ## Leading container type
 
-**`Icon`** Use an Icon to reinforce the meaning of the accordion topic or help users identify a familiar category, object, service or status.
+**Icon**
+Use an Icon to reinforce the meaning of the accordion topic or help users identify a familiar category, object, service or status.
 
 **Size**
 Controls the visual prominence of the icon.
@@ -184,7 +185,8 @@ Defines the semantic colour applied to the icon.
 
 **`Neutral`** Use when the icon does not communicate a specific semantic status.
 
-**`Functional`** ⚠️ Use semantic statuses only when the icon represents the same meaning as the status. Do not use a semantic colour only for decoration or visual variety.
+**`Functional`**
+⚠️ Use semantic statuses only when the icon represents the same meaning as the status. Do not use a semantic colour only for decoration or visual variety.
 
 **`Positive`** Use for successful, completed or beneficial states.
 
@@ -201,7 +203,8 @@ Controls whether an additional badge is displayed with the icon.
 
 **`True`** Display a badge when a notification must be associated with the icon.
 
-**`Image`** Use an image when visual identification of the accordion section is important, for example for a product, service, destination, article or media topic.
+**Image**
+Use an image when visual identification of the accordion section is important, for example for a product, service, destination, article or media topic.
 The image should help users recognise the subject before expanding the section.
 
 **Size**
@@ -241,7 +244,8 @@ Displays animated content, such as a GIF or WEBP file. Use when the animation pr
 
 **`True`** Displays animated content. Use when the animation provides meaningful visual information or helps communicate the nature of the content.
 
-**`Avatar`** Use an avatar when the accordion section relates to a person, profile, team, organisation or account. An avatar supports visual recognition but must always be accompanied by a visible text label identifying the represented entity.
+**Avatar**
+Use an avatar when the accordion section relates to a person, profile, team, organisation or account. An avatar supports visual recognition but must always be accompanied by a visible text label identifying the represented entity.
 
 **Size**
 
@@ -301,12 +305,14 @@ Defines the semantic colour of the badge.
 
 **`Negative`** Use for unavailable, failed, blocked or notification states.
 
-**`Flag`** Use a flag to represent a country, territory or regional context when this information helps users identify the accordion section.
+**Flag**
+Use a flag to represent a country, territory or regional context when this information helps users identify the accordion section.
 A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
 
 ⚠️ Always provide the corresponding country, territory or language name as visible text. The accessible name should describe the represented country or territory, not the visual appearance of the flag.
 
-**`Slot`** Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag.
+**Slot**
+Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag.
 Slot provides flexibility for specific product requirements but should be used as an exception rather than the default solution.
 
 **⚠️ Interaction**
@@ -352,7 +358,8 @@ Their meaning and nested properties remain the same. Only their position within 
 
 ⚠️ Avoid using the same container type in both Leading and Trailing positions within the same item unless there is a clear content reason.
 
-**`Trailing Text`** Use Text to display a short value or secondary piece of information associated with the accordion section.
+**Trailing Text**
+Use Text to display a short value or secondary piece of information associated with the accordion section.
 
 ⚠️ Keep Trailing text concise. When the information requires a sentence or explanation, use the Description or place the information inside the expanded content instead.
 
@@ -368,7 +375,8 @@ Their meaning and nested properties remain the same. Only their position within 
 
 **`Label + Extra label`** Use Label + Extra label when a value requires a short qualifier, unit or supporting label.
 
-**`Trailing Badge`** Use a Badge to communicate a compact status or notification associated with the accordion section.
+**Trailing Badge**
+Use a Badge to communicate a compact status or notification associated with the accordion section.
 A Badge contains secondary information and must not replace the primary Label or Description.
 
 **Type**
@@ -431,7 +439,8 @@ The Badge state is independent from the Accordion list item state. A Disabled Ba
 
 ⚠️ Do not use Disabled merely to reduce the visual emphasis of the Badge.
 
-**`Trailing Tag`** Use a Tag to communicate a category, attribute, classification or compact status related to the accordion section. A Tag can provide useful context before expansion and help users scan or compare several accordion items.
+**Trailing Tag**
+Use a Tag to communicate a category, attribute, classification or compact status related to the accordion section. A Tag can provide useful context before expansion and help users scan or compare several accordion items.
 
 ⚠️ The Tag is informational within the accordion trigger. It must not appear selectable or behave as an independent action.
 
@@ -451,7 +460,8 @@ The Badge state is independent from the Accordion list item state. A Disabled Ba
 
 **`Accent`** Use Accent for branded or noteworthy information that does not correspond to a functional status.
 
-**`Functional`** ⚠️ Always use the functional text associated with success.
+**`Functional`**
+⚠️ Always use the functional text associated with success.
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.
 

@@ -6,7 +6,8 @@
 
 **`Accent`** Use Accent for branded or noteworthy information that does not correspond to a functional status.
 
-**`Functional`** ⚠️ Always use the functional text associated with success.
+**`Functional`**  
+⚠️ Always use the functional text associated with success.
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.
 

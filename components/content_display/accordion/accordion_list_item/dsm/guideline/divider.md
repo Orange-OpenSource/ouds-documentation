@@ -1,4 +1,4 @@
-**`False`** No Divider is displayed.
+**`False`** No Divider is displayed.  
 Use this option when accordion items are already separated by spacing, individual backgrounds or another clear grouping method.
 
 **`True`** A Divider is displayed between accordion items.

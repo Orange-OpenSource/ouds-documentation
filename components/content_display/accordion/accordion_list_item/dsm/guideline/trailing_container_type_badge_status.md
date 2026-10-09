@@ -1,4 +1,4 @@
-**Status**
+**Status**  
 The Status property defines the semantic colour and meaning of the Badge.
 
 ⚠️ Colour must not be the only way the meaning is communicated. Provide an equivalent accessible description.
@@ -7,7 +7,7 @@ The Status property defines the semantic colour and meaning of the Badge.
 
 **`Neutral`** Used for general labels without specific emphasis.
 
-**`Accent`** Use to highlight branded or noteworthy information that does not correspond to a functional status.
+**`Accent`** Use to highlight branded or noteworthy information that does not correspond to a functional status.  
 Do not use Accent only to make the accordion item more visually prominent.
 
 **`Functional`**
@@ -18,5 +18,5 @@ Do not use Accent only to make the accordion item more visually prominent.
 
 **`Warning`** Use for states that require caution, awareness or future action.
 
-**`Negative`** Draws attention to important or critical information.
+**`Negative`** Draws attention to important or critical information.  
 Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
