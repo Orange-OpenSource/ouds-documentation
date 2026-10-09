@@ -13,7 +13,7 @@ This option is available for all brand themes
 
 | Brand theme | Status |
 |---|---|
-| Orange | Available |
-| Orange Compact | Available |
-| Sosh | Available |
-| Wireframe | Available |
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ✅ Available |
+| Wireframe | ✅ Available |
