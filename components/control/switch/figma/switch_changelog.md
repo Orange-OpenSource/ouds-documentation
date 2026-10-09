@@ -1,5 +1,6 @@
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
+| Sep 1, 2026 | - | • Documentation writing: Motion & Animation accessibility rules. | Maxime Tonnerre |
 | Apr 8, 2026 | - | • Documentation writing: Rich text | Anton Astafev |
 | Mar 16, 2026 | - | • Documentation writing: | Maxime Tonnerre |
 | | | ‎ ‎ ‎ ‎ • Mandatory field indication | |

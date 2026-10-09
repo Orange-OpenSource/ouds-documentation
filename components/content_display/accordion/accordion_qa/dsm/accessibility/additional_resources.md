@@ -1,4 +1,0 @@
-- [Orange Accessibility Guidelines - Textual content](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
-- [WAI-ARIA Authoring Practices - Accordion Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/)
-- [WCAG 2.2 Understanding - Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
-- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)

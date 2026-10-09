@@ -1038,6 +1038,26 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 
 ---
 
+# Specs
+
+## States
+
+**`Enabled`** Enabled is the default state. All content is displayed using its standard visual tokens.  Because the card is static, the Enabled state does not introduce hover, pressed or focus behaviour.
+
+**`Disabled`** Use Disabled when the information represented by the card is currently unavailable, inactive or no longer applicable. Since the card is non-interactive, the Disabled state communicates the availability or relevance of its content, not the availability of an action.
+
+**`Skeleton`** Use Skeleton while the card content is loading and its final values are not yet available.
+
+---
+
+## Layout and spacing
+
+🚧 Content to be added
+
+---
+
+# Accessibility
+
 ## Motion & Animation accessibility rules
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
@@ -1065,28 +1085,6 @@ When the animation is short, lasting 5 seconds or less, no pause, stop, or hide 
 **Reduced Motion**
 If Reduced Motion is enabled, any decorative or not essential animation that is not necessary to understand the content must be removed or replaced with a static representation.
 If an animation conveys essential information, that same information must remain available through a non-animated alternative.
-
----
-
-# Specs
-
-## States
-
-**`Enabled`** Enabled is the default state. All content is displayed using its standard visual tokens.  Because the card is static, the Enabled state does not introduce hover, pressed or focus behaviour.
-
-**`Disabled`** Use Disabled when the information represented by the card is currently unavailable, inactive or no longer applicable. Since the card is non-interactive, the Disabled state communicates the availability or relevance of its content, not the availability of an action.
-
-**`Skeleton`** Use Skeleton while the card content is loading and its final values are not yet available.
-
----
-
-## Layout and spacing
-
-🚧 Content to be added
-
----
-
-# Accessibility
 
 ## Accessibility
 

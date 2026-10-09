@@ -136,6 +136,16 @@ FILES_ONLY_IN_DIRS = {
     # 'anatomy': ['specs'],
 }
 
+# Slices that are never saved under specific top-level sections
+# Key: H1 directory, Value: list of filenames (without .md) to skip
+# "# Accessibility" only holds the sections written by the designer in the Figma Overview
+# ("Accessibility", "Motion & Animation accessibility rules"); the generated accessibility
+# template sub-sections of older masters are no longer sliced
+SLICES_SKIPPED_IN_H1 = {
+    'accessibility': ['accessibility_intro', 'accessibility_challenges', 'design_requirements',
+                      'testing_checklist', 'key_wcag_criteria', 'additional_resources'],
+}
+
 
 def normalize_title(title: str) -> str:
     """
@@ -393,6 +403,11 @@ def process_component_doc(file_path: Path) -> None:
             # Extract full content for this section
             section_content = extract_section_content(content, flat_sections, section_index)
             filename = sanitize_filename(section.title)
+            # Skip slices that are not saved under their top-level section
+            skipped = SLICES_SKIPPED_IN_H1.get(section.path[0], []) if section.path else []
+            if filename in skipped:
+                print(f"  ⊘ Skipped: {'/'.join(section.path)} (not sliced under '{section.path[0]}')")
+                continue
             save_slice(component_dir, section.path, filename, section_content)
     
     print(f"  ✓ Completed slicing")

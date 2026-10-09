@@ -722,6 +722,24 @@ The highest-priority toast remains closest to the placement edge.
 
 ---
 
+# Specs
+
+## States
+
+**`Enabled`** Use the Enabled state to display a standard toast once the notification content is ready. The toast presents feedback immediately and allows users to interact with optional actions or dismiss it.
+
+**`Loading`** Use the Loading state when an action or background process is still in progress. Replace the leading icon with a progress indicator to communicate that the operation has not yet completed. Once finished, update the toast to the enabled state with the final result.
+
+---
+
+## Layout and spacing
+
+🚧 Content to be added
+
+---
+
+# Accessibility
+
 ## Motion & Animation accessibility rules
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
@@ -753,26 +771,6 @@ When Reduced Motion is enabled, the animated transition should therefore be remo
 The notification itself must remain perceivable and understandable without relying on animation.
 Default: animated appearance and closing
 Reduced Motion: instantaneous appearance and closing
-
----
-
-# Specs
-
-## States
-
-**`Enabled`** Use the Enabled state to display a standard toast once the notification content is ready. The toast presents feedback immediately and allows users to interact with optional actions or dismiss it.
-
-**`Loading`** Use the Loading state when an action or background process is still in progress. Replace the leading icon with a progress indicator to communicate that the operation has not yet completed. Once finished, update the toast to the enabled state with the final result.
-
----
-
-## Layout and spacing
-
-🚧 Content to be added
-
----
-
-# Accessibility
 
 ## Accessibility
 

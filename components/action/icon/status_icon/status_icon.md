@@ -134,92 +134,36 @@ In order to preserve the minimun interactive area during user zoom out, this com
 
 ---
 
-# Accessibility 👈🤖
+# Accessibility
 
-## Accessibility intro
+## Motion & Animation accessibility rules
 
-Status icons must meet WCAG 2.2 Level AA. Because they convey meaning, the status must be available to assistive technology and never communicated by color alone. For comprehensive guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
+These two main criteria address different issues:
 
----
+**Pause, Stop, Hide - WCAG 2.2.2**
+This concerns moving, blinking, scrolling, or automatically updating content.
+The question to ask is: does the animation start automatically and meet the criterion’s conditions?
+When a relevant animation lasts more than 5 seconds, users must be able to pause, stop, or hide it.
+The two criteria should therefore be evaluated independently.
 
-## Accessibility Challenges
+**Reduced Motion (Animation from Interactions) - WCAG 2.3.3**
+This primarily concerns motion-based animations triggered by user interaction.
+The question to ask is: is the movement essential to the functionality or to the information being conveyed?
+If not, the animation should be removed, reduced, or replaced when the user has enabled Reduced Motion.
 
-A status icon carries meaning visually, so that meaning must also reach screen-reader users and not depend on color perception. Decorative duplicates must be hidden, and any animation must respect reduced-motion preferences.
+ℹ️ The reduced motion preference can be configured by the user at the operating system level and is available to websites through the CSS prefers-reduced-motion media feature.
 
-### Key Challenges
+Concrete application to the Status icon:
 
-- Conveying status meaning to assistive tech, not by color or shape alone
-- Avoiding duplicate announcements when adjacent text already states the status
-- Meeting non-text contrast for the icon against its background
-- Respecting `prefers-reduced-motion` for the animated variant
+**Pause, Stop, Hide**
+If the icon animation starts automatically and repeats for more than 5 seconds, it must be possible to pause, stop, or hide it, unless a WCAG exception applies.
+Whenever possible, it is recommended to use a short, non-repeating animation rather than maintaining a looping animation.
 
-### Critical Success Factors
-
-1. Provide a text alternative for the status (or expose it via the surrounding message)
-2. Hide the icon from assistive tech (`aria-hidden`) when adjacent text already conveys the status
-3. Don't rely on color alone — pair it with the standardized symbol
-4. Honor reduced-motion settings; the static state must convey the same meaning
-
----
-
-## Design Requirements
-
-### Structure & Labels
-
-- [ ] **Text alternative**: Give the icon an accessible name, or ensure nearby text states the status ([Images guidance](https://a11y-guidelines.orange.com/en/web/develop/images/))
-- [ ] **No double-speak**: Mark the icon `aria-hidden` when the status is already in adjacent text
-- [ ] **Live updates**: For dynamic status, announce changes via an appropriate live region
-
-### Visual Design
-
-- [ ] **Not color-only**: Pair semantic color with the standardized symbol ([Color guidance](https://a11y-guidelines.orange.com/en/web/design/color-and-contrast/))
-- [ ] **Non-text contrast**: Meet ≥3:1 for the icon against its background
-- [ ] **Reduced motion**: Provide a static fallback for the animated variant
-
-### Content
-
-- [ ] **Consistent meaning**: ❌ Green for a warning / ✅ Standard color+symbol per status ([Content guidance](https://a11y-guidelines.orange.com/en/web/design/textual-content/))
-- [ ] **No customization**: Never substitute a non-standard icon for a status
-
----
-
-## Testing Checklist
-
-### Screen Reader Testing
-
-- [ ] Verify the status is announced (via the icon's name or adjacent text), without duplication
-- [ ] Confirm decorative status icons are hidden when text already conveys the status
-
-### Color & Contrast Testing
-
-- [ ] Check the icon's non-text contrast (≥3:1) and confirm meaning survives without color
-
-### Motion Testing
-
-- [ ] With `prefers-reduced-motion`, confirm the animated variant falls back to static
-
-Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/testing/)
-
----
-
-## Key WCAG Criteria
-
-- **1.4.1 Use of Color** (A): Status not conveyed by color alone; symbol reinforces meaning
-- **1.1.1 Non-text Content** (A): Status icon has a text alternative or is correctly hidden
-- **1.4.11 Non-text Contrast** (AA): Icon meets ≥3:1 contrast against its background
-- **2.3.3 Animation from Interactions** (AAA): Respect reduced-motion for the animated variant
-- **4.1.3 Status Messages** (AA): Dynamic status changes are announced without moving focus
-
-For complete reference: [Orange Accessibility Guidelines - Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
-
----
-
-## Additional Resources
-
-- [Orange Accessibility Guidelines - Images](https://a11y-guidelines.orange.com/en/web/develop/images/)
-- [W3C WAI - Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html)
-- [WCAG 2.2 Understanding Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
-- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+**Reduced Motion**
+Animation applied to a functional icon is generally not essential to understanding the information being conveyed.
+When Reduced Motion is enabled, the animation should be removed or replaced with a static representation of the corresponding state.
+If the animation conveys essential information, that information must remain available through a non-animated representation.
 
 ---
 

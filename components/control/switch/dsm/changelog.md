@@ -1,5 +1,6 @@
 | Date | Number | Notes |
 |------|--------|-------|
+| Sep 1, 2026 | - | <ul><li>Documentation writing: Motion & Animation accessibility rules.</ul> |
 | Apr 8, 2026 | - | <ul><li>Documentation writing: Rich text</ul> |
 | Mar 16, 2026 | - | <ul><li>Documentation writing:<ul><li>Mandatory field indication<li>Multiline and responsiveness<li>Technical layout adjustments</ul></ul> |
 | Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |

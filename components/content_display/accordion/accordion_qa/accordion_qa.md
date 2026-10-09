@@ -675,6 +675,33 @@ The accordion content expands from its collapsed state when opened, providing a 
 
 ---
 
+# Specs
+
+## States
+
+**`Enabled`** Enabled is the default state.
+The Q&A can be expanded or collapsed. The complete trigger area acts as a single control for changing the Expanded state.
+
+**`Hover`** Hover provides visual feedback when a pointer is positioned over the Q&A trigger.
+
+**`Focus`** Focus indicates that the Q&A trigger is currently selected for keyboard interaction. Display one clear Focus treatment around the complete trigger area. When the expanded answer contains interactive elements, those elements receive their own Focus state independently from the Q&A trigger.
+
+**`Pressed`** Pressed is a temporary state displayed while the Q&A trigger is being activated.
+
+**`Disabled`** Use Disabled when the Q&A is temporarily unavailable or cannot currently be expanded. A Disabled trigger must not respond to activation.
+
+**`Skeleton`** Use Skeleton while the Q&A or its required content is loading and the final information is not yet available. A Skeleton Q&A item acts as a placeholder and must not expand or collapse.
+
+---
+
+## Layout and spacing
+
+🚧 Content to be added
+
+---
+
+# Accessibility
+
 ## Motion & Animation accessibility rules
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
@@ -704,121 +731,6 @@ The animated expansion and collapse of an accordion are not essential to its fun
 When Reduced Motion is enabled, the animated transition should therefore be removed or replaced with an instantaneous transition.
 Default: animated expansion and collapse
 Reduced Motion: instantaneous expansion and collapse
-
----
-
-# Specs
-
-## States
-
-**`Enabled`** Enabled is the default state.
-The Q&A can be expanded or collapsed. The complete trigger area acts as a single control for changing the Expanded state.
-
-**`Hover`** Hover provides visual feedback when a pointer is positioned over the Q&A trigger.
-
-**`Focus`** Focus indicates that the Q&A trigger is currently selected for keyboard interaction. Display one clear Focus treatment around the complete trigger area. When the expanded answer contains interactive elements, those elements receive their own Focus state independently from the Q&A trigger.
-
-**`Pressed`** Pressed is a temporary state displayed while the Q&A trigger is being activated.
-
-**`Disabled`** Use Disabled when the Q&A is temporarily unavailable or cannot currently be expanded. A Disabled trigger must not respond to activation.
-
-**`Skeleton`** Use Skeleton while the Q&A or its required content is loading and the final information is not yet available. A Skeleton Q&A item acts as a placeholder and must not expand or collapse.
-
----
-
-## Layout and spacing
-
-🚧 Content to be added
-
----
-
-# Accessibility 👈🤖
-
-## Accessibility intro
-
-Accordion Q__NAME__A components must meet WCAG 2.2 Level AA standards so that all users can find the sections, know whether each one is open, and reach the revealed content using keyboard, pointer or assistive technologies. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
-
----
-
-## Accessibility Challenges
-
-An accordion hides content until users ask for it. Users who do not notice the control, or who cannot see the indicator change, may never find the content or may not know that it has appeared.
-
-### Key Challenges
-
-- The expanded or collapsed state is shown by an icon: it must also be exposed programmatically
-- The whole trigger is one control: leading, trailing and slot content must not create extra, competing targets
-- Collapsed content must be hidden from assistive technologies and from the focus order, not only visually
-- Long labels, optional elements and zoom must not truncate the information users need to choose a section
-
-### Critical Success Factors
-
-1. Make each trigger a button inside a heading of the right level, with `aria-expanded` and `aria-controls` (WCAG 4.1.2)
-2. Operate the trigger with Enter and Space, and keep Tab moving through triggers and visible content in page order
-3. Keep collapsed content out of the accessibility tree and the tab sequence
-4. Do not rely on the indicator or on colour alone to convey the state or the status of a section
-
----
-
-## Design Requirements
-
-### Structure & Labels
-
-- [ ] **Trigger semantics**: A `button` in a heading element; the label, overline, extra label and description form its accessible name and description ([Orange ARIA guidelines](https://a11y-guidelines.orange.com/en/web/develop/textual-content/))
-- [ ] **State**: `aria-expanded` reflects the Expanded property; a Disabled item uses `aria-disabled` or the `disabled` attribute
-- [ ] **Decorative visuals**: Decorative leading and trailing visuals are hidden from assistive technologies; informative ones have a text alternative
-
-### Visual Design
-
-- [ ] **Focus indicator**: 3:1 minimum contrast ratio with ≥2px visible border around the complete trigger ([Focus visibility](https://a11y-guidelines.orange.com/en/web/design/focus-visibility/))
-- [ ] **Indicator contrast**: The Expanding indicator meets 3:1 against its background in every state
-- [ ] **Target size**: The trigger is interactive across its full width and at least 24 × 24 CSS px
-
-### Content
-
-- [ ] **Descriptive labels**: ❌ "More" / ✅ "Delivery and returns" ([Clear labels](https://a11y-guidelines.orange.com/en/web/design/content/))
-- [ ] **Concise triggers**: Supporting text stays short so the announced button text remains easy to follow
-
----
-
-## Testing Checklist
-
-### Screen Reader Testing
-
-- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
-- [ ] Verify each trigger announces its name, role and expanded or collapsed state, and that collapsed content is not read
-
-### Keyboard Testing
-
-- [ ] Tab reaches each trigger in order, Enter and Space toggle it, focus stays on the trigger after toggling
-- [ ] Focus indicator visible (≥3:1 contrast) around the whole trigger; no focus lands inside collapsed content
-
-### Functional Testing
-
-- [ ] Verify the expansion animation is removed with Reduced Motion, and that nothing is truncated at 200% zoom and 320 px width
-
-Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
-
----
-
-## Key WCAG Criteria
-
-- **4.1.2 Name, Role, Value** (A): Triggers expose a name, the button role and the expanded state
-- **2.1.1 Keyboard** (A): Every section can be opened and closed with the keyboard
-- **1.3.1 Info and Relationships** (A): Triggers are headings, and each panel is associated with its trigger
-- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast on the trigger
-- **1.4.10 Reflow** (AA): Content wraps at 320 px without loss of information or two-dimensional scrolling
-
-For complete reference: [Orange Accessibility Guidelines - Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
-
----
-
-## Additional Resources
-
-- [Orange Accessibility Guidelines - Textual content](https://a11y-guidelines.orange.com/en/web/develop/textual-content/)
-- [WAI-ARIA Authoring Practices - Accordion Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/)
-- [WCAG 2.2 Understanding - Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)
-- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
 
 ---
 

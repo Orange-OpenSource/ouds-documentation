@@ -475,38 +475,6 @@ Animation should respect the user's reduced-motion preferences. When reduced mot
 
 ---
 
-## Motion & Animation accessibility rules
-
-In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
-These two main criteria address different issues:
-
-**Pause, Stop, Hide - WCAG 2.2.2**
-This concerns moving, blinking, scrolling, or automatically updating content.
-The question to ask is: does the animation start automatically and meet the criterion’s conditions?
-When a relevant animation lasts more than 5 seconds, users must be able to pause, stop, or hide it.
-The two criteria should therefore be evaluated independently.
-
-**Reduced Motion (Animation from Interactions) - WCAG 2.3.3**
-This primarily concerns motion-based animations triggered by user interaction.
-The question to ask is: is the movement essential to the functionality or to the information being conveyed?
-If not, the animation should be removed, reduced, or replaced when the user has enabled Reduced Motion.
-
-ℹ️ The reduced motion preference can be configured by the user at the operating system level and is available to websites through the CSS prefers-reduced-motion media feature.
-
-Concrete application to the Modal:
-
-**Pause, Stop, Hide**
-Modal animations are triggered by a user action and do not generally fall within the scope of this criterion.
-However, if a modal contains moving, blinking, scrolling, or automatically updating content, that content must be evaluated separately.
-
-**Reduced Motion**
-The appearance and closing animation of a modal are not essential to its functionality or to understanding its content.
-When Reduced Motion is enabled, the animated transition should therefore be removed or replaced with an instantaneous transition.
-Default: animated appearance and closing
-Reduced Motion: instantaneous appearance and closing
-
----
-
 # Specs
 
 ## States
@@ -547,94 +515,37 @@ Reduced Motion: instantaneous appearance and closing
 
 ---
 
-# Accessibility 👈🤖
+# Accessibility
 
-## Accessibility intro
+## Motion & Animation accessibility rules
 
-Modal dialog components must meet WCAG 2.2 Level AA standards so that all users can perceive the dialog, understand its purpose, operate its controls and leave it using keyboard, pointer or assistive technologies. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
+These two main criteria address different issues:
 
----
+**Pause, Stop, Hide - WCAG 2.2.2**
+This concerns moving, blinking, scrolling, or automatically updating content.
+The question to ask is: does the animation start automatically and meet the criterion’s conditions?
+When a relevant animation lasts more than 5 seconds, users must be able to pause, stop, or hide it.
+The two criteria should therefore be evaluated independently.
 
-## Accessibility Challenges
+**Reduced Motion (Animation from Interactions) - WCAG 2.3.3**
+This primarily concerns motion-based animations triggered by user interaction.
+The question to ask is: is the movement essential to the functionality or to the information being conveyed?
+If not, the animation should be removed, reduced, or replaced when the user has enabled Reduced Motion.
 
-A modal dialog interrupts the page and takes over interaction. Users of assistive technologies must be told that a dialog has opened, must be kept inside it while it is open, and must be returned to where they were when it closes.
+ℹ️ The reduced motion preference can be configured by the user at the operating system level and is available to websites through the CSS prefers-reduced-motion media feature.
 
-### Key Challenges
+Concrete application to the Modal:
 
-- Focus must move into the dialog when it opens and stay inside it until it closes
-- The page behind the backdrop must be unavailable to keyboard and screen reader users, not only visually dimmed
-- Visual action order on tablet and desktop can differ from the logical order Primary → Secondary → Tertiary
-- Long content, sticky actions and zoom must not hide the title, the actions or the focused element
+**Pause, Stop, Hide**
+Modal animations are triggered by a user action and do not generally fall within the scope of this criterion.
+However, if a modal contains moving, blinking, scrolling, or automatically updating content, that content must be evaluated separately.
 
-### Critical Success Factors
-
-1. Expose the dialog with `role="dialog"` and `aria-modal="true"`, named by its always-visible title through `aria-labelledby`, and make the page behind inert (WCAG 4.1.2)
-2. Move focus into the dialog on opening, keep Tab and Shift+Tab cycling inside it, and return focus to the triggering element on closing (WCAG 2.4.3)
-3. Always provide a keyboard-operable way to dismiss the dialog, including the Escape key, unless the flow intentionally prevents dismissal
-4. Keep the DOM and focus order of actions Primary → Secondary → Tertiary whatever their visual position
-
----
-
-## Design Requirements
-
-### Structure & Labels
-
-- [ ] **Accessible name**: The title is always displayed and is referenced by `aria-labelledby`; a short description by `aria-describedby` (omit it when the content holds lists, tables or several paragraphs)
-- [ ] **Initial focus**: The most likely-used element by default, the least destructive action for irreversible choices, the title or a top element when the content is long
-- [ ] **Close button**: The icon-only Close button has an accessible name such as `aria-label="Close"` ([Orange ARIA guidelines](https://a11y-guidelines.orange.com/en/web/develop/textual-content/))
-
-### Visual Design
-
-- [ ] **Focus indicator**: 3:1 minimum contrast ratio with ≥2px visible border on every interactive element ([Focus visibility](https://a11y-guidelines.orange.com/en/web/design/focus-visibility/))
-- [ ] **Text contrast**: Title, subtitle and description meet 4.5:1 against the container; the Close icon and status icons meet 3:1
-- [ ] **Reflow and zoom**: At 200% zoom and 320 px width the content scrolls inside the dialog and the actions remain reachable
-
-### Content
-
-- [ ] **Clear title**: ❌ "Warning" / ✅ "Delete this document?" ([Clear labels](https://a11y-guidelines.orange.com/en/web/design/content/))
-- [ ] **Explicit actions**: Action labels name the outcome and stay understandable out of context
-- [ ] **Status not by colour alone**: Negative and positive meanings are carried by the text; a status Title icon has a text alternative, a decorative one is hidden
-
----
-
-## Testing Checklist
-
-### Screen Reader Testing
-
-- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
-- [ ] Verify the dialog role and title are announced on opening, the page behind is not reachable, and actions are read in the order Primary, Secondary, Tertiary
-
-### Keyboard Testing
-
-- [ ] Focus moves into the dialog on opening, Tab and Shift+Tab cycle inside it, Escape closes it, focus returns to the trigger
-- [ ] Focus indicator visible (≥3:1 contrast) on every control and never hidden behind sticky actions
-
-### Functional Testing
-
-- [ ] Verify the opening and closing animation is removed when Reduced Motion is enabled, and that a static backdrop does not close the dialog on outside click
-
-Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
-
----
-
-## Key WCAG Criteria
-
-- **2.1.2 No Keyboard Trap** (A): Focus stays inside the open dialog but users can always leave it with the keyboard
-- **2.4.3 Focus Order** (A): Focus moves into the dialog, follows the logical action order and returns to the trigger on closing
-- **2.4.11 Focus Not Obscured (Minimum)** (AA): The focused element is never fully hidden by sticky actions or the dialog edges
-- **4.1.2 Name, Role, Value** (A): The dialog exposes its role, modal state and an accessible name taken from the title
-- **1.4.10 Reflow** (AA): Content remains usable at 320 px width without two-dimensional scrolling
-
-For complete reference: [Orange Accessibility Guidelines - Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
-
----
-
-## Additional Resources
-
-- [Orange Accessibility Guidelines - Dialogs](https://a11y-guidelines.orange.com/en/articles/dialogs/1/)
-- [WAI-ARIA Authoring Practices - Dialog (Modal) Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)
-- [WCAG 2.2 Understanding - Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)
-- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+**Reduced Motion**
+The appearance and closing animation of a modal are not essential to its functionality or to understanding its content.
+When Reduced Motion is enabled, the animated transition should therefore be removed or replaced with an instantaneous transition.
+Default: animated appearance and closing
+Reduced Motion: instantaneous appearance and closing
 
 ---
 

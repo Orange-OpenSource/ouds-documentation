@@ -222,82 +222,38 @@ Typically, a switch has two main states: Selected and Unselected.
 
 ---
 
-# Accessibility 👈🤖
+# Accessibility
 
-## Accessibility intro
+## Motion & Animation accessibility rules
 
-Switch components must meet WCAG 2.2 Level AA standards to ensure all users can operate toggle controls regardless of ability. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
+These two main criteria address different issues:
 
----
+**Pause, Stop, Hide - WCAG 2.2.2**
+This concerns moving, blinking, scrolling, or automatically updating content.
+The question to ask is: does the animation start automatically and meet the criterion’s conditions?
+When a relevant animation lasts more than 5 seconds, users must be able to pause, stop, or hide it.
+The two criteria should therefore be evaluated independently.
 
-## Accessibility Challenges
+**Reduced Motion (Animation from Interactions) - WCAG 2.3.3**
+This primarily concerns motion-based animations triggered by user interaction.
+The question to ask is: is the movement essential to the functionality or to the information being conveyed?
+If not, the animation should be removed, reduced, or replaced when the user has enabled Reduced Motion.
 
-Switches present unique accessibility challenges because they communicate binary state changes that must be perceivable, operable, and understandable across all input methods and assistive technologies. The visual metaphor of a physical switch doesn't translate directly to non-visual contexts.
+ℹ️ The reduced motion preference can be configured by the user at the operating system level and is available to websites through the CSS prefers-reduced-motion media feature.
 
-### Key Challenges
-- Communicating current state (on/off) clearly to screen reader users without visual cues
-- Ensuring immediate state changes are announced without disrupting user workflow
-- Maintaining consistency between visual appearance and programmatic state
-- Supporting both touch and keyboard interaction with adequate target sizes
+Concrete application to the Switch:
 
-### Critical Success Factors
-1. Use `role="switch"` with `aria-checked` to properly convey on/off semantics (WCAG 4.1.2)
-2. Provide visible focus indicators meeting 3:1 contrast ratio (WCAG 2.4.7)
-3. Ensure label text clearly describes what the switch controls (WCAG 3.3.2)
-4. Associate error messages programmatically using `aria-describedby` (WCAG 3.3.1)
+**Pause, Stop, Hide**
+The animation of a switch is triggered by a user action and therefore does not generally fall within the scope of this criterion.
+If the state change triggers additional animation or automatically moving content that meets the conditions of the criterion, that content must be evaluated separately.
 
----
-
-## Design Requirements
-
-### Structure & Labels
-- [ ] **Programmatic label**: Associate visible label with switch using `for`/`id` or `aria-labelledby` ([Orange Forms Guide](https://a11y-guidelines.orange.com/en/web/develop/forms/))
-- [ ] **Role and state**: Use `role="switch"` with `aria-checked="true|false"` to communicate state
-- [ ] **Error association**: Link error messages via `aria-describedby` when in error state
-
-### Visual Design
-- [ ] **Focus indicator**: Visible focus ring with ≥3:1 contrast ratio ([Focus Guidelines](https://a11y-guidelines.orange.com/en/web/design/colors-and-contrasts/#make-sure-there-is-enough-contrast-between-the-colors))
-- [ ] **State differentiation**: Use position, color, AND icon to indicate on/off (not color alone)
-- [ ] **Touch target**: Minimum 48×48px interactive area for touch accessibility
-
-### Content
-- [ ] **Clear labels**: ❌ "Enable" / ✅ "Enable notifications for new messages"
-- [ ] **Actionable errors**: Error text must explain how to resolve the issue
-
----
-
-## Testing Checklist
-
-### Screen Reader Testing
-- [ ] Test with NVDA (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
-- [ ] Verify: role announced as "switch", state as "on/off", label read correctly, errors associated
-
-### Keyboard Testing
-- [ ] Tab navigates to switch, Space/Enter toggles state, focus indicator visible (≥3:1 contrast)
-- [ ] Verify disabled switches are skipped in tab order, read-only switches are focusable but not editable
-
-Resources: [Orange Keyboard Navigation Guide](https://a11y-guidelines.orange.com/en/web/toolbox/methods-and-test-tools/keyboard-navigation/)
-
----
-
-## Key WCAG Criteria
-
-- **2.1.1 Keyboard** (A): Switch must be operable via keyboard using Space or Enter keys
-- **2.4.7 Focus Visible** (AA): Visible focus indicator with ≥3:1 contrast when switch receives focus
-- **3.3.1 Error Identification** (A): Errors identified in text and associated via `aria-describedby`
-- **3.3.2 Labels or Instructions** (A): Visible label provided that clearly describes the switch purpose
-- **4.1.2 Name, Role, Value** (A): Use `role="switch"` and `aria-checked` to communicate state to AT
-
-For complete reference: [Orange Accessibility Guidelines - Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
-
----
-
-## Additional Resources
-
-- [W3C WAI-ARIA Switch Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/switch/)
-- [Orange Accessibility Guidelines - Forms](https://a11y-guidelines.orange.com/en/web/develop/forms/)
-- [MDN ARIA: switch role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/switch_role)
-- [Orange Design System - Accessibility & Sustainability](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability)
+**Reduced Motion**
+The animation applied when a switch changes state is generally not essential to its functionality or to understanding its state.
+When Reduced Motion is enabled, the animation should therefore be removed or replaced with an instantaneous transition.
+The state of the switch must remain clearly identifiable without relying on animation.
+Default: animated state change
+Reduced Motion: instantaneous state change
 
 ---
 

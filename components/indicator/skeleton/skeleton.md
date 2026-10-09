@@ -91,85 +91,36 @@ The "Security margin=True" variant includes transparent padding (with 0% opacity
 
 ---
 
-# Accessibility 👈🤖
+# Accessibility
 
-## Accessibility intro
+## Motion & Animation accessibility rules
 
-The skeleton component must meet WCAG 2.2 Level AA standards by properly communicating loading states to all users, including those using assistive technologies. For comprehensive accessibility guidance, see the [Orange Unified Design System Accessibility Overview](https://unified-design-system.orange.com/472794e18/p/88ebab-accessibility-and-sustainability).
+In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
+These two main criteria address different issues:
 
----
+**Pause, Stop, Hide - WCAG 2.2.2**
+This concerns moving, blinking, scrolling, or automatically updating content.
+The question to ask is: does the animation start automatically and meet the criterion’s conditions?
+When a relevant animation lasts more than 5 seconds, users must be able to pause, stop, or hide it.
+The two criteria should therefore be evaluated independently.
 
-## Accessibility Challenges
+**Reduced Motion (Animation from Interactions) - WCAG 2.3.3**
+This primarily concerns motion-based animations triggered by user interaction.
+The question to ask is: is the movement essential to the functionality or to the information being conveyed?
+If not, the animation should be removed, reduced, or replaced when the user has enabled Reduced Motion.
 
-Skeleton loaders present unique accessibility challenges because they are purely visual indicators that must communicate loading status to users who cannot see them. Screen readers need programmatic notification of loading states, and animations must respect user motion preferences.
+ℹ️ The reduced motion preference can be configured by the user at the operating system level and is available to websites through the CSS prefers-reduced-motion media feature.
 
-### Key Challenges
-- Conveying loading status to screen reader users who cannot perceive visual placeholders
-- Preventing animation from causing discomfort for users with vestibular disorders
-- Ensuring loading completion is announced when content replaces skeleton
-- Maintaining low contrast that indicates placeholder status without causing visibility issues
+Concrete application to the Skeleton:
 
-### Critical Success Factors
-1. Implement `aria-busy="true"` on container elements during loading (WCAG 4.1.3)
-2. Provide visually hidden loading announcements via `role="status"` or `aria-live` regions
-3. Respect `prefers-reduced-motion` media query for shimmer animations
-4. Remove skeleton and update ARIA attributes when content loads
+**Pause, Stop, Hide**
+When a skeleton uses an automatic shimmer animation, it is recommended to keep the animation short and avoid looping it indefinitely when this is not necessary.
+If the automatic animation meets the criterion's conditions, users must be able to pause, stop, or hide it.
+A recommended alternative is to play a single short animation, then keep the skeleton blocks in a static state until the content has loaded.
 
----
-
-## Design Requirements
-
-### Structure & Labels
-- [ ] **Container aria-busy**: Set `aria-busy="true"` on loading container, `false` when loaded ([Orange status messages](https://a11y-guidelines.orange.com/en/web/develop/dynamic-content/))
-- [ ] **Loading announcement**: Include visually hidden text "Loading" within skeleton or via `aria-live` region
-- [ ] **Hide decorative shapes**: Apply `aria-hidden="true"` to skeleton visual shapes
-
-### Visual Design
-- [ ] **Reduced motion**: Disable shimmer animation when `prefers-reduced-motion: reduce` is set ([Orange animations](https://a11y-guidelines.orange.com/en/web/design/animations/))
-- [ ] **Visible placeholder**: Background color provides sufficient visibility on page background
-- [ ] **No focus trap**: Skeleton elements do not receive keyboard focus
-
-### Content
-- [ ] **Completion announcement**: Announce "Content loaded" or equivalent when loading completes
-- [ ] **Timeout handling**: Provide fallback messaging if loading exceeds 5 seconds
-
----
-
-## Testing Checklist
-
-### Screen Reader Testing
-- [ ] Test with NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS), TalkBack (Android)
-- [ ] Verify "loading" announced on entry, "loaded" announced on completion, no skeleton shapes read
-
-### Keyboard Testing
-- [ ] Skeleton shapes are not focusable, focus moves naturally to loaded content
-- [ ] No keyboard traps occur during loading state transitions
-
-### Motion Testing
-- [ ] Shimmer animation stops when `prefers-reduced-motion: reduce` is enabled in OS settings
-
-Resources: [Orange Accessibility Testing Guide](https://a11y-guidelines.orange.com/en/web/test/)
-
----
-
-## Key WCAG Criteria
-
-- **1.4.11 Non-text Contrast** (AA): Skeleton shapes visible against background (≥3:1 not strictly required for loading indicators per WCAG)
-- **2.2.2 Pause, Stop, Hide** (A): Shimmer animation can be paused or respects reduced motion preference
-- **2.3.1 Three Flashes or Below Threshold** (A): Shimmer animation does not flash more than three times per second
-- **4.1.2 Name, Role, Value** (A): Loading state communicated via ARIA attributes to assistive technology
-- **4.1.3 Status Messages** (AA): Loading status announced without receiving focus via live regions
-
-For complete reference: [Orange Accessibility Guidelines - Components](https://a11y-guidelines.orange.com/en/web/components-examples/)
-
----
-
-## Additional Resources
-
-- [Orange Accessibility Guidelines - Dynamic Content](https://a11y-guidelines.orange.com/en/web/develop/dynamic-content/)
-- [More Accessible Skeletons - Adrian Roselli](https://adrianroselli.com/2020/11/more-accessible-skeletons.html)
-- [WCAG 2.2 Understanding Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
-- [Carbon Design System - Loading Pattern](https://carbondesignsystem.com/patterns/loading-pattern/)
+**Reduced Motion**
+Skeleton animation is not essential to conveying the information that content is currently loading.
+When Reduced Motion is enabled, the skeleton animation should therefore be removed. The skeleton blocks should remain visible in a static state until the content has loaded.
 
 ---
 
