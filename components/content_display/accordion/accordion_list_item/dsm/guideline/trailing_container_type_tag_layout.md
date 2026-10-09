@@ -1,4 +1,4 @@
-**Layout**
+#### Layout
 
 **`Text only`** A Tag that displays only text. Use for simple labels, categories or keywords without an additional visual indicator.
 

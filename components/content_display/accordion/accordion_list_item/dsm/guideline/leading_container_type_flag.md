@@ -1,4 +1,4 @@
-**Flag**  
+### Flag
 Use a flag to represent a country, territory or regional context when this information helps users identify the accordion section.  
 A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
 

@@ -1,4 +1,4 @@
-**Size**
+#### Size
 
 **`Small`** Use Small as the standard and recommended size within the Accordion list item.  
 It keeps the Tag visually secondary, preserves space for the primary Label and Expanding indicator, and works well in compact or information-dense layouts.

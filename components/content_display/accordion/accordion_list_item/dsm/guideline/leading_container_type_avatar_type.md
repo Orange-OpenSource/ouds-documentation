@@ -1,4 +1,4 @@
-**Type**  
+#### Type
 Defines the content displayed inside the avatar.
 
 **`Image`** Use when a profile image, portrait or organisation logo is available. Avoid images containing small text or complex details.

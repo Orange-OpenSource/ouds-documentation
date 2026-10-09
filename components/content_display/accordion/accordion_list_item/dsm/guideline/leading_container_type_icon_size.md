@@ -1,4 +1,4 @@
-**Size**  
+#### Size
 Controls the visual prominence of the icon.
 
 ⚠️ Use the same icon size for equivalent items within the same accordion. Do not mix sizes arbitrarily. Different sizes may suggest a hierarchy or importance that does not exist.

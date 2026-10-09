@@ -1,4 +1,4 @@
-**Shared container type**  
+### Shared container type
 The following types reuse the properties and guidance documented under Leading container type:  
 Icon, Image, Avatar, Flag and Slot.
 

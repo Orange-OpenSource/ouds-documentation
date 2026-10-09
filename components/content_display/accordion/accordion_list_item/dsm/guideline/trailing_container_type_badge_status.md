@@ -1,4 +1,4 @@
-**Status**  
+#### Status
 The Status property defines the semantic colour and meaning of the Badge.
 
 ⚠️ Colour must not be the only way the meaning is communicated. Provide an equivalent accessible description.

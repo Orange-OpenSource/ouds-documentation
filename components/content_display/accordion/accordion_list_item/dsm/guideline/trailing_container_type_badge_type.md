@@ -1,4 +1,4 @@
-**Type**
+#### Type
 
 **`Badge`** Use Badge for a short textual status. Keep the label concise and use terminology consistently throughout the product.
 

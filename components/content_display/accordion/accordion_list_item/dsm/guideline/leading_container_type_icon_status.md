@@ -1,4 +1,4 @@
-**Status**  
+#### Status
 Defines the semantic colour applied to the icon.
 
 **`Not functional`**

@@ -1,4 +1,4 @@
-**Multiline**  
+### Multiline
 The Accordion list item supports multiline content. The number of lines is not limited.  
 The Label, Extra label, Description, Trailing text and other supported text content must wrap when there is not enough horizontal space.  
 The trigger expands vertically to display its complete content. Do not use a fixed height or truncate information that users need to understand the accordion section.
@@ -7,7 +7,7 @@ The trigger expands vertically to display its complete content. Do not use a fix
 
 ⚠️ Keep the primary Label concise. Multiline content is supported, but excessively long Labels make accordion lists more difficult to scan.
 
-**Max-width vs full-width**  
+### Max-width vs full-width
 The Accordion list item does not have a default maximum width. Its width is defined by its parent container or accordion layout.  
 The trigger's interactive surface extends across its complete visible width. The clickable area must not be limited to the Label or Expanding indicator.  
 On wide layouts, the text area may use a product-defined maximum width to maintain readability.  
@@ -21,7 +21,7 @@ Optional Leading and Trailing content must not reduce the text area to an unusab
 
 ⚠️ Do not apply a text maximum width that creates a large visual gap between the Label, related Trailing content and Expanding indicator. The relationship between all parts of the trigger must remain clear.
 
-**User zoom in/out**  
+### User zoom in/out
 The Accordion list item must remain readable, operable and complete when users zoom the interface or increase the text size.
 
 The component must adapt without clipping, overlapping or hiding meaningful information.

@@ -1,4 +1,4 @@
-**Badge**  
+#### Badge
 Controls whether an additional badge is displayed with the icon.
 
 **`False`** Display the icon without a badge.
