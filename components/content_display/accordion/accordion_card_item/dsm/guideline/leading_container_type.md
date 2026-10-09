@@ -1,4 +1,4 @@
-**`Icon`** Use an Icon to reinforce the meaning of the accordion section or help users identify a familiar category, object, service or status.
+**Icon** Use an Icon to reinforce the meaning of the accordion section or help users identify a familiar category, object, service or status.
 
 **Size**
 Controls the visual prominence of the Icon.
