@@ -3,13 +3,17 @@ Defines the semantic colour of the badge.
 
 ⚠️ Colour alone must not communicate the state. Provide a visible label, description, tooltip where appropriate, or an accessible text equivalent in implementation.
 
-**`Non functional`**
+&nbsp;
+
+### Non functional
 
 **`Neutral`** Use for non-semantic or inactive information.
 
 **`Accent`** Use to highlight a branded or selected state that is not positive, negative or informational.
 
-**`Functional`**
+&nbsp;
+
+### Functional
 
 **`Positive`** Use for available, active, verified or successful states.
 

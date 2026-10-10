@@ -1,11 +1,15 @@
 ### Status
 Defines the semantic colour applied to the icon.
 
-**`Not functional`**
+&nbsp;
+
+### Not functional
 
 **`Neutral`** Use when the icon does not communicate a specific semantic status.
 
-**`Functional`**  
+&nbsp;
+
+### Functional
 ⚠️ Use semantic statuses only when the icon represents the same meaning as the status. Do not use a semantic colour only for decoration or visual variety.
 
 **`Positive`** Use for successful, completed or beneficial states.

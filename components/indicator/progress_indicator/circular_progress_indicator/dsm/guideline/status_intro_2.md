@@ -1,4 +1,5 @@
-**`Fonctional`** Functional statuses communicate additional semantic meaning about the operation being performed. They should only be used when the process itself represents a meaningful system state.
+### Functional
+Functional statuses communicate additional semantic meaning about the operation being performed. They should only be used when the process itself represents a meaningful system state.
 
 ⚠️ Functional statuses must not be communicated by colour alone.
 

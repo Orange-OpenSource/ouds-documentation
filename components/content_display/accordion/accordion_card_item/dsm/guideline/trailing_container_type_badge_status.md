@@ -3,13 +3,17 @@ The Status property defines the semantic colour and meaning of the Badge.
 
 ⚠️ Colour must not be the only way the meaning is communicated. Provide an equivalent accessible description.
 
-**`Not functional`**
+&nbsp;
+
+### Not functional
 
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Use to highlight branded or noteworthy information that does not correspond to a functional status. Do not use Accent only to make the accordion card more visually prominent.
 
-**Functional**
+&nbsp;
+
+### Functional
 
 **`Positive`** Use for successful, active, available or completed states.
 

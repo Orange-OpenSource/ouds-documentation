@@ -1,12 +1,14 @@
 ### Status
 
-**`Not functional`**
+### Not functional
 
 **`Neutral`** Use Neutral for general categories, attributes or metadata without a specific semantic meaning.
 
 **`Accent`** Use Accent for branded or noteworthy information that does not correspond to a functional status.
 
-**`Functional`**  
+&nbsp;
+
+### Functional
 ⚠️ Always use the functional text associated with success.
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.

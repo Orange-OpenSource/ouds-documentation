@@ -1,12 +1,16 @@
 Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
-**`Not functional`**
+&nbsp;
+
+### Not functional
 
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
 
-**`Functional`**
+&nbsp;
+
+### Functional
 
 **`Positive`** Indicates success, completion, or approval.
 

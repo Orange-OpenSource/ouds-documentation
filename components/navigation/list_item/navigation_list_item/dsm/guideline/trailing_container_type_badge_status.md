@@ -2,13 +2,17 @@
 The Status property defines the semantic colour and meaning of the badge.  
 ⚠️ Colour must not be the only way the meaning is communicated. Provide an equivalent accessible description.
 
-**`Not functional`**
+&nbsp;
+
+### Not functional
 
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Use to highlight branded, selected or noteworthy information that does not correspond to another semantic status. Do not use Accent solely to make an item more visually prominent.
 
-**`Functional`**
+&nbsp;
+
+### Functional
 
 **`Positive`** Use for successful, active, available or completed states.
 

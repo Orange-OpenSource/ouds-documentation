@@ -1,4 +1,4 @@
-**Non-functional**  
+### Non-functional
 Non-functional banners communicate global or cross-screen information without representing a system status, error, confirmation, or warning.
 
 They can appear across several screens to promote a service, highlight a new feature, or provide general guidance. Unlike functional banners, they are not triggered by a technical condition and do not require semantic status colours or icons.
@@ -9,7 +9,9 @@ Neutral banners should remain informative and low priority. Use them for onboard
 **`Accent`** Used to highlight promotional, featured, or brand-related content across the app or service.  
 Accent banners are suitable for campaigns, loyalty programmes, feature launches, and engagement messages. Use accent banners for promotional or featured content, not for urgent messages or system issues.
 
-**Functional**  
+&nbsp;
+
+### Functional
 Functional banners behave as system banners. They communicate a global, high-priority state that affects the entire app, service, or user journey rather than a single field, component, or page section.
 
 They usually appear automatically in response to a system condition, without the user triggering them directly. They may persist across screens and should remain visible until the condition is resolved, the information is no longer relevant, or the banner is dismissed when dismissal is permitted.
