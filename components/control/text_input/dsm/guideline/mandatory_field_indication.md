@@ -4,7 +4,7 @@
 
 **If not all fields are mandatory (and there are several fields present):**
 1. Display the message "All fields marked with an * are mandatory." at the top.
-2. Use an asterisk (*) at the end of each mandatory field label.
+2. Use an asterisk (*) at the end of each mandatory field label.  
    **⚠️ Important:**
    * In Figma, the asterisk must be entered manually by designers in the label text. UI rendering of the asterisk: **font-weight-bold** + **color-content-negative (red)**.
    * Technically, for web/iOS/Android, the asterisk is positioned in a dedicated container after the label text. Spacing between label and asterisk: Empty state → 4px / Other states (reduced label) → 3px. If the label is truncated due to a large amount of text, the asterisk must remain visible at the end of the field.

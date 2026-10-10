@@ -1,4 +1,4 @@
-**`Enabled`** Enabled is the default state. The item is available for navigation.
+**`Enabled`** Enabled is the default state. The item is available for navigation.  
 The entire item acts as a single link target.
 
 **`Hover`** Hover provides visual feedback when a pointer is positioned over the item. Hover must not move content, change the item’s dimensions or reveal information required to understand the destination.

@@ -1,11 +1,11 @@
-• A higher-priority toast is displayed before a lower-priority toast.
-• When several notifications have the same priority, display them in the order in which they were triggered. This is a first in, first out queue.
+• A higher-priority toast is displayed before a lower-priority toast.  
+• When several notifications have the same priority, display them in the order in which they were triggered. This is a first in, first out queue.  
 • Before displaying a queued toast, verify that its information is still relevant. Do not display outdated confirmations or messages that have already been replaced by a newer system state.
 
-**Stack behaviour**
-The highest-priority toast remains closest to the placement edge.
-• For top positions, the stack grows downwards.
-• For bottom positions, the stack grows upwards.
+### Stack behaviour
+The highest-priority toast remains closest to the placement edge.  
+• For top positions, the stack grows downwards.  
+• For bottom positions, the stack grows upwards.  
 • A fourth toast remains in the queue until space becomes available.
 
 | Priority | Toast type | Auto-dismiss | Behaviour |

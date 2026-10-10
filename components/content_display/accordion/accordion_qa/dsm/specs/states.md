@@ -1,4 +1,4 @@
-**`Enabled`** Enabled is the default state.
+**`Enabled`** Enabled is the default state.  
 The Q&A can be expanded or collapsed. The complete trigger area acts as a single control for changing the Expanded state.
 
 **`Hover`** Hover provides visual feedback when a pointer is positioned over the Q&A trigger.

@@ -4,5 +4,5 @@
 
 **`Text + Icon`** Use Text + Icon when an icon helps users recognise the category more quickly. The icon should reinforce the information already communicated by the label.
 
-⚠️ Do not use functional icons for success, warning, error or information.
+⚠️ Do not use functional icons for success, warning, error or information.  
 ⚠️ Do not add an icon only for decoration.

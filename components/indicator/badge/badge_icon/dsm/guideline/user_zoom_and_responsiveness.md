@@ -1,8 +1,8 @@
-**Max-width vs full-width**
-This component have a max-width and a max-height.
+### Max-width vs full-width
+This component have a max-width and a max-height.  
 It is not possible to set this component to use the full available width (of the screen or the container).
 
-**User zoom in/out**
+### User zoom in/out
 - Icons must always scale proportionally with user zoom. Icon resizing must never be blocked.
 - In order to preserve the minimun interactive area during user zoom out, this component have:
   - Large size: a min-width and a min-height **of 20px**

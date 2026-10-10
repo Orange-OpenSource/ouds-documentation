@@ -1,4 +1,4 @@
-Defines the size of the image displayed inside the leading container.
+Defines the size of the image displayed inside the leading container.  
 Choose a size according to the available space, content density, and required visual emphasis. Use the same image size for similar use cases to maintain consistency across the interface.
 
 **`Small`** Use Small when the image has low visual priority or when the available space is limited. Recommended for compact or single-line toasts.
@@ -7,5 +7,5 @@ Choose a size according to the available space, content density, and required vi
 
 **`Large`** Use Large when the image needs stronger visual emphasis or contains details that should remain recognisable. Recommended for messages where visual identification is important.
 
-**⚠️ Note:**
+**⚠️ Note:**  
 Avoid using Large in very compact layouts or when it makes the text difficult to scan.

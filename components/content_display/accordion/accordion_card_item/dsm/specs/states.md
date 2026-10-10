@@ -1,4 +1,4 @@
-**`Enabled`** Enabled is the default state.
+**`Enabled`** Enabled is the default state.  
 The accordion card can be expanded or collapsed. The complete trigger area acts as a single control for changing the Expanded state.
 
 **`Hover`** Hover provides visual feedback when a pointer is positioned over the accordion trigger. Apply the Hover treatment consistently to the trigger area. Hover must not move content, change the card dimensions or reveal information intended to appear only after expansion.

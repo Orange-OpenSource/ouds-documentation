@@ -24,7 +24,7 @@ In the context of an editable quantity input, if the field is focused and alread
 * Requiring defocus for the buttons to work
 * Failing to parse/validate the value before incrementing
 
-**Specific error focus state:**
+**Specific error focus state:**  
 If the value in the field is invalid (empty or non-numeric), clicking + or – may:
 * Either fill in a default value (1)
 * Or display a temporary blocking error ("Please enter a number")

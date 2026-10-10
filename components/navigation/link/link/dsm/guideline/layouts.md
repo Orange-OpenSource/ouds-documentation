@@ -4,7 +4,7 @@
 
 **`Text only`** Can be used for navigation or actions within the same page. Whether placed in a text paragraph or as a standalone component, the interaction states remain consistent.
 
-**`Text + icon`** This option includes functionality to choose any Solaris icon.
+**`Text + icon`** This option includes functionality to choose any Solaris icon.  
 Used for navigation or actions within the same page.
 * When embedded in a text paragraph, its interaction states are the same as the "Text Only" variant.
 * When used as a standalone component (like the "Next" variant), it adopts the same interaction states as the "Next" and "Previous" variants.

@@ -1,6 +1,6 @@
-**Horizontal responsive behaviour**
+### Horizontal responsive behaviour
 
-The modal width adapts to the viewport according to the selected Size variant and the responsive grid of each platform.
+The modal width adapts to the viewport according to the selected Size variant and the responsive grid of each platform.  
 The modal follows the defined column spans at larger breakpoints, while smaller viewport widths use fixed horizontal margins to preserve sufficient spacing from the viewport edges.
 
 | Breakpoint | Viewport width | Default | Small |
@@ -16,9 +16,9 @@ The modal follows the defined column spans at larger breakpoints, while smaller 
 
 For the 2xs and xs breakpoints, the modal does not follow a column-based grid and instead maintains a 16 px margin from the viewport edges.
 
-**Vertical responsive behaviour**
+### Vertical responsive behaviour
 
-The modal height adapts to the viewport according to the selected Size variant and the responsive breakpoint.
+The modal height adapts to the viewport according to the selected Size variant and the responsive breakpoint.  
 The Default size uses a larger proportion of the available viewport, while the Small size remains more compact. When the modal content exceeds the available height, the content area becomes vertically scrollable.
 
 | Breakpoint | Default | Small |

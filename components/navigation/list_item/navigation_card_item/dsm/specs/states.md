@@ -1,10 +1,10 @@
-**`Enabled`** Enabled is the default state. The card is available for navigation.
+**`Enabled`** Enabled is the default state. The card is available for navigation.  
 The entire visible card acts as a single link target.
 
-**`Hover`** Hover provides visual feedback when a pointer is positioned over the card.
+**`Hover`** Hover provides visual feedback when a pointer is positioned over the card.  
 Apply the Hover treatment to the complete card surface. It must not move content, change the card’s dimensions or reveal information required to understand the destination.
 
-**`Focus`** Focus indicates that the complete navigation card is currently selected for keyboard interaction.
+**`Focus`** Focus indicates that the complete navigation card is currently selected for keyboard interaction.  
 Display one clear focus indicator around the complete card target.
 
 **`Pressed`** Pressed is a temporary state displayed while the card is being activated. Apply the Pressed treatment to the complete card surface.

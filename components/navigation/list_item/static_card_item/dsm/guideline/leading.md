@@ -1,4 +1,4 @@
-Leading content appears before the main label and supports recognition or identification.
+Leading content appears before the main label and supports recognition or identification.  
 Use it when the visual element helps users understand the card more quickly. Do not add leading content only to decorate the card. Only one leading container should be displayed per card.
 
 **`False`** No leading content is displayed. The main content starts at the default horizontal padding.

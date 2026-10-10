@@ -1,5 +1,5 @@
-Alerts can be displayed with or without an action.
-The placement of the action depends on the amount of content and the available screen space.
+Alerts can be displayed with or without an action.  
+The placement of the action depends on the amount of content and the available screen space.  
 For action elements, we use the Link component with the "Text only" layout. This approach maintains visual consistency and aligns with our design system guidelines.
 
 **🔗 Link style used as a button:** In this context, the link style is purely visual, it does not indicate navigation.

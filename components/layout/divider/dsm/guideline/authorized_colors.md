@@ -6,4 +6,4 @@
 • color-always-black  
 • color-always-white  
 • color-always-on-black  
-• color-always-on-white  
+• color-always-on-white

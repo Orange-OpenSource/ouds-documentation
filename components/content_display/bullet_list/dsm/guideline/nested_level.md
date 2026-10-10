@@ -1,15 +1,15 @@
 Lists can include nested items to indicate hierarchy or subcategories, with indentation distinguishing each level. Arrange ordered list items logically, such as ranking by importance, highest to lowest values, or in alphabetical/numeric order.
 
-**`Nested level: 0`** Level 0 list items define the main structure.
-Unordered level 0 list items are marked with full squares.
+**`Nested level: 0`** Level 0 list items define the main structure.  
+Unordered level 0 list items are marked with full squares.  
 Ordered level 0 list items are marked with numbers.
 
-**`Nested level: 1`** Level 1 (nested) list items provide hierarchy or subcategories.
-Unordered level 1 list items are marked with outlined squares.
+**`Nested level: 1`** Level 1 (nested) list items provide hierarchy or subcategories.  
+Unordered level 1 list items are marked with outlined squares.  
 Ordered level 1 list items are marked with uppercase letters.
 
-**`Nested level: 2`** Level 2 (nested) list items provide hierarchy or subcategories.
-Unordered level 2 list items are marked with dashes.
+**`Nested level: 2`** Level 2 (nested) list items provide hierarchy or subcategories.  
+Unordered level 2 list items are marked with dashes.  
 Ordered level 2 list items are marked with lowercase letters.
 
 Ordered lists can be combined with unordered items in the same list as well.

@@ -1,4 +1,4 @@
-**Multiline**
+### Multiline
 
 In its "Empty" state (without a placeholder), the label of this component allows two lines of text editing. However, it is recommended not to exceed one line of text.
 
@@ -8,7 +8,7 @@ As a result, and in order to maintain a consistent and uniform height across mul
 
 Additionally, allowing multi-line text editing would create confusion with the "Text area" component.
 
-**Max-width vs full-width**
+### Max-width vs full-width
 
 For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 480px.**
 
@@ -16,7 +16,7 @@ For mobile or tablet use (or if the component is positioned inside a specific co
 
 Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
 
-**User zoom in/out**
+### User zoom in/out
 
 The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
 

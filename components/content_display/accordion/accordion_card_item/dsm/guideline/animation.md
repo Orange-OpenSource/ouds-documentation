@@ -1,2 +1,2 @@
-When enabled, the accordion uses a smooth expansion animation (entry and exit) rather than appearing with an immediate cut.
+When enabled, the accordion uses a smooth expansion animation (entry and exit) rather than appearing with an immediate cut.  
 The accordion content expands from its collapsed state when opened, providing a clear visual transition that helps users understand the relationship between the trigger and the revealed content and establishes a stronger sense of spatial continuity.
