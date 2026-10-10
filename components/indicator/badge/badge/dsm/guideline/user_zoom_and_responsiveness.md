@@ -2,6 +2,8 @@
 This component have a max-width.  
 It is not possible to set this component to use the full available width (of the screen or the container).
 
+&nbsp;
+
 ### User zoom in/out
 - Componet must always scale proportionally with user zoom.
 - In order to preserve the minimun interactive area during user zoom out, this component have:

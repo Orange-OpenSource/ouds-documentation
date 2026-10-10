@@ -7,6 +7,8 @@
 ⚠️ The toast must not cover important content or controls. If a floating button, navigation bar, or sticky element is already in the same area, place the toast above it or use another position.  
 ⚠️ On mobile reference, the toast takes almost the full screen width and does not follow the grid, unlike on other screen references.
 
+&nbsp;
+
 ### Tablet reference design
 Maximum width:  
 md 8 of 12 grid columns  
@@ -24,6 +26,8 @@ It keeps the message visually connected to the main task without making it feel 
 • Spacing: 24 px from the bottom of the viewport.  
 Align the toast with the four central grid columns.  
 • Use this position when the message is directly related to an action performed near the bottom of the page. It is suitable for brief action feedback, such as confirming that a comment was added or an item was moved.
+
+&nbsp;
 
 ### Desktop/Desktop Large reference design
 Maximum width: 4 of 12 grid columns

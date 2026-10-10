@@ -88,6 +88,8 @@ Assertive announcements are not determined by visual status.
 Do not use an assertive live region because an item contains a Warning or Negative Badge. Assertive announcements are reserved for genuinely urgent information requiring immediate attention and should normally use a dedicated alert pattern.  
 Design guidance supporting WCAG 2.1 — 4.1.3 Status Messages, Level AA
 
+&nbsp;
+
 ### Usage with limited vision
 
 Text meets the required minimum contrast.  
@@ -149,6 +151,8 @@ The item does not require a specific orientation.
 The destination and complete navigation target must remain available in portrait and landscape orientations unless orientation is essential to the wider product.  
 WCAG 2.1 — 1.3.4 Orientation, Level AA
 
+&nbsp;
+
 ### Usage without perception of colour
 
 Interaction states are not communicated by colour alone.  
@@ -187,6 +191,8 @@ WCAG 2.1 — 1.4.1 Use of Color, Level A
 Background and Divider colours do not communicate status.  
 These properties provide visual separation only and must not be the sole indication of selection, availability, urgency or category.  
 WCAG 2.1 — 1.4.1 Use of Color, Level A
+
+&nbsp;
 
 ### Usage with limited manipulation or strength
 
@@ -241,6 +247,8 @@ WCAG 2.1 — 2.4.3 Focus Order, Level A
 Removing a focused item restores focus logically.  
 When navigation content changes and the currently focused item is removed, place focus on the update trigger, an adjacent item or another logical control.  
 WCAG 2.1 — 2.4.3 Focus Order, Level A
+
+&nbsp;
 
 ### Usage with limited cognition, language or learning
 
@@ -318,6 +326,8 @@ Unusual words and abbreviations are avoided or explained.
 Use plain language and expand unfamiliar abbreviations in the Description or Helper text when they are necessary.  
 Recommended under WCAG 2.1 AAA — 3.1.3 Unusual Words  
 Recommended under WCAG 2.1 AAA — 3.1.4 Abbreviations
+
+&nbsp;
 
 ### Minimize photosensitive seizure triggers
 

@@ -1,11 +1,15 @@
 The circular progress indicator must scale proportionally with user zoom and remain clear and readable in all contexts.  
 The component should preserve its visual structure and proportions regardless of where it is used (standalone or embedded in another component).
 
+&nbsp;
+
 ### Behavior
 • The loader must scale proportionally with user zoom. Resizing must never be blocked  
 • The shape, stroke thickness, and spacing must remain consistent at all zoom levels  
 • The component must remain visually balanced and recognizable at any size  
 • The loader must not become distorted, pixelated, or clipped
+
+&nbsp;
 
 ### Layout
 • The component should adapt to its container without breaking its proportions  

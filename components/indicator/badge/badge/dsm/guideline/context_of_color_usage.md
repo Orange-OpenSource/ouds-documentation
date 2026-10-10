@@ -1,10 +1,14 @@
 A color-only badge should not be used as the only way to show fonctional information.  
 It needs to be clearly visible on its background, with enough contrast and a readable size, especially for people with low vision or color blindness.
 
+&nbsp;
+
 ### Status context (badge + label)
 
 - Color alone doesn't explain meaning. It can support the interface visually, but it shouldn't be the only way to show a status or state. If multiple badge colors are used within the same interface, each color must have an accessible equivalent (e.g. visible text).
 - In this example, the badge is used together with an Extra label that clearly conveys the status (positive and negative). The badge only reinforces this meaning visually, allowing multiple statuses to coexist within the same interface.
+
+&nbsp;
 
 ### Non-status context (badge only)
 

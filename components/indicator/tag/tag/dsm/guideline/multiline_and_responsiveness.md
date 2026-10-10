@@ -1,10 +1,14 @@
 ### Multiline
 This component doesn't allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
 
+&nbsp;
+
 ### Max-width vs full-width
 For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 200px.**
 - In its "Rounded corner=True", it's not possible to set this component to use the full available width (of the screen or the container).
 - In its "Rounded corner=False", it's possible to set this component to use the full available width (of the screen or the container). As a result, the component's background will stretch across the entire available surface, but the text must be limited to its number of characters.
+
+&nbsp;
 
 ### User zoom in/out
 The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.

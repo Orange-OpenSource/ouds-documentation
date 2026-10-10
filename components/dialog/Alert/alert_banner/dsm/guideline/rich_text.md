@@ -2,6 +2,8 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 
 **Layout=Start**
 
+&nbsp;
+
 ### Strong text
 • Strong text can be used sparingly in the label or description to highlight key information, such as a status, date, amount, or required step. Rich text must use the **Label/Medium/Strong** token only.  
 • No other text styles or custom font weights should be used.
@@ -12,6 +14,8 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 • A separate Action can also be added outside the description when a more prominent or independent next step is needed.
 
 **Layout=Center**
+
+&nbsp;
 
 ### Strong text
 • Strong text can be used sparingly in the label or description to highlight key information, such as a status, date, amount, or required step. Rich text must use the **Label/Large/Strong** token only.  

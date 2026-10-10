@@ -6,6 +6,8 @@ The trigger expands vertically to display its complete content. Do not use a fix
 ⚠️ Use Top alignment when the Label wraps onto multiple lines or when the card contains a Description or Bottom slot. The Expanding indicator must remain visible and must not overlap, truncate or become visually disconnected from the trigger content.  
 ⚠️ Keep the primary Label concise. Multiline content is supported, but excessively long Labels make accordion card collections more difficult to scan.
 
+&nbsp;
+
 ### Max-width vs full-width
 The Accordion card item does not have a default maximum width. Its width is defined by its parent container or accordion layout.  
 The trigger's interactive surface extends across its complete visible width. The clickable area must not be limited to the Label or Expanding indicator.  
@@ -19,6 +21,8 @@ The Expanding indicator remains positioned according to the Reverse property:
 Optional Leading and Trailing content must not reduce the text area to an unusable width.
 
 ⚠️ Do not apply a text maximum width that creates a large visual gap between the Label, related Trailing content and Expanding indicator. The relationship between all parts of the trigger must remain clear.
+
+&nbsp;
 
 ### User zoom in/out
 The Accordion card item must remain readable, operable and complete when users zoom the interface or increase the text size.

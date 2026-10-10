@@ -2,6 +2,8 @@
 This component have a max-width and a max-height.  
 It is not possible to set this component to use the full available width (of the screen or the container).
 
+&nbsp;
+
 ### User zoom in/out
 - Icons must always scale proportionally with user zoom. Icon resizing must never be blocked.
 - In order to preserve the minimun interactive area during user zoom out, this component have:

@@ -1,8 +1,12 @@
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
 
+&nbsp;
+
 ### Max-width vs full-width
 The max-width is applied to the text within the component.
+
+&nbsp;
 
 ### User zoom in/out
 The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.

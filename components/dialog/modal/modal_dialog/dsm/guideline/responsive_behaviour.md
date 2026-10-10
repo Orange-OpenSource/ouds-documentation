@@ -16,6 +16,8 @@ The modal follows the defined column spans at larger breakpoints, while smaller 
 
 For the 2xs and xs breakpoints, the modal does not follow a column-based grid and instead maintains a 16 px margin from the viewport edges.
 
+&nbsp;
+
 ### Vertical responsive behaviour
 
 The modal height adapts to the viewport according to the selected Size variant and the responsive breakpoint.  

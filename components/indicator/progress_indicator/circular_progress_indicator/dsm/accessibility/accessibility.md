@@ -48,6 +48,8 @@ Do not make the entire page unavailable to assistive technologies when only one 
 Design guidance supporting WCAG 2.1 — 1.3.1 Info and Relationships, Level A  
 WCAG 2.1 — 4.1.2 Name, Role, Value, Level A
 
+&nbsp;
+
 ### Usage with limited vision
 
 The active progress indicator has a minimum contrast ratio of 3:1 against the track or adjacent background.  
@@ -81,6 +83,8 @@ Stroke thickness and spacing remain visually distinguishable after scaling.
 Do not allow the active indicator, track or gap to collapse into an indistinguishable shape.  
 Design-system accessibility requirement
 
+&nbsp;
+
 ### Usage without perception of colour
 
 Colour is not the only way to communicate the process status.  
@@ -100,6 +104,8 @@ WCAG 2.1 — 1.4.11 Non-text Contrast, Level AA
 Neutral and Accent remain understandable when their colours cannot be distinguished.  
 The component’s purpose and value must be available through text or programmatic information.  
 WCAG 2.1 — 1.4.1 Use of Color, Level A
+
+&nbsp;
 
 ### Usage with limited manipulation or strength
 
@@ -122,6 +128,8 @@ Design guidance supporting WCAG 2.1 — 4.1.2 Name, Role, Value, Level A
 
 Starting, updating or completing progress does not unexpectedly remove the user’s current focus.  
 Design guidance supporting WCAG 2.1 — 2.4.3 Focus Order, Level A
+
+&nbsp;
 
 ### Usage with limited cognition, language or learning
 
@@ -162,6 +170,8 @@ When progress reaches completion, replace the progress state with a clear result
 Do not leave a loading indicator at 100% indefinitely.  
 Design guidance supporting cognitive accessibility
 
+&nbsp;
+
 ### Usage without hearing and limited hearing
 
 Progress information does not depend on sound.  
@@ -173,6 +183,8 @@ Design guidance supporting non-auditory access
 
 If vibration or audio accompanies a Warning or Negative status, the same meaning is communicated through text.  
 Design guidance supporting non-auditory access
+
+&nbsp;
 
 ### Minimize photosensitive seizure triggers
 

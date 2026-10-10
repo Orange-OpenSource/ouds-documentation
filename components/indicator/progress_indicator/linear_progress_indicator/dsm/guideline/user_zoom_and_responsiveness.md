@@ -1,6 +1,8 @@
 The linear progress indicator must scale horizontally while preserving a fixed height defined by design tokens.  
 The component should remain clear, readable, and structurally consistent at all zoom levels and in all contexts.
 
+&nbsp;
+
 ### Behavior
 • The progress bar scales horizontally with its container when width is constrained  
 • When used in fill layouts (Auto Layout), the component must respect container bounds and must not overflow its parent  
@@ -9,12 +11,16 @@ The component should remain clear, readable, and structurally consistent at all 
 • The progress value must remain accurate and visually proportional at all sizes  
 • The component must not be distorted, stretched vertically, or clipped
 
+&nbsp;
+
 ### Layout
 • The component can expand to fill available width when used as a standalone element  
 • In constrained or embedded contexts, it must adapt to the container without exceeding it  
 • Vertical size is controlled by tokens (track and indicator height)  
 • When space is reduced, the component must scale proportionally and preserve internal spacing (e.g. between track and indicator)  
 • The visual ratio between track and indicator must remain consistent
+
+&nbsp;
 
 ### Helper text
 • The helper text must stay aligned with the progress indicator (start or center)  
@@ -24,6 +30,8 @@ The component should remain clear, readable, and structurally consistent at all 
 • Text resizing must never be blocked  
 • The text must not overlap, truncate, or become unreadable  
 • The relationship between the text and the progress indicator must remain clear
+
+&nbsp;
 
 ### Accessibility
 • The indicator must remain visible and distinguishable at all zoom levels  

@@ -8,9 +8,13 @@ Helper text can provide context about the process or show the current progress v
 • If the process takes longer than expected, update the message to reassure users, for example Still verifying your identityor This may take a few minutes.  
 • In the French version, a non-breaking space must always be inserted between the number and the percent sign (40 %).
 
+&nbsp;
+
 ### Helper text
 **`True`** Displays helper text alongside the progress indicator.  
 **`False`** No helper text is displayed.
+
+&nbsp;
 
 ### Percentage (Determinate states only)
 **`True`** Shows the current value (e.g. “0%”). Used with determinate progress only.  

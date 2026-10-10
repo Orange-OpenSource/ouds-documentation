@@ -142,6 +142,8 @@ Do not use an assertive live region merely because a card contains a Warning or 
 Assertive announcements are reserved for genuinely urgent information requiring immediate attention and should normally use a dedicated Alert pattern.  
 Design guidance supporting WCAG 2.1 — 4.1.3 Status Messages, Level AA
 
+&nbsp;
+
 ### Usage with limited vision
 
 Text meets the required minimum contrast.  
@@ -235,6 +237,8 @@ The card does not require a specific orientation.
 The destination and complete navigation target must remain available in portrait and landscape orientations unless orientation is essential to the wider product experience.  
 WCAG 2.1 — 1.3.4 Orientation, Level AA
 
+&nbsp;
+
 ### Usage without perception of colour
 
 Interaction states are not communicated by colour alone.  
@@ -288,6 +292,8 @@ WCAG 2.1 — 1.4.1 Use of Color, Level A
 Rounded corner variants do not communicate meaning by themselves.  
 Do not use square and rounded corners as the only way to distinguish status, product type or destination importance.  
 WCAG 2.1 — 1.4.1 Use of Color, Level A
+
+&nbsp;
 
 ### Usage with limited manipulation or strength
 
@@ -363,6 +369,8 @@ WCAG 2.1 — 2.4.3 Focus Order, Level A
 Layout changes do not create unexpected target movement during activation.  
 Hover, Focus and Pressed states must not resize the card or move adjacent cards.  
 Design guidance supporting WCAG 2.1 — 2.5.2 Pointer Cancellation, Level A
+
+&nbsp;
 
 ### Usage with limited cognition, language or learning
 
@@ -480,6 +488,8 @@ Unusual words and abbreviations are avoided or explained.
 Use plain language and expand unfamiliar abbreviations in the Description or Helper text when necessary.  
 Recommended under WCAG 2.1 AAA — 3.1.3 Unusual Words  
 Recommended under WCAG 2.1 AAA — 3.1.4 Abbreviations
+
+&nbsp;
 
 ### Minimize photosensitive seizure triggers
 

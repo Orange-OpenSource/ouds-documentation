@@ -18,6 +18,8 @@ The “alignment” variant (available from 2 actions onwards) allows you to con
 In both cases, each component can use either “fill” or “hug” behavior in Auto Layout.  
 This “alignment” variant is available whether “Sticky action” is set to True or False.
 
+&nbsp;
+
 ### ⚠️ Accessibility (action order)
 The visual order of actions must not change their semantic or interaction order.  
 For screen reader and keyboard users, the implementation must preserve the following priority order:  

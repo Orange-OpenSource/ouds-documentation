@@ -27,6 +27,8 @@ The Auto Layout setting for the action components is configured to “hug”. Th
   • For 3 actions: 1 element is aligned to the left and the other 2 are aligned to the right of the sticky container.  
 • If “sticky action” = False, the actions are aligned horizontally to the left of the grid.
 
+&nbsp;
+
 ### ⚠️ Accessibility (action order)
 The visual order of actions must not change their semantic or interaction order.  
 For screen reader and keyboard users, the implementation must preserve the following priority order:  

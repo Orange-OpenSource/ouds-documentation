@@ -5,6 +5,8 @@ The Q&A item expands vertically to display its complete content. Do not use a fi
 
 The Expanding indicator must remain visible and must not overlap or become visually disconnected from the question.
 
+&nbsp;
+
 ### Max-width vs full-width
 Accordion Q&A does not have a default maximum width. Its width is defined by the parent container or Q&A layout.
 
@@ -19,6 +21,8 @@ The Expanding indicator remains positioned according to the Reverse property:
 • At the logical start when Reverse is True.
 
 Optional Leading and Trailing content must not reduce the question to an unusable width.
+
+&nbsp;
 
 ### User zoom in/out
 Accordion Q&A does not have a default maximum width.

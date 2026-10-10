@@ -8,6 +8,8 @@ The affordance indicator must remain visible and must not overlap, truncate or b
 
 ⚠️ Keep the destination Label concise. Multiline content is supported, but excessively long labels make card collections more difficult to scan.
 
+&nbsp;
+
 ### Max-width vs full-width
 The Navigation card item does not have a default maximum width. Its width is defined by its parent container, grid or card-based layout.  
 The card’s interactive surface extends across its complete visible width and height. The clickable area must not be limited to the Label or affordance indicator.  
@@ -20,6 +22,8 @@ The affordance indicator remains positioned at the logical edge of the card:
 Optional Leading and Trailing content must not reduce the text area to an unusable width.
 
 ⚠️ Do not apply a text maximum width that makes the relationship between the card’s Label, secondary content and affordance indicator unclear.
+
+&nbsp;
 
 ### User zoom in/out
 The Navigation card item must remain readable, operable and complete when users zoom the interface or increase the text size.

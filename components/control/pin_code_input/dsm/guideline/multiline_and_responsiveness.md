@@ -2,9 +2,13 @@
 
 This component doesn't allows multi-line text editing.
 
+&nbsp;
+
 ### Min-width and max-width
 
 This component has a min-width and a max-width. To avoid exceeding or reducing a width that would degrade readability and the perception of a compact interactive element, we applyied, for each digit input **a min-width of 44px and a max-width of 56px.**
+
+&nbsp;
 
 ### User zoom in/out
 

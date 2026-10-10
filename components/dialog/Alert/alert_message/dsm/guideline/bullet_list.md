@@ -7,6 +7,8 @@ This boolean option (True / False) controls whether the list is shown.
 * Each bullet item should be short, sentence fragment or brief statement, not full paragraphs. The goal is quick scanning. [design.cms.gov+1](https://design.cms.gov/components/alert/?utm_source=chatgpt.com)
 * Do not use a bullet list for only a single item; in that case, prefer a simple sentence.
 
+&nbsp;
+
 ### Guidelines
 * Use up to 3–5 bullet items for optimal readability.
 * Each item should be concise and parallel in structure (start with the same part of speech).

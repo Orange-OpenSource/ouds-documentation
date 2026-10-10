@@ -18,6 +18,8 @@ The Side sheet follows the defined column spans at smaller breakpoints and progr
 | 2xl | 1640–1879 px | 4 columns (max-width:520) | 3 columns (max-width:480 \| min-width:420) |
 | 3xl | 1880+ px | 3 columns (max-width:600) | 2 columns (max-width:520 \| min-width:440) |
 
+&nbsp;
+
 ### Vertical responsive behaviour
 
 The Side sheet occupies the full available viewport height regardless of the selected Size variant or breakpoint.  

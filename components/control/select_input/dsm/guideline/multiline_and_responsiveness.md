@@ -8,6 +8,8 @@ As a result, and in order to maintain a consistent and uniform height across mul
 
 Additionally, allowing multi-line text editing would create confusion with the "Text area" component.
 
+&nbsp;
+
 ### Max-width vs full-width
 
 For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 480px.**
@@ -15,6 +17,8 @@ For greater flexibility, this component doesn't have a default max-width. To avo
 For mobile or tablet use (or if the component is positioned inside a specific container), it is possible to set this component to use the full available width (of the screen or the container).
 
 Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+
+&nbsp;
 
 ### User zoom in/out
 

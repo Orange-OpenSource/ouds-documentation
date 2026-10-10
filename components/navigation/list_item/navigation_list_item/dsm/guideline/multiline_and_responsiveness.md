@@ -7,6 +7,8 @@ The item expands vertically to display its complete content. Do not use a fixed 
 
 ⚠️ Keep the destination Label concise. Multiline content is supported, but excessively long labels make navigation lists more difficult to scan.
 
+&nbsp;
+
 ### Max-width vs full-width
 The Navigation list item does not have a default maximum width. Its width is defined by its parent container or navigation layout.  
 The item’s interactive surface extends across its complete visible width. The clickable area must not be limited to the Label or navigation indicator. On wide layouts, the text area may use a product-defined maximum width to maintain readability. The item’s background, divider, hover, pressed and focus treatments must still cover the complete navigation target.
@@ -18,6 +20,8 @@ The navigation indicator remains positioned at the logical edge of the item:
 Optional Leading and Trailing content must not reduce the text area to an unusable width.
 
 ⚠️ Do not apply a text maximum width that creates a large visual gap between the Label and related Trailing content. The relationship between all parts of the item must remain clear.
+
+&nbsp;
 
 ### User zoom in/out
 The Navigation list item must remain readable, operable and complete when users zoom the interface or increase the text size.  

@@ -70,6 +70,8 @@ When an item’s content updates dynamically, announce only the meaningful chang
 Do not announce the entire list repeatedly. A polite announcement may be used for non-urgent changes, such as an updated data balance. Assertive announcements are reserved for genuinely urgent information.  
 WCAG 2.1 — 4.1.3 Status Messages, Level AA
 
+&nbsp;
+
 ### Usage with limited vision
 
 All text meets the minimum contrast requirement.  
@@ -132,6 +134,8 @@ Do not use images of text for labels or descriptions.
 Provide real text so that it can resize, reflow, translate and adapt to user preferences.  
 WCAG 2.1 — 1.4.5 Images of Text, Level AA
 
+&nbsp;
+
 ### Usage without perception of colour
 
 Colour is not the only method used to communicate meaning.  
@@ -157,6 +161,8 @@ WCAG 2.1 — 1.4.1 Use of Color, Level A
 Rich text does not rely on font colour alone for emphasis.  
 Use the approved strong style for limited emphasis. Underlining remains reserved for interactive links, which should not normally appear inside a Static list item.  
 Design guidance supporting WCAG 2.1 — 1.4.1 Use of Color, Level A
+
+&nbsp;
 
 ### Usage with limited manipulation or strength
 
@@ -193,6 +199,8 @@ Design guidance supporting motor accessibility
 When interaction is added by the consuming product, the implementation must migrate to the appropriate interactive component.  
 Making the entire static row clickable after implementation creates a semantic mismatch that cannot be corrected through visual styling alone.  
 Design guidance supporting WCAG 2.1 — 4.1.2 Name, Role, Value, Level A
+
+&nbsp;
 
 ### Usage with limited cognition, language or learning
 
@@ -261,6 +269,8 @@ The Static list item does not disappear automatically.
 It has no dismissible behaviour, timeout or Close button. Keep it available while the represented information remains relevant.  
 When temporary, dismissible or automatically disappearing information is required, use a component designed for that behaviour, such as an Alert or Toast.  
 Design guidance supporting WCAG 2.1 — 2.2.1 Timing Adjustable, Level A
+
+&nbsp;
 
 ### Minimize photosensitive seizure triggers
 

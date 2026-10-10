@@ -3,6 +3,8 @@
 • When several notifications are triggered, place them in a queue. The currently visible toast must complete its exit transition before the next toast enters. Entrance and exit animations must not overlap.  
 • This sequential behaviour reduces visual interruption, prevents content from being obscured and makes each message easier to identify.
 
+&nbsp;
+
 ### ⚠️ Multiple visible toasts
 Displaying several toasts at the same time is not recommended. A stack can interrupt the user, obscure interface content and make important messages harder to notice.
 

@@ -1,5 +1,7 @@
 Toasts must remain perceivable, understandable, and operable for users of assistive technologies, keyboard users, and users who need additional time to read or interact with content.
 
+&nbsp;
+
 ### Usage without vision
 
 The toast message and its status are programmatically announced without moving keyboard or screen reader focus to the toast.  
@@ -18,6 +20,8 @@ Meaningful images provide equivalent information in the label, description, or a
 WCAG 2.1 — 1.1.1 Non-text Content, Level A  
 When a Loading toast changes to a completed state, the meaningful result is announced without repeatedly announcing decorative progress updates.  
 WCAG 2.1 — 4.1.3 Status Messages, Level AA
+
+&nbsp;
 
 ### Usage with limited vision
 
@@ -38,6 +42,8 @@ WCAG 2.1 — 1.4.10 Reflow, Level AA
 The toast does not completely cover the element currently receiving keyboard focus.  
 WCAG 2.2 — 2.4.11 Focus Not Obscured (Minimum), Level AA
 
+&nbsp;
+
 ### Usage without perception of colour
 
 Colour is not used as the only way to communicate the toast status.  
@@ -50,6 +56,8 @@ Do not rely only on red, green, blue, or yellow to communicate the result.
 WCAG 2.1 — 1.4.1 Use of Color, Level A  
 An action or link remains identifiable without relying only on colour.  
 WCAG 2.1 — 1.4.1 Use of Color, Level A
+
+&nbsp;
 
 ### Usage with limited manipulation or strength
 
@@ -71,6 +79,8 @@ An actionable toast does not disappear before users can reach and activate its c
 WCAG 2.1 — 2.2.1 Timing Adjustable, Level A  
 Automatic dismissal pauses while keyboard focus is inside the toast.  
 WCAG 2.1 — 2.2.1 Timing Adjustable, Level A
+
+&nbsp;
 
 ### Usage with limited cognition, language or learning
 
@@ -97,6 +107,8 @@ Design guidance supporting cognitive and screen reader accessibility
 Avoid repeatedly announcing minor loading or progress changes.  
 Design guidance supporting WCAG 2.1 — 4.1.3 Status Messages, Level AA
 
+&nbsp;
+
 ### Usage without hearing and limited hearing
 
 The complete notification is available visually and does not depend on sound.  
@@ -107,6 +119,8 @@ Users can understand and operate the toast with audio disabled.
 Design guidance supporting non-auditory access  
 If automatically played audio lasts longer than three seconds, provide a way to pause or stop it, or control its volume independently.  
 WCAG 2.1 — 1.4.2 Audio Control, Level A
+
+&nbsp;
 
 ### Minimize photosensitive seizure triggers
 

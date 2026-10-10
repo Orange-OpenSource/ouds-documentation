@@ -59,6 +59,8 @@ If an action becomes unavailable during loading, its disabled or busy state is p
 Prevent repeated activation without unexpectedly moving focus away from the action.  
 WCAG 2.1 — 4.1.2 Name, Role, Value, Level A
 
+&nbsp;
+
 ### Usage with limited vision
 
 Text has a minimum contrast ratio of 4.5:1, or 3:1 for large text.  
@@ -108,6 +110,8 @@ Do not rely on background colour alone to preserve the banner boundary, status o
 Design guidance supporting WCAG 2.1 — 1.4.3 Contrast (Minimum), Level AA  
 WCAG 2.1 — 1.4.11 Non-text Contrast, Level AA
 
+&nbsp;
+
 ### Usage without perception of colour
 
 Colour is not used as the only way to communicate the banner status.  
@@ -135,6 +139,8 @@ The Loading state includes a meaningful text update.
 A rotating spinner or changing colour cannot be the only indication that an operation is in progress.  
 WCAG 2.1 — 1.4.1 Use of Color, Level A  
 WCAG 2.1 — 4.1.3 Status Messages, Level AA
+
+&nbsp;
 
 ### Usage with limited manipulation or strength
 
@@ -182,6 +188,8 @@ For example, “No internet connection” remains visible and disappears automat
 Design guidance supporting cognitive and motor accessibility  
 When dismissal is allowed, the close action does not require simultaneous input, complex gestures or sustained pressure.  
 Design guidance supporting EN 301 549 — Usage with limited manipulation or strength
+
+&nbsp;
 
 ### Usage with limited cognition, language or learning
 
@@ -244,6 +252,8 @@ Focusing or activating a banner control does not trigger an unexpected context c
 WCAG 2.1 — 3.2.1 On Focus, Level A  
 WCAG 2.1 — 3.2.2 On Input, Level A
 
+&nbsp;
+
 ### Usage without hearing and limited hearing
 
 The complete banner message is available visually and does not depend on sound.  
@@ -256,6 +266,8 @@ Design guidance supporting non-auditory access
 If an audio notification accompanies the banner, it communicates the same result as the visible message.  
 The audio must not introduce essential information that is missing from the label or description.  
 Design guidance supporting non-auditory access
+
+&nbsp;
 
 ### Minimize photosensitive seizure triggers
 

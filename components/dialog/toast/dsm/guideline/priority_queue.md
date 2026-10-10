@@ -2,6 +2,8 @@
 • When several notifications have the same priority, display them in the order in which they were triggered. This is a first in, first out queue.  
 • Before displaying a queued toast, verify that its information is still relevant. Do not display outdated confirmations or messages that have already been replaced by a newer system state.
 
+&nbsp;
+
 ### Stack behaviour
 The highest-priority toast remains closest to the placement edge.  
 • For top positions, the stack grows downwards.  

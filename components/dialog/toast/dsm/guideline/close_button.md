@@ -17,6 +17,8 @@ Its presence does not necessarily determine how long the toast remains visible. 
 • the notification remains visible for an extended period  
 • users may want to remove the toast before it disappears automatically
 
+&nbsp;
+
 ### Automatic dismissal
 Use automatic dismissal for short, non-critical messages that do not require user interaction.
 
@@ -33,6 +35,8 @@ Use automatic dismissal for short, non-critical messages that do not require use
 
 **⚠️ Note:**  
 Actionable toasts should remain visible long enough for users to reach and activate the action. Important messages should remain visible until dismissed or use a persistent component instead.
+
+&nbsp;
 
 ### Motion and timing
 Toasts may disappear automatically after a short period. The display duration should depend on the amount of content and whether the toast contains an action.

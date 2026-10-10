@@ -2,10 +2,14 @@
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
 Nevertheless, if the label spans multiple lines, the label remains horizontally centred and the chevron icon remains vertically centred.
 
+&nbsp;
+
 ### Max-width vs full-width
 For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 360px.**  
 The component can also naturally wrap within the parent container (or the screen in a mobile use context for exemple) and use the full available width.  
 Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+
+&nbsp;
 
 ### User zoom in/out
 The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.

@@ -4,6 +4,8 @@
 
 ℹ️ Note: Fixed height=True is automatically enabled when Sticky action=True.
 
+&nbsp;
+
 ### ⚠️ Mobile layout
 This setting is automatic and changes depending on the grid. The user should not be able to interact with it.
 

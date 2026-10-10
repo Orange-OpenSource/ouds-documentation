@@ -1,11 +1,15 @@
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”  
 These two main criteria address different issues:
 
+&nbsp;
+
 ### Pause, Stop, Hide - WCAG 2.2.2
 This concerns moving, blinking, scrolling, or automatically updating content.  
 The question to ask is: does the animation start automatically and meet the criterion’s conditions?  
 When a relevant animation lasts more than 5 seconds, users must be able to pause, stop, or hide it.  
 The two criteria should therefore be evaluated independently.
+
+&nbsp;
 
 ### Reduced Motion (Animation from Interactions) - WCAG 2.3.3
 This primarily concerns motion-based animations triggered by user interaction.  
@@ -16,9 +20,13 @@ If not, the animation should be removed, reduced, or replaced when the user has 
 
 Concrete application to the Switch:
 
+&nbsp;
+
 ### Pause, Stop, Hide
 The animation of a switch is triggered by a user action and therefore does not generally fall within the scope of this criterion.  
 If the state change triggers additional animation or automatically moving content that meets the conditions of the criterion, that content must be evaluated separately.
+
+&nbsp;
 
 ### Reduced Motion
 The animation applied when a switch changes state is generally not essential to its functionality or to understanding its state.  

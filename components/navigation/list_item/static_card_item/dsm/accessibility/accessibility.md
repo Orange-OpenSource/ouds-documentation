@@ -80,6 +80,8 @@ Urgent update: use an assertive announcement only when immediate attention is ge
 Do not determine announcement priority from the Positive, Info, Warning or Negative colour variant alone. Do not place the entire card in a live region when this would cause every piece of content to be repeated.  
 WCAG 2.1 — 4.1.3 Status Messages, Level AA
 
+&nbsp;
+
 ### Usage with limited vision
 
 Text meets the required contrast ratio in every state and theme.  
@@ -137,6 +139,8 @@ Do not embed essential text inside images thumbnails.
 Product names, prices, statuses and instructions must remain real text. An image containing incidental text may be used only when that text is not required to understand the card.  
 WCAG 2.1 — 1.4.5 Images of Text, Level AA
 
+&nbsp;
+
 ### Usage without perception of colour
 
 Colour is not the only way a status is communicated.  
@@ -177,6 +181,8 @@ WCAG 2.1 — 1.4.1 Use of Color, Level A
 Links remain identifiable without relying only on colour.  
 Use the dedicated Link component and its defined visual treatment. Underlining is reserved for hyperlinks and must not be manually applied to ordinary Description or Helper text.  
 WCAG 2.1 — 1.4.1 Use of Color, Level A
+
+&nbsp;
 
 ### Usage with limited manipulation or strength
 
@@ -224,6 +230,8 @@ Focus remains stable during loading and content updates.
 Replacing Enabled content with Skeleton content must not move focus to the card.  
 If an update removes a Bottom slot link while that link has focus, move focus to the update trigger or the next logical control. Do not return focus to the beginning of the page.  
 WCAG 2.1 — 2.4.3 Focus Order, Level A
+
+&nbsp;
 
 ### Usage with limited cognition, language or learning
 
@@ -292,6 +300,8 @@ The Static card item does not disappear automatically.
 It has no dismissible behaviour, timeout or Close button. Keep it available while the represented information remains relevant.  
 When temporary, dismissible or automatically disappearing information is required, use a component designed for that behaviour, such as an Alert or Toast.  
 Design guidance supporting WCAG 2.1 — 2.2.1 Timing Adjustable, Level A
+
+&nbsp;
 
 ### Minimize photosensitive seizure triggers
 

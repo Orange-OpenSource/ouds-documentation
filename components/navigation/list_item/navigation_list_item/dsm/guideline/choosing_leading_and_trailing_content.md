@@ -4,6 +4,8 @@ Leading and trailing content serve different purposes within the navigation item
 The navigation indicator is separate from both areas and communicates the navigation behaviour of the complete item.  
 Choose each position according to the role of the content, not only according to the available space.
 
+&nbsp;
+
 ### Use leading content only
 Use leading content when the visual element helps users identify or understand the destination before reading its text.
 
@@ -15,6 +17,8 @@ Leading-only layouts are recommended when:
 
 ⚠️ Leading content must not appear to be an independent action.
 
+&nbsp;
+
 ### Use trailing content only
 Use trailing content when the primary label is sufficient for identification and users mainly need to scan or compare secondary information.
 
@@ -23,6 +27,8 @@ Trailing-only layouts are recommended when:
 • Visual identification is not required.  
 • The secondary information is closely associated with the destination.  
 • Preserving a clean and compact layout is more important than adding imagery.
+
+&nbsp;
 
 ### Use leading and trailing content together
 Use both positions when they communicate different and complementary information.

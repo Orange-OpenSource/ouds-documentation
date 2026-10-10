@@ -5,5 +5,7 @@ Defines whether the image can contain animated content such as a GIF or WEBP fil
 
 **`True`** Displays animated content. Use when the animation provides meaningful visual information or helps communicate the nature of the content.
 
+&nbsp;
+
 ### ⚠️ Motion & Animation accessibility rules
 The use of motion and animation in our products and components requires particular attention to the accessibility guidelines available in the dedicated section of this documentation.

@@ -2,6 +2,8 @@
 
 **`True`** Actions remain fixed at the bottom of the modal while the content area can scroll independently. This ensures that primary actions remain continuously visible and accessible, especially when the modal contains a large amount of content.
 
+&nbsp;
+
 ### ⚠️ Mobile layout
 This setting is automatic and changes depending on the grid. The user should not be able to interact with it.
 
