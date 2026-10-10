@@ -1,23 +1,8 @@
-When enabled, a brand-colored marker is displayed below the heading large to enhance its visual emphasis and reinforce information hierarchy. This optional decorative element helps highlight important sections and improve content scanability. Use it selectively to maintain its impact and avoid visual clutter.
+Index — this section is documented row by row, as in the Figma Overview. Each line is one row of the
+zeroheight section table: the text in the left cell, its image in the right cell (— = no image: the
+text keeps the left cell and the right cell stays empty). This file is not displayed.
 
-**`False`** The marker is not visible
-
-**`True`** The marker is visible
-
-&nbsp;
-
-### Brand theme availability
-This option is technically not available for all brand themes. Here's the list of marker availability by brand theme:
-
-| **Brand theme** | **Availability** |
-|---|---|
-| Orange | ✅ Available |
-| Orange Compact | ✅ Available |
-| Sosh | ❌ Unavailable |
-| Wireframe | ✅ Available |
-
-&nbsp;
-
-### Sosh specifications
-The Sosh brand has chosen not to use a marker, instead relying on the "color-content-brand-secondary" color to highlight one or more important words in a heading.  
-A heading may also use just a single color token: "color-content-default" or "color-content-brand-secondary".
+| Row | Text (`dsm/guideline/`) | Image (`images/`) |
+|---|---|---|
+| 1 | `marker_1.md` | `heading@marker_img.md` |
+| 2 | `marker_2.md` | `heading@marker_img2.md` |

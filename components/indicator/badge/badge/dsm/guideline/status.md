@@ -1,19 +1,11 @@
-Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
+Index — this section is documented row by row, as in the Figma Overview. Each line is one row of the
+zeroheight section table: the text in the left cell, its image in the right cell (— = no image: the
+text keeps the left cell and the right cell stays empty). This file is not displayed.
 
-Using a badge without icons may require additional context, such as a label or description, to ensure accessibility for users with color blindness. For more details, see 'Context of Color Usage (badge without icon)'.
-
-**`Not functional`**
-
-**`Neutral`** Used for general labels without specific emphasis.
-
-**`Accent`** Employed to highlight discovery or exploration-related content.
-
-**`Functional`**
-
-**`Positive`** Indicates success, completion, or approval.
-
-**`Info`** Provides informational context without urgency.
-
-**`Warning`** Negatives the user to potential risks or cautionary messages.
-
-**`Negative`** Draws attention to important or critical information. Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
+| Row | Text (`dsm/guideline/`) | Image (`images/`) |
+|---|---|---|
+| Intro | `status_intro.md` | — |
+| Intro | `status_intro_2.md` | — |
+| Non functional | `status_non_functional.md` | `badge@status_non_functional_img.md` |
+| Intro | `status_intro_3.md` | — |
+| Functional | `status_functional.md` | `badge@status_functional_img.md` |
