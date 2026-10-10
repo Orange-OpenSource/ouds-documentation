@@ -1,10 +1,23 @@
-Index — this section is documented row by row, as in the Figma Overview. Each line is one row of the
-zeroheight section table: the text in the left cell, its image in the right cell (— = no image: the
-text keeps the left cell and the right cell stays empty). This file is not displayed.
+Tags have status depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
-| Row | Text (`dsm/guideline/`) | Image (`images/`) |
-|---|---|---|
-| Intro | `status_intro.md` | — |
-| Non functional | `status_non_functional.md` | `tag@status_non_functional_img.md` |
-| Intro | `status_intro_2.md` | — |
-| Functional | `status_functional.md` | `tag@status_functional_img.md` |
+**`Non-functional`** Non-functional tags are used to display categories, default states, or to draw attention without carrying a specific functional meaning (unlike functional tags such as success, info, warning, and error).  
+Icons related to the tag's context can be used to enhance recognition.
+
+**`Neutral`** Default or inactive state. Used for standard labels, categories, or when no specific status needs to be communicated.
+
+**`Accent`** Used to draw attention to new features, recommendations, or content suggestions. Invites users to explore and engage with new offerings, creating an exciting and engaging experience.
+
+**`Functional`** Functional tags communicate specific statuses or system feedback (success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.  
+**Other icons must not be used.**
+
+**`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.  
+Always use the functional icon associated with success. ""
+
+**`Warning`** Signals potential issues or actions that require user attention. Use with caution.  
+Always use the functional icon associated with warning. ""
+
+**`Negative`** Communicates errors, failed actions, or negative outcomes.  
+Always use the functional icon associated with error. ""
+
+**`Info`** Represents informational content, tips, or supportive context.  
+Always use the functional icon associated with information. ""

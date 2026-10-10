@@ -1,8 +1,29 @@
-Index — this section is documented row by row, as in the Figma Overview. Each line is one row of the
-zeroheight section table: the text in the left cell, its image in the right cell (— = no image: the
-text keeps the left cell and the right cell stays empty). This file is not displayed.
+**Bold option is false**
 
-| Row | Text (`dsm/guideline/`) | Image (`images/`) |
-|---|---|---|
-| 1 | `rich_text_1.md` | `bullet_list@rich_text_img.md` |
-| 2 | `rich_text_2.md` | `bullet_list@rich_text_img2.md` |
+**`Text style Body Large`**
+* **`Strong text`**
+  * Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Body/Large/Strong** token only.
+  * No other text styles or custom font weights should be used.
+* **`Underlined text and hyperlink`**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a **hyperlink** is needed within the content, the typographic reference **Body/Large/Underline** must be used.
+
+**`Text style Body Medium`**
+* **`Strong text`**
+  * Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Body/Medium/Strong** token only.
+  * No other text styles or custom font weights should be used.
+* **`Underlined text and hyperlink`**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a **hyperlink** is needed within the content, the typographic reference **Body/Medium/Underline** must be used.
+
+**Bold option is true**
+
+**`Text style Body Large`**
+* **`Underlined text and hyperlink`**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a hyperlink is needed within the content, the typographic reference **Body/Large/Underline** must be used.
+
+**`Text style Body Medium`**
+* **`Underlined text and hyperlink`**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a hyperlink is needed within the content, the typographic reference **Body/Medium/Underline** must be used.
