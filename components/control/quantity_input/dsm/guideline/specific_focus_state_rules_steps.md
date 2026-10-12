@@ -1,4 +1,4 @@
-**Keyboard input + increment/decrement controls enabled**
+### Keyboard input + increment/decrement controls enabled
 
 In the context of an editable quantity input, if the field is focused and already filled by the user, then clicking the + (increase) or – (decrease) buttons must follow a smooth and predictable behavior according to the following UX rules.
 

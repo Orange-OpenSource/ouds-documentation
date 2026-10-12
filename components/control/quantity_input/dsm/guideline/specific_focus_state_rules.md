@@ -1,4 +1,4 @@
-**Keyboard input disabled**
+### Keyboard input disabled
 
 In the vast majority of modern UX/UI cases, a quantity input should be editable on focus. However, there are a few specific rare cases where direct editing by keyboard input might be disabled:
 * Highly guided or controlled usage→product configuration with mandatory steps
@@ -8,7 +8,9 @@ In the vast majority of modern UX/UI cases, a quantity input should be editable 
 
 In this specific context, it is therefore recommended to prefill the input by default.
 
-**Keyboard input + increment/decrement controls enabled**
+&nbsp;
+
+### Keyboard input + increment/decrement controls enabled
 
 In the context of an editable quantity input, if the field is focused and already filled by the user, then clicking the + (increase) or – (decrease) buttons must follow a smooth and predictable behavior according to the following UX rules.
 

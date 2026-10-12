@@ -1,0 +1,2 @@
+Even though in Figma this rendering option is available and editable from the properties of each alert component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used.  
+It is therefore impossible to have one toast component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
