@@ -14,14 +14,14 @@ Maximum width:
 md 8 of 12 grid columns  
 lg 6 of 12 grid columns
 
-**Top center**  
+#### Top center
 • Constraints: Center + Top  
 • Spacing: 16 px from the top of the viewport.  
 Align the toast with the four central grid columns.  
 • Use this position as the default for narrow web layouts, tablets, forms, and pages with a centered content column.  
 It keeps the message visually connected to the main task without making it feel like a separate system notification.
 
-**Bottom center**  
+#### Bottom center
 • Constraints: Center + Bottom  
 • Spacing: 24 px from the bottom of the viewport.  
 Align the toast with the four central grid columns.  
@@ -32,26 +32,26 @@ Align the toast with the four central grid columns.
 ### Desktop/Desktop Large reference design
 Maximum width: 4 of 12 grid columns
 
-**Top center**  
+#### Top center
 • Constraints: Center + Top  
 • Spacing: 16 px from the top of the viewport.  
 Align the toast with the four central grid columns.  
 • Use this position for centered layouts, forms, checkout flows, or focused tasks with a clear central content area.  
 Use it as a  default desktop position.
 
-**Top right**  
+#### Top right
 • Constraints: Right + Top  
 • Spacing: 16 px from the top.  
 Align the toast with the four rightmost grid columns. Its right edge must align with the last grid column.  
 • Use this as the default desktop position for system feedback, save confirmations, uploads, and background process updates.
 
-**Bottom center**  
+#### Bottom center
 • Constraints: Center + Bottom  
 • Spacing: 32 px from the bottom of the viewport.  
 Align the toast with the four central grid columns.  
 • Use this position when the message is directly related to an action performed near the bottom of the page. It is suitable for brief action feedback, such as confirming that a comment was added or an item was moved.
 
-**Bottom right**  
+#### Bottom right
 • Constraints: Right + Bottom  
 • Spacing: 32 px from the bottom of the viewport.  
 • Align the toast with the four rightmost grid columns. Its right edge must follow the grid boundary and keep the responsive layout margin from the viewport edge. Use this position when the top-right area is occupied or when the product already uses a consistent bottom-right notification pattern.

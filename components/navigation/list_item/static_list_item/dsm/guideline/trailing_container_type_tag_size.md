@@ -1,4 +1,4 @@
-### Size
+#### Size
 
 **`Small`** Use Small as the standard and recommended tag size within the list item. It keeps the tag visually secondary, preserves space for the main content and works well in compact or information-dense lists.
 

@@ -1,4 +1,4 @@
-### Size
+#### Size
 
 **`Medium`** Use in compact cards or when the Avatar is secondary to the content.
 

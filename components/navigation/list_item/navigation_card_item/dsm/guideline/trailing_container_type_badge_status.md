@@ -4,7 +4,7 @@
 
 &nbsp;
 
-### Not functional
+**Not functional**
 
 **`Neutral`** Used for general labels without specific emphasis.
 
@@ -12,7 +12,7 @@
 
 &nbsp;
 
-### Functional
+**Functional**
 
 **`Positive`** Use for successful, active, available or completed states.
 

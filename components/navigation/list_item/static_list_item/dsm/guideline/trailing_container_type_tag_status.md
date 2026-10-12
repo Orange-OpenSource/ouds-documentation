@@ -1,6 +1,6 @@
-### Status
+#### Status
 
-### Not functional
+**Not functional**
 
 **`Neutral`** Use Neutral for general categories, attributes or metadata without a specific semantic meaning.
 
@@ -8,7 +8,7 @@
 
 &nbsp;
 
-### Functional
+**Functional**
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states. Always use the functional icon associated with success.
 

@@ -1,11 +1,11 @@
-### Status
+#### Status
 The Status property defines the semantic colour and meaning of the Badge.
 
 ⚠️ Colour must not be the only way the meaning is communicated. Provide an equivalent accessible description.
 
 &nbsp;
 
-### Not functional
+**Not functional**
 
 **`Neutral`** Used for general labels without specific emphasis.
 
@@ -13,7 +13,7 @@ The Status property defines the semantic colour and meaning of the Badge.
 
 &nbsp;
 
-### Functional
+**Functional**
 
 **`Positive`** Use for successful, active, available or completed states.
 

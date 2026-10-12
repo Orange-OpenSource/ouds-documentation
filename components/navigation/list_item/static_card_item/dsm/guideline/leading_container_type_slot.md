@@ -4,7 +4,7 @@ Slot provides flexibility for specific product requirements, but it should be us
 
 &nbsp;
 
-### ⚠ Interaction
+#### ⚠ Interaction
 The Static card item is non-interactive. Custom Slot content must not contain:  
 • Buttons  
 • Links  

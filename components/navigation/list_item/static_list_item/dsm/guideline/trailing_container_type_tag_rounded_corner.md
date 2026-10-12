@@ -1,4 +1,4 @@
-### Rounded corner
+#### Rounded corner
 
 **`False`** A tag with sharp, square corners. Squared tags provide a more formal, structured, or technical feel. They are often used in business contexts to label promotions, offers, or important notices.
 

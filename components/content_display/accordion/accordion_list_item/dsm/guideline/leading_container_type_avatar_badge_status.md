@@ -1,11 +1,11 @@
-### Badge status
+#### Badge status
 Defines the semantic colour of the badge.
 
 ⚠️ Colour alone must not communicate the state. Provide a visible label, description, tooltip where appropriate, or an accessible text equivalent in implementation.
 
 &nbsp;
 
-### Non functional
+**Non functional**
 
 **`Neutral`** Use for non-semantic or inactive information.
 
@@ -13,7 +13,7 @@ Defines the semantic colour of the badge.
 
 &nbsp;
 
-### Functional
+**Functional**
 
 **`Positive`** Use for available, active, verified or successful states.
 

@@ -1,4 +1,4 @@
-### Badge size
+#### Badge size
 
 **`XSmall`** Use for a very compact badge within small cards or dense layouts.
 

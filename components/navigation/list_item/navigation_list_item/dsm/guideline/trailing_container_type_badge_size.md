@@ -1,4 +1,4 @@
-### Badge size
+#### Badge size
 
 **`XSmall`** Use for very compact badge with small list items or dense layouts.
 

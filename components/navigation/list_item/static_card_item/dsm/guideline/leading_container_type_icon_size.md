@@ -1,4 +1,4 @@
-### Size
+#### Size
 Controls the visual prominence of the icon.
 
 ⚠️ Use the same icon size for comparable cards within the same card collection.  

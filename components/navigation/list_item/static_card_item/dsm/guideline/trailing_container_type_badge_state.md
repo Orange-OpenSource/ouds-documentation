@@ -1,4 +1,4 @@
-### State
+#### State
 
 **`Enabled`** Use when the badge communicates a current and applicable status or count.
 

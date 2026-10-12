@@ -1,4 +1,4 @@
-### Size
+#### Size
 Controls the dimensions and visual prominence of the image.
 
 ⚠️ Use the same image size for comparable cards within the same card collection.  

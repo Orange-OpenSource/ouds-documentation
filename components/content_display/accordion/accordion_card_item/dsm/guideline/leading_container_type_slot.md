@@ -4,7 +4,7 @@ Slot provides flexibility for specific product requirements but should be used a
 
 &nbsp;
 
-### ⚠️ Interaction
+#### ⚠️ Interaction
 The complete Accordion trigger already controls whether its associated content is expanded or collapsed.
 
 Custom Slot content inside the trigger must not contain:  
