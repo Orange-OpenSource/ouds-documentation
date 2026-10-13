@@ -1,8 +1,6 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | Pill-shaped wrapper providing interactive area and visual boundary | N |
-| 2 | Label text | Displays the filter category name or selected value | N |
-| 3 | Tick icon | Indicates selected state when filter is active | Y |
-| 4 | Counter badge | Shows number of selected options within the filter category | Y |
-| 5 | Chevron icon | Indicates expandable dropdown; points up when expanded, down when collapsed | N |
-| 6 | Focus ring | Triple-border focus indicator for keyboard navigation accessibility | N |
+| 1 | Tick | A tick indicating selection status. | N |
+| 2 | Label | Information about the chip description. | N |
+| 3 | Counter | The counter indicates the number of selected options. | Y |
+| 4 | Dropdown icon | The dropdown icon indicates that selecting the chip will open a menu or list of options, signaling interactivity and available choices. | N |

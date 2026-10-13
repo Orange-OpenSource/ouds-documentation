@@ -1,10 +1,16 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Label | Identifies the input field's purpose and provides accessible name | N |
-| 2 | Input container | Houses the input area and associated interactive elements | N |
-| 3 | Input area | Zone where users type their password characters | N |
-| 4 | Character masking | Visual dots or asterisks replacing typed characters for privacy | N |
-| 5 | Show/hide toggle | Button allowing users to reveal or conceal password characters | Y |
-| 6 | Leading icon | Visual indicator of field purpose (e.g., lock icon) | Y |
-| 7 | Helper text | Supporting guidance about password requirements or usage | Y |
-| 8 | Error message | Validation feedback when input fails requirements | Y |
+| 1 | Leading icon | Provides a visual cue about the field type (password). | Y |
+| 2 | Label | Tells users what information to enter. | Y |
+| 3 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | N |
+| 4 | Trailing action | Lets users toggle between hiding and showing the password. | N |
+| 5 | Bottom border | The visible bottom border for the non-outlined style. | N |
+| 6 | Helper text | Supplementary text displayed below the input field providing guidance or requirements. | Y |
+| 7 | Label | Moves above the input when focused or filled, so the field stays identifiable. | Y |
+| 8 | Prefix | Shows a static prefix before the value to provide context or format requirements (e.g., “DEV-”). | Y |
+| 9 | Input text | Shows the entered password as dots when hidden, or as text when revealed. | N |
+| 10 | Text cursor | Indicates where the next character will be inserted while typing. | N |
+| 11 | Loading indicator | Shows progress while validation or authentication is in progress. | Y |
+| 12 | Outlined container | Alternative visual style using a full border. | N |
+| 13 | Error text | Explains what’s wrong and how to fix it when validation fails. | Y |
+| 14 | Error icon | Highlights the field’s error state to improve visibility and feedback. | Y |

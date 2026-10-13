@@ -1,10 +1,15 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Label | Identifies the purpose of the select input | N |
-| 2 | Input container | Clickable area that triggers the dropdown menu | N |
-| 3 | Selected value | Displays the currently chosen option or placeholder text | N |
-| 4 | Chevron icon | Visual indicator that the field opens a dropdown | N |
-| 5 | Helper text | Provides additional guidance about the selection | Y |
-| 6 | Error message | Communicates validation issues to the user | Y |
-| 7 | Leading icon | Conveys the input's purpose or category at a glance | Y |
-| 8 | Helper link | Offers additional help when helper text is insufficient | Y |
+| 1 | Leading icon | Provides a visual cue about the field type or context. | Y |
+| 2 | Label | Tells users what information to enter. | Y |
+| 3 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | N |
+| 4 | Trailing action | Opens the list of available options | N |
+| 5 | Bottom stroke | The visible bottom border for the non-outlined style | Y |
+| 6 | Helper text | Adds extra guidance, examples, or formatting instructions. | Y |
+| 7 | Label | Moves above the input when focused or filled, so the field stays identifiable. | N |
+| 8 | Text cursor | Indicates where the next character will be inserted while typing. | N |
+| 9 | Helper link | Provides a link to supporting guidance or related information. | Y |
+| 10 | Loading indicator | Shows progress while validation or authentication is in progress. | Y |
+| 11 | Outlined container | Alternative visual style using a full border. | Y |
+| 12 | Error icon | Highlights the field’s error state to improve visibility and feedback | Y |
+| 13 | Error text | Explains what’s wrong and how to fix it when validation fails. | Y |

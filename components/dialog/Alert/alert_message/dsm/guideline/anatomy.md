@@ -1,9 +1,8 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | Provides visual boundary with semantic background color and optional rounded corners | N |
-| 2 | Status icon | Communicates alert severity through semantic iconography (required for functional statuses) | Y |
-| 3 | Label | Primary message text conveying the alert's main information | N |
-| 4 | Description | Supplementary text providing additional context or guidance | Y |
-| 5 | Action link | Text-only link enabling users to take immediate related action | Y |
-| 6 | Close button | Dismisses the alert when user acknowledgment is sufficient | Y |
-| 7 | Bullet list | Presents multiple related points or action items clearly | Y |
+| 1 | Icon | Indicates the alert type (error, warning, info, success) or a decorative brand/icon for non-functional alerts such as neutral or accent messages.. Required for functional alerts. | Yes / No* |
+| 2 | Label | Main message. Short, clear, and readable at a glance. | N |
+| 3 | Action link | Optional inline link for secondary action (ex: “Retry”, “Learn more”). | Y |
+| 4 | Close button | Allows user to dismiss the alert if dismissal is permitted. | Y |
+| 5 | Description | Additional explanation or context when needed. | Y |
+| 6 | Bullet list | Used for multiple detailed points instead of long text. | Y |

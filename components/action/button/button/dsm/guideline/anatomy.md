@@ -1,8 +1,5 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | Defines the interactive boundary and visual shape of the button | N |
-| 2 | Text label | Communicates the action the button performs | Y |
-| 3 | Leading icon | Provides visual context or reinforces the action meaning | Y |
-| 4 | Loading indicator | Indicates an ongoing process after button activation | Y |
-| 5 | Focus ring | Shows keyboard focus state for accessibility | N |
-| 6 | Border | Defines button boundaries, especially for outline variants | Y |
+| 1 | Icon | Use an icon to add an affordance where it has a clear, well-established meaning. | Y |
+| 2 | Label | Text describing the button action. Use action verbs or phrases to tell the user what will happen next. | N |
+| 3 | Container | The selectable area of the button. | N |

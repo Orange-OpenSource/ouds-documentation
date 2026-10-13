@@ -1,10 +1,15 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Label | Identifies the field's purpose for users and assistive technologies | N |
-| 2 | Country selector | Displays country flag and enables selection of country/dial code | Y |
-| 3 | Dial code prefix | Shows read-only country dialing code (e.g., +33) | Y |
-| 4 | Input field | Primary area where users enter phone number digits | N |
-| 5 | Leading icon | Visual indicator reinforcing the phone input context | Y |
-| 6 | Helper text | Provides additional guidance on expected format or usage | Y |
-| 7 | Error message | Displays validation feedback when input is invalid | Y |
-| 8 | Container | Wraps all elements with appropriate styling (outlined/filled) | N |
+| 1 | Label | Tells users what information to enter | Y |
+| 2 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | N |
+| 3 | Bottom border | Providing visual boundary for a non-outlined style. | N |
+| 4 | Helper text | Adds extra guidance, examples, or formatting instructions. | Y |
+| 5 | Leading icon | Provides a visual cue about the field type (phone number). | Y |
+| 6 | Country selector | Lets users choose country/region so the correct calling code can be applied. | Y |
+| 7 | Text cursor | Indicates where the next character will be inserted while typing. | N |
+| 8 | Label | Moves above the input when focused or filled, so the field stays identifiable. | Y |
+| 9 | Dial code | Shows the country calling prefix before the phone number (e.g., +1). | Y |
+| 10 | Loading indicator | Shows progress while validation or authentication is in progress. | N |
+| 11 | Outlined container | Alternative visual style using a boxed input. | N |
+| 12 | Error icon | Highlights the field’s error state to improve visibility and feedback. | Y |
+| 13 | Error text | Explains what’s wrong and how to fix it when validation fails. | Y |

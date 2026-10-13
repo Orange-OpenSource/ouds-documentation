@@ -1,8 +1,6 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Marker/Bullet | Visual indicator distinguishing list type (square, dash, number, letter) | N |
-| 2 | Label/Content | Primary text content of the list item | N |
-| 3 | Icon container | Wrapper for bullet icons ensuring proper alignment | N |
-| 4 | Nested indentation | Left padding indicating hierarchy level (Level 0, 1, 2) | Y |
-| 5 | Hyperlink | Optional interactive link within list content | Y |
-| 6 | Skeleton loader | Loading placeholder shown during content fetch | Y |
+| 1 | Label | Text content of the list item | N |
+| 2 | Unordered list | Displays list items without a defined sequence, using a bullet or custom marker | N |
+| 3 | Ordered list | Displays list items in a specific sequence using numeric ordering | N |
+| 4 | Unstyled list | Displays list items without visual markers while preserving indentation and structure | N |

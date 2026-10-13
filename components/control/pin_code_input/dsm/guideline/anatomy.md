@@ -1,9 +1,6 @@
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | PIN code container | Groups all digit input fields as a cohesive unit | N |
-| 2 | Digit input field | Individual input box accepting a single numeric character | N |
-| 3 | Input border/underline | Visual boundary indicating the input area and state | N |
-| 4 | Focus indicator | Highlights the currently active digit field | N |
-| 5 | Error message | Displays validation feedback below the input group | Y |
-| 6 | Helper text | Provides supporting instructions or context | Y |
-| 7 | Separator | Visual divider between digit groups (e.g., 3-3 format) | Y |
+| 1 | Filled digit value | Shows an entered digit while keeping the actual value hidden for security. | N |
+| 2 | Active digit input | Shows the active slot and the text cursor, indicating where the next character will be inserted while typing. | N |
+| 3 | Empty digit input | Shows an empty slot to indicate where a digit should be entered. | N |
+| 4 | Helper text | Adds extra guidance, examples, or formatting instructions. | Y |
