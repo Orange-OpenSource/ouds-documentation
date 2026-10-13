@@ -4,7 +4,7 @@ A linear indicator shows the progress of a task using a horizontal line. It can 
 
 ---
 
-## Progresse type
+## Progress type
 
 Select the type of progress indicator based on whether progress can be measured and how long the user is expected to wait.
 • Instant (< 200ms)
