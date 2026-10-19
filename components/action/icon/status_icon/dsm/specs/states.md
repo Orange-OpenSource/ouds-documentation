@@ -1,1 +1,0 @@
-🚧 Not applicable — the status icon is typically non-interactive and has no interactive states. Its variants are expressed through the Status and Animated properties.
