@@ -1,1 +1,1 @@
-An Interactive Icon is an icon component designed to trigger a user interaction (e.g., open, close, toggle a state). It includes defined interactive states and can be used independently or within other components such as buttons, inputs, or menus.
+An Interactive Icon is a UI element that triggers a user interaction, such as opening a tooltip or a dropdown. It includes defined interactive states and can be used independently or within other components. It is well suited to dense compositions containing multiple elements.
