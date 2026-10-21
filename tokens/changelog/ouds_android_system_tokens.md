@@ -1,0 +1,8 @@
+<!-- Generated from Figma: Android system tokens (https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Lib--Design-tokens?node-id=10267-1457). Do not edit by hand: re-run token_changelog.py write. -->
+
+| Date | Number | Notes | Designer |
+|------|--------|-------|----------|
+| Oct 10, 2025 | 1.2.0 | <b>Elevation</b><br>Renamed references:<ul><li>elevation-overlay-default→elevation-default<li>elevation-overlay-emphasized→elevation-emphasized<li>elevation-sticky-default→elevation-sticky</ul>Removed references:<ul><li>elevation-sticky-emphasized<li>elevation-sticky-navigation-scrolled</ul> | Maxime Tonnerre |
+| Jul 21, 2025 | 1.1.0 | <b>Color</b><br>Updated references:<ul><li>color-secondaryContainer (light)→color-repository-black-lowest<li>color-secondaryContainer (dark)→color-repository-white-lower</ul> | Maxime Tonnerre |
+| Apr 1, 2025 | 1.0.0 | <b>Color</b><br>Updated references:<ul><li>color-secondaryContainer (light)→color-repository-neutral-muted-lowest<li>color-secondaryContainer (dark)→color-repository-neutral-emphasized-high<li>color-surfContainerLowest (dark)→color-repository-neutral-emphasized-high<li>color-surfContainerLow (dark)→color-repository-neutral-emphasized-high<li>color-surfContainer (light)→color-repository-neutral-muted-lowest<li>color-surfContainer (dark)→color-repository-neutral-emphasized-high<li>color-surfContainerHigh (light)→color-repository-neutral-muted-lowest<li>color-surfContainerHigh (dark)→color-repository-neutral-emphasized-high<li>color-surfContainerHighest (light)→color-repository-neutral-muted-lowest<li>color-surfContainerHighest (dark)→color-repository-neutral-emphasized-high</ul> | Maxime Tonnerre |
+| Nov 29, 2024 | 0.1.0 | <ul><li>Creation of the token library.</ul> | Maxime Tonnerre |
