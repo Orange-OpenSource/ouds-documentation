@@ -1,6 +1,6 @@
 ## Definition
 
-An Interactive Icon is an icon component designed to trigger a user interaction (e.g., open, close, toggle a state). It includes defined interactive states and can be used independently or within other components such as buttons, inputs, or menus.
+An Interactive Icon is a UI element that triggers a user interaction, such as opening a tooltip or a dropdown. It includes defined interactive states and can be used independently or within other components. It is well suited to dense compositions containing multiple elements.
 
 ---
 
@@ -43,4 +43,4 @@ This flexibility allows an Interactive icon to be positioned closer to text or a
 
 **User zoom in/out**
 The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom (the icons follow the same rules as the text).
-In order to preserve the minimun interactive area during user zoom out, this component have a min-width and a min-height **of 28px**.
+In order to preserve the minimum interactive area during user zoom out, this component has a min-width and a min-height of 28px.
