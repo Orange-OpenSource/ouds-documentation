@@ -1,0 +1,3 @@
+A content card container is a surface-like UI element that groups related information within a single non-interactive surface that can include independently interactive elements.
+
+The content card container's content is customizable, allowing you to adapt the internal layout with interactive elements like buttons and links, without altering the container's behavior. Unlike the action container card, which contains a single interaction, the content card container card is designed around multiple interactions.

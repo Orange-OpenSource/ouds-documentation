@@ -1,0 +1,3 @@
+An assistant chat input is a UI element that allows users to compose a message for an AI assistant. It combines a text entry area, bottom actions, supporting messages and an optional AI legal notice. The component also includes a voice input presentation with a waveform and dedicated feedback.
+
+This overview documents the supplied draft: its visual variants and configurable content. Voice capture, message submission, validation and suggestion logic must be provided by the product.

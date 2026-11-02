@@ -1,0 +1,1 @@
+![assistant_chat_input@multiline_and_responsiveness_img](./assistant_chat_input@multiline_and_responsiveness_img.png)

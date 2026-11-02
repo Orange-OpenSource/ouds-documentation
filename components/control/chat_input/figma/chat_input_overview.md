@@ -1,0 +1,218 @@
+## Definition
+
+A chat input is a UI element that allows users to compose a message in a conversation. It combines a text entry area, configurable bottom actions and optional supporting messages or a helper link.
+
+This overview documents the supplied draft: its visual variants and editable content. Message submission, validation, character counting and suggestion logic must be implemented by the product.
+
+Chat input does not expose Voice input, AI legal notice or a content slot at its root. The microphone is an action icon, not a voice-input mode. A slot is available only inside the nested Bottom actions component.
+
+---
+
+## Outlined
+
+**`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
+
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
+This style may be interesting for contexts other than form pages:
+  • When inputs need to feel lightweight and unobtrusive
+  • In a header (search field)
+  • In a selection/filtering feature in a product catalog
+
+---
+
+## Rounded corner
+
+Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used.
+It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
+
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
+
+This option is technically not available for all brand themes
+Here’s the list of rounded corners availability by brand theme
+
+| Brand theme | Status |
+|---|---|
+| Orange | Available |
+| Orange Compact | Available |
+| Sosh | Unavailable |
+| Wireframe | Unavailable |
+
+---
+
+## Input status
+
+**`Empty`** The Empty state indicates that the text area is blank with no content or placeholder, a neutral starting point.
+
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
+
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
+
+---
+
+## States
+
+**`Enabled`** Neutral appearance, whether empty or filled.
+It allows users to click, focus, and type freely without restrictions.
+
+**`Hover`** Slight visual contrast or border color change.
+
+**`Focus`** The text area is focused and ready to receive user input.
+It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
+
+**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the text area.
+A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
+
+**`Read only`** Text visible but not editable (often with a muted or different background).
+
+**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
+
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded.
+Uses the "Skeleton" component, variant “Security marge=False”.
+
+---
+
+## Error
+
+The Error status indicates that the user input does not meet validation rules, for example, in this specific case, if the number of characters entered by the user exceeds the allowed limit. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
+
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it.
+The input remains editable, encouraging users to revise their input without starting over.
+
+**⚠️ Error message vs helper text / link**
+If a helper text accompanies the text input, it is replaced by the error message. However, a helper link must not be replaced and should remain positioned below the error message.
+
+---
+
+## Other boolean options
+
+**`Scrolled`** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available.
+This allows users to navigate through the overflowing text without expanding the text area beyond the maximum planned height of 240px, allowing the display of about 10 lines of text. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
+
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+
+**`Helper link`** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+
+---
+
+## Character counter
+
+**Character limit not exceeded**
+The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field’s allowed limit.
+
+⚠️ It is impossible to provide a recommendation for the maximum number of characters, as this depends too specifically on the constraints (or lack thereof) of each project.
+If the count cannot be added and the text should be changed to "XXX characters maximum."
+
+• **Character limit exceeded**
+If the user exceeds the set limit, the field enters an error state, but input is not blocked. The character counter then shows the user, still in real time, how many characters have been entered beyond the field’s allowed limit.
+
+The user must reduce the number of characters entered for the text area to exit the error state.
+In the case where the maximum number of characters is 180, for example: When the input is at 180 char filled in the helper text changes ""You have 0/180 characters left".
+
+---
+
+## Bottom actions
+
+**Leading actions / Trailing actions**
+The "Bottom actions" section consists of two independent groups. The group at the beginning ("Leading actions") contains, by default, icon buttons for additional customizable options, as well as a component slot. The group at the end ("Trailing actions") contains the "send" action button, which is not customizable and must never be hidden.
+
+**Leading and trailing groups**
+The Bottom actions instance contains leading and trailing action groups. Each group can be shown or hidden independently.
+
+**Action 1 / Action 2 / Action 3**
+Show or hide each primary action independently. The default options provided can be customized on a per-project basis.
+
+**Slot**
+A dedicated slot is provided within the "Bottom actions" area to accommodate custom content. This is distinct from the content slot associated with the input field.
+This slot is disabled by default. It is not a "content-slot" property located at the root of the chat input component. Any custom content inserted into this slot will appear between the action groups.
+
+**Trail action**
+The final "send" action button cannot be customized and must never be hidden, for accessibility reasons.
+
+**Individual trailing actions**
+The final "send" action button cannot be customized and must never be hidden, in order to meet accessibility requirements.
+
+Configuration shown here is made through the nested Bottom actions instance. Keep the sending action identifiable and remove actions that have no useful function in the conversation.
+
+---
+
+## Behavior by entered line count
+
+**Default display**
+By default, the height of the input text container is set to 60px, which allows 1 lines of text to be displayed without expanding the component.
+This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
+
+• **Auto-resize (automatic expansion)**
+Above 1 lines of text, the field automatically increases in height as the user types their comment.
+This behavior is not mandatory. It is possible to enable or disable the component’s expansion depending on the page layout. In a mobile chat-type use case, for example, the height of the text area must remain fixed even if the text entered by the user exceeds 3 lines.
+
+• **Vertical scrollbar**
+If expansion is disabled or the maximum height is reached at 240px, corresponding to about 10 lines of text, an internal scrollbar appears allowing the user to scroll through the overflowing text.
+This choice prevents breaking the layout but has the drawback, on mobile, of creating a scroll within a scroll (text area scroll inside a page scroll).
+
+**⚠️ Old web browsers**
+The automatic expansion of the text area’s height based on the number of lines entered by the user is not a behavior supported by older web browsers. To address this issue, we have planned an alternative behavior for the component, which in this case has a fixed height of 144px (corresponding to about 6 lines of text), whether it is filled in or not. The selection of the appropriate expected behavior for the component is done automatically based on the version of the user’s web browser.
+
+---
+
+## ⚠️ Label (can it be hidden?)
+
+Indicates the function of an input field. Why hide the label for an input field? In certain user interface contexts—particularly when space is limited or the field is part of a compact layout (such as a chat input)—visually hiding the label can help maintain a clean, uncluttered interface. However, this practice should only be adopted if:
+The function of the input field remains clear, either through placeholder text or a contextual icon (e.g., a "send" icon for a chat input).
+The label remains accessible to screen readers (via `aria-label`, `aria-labelledby`, or text that is visually hidden).
+When a chat input appears in an interface that includes other possible interactions, the label must be displayed.
+
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
+
+---
+
+## ⚠️ Truncated input area
+
+**When losing focus, the truncation behavior of the input area differs depending on the technical environment. It’s important to respect the native behaviors designed to handle truncation:**
+
+• On web, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (bottom-aligned) and the beginning of the text becomes invisible (masked on the top).
+There should be no visual truncation indicator (...).
+This choice is intentional because, for many fields, showing the end often makes it easier to identify the value (file names, paths, emails).
+• On Android, by default (even if the project retains control over this setting), the behavior is the same as on the web.
+• On iOS, by default (even if the project retains control over this setting), the behavior is the same as on the web.
+
+⚠️ In all cases: the entire text must remain accessible when the field regains focus:
+• Either by refocusing the field, the text becomes horizontally scrollable again (the blinking cursor is visible).
+• Or via a tooltip on hover in certain desktop contexts.
+
+---
+
+## Multiline and responsiveness
+
+**Multiline**
+This component allows multi-line text editing. Further details are available in the “Behavior by entered line count” section.
+
+**Max-width vs full-width**
+For greater flexibility, this component doesn’t have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying a max-width of around 640px.
+For mobile or tablet use (or if the component is positioned inside a specific container), it is possible to set this component to use the full available width (of the screen or the container).
+Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+
+**User zoom in/out**
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+However, “Text input” components present an exception regarding the loss of textual information following the activation of user zoom in, since text truncation (label, placeholder, input text) is exceptionally allowed and enabled.
+  • The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+  • Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+  • The component’s height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+  • In order to preserve the minimun interactive area during user zoom out, this component have a min-width of 240px and a min-height of 92px.
+  • Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user’s zoom level.
+  • As the error icon is functional, user zoom in/out doesn’t affect the size of the icons.
+  • The behaviors of the button (layout: icon only) component during user zoom are available in the corresponding documentation.
+**Learn more about the behavior of the button component.**
+
+---
+
+## Rich text
+
+**Strong text**
+  • Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Large/Strong or Label/Medium/Strong) depending on the selected text style.
+  • No other text styles or custom font weights should be used.
+
+• **⚠️ Underline text and Hyperlinks**
+  • Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
+  • If a link is required, the dedicated helper link component must be used (e.g. **Writing guidelines**).

@@ -1,0 +1,3 @@
+An action container card is a surface-like UI element that groups related information within an interactive surface and allows a user to perform a single primary action or navigate to a destination.
+
+The entire card acts as the interaction target and can behave as a button, an internal link, or an external link. Unlike the content container card, which can contain independent interactive elements, the action container card is designed around one primary interaction.

@@ -1,0 +1,1 @@
+![assistant_chat_input@spec_layout_spacing_error_false_state_enabled_05](./assistant_chat_input@spec_layout_spacing_error_false_state_enabled_05.png)
