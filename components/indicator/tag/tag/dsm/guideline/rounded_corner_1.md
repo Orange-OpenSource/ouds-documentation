@@ -6,7 +6,7 @@ This option is available for all brand themes. Here's the list of rounded corner
 
 | Brand theme | Status |
 |---|---|
-| Orange | ✓ Available |
-| Orange Compact | ✓ Available |
-| Sosh | ✓ Available |
-| Wireframe | ✓ Available |
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ✅ Available |
+| Wireframe | ✅ Available |

@@ -11,7 +11,7 @@ Here’s the list of rounded corners availability by brand theme
 
 | Brand theme | Status |
 |---|---|
-| Orange | Available |
-| Orange Compact | Available |
-| Sosh | Unavailable |
-| Wireframe | Unavailable |
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ❌ Unavailable |
+| Wireframe | ❌ Unavailable |

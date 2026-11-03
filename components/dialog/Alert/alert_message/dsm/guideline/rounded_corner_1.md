@@ -6,7 +6,7 @@ This option is technically not available for all brand themes. Here's the list o
 
 | Brand theme | Status |
 |---|---|
-| Orange | ✓ Available |
-| Orange Compact | ✓ Available |
-| Sosh | ⚠️ Unavailable |
-| Wireframe | ⚠️ Unavailable |
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ❌ Unavailable |
+| Wireframe | ❌ Unavailable |

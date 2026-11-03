@@ -1,0 +1,1 @@
+**`Elevated`** Elevated cards create visual separation through a predefined shadow, giving the card a raised appearance. The background context is defined by the surrounding surface, while the card retains its own predefined elevation and visual support layers. The Card component remains non-interactive, regardless of its visual treatment.

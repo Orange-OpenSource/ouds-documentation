@@ -1,0 +1,1 @@
+![action_card_container@style_inverse_background_img](./action_card_container@style_inverse_background_img.png)
