@@ -1,1 +1,1 @@
-A static card item is a UI element that displays a unit of information in an non-interactive, self-contained card, that does not navigate, trigger actions or have interactive states.
+A static card item is a UI element that displays a unit of information in a non-interactive, self-contained card, that does not navigate, trigger actions or have interactive states.

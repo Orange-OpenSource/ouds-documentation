@@ -1,3 +1,3 @@
-A social button is a UI element providing quick access to a social network or social action, such as opening a profile, navigating to social content, sharing content, or starting a conversation.  pr
+A social button is a UI element providing quick access to a social network or social action, such as opening a profile, navigating to social content, sharing content, or starting a conversation.
 
-Depending on the interaction, the social button can semantically behave as either a link or a button. Only the social network available in the component can be selected.   on the interaction, the Social button can semantically behave as either a link or a button. Only the social networks available in the component can be selected. obe selected.
+Depending on the interaction, the social button can semantically behave as either a link or a button. Only the social network available in the component can be selected.   on the interaction, the Social button can semantically behave as either a link or a button. Only the social networks available in the component can be selected. obe selected.
