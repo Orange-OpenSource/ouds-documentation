@@ -1,9 +1,3 @@
-A fullscreen dialog is a dialog that occupies the entire viewport and does not use a backdrop. Its layout follows the structure and behavior of a standard page, making it suitable for complex tasks or content that requires more space and interaction.
+A fullscreen dialog is a UI element that covers the entire viewport, interrupting the current page or task to focus the user's attention on a specific action, decision, or piece of information.
 
-&nbsp;
-
-### Key definitions
-**Dialog**: A temporary interface surface that focuses the user's attention on a specific task, decision, or piece of information.
-* **Modal dialog**: A centered dialog displayed above a backdrop.
-* **Side sheet**: A dialog anchored to the side of the viewport and displayed above a backdrop.
-* **Fullscreen dialog**: A dialog that occupies the entire viewport and follows a page-like layout without a backdrop.
+The fullscreen dialog layout mirrors the structure and behavior of a standard page and lacks a backdrop, making it ideal for complex tasks or content needing more space and interaction.

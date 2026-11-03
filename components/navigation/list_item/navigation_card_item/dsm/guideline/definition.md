@@ -1,2 +1,3 @@
-A navigation card item is an interactive, self-contained card that takes users to one internal or external destination. Use it when navigational content requires stronger visual grouping or prominence than a standard navigation list item.  
-The card may be displayed independently or within a card-based layout and may use a distinct background, outline or rounded corners. The entire card acts as a single navigation target and supports the required hover, focus and pressed states. Do not use a Navigation card item when the card must contain several destinations or independent interactive controls.
+A navigation card item is a UI element that displays a unit of information in an interactive, self-contained card, taking users to an internal or external destination.
+
+The navigation card item is used when the content requires stronger visual grouping or prominence than a standard navigation list item. It may be displayed independently or within a card-based layout. Each card acts as a single navigation target and supports the necessary hover, pressed, and keyboard focus states.

@@ -1,1 +1,1 @@
-An AI assistant button triggers an interaction with an AI-powered feature, marked by a distinctive icon that clearly signals its intelligent capability.
+An assistant button is a UI element that triggers an action or event featuring AI-powered capabilities, such as conversational assistance, content generation, or contextual suggestions.

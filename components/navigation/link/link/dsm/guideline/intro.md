@@ -1,1 +1,1 @@
-A link is an interactive navigation element that directs users to another location within or outside the application.
+A link is a UI element that allows to navigate from one location to another, either within the same page or across different pages in the same resource, or to an external resource.

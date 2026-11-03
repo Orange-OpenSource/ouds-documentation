@@ -1,1 +1,1 @@
-A side sheet is a dialog that slides in from one side of the viewport to hold a secondary task or details while the page stays in view.
+A side sheet, also called a side panel, drawer, or off-canvas sidebar, is a UI element that slides in from and is anchored to the right side of the viewport.

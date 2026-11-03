@@ -1,1 +1,1 @@
-Label is the compact, fixed-size text style for component content — buttons, fields, badges — kept consistent and predictable across every breakpoint.
+A label is a UI element that styles typography for compact interface components such as buttons, form fields, badges, and other small elements.

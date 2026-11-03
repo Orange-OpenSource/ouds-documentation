@@ -1,1 +1,1 @@
-A navigation list item is a clickable row that leads users to another page or view, with optional visuals and supporting details.
+A Navigation list item is a UI element that displays a unit of information in an interactive horizontal row within a structured list, taking users to an internal or external destination.

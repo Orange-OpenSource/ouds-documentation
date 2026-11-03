@@ -1,1 +1,1 @@
-A compact status indicator that uses color-coded icons to communicate system states, notifications, or categorization at a glance.
+A badge icon is a UI element that highlights system notifications, statuses, or the categorisation of information through colour and iconography.

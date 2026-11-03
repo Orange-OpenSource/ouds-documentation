@@ -1,1 +1,1 @@
-A select input lets users choose a single option from a predefined list displayed in a dropdown menu.
+A select input is a UI element that enables users to choose one or, in some cases, multiple options from a predefined list.

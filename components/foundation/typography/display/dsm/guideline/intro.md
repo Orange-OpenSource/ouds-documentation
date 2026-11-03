@@ -1,1 +1,1 @@
-Display is the largest type style, reserved for high-impact moments — hero headlines and key messages that must capture immediate attention.
+A display is a UI element that styles typography for impactful content like landing pages, marketing campaigns, and key messages.

@@ -1,3 +1,3 @@
-A toast is a temporary, non-modal status message that confirms an action or communicates a short system update without interrupting the user’s current task. It appears above the interface content and does not move keyboard focus when displayed.
+A toast is a temporary, non-modal UI element that provides a status message confirming an action or delivering a brief system update without interrupting the user's current task.
 
-Use a toast for brief, non-critical feedback that does not require an immediate decision.
+The toast offers brief, non-critical feedback that doesn't require immediate action, appears above the interface content, and does not shift keyboard focus when shown.

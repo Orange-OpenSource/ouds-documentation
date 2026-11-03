@@ -1,1 +1,1 @@
-A password input securely captures confidential user credentials with character masking and optional visibility toggle for improved usability.
+A password input is a UI element designed to securely and confidentially capture a user’s password.

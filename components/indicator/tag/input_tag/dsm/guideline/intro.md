@@ -1,1 +1,1 @@
-Input tag allows users to enter and manage multiple values as removable tags within a text input field.
+An input tag is a UI element that renders an entered value as a tag, allowing it to display brief information like a label, keyword, or category.

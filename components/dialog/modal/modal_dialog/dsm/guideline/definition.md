@@ -1,9 +1,3 @@
-A modal dialog is a temporary surface that interrupts the current page or task to focus the user's attention on a specific action, decision, or piece of information. It is displayed above a backdrop that visually separates the dialog from the underlying content and prevents interaction with it.
+A modal dialog is a temporary, surface-like UI element that interrupts the current page or task to focus the user's attention on a specific action, decision, or piece of information.
 
-&nbsp;
-
-### Key definitions
-**Dialog**: A temporary interface surface that focuses the user's attention on a specific task, decision, or piece of information.
-* **Modal dialog**: A centered dialog displayed above a backdrop.
-* **Side sheet**: A dialog anchored to the side of the viewport and displayed above a backdrop.
-* **Fullscreen dialog**: A dialog that occupies the entire viewport and follows a page-like layout without a backdrop.
+The modal dialog appears over a backdrop that visually separates it from the underlying content and blocks interaction with that content.

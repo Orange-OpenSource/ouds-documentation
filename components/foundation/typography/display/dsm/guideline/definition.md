@@ -1,3 +1,3 @@
-Display styles are intended for high-impact content such as landing pages, marketing campaigns, and key messages. Their large type sizes help capture attention and establish strong visual emphasis.  
-Variants automatically adapt across breakpoints to maintain a consistent visual hierarchy on every screen size.  
-Use them sparingly to preserve their impact and effectiveness.
+A display is a UI element that styles typography for impactful content like landing pages, marketing campaigns, and key messages.
+
+The display features large type sizes that capture attention and create strong visual emphasis. Variants automatically adjust across breakpoints to maintain a consistent visual hierarchy on all screen sizes. Use it sparingly to preserve its impact and effectiveness.

@@ -1,1 +1,3 @@
-The Code style is dedicated to technical content such as code snippets, commands, system values, and identifiers. It uses a monospace typeface to preserve character alignment and improve readability of structured content. Available in a single size, it provides a consistent presentation of technical information throughout the product. Its use should be limited to content that requires an accurate code-like representation.
+A code element is a UI element that styles typography for technical content like code snippets, commands, system values, and identifiers.
+
+The code employs a monospace typeface to maintain character alignment and enhance the readability of structured content. Offered in one size, it ensures a uniform presentation of technical information across the product. Its application should be restricted to content that necessitates a precise code-like representation.

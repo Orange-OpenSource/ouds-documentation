@@ -1,2 +1,3 @@
-Body styles are designed for everyday text content such as paragraphs, descriptions, and informational messages. They prioritize readability and provide a comfortable reading experience across all screen sizes. Multiple size options allow content importance to be expressed while maintaining consistency.  
-Their typography automatically scales across breakpoints to support responsive layouts.
+A body is a UI element that styles typography for common text content like paragraphs, descriptions, and informational messages.
+
+The body features multiple size options, to allow content importance to be expressed while maintaining consistency. Variants automatically adjust across breakpoints to ensure optimal readability on all devices. Body prioritize readability and provide a comfortable reading experience.

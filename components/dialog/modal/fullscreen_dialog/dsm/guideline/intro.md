@@ -1,1 +1,1 @@
-A fullscreen dialog takes over the whole viewport to let users complete a complex or content-heavy task before returning to the page.
+A fullscreen dialog is a UI element that covers the entire viewport, interrupting the current page or task to focus the user's attention on a specific action, decision, or piece of information.

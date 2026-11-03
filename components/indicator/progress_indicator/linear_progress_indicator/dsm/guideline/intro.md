@@ -1,1 +1,1 @@
-A linear progress indicator shows that a task is loading or advancing along a horizontal bar, by an exact amount or as ongoing activity.
+A linear progress indicator is a UI element that shows the progress of a task using a horizontal bar.

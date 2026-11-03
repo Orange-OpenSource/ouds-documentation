@@ -1,1 +1,1 @@
-A modal dialog appears above the page to focus users on one decision, task or piece of information before they continue.
+A modal dialog is a temporary, surface-like UI element that interrupts the current page or task to focus the user's attention on a specific action, decision, or piece of information.

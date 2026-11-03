@@ -1,1 +1,1 @@
-Heading styles structure content and signal hierarchy, giving users a clear, scannable entry point for navigating a page or section.
+A heading is a UI element that styles typography to structure content and define the hierarchy of information within an interface.

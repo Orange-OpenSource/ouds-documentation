@@ -1,1 +1,1 @@
-A navigation card item is a clickable card that leads users to one page or view, giving a destination more visual weight than a list row.
+A navigation card item is a UI element that displays a unit of information in an interactive, self-contained card, taking users to an internal or external destination.

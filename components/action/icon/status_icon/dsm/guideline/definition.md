@@ -1,1 +1,3 @@
-A Status Icon is a visual component used to communicate the functional state of a system or message, such as Success, Info, Warning, or Error. It provides quick, at-a-glance feedback using standardized colors and symbols to ensure consistent meaning across the product. A Status Icon is typically non-interactive and is used in contexts such as alerts, form validation, notifications, or system messages.
+A status icon is a UI element that communicates the functional state of a system or message, such as Success, Info, Warning, or Error.
+
+The status icon offers quick, at-a-glance feedback using standardised colors and symbols to ensure consistent meaning throughout the product. It is typically non-interactive and appears in contexts such as alerts, form validation, notifications, or system messages.

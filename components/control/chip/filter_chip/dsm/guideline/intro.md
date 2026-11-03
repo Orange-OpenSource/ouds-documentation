@@ -1,1 +1,1 @@
-A filter chip is a compact, toggleable element that enables users to refine displayed content by selecting or deselecting filter criteria.
+A filter chip is a UI element that enables users to select or deselect options within a series, commonly used to capture filtering decisions.

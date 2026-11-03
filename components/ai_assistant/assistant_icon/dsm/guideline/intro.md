@@ -1,1 +1,1 @@
-An AI assistant icon triggers an AI-powered action using only an icon — no container — keeping a light visual footprint within surrounding content.
+An assistant icon is a UI element that triggers an action or event featuring AI-powered capabilities, such as conversational assistance, content generation, or contextual suggestions.

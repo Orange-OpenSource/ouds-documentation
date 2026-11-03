@@ -1,2 +1,3 @@
-A static list item is a non-interactive horizontal row used to present a unit of information within a structured list.  
-It supports quick scanning and comparison between related items and may include supporting text, leading or trailing content, and status information. It does not navigate, trigger an action, or receive interactive states.
+A static list item is a UI element that displays a unit of information in a non-interactive horizontal row within a structured list, and does not navigate, trigger actions, or have interactive states.
+
+The static list item allow quick scanning and comparison of related items. It can include supporting text, leading or trailing content, and status information.

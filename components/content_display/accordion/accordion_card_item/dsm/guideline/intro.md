@@ -1,1 +1,1 @@
-An accordion card item is a self-contained card that expands and collapses to reveal related content, so users open only the sections they need.
+An accordion card item is a UI element shaped like a self-contained card that reveals or hides related content within the current context.

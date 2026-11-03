@@ -1,1 +1,1 @@
-Inline Alert is a lightweight, embedded notification component that delivers contextual feedback within the content flow without interrupting user workflow.
+An inline alert is a lightweight UI element integrated into the content flow. It conveys information, system feedback, and status changes through short, prominent, persistent, and non-actionable messages.

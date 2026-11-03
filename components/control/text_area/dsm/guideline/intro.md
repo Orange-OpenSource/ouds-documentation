@@ -1,1 +1,1 @@
-Multi-line text area that allows users to enter detailed text like comments or feedback, with features for character limits, auto-expansion, and error validation.
+A text area is a UI element that allows users to type, edit, or select longer blocks of text, such as comments, messages, or descriptions, by expanding vertically to provide more space for input.

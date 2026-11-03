@@ -1,1 +1,1 @@
-An accordion Q&A is a question that expands and collapses to reveal its answer, so users open only the questions that matter to them.
+An accordion Q&A is a UI element designed as a row that accommodates a question-and-answer format, used to reveal or hide an answer within the current context.

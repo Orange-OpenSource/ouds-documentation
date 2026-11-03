@@ -1,1 +1,1 @@
-Bullet List displays related text items in a structured vertical format using bullets, numbers, or no markers.
+A bullet list is a UI element that allows users to view related individual text items grouped together, with items typically starting with a number or a bullet.

@@ -1,1 +1,1 @@
-Badge Count is a compact numerical indicator that displays quantities like unread notifications, item counts, or pending actions on interface elements.
+A badge count is a UI element that highlights system notifications, status, or the categorisation of information through colour and numerical value.

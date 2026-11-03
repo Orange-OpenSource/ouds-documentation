@@ -1,1 +1,1 @@
-Body is the workhorse text style for paragraphs and everyday content, tuned for comfortable, readable reading across every screen size.
+A body is a UI element that styles typography for common text content like paragraphs, descriptions, and informational messages.

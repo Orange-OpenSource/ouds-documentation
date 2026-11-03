@@ -1,1 +1,1 @@
-Expand button toggles content visibility, enabling users to progressively reveal or collapse sections while reducing visual clutter.
+A button expand is a UI element that toggles content visibility, allowing users to expand or collapse content sections.

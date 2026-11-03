@@ -1,1 +1,1 @@
-An expand filter chip combines selection filtering with a dropdown menu to apply filters from predefined options.
+A filter chip expand is a UI element that allows users to control the selection or deselection of a choice from a defined list of options, frequently used to capture filtering decisions.

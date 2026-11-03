@@ -1,1 +1,1 @@
-A checkbox allows users to select or deselect one or more options from a set independently.
+A checkbox is a UI element that enables users to select multiple options from a set of mutually non-exclusive choices.

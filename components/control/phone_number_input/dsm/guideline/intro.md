@@ -1,1 +1,1 @@
-A phone number input captures and validates telephone numbers with integrated country selection, dial code display, and format-aware validation.
+A phone number input is a UI element that captures and validates telephone numbers in an international format.
