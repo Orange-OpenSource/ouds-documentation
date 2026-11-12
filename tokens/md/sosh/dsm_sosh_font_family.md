@@ -13,16 +13,16 @@
 | ouds.font.family.ios.heading | core-sosh.font.family.default | Sosh |
 | ouds.font.family.ios.body | core-sosh.font.family.default | Sosh |
 | ouds.font.family.ios.label | core-sosh.font.family.default | Sosh |
-| ouds.font.family.ios.code | core-ouds.font.family.monospace.sf-mono | SF Mono |
+| ouds.font.family.ios.code | core-ouds.font.family.monospace.menlo | Menlo |
 | ouds.font.family.android.display | core-sosh.font.family.default | Sosh |
 | ouds.font.family.android.heading | core-sosh.font.family.default | Sosh |
 | ouds.font.family.android.body | core-sosh.font.family.default | Sosh |
 | ouds.font.family.android.label | core-sosh.font.family.default | Sosh |
-| ouds.font.family.android.code | core-ouds.font.family.monospace.courier-new | Courier New |
+| ouds.font.family.android.code | core-ouds.font.family.monospace.roboto-mono | Roboto Mono |
 | ouds.font.family.tv.display | core-sosh.font.family.default | Sosh |
 | ouds.font.family.tv.heading | core-sosh.font.family.default | Sosh |
 | ouds.font.family.tv.body | core-sosh.font.family.default | Sosh |
 | ouds.font.family.tv.label | core-sosh.font.family.default | Sosh |
 | ouds.font.family.tv.code | core-ouds.font.family.monospace.menlo | Menlo |
 
-<br>Tokens versions: sys.sosh: 2.7.0 - core.ouds: 1.11.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.8.0 - core.ouds: 1.12.0 - core.sosh: 1.4.0

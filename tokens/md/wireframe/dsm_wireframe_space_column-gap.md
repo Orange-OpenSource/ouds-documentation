@@ -9,5 +9,7 @@
 | ouds.space.column-gap.large | core-ouds.dimension.200 | 16px |
 | ouds.space.column-gap.xlarge | core-ouds.dimension.250 | 20px |
 | ouds.space.column-gap.2xlarge | core-ouds.dimension.300 | 24px |
+| ouds.space.column-gap.3xlarge | core-ouds.dimension.350 | 28px |
+| ouds.space.column-gap.4xlarge | core-ouds.dimension.400 | 32px |
 
-<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
+<br>Tokens versions: sys.wireframe: 2.8.0 - core.ouds: 1.12.0 - core.wireframe: 1.5.0

@@ -16,4 +16,4 @@
 | ouds.grid.ios.regular.column-gap | core-ouds.grid.column-gap.400 | 24px |
 | ouds.grid.ios.regular.column-count | core-ouds.grid.column-count.600 | 6px |
 
-<br>Tokens versions: sys.sosh: 2.7.0 - core.ouds: 1.11.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.8.0 - core.ouds: 1.12.0 - core.sosh: 1.4.0

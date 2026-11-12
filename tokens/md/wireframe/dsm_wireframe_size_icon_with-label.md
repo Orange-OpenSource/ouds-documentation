@@ -18,4 +18,4 @@
 | ouds.size.icon.with-label.small.size-medium | core-ouds.dimension.200 | 16px |
 | ouds.size.icon.with-label.small.size-large | core-ouds.dimension.250 | 20px |
 
-<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
+<br>Tokens versions: sys.wireframe: 2.8.0 - core.ouds: 1.12.0 - core.wireframe: 1.5.0
