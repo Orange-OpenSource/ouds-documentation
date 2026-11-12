@@ -14,4 +14,4 @@
 | ouds.space.padding-block.4xlarge | core-ouds.dimension.350 | 28px |
 | ouds.space.padding-block.5xlarge | core-ouds.dimension.400 | 32px |
 
-<br>Tokens versions: sys.orange-compact: 2.7.0 - core.ouds: 1.11.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.8.0 - core.ouds: 1.12.0 - core.orange: 1.2.0

@@ -36,4 +36,4 @@
 | ouds.font.size.label.small | core-ouds.font.size.150 | 12px |
 | ouds.font.size.code.medium | core-ouds.font.size.200 | 14px |
 
-<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
+<br>Tokens versions: sys.wireframe: 2.8.0 - core.ouds: 1.12.0 - core.wireframe: 1.5.0

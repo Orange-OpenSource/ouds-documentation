@@ -11,10 +11,10 @@
 | ouds.color.content.status.info | core-sosh.color.lochmara.light.400 | #99d5ff | <div style="width:20px; height:20px; background-color:#99d5ff; border: 1px solid #000000;"></div> |
 | ouds.color.content.status.warning | core-sosh.color.turbo.300 | #ffef66 | <div style="width:20px; height:20px; background-color:#ffef66; border: 1px solid #000000;"></div> |
 | ouds.color.content.status.negative | core-ouds.color.functional.scarlet.300 | #ff8081 | <div style="width:20px; height:20px; background-color:#ff8081; border: 1px solid #000000;"></div> |
-| ouds.color.content.status.inverse.positive | core-ouds.color.functional.malachite.750 | #138126 | <div style="width:20px; height:20px; background-color:#138126; border: 1px solid #000000;"></div> |
-| ouds.color.content.status.inverse.info | core-sosh.color.lochmara.dark.240 | #0173c1 | <div style="width:20px; height:20px; background-color:#0173c1; border: 1px solid #000000;"></div> |
-| ouds.color.content.status.inverse.warning | core-sosh.color.turbo.750 | #7a6e00 | <div style="width:20px; height:20px; background-color:#7a6e00; border: 1px solid #000000;"></div> |
-| ouds.color.content.status.inverse.negative | core-ouds.color.functional.scarlet.600 | #db0002 | <div style="width:20px; height:20px; background-color:#db0002; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.1f3a8_inverse.positive | core-ouds.color.functional.malachite.750 | #138126 | <div style="width:20px; height:20px; background-color:#138126; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.1f3a8_inverse.info | core-sosh.color.lochmara.dark.240 | #0173c1 | <div style="width:20px; height:20px; background-color:#0173c1; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.1f3a8_inverse.warning | core-sosh.color.turbo.750 | #7a6e00 | <div style="width:20px; height:20px; background-color:#7a6e00; border: 1px solid #000000;"></div> |
+| ouds.color.content.status.1f3a8_inverse.negative | core-ouds.color.functional.scarlet.600 | #db0002 | <div style="width:20px; height:20px; background-color:#db0002; border: 1px solid #000000;"></div> |
 | ouds.color.content.status.accent | core-sosh.color.raspberry.300 | #fc6999 | <div style="width:20px; height:20px; background-color:#fc6999; border: 1px solid #000000;"></div> |
 | ouds.color.content.inverse | core-ouds.color.functional.black | #000000 | <div style="width:20px; height:20px; background-color:#000000; border: 1px solid #000000;"></div> |
 
@@ -43,4 +43,4 @@
 | ouds.color.content.on.action.selected | core-sosh.color.lochmara.dark.960 | #001524 | <div style="width:20px; height:20px; background-color:#001524; border: 1px solid #000000;"></div> |
 | ouds.color.content.on.action.highlighted | core-sosh.color.lochmara.dark.960 | #001524 | <div style="width:20px; height:20px; background-color:#001524; border: 1px solid #000000;"></div> |
 
-<br>Tokens versions: sys.sosh: 2.7.0 - core.ouds: 1.11.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.8.0 - core.ouds: 1.12.0 - core.sosh: 1.4.0

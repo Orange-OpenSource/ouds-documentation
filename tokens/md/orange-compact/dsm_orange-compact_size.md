@@ -4,4 +4,4 @@
 | ouds.size.min-interactive-area-small | core-ouds.dimension.450 | 36px |
 | ouds.size.min-interactive-area-smallest | core-ouds.dimension.300 | 24px |
 
-<br>Tokens versions: sys.orange-compact: 2.7.0 - core.ouds: 1.11.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.8.0 - core.ouds: 1.12.0 - core.orange: 1.2.0

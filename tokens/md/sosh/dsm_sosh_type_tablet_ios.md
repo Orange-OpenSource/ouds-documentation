@@ -169,10 +169,10 @@
 ### Composite token: type.code.medium
 | **Semantic token** | **Core token** | **Raw value** |
 | --- | --- | --- |
-| ouds.font.family.ios.code | core-ouds.font.family.monospace.sf-mono | SF Mono |
+| ouds.font.family.ios.code | core-ouds.font.family.monospace.menlo | Menlo |
 | ouds.font.weight.ios.code | core-ouds.font.weight.400 | Regular |
 | ouds.font.size.code.medium | core-ouds.font.size.200 | 14px |
 | ouds.font.line-height.code.medium | core-ouds.font.line-height.350 | 20px |
 | ouds.font.letter-spacing.code.medium | core-ouds.font.letter-spacing.200 | 0.17px |
 
-<br>Tokens versions: sys.sosh: 2.7.0 - core.ouds: 1.11.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.8.0 - core.ouds: 1.12.0 - core.sosh: 1.4.0

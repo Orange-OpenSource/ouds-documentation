@@ -13,16 +13,16 @@
 | ouds.font.family.ios.heading | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.ios.body | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.ios.label | core-wframe.font.family.default | Shantell Sans |
-| ouds.font.family.ios.code | core-ouds.font.family.monospace.sf-mono | SF Mono |
+| ouds.font.family.ios.code | core-ouds.font.family.monospace.menlo | Menlo |
 | ouds.font.family.android.display | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.android.heading | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.android.body | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.android.label | core-wframe.font.family.default | Shantell Sans |
-| ouds.font.family.android.code | core-ouds.font.family.monospace.courier-new | Courier New |
+| ouds.font.family.android.code | core-ouds.font.family.monospace.roboto-mono | Roboto Mono |
 | ouds.font.family.tv.display | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.tv.heading | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.tv.body | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.tv.label | core-wframe.font.family.default | Shantell Sans |
 | ouds.font.family.tv.code | core-ouds.font.family.monospace.menlo | Menlo |
 
-<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
+<br>Tokens versions: sys.wireframe: 2.8.0 - core.ouds: 1.12.0 - core.wireframe: 1.5.0

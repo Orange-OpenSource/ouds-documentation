@@ -6,7 +6,7 @@
 | ouds.border.width.medium | core-ouds.border.width.75 | 3px |
 | ouds.border.width.thick | core-ouds.border.width.100 | 4px |
 | ouds.border.width.thicker | core-ouds.border.width.150 | 6px |
-| ouds.border.width.focus | core-ouds.border.width.125 | 5px |
+| ouds.border.width.focus | core-ouds.border.width.100 | 4px |
 | ouds.border.width.focus-inset | core-ouds.border.width.50 | 2px |
 
-<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
+<br>Tokens versions: sys.wireframe: 2.8.0 - core.ouds: 1.12.0 - core.wireframe: 1.5.0

@@ -16,4 +16,4 @@
 | ouds.size.max-width.label.small.desktop | core-ouds.dimension.6000 | 640px |
 | ouds.size.max-width.boxed-text.desktop | core-ouds.dimension.8000 | 800px |
 
-<br>Tokens versions: sys.orange-compact: 2.7.0 - core.ouds: 1.11.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange-compact: 2.8.0 - core.ouds: 1.12.0 - core.orange: 1.2.0

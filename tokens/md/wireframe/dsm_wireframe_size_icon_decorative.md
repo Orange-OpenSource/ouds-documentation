@@ -10,4 +10,4 @@
 | ouds.size.icon.decorative.xlarge | core-ouds.dimension.700 | 56px |
 | ouds.size.icon.decorative.2xlarge | core-ouds.dimension.900 | 72px |
 
-<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
+<br>Tokens versions: sys.wireframe: 2.8.0 - core.ouds: 1.12.0 - core.wireframe: 1.5.0

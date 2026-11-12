@@ -71,4 +71,4 @@
 | ouds.grid.3xl.column-gap | core-ouds.grid.column-gap.800 | 40px |
 | ouds.grid.3xl.column-count | core-ouds.grid.column-count.1200 | 12px |
 
-<br>Tokens versions: sys.sosh: 2.7.0 - core.ouds: 1.11.0 - core.sosh: 1.4.0
+<br>Tokens versions: sys.sosh: 2.8.0 - core.ouds: 1.12.0 - core.sosh: 1.4.0

@@ -67,4 +67,4 @@
 | ouds.elevation.color.sticky-light | core-ouds.color.opacity.black.160 | #00000029 |
 | ouds.elevation.color.sticky-dark | core-ouds.color.opacity.black.240 | #0000003d |
 
-<br>Tokens versions: sys.orange: 2.7.0 - core.ouds: 1.11.0 - core.orange: 1.2.0
+<br>Tokens versions: sys.orange: 2.8.0 - core.ouds: 1.12.0 - core.orange: 1.2.0

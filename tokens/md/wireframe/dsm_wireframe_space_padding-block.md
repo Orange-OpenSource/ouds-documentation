@@ -14,4 +14,4 @@
 | ouds.space.padding-block.4xlarge | core-ouds.dimension.400 | 32px |
 | ouds.space.padding-block.5xlarge | core-ouds.dimension.450 | 36px |
 
-<br>Tokens versions: sys.wireframe: 2.7.0 - core.ouds: 1.11.0 - core.wireframe: 1.5.0
+<br>Tokens versions: sys.wireframe: 2.8.0 - core.ouds: 1.12.0 - core.wireframe: 1.5.0
