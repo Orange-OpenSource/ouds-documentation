@@ -1,4 +1,4 @@
-✅ **Do:** Use helper text to provide context about code delivery (e.g., "Enter the 6-digit code sent to your phone").  
+✅ **Do:** Use helper text to provide context about code delivery (e.g., "Enter the 6-character code sent to your phone").  
 ❌ **Don't:** Use helper text for information that should be in a label or that duplicates visible instructions elsewhere.
 
 ✅ **Do:** Keep helper text concise—ideally one line—to avoid cluttering the interface.  

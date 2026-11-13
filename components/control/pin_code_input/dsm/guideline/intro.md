@@ -1,1 +1,1 @@
-A PIN code input is a UI element that captures short, fixed-length numeric codes, typically used for authentication or confirmation, such as a four, six, or eight-digit personal identification number (PIN).
+A PIN code input is a UI element that captures short, fixed-length numeric codes, typically used for authentication or confirmation, such as a four, six, or eight-character personal identification number (PIN).

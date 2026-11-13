@@ -2,6 +2,6 @@
   
 For more information, we invite you to consult the official Android:
 
--   [**Material 3 Status bar documentation**](https://developer.android.com/design/ui/mobile/guides/foundations/system-bars?hl=fr)
+-   [**Material 3 Status bar documentation**](https://developer.android.com/design/ui/mobile/guides/foundations/system-bars)
     
 -   [**Material 2 Status bar documentation**](https://m2.material.io/design/platform-guidance/android-bars.html#status-bar)

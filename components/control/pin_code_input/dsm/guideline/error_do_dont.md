@@ -5,7 +5,7 @@
 ❌ **Don't:** Use vague error messages like "Error" or "Invalid input" that don't help users understand the problem.
 
 ✅ **Do:** Keep the input editable in error state so users can correct their entry without clearing all fields.  
-❌ **Don't:** Clear all entered digits when an error occurs, forcing users to re-enter the entire code.
+❌ **Don't:** Clear all entered characters when an error occurs, forcing users to re-enter the entire code.
 
 ✅ **Do:** Use the Alert component in conjunction with the input's error state for important security messages.  
 ❌ **Don't:** Rely solely on the input field's visual error state without providing an accompanying error message.
