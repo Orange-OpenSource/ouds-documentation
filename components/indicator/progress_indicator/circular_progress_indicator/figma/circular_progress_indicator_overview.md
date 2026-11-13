@@ -48,27 +48,32 @@ In the Indeterminate variant, animated = false is not supported and is therefore
 
 Progress indicators can use different statuses depending on the meaning of the process they represent. Status colors should communicate the nature of the operation, not its completion percentage.
 
-**`Non-functional`** Non-functional statuses are used for standard progress indication without conveying any semantic feedback. They simply communicate that a process is running or progressing.
+**Non-functional**
+Non-functional statuses are used for standard progress indication without conveying any semantic feedback. They simply communicate that a process is running or progressing.
 
-**`Neutral`** Default status used when progress has no specific semantic meaning. Suitable for generic loading, processing, synchronization, or background tasks where only the completion progress needs to be communicated.
+**`Neutral`** Default status used when progress has no specific semantic meaning.
+Suitable for generic loading, processing, synchronization, or background tasks where only the completion progress needs to be communicated.
 
-**`Accent`** Used to highlight primary or brand-related actions. Recommended for user-initiated operations such as uploads, downloads, installations, onboarding, or other key experiences where reinforcing the brand identity is appropriate.
+**`Accent`** Used to highlight primary or brand-related actions.
+Recommended for user-initiated operations such as uploads, downloads, installations, onboarding, or other key experiences where reinforcing the brand identity is appropriate.
 
 **`Functional`** Functional statuses communicate additional semantic meaning about the operation being performed. They should only be used when the process itself represents a meaningful system state.
 
 ⚠️ Functional statuses must not be communicated by colour alone.
 
-When Positive, Info, Warning or Negative is used, the same meaning must be available through visible text in the parent context and through an accessible status description.
+When Positive, Info, Warning or Negative is used, the same meaning must be available through visible text in the parent context and through an accessible status description. The progress indicator colour communicates the nature of the process, while the text explains the actual state.
 
-The progress indicator colour communicates the nature of the process, while the text explains the actual state.
+**`Negative`** Indicates progress related to an error, recovery, cancellation, or failure.
+Use only when the progress itself communicates a negative operation, such as rolling back changes, removing content, or recovering from an error.
 
-**`Negative`** Indicates progress related to an error, recovery, cancellation, or failure. Use only when the progress itself communicates a negative operation, such as rolling back changes, removing content, or recovering from an error.
+**`Positive`** Indicates successful progress or a process leading to a successful outcome.
+Use for confirmation, completed validations, successful synchronization, or other positive system operations.
 
-**`Positive`** Indicates successful progress or a process leading to a successful outcome. Use for confirmation, completed validations, successful synchronization, or other positive system operations.
+**`Info`** Indicates informational or system-related processes.
+Use for background synchronization, data retrieval, initialization, or informational operations that are neither positive nor negative.
 
-**`Info`** Indicates informational or system-related processes. Use for background synchronization, data retrieval, initialization, or informational operations that are neither positive nor negative.
-
-**`Warning`** Indicates progress related to an operation that requires user attention or should be monitored. Use when the process involves caution, validation, or potentially disruptive actions.
+**`Warning`** Indicates progress related to an operation that requires user attention or should be monitored.
+Use when the process involves caution, validation, or potentially disruptive actions.
 
 ---
 
@@ -89,19 +94,32 @@ The Animated property is available only for the Determinate variant. Indetermina
 
 ## Gap size
 
-Controls the size of the gap between the progress indicator and the track.
+**`Default`** Uses the standard gap size.
+Recommended for most use cases, providing balanced spacing and optimal visual clarity.
 
-**`Default`** Uses the standard gap size. Recommended for most use cases, providing balanced spacing and optimal visual clarity.
-
-**`Small`** Reduces the gap between the progress indicator and the track. Use when a more compact appearance is preferred or to better align with specific brand styles and visual directions.
+**`Small`** Reduces the gap between the progress indicator and the track.
+Use when a more compact appearance is preferred or to better align with specific brand styles and visual directions.
 
 ---
 
 ## Rounded corner
 
-**`True`** Used when the visual language follows the standard rounded-corner artistic direction. It is also commonly used as an atomic element within components that do not rely on twisted corner radius.
+Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used.
+It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`False`** Used when the visual language relies on twisted corner radii. This can be applied at component level or selected as part of a brand's visual identity to ensure consistency with its design language.
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
+
+This option is technically not available for all brand themes
+Here’s the list of rounded corners availability by brand theme
+
+| Brand theme | Status |
+|---|---|
+| Orange | Available |
+| Orange Compact | Available |
+| Sosh | Unavailable |
+| Wireframe | Unavailable |
 
 ---
 

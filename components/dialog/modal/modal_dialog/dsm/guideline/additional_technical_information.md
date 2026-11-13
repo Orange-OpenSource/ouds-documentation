@@ -5,9 +5,10 @@ These transformations should preserve the same task, content hierarchy, and inte
 
 &nbsp;
 
-### Sticky action flexibility across breakpoints
-The positioning of the action area can change (sticky action=True or False) across breakpoints to adapt to the available screen space and the number of actions displayed.  
-This flexibility allows the action layout to adapt to the available space while preserving the same action hierarchy and interaction logic across breakpoints.
+### Sticky action behavior across breakpoints
+The sticky action behavior must remain consistent across all breakpoints.  
+When Sticky action=True, the action area remains sticky on mobile, tablet, and desktop. When Sticky action=False, the action area remains non-sticky across all breakpoints.  
+The layout of the actions, including their alignment, orientation, and width, may adapt to the available screen space without changing the sticky behavior.
 
 &nbsp;
 

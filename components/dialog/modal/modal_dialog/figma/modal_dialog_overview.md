@@ -1,3 +1,10 @@
+## Web technical environment only
+
+To date, the specifications described for this component only cover the web technical environment.
+The specifications for the native iOS and Android environments will follow shortly.
+
+---
+
 ## Definition
 
 A modal dialog is a temporary surface that interrupts the current page or task to focus the user's attention on a specific action, decision, or piece of information. It is displayed above a backdrop that visually separates the dialog from the underlying content and prevents interaction with it.
@@ -38,7 +45,8 @@ The Size variant also affects the internal scale of the dialog. The Default and 
 
 **`True`** Actions remain fixed at the bottom of the modal while the content area can scroll independently. This ensures that primary actions remain continuously visible and accessible, especially when the modal contains a large amount of content.
 
-ℹ️ Note: Fixed height=True is automatically enabled when Sticky action=True.
+ℹ️ Note(Figma only):
+When Sticky action=True, Fixed height=True is automatically enabled in Figma to simulate the sticky action behavior. This dependency applies only to the Figma component. In the technical implementation, enabling sticky actions does not require the dialog to have a fixed height.
 
 **⚠️ Mobile layout**
 This setting is automatic and changes depending on the grid. The user should not be able to interact with it.
@@ -201,6 +209,13 @@ The Default size uses a larger proportion of the available viewport, while the S
 
 ---
 
+## Slot spacing customization
+
+Padding within the content slot is optional and can be adjusted or removed according to the content needs. Designers should use semantic spacing tokens when customizing these values.
+Any mandatory spacing must remain outside the slot, within the parent frame, to preserve the dialog's layout.
+
+---
+
 ## ℹ️ Additional technical information
 
 **Layout transformation across breakpoints**
@@ -208,9 +223,10 @@ The dialog layout may technically change between breakpoints when required by th
 For example, a Modal dialog may transform into a Fullscreen dialog on smaller viewports when the content or task requires more space. Similarly, a Modal dialog may transform into a Sidescreen dialog at larger breakpoints when maintaining visibility of the underlying page provides useful context.
 These transformations should preserve the same task, content hierarchy, and interaction logic while adapting the presentation to the available viewport.
 
-**Sticky action flexibility across breakpoints**
-The positioning of the action area can change (sticky action=True or False) across breakpoints to adapt to the available screen space and the number of actions displayed.
-This flexibility allows the action layout to adapt to the available space while preserving the same action hierarchy and interaction logic across breakpoints.
+**Sticky action behavior across breakpoints**
+The sticky action behavior must remain consistent across all breakpoints.
+When Sticky action=True, the action area remains sticky on mobile, tablet, and desktop. When Sticky action=False, the action area remains non-sticky across all breakpoints.
+The layout of the actions, including their alignment, orientation, and width, may adapt to the available screen space without changing the sticky behavior.
 
 **Action button appearance flexibility**
 The default action appearance is based on the action's hierarchy: the Primary action uses the Strong appearance, while the Secondary action uses the Default appearance.

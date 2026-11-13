@@ -61,16 +61,6 @@ Here’s the list of rounded corners availability by brand theme
 
 ---
 
-## Divider
-
-The Divider property is available only for the Filled style. It adds a subtle line along the bottom edge of the card, following the visual conventions of the Card Item component. Its color is defined by the design system and must not be modified manually.
-
-**`True`** Displays the bottom divider. The divider adds a subtle separation along the bottom edge of a Filled card.
-
-**`False`** The card has no divider and relies on its surface color for separation.
-
----
-
 ## Background
 
 The Background Boolean property controls the visibility of the predefined color/action/support/enabled layer within the Card component. This property is available for the Filled and Elevated styles when State = Enabled.
@@ -95,6 +85,16 @@ For other styles:
 
 ---
 
+## Divider
+
+The Divider property is available only for the Filled style. It adds a subtle line along the bottom edge of the card, following the visual conventions of the Card Item component. Its color is defined by the design system and must not be modified manually.
+
+**`True`** Displays the bottom divider. The divider adds a subtle separation along the bottom edge of a Filled card.
+
+**`False`** The card has no divider and relies on its surface color for separation.
+
+---
+
 ## Slot spacing
 
 The slot allows designers to customize the content and layout inside the card, including its text, imagery, and independent actions.
@@ -104,8 +104,8 @@ Internal padding and spacing can be adjusted using two types of spacing tokens.
 
 **`Scaled space`** Uses responsive spacing values that adapt to the screen reference. Spacing may differ between mobile and desktop to preserve the intended layout. Use the appropriate OUDS spacing tokens rather than arbitrary values to maintain consistency across layouts.
 
-⚠️ The card container does not apply internal padding by default. Designers are responsible for defining the content padding and spacing within the slot using the appropriate OUDS spacing tokens.
-When using nested components, their own internal spacing and corner-radius rules must be preserved.
+⚠️ By default, all padding values within the Card slot are set to 0. Designers can define and customize spacing according to their layout needs using the appropriate OUDS Fixed or Scaled spacing tokens.
+When using nested components, their predefined internal spacing and corner-radius rules must be preserved.
 
 ---
 
@@ -117,6 +117,50 @@ Each interactive element must have its own semantic role according to the action
 • Link: Navigates to another page or destination within the application or website.
 • External Link: Navigates to an external destination, when applicable.
 • Button: Triggers a specific action without navigation.
+
+---
+
+## Which component should use?
+
+Choose the component based on where the interaction happens, not on its visual style or the number of elements.
+A single action can belong either to a Card or to an Action card.
+
+| Interaction pattern | Actions | Use | Interactive area |
+|---|---|---|---|
+| Display information only | 0 | Card | No interactive target |
+| Provide one explicit CTA | 1 | Card | Only the internal button or link |
+| Provide independent CTAs | 2+ | Card | Each internal control independently |
+| Make the whole card one action | 1 | Action card | Available card surface |
+| Reinforce the same action visually | 1 | Action card | One target; CTA is not focusable |
+| Add one different secondary action | 2 | Action card | Primary region + secondary target |
+| Add several secondary actions | 3+ | Action card | Primary region + independent targets |
+
+Use Card when the container itself does nothing. Use Action card when the available card surface triggers a primary action.
+
+Action card with independent secondary controls is conditional on platform and accessibility validation.
+If unsupported, use Card with an explicit primary CTA and separate secondary controls.
+Never nest links or buttons inside the primary card link/button; each independent action needs its own focus target
+
+---
+
+## Actions
+
+The Card is a non-interactive container that can display static content or include one or more independent interactive elements. Unlike the Action card, the container itself does not trigger any action. All interactions are handled exclusively by the components placed within its slot.
+
+**Static content - 0 actions**
+The Card displays information without any interactive elements. Its content is purely informational and does not respond to user interactions.
+
+Use case: The card explains what users should check before activating their eSIM. It contains only text and imagery, without any interactive controls.
+
+**Single interactive component - 1 action**
+The Card contains one interactive element that triggers a specific action or navigation. Only this element responds to user interactions, while the Card itself remains non-interactive.
+
+Use case: The card displays the eSIM requirements and an "Activate eSIM" button. Only the button is interactive.
+
+**Multiple interactive components - 2 or more actions**
+The Card contains two or more independent interactive elements. Each element triggers its own action or navigation and has its own interaction states.
+
+Use case: The card contains two links, "Check device compatibility" and "Learn how eSIM activation works", and an independent "Activate eSIM" button.
 
 ---
 

@@ -5,7 +5,7 @@ It is not possible to set this component to use the full available width (of the
 &nbsp;
 
 ### User zoom in/out
-- Componet must always scale proportionally with user zoom.
+- Component must always scale proportionally with user zoom.
 - In order to preserve the minimun interactive area during user zoom out, this component have:
   - Large size: a min-width and a min-height **of 20px**
   - Medium size: a min-width and a min-height **of 16px**

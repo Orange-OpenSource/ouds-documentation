@@ -1,6 +1,6 @@
 ## Definition
 
-An Action card is an interactive surface that groups related content and allows users to perform a single primary action or navigate to a destination. The entire card acts as the interaction target and can behave as a button, an internal link, or an external link. Unlike the Card component, which can contain independent interactive elements, the Action card is designed around one primary interaction.
+An Action card is an interactive surface that groups related content around one primary action or navigation. The available card surface acts as the primary interaction target. When supported, the card may also contain independent secondary actions. Each action must remain accessible and behave independently. Unlike the Card component, the Action card always provides a primary interaction.
 
 ---
 
@@ -30,7 +30,9 @@ The image must preserve content readability across different screen sizes and cr
 **`Hover`** Indicates that the pointer is positioned over the card.
 Use it to provide visual feedback that the card is interactive.
 
-**`Focus`** Indicates that the card has received keyboard focus. The focus indicator must remain clearly visible around the complete card to support keyboard navigation and accessibility.
+**`Focus`** Indicates that an interactive action has received keyboard focus.
+When the primary action receives focus, the focus indicator must remain clearly visible around the primary interactive region.
+When a secondary action receives focus, only that action must display its focus indicator. The primary action must not appear focused simultaneously.
 
 **`Pressed`** Provides immediate visual feedback while the user is pressing or activating the card.
 
@@ -111,15 +113,87 @@ The Divider Boolean property is available only when Style = Filled. It reinforce
 
 ---
 
+## Slot spacing
+
+The slot allows designers to customize the content and layout inside the card, including its text, imagery, and independent actions.
+Internal padding and spacing can be adjusted using two types of spacing tokens.
+
+**`Fixed space`** Uses a consistent spacing value across screen references. The spacing remains the same on mobile and desktop.
+
+**`Scaled space`** Uses responsive spacing values that adapt to the screen reference. Spacing may differ between mobile and desktop to preserve the intended layout. Use the appropriate OUDS spacing tokens rather than arbitrary values to maintain consistency across layouts.
+
+⚠️ By default, all padding values within the Action card slot are set to 0. Designers can define and customize spacing according to their layout needs using the appropriate OUDS Fixed or Scaled spacing tokens.
+When using nested components, their predefined internal spacing and corner-radius rules must be preserved.
+
+---
+
 ## Role
 
-The entire Action card acts as a single interactive element. Its semantic role must be defined according to the action performed when the card is activated.
+The primary action must use the appropriate semantic element according to its behavior.
 
-**`External Link`** Navigates to a destination outside the current application or website.
+**`External Link`** Navigates to an external destination using link semantics.
 
-**`Link`** Navigates to another page or destination within the same application or website.
+**`Link`** Navigates to another destination.
 
 **`Button`** Triggers an action without navigation.
+
+When independent secondary actions are present, the primary action and secondary controls must be implemented as separate interactive elements within a non-interactive structural container.
+
+---
+
+## Which component should use?
+
+Choose the component based on where the interaction happens, not on its visual style or the number of elements.
+A single action can belong either to a Card or to an Action card.
+
+| Interaction pattern | Actions | Use | Interactive area |
+|---|---|---|---|
+| Display information only | 0 | Card | No interactive target |
+| Provide one explicit CTA | 1 | Card | Only the internal button or link |
+| Provide independent CTAs | 2+ | Card | Each internal control independently |
+| Make the whole card one action | 1 | Action card | Available card surface |
+| Reinforce the same action visually | 1 | Action card | One target; CTA is not focusable |
+| Add one different secondary action | 2 | Action card | Primary region + secondary target |
+| Add several secondary actions | 3+ | Action card | Primary region + independent targets |
+
+Use Card when the container itself does nothing. Use Action card when the available card surface triggers a primary action.
+
+Action card with independent secondary controls is conditional on platform and accessibility validation.
+If unsupported, use Card with an explicit primary CTA and separate secondary controls.
+Never nest links or buttons inside the primary card link/button; each independent action needs its own focus target
+
+---
+
+## Actions
+
+The Action card provides one primary action. Additional elements within the slot may visually reinforce this action or, when supported, provide independent secondary actions.
+
+**Single action - Card only**
+The entire Action card represents a single interactive target. No additional interactive controls are present within the slot. Visual indicators, such as arrows or icons, do not create separate actions.
+Use a link for navigation or a button to trigger an action.
+
+Use case: The card redirects users to the Assistance Orange website, where they can find guides and tutorials for their Livebox. Clicking anywhere on the card opens the same destination.
+
+**Single action - Shared interaction**
+The card and an internal visual CTA represent the same action or destination. The CTA serves as a visual affordance and must not create an additional interactive element or keyboard focus target.
+
+Hover, Focus and Pressed states apply to the primary card action. The card provides only one accessible interactive target.
+
+Use case: The card provides access to Livebox support, with a visual "Consulter les guides" CTA reinforcing the primary action. Clicking anywhere on the card, including the CTA area, opens the Assistance Orange website.
+
+**Multiple actions - One secondary action**
+The card provides a primary action, while one additional interactive element triggers a different action.
+
+Both actions must be implemented as separate interactive elements, with independent interaction states and keyboard focus. Activating the secondary action must not trigger the primary card action.
+
+Use case: The card opens the Livebox help section within the application, while a separate "Accéder au site Assistance Orange" link redirects users to the external support website.
+
+**Multiple actions - Several secondary actions**
+The card provides one primary action and two or more independent secondary actions. Each interactive element must have its own semantic role, accessible name and interaction states.
+
+All actions must be independently accessible using a keyboard. Activating one action must not trigger any other action.
+
+Use case: The card opens the Livebox help section, while two additional controls allow users to access the Assistance Orange website or start a connection diagnostic using the "Tester ma connexion" button.
 
 ---
 
@@ -129,8 +203,8 @@ The entire Action card acts as a single interactive element. Its semantic role m
 
 • Hover, Focus and Pressed states must provide visual feedback across the entire card surface.
 
-• A visual button or link may be displayed within the slot to reinforce the primary action, provided it represents the same destination or action as the card itself.
+• Each interactive target must manage its own Hover, Focus and Pressed states without unintentionally activating or highlighting another action.
 
-• Avoid creating additional independent focus targets for the same action. If the content requires multiple independent interactive elements, use the Card component instead.
+• A visual button or link may be displayed within the slot to reinforce the primary action, provided it represents the same destination or action as the card itself.
 
 • ⚠️ The synchronization of interaction states between the card and a nested visual action depends on platform implementation and must be validated with the relevant development team.

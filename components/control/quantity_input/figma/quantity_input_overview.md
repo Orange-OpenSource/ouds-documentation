@@ -34,6 +34,16 @@ This option is technically not available for all brand themes. Here's the list o
 
 ---
 
+## Input status
+
+**`Empty`** The Empty state indicates that the quantity input is blank with no content or placeholder, a neutral starting point.
+
+**`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
+
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
+
+---
+
 ## Actions placement
 
 **`Trailing`** It places both the increment and decrement buttons on the right side of the input field, either stacked vertically or positioned side by side. This layout is compact and visually streamlined, making it ideal for dense interfaces or mobile views.
@@ -113,7 +123,15 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 
 ---
 
-## ⚠️ Label
+## Other boolean options
+
+**`Suffix`** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm…).
+
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+
+---
+
+## ⚠️ Label (can it be hidden?)
 
 Describes the purpose of the input. Why hide a quantity input label?
 
@@ -123,14 +141,6 @@ However, hiding the label should only be done if:
 * The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
-
----
-
-## Other boolean options
-
-**`Suffix`** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm…).
-
-**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 ---
 

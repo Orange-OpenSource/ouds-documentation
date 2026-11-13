@@ -1,5 +1,3 @@
-A chat input is a UI element that allows users to compose a message in a conversation. It combines a text entry area, configurable bottom actions and optional supporting messages or a helper link.
+A chat input is a UI element that enables users to compose and send messages within a conversational interface.
 
-This overview documents the supplied draft: its visual variants and editable content. Message submission, validation, character counting and suggestion logic must be implemented by the product.
-
-Chat input does not expose Voice input, AI legal notice or a content slot at its root. The microphone is an action icon, not a voice-input mode. A slot is available only inside the nested Bottom actions component.
+The chat input provides a dedicated text entry area, typically combined with a send action, to facilitate direct communication between users and a support service, or a conversational agent.

@@ -1,8 +1,6 @@
 ## Definition
 
-An assistant chat input is a UI element that allows users to compose a message for an AI assistant. It combines a text entry area, bottom actions, supporting messages and an optional AI legal notice. The component also includes a voice input presentation with a waveform and dedicated feedback.
-
-This overview documents the supplied draft: its visual variants and configurable content. Voice capture, message submission, validation and suggestion logic must be provided by the product.
+An assistant chat input is a UI element designed for interacting with AI assistants through a conversational interface. It combines a text entry area with multiple contextual actions, such as voice input, audio recording, and additional options, allowing users to interact with the AI through multiple input methods and functionalities.
 
 ---
 
@@ -224,3 +222,10 @@ However, “Text input” components present an exception regarding the loss of 
 • **⚠️ Underline text and Hyperlinks**
   • Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
   • If a link is required, the dedicated helper link component must be used (e.g. **Writing guidelines**).
+
+---
+
+## Slot spacing customization
+
+Padding within customizable slots is optional and can be adjusted or removed according to layout needs. Designers should use semantic spacing tokens when customizing these values.
+Any mandatory spacing must remain outside the slots, within their parent containers. Customizing slot padding must not affect the layout or accessibility of the surrounding actions.

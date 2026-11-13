@@ -622,6 +622,17 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 • Do not place an inline Link component inside a Navigation card item. The entire item already acts as a single navigation link, and nested links create conflicting pointer, keyboard and assistive-technology behaviour.
 • Essential information about the destination must remain available directly in the Label, Description or Helper text.
 
+**Coloured text**
+• Colour can be applied to **Label**, **Extra label**, **Overline** and **Description** when it helps highlight or differentiate important information.
+
+• All OUDS color/content tokens can be used for text within the Text container, provided they are appropriate to the content's semantic meaning and meet accessibility contrast requirements.
+
+• Use colour sparingly and consistently. Avoid applying different colours only for visual emphasis.
+
+• Colour must not be the only way to communicate meaning. Make sure the information remains understandable without colour.
+
+• Always use an appropriate design token and maintain sufficient colour contrast.
+
 ---
 
 ## Multiline and responsiveness
@@ -683,6 +694,13 @@ The component has internal padding-inline, and its display position must be betw
 **Native app (Android, iOS, Flutter)**
 The display position of the component corresponds to the entire screen display area (edge to edge).
 Its internal padding-inline is therefore replaced by the grid-margin tokens.
+
+---
+
+## Slot spacing customization
+
+Padding within the Below text and Bottom slots can be modified or removed to accommodate custom content. Designers should use semantic spacing tokens when adjusting these values.
+Mandatory spacing must remain outside the slots, within the parent frame. Customizing slot padding must not affect the card's navigation behavior.
 
 ---
 

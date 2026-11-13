@@ -6,7 +6,7 @@ A badge is a UI element that highlights system notifications, statuses, or the c
 
 ## State
 
-**`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (e.g., success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
+**`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
 
 **`Disabled`** The inactive state of a badge. Used to indicate that the user isn't allowed to interact with an element, or when the status is unavailable. It appears less prominent and serves as a secondary indication.
 
@@ -48,14 +48,14 @@ Using a badge without icons may require additional context, such as a label or d
 
 ---
 
-## User zoom and responsiveness
+## Badge without icon user zoom and responsiveness
 
 **Max-width vs full-width**
 This component have a max-width.
 It is not possible to set this component to use the full available width (of the screen or the container).
 
 **User zoom in/out**
-- Componet must always scale proportionally with user zoom.
+- Component must always scale proportionally with user zoom.
 - In order to preserve the minimun interactive area during user zoom out, this component have:
   - Large size: a min-width and a min-height **of 20px**
   - Medium size: a min-width and a min-height **of 16px**

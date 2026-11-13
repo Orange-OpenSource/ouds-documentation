@@ -15,4 +15,5 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
   - Even if the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
   - In its "Leading icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
   - As the error icon is functional, it must follow the same rules as text.
-  - The behaviors of the button (layout: icon only) component during user zoom are available in the corresponding documentation.
+  - The behaviors of the button (layout: icon only) component during user zoom are available in the corresponding documentation.  
+**Learn more about the behavior of the button component.**

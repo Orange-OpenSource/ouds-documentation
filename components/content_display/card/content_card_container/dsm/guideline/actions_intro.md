@@ -1,0 +1,1 @@
+The Card is a non-interactive container that can display static content or include one or more independent interactive elements. Unlike the Action card, the container itself does not trigger any action. All interactions are handled exclusively by the components placed within its slot.

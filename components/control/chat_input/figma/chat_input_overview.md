@@ -1,10 +1,6 @@
 ## Definition
 
-A chat input is a UI element that allows users to compose a message in a conversation. It combines a text entry area, configurable bottom actions and optional supporting messages or a helper link.
-
-This overview documents the supplied draft: its visual variants and editable content. Message submission, validation, character counting and suggestion logic must be implemented by the product.
-
-Chat input does not expose Voice input, AI legal notice or a content slot at its root. The microphone is an action icon, not a voice-input mode. A slot is available only inside the nested Bottom actions component.
+A chat input is a UI element that enables users to compose and send messages within a conversational interface. It provides a dedicated text entry area, typically combined with a send action, to facilitate direct communication between users and a support service, or a conversational agent.
 
 ---
 
@@ -216,3 +212,10 @@ However, “Text input” components present an exception regarding the loss of 
 • **⚠️ Underline text and Hyperlinks**
   • Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
   • If a link is required, the dedicated helper link component must be used (e.g. **Writing guidelines**).
+
+---
+
+## Slot spacing customization
+
+Padding within the Bottom actions slot can be customized according to the content and layout needs. Designers can adjust or remove any optional slot padding using semantic spacing tokens.
+Mandatory spacing must remain outside the slot, within the parent container. Customizing slot padding must not affect the layout or accessibility of the surrounding actions.

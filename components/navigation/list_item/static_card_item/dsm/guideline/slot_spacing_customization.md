@@ -1,0 +1,1 @@
+Padding within the Below text and Bottom slots is optional and can be adjusted or removed according to layout needs. Designers should use semantic spacing tokens when customizing these values. Any mandatory spacing must remain outside the slots, within the parent frame.

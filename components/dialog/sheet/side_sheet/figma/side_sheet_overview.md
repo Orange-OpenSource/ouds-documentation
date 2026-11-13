@@ -1,3 +1,10 @@
+## Web technical environment only
+
+To date, the specifications described for this component only cover the web technical environment.
+The specifications for the native iOS and Android environments will follow shortly.
+
+---
+
 ## Definition
 
 A side sheet, (also known as a side panel, drawer or offcanvas sidebar), is a dialog that slides in from and is anchored to the right side of the viewport. It uses a backdrop to separate the dialog from the underlying content while allowing users to maintain a clear sense of the current page. It is ideal for responsive navigation, filter menu or shopping carts.
@@ -165,6 +172,12 @@ The Side sheet follows the defined column spans at smaller breakpoints and progr
 The Side sheet occupies the full available viewport height regardless of the selected Size variant or breakpoint.
 Unlike the Modal dialog, the Side sheet does not use different height specifications for its Default and Small sizes. Its height always spans the full available viewport, while the Size variant only affects its horizontal width and internal layout scale.
 When the Side sheet content exceeds the available viewport height, the content area becomes vertically scrollable while the Side sheet remains fixed to the viewport edge.
+
+---
+
+## Slot spacing customization
+
+Padding within the content slot is optional and can be adjusted or removed to accommodate different content and layout needs. Designers should use semantic spacing tokens when customizing these values. Any mandatory spacing must remain outside the slot, within the parent frame, to preserve the Side sheet's structure.
 
 ---
 

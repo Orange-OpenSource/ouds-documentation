@@ -1,3 +1,10 @@
+## Web technical environment only
+
+To date, the specifications described for this component only cover the web technical environment.
+The specifications for the native iOS and Android environments will follow shortly.
+
+---
+
 ## Definition
 
 A fullscreen dialog is a dialog that occupies the entire viewport and does not use a backdrop. Its layout follows the structure and behavior of a standard page, making it suitable for complex tasks or content that requires more space and interaction.
@@ -127,6 +134,13 @@ The Fullscreen dialog should therefore be treated as a full-page layout: the con
 
 ---
 
+## Slot spacing customization
+
+Padding within the content slot can be adjusted or removed according to the content and layout needs. Designers should use semantic spacing tokens when customizing these values.
+Any mandatory spacing must remain outside the slot, within the parent frame, to preserve the fullscreen layout and responsive grid rules.
+
+---
+
 ## ℹ️ Additional technical information
 
 **Layout transformation across breakpoints**
@@ -134,9 +148,10 @@ The dialog layout may technically change between breakpoints when required by th
 For example, a Modal dialog may transform into a Fullscreen dialog on smaller viewports when the content or task requires more space. Similarly, a Modal dialog may transform into a Sidescreen dialog at larger breakpoints when maintaining visibility of the underlying page provides useful context.
 These transformations should preserve the same task, content hierarchy, and interaction logic while adapting the presentation to the available viewport.
 
-**Sticky action flexibility across breakpoints**
-The positioning of the action area can change (sticky action=True or False) across breakpoints to adapt to the available screen space and the number of actions displayed.
-This flexibility allows the action layout to adapt to the available space while preserving the same action hierarchy and interaction logic across breakpoints.
+**Sticky action behavior across breakpoints**
+The sticky action behavior must remain consistent across all breakpoints.
+When Sticky action=True, the action area remains sticky on mobile, tablet, and desktop. When Sticky action=False, the action area remains non-sticky across all breakpoints.
+The layout of the actions, including their alignment, orientation, and width, may adapt to the available screen space without changing the sticky behavior.
 
 **Action button appearance flexibility**
 The default action appearance is based on the action's hierarchy: the Primary action uses the Strong appearance, while the Secondary action uses the Default appearance.

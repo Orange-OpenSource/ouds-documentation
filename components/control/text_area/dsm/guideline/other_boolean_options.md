@@ -3,3 +3,5 @@
 **`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 **`Helper link`** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+
+**`Resize handle`** In certain contexts or environments, such as television or touch use on mobile, the use of this option is not relevant.

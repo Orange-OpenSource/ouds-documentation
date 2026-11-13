@@ -1,7 +1,9 @@
-The entire Action card acts as a single interactive element. Its semantic role must be defined according to the action performed when the card is activated.
+The primary action must use the appropriate semantic element according to its behavior.
 
-**`External Link`** Navigates to a destination outside the current application or website.
+**`External Link`** Navigates to an external destination using link semantics.
 
-**`Link`** Navigates to another page or destination within the same application or website.
+**`Link`** Navigates to another destination.
 
 **`Button`** Triggers an action without navigation.
+
+When independent secondary actions are present, the primary action and secondary controls must be implemented as separate interactive elements within a non-interactive structural container.

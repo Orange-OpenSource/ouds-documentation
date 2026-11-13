@@ -4,7 +4,7 @@ When losing focus, the truncation behavior of the input area differs depending o
 
 • **On Android**, by default (even if the project retains control over this setting), the behavior is the same as on the web.
 
-• **On iOS**, it is the opposite: the input area truncates the value on the right with a visual truncation indicator (...).
+• **On iOS**, by default (even if the project retains control over this setting), the behavior is the same as on the web.
 
 **⚠️ In all cases:** the entire text must remain accessible when the field regains focus:
 - Either by refocusing the field, the text becomes horizontally scrollable again (the blinking cursor is visible).

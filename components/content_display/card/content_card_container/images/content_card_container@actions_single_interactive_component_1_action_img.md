@@ -1,0 +1,1 @@
+![content_card_container@actions_single_interactive_component_1_action_img](./content_card_container@actions_single_interactive_component_1_action_img.png)

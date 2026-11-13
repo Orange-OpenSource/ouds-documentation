@@ -284,6 +284,12 @@ The accordion content expands from its collapsed state when opened, providing a 
 
 ---
 
+## Slot spacing customization
+
+Slots may include default padding to guide designers in their usage. This padding is optional and can be modified or removed depending on the design needs. When customizing padding within a slot, use semantic spacing tokens instead of component-specific tokens. Any spacing that must remain mandatory should be applied to the parent frame outside the slot, rather than within the slot itself.
+
+---
+
 ## Motion & Animation accessibility rules
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”
