@@ -1,7 +1,8 @@
 ---
 title: OUDS redirection links
 description: Index of the links to Orange Unified Design System (OUDS) documentation, design and code pages, per component and per platform, plus other OUDS resources.
-updated: 2026-10-04
+version: 1.1.0
+updated: 2026-11-13
 ---
 
 # OUDS redirection links
@@ -17,9 +18,63 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - `Not applicable`: the component does not exist on that platform (NA in the source).
 - `Not available`: no link yet.
 - `⚠️ Temporary`: temporary link to the component list until the documentation is released.
-- `(centralized in Badge)`: no dedicated page; this content is centralized in the Badge developer documentation for that platform.
 
 ## Component pages
+
+### Accordion card item
+
+- id: `accordion-card-item`
+- DSM: https://r.orange.fr/r/S-ouds-doc-accordion-card-item
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-card-item_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-accordion-card-item
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
+
+### Accordion list item
+
+- id: `accordion-list-item`
+- DSM: https://r.orange.fr/r/S-ouds-doc-accordion-list-item
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-list-item_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-accordion-list-item
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
+
+### Accordion Q&A
+
+- id: `accordion-qa`
+- DSM: https://r.orange.fr/r/S-ouds-doc-accordion-qa
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-qa_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-accordion-qa
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
+
+### Action card container
+
+- id: `action-card-container`
+- DSM: https://r.orange.fr/r/S-ouds-doc-action-card
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-action-card_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-action-card
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
+
+### Alert banner
+
+- id: `alert-banner`
+- DSM: https://r.orange.fr/r/S-ouds-doc-alert-banner
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-alert-banner_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-alert-banner
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
 
 ### Alert message
 
@@ -82,6 +137,17 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM: https://r.orange.fr/r/S-ouds-doc-assistant-button
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-button_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-assistant-button
+- Web: https://r.orange.fr/r/S-ouds-web-assistant-button
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
+
+### Assistant chat input
+
+- id: `assistant-chat-input`
+- DSM: https://r.orange.fr/r/S-ouds-doc-assistant-chat-input
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-chat-input_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-assistant-chat-input
 - Web: Not available
 - Android: Not available
 - iOS: Not available
@@ -116,9 +182,9 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-badge-count_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-badge-count
 - Web: https://r.orange.fr/r/S-ouds-web-badge-count
-- Android: https://r.orange.fr/r/S-ouds-android-badge (centralized in Badge)
-- iOS: https://r.orange.fr/r/S-ouds-ios-badge (centralized in Badge)
-- Flutter: https://r.orange.fr/r/S-ouds-flutter-badge (centralized in Badge)
+- Android: https://r.orange.fr/r/S-ouds-android-badge-count
+- iOS: https://r.orange.fr/r/S-ouds-ios-badge-count
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-badge-count
 
 ### Badge icon
 
@@ -127,9 +193,20 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-badge-icon_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-badge-icon
 - Web: https://r.orange.fr/r/S-ouds-web-badge-icon
-- Android: https://r.orange.fr/r/S-ouds-android-badge (centralized in Badge)
-- iOS: https://r.orange.fr/r/S-ouds-ios-badge (centralized in Badge)
-- Flutter: https://r.orange.fr/r/S-ouds-flutter-badge (centralized in Badge)
+- Android: https://r.orange.fr/r/S-ouds-android-badge-icon
+- iOS: https://r.orange.fr/r/S-ouds-ios-badge-icon
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-badge-icon
+
+### Bottom sheet
+
+- id: `bottom-sheet`
+- DSM: https://r.orange.fr/r/S-ouds-doc-bottom-sheet ⚠️ Temporary
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-bottom-sheet_changelog ⚠️ Temporary
+- Design: https://r.orange.fr/r/S-ouds-design-bottom-sheet
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-bottom-sheet
+- iOS: Not available
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-bottom-sheet
 
 ### Breadcrumb
 
@@ -149,8 +226,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-bullet-list_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-bullet-list
 - Web: https://r.orange.fr/r/S-ouds-web-bullet-list
-- Android: Not applicable
-- iOS: Not applicable
+- Android: https://r.orange.fr/r/S-ouds-android-bullet-list
+- iOS: https://r.orange.fr/r/S-ouds-ios-bullet-list
 - Flutter: Not applicable
 
 ### Button
@@ -163,6 +240,28 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - Android: https://r.orange.fr/r/S-ouds-android-button
 - iOS: https://r.orange.fr/r/S-ouds-ios-button
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-button
+
+### Categorical tag
+
+- id: `categorical-tag`
+- DSM: https://r.orange.fr/r/S-ouds-doc-categorical-tag
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-categorical-tag_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-categorical-tag
+- Web: Not available
+- Android: Not available
+- iOS: https://r.orange.fr/r/S-ouds-ios-categorical-tag
+- Flutter: Not available
+
+### Chat input
+
+- id: `chat-input`
+- DSM: https://r.orange.fr/r/S-ouds-doc-chat-input
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-chat-input_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-chat-input
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
 
 ### Checkbox
 
@@ -178,13 +277,24 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Circular progress indicator
 
 - id: `circular-progress-indicator`
-- DSM: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-circular-progress-indicator
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-circular-progress-indicator
 - iOS: https://r.orange.fr/r/S-ouds-ios-circular-progress-indicator
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-circular-progress-indicator
+
+### Content card container
+
+- id: `content-card-container`
+- DSM: https://r.orange.fr/r/S-ouds-doc-content-card
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-content-card_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-content-card
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
 
 ### Divider
 
@@ -244,8 +354,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Fullscreen dialog
 
 - id: `fullscreen-dialog`
-- DSM: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-fullscreen-dialog
 - Web: Not available
 - Android: Not available
@@ -288,8 +398,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Interactive icon
 
 - id: `interactive-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-interactive-icon ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-interactive-icon_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-interactive-icon
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-interactive-icon_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-interactive-icon
 - Web: Not available
 - Android: Not available
@@ -301,7 +411,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - id: `ios-tab-bar`
 - DSM: https://r.orange.fr/r/S-ouds-doc-ios-tab-bar
 - DSM Changelog: Not applicable
-- Design: Not applicable
+- Design: https://r.orange.fr/r/S-ouds-design-ios-tab-bar
 - Web: Not applicable
 - Android: Not applicable
 - iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar
@@ -312,7 +422,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - id: `ios-tool-bar-bottom`
 - DSM: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-bottom
 - DSM Changelog: Not applicable
-- Design: Not applicable
+- Design: https://r.orange.fr/r/S-ouds-design-tool-bar-bottom
 - Web: Not applicable
 - Android: Not applicable
 - iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar
@@ -323,16 +433,17 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - id: `ios-tool-bar-top`
 - DSM: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-top
 - DSM Changelog: Not applicable
-- Design: Not applicable
+- Design: https://r.orange.fr/r/S-ouds-design-ios-tool-bar-top
 - Web: Not applicable
 - Android: Not applicable
 - iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-top-bar
 
 ### Linear progress indicator
+
 - id: `linear-progress-indicator`
-- DSM: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-linear-progress-indicator
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-linear-progress-indicator
@@ -353,8 +464,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Modal dialog
 
 - id: `modal-dialog`
-- DSM: https://r.orange.fr/r/S-ouds-doc-modal-dialog ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-modal-dialog_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-modal-dialog
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-modal-dialog_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-modal-dialog
 - Web: Not available
 - Android: Not available
@@ -375,24 +486,24 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Navigation card item
 
 - id: `navigation-card-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-card-item ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-card-item_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-card-item
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-card-item_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-card-item
 - Web: Not available
 - Android: Not available
 - iOS: Not available
-- Flutter: Not available
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-navigation-card-item
 
 ### Navigation list item
 
 - id: `navigation-list-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-list-item ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-list-item_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-list-item
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-list-item_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-list-item
 - Web: Not available
 - Android: Not available
 - iOS: https://r.orange.fr/r/S-ouds-ios-navigation-list-item
-- Flutter: Not available
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-navigation-list-item
 
 ### Password input
 
@@ -455,6 +566,17 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM: https://r.orange.fr/r/S-ouds-doc-select-input
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-select-input_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-select-input
+- Web: https://r.orange.fr/r/S-ouds-web-select-input
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
+
+### Side sheet
+
+- id: `side-sheet`
+- DSM: https://r.orange.fr/r/S-ouds-doc-side-sheet
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-side-sheet_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-side-sheet
 - Web: Not available
 - Android: Not available
 - iOS: Not available
@@ -466,6 +588,17 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - DSM: https://r.orange.fr/r/S-ouds-doc-skeleton
 - DSM Changelog: https://r.orange.fr/r/S-ouds-doc-skeleton_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-skeleton
+- Web: https://r.orange.fr/r/S-ouds-web-skeleton
+- Android: Not available
+- iOS: https://r.orange.fr/r/S-ouds-ios-skeleton
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-skeleton
+
+### Social button
+
+- id: `social-button`
+- DSM: https://r.orange.fr/r/S-ouds-doc-social-button
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-social-button_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-social-button
 - Web: Not available
 - Android: Not available
 - iOS: Not available
@@ -474,30 +607,30 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Static card item
 
 - id: `static-card-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-static-card-item ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-card-item_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-static-card-item
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-card-item_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-static-card-item
 - Web: Not available
 - Android: Not available
 - iOS: Not available
-- Flutter: Not available
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-static-card-item
 
 ### Static list item
 
 - id: `static-list-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-static-list-item ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-list-item_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-static-list-item
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-list-item_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-static-list-item
 - Web: Not available
 - Android: Not available
 - iOS: https://r.orange.fr/r/S-ouds-ios-static-list-item
-- Flutter: Not available
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-static-list-item
 
 ### Status icon
 
 - id: `status-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-status-icon ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-status-icon_changelog ⚠️ Temporary
+- DSM: https://r.orange.fr/r/S-ouds-doc-status-icon
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-status-icon_changelog
 - Design: https://r.orange.fr/r/S-ouds-design-status-icon
 - Web: Not available
 - Android: Not available
@@ -559,6 +692,83 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - iOS: https://r.orange.fr/r/S-ouds-ios-text-input
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-text-input
 
+### Toast
+
+- id: `toast`
+- DSM: https://r.orange.fr/r/S-ouds-doc-toast
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-toast_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-toast
+- Web: Not available
+- Android: Not available
+- iOS: Not available
+- Flutter: Not available
+
+### Typography
+
+- id: `typography`
+- DSM: https://r.orange.fr/r/S-ouds-doc-typography
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-typography
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-typography
+- iOS: https://r.orange.fr/r/S-ouds-ios-typography
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-typography
+
+### Typography body
+
+- id: `typography-body`
+- DSM: https://r.orange.fr/r/S-ouds-doc-typography-body
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-body_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-typography-body
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-typography-body
+- iOS: https://r.orange.fr/r/S-ouds-ios-typography-body
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-body
+
+### Typography code
+
+- id: `typography-code`
+- DSM: https://r.orange.fr/r/S-ouds-doc-typography-code
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-code_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-typography-code
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-typography-code
+- iOS: https://r.orange.fr/r/S-ouds-ios-typography-code
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-code
+
+### Typography display
+
+- id: `typography-display`
+- DSM: https://r.orange.fr/r/S-ouds-doc-typography-display
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-display_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-typography-display
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-typography-display
+- iOS: https://r.orange.fr/r/S-ouds-ios-typography-display
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-display
+
+### Typography heading
+
+- id: `typography-heading`
+- DSM: https://r.orange.fr/r/S-ouds-doc-typography-heading
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-heading_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-typography-heading
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-typography-heading
+- iOS: https://r.orange.fr/r/S-ouds-ios-typography-heading
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-heading
+
+### Typography label
+
+- id: `typography-label`
+- DSM: https://r.orange.fr/r/S-ouds-doc-typography-label
+- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-label_changelog
+- Design: https://r.orange.fr/r/S-ouds-design-typography-label
+- Web: Not available
+- Android: https://r.orange.fr/r/S-ouds-android-typography-label
+- iOS: https://r.orange.fr/r/S-ouds-ios-typography-label
+- Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-label
+
 ## Other redirections
 
 ### Development documentation
@@ -582,6 +792,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - Icon Develop: https://r.orange.fr/r/S-ouds-doc-icon-dev
 - Icon Usage Sprite: https://r.orange.fr/r/S-ouds-doc-icon-dev-sprite
 - Icon Usage Font: https://r.orange.fr/r/S-ouds-doc-icon-dev-font
+- Icon Request: https://oran.ge/icon-request
 
 ### Tokens
 
@@ -596,15 +807,37 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - Typography tokens doc: https://r.orange.fr/r/S-ouds-doc-token-typography
 - Color token doc: https://r.orange.fr/r/S-ouds-doc-token-color
 - Color token doc for functional colors: https://r.orange.fr/r/S-ouds-doc-token-color-functional
+- Token changelog: https://r.orange.fr/r/S-ouds-doc-token-changelog
+- Semantic token changelog: https://r.orange.fr/r/S-ouds-doc-token-semantic-changelog
+- Component token changelog: https://r.orange.fr/r/S-ouds-doc-token-component-changelog
+- Token changelog per version:
+  - Core v1.12.0: https://r.orange.fr/r/S-ouds-doc-token-core-changelog-v1.12.0
+  - Core v1.11.0: https://r.orange.fr/r/S-ouds-doc-token-core-changelog-v1.11.0
+  - Core v1.10.0: https://r.orange.fr/r/S-ouds-doc-token-core-changelog-v1.10.0
+  - Semantic v2.8.0: https://r.orange.fr/r/S-ouds-doc-token-semantic-changelog-v2.8.0
+  - Semantic v2.7.0: https://r.orange.fr/r/S-ouds-doc-token-semantic-changelog-v2.7.0
+  - Semantic v2.6.0: https://r.orange.fr/r/S-ouds-doc-token-semantic-changelog-v2.6.0
+  - Components v2.8.0: https://r.orange.fr/r/S-ouds-doc-token-component-changelog-v2.8.0
+  - Components v2.7.0: https://r.orange.fr/r/S-ouds-doc-token-component-changelog-v2.7.0
+  - Components v2.6.0: https://r.orange.fr/r/S-ouds-doc-token-component-changelog-v2.6.0
+
+### Component details
+
+- Checkbox indeterminate states: https://r.orange.fr/r/S-ouds-doc-checkbox-indeterminate
+- Checkbox responsiveness: https://r.orange.fr/r/S-ouds-doc-checkbox-responsiveness
+- Radio button responsiveness: https://r.orange.fr/r/S-ouds-doc-radio-button-responsiveness
+- Switch responsiveness: https://r.orange.fr/r/S-ouds-doc-switch-responsiveness
 
 ### Support
 
-- Design Community (designers and developers): https://teams.microsoft.com/l/team/19%3A_uLG_pPIQWr_IYQWvhNYw0GKE278S3Q6u1CLiYBrCRA1%40thread.tacv2/conversations?groupId=a9581e9e-6775-46f5-9e4a-3ce57096e6be&tenantId=90c7a20a-f34b-40bf-bc48-b9253b6f5d20
+- Design System Community (designers and developers): https://oran.ge/ds-community
+- Design System office Hours: https://oran.ge/ouds-office-hours
 - Platform support Teams channels:
   - Web: [PR04 - 🖥️ Web Browsing](https://teams.microsoft.com/l/channel/19%3Aed6a64c0c22d4b2084d304d0e33a1168%40thread.tacv2/PR04%20-%20%F0%9F%96%A5%EF%B8%8F%20Web%20Browsing?groupId=a9581e9e-6775-46f5-9e4a-3ce57096e6be&tenantId=90c7a20a-f34b-40bf-bc48-b9253b6f5d20)
   - Android: [PR05 - 📱 Android](https://teams.microsoft.com/l/channel/19%3A62efff7aca9f4865a841076b4a6c428f%40thread.tacv2/PR05%20-%20%F0%9F%93%B1%20Android?groupId=a9581e9e-6775-46f5-9e4a-3ce57096e6be&tenantId=90c7a20a-f34b-40bf-bc48-b9253b6f5d20)
   - iOS: [PR06 - 📱 iOS](https://teams.microsoft.com/l/channel/19%3A871294014c9f4626bc72d8b7e0f0822a%40thread.tacv2/PR06%20-%20%F0%9F%93%B1%20iOS?groupId=a9581e9e-6775-46f5-9e4a-3ce57096e6be&tenantId=90c7a20a-f34b-40bf-bc48-b9253b6f5d20)
   - Flutter: [PR07 - 📱 Flutter](https://teams.microsoft.com/l/channel/19%3A1dac6937282f411895b7af4804121ec6%40thread.tacv2/PR07%20-%20%F0%9F%93%B1%20Flutter?groupId=a9581e9e-6775-46f5-9e4a-3ce57096e6be&tenantId=90c7a20a-f34b-40bf-bc48-b9253b6f5d20)
+- OUDS component request: https://oran.ge/ouds-component-request
 
 ### Others
 
@@ -616,3 +849,6 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - Design Toolbox (mobile app to test and interact with OUDS components): https://oran.ge/designtoolbox
 - Design onboarding: https://unified-design-system.orange.com/472794e18/p/8147f8-onboarding
 - OUDS migration support request (contact the team about integrating OUDS): https://forms.office.com/e/Hj3Ws4p13u
+- Legal notice: https://r.orange.fr/r/S-ouds-doc-legal
+- Showcase Web: https://r.orange.fr/r/S-ouds-doc-showcase-web
+- Orange Illustration manager: https://oran.ge/illustrations
