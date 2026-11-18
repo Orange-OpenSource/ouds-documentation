@@ -1,8 +1,8 @@
 ---
 title: OUDS redirection links
 description: Index of the links to Orange Unified Design System (OUDS) documentation, design and code pages, per component and per platform, plus other OUDS resources.
-version: 1.1.0
-updated: 2026-11-13
+version: 2.0.0
+updated: 2026-11-18
 ---
 
 # OUDS redirection links
@@ -11,8 +11,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 
 ## How to read this file
 
-- **DSM**: component documentation page on the OUDS design system manager.
-- **DSM Changelog**: changelog of the component documentation.
+- **category**: category of the component on the OUDS Hub (Action, Content display, Control, Dialog, Indicator, Layout, Navigation).
+- **family**: group of related components inside the category, as on the OUDS Hub (for example the Button family: Assistant button, Button, Expand button, Navigation button, Social button). `None`: the component is not part of a family.
+- **OUDS Hub**: component documentation page on the OUDS Hub (zeroheight).
+- **OUDS Hub Changelog**: changelog of the component documentation.
+- **md documentation**: full Markdown description of the component in the ouds-documentation GitHub repository.
 - **Design**: design page of the component.
 - **Web / Android / iOS / Flutter**: developer documentation of the component in each platform library.
 - `Not applicable`: the component does not exist on that platform (NA in the source).
@@ -24,8 +27,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Accordion card item
 
 - id: `accordion-card-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-accordion-card-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-card-item_changelog
+- category: Content display
+- family: Accordion
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-accordion-card-item
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-card-item_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/accordion/accordion_card_item/accordion_card_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-accordion-card-item
 - Web: Not available
 - Android: Not available
@@ -35,8 +41,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Accordion list item
 
 - id: `accordion-list-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-accordion-list-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-list-item_changelog
+- category: Content display
+- family: Accordion
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-accordion-list-item
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-list-item_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/accordion/accordion_list_item/accordion_list_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-accordion-list-item
 - Web: Not available
 - Android: Not available
@@ -46,8 +55,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Accordion Q&A
 
 - id: `accordion-qa`
-- DSM: https://r.orange.fr/r/S-ouds-doc-accordion-qa
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-qa_changelog
+- category: Content display
+- family: Accordion
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-accordion-qa
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-accordion-qa_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/accordion/accordion_qa/accordion_qa.md
 - Design: https://r.orange.fr/r/S-ouds-design-accordion-qa
 - Web: Not available
 - Android: Not available
@@ -57,8 +69,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Action card container
 
 - id: `action-card-container`
-- DSM: https://r.orange.fr/r/S-ouds-doc-action-card
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-action-card_changelog
+- category: Content display
+- family: Card
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-action-card
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-action-card_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/card/action_card_container/action_card_container.md
 - Design: https://r.orange.fr/r/S-ouds-design-action-card
 - Web: Not available
 - Android: Not available
@@ -68,8 +83,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Alert banner
 
 - id: `alert-banner`
-- DSM: https://r.orange.fr/r/S-ouds-doc-alert-banner
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-alert-banner_changelog
+- category: Dialog
+- family: Alert
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-alert-banner
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-alert-banner_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/Alert/alert_banner/alert_banner.md
 - Design: https://r.orange.fr/r/S-ouds-design-alert-banner
 - Web: Not available
 - Android: Not available
@@ -79,8 +97,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Alert message
 
 - id: `alert-message`
-- DSM: https://r.orange.fr/r/S-ouds-doc-alert-message
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-alert-message_changelog
+- category: Dialog
+- family: Alert
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-alert-message
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-alert-message_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/Alert/alert_message/alert_message.md
 - Design: https://r.orange.fr/r/S-ouds-design-alert-message
 - Web: https://r.orange.fr/r/S-ouds-web-alert-message
 - Android: https://r.orange.fr/r/S-ouds-android-alert-message
@@ -90,8 +111,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Android App bar
 
 - id: `android-app-bar`
-- DSM: https://r.orange.fr/r/S-ouds-doc-android-app-bar
-- DSM Changelog: Not applicable
+- category: Navigation
+- family: Mobile Android and iOS bars
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-app-bar
+- OUDS Hub Changelog: Not applicable
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars
 - Web: Not applicable
 - Android: https://r.orange.fr/r/S-ouds-android-app-bar
@@ -101,8 +125,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Android Navigation bar
 
 - id: `android-navigation-bar`
-- DSM: https://r.orange.fr/r/S-ouds-doc-android-navigation-bar
-- DSM Changelog: Not applicable
+- category: Navigation
+- family: Mobile Android and iOS bars
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-navigation-bar
+- OUDS Hub Changelog: Not applicable
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars
 - Web: Not applicable
 - Android: https://r.orange.fr/r/S-ouds-android-navigation-bar
@@ -112,8 +139,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Android Status bar
 
 - id: `android-status-bar`
-- DSM: https://r.orange.fr/r/S-ouds-doc-android-status-bar
-- DSM Changelog: Not applicable
+- category: Navigation
+- family: Mobile Android and iOS bars
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-status-bar
+- OUDS Hub Changelog: Not applicable
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars
 - Web: Not applicable
 - Android: Not available
@@ -123,8 +153,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Android Tool bar
 
 - id: `android-tool-bar`
-- DSM: https://r.orange.fr/r/S-ouds-doc-android-tool-bar
-- DSM Changelog: Not applicable
+- category: Navigation
+- family: Mobile Android and iOS bars
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-tool-bar
+- OUDS Hub Changelog: Not applicable
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars
 - Web: Not applicable
 - Android: Not available
@@ -134,8 +167,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Assistant button
 
 - id: `assistant-button`
-- DSM: https://r.orange.fr/r/S-ouds-doc-assistant-button
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-button_changelog
+- category: Action
+- family: Button
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-assistant-button
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-button_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/ai_assistant/assistant_button/assistant_button.md
 - Design: https://r.orange.fr/r/S-ouds-design-assistant-button
 - Web: https://r.orange.fr/r/S-ouds-web-assistant-button
 - Android: Not available
@@ -145,8 +181,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Assistant chat input
 
 - id: `assistant-chat-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-assistant-chat-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-chat-input_changelog
+- category: Control
+- family: Chat input
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-assistant-chat-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-chat-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/assistant_chat_input/assistant_chat_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-assistant-chat-input
 - Web: Not available
 - Android: Not available
@@ -156,8 +195,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Assistant icon
 
 - id: `assistant-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-assistant-icon
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-icon_changelog
+- category: Action
+- family: Icon
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-assistant-icon
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-icon_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/ai_assistant/assistant_icon/assistant_icon.md
 - Design: https://r.orange.fr/r/S-ouds-design-assistant-icon
 - Web: Not available
 - Android: Not available
@@ -167,8 +209,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Badge
 
 - id: `badge`
-- DSM: https://r.orange.fr/r/S-ouds-doc-badge
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-badge_changelog
+- category: Indicator
+- family: Badge
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-badge
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-badge_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/badge/badge/badge.md
 - Design: https://r.orange.fr/r/S-ouds-design-badge
 - Web: https://r.orange.fr/r/S-ouds-web-badge
 - Android: https://r.orange.fr/r/S-ouds-android-badge
@@ -178,8 +223,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Badge count
 
 - id: `badge-count`
-- DSM: https://r.orange.fr/r/S-ouds-doc-badge-count
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-badge-count_changelog
+- category: Indicator
+- family: Badge
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-badge-count
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-badge-count_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/badge/badge_count/badge_count.md
 - Design: https://r.orange.fr/r/S-ouds-design-badge-count
 - Web: https://r.orange.fr/r/S-ouds-web-badge-count
 - Android: https://r.orange.fr/r/S-ouds-android-badge-count
@@ -189,8 +237,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Badge icon
 
 - id: `badge-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-badge-icon
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-badge-icon_changelog
+- category: Indicator
+- family: Badge
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-badge-icon
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-badge-icon_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/badge/badge_icon/badge_icon.md
 - Design: https://r.orange.fr/r/S-ouds-design-badge-icon
 - Web: https://r.orange.fr/r/S-ouds-web-badge-icon
 - Android: https://r.orange.fr/r/S-ouds-android-badge-icon
@@ -200,8 +251,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Bottom sheet
 
 - id: `bottom-sheet`
-- DSM: https://r.orange.fr/r/S-ouds-doc-bottom-sheet ⚠️ Temporary
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-bottom-sheet_changelog ⚠️ Temporary
+- category: Dialog
+- family: Sheet
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-bottom-sheet ⚠️ Temporary
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-bottom-sheet_changelog ⚠️ Temporary
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-bottom-sheet
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-bottom-sheet
@@ -211,8 +265,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Breadcrumb
 
 - id: `breadcrumb`
-- DSM: https://r.orange.fr/r/S-ouds-doc-breadcrumb
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-breadcrumb_changelog
+- category: Navigation
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-breadcrumb
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-breadcrumb_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/breadcrumb/breadcrumb.md
 - Design: https://r.orange.fr/r/S-ouds-design-breadcrumb
 - Web: https://r.orange.fr/r/S-ouds-web-breadcrumb
 - Android: Not applicable
@@ -222,8 +279,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Bullet List
 
 - id: `bullet-list`
-- DSM: https://r.orange.fr/r/S-ouds-doc-bullet-list
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-bullet-list_changelog
+- category: Content display
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-bullet-list
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-bullet-list_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/bullet_list/bullet_list.md
 - Design: https://r.orange.fr/r/S-ouds-design-bullet-list
 - Web: https://r.orange.fr/r/S-ouds-web-bullet-list
 - Android: https://r.orange.fr/r/S-ouds-android-bullet-list
@@ -233,8 +293,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Button
 
 - id: `button`
-- DSM: https://r.orange.fr/r/S-ouds-doc-button
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-button_changelog
+- category: Action
+- family: Button
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-button
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-button_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/button/button/button.md
 - Design: https://r.orange.fr/r/S-ouds-design-button
 - Web: https://r.orange.fr/r/S-ouds-web-button
 - Android: https://r.orange.fr/r/S-ouds-android-button
@@ -244,8 +307,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Categorical tag
 
 - id: `categorical-tag`
-- DSM: https://r.orange.fr/r/S-ouds-doc-categorical-tag
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-categorical-tag_changelog
+- category: Indicator
+- family: Tag
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-categorical-tag
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-categorical-tag_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/tag/categorical_tag/categorical_tag.md
 - Design: https://r.orange.fr/r/S-ouds-design-categorical-tag
 - Web: Not available
 - Android: Not available
@@ -255,8 +321,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Chat input
 
 - id: `chat-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-chat-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-chat-input_changelog
+- category: Control
+- family: Chat input
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-chat-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-chat-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/chat_input/chat_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-chat-input
 - Web: Not available
 - Android: Not available
@@ -266,8 +335,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Checkbox
 
 - id: `checkbox`
-- DSM: https://r.orange.fr/r/S-ouds-doc-checkbox
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-checkbox_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-checkbox
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-checkbox_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/checkbox/checkbox.md
 - Design: https://r.orange.fr/r/S-ouds-design-checkbox
 - Web: https://r.orange.fr/r/S-ouds-web-checkbox
 - Android: https://r.orange.fr/r/S-ouds-android-checkbox
@@ -277,8 +349,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Circular progress indicator
 
 - id: `circular-progress-indicator`
-- DSM: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator_changelog
+- category: Indicator
+- family: Progress indicator
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-circular-progress-indicator_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/progress_indicator/circular_progress_indicator/circular_progress_indicator.md
 - Design: https://r.orange.fr/r/S-ouds-design-circular-progress-indicator
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-circular-progress-indicator
@@ -288,8 +363,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Content card container
 
 - id: `content-card-container`
-- DSM: https://r.orange.fr/r/S-ouds-doc-content-card
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-content-card_changelog
+- category: Content display
+- family: Card
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-content-card
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-content-card_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/card/content_card_container/content_card_container.md
 - Design: https://r.orange.fr/r/S-ouds-design-content-card
 - Web: Not available
 - Android: Not available
@@ -299,8 +377,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Divider
 
 - id: `divider`
-- DSM: https://r.orange.fr/r/S-ouds-doc-divider
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-divider_changelog
+- category: Layout
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-divider
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-divider_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/layout/divider/divider.md
 - Design: https://r.orange.fr/r/S-ouds-design-divider
 - Web: https://r.orange.fr/r/S-ouds-web-divider
 - Android: https://r.orange.fr/r/S-ouds-android-divider
@@ -310,8 +391,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Expand button
 
 - id: `expand-button`
-- DSM: https://r.orange.fr/r/S-ouds-doc-expand-button
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-expand-button_changelog
+- category: Action
+- family: Button
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-expand-button
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-expand-button_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/button/expand_button/expand_button.md
 - Design: https://r.orange.fr/r/S-ouds-design-expand-button
 - Web: Not available
 - Android: Not available
@@ -321,8 +405,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Expand filter chip
 
 - id: `expand-filter-chip`
-- DSM: https://r.orange.fr/r/S-ouds-doc-expand-filter-chip
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-expand-filter-chip_changelog
+- category: Control
+- family: Chip
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-expand-filter-chip
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-expand-filter-chip_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/chip/filter_chip_expand/filter_chip_expand.md
 - Design: https://r.orange.fr/r/S-ouds-design-expand-filter-chip
 - Web: Not available
 - Android: Not available
@@ -332,8 +419,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Expand link
 
 - id: `expand-link`
-- DSM: https://r.orange.fr/r/S-ouds-doc-expand-link
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-expand-link_changelog
+- category: Navigation
+- family: Link
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-expand-link
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-expand-link_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/link/expand_link/expand_link.md
 - Design: https://r.orange.fr/r/S-ouds-design-expand-link
 - Web: Not available
 - Android: Not available
@@ -343,8 +433,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Filter chip
 
 - id: `filter-chip`
-- DSM: https://r.orange.fr/r/S-ouds-doc-filter-chip
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-filter-chip_changelog
+- category: Control
+- family: Chip
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-filter-chip
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-filter-chip_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/chip/filter_chip/filter_chip.md
 - Design: https://r.orange.fr/r/S-ouds-design-filter-chip
 - Web: https://r.orange.fr/r/S-ouds-web-filter-chip
 - Android: https://r.orange.fr/r/S-ouds-android-filter-chip
@@ -354,8 +447,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Fullscreen dialog
 
 - id: `fullscreen-dialog`
-- DSM: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog_changelog
+- category: Dialog
+- family: Modal
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/modal/fullscreen_dialog/fullscreen_dialog.md
 - Design: https://r.orange.fr/r/S-ouds-design-fullscreen-dialog
 - Web: Not available
 - Android: Not available
@@ -365,8 +461,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Home indicator
 
 - id: `home-indicator`
-- DSM: Not available
-- DSM Changelog: Not available
+- category: Not available
+- family: Not available
+- OUDS Hub: Not available
+- OUDS Hub Changelog: Not available
+- md documentation: Not available
 - Design: Not available
 - Web: Not available
 - Android: Not available
@@ -376,8 +475,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Inline alert
 
 - id: `inline-alert`
-- DSM: https://r.orange.fr/r/S-ouds-doc-inline-alert
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-inline-alert_changelog
+- category: Dialog
+- family: Alert
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-inline-alert
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-inline-alert_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/Alert/inline_alert/inline_alert.md
 - Design: https://r.orange.fr/r/S-ouds-design-inline-alert
 - Web: https://r.orange.fr/r/S-ouds-web-inline-alert
 - Android: https://r.orange.fr/r/S-ouds-android-inline-alert
@@ -387,8 +489,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Input tag
 
 - id: `input-tag`
-- DSM: https://r.orange.fr/r/S-ouds-doc-input-tag
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-input-tag_changelog
+- category: Indicator
+- family: Tag
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-input-tag
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-input-tag_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/tag/input_tag/input_tag.md
 - Design: https://r.orange.fr/r/S-ouds-design-input-tag
 - Web: https://r.orange.fr/r/S-ouds-web-input-tag
 - Android: https://r.orange.fr/r/S-ouds-android-input-tag
@@ -398,8 +503,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Interactive icon
 
 - id: `interactive-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-interactive-icon
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-interactive-icon_changelog
+- category: Action
+- family: Icon
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-interactive-icon
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-interactive-icon_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/icon/interactive_icon/interactive_icon.md
 - Design: https://r.orange.fr/r/S-ouds-design-interactive-icon
 - Web: Not available
 - Android: Not available
@@ -409,8 +517,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### iOS Tab bar
 
 - id: `ios-tab-bar`
-- DSM: https://r.orange.fr/r/S-ouds-doc-ios-tab-bar
-- DSM Changelog: Not applicable
+- category: Navigation
+- family: Mobile Android and iOS bars
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-ios-tab-bar
+- OUDS Hub Changelog: Not applicable
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-ios-tab-bar
 - Web: Not applicable
 - Android: Not applicable
@@ -420,8 +531,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### iOS Tool bar bottom
 
 - id: `ios-tool-bar-bottom`
-- DSM: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-bottom
-- DSM Changelog: Not applicable
+- category: Navigation
+- family: Mobile Android and iOS bars
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-bottom
+- OUDS Hub Changelog: Not applicable
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-tool-bar-bottom
 - Web: Not applicable
 - Android: Not applicable
@@ -431,8 +545,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### iOS Tool bar top
 
 - id: `ios-tool-bar-top`
-- DSM: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-top
-- DSM Changelog: Not applicable
+- category: Navigation
+- family: Mobile Android and iOS bars
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-top
+- OUDS Hub Changelog: Not applicable
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-ios-tool-bar-top
 - Web: Not applicable
 - Android: Not applicable
@@ -442,8 +559,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Linear progress indicator
 
 - id: `linear-progress-indicator`
-- DSM: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator_changelog
+- category: Indicator
+- family: Progress indicator
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-linear-progress-indicator_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/progress_indicator/linear_progress_indicator/linear_progress_indicator.md
 - Design: https://r.orange.fr/r/S-ouds-design-linear-progress-indicator
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-linear-progress-indicator
@@ -453,8 +573,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Link
 
 - id: `link`
-- DSM: https://r.orange.fr/r/S-ouds-doc-link
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-link_changelog
+- category: Navigation
+- family: Link
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-link
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-link_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/link/link/link.md
 - Design: https://r.orange.fr/r/S-ouds-design-link
 - Web: https://r.orange.fr/r/S-ouds-web-link
 - Android: https://r.orange.fr/r/S-ouds-android-link
@@ -464,8 +587,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Modal dialog
 
 - id: `modal-dialog`
-- DSM: https://r.orange.fr/r/S-ouds-doc-modal-dialog
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-modal-dialog_changelog
+- category: Dialog
+- family: Modal
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-modal-dialog
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-modal-dialog_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/modal/modal_dialog/modal_dialog.md
 - Design: https://r.orange.fr/r/S-ouds-design-modal-dialog
 - Web: Not available
 - Android: Not available
@@ -475,8 +601,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Navigation button
 
 - id: `navigation-button`
-- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-button
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-button_changelog
+- category: Action
+- family: Button
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-navigation-button
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-button_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/button/navigation_button/navigation_button.md
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-button
 - Web: https://r.orange.fr/r/S-ouds-web-navigation-button
 - Android: https://r.orange.fr/r/S-ouds-android-navigation-button
@@ -486,8 +615,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Navigation card item
 
 - id: `navigation-card-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-card-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-card-item_changelog
+- category: Navigation
+- family: List item
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-navigation-card-item
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-card-item_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/navigation_card_item/navigation_card_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-card-item
 - Web: Not available
 - Android: Not available
@@ -497,8 +629,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Navigation list item
 
 - id: `navigation-list-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-navigation-list-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-list-item_changelog
+- category: Navigation
+- family: List item
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-navigation-list-item
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-list-item_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/navigation_list_item/navigation_list_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-list-item
 - Web: Not available
 - Android: Not available
@@ -508,8 +643,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Password input
 
 - id: `password-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-password-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-password-input_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-password-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-password-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/password_input/password_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-password-input
 - Web: https://r.orange.fr/r/S-ouds-web-password-input
 - Android: https://r.orange.fr/r/S-ouds-android-password-input
@@ -519,8 +657,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Phone number input
 
 - id: `phone-number-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-phone-number-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-phone-number-input_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-phone-number-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-phone-number-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/phone_number_input/phone_number_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-phone-number-input
 - Web: Not available
 - Android: Not available
@@ -530,8 +671,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### PIN code input
 
 - id: `pin-code-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-pin-code-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-pin-code-input_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-pin-code-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-pin-code-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/pin_code_input/pin_code_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-pin-code-input
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-pin-code-input
@@ -541,8 +685,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Quantity input
 
 - id: `quantity-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-quantity-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-quantity-input_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-quantity-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-quantity-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/quantity_input/quantity_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-quantity-input
 - Web: Not available
 - Android: Not available
@@ -552,8 +699,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Radio button
 
 - id: `radio-button`
-- DSM: https://r.orange.fr/r/S-ouds-doc-radio-button
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-radio-button_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-radio-button
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-radio-button_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/radio_button/radio_button.md
 - Design: https://r.orange.fr/r/S-ouds-design-radio-button
 - Web: https://r.orange.fr/r/S-ouds-web-radio-button
 - Android: https://r.orange.fr/r/S-ouds-android-radio-button
@@ -563,8 +713,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Select input
 
 - id: `select-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-select-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-select-input_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-select-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-select-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/select_input/select_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-select-input
 - Web: https://r.orange.fr/r/S-ouds-web-select-input
 - Android: Not available
@@ -574,8 +727,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Side sheet
 
 - id: `side-sheet`
-- DSM: https://r.orange.fr/r/S-ouds-doc-side-sheet
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-side-sheet_changelog
+- category: Dialog
+- family: Sheet
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-side-sheet
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-side-sheet_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/sheet/side_sheet/side_sheet.md
 - Design: https://r.orange.fr/r/S-ouds-design-side-sheet
 - Web: Not available
 - Android: Not available
@@ -585,8 +741,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Skeleton
 
 - id: `skeleton`
-- DSM: https://r.orange.fr/r/S-ouds-doc-skeleton
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-skeleton_changelog
+- category: Indicator
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-skeleton
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-skeleton_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/skeleton/skeleton.md
 - Design: https://r.orange.fr/r/S-ouds-design-skeleton
 - Web: https://r.orange.fr/r/S-ouds-web-skeleton
 - Android: Not available
@@ -596,8 +755,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Social button
 
 - id: `social-button`
-- DSM: https://r.orange.fr/r/S-ouds-doc-social-button
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-social-button_changelog
+- category: Action
+- family: Button
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-social-button
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-social-button_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/button/social_button/social_button.md
 - Design: https://r.orange.fr/r/S-ouds-design-social-button
 - Web: Not available
 - Android: Not available
@@ -607,8 +769,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Static card item
 
 - id: `static-card-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-static-card-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-card-item_changelog
+- category: Content display
+- family: List item
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-static-card-item
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-static-card-item_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/static_card_item/static_card_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-static-card-item
 - Web: Not available
 - Android: Not available
@@ -618,8 +783,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Static list item
 
 - id: `static-list-item`
-- DSM: https://r.orange.fr/r/S-ouds-doc-static-list-item
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-static-list-item_changelog
+- category: Content display
+- family: List item
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-static-list-item
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-static-list-item_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/static_list_item/static_list_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-static-list-item
 - Web: Not available
 - Android: Not available
@@ -629,8 +797,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Status icon
 
 - id: `status-icon`
-- DSM: https://r.orange.fr/r/S-ouds-doc-status-icon
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-status-icon_changelog
+- category: Indicator
+- family: Icon
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-status-icon
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-status-icon_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/icon/status_icon/status_icon.md
 - Design: https://r.orange.fr/r/S-ouds-design-status-icon
 - Web: Not available
 - Android: Not available
@@ -640,8 +811,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Suggestion chip
 
 - id: `suggestion-chip`
-- DSM: https://r.orange.fr/r/S-ouds-doc-suggestion-chip
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-suggestion-chip_changelog
+- category: Control
+- family: Chip
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-suggestion-chip
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-suggestion-chip_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/chip/suggestion_chip/suggestion_chip.md
 - Design: https://r.orange.fr/r/S-ouds-design-suggestion-chip
 - Web: https://r.orange.fr/r/S-ouds-web-suggestion-chip
 - Android: https://r.orange.fr/r/S-ouds-android-suggestion-chip
@@ -651,8 +825,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Switch
 
 - id: `switch`
-- DSM: https://r.orange.fr/r/S-ouds-doc-switch
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-switch_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-switch
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-switch_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/switch/switch.md
 - Design: https://r.orange.fr/r/S-ouds-design-switch
 - Web: https://r.orange.fr/r/S-ouds-web-switch
 - Android: https://r.orange.fr/r/S-ouds-android-switch
@@ -662,8 +839,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Tag
 
 - id: `tag`
-- DSM: https://r.orange.fr/r/S-ouds-doc-tag
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-tag_changelog
+- category: Indicator
+- family: Tag
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-tag
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-tag_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/tag/tag/tag.md
 - Design: https://r.orange.fr/r/S-ouds-design-tag
 - Web: https://r.orange.fr/r/S-ouds-web-tag
 - Android: https://r.orange.fr/r/S-ouds-android-tag
@@ -673,8 +853,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Text area
 
 - id: `text-area`
-- DSM: https://r.orange.fr/r/S-ouds-doc-text-area
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-text-area_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-text-area
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-text-area_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/text_area/text_area.md
 - Design: https://r.orange.fr/r/S-ouds-design-text-area
 - Web: https://r.orange.fr/r/S-ouds-web-text-area
 - Android: https://r.orange.fr/r/S-ouds-android-text-area
@@ -684,8 +867,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Text input
 
 - id: `text-input`
-- DSM: https://r.orange.fr/r/S-ouds-doc-text-input
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-text-input_changelog
+- category: Control
+- family: None
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-text-input
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-text-input_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/text_input/text_input.md
 - Design: https://r.orange.fr/r/S-ouds-design-text-input
 - Web: https://r.orange.fr/r/S-ouds-web-text-input
 - Android: https://r.orange.fr/r/S-ouds-android-text-input
@@ -695,8 +881,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Toast
 
 - id: `toast`
-- DSM: https://r.orange.fr/r/S-ouds-doc-toast
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-toast_changelog
+- category: Dialog
+- family: Alert
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-toast
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-toast_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/toast/toast.md
 - Design: https://r.orange.fr/r/S-ouds-design-toast
 - Web: Not available
 - Android: Not available
@@ -706,8 +895,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Typography
 
 - id: `typography`
-- DSM: https://r.orange.fr/r/S-ouds-doc-typography
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography_changelog
+- category: Content display
+- family: Typography
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography_changelog
+- md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-typography
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-typography
@@ -717,8 +909,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Typography body
 
 - id: `typography-body`
-- DSM: https://r.orange.fr/r/S-ouds-doc-typography-body
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-body_changelog
+- category: Content display
+- family: Typography
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-body
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-body_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/body/body.md
 - Design: https://r.orange.fr/r/S-ouds-design-typography-body
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-typography-body
@@ -728,8 +923,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Typography code
 
 - id: `typography-code`
-- DSM: https://r.orange.fr/r/S-ouds-doc-typography-code
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-code_changelog
+- category: Content display
+- family: Typography
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-code
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-code_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/code/code.md
 - Design: https://r.orange.fr/r/S-ouds-design-typography-code
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-typography-code
@@ -739,8 +937,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Typography display
 
 - id: `typography-display`
-- DSM: https://r.orange.fr/r/S-ouds-doc-typography-display
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-display_changelog
+- category: Content display
+- family: Typography
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-display
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-display_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/display/display.md
 - Design: https://r.orange.fr/r/S-ouds-design-typography-display
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-typography-display
@@ -750,8 +951,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Typography heading
 
 - id: `typography-heading`
-- DSM: https://r.orange.fr/r/S-ouds-doc-typography-heading
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-heading_changelog
+- category: Content display
+- family: Typography
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-heading
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-heading_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/heading/heading.md
 - Design: https://r.orange.fr/r/S-ouds-design-typography-heading
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-typography-heading
@@ -761,8 +965,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 ### Typography label
 
 - id: `typography-label`
-- DSM: https://r.orange.fr/r/S-ouds-doc-typography-label
-- DSM Changelog: https://r.orange.fr/r/S-ouds-doc-typography-label_changelog
+- category: Content display
+- family: Typography
+- OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-label
+- OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-label_changelog
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/label/label.md
 - Design: https://r.orange.fr/r/S-ouds-design-typography-label
 - Web: Not available
 - Android: https://r.orange.fr/r/S-ouds-android-typography-label
@@ -773,10 +980,10 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 
 ### Development documentation
 
-- OUDS-web: http://web.unified-design-system.orange.com/
-- OUDS-Android: http://android.unified-design-system.orange.com/
-- OUDS-iOS: http://ios.unified-design-system.orange.com/
-- OUDS-Flutter: http://flutter.unified-design-system.orange.com/
+- OUDS-web: https://web.unified-design-system.orange.com/
+- OUDS-Android: https://android.unified-design-system.orange.com/
+- OUDS-iOS: https://ios.unified-design-system.orange.com/
+- OUDS-Flutter: https://flutter.unified-design-system.orange.com/
 
 ### Repositories
 
@@ -796,7 +1003,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 
 ### Tokens
 
-- DSM Design Token Introduction: https://r.orange.fr/r/S-ouds-doc-token-intro
+- OUDS Hub Design Token Introduction: https://r.orange.fr/r/S-ouds-doc-token-intro
 - Border tokens doc: https://r.orange.fr/r/S-ouds-doc-token-border
 - Elevation tokens doc: https://r.orange.fr/r/S-ouds-doc-token-elevation
 - Grid tokens doc: https://r.orange.fr/r/S-ouds-doc-token-grid
