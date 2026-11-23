@@ -1,57 +1,33 @@
+---
+id: bullet-list
+category: Content display
+family: None
+---
+
+# Bullet list
+
+A bullet list is a UI element that allows users to view related individual text items grouped together, with items typically starting with a number or a bullet.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_bullet_list.png" alt="hero_image_bullet_list" width="864">
 
-Bullet List displays related text items in a structured vertical format using bullets, numbers, or no markers.
+## Anatomy
 
----
-
-## Definition
-
-List allows users to view individual, but related, text items grouped together.
-
-It usually begins with either a number or a bullet, also known as Unordered list or Ordered list.
-
-By default, **this component is not interactive**, although it is possible to add a hypertext link to the content.
-
----
-
-## Best for 👈🤔
-
-✅ Displaying non-sequential related items without implied priority or order
-
-✅ Presenting step-by-step instructions or sequential procedures requiring numbered order
-
-✅ Grouping features, benefits, or options for easy scanning and comparison
-
-✅ Breaking up dense paragraph content into digestible chunks for improved readability
-
-✅ Creating navigation menus or table of contents with hierarchical structure
-
-✅ Listing requirements, specifications, or criteria in technical documentation
-
-✅ Showing checklists or task lists in forms and workflows
-
-✅ Presenting terms and conditions, policies, or legal information
-
-✅ Organizing FAQ content with clear structure and visual separation
-
-✅ Displaying nested categorization with parent-child relationships up to three levels
-
----
-
-## Anatomy 👈🤖
+<img src="images/bullet_list@anatomy_img.png" alt="bullet_list@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Marker/Bullet | Visual indicator distinguishing list type (square, dash, number, letter) | N |
-| 2 | Label/Content | Primary text content of the list item | N |
-| 3 | Icon container | Wrapper for bullet icons ensuring proper alignment | N |
-| 4 | Nested indentation | Left padding indicating hierarchy level (Level 0, 1, 2) | Y |
-| 5 | Hyperlink | Optional interactive link within list content | Y |
-| 6 | Skeleton loader | Loading placeholder shown during content fetch | Y |
+| 1 | Label | Text content of the list item | No |
+| 2 | Unordered list | Displays list items without a defined sequence, using a bullet or custom marker | No |
+| 3 | Ordered list | Displays list items in a specific sequence using numeric ordering | No |
+| 4 | Unstyled list | Displays list items without visual markers while preserving indentation and structure | No |
 
----
+## Definition
+
+A bullet list is a UI element that allows users to view related individual text items grouped together, with items typically starting with a number or a bullet.
+
+The bullet list, also referred to as an 'unordered list' or 'ordered list,' is typically not an interactive element, although text items can include hypertext links.
 
 ## Type
 
@@ -61,150 +37,202 @@ By default, **this component is not interactive**, although it is possible to ad
 
 **`Bare`** An unordered list without any bullets or alphanumeric sequence. It still have left-padding, so list items will appear indented. This is the default and is also known as undecorated "Unstyled" list.
 
----
-
-## type_do_&_dont 👈🤔
-
-✅ **Do:** Use unordered lists when items are of equal value and order doesn't matter  
-❌ **Don't:** Use ordered lists for content that has no sequential relationship
-
-✅ **Do:** Use ordered lists for step-by-step instructions, rankings, or prioritized content  
-❌ **Don't:** Use bullets for procedures where steps must be followed in a specific sequence
-
-✅ **Do:** Use bare lists when you need list semantics without visual markers for navigation or layout  
-❌ **Don't:** Remove list markers purely for aesthetic reasons without considering accessibility impact
-
-✅ **Do:** Choose list type based on content meaning, not visual preference  
-❌ **Don't:** Mix list types inconsistently within the same content section
-
-✅ **Do:** Consider screen reader announcements when selecting list type ("bullet" vs. numbered)  
-❌ **Don't:** Use bare lists when users need markers to understand item relationships
-
----
+<img src="images/bullet_list@type_img.png" alt="bullet_list@type_img" width="433">
 
 ## Text style
 
-List can be used with different font sizes, these sizes are based on our body font-size.
+List can be used with different font sizes, these sizes are based on our body font-size.  
 Today, list is available with two text styles: Body large and body Medium.
 
-**`Body Large`** Make sure to use this reference if the text accompanying the list component is the Body Large text.
+**`Body Large`** Make sure to use this reference if the text accompanying the list component is the Body Large text.  
 This variant is designed for more visual, engaging experiences.
 
-**`Body Medium`** Make sure to use this reference if the text accompanying the list component is the Body Medium text.
+**`Body Medium`** Make sure to use this reference if the text accompanying the list component is the Body Medium text.  
 This variant is best suited for functional, task-oriented experiences.
 
----
-
-## text_style_do_&_dont 👈🤔
-
-✅ **Do:** Match list text style to the surrounding body text for visual consistency  
-❌ **Don't:** Use Body Large lists within Body Medium paragraph content
-
-✅ **Do:** Use Body Large for marketing pages, landing pages, and editorial content  
-❌ **Don't:** Use Body Large in compact data-dense interfaces where space is limited
-
-✅ **Do:** Use Body Medium for forms, dashboards, and functional UI with task focus  
-❌ **Don't:** Mix Body Large and Body Medium text styles within the same list
-
-✅ **Do:** Consider the reading context and viewport size when selecting text style  
-❌ **Don't:** Choose text style solely based on aesthetic preference over usability
-
-✅ **Do:** Ensure sufficient line-height for readability at the chosen text size  
-❌ **Don't:** Reduce spacing between items to the point of compromising scannability
-
----
+<img src="images/bullet_list@text_style_img.png" alt="bullet_list@test_style_img" width="433">
 
 ## Nested level
 
 Lists can include nested items to indicate hierarchy or subcategories, with indentation distinguishing each level. Arrange ordered list items logically, such as ranking by importance, highest to lowest values, or in alphabetical/numeric order.
 
-**`Nested level: 0`** Level 0 list items define the main structure.
-Unordered level 0 list items are marked with full squares.
+**`Nested level: 0`** Level 0 list items define the main structure.  
+Unordered level 0 list items are marked with full squares.  
 Ordered level 0 list items are marked with numbers.
 
-**`Nested level: 1`** Level 1 (nested) list items provide hierarchy or subcategories.
-Unordered level 1 list items are marked with outlined squares.
+**`Nested level: 1`** Level 1 (nested) list items provide hierarchy or subcategories.  
+Unordered level 1 list items are marked with outlined squares.  
 Ordered level 1 list items are marked with uppercase letters.
 
-**`Nested level: 2`** Level 2 (nested) list items provide hierarchy or subcategories.
-Unordered level 2 list items are marked with dashes.
+**`Nested level: 2`** Level 2 (nested) list items provide hierarchy or subcategories.  
+Unordered level 2 list items are marked with dashes.  
 Ordered level 2 list items are marked with lowercase letters.
+
+<img src="images/bullet_list@nested_level_img.png" alt="bullet_list@nested_level_img" width="433">
 
 Ordered lists can be combined with unordered items in the same list as well.
 
 Note that, in this context, even though the Unordered list item is placed at nested level 1, it is rendered as if it were at nested level 0 (full square) because, in the technical implementation, **the combination of Ordered and Unordered lists is not incremental.**
 
+<img src="images/bullet_list@nested_level_ordered_img.png" alt="bullet_list@nested_level_ordered_img" width="433">
+
 Conversely, **in a context using only Unordered lists, the incrementing does apply** even if the choice of nested items differs (bullet items with ticks or Solairs icons).
+
+<img src="images/bullet_list@nested_level_unordered_img.png" alt="bullet_list@nested_level_unordered_img" width="433">
 
 In the technical implementation, **Bar lists are considered as Unordered lists**. The incrementing between lists does apply.
 
----
-
-## nested_level_do_&_dont 👈🤔
-
-✅ **Do:** Limit nesting to a maximum of 2-3 levels to maintain readability and comprehension  
-❌ **Don't:** Create deeply nested lists (4+ levels) that become difficult to scan
-
-✅ **Do:** Use distinct visual markers at each nesting level for clear hierarchy differentiation  
-❌ **Don't:** Use identical markers across nesting levels causing visual confusion
-
-✅ **Do:** Ensure proper indentation spacing to clearly distinguish parent-child relationships  
-❌ **Don't:** Use minimal indentation that makes hierarchy relationships unclear
-
-✅ **Do:** Group related sub-items logically under their parent category  
-❌ **Don't:** Nest unrelated items together just to reduce vertical space
-
-✅ **Do:** Consider flattening deeply nested structures into separate lists with headings  
-❌ **Don't:** Force complex hierarchies into a single nested list when sections work better
-
----
+<img src="images/bullet_list@nested_level_bar_list_img.png" alt="bullet_list@nested_level_bar_list_img" width="433">
 
 ## Other boolean options
 
 **`Bold`** The label text can be bolded.
 
-**`Skeleton`** Improves the perceived loading time by providing a visual cue of where switch will appear once fully loaded.
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where switch will appear once fully loaded.  
 Uses the "Skeleton" component, variant "Security marge=True".
+
+**`Brand color - True`** Use the brand color for bullets when the list highlights important, actionable, or user-facing information that requires attention.
+
+**`Brand color - False`** Use neutral (achromatic) bullets for descriptive or secondary content where emphasis is not needed and readability should remain the priority.
+
+<img src="images/bullet_list@other_boolean_options_img.png" alt="bullet_list@other_boolean_options_img" width="433">
 
 Even if the "Bold" option is not active, it is also possible to add a hyperlink in the content of a list. In terms of design, and depending on the chosen text style, the typographic reference "Body/Large/Underline" or "Body/Medium/Underline" must be used.
 
----
+<img src="images/bullet_list@other_boolean_options_bold_img.png" alt="bullet_list@other_boolean_options_bold_img" width="433">
 
-## other_boolean_options_do_&_dont 👈🤔
+## Multiline and responsiveness
 
-✅ **Do:** Use bold text sparingly to emphasize key terms or important items within lists  
-❌ **Don't:** Bold entire list items as it reduces the emphasis effect and impacts readability
+### Multiline
+This component allows multi-line text editing. The number of lines is not limited.
 
-✅ **Do:** Use skeleton loaders when list content requires async data fetching  
-❌ **Don't:** Show skeleton loaders for static content that loads immediately
+&nbsp;
 
-✅ **Do:** Style hyperlinks consistently using the appropriate underline typography reference  
-❌ **Don't:** Remove underlines from links as it reduces accessibility and discoverability
+### Max-width
+The max-width must be applied at the bullet list container level, not on individual list items. This ensures consistent alignment, readable line lengths, and a coherent vertical structure.  
+List items must naturally wrap within the parent container  
+The max-width value depends on the maximum width value assigned to the typographic reference used.  
+Since the component is standalone, it is up to the designer to manually add a max-width to the group of multiple bullet lists.  
+For the "body large" variant, the global max-width token will be: **size-max-width-body-large**  
+For the "body medium" variant, the global max-width token will be: **size-max-width-body-medium**
 
-✅ **Do:** Ensure hyperlinks have sufficient color contrast and clear hover/focus states  
-❌ **Don't:** Use link styling on non-interactive text elements
+&nbsp;
 
-✅ **Do:** Keep skeleton dimensions consistent with the expected loaded content  
-❌ **Don't:** Use skeleton heights that cause significant layout shift when content loads
+### User zoom in/out
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+* The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+* Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+* The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+* Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+* In order to preserve the same display rendering, numbers, uppercase/lowercase letters, and bullet points follow the same rules as the text.
 
----
+<img src="images/bullet_list@multiline_and_responsiveness_img.png" alt="bullet_list@multiline_and_responsiveness_img" width="433">
+
+## Rich text
+
+### Bold option is false
+
+#### Text style Body Large
+
+* **Strong text**
+  * Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Body/Large/Strong** token only.
+  * No other text styles or custom font weights should be used.
+* **Underlined text and hyperlink**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a **hyperlink** is needed within the content, the typographic reference **Body/Large/Underline** must be used.
+
+#### Text style Body Medium
+
+* **Strong text**
+  * Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Body/Medium/Strong** token only.
+  * No other text styles or custom font weights should be used.
+* **Underlined text and hyperlink**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a **hyperlink** is needed within the content, the typographic reference **Body/Medium/Underline** must be used.
+
+<img src="images/bullet_list@rich_text_img.png" alt="bullet_list@rich_text_img" width="433">
+
+### Bold option is true
+
+#### Text style Body Large
+
+* **Underlined text and hyperlink**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a hyperlink is needed within the content, the typographic reference **Body/Large/Underline** must be used.
+
+#### Text style Body Medium
+
+* **Underlined text and hyperlink**
+  * Underlined text must not be used for emphasis, as it is commonly associated with links.
+  * If a hyperlink is needed within the content, the typographic reference **Body/Medium/Underline** must be used.
+
+<img src="images/bullet_list@rich_text_img2.png" alt="bullet_list@rich_text_img2" width="433">
 
 # Specs
 
-## States
-
-🚧 Missing from source: States section in bullet_list_overview.md
-
----
-
 ## Layout and spacing
 
-🚧 Content to be added
+<img src="images/bullet_list@spec_layout_spacing.png" alt="bullet_list@spec_layout_spacing" width="864">
 
----
+# Accessibility
+
+Use semantic HTML: `<ul>` or `<ol>` with `<li>`.
+
+Avoid additional ARIA roles.  
+  
+Add `aria-label` or `aria-labelledby` if the list purpose is not otherwise clear.
+
+List links must meet minimum hit target (24px line height).
+
+## Web keyboard navigation
+
+Lists are not keyboard operable, unless the list items themselves are operable. In this situation, the list items will retain the component’s default keyboard interaction. For example, in a list of links, each link will be in the tab order and can be activated by Enter.
+
+## Support screen readers
+
+Ensure that the lists are correctly announced by screen readers. Add explicit labels if necessary `aria-label` or `aria-labelledby` on `<ul>` or `<ol>` if the context is unclear.   
+It is recommend to use a label property in all lists. The label will be announced by the screen reader describing the purpose or content of the list. Even though text preceding the list can introduce the list, screen readers will read both pieces of information in sequential order. When using the label property, the information is embedded into the list announcement supporting the comprehension of the list.
+
+## Alt text
+
+Icons or images inside lists should include `alt` text or be marked `aria-hidden="true"` if decorative.
+
+# Develop
+
+## OUDS-Web example
+
+[Components/BulletList › Bullet List 1](https://web.unified-design-system.orange.com/storybook/?path=/story/components-bulletlist--bullet-list-1)
+
+[Components/BulletList › Bullet List 3](https://web.unified-design-system.orange.com/storybook/?path=/story/components-bulletlist--bullet-list-3)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-bullet-list](https://r.orange.fr/r/S-ouds-web-bullet-list) |
+| OUDS Android | [S-ouds-android-bullet-list](https://r.orange.fr/r/S-ouds-android-bullet-list) |
+| OUDS iOS | [S-ouds-ios-bullet-list](https://r.orange.fr/r/S-ouds-ios-bullet-list) |
+| OUDS Flutter | Not applicable |
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Mar 26, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+## Availability
+
+Design status: **DEV**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Bullet list component](https://r.orange.fr/r/S-ouds-design-bullet-list) | Done | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-bullet-list) | Done | 1.1.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-bullet-list) | Done | 1.1.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-bullet-list) | Done | 1.1.0 |
+| OUDS Flutter | Not applicable | To do | – |
+
+## Design changelog
+
+| Date | Number | Notes |
+|------|--------|-------|
+| Apr 21, 2026 | 1.1.0 | <ul><li>Version 2.4 of the design tokens is required for the development of this update.<li>Update: To ensure the viability of RTL mode (and especially the use of Helvetica Neue Arabic), control of the width of the leading containers (bullets, numbers, empty) is no longer handled via the "width" property but via the "min-width" property. The tokens remain unchanged (size-icon-with-body-large/medium-size-medium).</ul> |
+| Mar 16, 2026 | - | <ul><li>Documentation writing: Multiline and responsiveness</ul> |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
+| Mar 26, 2025 | 1.0.0 | • Component creation |

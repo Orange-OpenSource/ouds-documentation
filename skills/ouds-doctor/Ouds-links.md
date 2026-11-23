@@ -1,8 +1,8 @@
 ---
 title: OUDS redirection links
 description: Index of the links to Orange Unified Design System (OUDS) documentation, design and code pages, per component and per platform, plus other OUDS resources.
-version: 2.1.0
-updated: 2026-11-21
+version: 2.2.0
+updated: 2026-11-23
 ---
 
 # OUDS redirection links
@@ -68,7 +68,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - iOS: Not available
 - Flutter: Not available
 
-### Action card container
+### Action card
 
 - id: `action-card-container`
 - category: Content display
@@ -76,7 +76,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-action-card -> https://unified-design-system.orange.com/472794e18/p/7538ba-action-card-container
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-action-card_changelog -> https://unified-design-system.orange.com/472794e18/p/7538ba-action-card-container/b/346773/t/423775fa8e
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/card/action_card_container/action_card_container.md
-- Design: https://r.orange.fr/r/S-ouds-design-action-card -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=125193-20757
+- Design: Not available
 - Web: Not available
 - Android: Not available
 - iOS: Not available
@@ -117,7 +117,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Mobile Android and iOS bars
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-app-bar -> https://unified-design-system.orange.com/472794e18/p/62f93c-navigation-bars--android/b/92e8c7
 - OUDS Hub Changelog: Not applicable
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_android/navigation_bar_android.md#app-bar
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=84794-12441
 - Web: Not applicable
 - Android: https://r.orange.fr/r/S-ouds-android-app-bar -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-top-app-bar.html
@@ -131,7 +131,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Mobile Android and iOS bars
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-navigation-bar -> https://unified-design-system.orange.com/472794e18/p/62f93c-navigation-bars--android
 - OUDS Hub Changelog: Not applicable
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_android/navigation_bar_android.md#navigation-bar
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=84794-12441
 - Web: Not applicable
 - Android: https://r.orange.fr/r/S-ouds-android-navigation-bar -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-navigation-bar.html
@@ -145,7 +145,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Mobile Android and iOS bars
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-status-bar -> https://unified-design-system.orange.com/472794e18/p/62f93c-navigation-bars--android/b/68bea8
 - OUDS Hub Changelog: Not applicable
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_android/navigation_bar_android.md#status-bar
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=84794-12441
 - Web: Not applicable
 - Android: Not available
@@ -159,7 +159,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Mobile Android and iOS bars
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-android-tool-bar -> https://unified-design-system.orange.com/472794e18/p/62f93c-navigation-bars--android/b/23f813
 - OUDS Hub Changelog: Not applicable
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_android/navigation_bar_android.md#toolbar
 - Design: https://r.orange.fr/r/S-ouds-design-android-bars -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=84794-12441
 - Web: Not applicable
 - Android: Not available
@@ -203,7 +203,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-assistant-icon_changelog -> https://unified-design-system.orange.com/472794e18/p/43338d-assistant-icon/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/ai_assistant/assistant_icon/assistant_icon.md
 - Design: https://r.orange.fr/r/S-ouds-design-assistant-icon -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=106372-16079
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-assistant-icon -> https://web.unified-design-system.orange.com/orange/docs/components/icons/#assistant-icon
 - Android: Not available
 - iOS: Not available
 - Flutter: Not available
@@ -255,8 +255,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - id: `bottom-sheet`
 - category: Dialog
 - family: Sheet
-- OUDS Hub: Not available
-- OUDS Hub Changelog: Not available
+- OUDS Hub: ⚠️ Temporary: https://r.orange.fr/r/S-ouds-doc-bottom-sheet -> https://unified-design-system.orange.com/472794e18/p/73c701-components
+- OUDS Hub Changelog: ⚠️ Temporary: https://r.orange.fr/r/S-ouds-doc-bottom-sheet_changelog -> https://unified-design-system.orange.com/472794e18/p/73c701-components
 - md documentation: Not available
 - Design: https://r.orange.fr/r/S-ouds-design-bottom-sheet -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=114312-25655
 - Web: Not available
@@ -289,7 +289,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - Design: https://r.orange.fr/r/S-ouds-design-bullet-list -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=58210-176725
 - Web: https://r.orange.fr/r/S-ouds-web-bullet-list -> https://web.unified-design-system.orange.com/docs/components/bullet-list/
 - Android: https://r.orange.fr/r/S-ouds-android-bullet-list -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-bullet-list.html
-- iOS: https://r.orange.fr/r/S-ouds-ios-bullet-list -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsbulletlist
+- iOS: https://r.orange.fr/r/S-ouds-ios-bullet-list -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsbulletlist/
 - Flutter: Not applicable
 
 ### Button
@@ -315,7 +315,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-categorical-tag_changelog -> https://unified-design-system.orange.com/472794e18/p/09aabb-categorical-tag/b/63b94c/t/71bf9399bc
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/indicator/tag/categorical_tag/categorical_tag.md
 - Design: https://r.orange.fr/r/S-ouds-design-categorical-tag -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=119320-29502
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-categorical-tag -> https://web.unified-design-system.orange.com/orange/docs/components/tags/#categorical-tag
 - Android: Not available
 - iOS: https://r.orange.fr/r/S-ouds-ios-categorical-tag -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudscategoricaltag/
 - Flutter: Not available
@@ -362,7 +362,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - iOS: https://r.orange.fr/r/S-ouds-ios-circular-progress-indicator -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudscircularprogressindicator/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-circular-progress-indicator -> https://flutter.unified-design-system.orange.com/components_progress_indicator_ouds_progress_indicator/OudsCircularProgressIndicator-class.html
 
-### Content card container
+### Card
 
 - id: `content-card-container`
 - category: Content display
@@ -370,7 +370,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-content-card -> https://unified-design-system.orange.com/472794e18/p/78792d-content-card-container
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-content-card_changelog -> https://unified-design-system.orange.com/472794e18/p/78792d-content-card-container/b/656c01/t/0014b5a994
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/content_display/card/content_card_container/content_card_container.md
-- Design: https://r.orange.fr/r/S-ouds-design-content-card -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=125193-21201
+- Design: Not available
 - Web: Not available
 - Android: Not available
 - iOS: Not available
@@ -399,7 +399,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-expand-button_changelog -> https://unified-design-system.orange.com/472794e18/p/638d33-expand-button/b/934d6e/t/9b0d6fe4a1
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/button/expand_button/expand_button.md
 - Design: https://r.orange.fr/r/S-ouds-design-expand-button -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=75001-98817
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-expand-button -> https://web.unified-design-system.orange.com/orange/docs/components/buttons/#expand-button
 - Android: Not available
 - iOS: Not available
 - Flutter: Not available
@@ -412,7 +412,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-expand-filter-chip -> https://unified-design-system.orange.com/472794e18/p/868595-filterchip-expand
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-expand-filter-chip_changelog -> https://unified-design-system.orange.com/472794e18/p/868595-filter-chip-expand/b/3821c5/t/fe4a3adde1
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/chip/filter_chip_expand/filter_chip_expand.md
-- Design: https://r.orange.fr/r/S-ouds-design-expand-filter-chip -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Core-Lib--Components?node-id=81-2389
+- Design: Not available
 - Web: Not available
 - Android: Not available
 - iOS: Not available
@@ -427,7 +427,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-expand-link_changelog -> https://unified-design-system.orange.com/472794e18/p/340239-expand-link/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/link/expand_link/expand_link.md
 - Design: https://r.orange.fr/r/S-ouds-design-expand-link -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=75001-98284
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-expand-link -> https://web.unified-design-system.orange.com/orange/docs/components/links/#expand-link
 - Android: Not available
 - iOS: Not available
 - Flutter: Not available
@@ -440,7 +440,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-filter-chip -> https://unified-design-system.orange.com/472794e18/p/159c52-filter-chip
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-filter-chip_changelog -> https://unified-design-system.orange.com/472794e18/p/159c52-filter-chip/b/2337a3/t/13910caaf2
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/chip/filter_chip/filter_chip.md
-- Design: https://r.orange.fr/r/S-ouds-design-filter-chip -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Core-Lib--Components?node-id=81-2389
+- Design: Not available
 - Web: https://r.orange.fr/r/S-ouds-web-filter-chip -> https://web.unified-design-system.orange.com/orange/docs/components/chips/#filter-chip
 - Android: https://r.orange.fr/r/S-ouds-android-filter-chip -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-filter-chip.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-filter-chip -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsfilterchip/
@@ -455,7 +455,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-fullscreen-dialog_changelog -> https://unified-design-system.orange.com/472794e18/p/897ed9-fullscreen-dialog/b/416db6/t/5efb528007
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/modal/fullscreen_dialog/fullscreen_dialog.md
 - Design: https://r.orange.fr/r/S-ouds-design-fullscreen-dialog -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=113485-4673
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-fullscreen-dialog -> https://web.unified-design-system.orange.com/orange/docs/components/modals/#fullscreen-dialog
 - Android: Not available
 - iOS: Not available
 - Flutter: Not available
@@ -467,7 +467,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Not available
 - OUDS Hub: Not available
 - OUDS Hub Changelog: Not available
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_ios/navigation_bar_ios.md#home-indicator
 - Design: Not available
 - Web: Not available
 - Android: Not available
@@ -511,7 +511,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-interactive-icon_changelog -> https://unified-design-system.orange.com/472794e18/p/72710b-interactive-icon/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/action/icon/interactive_icon/interactive_icon.md
 - Design: https://r.orange.fr/r/S-ouds-design-interactive-icon -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=103082-32466
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-interactive-icon -> https://web.unified-design-system.orange.com/orange/docs/components/icons/#interactive-icon
 - Android: Not available
 - iOS: Not available
 - Flutter: Not available
@@ -523,7 +523,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Mobile Android and iOS bars
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-ios-tab-bar -> https://unified-design-system.orange.com/472794e18/p/6782de-navigation-bars---ios
 - OUDS Hub Changelog: Not applicable
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_ios/navigation_bar_ios.md#tab-bar
 - Design: https://r.orange.fr/r/S-ouds-design-ios-tab-bar -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=84794-11300
 - Web: Not applicable
 - Android: Not applicable
@@ -537,11 +537,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Mobile Android and iOS bars
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-bottom -> https://unified-design-system.orange.com/472794e18/p/6782de-navigation-bars---ios/b/17724b
 - OUDS Hub Changelog: Not applicable
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_ios/navigation_bar_ios.md#toolbar-bottom
 - Design: https://r.orange.fr/r/S-ouds-design-tool-bar-bottom -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=84794-11300
 - Web: Not applicable
 - Android: Not applicable
-- iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudstabbar/
+- iOS: Not available
 - Flutter: Not available
 
 ### iOS Tool bar top
@@ -551,11 +551,11 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - family: Mobile Android and iOS bars
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-ios-tool-bar-top -> https://unified-design-system.orange.com/472794e18/p/6782de-navigation-bars---ios/b/317890
 - OUDS Hub Changelog: Not applicable
-- md documentation: Not available
+- md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/navigation_bar/navigation_bar_ios/navigation_bar_ios.md#toolbar-top
 - Design: https://r.orange.fr/r/S-ouds-design-ios-tool-bar-top -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=84794-11300
 - Web: Not applicable
 - Android: Not applicable
-- iOS: https://r.orange.fr/r/S-ouds-ios-tab-bar -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudstabbar/
+- iOS: Not available
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-top-bar -> https://flutter.unified-design-system.orange.com/components_top_bar_ouds_top_bar/
 
 ### Linear progress indicator
@@ -580,7 +580,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-link -> https://unified-design-system.orange.com/472794e18/p/55c0d1-link
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-link_changelog -> https://unified-design-system.orange.com/472794e18/p/55c0d1-link/b/10d2d3/t/8216a5b5fe
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/link/link/link.md
-- Design: https://r.orange.fr/r/S-ouds-design-link -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Core-Lib--Components?node-id=687-27678
+- Design: Not available
 - Web: https://r.orange.fr/r/S-ouds-web-link -> https://web.unified-design-system.orange.com/docs/components/links/
 - Android: https://r.orange.fr/r/S-ouds-android-link -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-link.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-link -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudslink/
@@ -595,7 +595,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-modal-dialog_changelog -> https://unified-design-system.orange.com/472794e18/p/073220-modal-dialog/b/014390/t/7eb321c69d
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/dialog/modal/modal_dialog/modal_dialog.md
 - Design: https://r.orange.fr/r/S-ouds-design-modal-dialog -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=113485-4585
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-modal-dialog -> https://web.unified-design-system.orange.com/orange/docs/components/modals/#modal-dialog
 - Android: Not available
 - iOS: Not available
 - Flutter: Not available
@@ -623,9 +623,9 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-card-item_changelog -> https://unified-design-system.orange.com/472794e18/p/54899c-navigation-card-item/b/74b40a/t/6ad86f5e87
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/navigation_card_item/navigation_card_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-card-item -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=99894-80478
-- Web: Not available
-- Android: Not available
-- iOS: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-navigation-card-item -> https://web.unified-design-system.orange.com/orange/docs/components/items/#navigation-card-item
+- Android: https://r.orange.fr/r/S-ouds-android-navigation-card-item -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-card-item.html
+- iOS: https://r.orange.fr/r/S-ouds-ios-navigation-card-item -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsactionlistitem/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-navigation-card-item -> https://flutter.unified-design-system.orange.com/components_list_item_ouds_card_item/OudsCardItem-class.html
 
 ### Navigation list item
@@ -637,8 +637,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-navigation-list-item_changelog -> https://unified-design-system.orange.com/472794e18/p/409caa-navigation-list-item/b/21686f/t/6793626ce5
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/navigation_list_item/navigation_list_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-navigation-list-item -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=99146-25292
-- Web: Not available
-- Android: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-navigation-list-item -> https://web.unified-design-system.orange.com/orange/docs/components/items/#navigation-list-item
+- Android: https://r.orange.fr/r/S-ouds-android-navigation-list-item -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-list-item.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-navigation-list-item -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsnavigationlistitem/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-navigation-list-item -> https://flutter.unified-design-system.orange.com/components_list_item_ouds_list_item/OudsListItem-class.html
 
@@ -777,9 +777,9 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-static-card-item_changelog -> https://unified-design-system.orange.com/472794e18/p/965616-static-card-item/b/19ef15/t/353577aa45
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/static_card_item/static_card_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-static-card-item -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=102380-30944
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-static-card-item -> https://web.unified-design-system.orange.com/orange/docs/components/items/#static-card-item
 - Android: Not available
-- iOS: Not available
+- iOS: https://r.orange.fr/r/S-ouds-ios-static-card-item -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsstaticlistitem/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-static-card-item -> https://flutter.unified-design-system.orange.com/components_list_item_ouds_card_item/OudsCardItem-class.html
 
 ### Static list item
@@ -791,7 +791,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-static-list-item_changelog -> https://unified-design-system.orange.com/472794e18/p/27313f-static-list-item/b/2629cf/t/c170500968
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/navigation/list_item/static_list_item/static_list_item.md
 - Design: https://r.orange.fr/r/S-ouds-design-static-list-item -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=99894-80379
-- Web: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-static-list-item -> https://web.unified-design-system.orange.com/orange/docs/components/items/#static-list-item
 - Android: Not available
 - iOS: https://r.orange.fr/r/S-ouds-ios-static-list-item -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsstaticlistitem/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-static-list-item -> https://flutter.unified-design-system.orange.com/components_list_item_ouds_list_item/OudsListItem-class.html
@@ -818,7 +818,7 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-suggestion-chip -> https://unified-design-system.orange.com/472794e18/p/281b3c-suggestion-chip
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-suggestion-chip_changelog -> https://unified-design-system.orange.com/472794e18/p/281b3c-suggestion-chip/b/77758c/t/e1f8e4db7f
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/control/chip/suggestion_chip/suggestion_chip.md
-- Design: https://r.orange.fr/r/S-ouds-design-suggestion-chip -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Core-Lib--Components?node-id=81-2389
+- Design: Not available
 - Web: https://r.orange.fr/r/S-ouds-web-suggestion-chip -> https://web.unified-design-system.orange.com/orange/docs/components/chips/#suggestion-chip
 - Android: https://r.orange.fr/r/S-ouds-android-suggestion-chip -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-suggestion-chip.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-suggestion-chip -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudssuggestionchip/
@@ -900,10 +900,10 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - category: Content display
 - family: Typography
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography -> https://unified-design-system.orange.com/472794e18/p/93be68-typography
-- OUDS Hub Changelog: NA
+- OUDS Hub Changelog: ⚠️ Temporary: https://r.orange.fr/r/S-ouds-doc-typography_changelog -> https://unified-design-system.orange.com/472794e18/p/73c701-components
 - md documentation: Not available
-- Design: https://r.orange.fr/r/S-ouds-design-typography -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=107476-10838
-- Web: Not available
+- Design: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-typography -> https://web.unified-design-system.orange.com/orange/docs/components/typography/#overview
 - Android: https://r.orange.fr/r/S-ouds-android-typography -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.theme/-ouds-typography/index.html?query=data%20class%20OudsTypography
 - iOS: https://r.orange.fr/r/S-ouds-ios-typography -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/foundations/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-typography -> https://flutter.unified-design-system.orange.com/components_typography_ouds_body_text/OudsBodyText-class.html
@@ -916,8 +916,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-body -> https://unified-design-system.orange.com/472794e18/p/0545f0-body
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-body_changelog -> https://unified-design-system.orange.com/472794e18/p/0545f0-body/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/body/body.md
-- Design: https://r.orange.fr/r/S-ouds-design-typography-body -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=107665-31695
-- Web: Not available
+- Design: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-typography-body -> https://web.unified-design-system.orange.com/orange/docs/components/typography/#body
 - Android: https://r.orange.fr/r/S-ouds-android-typography-body -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-body-text.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-typography-body -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsbody/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-body -> https://flutter.unified-design-system.orange.com/components_typography_ouds_body_text/OudsBodyText-class.html
@@ -930,8 +930,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-code -> https://unified-design-system.orange.com/472794e18/p/961c20-code
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-code_changelog -> https://unified-design-system.orange.com/472794e18/p/961c20-code/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/code/code.md
-- Design: https://r.orange.fr/r/S-ouds-design-typography-code -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=107665-32027
-- Web: Not available
+- Design: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-typography-code -> https://web.unified-design-system.orange.com/orange/docs/components/typography/#code
 - Android: https://r.orange.fr/r/S-ouds-android-typography-code -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-code-text.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-typography-code -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudscode/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-code -> https://flutter.unified-design-system.orange.com/components_typography_ouds_code_text/OudsCodeText-class.html
@@ -944,8 +944,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-display -> https://unified-design-system.orange.com/472794e18/p/950a91-display
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-display_changelog -> https://unified-design-system.orange.com/472794e18/p/950a91-display/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/display/display.md
-- Design: https://r.orange.fr/r/S-ouds-design-typography-display -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=107665-28116
-- Web: Not available
+- Design: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-typography-display -> https://web.unified-design-system.orange.com/orange/docs/components/typography/#display
 - Android: https://r.orange.fr/r/S-ouds-android-typography-display -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-display-text.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-typography-display -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsdisplay/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-display -> https://flutter.unified-design-system.orange.com/components_typography_ouds_display_text/OudsDisplayText-class.html
@@ -958,8 +958,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-heading -> https://unified-design-system.orange.com/472794e18/p/33ae42-heading
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-heading_changelog -> https://unified-design-system.orange.com/472794e18/p/33ae42-heading/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/heading/heading.md
-- Design: https://r.orange.fr/r/S-ouds-design-typography-heading -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=107665-31465
-- Web: Not available
+- Design: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-typography-heading -> https://web.unified-design-system.orange.com/orange/docs/components/typography/#heading
 - Android: https://r.orange.fr/r/S-ouds-android-typography-heading -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-heading-text.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-typography-heading -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudsheading/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-heading -> https://flutter.unified-design-system.orange.com/components_typography_ouds_heading_text/OudsHeadingText-class.html
@@ -972,8 +972,8 @@ Index of the short links pointing to Orange Unified Design System (OUDS) resourc
 - OUDS Hub: https://r.orange.fr/r/S-ouds-doc-typography-label -> https://unified-design-system.orange.com/472794e18/p/10161f-label
 - OUDS Hub Changelog: https://r.orange.fr/r/S-ouds-doc-typography-label_changelog -> https://unified-design-system.orange.com/472794e18/p/10161f-label/b/10d2d3/t/5238425012
 - md documentation: https://github.com/Orange-OpenSource/ouds-documentation/blob/main/components/foundation/typography/label/label.md
-- Design: https://r.orange.fr/r/S-ouds-design-typography-label -> https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil/-OUDS-Lib--Components-library?node-id=107665-31861
-- Web: Not available
+- Design: Not available
+- Web: https://r.orange.fr/r/S-ouds-web-typography-label -> https://web.unified-design-system.orange.com/orange/docs/components/typography/#label
 - Android: https://r.orange.fr/r/S-ouds-android-typography-label -> https://android.unified-design-system.orange.com/core/com.orange.ouds.core.component/-ouds-label-text.html
 - iOS: https://r.orange.fr/r/S-ouds-ios-typography-label -> https://ios.unified-design-system.orange.com/documentation/oudscomponents/oudslabel/
 - Flutter: https://r.orange.fr/r/S-ouds-flutter-typography-label -> https://flutter.unified-design-system.orange.com/components_typography_ouds_label_text/OudsLabelText-class.html

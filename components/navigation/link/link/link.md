@@ -1,218 +1,189 @@
+---
+id: link
+category: Navigation
+family: Link
+---
+
+# Link
+
+A link is a UI element that allows to navigate from one location to another, either within the same page or across different pages in the same resource, or to an external resource.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_link.png" alt="hero_image_link" width="864">
 
-A link is an interactive navigation element that directs users to another location within or outside the application.
+## Anatomy
 
----
-
-## Definition
-
-A link is a user interface element that allows navigation from one location to another, either within the same page, across different pages of a site (or application), or to an external resource.
-
-Typically rendered as underlined or styled text, a link communicates its interactive nature visually and semantically. It should always lead to a valid destination and be clearly labeled to describe the target or purpose. Unlike a button, which triggers an action, a link's primary function is navigation.
-
----
-
-## Best for 👈🤔
-
-✅ In-page navigation to specific sections or anchors
-
-✅ External navigation to related resources or documentation
-
-✅ Breadcrumb trails showing hierarchical page structure
-
-✅ Table of contents linking to document sections
-
-✅ Footer navigation to legal pages, privacy policies, or site maps
-
-✅ Inline references within body text requiring contextual navigation
-
-✅ "Back" or "Next" sequential navigation patterns
-
-✅ Search results listings with clickable titles
-
-✅ Related content recommendations and cross-references
-
-✅ Help documentation with contextual links to detailed topics
-
----
-
-## Anatomy 👈🤖
+<img src="images/link@anatomy_img.png" alt="link@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Label text | Communicates the link destination or action to users | N |
-| 2 | Chevron icon (Next/Back) | Indicates directional navigation context | Y |
-| 3 | Custom icon (Text + icon) | Provides additional visual context for the link purpose | Y |
-| 4 | Underline | Signals interactivity, especially for inline text links | Y |
-| 5 | Focus ring | Indicates keyboard focus state for accessibility | N |
-| 6 | Container | Defines the clickable touch/click target area | N |
+| 1 | Label text | Communicates the destination or action associated with the navigation | No |
+| 2 | Chevron (Next/Back) | Indicates navigation direction (forward or backward) and reinforces the navigational intent | Yes |
+| 3 | Icon | Provides additional visual context to support or clarify the navigation action | Yes |
 
----
+## Definition
+
+A link is a UI element that allows to navigate from one location to another, either within the same page or across different pages in the same resource, or to an external resource.
+
+The link’s main function is navigation, and it visually and semantically conveys its interactive nature.
 
 ## Layouts
 
 **`Next`** Used in a standard navigation context. Positioned after the label, it features a "chevron right" icon, which is not customizable.
 
-**`Back`** Used for "backward" navigation. Positioned before the label, it features a "chevron left" icon, which is not customizable.
+**`Previous`** Used for "backward" navigation. Positioned before the label, it features a "chevron left" icon, which is not customizable.
 
 **`Text only`** Can be used for navigation or actions within the same page. Whether placed in a text paragraph or as a standalone component, the interaction states remain consistent.
 
-**`Text + icon`** This option includes functionality to choose any Solaris icon.
+**`Text + icon`** This option includes functionality to choose any Solaris icon.  
 Used for navigation or actions within the same page.
-• When embedded in a text paragraph, its interaction states are the same as the "Text Only" variant.
-• When used as a standalone component (e.g., like the "Next" variant), it adopts the same interaction states as the "Next" and "Back" variants.
-• Typically utilized in business or back-office interfaces, it is rarely standalone (usually part of a group of elements).
+* When embedded in a text paragraph, its interaction states are the same as the "Text Only" variant.
+* When used as a standalone component (like the "Next" variant), it adopts the same interaction states as the "Next" and "Previous" variants.
+* Typically utilized in business or back-office interfaces, it is rarely standalone (usually part of a group of elements).
 
 **`Visited`** Indicates to the user that the target URL has already been opened on the device.
-• Take care, the visited variant is reserved for text links only and even more so in a specific context, such as: search results with suggested redirect links.
+* Take care, the visited variant is reserved for text links only and even more so in a specific context, such as: search results with suggested redirect links.
 
----
-
-## layouts_do_&_dont 👈🤔
-
-✅ **Do:** Use the "Next" layout for forward navigation in sequential flows like wizards or multi-step processes  
-❌ **Don't:** Use chevron layouts for inline text links embedded within paragraphs
-
-✅ **Do:** Reserve the "Visited" layout for contexts where tracking navigation history adds value, such as search results  
-❌ **Don't:** Apply visited styles universally as they can create visual clutter and confusion
-
-✅ **Do:** Match the "Text + icon" layout with icons that reinforce the link's destination or purpose  
-❌ **Don't:** Use decorative icons that don't provide meaningful context about the link destination
-
-✅ **Do:** Use "Text only" layout for inline links within body copy to maintain reading flow  
-❌ **Don't:** Pair inline text links with icons as this disrupts the reading experience
-
-✅ **Do:** Use "Back" layout consistently for returning to previous pages or steps in a flow  
-❌ **Don't:** Mix "Back" and "Next" layouts inconsistently within the same navigation context
-
----
+<img src="images/link@layouts_img.png" alt="link@layouts_img" width="433">
 
 ## Sizes
 
-**`Default`** This is the default size of the component.
+**`Default`** This is the default size of the component.  
 This size is used for the vast majority of applications.
 
-**`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "In-line alert" component, for example).
+**`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "List item" component, for example).
 
----
+<img src="images/link@size_img.png" alt="link@size_img" width="433">
 
-## sizes_do_&_dont 👈🤔
+## Density
 
-✅ **Do:** Match inline link size to the surrounding body text size for visual consistency  
-❌ **Don't:** Use mismatched link sizes that create jarring visual hierarchies within text blocks
+**`Default`** This is the default density of the component, recommended for most interfaces and primary navigation contexts.  
+This density wich is used for the vast majority of applications, provides a comfortable touch target that meets accessibility recommendations.
 
-✅ **Do:** Use the small size variant in dense interfaces like data tables, sidebars, or compact cards  
-❌ **Don't:** Use small links as primary navigation elements where visibility is critical
+**`Compact`** Reduces the vertical footprint while preserving the same interaction and visual behavior.  
+Use in dense layouts where space is limited and a smaller touch target is acceptable (desktop or pointer-based contexts).
 
-✅ **Do:** Ensure small links maintain the minimum touch target size of 44×44px for mobile accessibility  
-❌ **Don't:** Reduce link size below readable thresholds even in dense layouts
-
-✅ **Do:** Use default size for standalone links that serve as primary navigation or calls-to-action  
-❌ **Don't:** Mix multiple link sizes within the same navigation group or list
-
-✅ **Do:** Consider the overall information density when selecting link size  
-❌ **Don't:** Default to small size simply to fit more content on screen
-
----
+<img src="images/link@density_img.png" alt="link@density_img" width="433">
 
 ## Specific component: On colored bg
 
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
-**To invert color**
-• In light mode: For a black finish
-• In dark mode: For a white finish
+&nbsp;
 
----
+### To invert color
+* In light mode: For a black finish
+* In dark mode: For a white finish
 
-## specific_component:_on_colored_bg_do_&_dont 👈🤔
+<img src="images/link@on_colored_bg_img.png" alt="link@on_colored_bg_img" width="433">
 
-✅ **Do:** Use the "On colored bg" variant when placing links on brand colors, images, or gradients  
-❌ **Don't:** Use standard link colors on colored backgrounds without checking contrast ratios
+## Multiline and responsiveness
 
-✅ **Do:** Test link visibility across all theme modes (light/dark) when using inverted color options  
-❌ **Don't:** Assume one color configuration works for both light and dark modes
+### Multiline
+This component allows multi-line text editing. In standalone use, although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
+In its "Next" variant, if the label spans multiple lines, the chevron icon remains aligned at the bottom.  
+In its "Text + icon" and "Previous" variants, if the label spans multiple lines, the icon remains vertically centred.
 
-✅ **Do:** Ensure the inverted link color maintains a minimum 4.5:1 contrast ratio against the background  
-❌ **Don't:** Use colored backgrounds that reduce link visibility below accessibility standards
+&nbsp;
 
-✅ **Do:** Apply the "On colored bg" variant consistently across all link states (hover, focus, pressed)  
-❌ **Don't:** Mix standard and inverted link variants on the same colored surface
+### Max-width vs full-width
+The max-width is applied at the label level and depends on the max-width value assigned to the typographic reference used.  
+Since the navigation indicator's position always remains close to the last letter of the text label (Layout=Next), it is not possible to use the "Link" component in a full-width context. The component cannot adapt to the parent container (or to the screen in a mobile context, for example) and occupy the full available width.  
+In a full-width context, you should prioritize using the "Navigation list item" component (for "Next" or "Previous" layout).
 
-✅ **Do:** Use black finish in light mode and white finish in dark mode for optimal readability  
-❌ **Don't:** Invert colors arbitrarily without considering the overall visual hierarchy
+&nbsp;
 
----
+### User zoom in/out
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+- The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+- Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+- The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+- In order to preserve the minimun interactive area during user zoom out, this component have:
+  - Default size: a min-width and a min-height **of 48px**
+  - Small size: a min-width and a min-height **of 44px**
+- Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+- As the chevron icon is functional, it must follow the same rules as text.
+- In its "Text + icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
 
-## Expand variant (⛔️ Not supported ⛔️)
-
-**Important! Following the design assessment ritual, the development of this subcomponent is on hold. A joint study with the future "Accordion" component will need to be conducted with the aim of unifying these two components.**
-
-Similar to the "Button" component, a complementary "Expand" subcomponent is proposed.
-This subcomponent adopts the layout and interaction states of the "Next" variant (text + chevron) with the following differences:
-• Includes an "Active" state parameter for toggling between folded and unfolded states (boolean).
-• The chevron icon for the folded state is "chevron down".
-• The chevron icon for the unfolded state is "chevron up".
-
----
-
-## expand_variant_do_&_dont 👈🤔
-
-✅ **Do:** Wait for the unified Accordion component study before implementing expand functionality  
-❌ **Don't:** Create custom expand link implementations that may conflict with future Accordion patterns
-
-✅ **Do:** Use existing disclosure patterns like Accordion or Collapsible for expand/collapse functionality  
-❌ **Don't:** Attempt to recreate expand behavior using the current Link component
-
-✅ **Do:** Document any interim expand solutions with clear migration paths to future components  
-❌ **Don't:** Ship expand link variations that lack proper ARIA attributes for accessibility
-
-✅ **Do:** Consider using Button component for toggle actions until Expand variant is supported  
-❌ **Don't:** Blur the distinction between navigation links and stateful toggle controls
-
-✅ **Do:** Provide feedback to the design system team about expand/collapse use cases  
-❌ **Don't:** Assume the current limitation will prevent all disclosure pattern implementations
-
----
+<img src="images/link@multiline_and_responsiveness_img.png" alt="link@multiline_and_responsiveness_img" width="433">
 
 # Specs
 
-## States
-
-**`Enabled`** The status of the link before a user has interacted with it, or other content affects it.
-Depending on the layout, the underline may or may not appear in this state.
-In cases without an underline, the orange chevron icon or a Solaris icon signals interactivity.
-
-**`Hover`** When a user places a pointing device over a link, but has not yet taken action on it.
-The underline appears, with UI codes consistent across all components.
-
-**`Pressed`** An intermediate state that communicates a user has taken action on a link, and that it is in the process of navigating to a destination, triggering logic, or transmitting data.
-The underline appears, with UI codes consistent across all components.
-
-**`Disabled`** Used to indicate a link that cannot be selected.
-Depending on the layout, the underline may or may not appear in this state.
-
-**`Focus`** When a user selects a link via keyboard or voice command, but has not yet taken action on it.
-Mirrors the "Hover" state but includes an additional border.
-
-**`Skeleton`** Improves the perceived loading time by providing a visual cue of where link will appear once fully loaded.
-Uses the "Skeleton" component, variant "Security marge=False".
-
----
-
 ## Layout and spacing
 
-🚧 Content to be added
+<img src="images/link@spec_layout_spacing.png" alt="link@spec_layout_spacing" width="864">
 
----
+## States
+
+**`Enabled`** The status of the link before a user has interacted with it, or other content affects it.  
+Depending on the layout, the underline may or may not appear in this state.  
+In cases without an underline, the orange chevron icon or a Solaris icon signals interactivity.
+
+**`Hover`** When a user places a pointing device over a link, but has not yet taken action on it.  
+The underline appears, with UI codes consistent across all components.
+
+**`Pressed`** An intermediate state that communicates a user has taken action on a link, and that it is in the process of navigating to a destination, triggering logic, or transmitting data.  
+The underline appears, with UI codes consistent across all components.
+
+**`Disabled`** Used to indicate a link that cannot be selected.  
+Depending on the layout, the underline may or may not appear in this state.
+
+**`Focus`** When a user selects a link via keyboard or voice command, but has not yet taken action on it.  
+Mirrors the "Hover" state but includes an additional border.
+
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where link will appear once fully loaded.  
+Uses the "Skeleton" component, variant "Security marge=False".
+
+<img src="images/link@states_img.png" alt="link@states_img" width="433">
+
+# Accessibility
+
+Work is in progress to deliver this content.
+
+# Develop
+
+## OUDS-Web example
+
+[Components/Links › Links 2](https://web.unified-design-system.orange.com/storybook/?path=/story/components-links--links-2)
+
+[Components/Links › Links 5](https://web.unified-design-system.orange.com/storybook/?path=/story/components-links--links-5)
+
+[Components/Links › Links 6](https://web.unified-design-system.orange.com/storybook/?path=/story/components-links--links-6)
+
+## Developer Documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-link](https://r.orange.fr/r/S-ouds-web-link) |
+| OUDS Android | [S-ouds-android-link](https://r.orange.fr/r/S-ouds-android-link) |
+| OUDS iOS | [S-ouds-ios-link](https://r.orange.fr/r/S-ouds-ios-link) |
+| OUDS Flutter | [S-ouds-flutter-link](https://r.orange.fr/r/S-ouds-flutter-link) |
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Oct 10, 2025 | 2.2.0 | The specific component "On colored bg" has been split into two distinct components: • A public version offering traditional management of dark and light modes • A private version (allowing the core team to nest the component with other components) offering customized mode management with four possible configurations: • Always in light mode • Always in dark mode • Light to dark mode • Dark to light mode • Consequently, for the private version, the name of the "Inverted color" variant has been replaced to "Mode control". | Maxime Tonnerre |
-| Jul 21, 2025 | 2.1.0 | • Several design token updates: [Component tokens changelog 1.3.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
-| Apr 19, 2025 | 2.0.0 | • Creation of "On colored bg" variant | Maxime Tonnerre |
-| Dec 3, 2024 | 1.0.0 | • Component creation | Maxime Tonnerre |
+## Availability
+
+Design status: **DEV**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | Not available yet | Done | 2.4.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-link) | Done | 2.3.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-link) | Done | 2.4.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-link) | Done | 2.3.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-link) | Done | 2.4.0 |
+
+## Design changelog
+
+| Date | Number | Notes |
+|------|--------|-------|
+| Jul 20, 2026 | 2.4.0 | This version does not require any token updates.<ul><li>Within the "Link → Next" variant, enabling users to select an internal or external navigation indicator type. The frame named "chevron" has been renamed "Navigation indicator" for the "Link Next" and "Link Previous" variants.<li>Thise update affects the "Link", "Link - On colored bg", and ".Link - On colored bg // Mode control" components.</ul> |
+| Jul 1, 2026 | 2.3.0 | Version 2.6 of the design tokens is required for the development of this update.<ul><li>The height of the "Small" variant has been reduced from 44px to 40px:<ul><li>Added a new token: navigation/link/space/padding-block-small<li>Updated the token: navigation/link/size/min-height-small</ul><li>Addition of a new "Density" property:<ul><li>Existing elements correspond to the "Density: Default" option<li>New "Density: Compact" elements have been added (32px high)</ul><li>For all variants, the minimum width has been increased to 32px:<ul><li>Token: navigation/link/size/min-width</ul><li>Application of new component color tokens to the "Chevron" icons in their states: Hover/Focus/Pressed:<ul><li>navigation-link-color-chevron-hover → navigation-link-color-content-hover<li>navigation-link-color-chevron-focus → navigation-link-color-content-focus<li>navigation-link-color-chevron-pressed → navigation-link-color-content-pressed</ul><li>Updated the variant name from "Back" to "Previous"</ul> |
+| Mar 16, 2026 | - | <ul><li>Documentation writing: Multiline and responsiveness</ul> |
+| Jan 21, 2026 | - | <ul><li>Documentation writing: Dedicated component: On coloured bg</ul> |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
+| Oct 10, 2025 | 2.2.0 | The specific component "On colored bg" has been split into two distinct components: <ul><li>A public version offering traditional management of dark and light modes <li>A private version (allowing the core team to nest the component with other components) offering customized mode management with four possible configurations: <ul><li>Always in light mode <li>Always in dark mode <li>Light to dark mode <li>Dark to light mode</ul> <li>Consequently, for the private version, the name of the "Inverted color" variant has been replaced to "Mode control".</ul> |
+| Jul 21, 2025 | 2.1.0 | <ul><li>Several design token updates: [Component tokens changelog 1.3.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1)</ul> |
+| Apr 19, 2025 | 2.0.0 | <ul><li>Creation of "On colored bg" variant</ul> |
+| Dec 3, 2024 | 1.0.0 | <ul><li>Component creation</ul> |

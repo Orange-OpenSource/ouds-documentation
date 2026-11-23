@@ -1,59 +1,40 @@
+---
+id: interactive-icon
+category: Action
+family: Icon
+---
+
+# Interactive icon
+
+An interactive icon is a UI element that triggers user interactions, such as opening a tooltip or dropdown, and includes defined interactive states.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_interactive_icon.png" alt="hero_image_interactive_icon" width="864">
 
-An interactive icon triggers an action using only an icon — no container — keeping a light visual footprint that integrates naturally with surrounding content.
+## Anatomy
 
----
-
-## Definition
-
-An Interactive Icon is an icon component designed to trigger a user interaction (e.g., open, close, toggle a state). It includes defined interactive states and can be used independently or within other components such as buttons, inputs, or menus.
-
----
-
-## Best for 👈🤔
-
-✅ Inline actions placed directly next to text or form fields
-
-✅ Compact toolbars where an icon-only action saves space
-
-✅ Toggling a state (open/close, show/hide, expand/collapse)
-
-✅ Lightweight actions inside content cards, rows, or list items
-
-✅ Embedding an action within another component (input, menu, chip)
-
-✅ Dense interfaces where a button's touch target would feel heavy
-
-✅ Repeated actions in tables or lists where buttons would add noise
-
-✅ Custom-sized affordances that must scale with the surrounding layout
-
-✅ Secondary actions that shouldn't compete with primary buttons
-
-✅ Icon-driven actions where the meaning is already clear from context
-
----
-
-## Anatomy 👈🤖
+<img src="images/interactive_icon@anatomy_img.png" alt="interactive_icon@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Icon | The glyph communicating the action | N |
-| 2 | Interactive area | Invisible hit target around the icon (min 28px) for pointer/touch | N |
-| 3 | Color treatment | State feedback expressed through icon color transitions (no background) | N |
-| 4 | Focus ring | Visible outline indicating keyboard focus for accessibility | N |
-| 5 | Loading indicator | Spinner shown in place of the icon during the Loading state | Y |
-| 6 | Skeleton placeholder | Neutral shape shown before the icon has fully loaded | Y |
+| 1 | Interactive icon | The interactive container: the pointer and touch target that carries the states and holds the icon | No |
+| 2 | Icon | The glyph communicating the action | No |
+| 3 | Focus inset | The outline drawn inside the component on keyboard focus | No |
+| 4 | Circular loading indicator | The spinner shown in place of the icon during the Loading state | Yes |
+| 5 | Skeleton | The neutral placeholder shown before the icon has loaded | Yes |
 
----
+## Definition
+
+An interactive icon is a UI element that triggers user interactions, such as opening a tooltip or dropdown, and includes defined interactive states.
+
+The interactive icon can be used alone or within other components. It works well in dense layouts with multiple elements.
 
 ## Interactive icon vs Button (icon only)
 
 **Although both components provide an icon-based interaction, they serve different purposes and should be selected according to the desired visual emphasis and layout constraints.**
 
-An Button (icon only) includes a dedicated interactive container that can display a visible background, either in its default state or during state transitions such as hover, pressed, or selected. This additional visual layer reinforces the affordance of the component and makes it suitable for primary or clearly identifiable actions.
+A Button (icon only) includes a dedicated interactive container that can display a visible background, either in its default state or during state transitions such as hover, pressed, or selected. This additional visual layer reinforces the affordance of the component and makes it suitable for primary or clearly identifiable actions.
 
 An Interactive icon, on the other hand, relies solely on the icon itself to communicate interactivity. It does not include any additional background or container. State changes are expressed exclusively through color transitions, resulting in a lighter visual footprint that integrates more naturally within surrounding content.
 
@@ -61,36 +42,21 @@ The two components also differ in their sizing approach. The Button (icon only) 
 
 This flexibility allows an Interactive icon to be positioned closer to text or adjacent elements when a more compact and visually harmonious composition is needed, while still preserving its interactive behavior.
 
----
-
-## interactive_icon_vs_button_icon_only_do_&_dont 👈🤔
-
-✅ **Do:** Use the interactive icon for lightweight, inline actions meant to blend into surrounding content.  
-❌ **Don't:** Use it for primary actions that need a clear tappable container — choose Button (icon only) instead.
-
-✅ **Do:** Choose Button (icon only) when you need a consistent touch target (48px default / 40px small).  
-❌ **Don't:** Stretch the interactive icon into a primary call-to-action with an implied button affordance.
-
-✅ **Do:** Rely on color transitions alone for the interactive icon's state feedback.  
-❌ **Don't:** Add a background or container to an interactive icon — that is what the button variant is for.
-
-✅ **Do:** Size the interactive icon freely so it sits harmoniously next to text or adjacent elements.  
-❌ **Don't:** Place it where a button-sized hit area is expected without preserving the 28px minimum interactive area.
-
-✅ **Do:** Provide an accessible name via `aria-label` since there is no visible text label.  
-❌ **Don't:** Ship an icon-only action with no text alternative for screen readers.
-
----
+<img src="images/interactive_icon@interactive_icon_vs_button_icon_only_img.png" alt="interactive_icon@interactive_icon_vs_button_icon_only_img" width="433">
 
 ## Multiline and responsiveness
 
-**User zoom in/out**
-The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom (the icons follow the same rules as the text).
-In order to preserve the minimun interactive area during user zoom out, this component have a min-width and a min-height **of 28px**.
+### User zoom in/out
+The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom (the icons follow the same rules as the text).  
+In order to preserve the minimum interactive area during user zoom out, this component has a min-width and a min-height **of 28px**.
 
----
+<img src="images/interactive_icon@multiline_and_responsiveness_img.png" alt="interactive_icon@multiline_and_responsiveness_img" width="433">
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/interactive_icon@spec_layout_spacing.png" alt="interactive_icon@spec_layout_spacing" width="864">
 
 ## States
 
@@ -98,29 +64,57 @@ In order to preserve the minimun interactive area during user zoom out, this com
 
 **`Hover`** When a user places a pointing device over an icon, but has not yet taken action on it.
 
-**`Focus`** When a user selects an icon via keyboard or voice command, but has not yet taken action on it.
+**`Focus`** When a user selects an icon via keyboard or voice command, but has not yet taken action on it.  
 Mirrors the "Hover" state but includes an additional border.
 
 **`Pressed`** An intermediate state that communicates a user has taken action on an icon, and that it is in the process of navigating to a destination, triggering logic, or transmitting data.
 
-**`Loading`** An icon is fetching data from another internal or external resource.
+**`Loading`** An icon is fetching data from another internal or external resource.  
 Uses the "Loading indicator" component.
 
 **`Disabled`** Used to indicate an icon that cannot be selected.
 
-**`Skeleton`** Improves the perceived loading time by providing a visual cue of where icon will appear once fully loaded.
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where icon will appear once fully loaded.  
 Uses the "Skeleton" component, variant "Security marge=False".
 
----
+<img src="images/interactive_icon@states_img.png" alt="interactive_icon@states_img" width="433">
 
-## Layout and spacing
+# Accessibility
 
-🚧 Content to be added
+Work is in progress to deliver this content.
 
----
+# Develop
+
+## OUDS-Web example
+
+[Components/Icons › Icons 1](https://web.unified-design-system.orange.com/storybook/?path=/story/components-icons--icons-1)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-interactive-icon](https://r.orange.fr/r/S-ouds-web-interactive-icon) |
+| OUDS Android | Not available yet |
+| OUDS iOS | Not available yet |
+| OUDS Flutter | Not available yet |
 
 # Changelog
 
+## Availability
+
+Design status: **DEV**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Interactive icon component](https://r.orange.fr/r/S-ouds-design-interactive-icon) | Done | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-interactive-icon) | Done | 1.1.0 |
+| OUDS Android - Jetpack Compose | Not available yet | To do | – |
+| OUDS iOS - Swift | Not available yet | To do | – |
+| OUDS Flutter | Not available yet | To do | – |
+
+## Design changelog
+
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
+| Aug 31, 2026 | 1.1.0 | <ul><li>Addition of a maximum width:<ul><li>Token: ouds/size/min-interactive-area-default</ul></ul> | Maxime Tonnerre |
 | Jun 8, 2026 | 1.0.0 | Version 2.6 of the design tokens is required for the development of this update.<ul><li>Component creation</ul> | Maxime Tonnerre |

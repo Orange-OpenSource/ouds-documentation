@@ -1,0 +1,876 @@
+# OUDS component versions
+# For every component: the component version available in Figma (design_version) and on each platform, and its
+# design status. Links are in Ouds-links.md (same ids). Written by .private/skills/ouds-doc-update/scripts/component_versions.py.
+#
+# Version fields: a version number ("1.2.0"), or
+#   not-available   planned on that platform, not released yet
+#   not-applicable  the component does not exist on that platform
+#   draft | wip | review   work in progress on that platform
+# design_status: WIP, EA (early access), DEV, LIVE, DEPRECATED; NA = outside the status timeline.
+# id: unique; the Ouds-links id when the component has an entry there. component: for a variant record (one of
+# several records of one documented component), the Ouds-links id of that component.
+
+version: 1.0.0
+updated: 2026-11-23
+
+components:
+  - name: Action card
+    id: action-card-container
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: AI Assistant (Card container)
+    id: ai-assistant-card-container
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: AI Assistant (Generate text)
+    id: ai-assistant-generate-text
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: AI Assistant (Notice)
+    id: ai-assistant-notice
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Alert banner
+    id: alert-banner
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Alert message
+    id: alert-message
+    design_status: LIVE
+    design_version: "1.2.0"
+    web_version: "1.2.0"
+    android_version: "1.2.0"
+    ios_version: "1.2.0"
+    flutter_version: "1.2.0"
+  - name: Android - Navigation bar (Horizontal items)
+    id: android-navigation-bar-horizontal-items
+    component: android-navigation-bar
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: "1.0.0"
+    ios_version: not-applicable
+    flutter_version: not-available
+  - name: Android - Navigation bar (Vertical items)
+    id: android-navigation-bar-vertical-items
+    component: android-navigation-bar
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: "1.0.0"
+    ios_version: not-applicable
+    flutter_version: "1.0.0"
+  - name: Android - Navigation rail
+    id: android-navigation-rail
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Android - Search bar
+    id: android-search-bar
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-available
+    ios_version: not-applicable
+    flutter_version: not-available
+  - name: Android - Search view full-screen
+    id: android-search-view-full-screen
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-available
+    ios_version: not-applicable
+    flutter_version: not-available
+  - name: Android - Search view modal
+    id: android-search-view-modal
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-available
+    ios_version: not-applicable
+    flutter_version: not-available
+  - name: Android App bar
+    id: android-app-bar
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: "1.0.0"
+    ios_version: not-applicable
+    flutter_version: "1.0.0"
+  - name: Android Status bar
+    id: android-status-bar
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: not-applicable
+    flutter_version: not-applicable
+  - name: Assistant button
+    id: assistant-button
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: "1.1.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Assistant chat input
+    id: assistant-chat-input
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Assistant icon
+    id: assistant-icon
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Badge
+    id: badge
+    design_status: LIVE
+    design_version: "1.2.0"
+    web_version: "1.2.0"
+    android_version: "1.2.0"
+    ios_version: "1.2.0"
+    flutter_version: "1.2.0"
+  - name: Badge count
+    id: badge-count
+    design_status: LIVE
+    design_version: "1.2.0"
+    web_version: "1.2.0"
+    android_version: "1.2.0"
+    ios_version: "1.2.0"
+    flutter_version: "1.2.0"
+  - name: Badge icon
+    id: badge-icon
+    design_status: LIVE
+    design_version: "1.3.0"
+    web_version: "1.3.0"
+    android_version: "1.3.0"
+    ios_version: "1.3.0"
+    flutter_version: "1.3.0"
+  - name: Bottom sheet
+    id: bottom-sheet
+    design_status: NA
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: draft
+    ios_version: not-available
+    flutter_version: draft
+  - name: Breadcrumb
+    id: breadcrumb
+    design_status: DEV
+    design_version: "1.2.0"
+    web_version: "1.2.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Bubble
+    id: bubble
+    design_status: NA
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Bullet list
+    id: bullet-list
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: "1.1.0"
+    android_version: "1.1.0"
+    ios_version: "1.1.0"
+    flutter_version: not-available
+  - name: Button
+    id: button
+    design_status: LIVE
+    design_version: "3.4.0"
+    web_version: "3.4.0"
+    android_version: "3.4.0"
+    ios_version: "3.4.0"
+    flutter_version: "3.4.0"
+  - name: Button (FAB)
+    id: button-fab
+    design_status: NA
+    design_version: not-available
+    web_version: not-available
+    android_version: draft
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Button (Group)
+    id: button-group
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Card
+    id: content-card-container
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Categorical tag
+    id: categorical-tag
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: not-available
+    ios_version: "1.0.0"
+    flutter_version: not-available
+  - name: Chat input
+    id: chat-input
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Checkbox
+    id: checkbox
+    design_status: LIVE
+    design_version: "2.4.0"
+    web_version: "2.4.0"
+    android_version: "2.4.0"
+    ios_version: "2.4.0"
+    flutter_version: "2.4.0"
+  - name: Checkbox Indeterminate
+    id: checkbox-indeterminate
+    design_status: LIVE
+    design_version: "2.4.0"
+    web_version: "2.4.0"
+    android_version: "2.4.0"
+    ios_version: "2.4.0"
+    flutter_version: "2.4.0"
+  - name: Checkbox item
+    id: checkbox-item
+    design_status: LIVE
+    design_version: "2.4.0"
+    web_version: "2.4.0"
+    android_version: "2.4.0"
+    ios_version: "2.4.0"
+    flutter_version: "2.4.0"
+  - name: Checkbox Item Indeterminate
+    id: checkbox-item-indeterminate
+    design_status: LIVE
+    design_version: "2.4.0"
+    web_version: "2.4.0"
+    android_version: "2.4.0"
+    ios_version: "2.4.0"
+    flutter_version: "2.4.0"
+  - name: Circular progress indicator
+    id: circular-progress-indicator
+    design_status: DEV
+    design_version: "1.2.0"
+    web_version: not-available
+    android_version: "1.2.0"
+    ios_version: "1.2.0"
+    flutter_version: "1.2.0"
+  - name: Color picker
+    id: color-picker
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Divider
+    id: divider
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: "1.0.0"
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"
+  - name: Dropdown
+    id: dropdown
+    design_status: NA
+    design_version: not-available
+    web_version: draft
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Expand button
+    id: expand-button
+    design_status: DEV
+    design_version: "3.3.0"
+    web_version: "3.3.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Expand link
+    id: expand-link
+    design_status: DEV
+    design_version: "2.5.0"
+    web_version: "2.5.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Filter chip
+    id: filter-chip
+    design_status: LIVE
+    design_version: "1.5.0"
+    web_version: "1.5.0"
+    android_version: "1.5.0"
+    ios_version: "1.5.0"
+    flutter_version: "1.5.0"
+  - name: Flag
+    id: flag
+    design_status: NA
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Footer
+    id: footer
+    design_status: NA
+    design_version: "0.1.0"
+    web_version: draft
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Fullscreen dialog
+    id: fullscreen-dialog
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Header
+    id: header
+    design_status: NA
+    design_version: "0.1.0"
+    web_version: draft
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Inline alert
+    id: inline-alert
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: "1.0.0"
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"
+  - name: Input tag
+    id: input-tag
+    design_status: LIVE
+    design_version: "1.2.0"
+    web_version: "1.2.0"
+    android_version: "1.2.0"
+    ios_version: "1.2.0"
+    flutter_version: "1.2.0"
+  - name: Interactive icon
+    id: interactive-icon
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: "1.1.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: iOS 18 - Navigation bar - Navigation Bar - iPad (Regular Size Class)
+    id: ios-18-navigation-bar-navigation-bar-ipad-regular-size-class
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.1.0"
+    flutter_version: "1.0.0"
+  - name: iOS 18 - Navigation bar - Navigation Bar - iPad - Multitasking (Compact Size Class)
+    id: ios-18-navigation-bar-navigation-bar-ipad-multitasking-compact-size-class
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"
+  - name: iOS 18 - Navigation bar - Navigation Bar - iPhone (Compact Size Class)
+    id: ios-18-navigation-bar-navigation-bar-iphone-compact-size-class
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.1.0"
+    flutter_version: "1.0.0"
+  - name: iOS 18 - System bar - Home Indicator
+    id: ios-18-system-bar-home-indicator
+    component: home-indicator
+    design_status: NA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: not-applicable
+    flutter_version: not-applicable
+  - name: iOS 18 - System bar - Status Bar - iPad
+    id: ios-18-system-bar-status-bar-ipad
+    design_status: NA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: not-applicable
+    flutter_version: not-applicable
+  - name: iOS 18 - System bar - Status Bar - iPhone
+    id: ios-18-system-bar-status-bar-iphone
+    design_status: NA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: not-applicable
+    flutter_version: not-applicable
+  - name: iOS 18 - Tab bar - Tab Bar - iPad
+    id: ios-18-tab-bar-tab-bar-ipad
+    component: ios-tab-bar
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.0.0"
+    flutter_version: not-applicable
+  - name: iOS 18 - Tab bar - Tab Bar - iPhone (Compact Size Class)
+    id: ios-18-tab-bar-tab-bar-iphone-compact-size-class
+    component: ios-tab-bar
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.0.0"
+    flutter_version: not-applicable
+  - name: iOS 18 - Tab bar - Tab Bar - iPhone (Regular Size Class)
+    id: ios-18-tab-bar-tab-bar-iphone-regular-size-class
+    component: ios-tab-bar
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"
+  - name: iOS 26 - Navigation bar - Toolbar - Top - iPad
+    id: ios-26-navigation-bar-toolbar-top-ipad
+    component: ios-tool-bar-top
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.1.0"
+    flutter_version: "1.0.0"
+  - name: iOS 26 - Navigation bar - Toolbar - Top - iPhone
+    id: ios-26-navigation-bar-toolbar-top-iphone
+    component: ios-tool-bar-top
+    design_status: LIVE
+    design_version: "1.1.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.1.0"
+    flutter_version: not-applicable
+  - name: iOS 26 - Navigation bar - Toolbar - Top - Sheet
+    id: ios-26-navigation-bar-toolbar-top-sheet
+    component: ios-tool-bar-top
+    design_status: LIVE
+    design_version: "1.1.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.1.0"
+    flutter_version: not-applicable
+  - name: iOS 26 - System bar - Home Indicator
+    id: ios-26-system-bar-home-indicator
+    component: home-indicator
+    design_status: NA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: not-applicable
+    flutter_version: not-applicable
+  - name: iOS 26 - System bar - Status bar - iPhone
+    id: ios-26-system-bar-status-bar-iphone
+    design_status: NA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: not-applicable
+    flutter_version: not-applicable
+  - name: iOS 26 - System bar - Status bar and Menu bar- iPad
+    id: ios-26-system-bar-status-bar-and-menu-bar-ipad
+    design_status: NA
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: not-applicable
+    flutter_version: not-applicable
+  - name: iOS 26 - Tab bar - /Tab Bar - iPhone
+    id: ios-26-tab-bar-tab-bar-iphone
+    component: ios-tab-bar
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.0.0"
+    flutter_version: not-applicable
+  - name: iOS 26 - Tab bar - Tab Bar - iPad
+    id: ios-26-tab-bar-tab-bar-ipad
+    component: ios-tab-bar
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: not-applicable
+    android_version: not-applicable
+    ios_version: "1.0.0"
+    flutter_version: not-applicable
+  - name: Legal notice
+    id: legal-notice
+    design_status: NA
+    design_version: review
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Linear progress indicator
+    id: linear-progress-indicator
+    design_status: DEV
+    design_version: "1.1.0"
+    web_version: not-available
+    android_version: "1.1.0"
+    ios_version: "1.1.0"
+    flutter_version: "1.1.0"
+  - name: Link
+    id: link
+    design_status: DEV
+    design_version: "2.4.0"
+    web_version: "2.3.0"
+    android_version: "2.4.0"
+    ios_version: "2.3.0"
+    flutter_version: "2.4.0"
+  - name: Media placeholder
+    id: media-placeholder
+    design_status: NA
+    design_version: review
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Modal (Backdrop)
+    id: modal-backdrop
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Modal dialog
+    id: modal-dialog
+    design_status: DEV
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Navigation button
+    id: navigation-button
+    design_status: DEV
+    design_version: "3.4.0"
+    web_version: "3.4.0"
+    android_version: "3.4.0"
+    ios_version: not-available
+    flutter_version: "3.4.0"
+  - name: Navigation card item
+    id: navigation-card-item
+    design_status: DEV
+    design_version: "1.3.0"
+    web_version: "1.2.0"
+    android_version: "0.1.0"
+    ios_version: not-available
+    flutter_version: "0.3.0"
+  - name: Navigation list item
+    id: navigation-list-item
+    design_status: DEV
+    design_version: "1.3.0"
+    web_version: "1.2.0"
+    android_version: "0.1.0"
+    ios_version: "1.2.0"
+    flutter_version: "0.3.0"
+  - name: Page indicator
+    id: page-indicator
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Pagination bar
+    id: pagination-bar
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Password input
+    id: password-input
+    design_status: DEV
+    design_version: "1.3.1"
+    web_version: "1.3.0"
+    android_version: "1.3.1"
+    ios_version: "1.3.1"
+    flutter_version: "1.3.1"
+  - name: Phone number input
+    id: phone-number-input
+    design_status: DEV
+    design_version: "1.3.1"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: "1.3.1"
+  - name: PIN code input
+    id: pin-code-input
+    design_status: DEV
+    design_version: "1.4.0"
+    web_version: not-available
+    android_version: "1.3.0"
+    ios_version: "1.4.0"
+    flutter_version: "1.4.0"
+  - name: Price Tag
+    id: price-tag
+    design_status: NA
+    design_version: review
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Quantity input
+    id: quantity-input
+    design_status: EA
+    design_version: "1.3.1"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Radio button
+    id: radio-button
+    design_status: LIVE
+    design_version: "1.4.0"
+    web_version: "1.4.0"
+    android_version: "1.4.0"
+    ios_version: "1.4.0"
+    flutter_version: "1.4.0"
+  - name: Radio button item
+    id: radio-button-item
+    design_status: LIVE
+    design_version: "1.4.0"
+    web_version: "1.4.0"
+    android_version: "1.4.0"
+    ios_version: "1.4.0"
+    flutter_version: "1.4.0"
+  - name: Select input
+    id: select-input
+    design_status: DEV
+    design_version: "1.3.1"
+    web_version: "1.2.0"
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Sheet (Top)
+    id: sheet-top
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Side sheet
+    id: side-sheet
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Skeleton
+    id: skeleton
+    design_status: LIVE
+    design_version: "1.1.0"
+    web_version: "1.0.0"
+    android_version: "1.1.0"
+    ios_version: "1.1.0"
+    flutter_version: "1.0.0"
+  - name: Star rating
+    id: star-rating
+    design_status: WIP
+    design_version: wip
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Static card item
+    id: static-card-item
+    design_status: DEV
+    design_version: "1.3.0"
+    web_version: "1.2.0"
+    android_version: "0.1.0"
+    ios_version: not-available
+    flutter_version: "0.3.0"
+  - name: Static list item
+    id: static-list-item
+    design_status: DEV
+    design_version: "1.3.0"
+    web_version: "1.2.0"
+    android_version: "0.1.0"
+    ios_version: "1.2.0"
+    flutter_version: "0.3.0"
+  - name: Status icon
+    id: status-icon
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Suggestion chip
+    id: suggestion-chip
+    design_status: LIVE
+    design_version: "1.5.0"
+    web_version: "1.5.0"
+    android_version: "1.5.0"
+    ios_version: "1.5.0"
+    flutter_version: "1.5.0"
+  - name: Switch
+    id: switch
+    design_status: LIVE
+    design_version: "1.5.0"
+    web_version: "1.5.0"
+    android_version: "1.5.0"
+    ios_version: "1.5.0"
+    flutter_version: "1.5.0"
+  - name: Switch item
+    id: switch-item
+    design_status: LIVE
+    design_version: "1.5.0"
+    web_version: "1.5.0"
+    android_version: "1.5.0"
+    ios_version: "1.5.0"
+    flutter_version: "1.5.0"
+  - name: Table
+    id: table
+    design_status: NA
+    design_version: not-available
+    web_version: draft
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Tabs
+    id: tabs
+    design_status: WIP
+    design_version: "0.1.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Tag
+    id: tag
+    design_status: LIVE
+    design_version: "1.5.0"
+    web_version: "1.5.0"
+    android_version: "1.5.0"
+    ios_version: "1.5.0"
+    flutter_version: "1.5.0"
+  - name: Text area
+    id: text-area
+    design_status: DEV
+    design_version: "1.2.1"
+    web_version: "1.2.0"
+    android_version: "1.2.1"
+    ios_version: "1.2.1"
+    flutter_version: not-available
+  - name: Text input
+    id: text-input
+    design_status: DEV
+    design_version: "1.4.1"
+    web_version: "1.4.0"
+    android_version: "1.4.1"
+    ios_version: "1.4.1"
+    flutter_version: "1.4.1"
+  - name: Toast
+    id: toast
+    design_status: EA
+    design_version: "1.0.0"
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Tooltip
+    id: tooltip
+    design_status: NA
+    design_version: review
+    web_version: not-available
+    android_version: not-available
+    ios_version: not-available
+    flutter_version: not-available
+  - name: Typography body
+    id: typography-body
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: "1.0.0"
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"
+  - name: Typography code
+    id: typography-code
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: "1.0.0"
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"
+  - name: Typography display
+    id: typography-display
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: "1.0.0"
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"
+  - name: Typography heading
+    id: typography-heading
+    design_status: LIVE
+    design_version: "1.1.0"
+    web_version: "1.1.0"
+    android_version: "1.1.0"
+    ios_version: "1.1.0"
+    flutter_version: "1.1.0"
+  - name: Typography label
+    id: typography-label
+    design_status: LIVE
+    design_version: "1.0.0"
+    web_version: "1.0.0"
+    android_version: "1.0.0"
+    ios_version: "1.0.0"
+    flutter_version: "1.0.0"

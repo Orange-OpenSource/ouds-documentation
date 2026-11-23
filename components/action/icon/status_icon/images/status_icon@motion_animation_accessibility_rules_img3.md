@@ -1,0 +1,1 @@
+![status_icon@motion_animation_accessibility_rules_img3](./status_icon@motion_animation_accessibility_rules_img3.webp)

@@ -1,61 +1,47 @@
+---
+id: radio-button
+category: Control
+family: None
+---
+
+# Radio button
+
+A radio button is a UI element that allows users to select a single option from a set of mutually exclusive choices.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_radio_button_item.png" alt="hero_image_radio_button_item" width="864">
 
-A radio button enables users to select exactly one option from a predefined set of mutually exclusive choices.
+## Anatomy
 
----
-
-## Definition
-
-A radio button is a user interface element that allows users to select a single option from a set of mutually exclusive choices, typically displayed as a circular input with a label that becomes filled when selected.
-
-This component family is available in two variants:
-• **Radio-button:** In this template, the component does not display any text or icon. This layout provides greater flexibility when creating other components that require a radio-button to be displayed.
-• **Radio-button item:** In this template, the component displays multiple additional text elements and icon assets.
-
----
-
-## Best for 👈🤔
-
-✅ Single selection from a small set of 2–7 mutually exclusive options
-
-✅ Settings or preferences where only one choice applies at a time
-
-✅ Forms requiring explicit user commitment to one option
-
-✅ Yes/No or binary choice questions on a page
-
-✅ Filter controls where one category must be active
-
-✅ Survey questions with predefined answer choices
-
-✅ Configuration panels with exclusive mode selections
-
-✅ Checkout flows for shipping or payment method selection
-
-✅ User onboarding where one path must be chosen
-
-✅ Legal or compliance forms requiring explicit single selection
-
----
-
-## Anatomy 👈🤖
+<img src="images/radio_button@anatomy_img.png" alt="radio_button@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Radio indicator | Circular input showing selected/unselected state via fill or empty circle | N |
-| 2 | Label | Primary text describing the selectable option | N |
-| 3 | Extra label | Strong accompanying text providing additional emphasis for the label | Y |
-| 4 | Description | Supporting text providing context or clarification for the option | Y |
-| 5 | Icon | Visual element to enhance recognition or categorization of the option | Y |
-| 6 | Error message | Text displayed when validation fails, explaining the error condition | Y |
-| 7 | Divider | Horizontal line separating radio button items in a list | Y |
-| 8 | Container (combined) | Interactive area encompassing indicator and label for click/tap targets; includes outlined variant for emphasis | N |
+| 1 | Radio button indicator | Indicates the selection state of a radio option (selected or unselected). | No |
+| 2 | Label | Primary text that describes the selectable option. | No |
+| 3 | Extra label | Secondary label used to highlight critical or contextual information. | Yes |
+| 4 | Description | Provides additional guidance or explanatory text for the option. | Yes |
+| 5 | Icon | Solaris icon representing the option. | Yes |
+| 6 | Divider | Visual separator used when multiple radio options are displayed in a list. | Yes |
+| 7 | Error text | Displays validation or error messaging related to the radio option. | Yes |
+| 8 | Error icon | Visual indicator that reinforces the error state of the option. | No |
+| 9 | Outline | Outline indicating. | Yes |
 
----
+## Definition
+
+A **radio button** is a UI element that allows users to select a single option from a set of mutually exclusive choices.
+
+The radio button, that lacks an additional icon asset or text label, provides greater flexibility when designing other components that incorporate a radio button.
+
+A **radio button item** is a UI element shaped like a row, that allows users to select a single option from a set of mutually exclusive choices.
+
+Unlike the radio button, the radio button item accommodates a broader range of contexts by enabling the toggling of visibility of additional text labels and icon assets.
 
 ## Selected
+
+|  |
+|
 
 Typically, a radio button has two main states: Selected and Unselected.
 
@@ -63,26 +49,7 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 **`True`** The radio button is selected. Indicates the user's current active choice within the group.
 
----
-
-## selected_do_&_dont 👈🤔
-
-✅ **Do:** Pre-select a default option when a recommended or most common choice exists to reduce user effort  
-❌ **Don't:** Pre-select an option that could commit users to unwanted actions like subscriptions or agreements
-
-✅ **Do:** Ensure the selected state is visually distinct with a filled indicator and sufficient color contrast  
-❌ **Don't:** Use subtle visual differences that make it difficult to distinguish selected from unselected states
-
-✅ **Do:** Allow users to change their selection freely before form submission  
-❌ **Don't:** Lock selections or require page refresh to change a radio button choice
-
-✅ **Do:** Provide a "None" or "Not applicable" option if no selection should be a valid user choice  
-❌ **Don't:** Force users to select an option when the question may not apply to them
-
-✅ **Do:** Automatically deselect the previous option when a new one is selected within the group  
-❌ **Don't:** Allow multiple radio buttons in the same group to be selected simultaneously
-
----
+<img src="images/radio_button@selected_img.png" alt="radio_button@selected_img" width="433">
 
 ## Error
 
@@ -90,26 +57,11 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 **`True`** The field is selected but still invalid. Example: the user selects "Subscribe to newsletter" but doesn't provide an email — logical condition not met.
 
----
+<img src="images/radio_button@error_img.png" alt="radio_button@error_img" width="433">
 
-## error_do_&_dont 👈🤔
+**Do:** Write specific, actionable error messages that tell users exactly what went wrong and how to fix it
 
-✅ **Do:** Display error messages directly below the radio group with clear, actionable language like "Select an option"  
-❌ **Don't:** Use generic error messages like "Invalid input" that don't explain what action is required
-
-✅ **Do:** Use a distinct error color (typically red) for the indicator border and error message text  
-❌ **Don't:** Rely solely on color to indicate errors—include text and icons for accessibility
-
-✅ **Do:** Associate error messages programmatically with the radio group using `aria-describedby`  
-❌ **Don't:** Place error messages far from the radio group where users may miss the connection
-
-✅ **Do:** Clear error states immediately when the user makes a valid selection  
-❌ **Don't:** Keep error indicators visible after the user has corrected the issue
-
-✅ **Do:** Validate on blur or form submission rather than on every interaction to avoid premature errors  
-❌ **Don't:** Show error states before the user has had a chance to interact with the radio group
-
----
+**Don't:** Use generic error messages like "Invalid input" or "Error"—they don't help users understand the problem
 
 ## Outlined
 
@@ -117,26 +69,7 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 **`True`** Outlined radio buttons are designed to stand out and draw the user's attention. They are often used to emphasize significant or impactful options that require careful consideration in the interface.
 
----
-
-## outlined_do_&_dont 👈🤔
-
-✅ **Do:** Use outlined variants sparingly for high-importance decisions like pricing plans or subscription tiers  
-❌ **Don't:** Apply outlined styling to every radio group, which diminishes its emphasis effect
-
-✅ **Do:** Maintain consistent padding and border styling across all outlined radio buttons in a group  
-❌ **Don't:** Mix outlined and non-outlined radio buttons within the same selection group
-
-✅ **Do:** Ensure outlined borders have sufficient contrast against the background (minimum 3:1 ratio)  
-❌ **Don't:** Use light gray borders on white backgrounds that fail accessibility contrast requirements
-
-✅ **Do:** Increase touch target size when using outlined variants to accommodate the larger visual footprint  
-❌ **Don't:** Reduce clickable areas to match only the visible border boundaries
-
-✅ **Do:** Use outlined variants when radio options contain rich content like descriptions or icons  
-❌ **Don't:** Use outlined variants for simple binary choices where standard radio buttons suffice
-
----
+<img src="images/radio_button@outlined_img.png" alt="radio_button@outlined_img" width="433">
 
 ## Reverse
 
@@ -144,26 +77,7 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 **`True`** As its name suggests, this layout is the reversed mirror of the "Default" template. From left to right, the order of the elements is as follows: icon / text / radio button. This variant is necessary for RTL mode and certain mobile use cases.
 
----
-
-## reverse_do_&_dont 👈🤔
-
-✅ **Do:** Use reverse layout for right-to-left (RTL) languages like Arabic and Hebrew  
-❌ **Don't:** Use reverse layout arbitrarily without considering reading direction conventions
-
-✅ **Do:** Apply reverse layout consistently across all radio buttons when supporting RTL interfaces  
-❌ **Don't:** Mix LTR and RTL radio button layouts on the same page or within the same form
-
-✅ **Do:** Position the radio indicator on the trailing edge (right side for LTR, left for RTL) for mobile list interfaces  
-❌ **Don't:** Place indicators in inconsistent positions across different screen sizes
-
-✅ **Do:** Ensure tab order and focus management work correctly regardless of visual layout direction  
-❌ **Don't:** Assume visual order equals DOM order—verify keyboard navigation flows logically
-
-✅ **Do:** Test reverse layouts with screen readers to confirm proper announcement order  
-❌ **Don't:** Rely solely on visual testing when implementing layout variants
-
----
+<img src="images/radio_button@reverse_img.png" alt="radio_button@reverse_img" width="433">
 
 ## Other boolean options
 
@@ -177,28 +91,100 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 **`Error message`** In the context where the component is in its "Error" true option, the error message can be displayed.
 
----
+<img src="images/radio_button@other_boolean_options_img.png" alt="radio_button@other_boolean_options_img" width="433">
 
-## other_boolean_options_do_&_dont 👈🤔
+## Mandatory field indication
 
-✅ **Do:** Use descriptions to provide helpful context that aids decision-making between options  
-❌ **Don't:** Add descriptions to every radio button when options are already self-explanatory
+**If all fields are mandatory (several fields present):**
+1. Display the message "All fields are mandatory." at the top.
+2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
 
-✅ **Do:** Use icons that clearly represent the option and are recognizable at small sizes  
-❌ **Don't:** Use decorative icons that don't add meaningful information to the selection
+**If not all fields are mandatory (and there are several fields present):**
+1. Display the message "All fields marked with an * are mandatory." at the top.
+2. Use an asterisk (*) at the end of each mandatory field label.  
+   **⚠️ Important:**
+   * In Figma, the asterisk must be entered manually by designers in the label text. UI rendering of the asterisk: **font-weight-bold + color-content-negative (red)**.
+   * Technically, for web/iOS/Android, the asterisk is positioned in a dedicated container after the label text. Spacing between label and asterisk: 4px
+3. Either the technology allows a 'required' attribute to be managed on the fields (usually in Web), in which case any asterisks must be hidden from users using assistive technologies, Or the technology does not allow the mandatory nature of the field to be indicated. In this case, the asterisk must be vocalised as well as a 'mandatory' mention. Please refer to the technical documentations for more information.
+4. Depending on the use case, an 'optional' label can be added to non-mandatory fields.
 
-✅ **Do:** Use dividers to create visual separation in long lists of radio button items  
-❌ **Don't:** Add dividers to groups with only 2–3 options where separation isn't needed
+**Indication of mandatory status for a group of control items:**  
+When a group of control items (Radio Button, Checkbox, or Switch item) is mandatory, the indication of requirement must be carried only by the group title.  
+The asterisk (*) must be placed at the end of the group title and must not be repeated in the labels of the individual items.  
+This rule avoids visual redundancy, clarifies that the requirement applies to the group rather than each option, and improves information hierarchy and form readability.
 
-✅ **Do:** Keep extra labels concise and complementary to the main label text  
-❌ **Don't:** Duplicate information between the main label and extra label
+**If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
-✅ **Do:** Show error messages only when validation has failed and hide them upon correction  
-❌ **Don't:** Display placeholder error message space when no error exists
+<img src="images/radio_button@mandatory_field_indication_img.png" alt="radio_button@mandatory_field_indication_img" width="433">
 
----
+<img src="images/radio_button@mandatory_field_indication_img2.png" alt="radio_button@mandatory_field_indication_img2" width="433">
+
+## Multiline and responsiveness
+
+### Multiline
+This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed 2 lines of text. In its "Text + icon" variant, if the label spans multiple lines, the label remains centred.
+
+&nbsp;
+
+### Max-width vs full-width
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 480px.**  
+For mobile or tablet use (or if the component is positioned inside a specific container), it is possible to set this component to use the full available width (of the screen or the container).  
+Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+
+&nbsp;
+
+### User zoom in/out
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+* The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+* Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+* The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+* In order to preserve the minimun interactive area during user zoom out, this component have a min-width **of 160px** and a min-height **of 52px**.
+* Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+* As the control item and error icon are functional, they must follow the same rules as text.
+* In order to preserve the same display rendering as the component's error state, even if the icons is purely decorative, the icons follow the same rules as the text.
+
+<img src="images/radio_button@multiline_and_responsiveness_img.png" alt="radio_button@multiline_and_responsiveness_img" width="433">
+
+## Technical layout adjustments
+
+Even though, in Figma, the component structure is unique (for easier use by designers), technically the versions differ in order to respect best practices for each environment (paradigm shift between the web "Container" vs. the native "Edge-to-Edge"):
+
+&nbsp;
+
+### Web (mobile, tablet, and desktop)
+The component is contained within the browser window and has "safety margins." It therefore cannot appear in the area corresponding to the margin grid.  
+The component has internal padding-inline, and its display position must be between several columns (which varies depending on the number of containers used on a horizontal row).
+
+&nbsp;
+
+### Native app (Android, iOS, Flutter)
+The display position of the component corresponds to the entire screen display area (edge to edge).  
+Its internal padding-inline is therefore replaced by the grid-margin tokens.
+
+<img src="images/radio_button@technical_layout_adjustments_img.png" alt="radio_button@technical_layout_adjustments_img" width="433">
+
+For a card-type display (Outlined=True), no adaptation is made; the component structure remains the same between web and native.
+
+<img src="images/radio_button@technical_layout_adjustments_img2.png" alt="radio_button@technical_layout_adjustments_img2" width="433">
+
+## Rich text
+
+### Strong text
+* Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong).
+* No other text styles or custom font weights should be used.
+
+&nbsp;
+
+### ⚠️ Underline text
+* Underlined text must not be applied manually (e.g. in error message), as it is commonly associated with hyperlinks and may mislead users.
+
+<img src="images/radio_button@rich_text_img.png" alt="radio_button@rich_text_img" width="433">
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/radio_button@specs_layout_spacing_img.png" alt="radio_button@specs_layout_spacing_img" width="864">
 
 ## States
 
@@ -216,32 +202,52 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 **`Skeleton`** Improves the perceived loading time by providing a visual cue of where radio button will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=True".
 
----
+<img src="images/radio_button@state_img.png" alt="radio_button@state_img" width="433">
 
-## Layout and spacing
+# Accessibility
 
-🚧 Content to be added
+Work is in progress to deliver this content.
 
----
+# Develop
+
+## OUDS Web
+
+[Components/RadioButtons › Radio Buttons 0](https://web.unified-design-system.orange.com/storybook/?path=/story/components-radiobuttons--radio-buttons-0)
+
+[Components/RadioButtons › Radio Buttons 15](https://web.unified-design-system.orange.com/storybook/?path=/story/components-radiobuttons--radio-buttons-15)
+
+## Developer Documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-radio-button](https://r.orange.fr/r/S-ouds-web-radio-button) |
+| OUDS Android | [S-ouds-android-radio-button](https://r.orange.fr/r/S-ouds-android-radio-button) |
+| OUDS iOS | [S-ouds-ios-radio-button](https://r.orange.fr/r/S-ouds-ios-radio-button) |
+| OUDS Flutter | [S-ouds-flutter-radio-button](https://r.orange.fr/r/S-ouds-flutter-radio-button) |
 
 # Changelog
 
+## Availability
+
+Design status: **LIVE**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Radio button component](https://r.orange.fr/r/S-ouds-design-radio-button) | Done | 1.4.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-radio-button) | Done | 1.4.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-radio-button) | Done | 1.4.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-radio-button) | Done | 1.4.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-radio-button) | Done | 1.4.0 |
+
+## Design changelog
+
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
-| Nov 7, 2025 | 1.4.0 | • A new Read-only variant has been added for the .Radiobutton.Indicator component, supporting two boolean variants — Selected = True/False. This variant introduces two new color tokens: | Anton Astafev |
-| | | ‎ ‎ ‎ • ouds/color/action/read-only-primary — used for the indicator (shape) | |
-| | | ‎ ‎ ‎ • ouds/color/action/read-only-secondary — used for the stroke | |
-| | | • The new Read-only variant has been integrated into the Read-only variant of both the Radio button and Radio button Item components. | |
-| | | • We replaced the token in Error text container ouds-control-text-input-space-padding-block-top-helper-text with ouds-control-control-item-space-padding-block-top-error-text. | |
-| | | • "Helper text" is now called "Description". | |
-| | | • "Additional label" is now called "Extra label". | |
-| Oct 20, 2025 | 1.3.0 | • The Radio button item has been split into two boolean variants: → Error = True/False → Selected = True/False | Anton Astafev |
-| | | • The divider color is now functional in the Error state — it changes dynamically according to the component status. | |
-| | | • The icon in the Error state is fixed to .Component/alert/important; its color changes together with the divider depending on the component's status. → The new token $control-control-item-size-error-icon is used for the icon size. → The new token $control-text-input-space-padding-inline-error-icon is used for the error icon container. 🆕 Both tokens are now available in the latest release of the Token Library 2.1.0. | |
-| | | • Added Error text (from the Input component) — it follows the same padding-inline as control-item (16px) and uses → $control-text-input-space-padding-block-top-helper-text for block padding. By default, the Error text adapts automatically to match the component status: → Selected → displays the corresponding default error message for the selected state. → Unselected → displays the corresponding default error message for the unselected state. | |
-| | | • The "Read only" state has been updated to replace control items (in their disabled states) — both selected and unselected — with the Tag → Text only → Muted component: → Positive with label "Selected" if selected = True → Negative with label "Unselected" if selected = False | |
-| | | • Harmonisation of spacing across the control-item family We've unified sizing tokens across the entire control-item family (previously they were defined per component) to align spacing with other control items such as Text input. Replacement note: instead of the single token padding inset 12, use the following tokens: → ouds/_control/control-item/space/padding-inline → 16 → ouds/_control/control-item/space/padding-block → 12 Additionally, for the control-item family: → ouds/_control/control-item/space/column-gap → 12 → ouds/_control/control-item/size/max-width → 480 | |
-| Sep 19, 2025 | 1.2.0 | • In the initial settings, the 'Divider' variant is now hidden. | Maxime Tonnerre |
-| Jul 21, 2025 | 1.1.0 | • The name of the family to which this component belongs is changing: Input → Control. As a result, the token naming convention is being updated. | Maxime Tonnerre |
-| | | • Following the renaming of the 'Control' category, the name of the token sub-family 'control-item' is now becoming 'item'." | |
-| Jan 22, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+| Apr 8, 2026 | - | <ul><li>Documentation writing: Rich text</ul> | Anton Astafev |
+| Mar 16, 2026 | - | <ul><li>Documentation writing:<ul><li>Mandatory field indication<li>Multiline and responsiveness<li>Technical layout adjustments</ul></ul> | Maxime Tonnerre |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> | Cyriaque Billard |
+| Nov 7, 2025 | 1.4.0 | <ul><li>A new Read-only variant has been added for the .Radiobutton.Indicator component, supporting two boolean variants — Selected = True/False. This variant introduces two new color tokens: <ul><li>ouds/color/action/read-only-primary — used for the indicator (shape) <li>ouds/color/action/read-only-secondary — used for the stroke</ul> <li>The new Read-only variant has been integrated into the Read-only variant of both the Radio button and Radio button Item components. <li>We replaced the token in Error text container ouds-control-text-input-space-padding-block-top-helper-text with ouds-control-control-item-space-padding-block-top-error-text. <li>"Helper text" is now called "Description". <li>"Additional label" is now called "Extra label".</ul> | Anton Astafev |
+| Oct 20, 2025 | 1.3.0 | <ul><li>The Radio button item has been split into two boolean variants: → Error = True/False → Selected = True/False <li>The divider color is now functional in the Error state — it changes dynamically according to the component status. <li>The icon in the Error state is fixed to .Component/alert/important; its color changes together with the divider depending on the component's status. → The new token $control-control-item-size-error-icon is used for the icon size. → The new token $control-text-input-space-padding-inline-error-icon is used for the error icon container. 🆕 Both tokens are now available in the latest release of the Token Library 2.1.0. <li>Added Error text (from the Input component) — it follows the same padding-inline as control-item (16px) and uses → $control-text-input-space-padding-block-top-helper-text for block padding. By default, the Error text adapts automatically to match the component status: → Selected → displays the corresponding default error message for the selected state. → Unselected → displays the corresponding default error message for the unselected state. <li>The "Read only" state has been updated to replace control items (in their disabled states) — both selected and unselected — with the Tag → Text only → Muted component: → Positive with label "Selected" if selected = True → Negative with label "Unselected" if selected = False <li>Harmonisation of spacing across the control-item family We've unified sizing tokens across the entire control-item family (previously they were defined per component) to align spacing with other control items such as Text input. Replacement note: instead of the single token padding inset 12, use the following tokens: → ouds/_control/control-item/space/padding-inline → 16 → ouds/_control/control-item/space/padding-block → 12 Additionally, for the control-item family: → ouds/_control/control-item/space/column-gap → 12 → ouds/_control/control-item/size/max-width → 480</ul> | Anton Astafev |
+| Sep 19, 2025 | 1.2.0 | <ul><li>In the initial settings, the 'Divider' variant is now hidden.</ul> | Maxime Tonnerre |
+| Jul 21, 2025 | 1.1.0 | <ul><li>The name of the family to which this component belongs is changing: Input → Control. As a result, the token naming convention is being updated. <li>Following the renaming of the 'Control' category, the name of the token sub-family 'control-item' is now becoming 'item'."</ul> | Maxime Tonnerre |
+| Jan 22, 2025 | 1.0.0 | <ul><li>Component creation</ul> | Maxime Tonnerre |

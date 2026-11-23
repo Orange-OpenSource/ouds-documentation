@@ -1,101 +1,68 @@
+---
+id: tag
+category: Indicator
+family: Tag
+---
+
+# Tag
+
+A tag is a UI element that shows brief information, such as a label, keyword, or category.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_tag.png" alt="hero_image_tag" width="864">
 
-A tag is a compact, non-interactive element that displays labels, categories, or status information to help users quickly identify and organize content.
+## Anatomy
 
----
-
-## Definition
-
-A tag is a small element that shows short info like a label, keyword, or category.
-It helps users quickly find, group, or understand content.
-
----
-
-## Best for 👈🤔
-
-✅ Displaying status indicators such as "Active," "Pending," or "Completed" in dashboards and lists
-
-✅ Categorizing content items with keywords or labels for quick visual scanning
-
-✅ Showing metadata like document types, priority levels, or content classifications
-
-✅ Indicating system states such as success, warning, error, or informational messages
-
-✅ Labeling items in data tables where space efficiency is important
-
-✅ Highlighting new features, promotions, or important notices in product interfaces
-
-✅ Communicating order or process statuses in e-commerce and workflow applications
-
-✅ Differentiating between content types in card-based layouts and galleries
-
-✅ Providing visual context for items in complex enterprise applications
-
-✅ Grouping related items with color-coded classification systems
-
----
-
-## Anatomy 👈🤖
+<img src="images/tag@anatomy_img.png" alt="tag@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | Provides the visual boundary and background color for the tag | N |
-| 2 | Label text | Displays the primary information or status text | N |
-| 3 | Leading icon | Reinforces meaning with a visual symbol before the text | Y |
-| 4 | Bullet indicator | Shows status or presence with a small circular element | Y |
-| 5 | Loader | Indicates loading state with a spinning animation | Y |
-| 6 | Skeleton overlay | Provides placeholder appearance during content loading | Y |
+| 1 | Container | Provides the visual boundary and background color for the tag | No |
+| 2 | Label | Displays the primary information or status text | No |
+| 3 | Bullet indicator | Shows status or presence with a small circular element | Yes |
+| 4 | Leading icon | Reinforces meaning with a visual symbol before the text | Yes |
+| 5 | Loader | Indicates loading state with a spinning animation | Yes |
 
----
+## Definition
+
+A tag is a UI element that shows brief information, such as a label, keyword, or category.
+
+The tag assist users in quickly finding, grouping, or understanding content. They can remain in place or be removed and may include icons or actions such as “close” or “edit.”
 
 ## Status
 
 Tags have status depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
-**Non fonctionnel** Non-functional tags are used to display categories, default states, or to draw attention without carrying a specific functional meaning (unlike functional tags such as success, info, warning, and error).
+&nbsp;
+
+### Non-functional
+Non-functional tags are used to display categories, default states, or to draw attention without carrying a specific functional meaning (unlike functional tags such as success, info, warning, and error).  
 Icons related to the tag's context can be used to enhance recognition.
 
 **`Neutral`** Default or inactive state. Used for standard labels, categories, or when no specific status needs to be communicated.
 
 **`Accent`** Used to draw attention to new features, recommendations, or content suggestions. Invites users to explore and engage with new offerings, creating an exciting and engaging experience.
 
-**Fonctional** Functional tags communicate specific statuses or system feedback (e.g., success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.
+<img src="images/tag@status_non_functional_img.png" alt="tag@status_non_functional_img" width="433">
+
+### Functional
+Functional tags communicate specific statuses or system feedback (success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.  
 **Other icons must not be used.**
 
-**`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.
+**`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.  
 Always use the functional icon associated with success. ""
 
-**`Warning`** Signals potential issues or actions that require user attention. Use with caution.
+**`Warning`** Signals potential issues or actions that require user attention. Use with caution.  
 Always use the functional icon associated with warning. ""
 
-**`Negative`** Communicates errors, failed actions, or negative outcomes.
+**`Negative`** Communicates errors, failed actions, or negative outcomes.  
 Always use the functional icon associated with error. ""
 
-**`Info`** Represents informational content, tips, or supportive context.
+**`Info`** Represents informational content, tips, or supportive context.  
 Always use the functional icon associated with information. ""
 
----
-
-## status_do_&_dont 👈🤔
-
-✅ **Do:** Use semantic colors consistently—green for success, yellow for warning, red for error, and blue for information  
-❌ **Don't:** Mix semantic color meanings or use warning colors for positive statuses
-
-✅ **Do:** Always pair functional tags with their dedicated functional icons to reinforce meaning  
-❌ **Don't:** Use decorative or unrelated icons with functional status tags
-
-✅ **Do:** Reserve functional tags for system feedback and use neutral/accent for categorization  
-❌ **Don't:** Overuse functional colors for non-status information, diluting their semantic value
-
-✅ **Do:** Ensure status colors meet WCAG AA contrast requirements (4.5:1 for text)  
-❌ **Don't:** Rely solely on color to convey status—always include text labels and icons
-
-✅ **Do:** Use neutral tags as the default when no specific status needs to be communicated  
-❌ **Don't:** Apply accent or functional styling to generic labels that don't warrant attention
-
----
+<img src="images/tag@status_functional_img.png" alt="tag@status_functional_img" width="433">
 
 ## Appearance
 
@@ -103,26 +70,7 @@ Always use the functional icon associated with information. ""
 
 **`Emphasized`** A tag with a solid, high-contrast background. Used to draw strong attention to important labels or categories. Emphasized tags stand out prominently against the interface and are ideal for primary or high-priority information.
 
----
-
-## appearance_do_&_dont 👈🤔
-
-✅ **Do:** Use emphasized tags for primary status information that requires immediate attention  
-❌ **Don't:** Use emphasized appearance for all tags, as it reduces the impact of important ones
-
-✅ **Do:** Apply muted tags for secondary or supplementary information that shouldn't dominate the view  
-❌ **Don't:** Use muted tags for critical statuses like errors or warnings that need visibility
-
-✅ **Do:** Create visual hierarchy by combining muted and emphasized tags within the same context  
-❌ **Don't:** Mix appearance styles inconsistently without a clear information hierarchy rationale
-
-✅ **Do:** Consider the background surface when choosing appearance to ensure adequate contrast  
-❌ **Don't:** Place muted tags on backgrounds where they become difficult to read or distinguish
-
-✅ **Do:** Use emphasized tags sparingly to maintain their visual impact and draw focus effectively  
-❌ **Don't:** Default to emphasized appearance when muted would suffice for the content's importance
-
----
+<img src="images/tag@appearance_img.png" alt="tag@appearance_img" width="433">
 
 ## Layouts
 
@@ -132,84 +80,69 @@ Always use the functional icon associated with information. ""
 
 **`Text + Icon`** A tag that includes an icon before the text. Used to visually reinforce the meaning of the tag, such as status, type, or action.
 
----
+<img src="images/tag@layouts_img.png" alt="tag@layouts_img" width="433">
 
-## layouts_do_&_dont 👈🤔
+## Rounded corner
 
-✅ **Do:** Use text-only tags for simple categorization where additional visual cues aren't needed  
-❌ **Don't:** Add icons or bullets to tags when they provide no additional meaningful information
+The configuration of this rendering option is not applied across an entire product/service. It is possible to have one tag component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-✅ **Do:** Use the bullet layout to indicate presence, online status, or activity states  
-❌ **Don't:** Use bullets for general categorization where they add no semantic value
+**`True`** A tag with fully rounded corners, creating a pill-shaped appearance. Rounded tags offer a softer and more approachable look, suitable for most modern interfaces.
 
-✅ **Do:** Choose icons that clearly reinforce the tag's meaning and are universally understood  
-❌ **Don't:** Use ambiguous or decorative icons that don't enhance comprehension
+**`False`** A tag with sharp, square corners. Squared tags provide a more formal, structured, or technical feel. They are often used in business contexts to label promotions, offers, or important notices.
 
-✅ **Do:** Maintain consistent layout choices across similar tag types within the same interface  
-❌ **Don't:** Randomly alternate between layouts for tags serving the same purpose
+This option is available for all brand themes. Here's the list of rounded corners availability by brand theme:
 
-✅ **Do:** Position icons before the text label to follow natural left-to-right reading patterns  
-❌ **Don't:** Place icons after text or in inconsistent positions across tag instances
+| Brand theme | Status |
+|---|---|
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ✅ Available |
+| Wireframe | ✅ Available |
 
----
-
-## Shape
-
-**`Rounded corner=True`** A tag with fully rounded corners, creating a pill-shaped appearance. Rounded tags offer a softer and more approachable look, suitable for most modern interfaces.
-
-**`Rounded corner=False`** A tag with sharp, square corners. Squared tags provide a more formal, structured, or technical feel. They are often used in business contexts to label promotions, offers, or important notices.
-
----
-
-## shape_do_&_dont 👈🤔
-
-✅ **Do:** Use rounded (pill-shaped) tags for consumer-facing interfaces where approachability matters  
-❌ **Don't:** Mix rounded and square tags inconsistently within the same interface context
-
-✅ **Do:** Apply square-cornered tags in formal business contexts like promotions, offers, or legal notices  
-❌ **Don't:** Use square tags in casual or consumer applications where rounded shapes fit better
-
-✅ **Do:** Maintain consistent shape choices across all tags within a single product or feature area  
-❌ **Don't:** Alternate shapes based on personal preference rather than established design rationale
-
-✅ **Do:** Consider the overall design language when selecting tag shape to ensure visual harmony  
-❌ **Don't:** Choose tag shapes that conflict with the established border-radius patterns in your UI
-
-✅ **Do:** Use shape as a secondary differentiator alongside color and content for tag categorization  
-❌ **Don't:** Rely solely on shape to distinguish between different tag types or meanings
-
----
+<img src="images/tag@rounded_corner_img.png" alt="tag@rounded_corner_img" width="433">
 
 ## Size
 
-**`Default`** The standard tag size, using bold text to ensure strong visibility and readability.
+**`Default`** The standard tag size, using bold text to ensure strong visibility and readability.  
 Commonly used for promotional content, highlights, or key information, where emphasis and clarity are important.
 
-**`Small`** A compact tag with medium text, designed for tables or complex components where space efficiency matters.
+**`Small`** A compact tag with medium text, designed for tables or complex components where space efficiency matters.  
 It helps maintain visual balance and prevents the interface from feeling overloaded with bold text.
 
----
+<img src="images/tag@size_img.png" alt="tag@size_img" width="433">
 
-## size_do_&_dont 👈🤔
+## Multiline and responsiveness
 
-✅ **Do:** Use default size tags for standalone displays where visibility and readability are priorities  
-❌ **Don't:** Use default size tags in dense data tables where they compete with primary content
+### Multiline
+This component doesn't allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
 
-✅ **Do:** Apply small tags in tables, lists, and compact layouts to maintain visual balance  
-❌ **Don't:** Use small tags when they become difficult to read or interact with on mobile devices
+&nbsp;
 
-✅ **Do:** Maintain consistent sizing within the same component or layout context  
-❌ **Don't:** Mix default and small sizes arbitrarily within the same view or data grouping
+### Max-width vs full-width
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 200px.**
+- In its "Rounded corner=True", it's not possible to set this component to use the full available width (of the screen or the container).
+- In its "Rounded corner=False", it's possible to set this component to use the full available width (of the screen or the container). As a result, the component's background will stretch across the entire available surface, but the text must be limited to its number of characters.
 
-✅ **Do:** Consider touch target requirements—small tags should still meet minimum accessibility standards  
-❌ **Don't:** Reduce tag size below readable thresholds even in space-constrained environments
+&nbsp;
 
-✅ **Do:** Choose tag size based on the information density and importance of surrounding content  
-❌ **Don't:** Default to small size without considering the tag's visibility needs in context
+### User zoom in/out
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+- The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+- Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+- The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+- In order to preserve the minimun visible area during user zoom out, this component have:
+  - Default size: a min-width **of 48px** and a min-height **of 32px**
+  - Small size: a min-width **of 44px** and a min-height **of 24px**
+- Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+- Icons, bullets or loader must always scale proportionally with user zoom. Icon resizing must never be blocked.
 
----
+<img src="images/tag@multiline_and_responsiveness_img.png" alt="tag@multiline_and_responsiveness_img" width="433">
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/tag@spec_layout_spacing.png" alt="tag@spec_layout_spacing" width="864">
 
 ## States
 
@@ -217,42 +150,77 @@ Even though the Tag component is not interactive, it still includes several disp
 
 **`Enabled`** The default state of the tag, used to display the main information or status.
 
-Use case:
+Use case:  
 • Displaying a ready status or category (e.g., Shipped, Active, New).
 
 **`Loading`** A state where the tag shows a loader together with text.
 
-Use case:
-• Displaying status before API data is available. For example, while the system fetches the real value, the tag shows "Loading".
-• Data updates or filtering. When a table or list is being updated (e.g., applying filters or refreshing data), the tag temporarily shows loading and is then replaced with the actual value.
+Use case:  
+• Displaying status before API data is available. For example, while the system fetches the real value, the tag shows "Loading".  
+• Data updates or filtering. When a table or list is being updated (applying filters or refreshing data), the tag temporarily shows loading and is then replaced with the actual value.
 
 **`Disabled`** A non-active state of the tag. It appears "dimmed" to indicate that it is unavailable or not relevant.
 
-Use case:
-• Used when a status is no longer valid (e.g., an order is canceled and the tag is no longer meaningful).
+Use case:  
+• Used when a status is no longer valid (an order is canceled and the tag is no longer meaningful).  
 • When the tag is part of a status system but currently has no value to display.
 
 **`Skeleton`** A placeholder state shown before the actual data is loaded.
 
-Use case:
-• Used to display the structure of the interface while waiting for data.
+Use case:  
+• Used to display the structure of the interface while waiting for data.  
 • Helps avoid abrupt interface changes and provides a smoother experience.
 
----
+<img src="images/tag@states_img.png" alt="tag@states_img" width="433">
 
-## Layout and spacing
+# Accessibility
 
-🚧 Content to be added
+Work is in progress to deliver this content.
 
----
+# Develop
+
+## OUDS-Web example
+
+[Components/Tags › Tags 2](https://web.unified-design-system.orange.com/storybook/?path=/story/components-tags--tags-2)
+
+[Components/Tags › Tags 3](https://web.unified-design-system.orange.com/storybook/?path=/story/components-tags--tags-3)
+
+[Components/Tags › Tags 5](https://web.unified-design-system.orange.com/storybook/?path=/story/components-tags--tags-5)
+
+[Components/Tags › Tags 4](https://web.unified-design-system.orange.com/storybook/?path=/story/components-tags--tags-4)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-tag](https://r.orange.fr/r/S-ouds-web-tag) |
+| OUDS Android | [S-ouds-android-tag](https://r.orange.fr/r/S-ouds-android-tag) |
+| OUDS iOS | [S-ouds-ios-tag](https://r.orange.fr/r/S-ouds-ios-tag) |
+| OUDS Flutter | [S-ouds-flutter-tag](https://r.orange.fr/r/S-ouds-flutter-tag) |
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Nov 12, 2025 | 1.5.0 | • Label text with bold replaced by medium for small size of the component | Anton Astafev |
-| Oct 10, 2025 | 1.4.0 | For the "Status neutral muted" variant: • The content token "color-content-on-status-neutral-muted" has been replaced by the token "color-content-default" • The surface token "color-surface-status-neutral-muted" has been renamed "color-surface-secondary" For the "Status neutral emphasized" variant: • The content token "color-content-on-status-neutral-emphasized" has been replaced by the token "color-content-inverse" • The surface token "color-surface-status-neutral-emphasized" has been replaced by the token "color-surface-inverse-high" | Maxime Tonnerre |
-| Oct 1, 2025 | 1.3.0 | • Loading and Skeleton are no longer treated as separate tag statuses. Instead, they are now included as states alongside Enabled and Loading for each tag status. • Documentation has been updated and published in Zeroeight, with use case examples provided for every state. • The colors and background tokens for the functional states of the positive and info statuses have been changed. • The icon Warning has been replaced with a triangular shape, and for the muted Status it now uses two colors to enhance visual contrast for improved accessibility. • The minimum required contrast ratio has been corrected from 3:1 to 4.5:1 between text and background for both Muted and Emphasized variants, as well as for Tag: Input. • Updated information has been added for the use cases of Rounded Corner Tags and Square Corner Tags. • Functional tags (Positive, Warning, Negative, Info) differ from non-functional ones: in the layout text + iconconfiguration, they can only use functional icons, while non-functional icons are not supported. • The name of the "Hierarchy" variant has been replaced to "Apprearance" | Anton Astafev |
-| Sep 8, 2025 | 1.2.0 | • Modified version of the Text + Loader Tag component • For all variants Text + Loader Tag, the background color has been changed to **ouds/color/surface/status/neutral/muted**. • For all variants Text + Loader Tag, the content color has been changed to **ouds/color/content/default**. • Added use case description for this variant | Anton Astafev |
-| Jul 21, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.3.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) • The "Shape" variant becomes "Rounded corner" with a boolean approach | Maxime Tonnerre |
-| Mai 20, 2025 | 1.0.0 | • Component creation | Anton Astafev |
+## Availability
+
+Design status: **LIVE**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Tag component](https://r.orange.fr/r/S-ouds-design-tag) | Done | 1.5.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-tag) | Done | 1.5.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-tag) | Done | 1.5.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-tag) | Done | 1.5.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-tag) | Done | 1.5.0 |
+
+## Design changelog
+
+| Date | Number | Notes |
+|------|--------|-------|
+| Apr 22, 2026 | 1.5.0 | <b>Version 2.4 of the design tokens is required for the development of this update.</b> <ul><li>For the small size, the text reference of the label changes from a bold weight (font-weight-label-strong) to a medium weight (font-weight-label-moderate). <li>By default, the content of the component is no longer centered but left-aligned. <li>Update of the min-width values for the 'default' and 'small' sizes.</ul> |
+| Mar 16, 2026 | - | <ul><li>Documentation writing: <ul><li>Rounded corners brand theme availability <li>Multiline and responsiveness</ul></ul> |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
+| Oct 10, 2025 | 1.4.0 | For the "Status neutral muted" variant: <ul><li>The content token "color-content-on-status-neutral-muted" has been replaced by the token "color-content-default" <li>The surface token "color-surface-status-neutral-muted" has been renamed "color-surface-secondary"</ul> For the "Status neutral emphasized" variant: <ul><li>The content token "color-content-on-status-neutral-emphasized" has been replaced by the token "color-content-inverse" <li>The surface token "color-surface-status-neutral-emphasized" has been replaced by the token "color-surface-inverse-high"</ul> |
+| Oct 1, 2025 | 1.3.0 | <ul><li>Loading and Skeleton are no longer treated as separate tag statuses. Instead, they are now included as states alongside Enabled and Loading for each tag status. <li>Documentation has been updated and published in Zeroeight, with use case examples provided for every state. <li>The colors and background tokens for the functional states of the positive and info statuses have been changed. <li>The icon Warning has been replaced with a triangular shape, and for the muted Status it now uses two colors to enhance visual contrast for improved accessibility. <li>The minimum required contrast ratio has been corrected from 3:1 to 4.5:1 between text and background for both Muted and Emphasized variants, as well as for Tag: Input. <li>Updated information has been added for the use cases of Rounded Corner Tags and Square Corner Tags. <li>Functional tags (Positive, Warning, Negative, Info) differ from non-functional ones: in the layout text + iconconfiguration, they can only use functional icons, while non-functional icons are not supported. <li>The name of the "Hierarchy" variant has been replaced to "Apprearance"</ul> |
+| Sep 8, 2025 | 1.2.0 | <ul><li>Modified version of the Text + Loader Tag component <li>For all variants Text + Loader Tag, the background color has been changed to **ouds/color/surface/status/neutral/muted**. <li>For all variants Text + Loader Tag, the content color has been changed to **ouds/color/content/default**. <li>Added use case description for this variant</ul> |
+| Jul 21, 2025 | 1.1.0 | <ul><li>Several design token updates: [Component tokens changelog 1.3.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) <li>The "Shape" variant becomes "Rounded corner" with a boolean approach</ul> |
+| Mai 20, 2025 | 1.0.0 | <ul><li>Component creation</ul> |

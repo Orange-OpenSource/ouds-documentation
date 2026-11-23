@@ -1,96 +1,56 @@
+---
+id: badge
+category: Indicator
+family: Badge
+---
+
+# Badge
+
+A badge is a UI element that highlights system notifications, statuses, or the categorisation of information through colour alone.
+
 # Guideline
 
-## Intro
+<img src="images/hero_image_badge.png" alt="hero_image_badge" width="864">
 
-A badge is a compact visual indicator that highlights status, notifications, or categorization within an interface using color-coded labels.
+## When to use
 
----
+✅ To display status or categorization (e.g. online / offline, new, pending)
 
-## Definition
+✅ As an atomic element embedded within other components
 
-The Badge is a small UI element used to highlight status, notifications, or categorization within an interface. It is often displayed as a label or indicator with a distinct background color and text.
+✅ When a non-intrusive visual indicator is sufficient
 
-**Usage:**
-• Renders as a static label without a number.
-Used for status indicators (e.g., "New", "Pending", "Success").
-The size remains unchanged despite the increase in the interface size.
+✅ For persistent states that do not change frequently
 
----
+## Anatomy
 
-## Best for
-
-✅ Indicating system or item status (success, warning, error, info)
-
-✅ Highlighting new features, updates, or content discoveries
-
-✅ Showing approval or completion states in workflows
-
-✅ Categorizing content with color-coded visual labels
-
-✅ Drawing attention to important metadata without interrupting user flow
-
-✅ Communicating urgency levels in dashboard or list views
-
-✅ Displaying content states like "Draft", "Published", or "Archived"
-
-✅ Supplementing navigation items with status context
-
-✅ Providing quick visual feedback for data validation results
-
-✅ Marking items requiring user attention in compact spaces
-
----
-
-## Anatomy 👈🤖
+<img src="images/badge@anatomy_img.png" alt="badge@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | Pill-shaped background that holds the badge and applies semantic color | N |
-| 2 | Background fill | Color surface indicating status type (neutral, accent, positive, info, warning, negative) | N |
-| 3 | Border radius | Fully rounded corners (pill shape) for visual distinction | N |
-| 4 | Size constraint | Fixed dimensions based on size variant (8px, 12px, 16px, 20px) | N |
-| 5 | Disabled state styling | Reduced opacity/color to indicate inactive status | Y |
+| 1 | Container | A compact, rounded shape. | No |
 
----
+## Definition
 
-## State
+A badge is a UI element that highlights system notifications, statuses, or the categorisation of information through colour alone.
 
-**`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (e.g., success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
-
-**`Disabled`** The inactive state of a badge. Used to indicate that the user isn't allowed to interact with an element, or when the status is unavailable. It appears less prominent and serves as a secondary indication.
-
----
-
-## state_do_&_dont 👈🤔
-
-✅ **Do:** Use the enabled state when the badge conveys actionable or relevant status information that users need to see.  
-❌ **Don't:** Display enabled badges for outdated or irrelevant status that no longer applies.
-
-✅ **Do:** Apply the disabled state when the associated element or feature is unavailable or inactive.  
-❌ **Don't:** Use disabled badges as the primary way to hide information—consider removing the badge entirely if not needed.
-
-✅ **Do:** Maintain consistent visual distinction between enabled and disabled states across all status variants.  
-❌ **Don't:** Allow disabled badges to have the same visual weight as enabled badges, causing confusion.
-
-✅ **Do:** Use disabled badges to indicate temporarily unavailable statuses that may become active later.  
-❌ **Don't:** Use disabled state for permanent conditions—choose appropriate enabled status colors instead.
-
-✅ **Do:** Ensure disabled badges still meet minimum contrast requirements for accessibility.  
-❌ **Don't:** Make disabled badges so faint that users cannot perceive them at all.
-
----
+The badge is displayed as a coloured shape, without an icon, text, or number; its selected size remains constant, regardless of any changes to the interface size.
 
 ## Status
 
 Badges have seven states depending on the context of the information they represent. Each state is designed to convey a specific meaning and ensure clarity in communication.
 
-**Non fonctionnel**
+Using a badge without icons may require additional context, such as a label or description, to ensure accessibility for users with color blindness. For more details, see 'Context of Color Usage (badge without icon)'.
+
+### Not functional
 
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
 
-**Fonctionnel**
+<img src="images/badge@status_non_functional_img.png" alt="badge@status_non_functional_img" width="433">
+
+### Functional
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -98,29 +58,9 @@ Badges have seven states depending on the context of the information they repres
 
 **`Warning`** Negatives the user to potential risks or cautionary messages.
 
-**`Negative`** Draws attention to important or critical information.
-Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
+**`Negative`** Draws attention to important or critical information. Often used for errors, restrictions, or urgent messages, but not exclusively for failures.
 
----
-
-## status_do_&_dont 👈🤔
-
-✅ **Do:** Use semantic colors consistently—green for positive outcomes, red for errors, blue for informational content, yellow for warnings.  
-❌ **Don't:** Use random colors that don't align with established semantic meanings in your design system.
-
-✅ **Do:** Reserve negative (red) status for critical issues requiring immediate attention like errors or failures.  
-❌ **Don't:** Overuse negative status badges, which desensitizes users to actual critical information.
-
-✅ **Do:** Use neutral status for general labels that don't carry semantic weight or emotional connotation.  
-❌ **Don't:** Use neutral badges when a specific status color would better communicate the intended meaning.
-
-✅ **Do:** Apply accent status to highlight new features, discoveries, or promotional content that needs emphasis.  
-❌ **Don't:** Use accent badges for system status information where functional colors (positive, warning, negative) are more appropriate.
-
-✅ **Do:** Use info status for non-urgent informational context like "In Progress" or "Pending Review".  
-❌ **Don't:** Use info badges for states that require user action—use warning or negative instead.
-
----
+<img src="images/badge@status_functional_img.png" alt="badge@status_functional_img" width="433">
 
 ## Size
 
@@ -132,28 +72,53 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 **`Large`** A prominent badge for drawing more attention, often used in dashboards or highlighted sections.
 
----
+<img src="images/badge@size_img.png" alt="badge@size_img" width="433">
 
-## size_do_&_dont 👈🤔
+## Badge without icon user zoom and responsiveness
 
-✅ **Do:** Choose badge size proportional to the element it accompanies—use xsmall for icons, medium for standard UI components.  
-❌ **Don't:** Use oversized badges that visually overpower the primary content they're meant to supplement.
+### Max-width vs full-width
+This component have a max-width.  
+It is not possible to set this component to use the full available width (of the screen or the container).
 
-✅ **Do:** Maintain consistent badge sizes within the same context or view for visual harmony.  
-❌ **Don't:** Mix multiple badge sizes randomly within the same component or list.
+&nbsp;
 
-✅ **Do:** Use larger badges (medium or large) when the badge conveys critical status information that must be noticed.  
-❌ **Don't:** Use xsmall badges for important status information that users might easily miss.
+### User zoom in/out
+- Component must always scale proportionally with user zoom.
+- In order to preserve the minimun interactive area during user zoom out, this component have:
+  - Large size: a min-width and a min-height **of 20px**
+  - Medium size: a min-width and a min-height **of 16px**
+  - Small size: a min-width and a min-height **of 12px**
+  - Xsmall size: a min-width and a min-height **of 8px**
+- Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
 
-✅ **Do:** Consider touch target requirements when badges appear in mobile or touch interfaces—ensure adequate size for accessibility.  
-❌ **Don't:** Use xsmall badges as the only status indicator in touch-heavy interfaces without supporting context.
+<img src="images/badge@user_zoom_and_responsiveness_img.png" alt="badge@user_zoom_and_responsiveness_img" width="433">
 
-✅ **Do:** Scale badge size appropriately across responsive breakpoints while maintaining the fixed-size principle within each viewport.  
-❌ **Don't:** Allow badges to dynamically resize based on interface scaling, which contradicts the component's design intent.
+## Context of Color Usage
 
----
+A color-only badge should not be used as the only way to show functional information.  
+It needs to be clearly visible on its background, with enough contrast and a readable size, especially for people with low vision or color blindness.
+
+### Status context (badge + label)
+
+- Color alone doesn't explain meaning. It can support the interface visually, but it shouldn't be the only way to show a status or state. If multiple badge colors are used within the same interface, each color must have an accessible equivalent (e.g. visible text).
+- In this example, the badge is used together with an Extra label that clearly conveys the status (positive and negative). The badge only reinforces this meaning visually, allowing multiple statuses to coexist within the same interface.
+
+<img src="images/badge@context_of_color_usage_img.png" alt="badge@context_of_color_usage_img" width="433">
+
+### Non-status context (badge only)
+
+- If it is not possible to provide an accessible alternative (text or label), the badge must be considered decorative and must not be used to convey information or differentiate states.
+- In this context, the red badge is not used to indicate an error or negative status, but rather as a visual accent to draw attention. No other badge colors are used in the interface to avoid interpreting color as a carrier of meaning.
+
+<img src="images/badge@context_of_color_usage_img2.png" alt="badge@context_of_color_usage_img2" width="433">
+
+⚠️ Within a single interface, either a decorative or a functional color context should be used, but not both at the same time. This distinction ensures consistency and aligns with accessible design principles.
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/badge@spec_layout_spacing.png" alt="badge@spec_layout_spacing" width="864">
 
 ## States
 
@@ -161,18 +126,50 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 **`Disabled`** The inactive state of a badge. Used to indicate that the user isn't allowed to interact with an element, or when the status is unavailable. It appears less prominent and serves as a secondary indication.
 
----
+<img src="images/badge@state_img.png" alt="badge@state_img" width="433">
 
-## Layout and spacing
+# Accessibility
 
-🚧 Content to be added
+Work is in progress to deliver this content.
 
----
+# Develop
+
+## OUDS-Web example
+
+[Components/Badges › Badges 4](https://web.unified-design-system.orange.com/storybook/?path=/story/components-badges--badges-4)
+
+[Components/Badges › Badges 5](https://web.unified-design-system.orange.com/storybook/?path=/story/components-badges--badges-5)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-badge](https://r.orange.fr/r/S-ouds-web-badge) |
+| OUDS Android | [S-ouds-android-badge](https://r.orange.fr/r/S-ouds-android-badge) |
+| OUDS iOS | [S-ouds-ios-badge](https://r.orange.fr/r/S-ouds-ios-badge) |
+| OUDS Flutter | [S-ouds-flutter-badge](https://r.orange.fr/r/S-ouds-flutter-badge) |
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Oct 14, 2025 | 1.2.0 | • The component now has two states: Enabled and Disabled. • Documentation has been updated and published in Zeroeight, with use case examples provided for every state. • The colors and background tokens for the functional states of the positive and info statuses have been changed. • For the "Status neutral" variant, the surface token "color-surface-status-neutral-emphasized" has been replaced by the token "color-surface-inverse-high" | Anton Astafev |
-| Jun 16, 2025 | 1.1.0 | • "Accent" variant added | Maxime Tonnerre |
-| Mai 9, 2025 | 1.0.0 | • Component creation | Anton Astafev |
+## Availability
+
+Design status: **LIVE**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Badge component](https://r.orange.fr/r/S-ouds-design-badge) | Done | 1.2.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-badge) | Done | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-badge) | Done | 1.2.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-badge) | Done | 1.2.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-badge) | Done | 1.2.0 |
+
+## Design changelog
+
+| Date | Number | Notes |
+|------|--------|-------|
+| Apr 7, 2026 | - | <ul><li>Documentation writing: Context of Color Usage (badge without icon)</ul> |
+| Mar 16, 2026 | - | <ul><li>Documentation writing: User zoom and responsiveness</ul> |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
+| Oct 14, 2025 | 1.2.0 | <ul><li>The component now has two states: Enabled and Disabled. <li>Documentation has been updated and published in Zeroeight, with use case examples provided for every state. <li>The colors and background tokens for the functional states of the positive and info statuses have been changed. <li>For the "Status neutral" variant, the surface token "color-surface-status-neutral-emphasized" has been replaced by the token "color-surface-inverse-high"</ul> |
+| Jun 16, 2025 | 1.1.0 | <ul><li>"Accent" variant added</ul> |
+| Mai 9, 2025 | 1.0.0 | <ul><li>Component creation</ul> |

@@ -4,24 +4,17 @@
 
 name: Auto Slice Documentation
 
-# Trigger conditions for this workflow
+# Switched off 2026-11-23 at the docs owner's request: the full component files
+# components/.../<name>/<name>.md are now rebuilt from the zeroheight pages and the dsm/ slices
+# (.private/zh-sync-poc/full_md.py). Re-slicing them would wipe the dsm/ folders the zeroheight
+# pages still sync from. Remove this workflow when the dsm/ slices are removed.
 on:
-  # Trigger on push events
-  push:
-    # Only watch for changes in component markdown files
-    # Pattern: components/[control_type]/[control_name]/[control_name].md
-    # Also supports: components/[control_type]/[group]/[control_name]/[control_name].md
-    paths:
-      - 'components/*/*/*.md'
-      - 'components/*/*/*/*.md'
-    # Only run on main branch
-    branches:
-      - main
-  # Allow manual trigger from GitHub Actions UI
   workflow_dispatch:
 
 jobs:
   slice-documentation:
+    # Switched off (see the note above): the job never runs, even when started by hand.
+    if: false
     # Use the latest Ubuntu runner
     runs-on: ubuntu-latest
     

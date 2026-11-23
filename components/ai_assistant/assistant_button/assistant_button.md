@@ -1,55 +1,35 @@
+---
+id: assistant-button
+category: Action
+family: Button
+---
+
+# Assistant button
+
+An assistant button is a UI element that triggers an action or event featuring AI-powered capabilities, such as conversational assistance, content generation, or contextual suggestions.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_assistant_button.png" alt="hero_image_assistant_button" width="864">
 
-An AI assistant button triggers an interaction with an AI-powered feature, marked by a distinctive icon that clearly signals its intelligent capability.
+## Anatomy
 
----
-
-## Definition
-
-An AI assistant button is an action component used to trigger an interaction with an AI-powered feature, such as conversational assistance, content generation, or contextual suggestions.
-It combines standard button behaviors with AI-specific visual attributes to clearly identify actions enhanced or powered by artificial intelligence.
-
----
-
-## Best for 👈🤔
-
-✅ Triggering a conversational AI assistant or chat experience from any screen
-
-✅ Generating content such as text, summaries, or replies on demand
-
-✅ Requesting AI-powered suggestions within a form or input field
-
-✅ Launching contextual help powered by artificial intelligence
-
-✅ Rephrasing, translating, or improving user-written text
-
-✅ Summarizing a long document, thread, or article in a single tap
-
-✅ Offering an "ask AI" entry point inside toolbars or content cards
-
-✅ Compact icon-only AI triggers where horizontal space is limited
-
-✅ Pairing an AI action with a related input (for example, an Assistant input)
-
-✅ Initiating AI analysis of data, images, or a user selection
-
----
-
-## Anatomy 👈🤖
+<img src="images/assistant_button@anatomy_img.png" alt="assistant_button@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | Houses all button elements and defines the interactive hit area | N |
-| 2 | AI icon | "Sparkle" glyph that signals the action is powered by artificial intelligence | N |
-| 3 | Label | Action-led text describing the AI assistant action | Y |
-| 4 | Background | Visual surface providing hierarchy and state feedback | N |
-| 5 | Border | Defines button boundaries; varies with state and rounded corner | Y |
-| 6 | Focus ring | Visible outline indicating keyboard focus for accessibility | N |
-| 7 | Loading indicator | Spinner shown in place of content during the Loading state | Y |
+| 1 | Icon | The AI assistant symbol that identifies the action as AI-driven | No |
+| 2 | Label text | The text describing the action; absent in the icon-only layout | Yes |
+| 3 | Focus inset | The outline drawn inside the component on keyboard focus | No |
+| 4 | Content | The group holding the icon and the label, centred in the button | No |
+| 5 | Circular progress indicator | The spinner shown in place of the content during the Loading state | Yes |
+| 6 | Skeleton | The neutral placeholder shown before the button has loaded | Yes |
 
----
+## Definition
+
+An assistant button is a UI element that triggers an action or event featuring AI-powered capabilities, such as conversational assistance, content generation, or contextual suggestions.
+
+The assistant button combines standard button functions with AI-specific visual features to clearly indicate actions enhanced or powered by artificial intelligence.
 
 ## Layouts
 
@@ -57,66 +37,28 @@ It combines standard button behaviors with AI-specific visual attributes to clea
 
 **`Icon only`** Displays only the AI assistant icon for a more compact and minimal interface. Recommended when the context already makes the action understandable or when space is limited. It is rarely standalone (usually part of a group of elements).
 
----
-
-## layouts_do_&_dont 👈🤔
-
-✅ **Do:** Use the "Text + icon" layout when the AI action must be clearly discoverable and explicit.  
-❌ **Don't:** Rely on "Icon only" for primary or unfamiliar AI actions where users need a textual cue.
-
-✅ **Do:** Reserve "Icon only" for compact, space-constrained contexts where the action is already understood.  
-❌ **Don't:** Place a standalone "Icon only" AI button without surrounding context that clarifies its purpose.
-
-✅ **Do:** Always keep the AI (sparkle) icon present so the action stays recognisably AI-powered.  
-❌ **Don't:** Swap the AI icon for an unrelated glyph that hides the intelligent nature of the action.
-
-✅ **Do:** Provide an accessible name via `aria-label` for every "Icon only" AI button.  
-❌ **Don't:** Ship an "Icon only" button with no text alternative for screen readers.
-
-✅ **Do:** Keep labels short, action-led, and descriptive of the AI outcome ("Ask AI", "Summarize").  
-❌ **Don't:** Use vague labels like "Go" or "Click here" that don't describe the AI action.
-
----
+<img src="images/assistant_button@layouts_img.png" alt="assistant_button@layouts_img" width="433">
 
 ## Sizes
 
-**`Default`** This is the default size of the component.
+**`Default`** This is the default size of the component.  
 This size is used for the vast majority of applications.
 
 **`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "Assistant input" component, for example).
 
----
-
-## sizes_do_&_dont 👈🤔
-
-✅ **Do:** Use the Default size for the vast majority of applications and standalone AI actions.  
-❌ **Don't:** Default to the Small size for primary AI actions that should remain easy to notice and tap.
-
-✅ **Do:** Use the Small size in information-dense interfaces or when paired with small elements (e.g., Assistant input).  
-❌ **Don't:** Mix Default and Small sizes arbitrarily within the same group of related controls.
-
-✅ **Do:** Preserve the minimum 48px interactive area even when the visual size is reduced.  
-❌ **Don't:** Shrink the button below the minimum touch target, harming usability on touch devices.
-
-✅ **Do:** Match the button size to the density and hierarchy of its surrounding layout.  
-❌ **Don't:** Choose the Small size purely for aesthetic compactness at the expense of legibility.
-
-✅ **Do:** Keep size choices consistent for buttons that share the same role across the product.  
-❌ **Don't:** Vary sizes for identical AI actions on different screens, creating an inconsistent rhythm.
-
----
+<img src="images/assistant_button@size_img.png" alt="assistant_button@size_img" width="433">
 
 ## Rounded corner
 
 Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`False`**
-The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
 
-**`True`**
-The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
-**Brand theme availability**
+&nbsp;
+
+### Brand theme availability
 This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
 
 | Brand theme | Availability |
@@ -126,39 +68,24 @@ This option is technically not available for all brand themes. Here's the list o
 | Sosh | ❌ Unavailable |
 | Wireframe | ❌ Unavailable |
 
----
-
-## rounded_corner_do_&_dont 👈🤔
-
-✅ **Do:** Apply the rounded-corner setting consistently across the entire product or service.  
-❌ **Don't:** Mix Rounded corner=True and Rounded corner=False buttons within the same product/service.
-
-✅ **Do:** Use square corners (False) for standard, business-oriented, utility-driven journeys.  
-❌ **Don't:** Switch to rounded corners ad-hoc without a clear brand or experience rationale.
-
-✅ **Do:** Use rounded corners (True) for softer, more emotional, immersive, or tactile contexts.  
-❌ **Don't:** Enable rounded corners on brand themes where the option is unavailable (Sosh, Wireframe).
-
-✅ **Do:** Treat the rounded-corner choice as a transversal, product-level design decision.  
-❌ **Don't:** Expose the per-button rounded-corner toggle as a routine, case-by-case styling option.
-
-✅ **Do:** Align the button's corner style with other interactive elements in the same interface.  
-❌ **Don't:** Pair rounded AI buttons with square standard buttons, creating visual inconsistency.
-
----
+<img src="images/assistant_button@rounded_corner_img.png" alt="assistant_button@rounded_corner_img" width="433">
 
 ## Multiline and responsiveness
 
-**Multiline**
-This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.
+### Multiline
+This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
 In its "Text + icon" variant, if the label spans multiple lines, the label remains horizontally centred and the icon remains vertically centred.
 
-**Max-width vs full-width**
-For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 360px.**
-The component can also naturally wrap within the parent container (or the screen in a mobile use context for exemple) and use the full available width.
+&nbsp;
+
+### Max-width vs full-width
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 360px.**  
+The component can also naturally wrap within the parent container (or the screen in a mobile use context for exemple) and use the full available width.  
 Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
 
-**User zoom in/out**
+&nbsp;
+
+### User zoom in/out
 The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
 * The text must always scale proportionally with user zoom. Text resizing must never be blocked.
 * Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
@@ -168,9 +95,13 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 * In its "Text + icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
 * As the text is missing, in its "Icon only" variant, the icons follow the same rules as the text.
 
----
+<img src="images/assistant_button@multiline_and_responsiveness_img.png" alt="assistant_button@multiline_and_responsiveness_img" width="433">
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/assistant_button@spec_layout_spacing.png" alt="assistant_button@spec_layout_spacing" width="864">
 
 ## States
 
@@ -178,29 +109,59 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 **`Hover`** When a user places a pointing device over a button, but has not yet taken action on it.
 
-**`Focus`** When a user selects a button via keyboard or voice command, but has not yet taken action on it.
+**`Focus`** When a user selects a button via keyboard or voice command, but has not yet taken action on it.  
 Mirrors the "Hover" state but includes an additional border.
 
 **`Pressed`** An intermediate state that communicates a user has taken action on a button, and that it is in the process of navigating to a destination, triggering logic, or transmitting data.
 
-**`Loading`** A button is fetching data from another internal or external resource.
+**`Loading`** A button is fetching data from another internal or external resource.  
 Uses the "Loading indicator" component.
 
 **`Disabled`** Used to indicate a button that cannot be selected.
 
-**`Skeleton`** Improves the perceived loading time by providing a visual cue of where button will appear once fully loaded.
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where button will appear once fully loaded.  
 Uses the "Skeleton" component, variant "Security marge=False".
 
----
+<img src="images/assistant_button@states_img.png" alt="assistant_button@states_img" width="433">
 
-## Layout and spacing
+# Accessibility
 
-🚧 Content to be added
+Work is in progress to deliver this content.
 
----
+# Develop
+
+## OUDS-Web example
+
+[Components/Buttons › Buttons 35](https://web.unified-design-system.orange.com/storybook/?path=/story/components-buttons--buttons-35)
+
+[Components/Buttons › Buttons 37](https://web.unified-design-system.orange.com/storybook/?path=/story/components-buttons--buttons-37)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-assistant-button](https://r.orange.fr/r/S-ouds-web-assistant-button) |
+| OUDS Android | Not available yet |
+| OUDS iOS | Not available yet |
+| OUDS Flutter | Not available yet |
 
 # Changelog
 
+## Availability
+
+Design status: **DEV**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Assistant button component](https://r.orange.fr/r/S-ouds-design-assistant-button) | Done | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-assistant-button) | Done | 1.1.0 |
+| OUDS Android - Jetpack Compose | Not available yet | To do | – |
+| OUDS iOS - Swift | Not available yet | To do | – |
+| OUDS Flutter | Not available yet | To do | – |
+
+## Design changelog
+
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
+| Sep 18, 2026 | 1.1.0 | Version 2.7 of the design tokens is required for the development of this update.<ul><li>A maximum width is now applied to the component.<li>Renamed the Progress indicator container to Circular progress indicator container.</ul> | Anton Astafev<br>Maxime Tonnerre |
 | Jun 8, 2026 | 1.0.0 | Version 2.6 of the design tokens is required for the development of this update.<ul><li>Component creation</ul> | Maxime Tonnerre |

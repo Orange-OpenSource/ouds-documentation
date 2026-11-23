@@ -1,260 +1,132 @@
+---
+id: select-input
+category: Control
+family: None
+---
+
+# Select input
+
+A select input is a UI element that enables users to choose one or, in some cases, multiple options from a predefined list.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_select_input.png" alt="hero_image_select_input" width="864">
 
-A select input lets users choose a single option from a predefined list displayed in a dropdown menu.
+## When to use
 
----
+✅ When users need to select one or multiple values from a predefined list
 
-## Definition
-
-A select input is a form component that allows users to choose one (or sometimes multiple) options from a predefined list. It is typically rendered as a dropdown menu that displays available choices when interacted with, either by click or keyboard navigation.
-
-This component is used when the number of choices is limited and known in advance and when users should select from controlled or standardized values
-
----
-
-## Best for
-
-✅ Selecting from 5-15 predefined options in a form
-
-✅ Choosing standardized values where custom input is not needed
-
-✅ Space-constrained interfaces where radio buttons would create clutter
+✅ If the set of options is limited, known in advance, and standardized
 
 ✅ Sorting or filtering content by a single criterion
 
 ✅ Mobile-optimized forms leveraging native device selectors
 
-✅ Data entry requiring controlled, validated selections
-
-✅ Settings panels with multiple configuration options
-
-✅ Forms where all options need not be immediately visible
-
-✅ Location, date format, or category selection
-
-✅ Small-screen interfaces requiring compact input controls
-
----
+✅ To ensure data consistency and simplify decision-making
 
 ## Anatomy
 
+<img src="images/select_input@anatomy_img.png" alt="select_input@anatomy" width="864">
+
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Label | Identifies the purpose of the select input | N |
-| 2 | Input container | Clickable area that triggers the dropdown menu | N |
-| 3 | Selected value | Displays the currently chosen option or placeholder text | N |
-| 4 | Chevron icon | Visual indicator that the field opens a dropdown | N |
-| 5 | Helper text | Provides additional guidance about the selection | Y |
-| 6 | Error message | Communicates validation issues to the user | Y |
-| 7 | Leading icon | Conveys the input's purpose or category at a glance | Y |
-| 8 | Helper link | Offers additional help when helper text is insufficient | Y |
+| 1 | Leading icon | Provides a visual cue about the field type or context. | Yes |
+| 2 | Label | Tells users what information to enter. | Yes |
+| 3 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | No |
+| 4 | Trailing action | Opens the list of available options | No |
+| 5 | Bottom stroke | The visible bottom border for the non-outlined style | Yes |
+| 6 | Helper text | Adds extra guidance, examples, or formatting instructions. | Yes |
+| 7 | Label | Moves above the input when focused or filled, so the field stays identifiable. | No |
+| 8 | Text cursor | Indicates where the next character will be inserted while typing. | No |
+| 9 | Helper link | Provides a link to supporting guidance or related information. | Yes |
+| 10 | Loading indicator | Shows progress while validation or authentication is in progress. | Yes |
+| 11 | Outlined container | Alternative visual style using a full border. | Yes |
+| 12 | Error icon | Highlights the field’s error state to improve visibility and feedback | Yes |
+| 13 | Error text | Explains what’s wrong and how to fix it when validation fails. | Yes |
 
----
+## Definition
+
+A select input is a UI element that enables users to choose one or, in some cases, multiple options from a predefined list.
+
+The select input appears as a dropdown that shows available options. It is used when the number of choices is limited and known ahead of time, allowing users to select from controlled or standardised values.
 
 ## Outlined
 
-**`False`** An input with a subtle background fill and un visible bottom border.
+**`False`** An input with a subtle background fill and a visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
-**`True`** A minimalist input with a transparent background and visible stroke.
+**`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
 
 This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
-### Do & don'ts
-
-✅ **Do:** Use outlined style for inputs in non-form contexts like toolbars, headers, or filters where visual weight needs to be minimal
-
-❌ **Don't:** Mix outlined and filled styles inconsistently within the same form or interface section
-
-✅ **Do:** Choose outlined style when the input sits on colored or textured backgrounds where filled inputs might clash
-
-❌ **Don't:** Use outlined style as the default for long multi-field forms where filled inputs provide better visual structure
-
-✅ **Do:** Ensure outlined inputs maintain sufficient contrast ratios (3:1 minimum) against their background in all states
-
-❌ **Don't:** Rely solely on the border to convey interactive affordance without proper focus indicators
-
-✅ **Do:** Test outlined inputs with users who have low vision to ensure the borders are perceivable in all states
-
-❌ **Don't:** Use outlined style when multiple inputs are stacked vertically without sufficient spacing, as borders may visually merge
-
-✅ **Do:** Apply outlined style consistently across filtering and search interfaces for cohesive visual language
-
-❌ **Don't:** Use outlined inputs in contexts where users expect traditional form styling, causing confusion
-
----
+<img src="images/select_input@outlined_img.png" alt="select_input@outlined_img" width="433">
 
 ## Rounded corner
 
-**`False`** A subtle and minimal style (neutral input border)
+Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** A soft, friendly style, a bit more playful and approachable
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
 
-### Do & don'ts
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
-✅ **Do:** Use rounded corners consistently across all form inputs in the same interface to maintain visual harmony
+This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
 
-❌ **Don't:** Mix sharp and rounded corners arbitrarily within a single form, creating visual inconsistency
+| Brand theme | Status |
+|---|---|
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ❌ Unavailable |
+| Wireframe | ❌ Unavailable |
 
-✅ **Do:** Choose rounded corners when designing for consumer-facing products where friendliness enhances user comfort
-
-❌ **Don't:** Use extreme border radius values that compromise the rectangular nature of form inputs
-
-✅ **Do:** Consider accessibility by ensuring rounded corners don't interfere with touch target size on mobile devices
-
-❌ **Don't:** Apply rounded corners only to select inputs when other form controls remain sharp-edged
-
-✅ **Do:** Test rounded corners with your brand guidelines to ensure they align with overall design language
-
-❌ **Don't:** Use rounded corners in highly formal or technical interfaces where neutrality is required
-
-✅ **Do:** Maintain consistent corner radius values across different input sizes for visual coherence
-
-❌ **Don't:** Round corners so aggressively that the input resembles a pill shape, reducing form recognition
-
----
+<img src="images/select_input@rounded_corner_img.png" alt="select_input@rounded_corner_img" width="433">
 
 ## Input status
 
-**`Empty`** By default, a select input is open with label, no input text, dropdown closed, and no helper text displayed below.
+**`Empty`** The Empty state indicates that the select input is blank with no content or placeholder, a neutral starting point.
 
-**`Filled`** The input text is the option selected by the user from the dropdown menu.
+**`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
-### Do & don'ts
-
-✅ **Do:** Use clear placeholder text in empty states to guide users on what type of selection is expected
-
-❌ **Don't:** Leave empty states completely blank without labels or placeholders, causing user confusion
-
-✅ **Do:** Provide meaningful placeholder text that describes the category of choices (e.g., "Select country")
-
-❌ **Don't:** Use the first option as a placeholder disguised as a selectable value
-
-✅ **Do:** Ensure filled states clearly display the full selected value or truncate gracefully with ellipsis
-
-❌ **Don't:** Allow selected text to overflow outside the input container without proper truncation
-
-✅ **Do:** Differentiate empty and filled states visually to help users quickly identify which fields need attention
-
-❌ **Don't:** Use identical styling for empty and filled states that makes form progress unclear
-
-✅ **Do:** Announce input status changes to screen readers when selections are made or cleared
-
-❌ **Don't:** Remove the label when the input is filled, forcing users to remember what they selected
-
----
+<img src="images/select_input@input_status_img.png" alt="select_input@input_status_img" width="433">
 
 ## Error
 
-An error is used to provide real-time feedback when the select input is in an invalid state:
+The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
-**Examples of invalid states:**
-• Required field left empty
-• Incorrect value format (invalid email, phone number, postal code)
-• Value that does not meet the established criteria (password not secure enough, text too short or too long)
+This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it.
 
-**Accessibility for error indication:**
-• Color alone is not sufficient: WCAG requires that color not be the only means of conveying information. Therefore, an icon and explicit text must accompany the error color.
-• Assistive technologies need contextual error messages: when a user submits a form or leaves a field, screen readers need to receive clear textual information about the error. Use the aria-describedby attribute to associate error messages with the corresponding select input element.
-• Error text is not just an ornament: WCAG guidelines require that error messages be sufficiently precise and descriptive.
+The input remains editable, encouraging users to revise their input without starting over.
 
-**`False`** The select input is in its neutral or valid state.
+In the context of the select field, if the user has correctly selected a value but an error message still appears, it often means that: the option has been deleted, blocked, or is invalid / the option does not comply with a business rule / the option is incompatible with the user's profile / the option is obsolete or expired / inconsistency with another value in the form / too many choices, limit exceeded / server issue or value rejected on the backend.
 
-**`True`** The user sees an error message detailing the nature of the problem, and the component is visually marked (e.g., with a specific color or icon) to draw attention to the error.
+&nbsp;
 
-### Do & don'ts
+### ⚠️ Error message vs helper text / link
 
-✅ **Do:** Display error messages immediately below the select input, using clear language that explains how to fix the issue
+The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously. However, a helper link must not be replaced and should remain positioned below the error message.
 
-❌ **Don't:** Rely on color alone to indicate errors; always include an icon and descriptive text for accessibility
-
-✅ **Do:** Use `aria-describedby` to programmatically associate error messages with the select input for screen readers
-
-❌ **Don't:** Show generic error messages like "Invalid selection" that don't help users understand what went wrong
-
-✅ **Do:** Trigger validation after the user interacts with the field or attempts to submit the form, not while typing
-
-❌ **Don't:** Display error states prematurely before users have had a chance to complete their selection
-
-✅ **Do:** Ensure error icons have at least 3:1 contrast ratio and error text meets WCAG AA standards
-
-❌ **Don't:** Hide error messages on focus or hover, preventing users from reading them while correcting mistakes
-
-✅ **Do:** Provide specific guidance in error messages, such as "Please select a shipping method to continue"
-
-❌ **Don't:** Use technical jargon or system codes in error messages that users cannot understand
-
----
+<img src="images/select_input@error_img.png" alt="select_input@error_img" width="433">
 
 ## Leading icon
 
-Conveys the nature or purpose of the select input field at a glance.
+Helps indicate the purpose of the input.
 
-### Do & don'ts
+Only use a leading icon if it adds clear functional or contextual value.
 
-✅ **Do:** Use universally recognizable icons that clearly represent the input's purpose (e.g., location pin for country selection)
-
-❌ **Don't:** Add decorative icons that don't enhance understanding or serve a functional purpose
-
-✅ **Do:** Ensure leading icons have proper color contrast (3:1 minimum) against their background in all states
-
-❌ **Don't:** Use leading icons inconsistently across similar input types, creating confusion about their meaning
-
-✅ **Do:** Size leading icons appropriately (16-24px) to maintain visual balance with text and remain perceivable
-
-❌ **Don't:** Rely solely on icon color to convey state changes; use additional visual indicators for accessibility
-
-✅ **Do:** Test icon comprehension with users to verify they understand the icon's meaning without text labels
-
-❌ **Don't:** Place leading icons so close to the input text that they interfere with readability or cause visual clutter
-
-✅ **Do:** Make leading icons purely visual and exclude them from the accessibility tree unless they convey unique information
-
-❌ **Don't:** Use overly complex or detailed icons that become unclear when rendered at small sizes
-
----
+<img src="images/select_input@leading_icon_img.png" alt="select_input@leading_icon_img" width="433">
 
 ## Label
 
-Describes the purpose of the input. Why hide a select input label?
-In some UI contexts, especially when space is limited or when the input is part of a compact layout (filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
+Describes the purpose of the input. Why hide a select input label?  
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.  
 However, hiding the label should only be done if:
-• The purpose of the input remains clear thanks to a contextual icon.
-• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+* The purpose of the input remains clear thanks to a contextual icon.
+* The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
-### Do & don'ts
-
-✅ **Do:** Always provide a label for every select input, either visibly or through `aria-label` for accessibility
-
-❌ **Don't:** Hide labels visually without ensuring screen readers can still access label text
-
-✅ **Do:** Write clear, concise labels that precisely describe what users should select (e.g., "Delivery method")
-
-❌ **Don't:** Use vague labels like "Choose option" that don't indicate what type of selection is required
-
-✅ **Do:** Position labels directly above or to the left of select inputs following standard form layout patterns
-
-❌ **Don't:** Place labels far from their inputs, making it difficult for users to associate them
-
-✅ **Do:** Keep labels short (3-5 words) to maintain scanability and reduce cognitive load
-
-❌ **Don't:** Write labels as full sentences or questions when a brief phrase is sufficient
-
-✅ **Do:** Use sentence case for labels (e.g., "Country of residence") rather than title case or all caps
-
-❌ **Don't:** Include colons after labels; modern design patterns favor clean label text without punctuation
-
-✅ **Do:** Ensure visually hidden labels still provide complete context for screen reader users
-
-❌ **Don't:** Assume placeholder text can replace proper labels, as placeholders disappear when users interact with the field
-
----
+<img src="images/select_input@label_img.png" alt="select_input@label_img" width="433">
 
 ## Other boolean options
 
@@ -262,112 +134,160 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 **`Helper link`** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
 
-### Do & don'ts
-
-✅ **Do:** Use helper text to provide essential context that helps users understand what to select or why
-
-❌ **Don't:** Repeat information already stated in the label; helper text should add new, valuable guidance
-
-✅ **Do:** Keep helper text concise (one sentence) to maintain readability and reduce cognitive load
-
-❌ **Don't:** Use helper text for critical instructions that users might miss; include essential information in labels
-
-✅ **Do:** Position helper text consistently between the input and any error messages in the vertical stack
-
-❌ **Don't:** Hide helper text on focus or interaction when users may need it most
-
-✅ **Do:** Use helper links when additional explanation is needed without cluttering the form interface
-
-❌ **Don't:** Open helper links in new tabs without warning, as it disrupts the user's workflow
-
-✅ **Do:** Ensure helper text is programmatically associated with the input using `aria-describedby`
-
-❌ **Don't:** Style helper links identically to regular text, making them invisible to users who need extra guidance
-
-✅ **Do:** Write helper text in plain language that all users can understand regardless of technical expertise
-
-❌ **Don't:** Use helper text as a substitute for proper field labeling or clear option descriptions
-
----
+<img src="images/select_input@other_boolean_options_img.png" alt="select_input@other_boolean_options_img" width="433">
 
 ## Mandatory field indication
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
 2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
-UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
 
-**If not all fields are mandatory (several fields present):**
+**If not all fields are mandatory (and there are several fields present):**
 1. Display the message "All fields marked with an * are mandatory." at the top.
-2. Use an asterisk (*) at the end of each mandatory field label (the word "mandatory" is read aloud instead of the visible asterisk at the end of the label).
-UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
-3. Use the mention "(optional)" at the end of each optional field label. Note that this rule is not systematic—it remains an option, to be used if needed.
+2. Use an asterisk (*) at the end of each mandatory field label.  
+   **⚠️ Important:**
+   * In Figma, the asterisk must be entered manually by designers in the label text. UI rendering of the asterisk: **font-weight-bold** + **color-content-negative (red)**.
+   * Technically, for web/iOS/Android, the asterisk is positioned in a dedicated container after the label text. Spacing between label and asterisk: Empty state → 4px / Other states (reduced label) → 3px. If the label is truncated due to a large amount of text, the asterisk must remain visible at the end of the field.
+3. Either the technology allows a 'required' attribute to be managed on the fields (usually in Web), in which case any asterisks must be hidden from users using assistive technologies, or the technology does not allow the mandatory nature of the field to be indicated. In this case, the asterisk must be vocalised as well as a 'mandatory' mention. Please refer to the technical documentations for more information.
+4. Depending on the use case, an 'optional' label can be added to non-mandatory fields.
 
 **If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
-### Do & don'ts
+<img src="images/select_input@mandatory_field_indication_img.png" alt="select_input@mandatory_field_indication_img" width="433">
 
-✅ **Do:** Clearly indicate mandatory fields using a consistent pattern throughout the entire form or application
+<img src="images/select_input@mandatory_field_indication_img2.png" alt="select_input@mandatory_field_indication_img2" width="433">
 
-❌ **Don't:** Mix different mandatory field indicators (asterisks, labels, colors) inconsistently within the same interface
+## Truncated input area
 
-✅ **Do:** Place the asterisk immediately after the label text with no space, making the association clear
+**When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:**
 
-❌ **Don't:** Use asterisks without providing a legend explaining their meaning to users who may not understand the convention
+For this component, if the text volume exceeds the visible width of the field, the input area truncates the value on the right with a visual truncation indicator (...).
 
-✅ **Do:** Ensure screen readers announce "mandatory" or "required" when asterisks are present using `aria-required` or similar attributes
+**⚠️ In all cases:** the entire text must remain accessible when the field regains focus:
 
-❌ **Don't:** Rely solely on red color to indicate mandatory fields, as color-blind users cannot perceive the distinction
+* Either by opening the dropdown (either by clicking on it or using the down arrow) in which the item is selected and thus seeing the text in its entirety.
+* Or via a tooltip on hover in certain desktop contexts.
 
-✅ **Do:** Display a summary message at the form top explaining the mandatory field convention before users encounter fields
+<img src="images/select_input@truncated_input_area_img.png" alt="select_input@truncated_input_area_img" width="433">
 
-❌ **Don't:** Mark all fields as mandatory when some are truly optional, reducing trust and increasing abandonment
+## Multiline and responsiveness
 
-✅ **Do:** Use "(optional)" labels sparingly and only when the optionality needs emphasis for clarity
+### Multiline
 
-❌ **Don't:** Override WCAG guidance by making critical fields appear optional or hiding required field indicators
+In its "Empty" state, the label of this component allows two lines of text editing. However, it is recommended not to exceed one line of text.
 
-✅ **Do:** Test mandatory field patterns with users who rely on assistive technology to ensure clear communication
+Apart from the case described above, this component doesn't allow multi-line text editing (whether for the label or input).
 
-❌ **Don't:** Use mandatory field indicators on single-field forms where the requirement is obvious from context
+As a result, and in order to maintain a consistent and uniform height across multiple components, the presence of an excessive amount of text (in the label or input) will cause the text to be truncated so that only a single line remains visible for each element.
 
----
+Additionally, allowing multi-line text editing would create confusion with the "Text area" component.
+
+&nbsp;
+
+### Max-width vs full-width
+
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 480px.**
+
+For mobile or tablet use (or if the component is positioned inside a specific container), it is possible to set this component to use the full available width (of the screen or the container).
+
+Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+
+&nbsp;
+
+### User zoom in/out
+
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+
+However, "Text input" components present an exception regarding the loss of textual information following the activation of user zoom, since text truncation (label, placeholder, input text) is exceptionally allowed and enabled.
+
+* The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+* The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+* In order to preserve the minimun interactive area during user zoom out, this component have a min-width **of 96px** and a min-height **of 60px**.
+* Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+* In its "Leading icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
+* As the chevron and error icon are functional, they must follow the same rules as text.
+
+<img src="images/select_input@multiline_and_responsiveness_img.png" alt="select_input@multiline_and_responsiveness_img" width="433">
+
+## Rich text
+
+### Strong text
+* Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
+* No other text styles or custom font weights should be used.
+
+&nbsp;
+
+### ⚠️ Underline text and Hyperlinks
+* Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
+* If a link is required, the dedicated helper link component must be used (e.g. **Compare plans**).
+
+<img src="images/select_input@rich_text_img.png" alt="select_input@rich_text_img" width="433">
 
 # Specs
 
-## States
-
-**`Enabled`** Default state: the input is ready for interaction.
-
-**`Hover`** When the user hovers over the input field (without the dropdown being opened), the appearance of the element changes slightly to indicate interactivity.
-
-**`Focus`** When the user clicks or tabs into the input field (without opening the dropdown), the field gains focus and applies specific visual styles.
-
-**`Expanded`** When the user opens the dropdown menu to view options.
-
-**`Loading`** Indicates that options are being loaded asynchronously.
-
-**`Read only`** When the select input is in a read-only state, its value is visible, but the user cannot interact with it or change the selection.
-
-**`Disabled`** The input cannot be interacted with (non clickable, can't receive focus, no hover effect) and its appearance indicates unavailability.
-
-**`Skeleton`** Displays a placeholder UI while content is loading.
-
----
-
 ## Layout and spacing
 
-🚧 Content to be added
+<img src="images/select_input@specs_layout_spacing.png" alt="select_input@specs_layout_spacing" width="864">
 
----
+## States
+
+**`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
+
+**`Hover`** Slight visual contrast or border color change.
+
+**`Focus`** The select input is focused and ready to receive user input. It visually highlights the field to indicate that it's currently editable and interactive.
+
+**`Expanded`** The component is actively displaying its full list of options. This state is typically triggered by a user interaction, such as a click or tap on the field, and replaces the collapsed state. Visually, it involves changes: an open dropdown panel, a rotated chevron icon, and a highlighted focus ring to indicate active engagement.
+
+**`Loading`** The Loading state indicates that the system is processing or retrieving data related to the select input. A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
+
+**`Read only`** Text visible but not editable (often with a muted or different background).
+
+**`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
+
+**`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=False".
+
+<img src="images/select_input@states_img.png" alt="select_input@states_img" width="433">
+
+# Accessibility
+
+Work is in progress to deliver this content.
+
+# Develop
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-select-input](https://r.orange.fr/r/S-ouds-web-select-input) |
+| OUDS Android | Not available yet |
+| OUDS iOS | Not available yet |
+| OUDS Flutter | Not available yet |
 
 # Changelog
 
+## Availability
+
+Design status: **DEV**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Select input component](https://r.orange.fr/r/S-ouds-design-select-input) | Done | 1.3.1 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-select-input) | Done | 1.2.0 |
+| OUDS Android - Jetpack Compose | Not available yet | To do | – |
+| OUDS iOS - Swift | Not available yet | To do | – |
+| OUDS Flutter | Not available yet | To do | – |
+
+## Design changelog
+
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
-| Nov ??, 2025 | 1.3.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component | Maxime Tonnerre |
+| May 22, 2026 | 1.3.1 | **Version 2.6 of the design tokens is required for the development of this update.**<br>For "Loading" state:<ul><li>The loader frame has been renamed to Circular progress indicator. It now contains the new Circular Progress Indicator component.</li><li>The following tokens are removed: action-button-border-radius-default</li><li>Absolute positioning has been removed and replaced with Auto Layout.<ul><li>The container now uses: ouds/button/space/inset/icon-only-default</li></ul></li></ul> | Maxime Tonnerre<br>Anton Astafev |
+| Apr 22, 2026 | 1.3.0 | <ul><li>Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component</li><li>The input text reference changes from a regular weight (font-weight-label-default) to a medium weight (font-weight-label-moderate).</li><li>Removal of the component's max-width to avoid blocking certain layouts and to provide greater flexibility of use. The max-width values remain available in the design documentation.</li><li>Update of the tokens applied to the chevron. Depending on the component's state, the tokens applied to the chevrons are replaced by a component token from the button family (example: color-content-default → action-button-color-content-enabled).</li><li>Add spacing tokens between the label and the asterisk:<ul><li>control-text-input-space-column-gap-📄_label-asterisk</li><li>control-text-input-space-column-gap-📄_label-small-asterisk</li></ul></li></ul> | Maxime Tonnerre<br>Anton Astafev |
+| Apr 8, 2026 | - | <ul><li>Documentation writing: Rich text</ul> | Anton Astafev |
+| Mar 16, 2026 | - | <ul><li>Documentation writing:<ul><li>Rounded corners brand theme availability<li>Mandatory field indication<li>Truncated input area<li>Multiline and responsiveness</ul></ul> | Maxime Tonnerre |
+| Jan 21, 2026 | - | • Documentation writing: Rounded corners update | Cyriaque Billard |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> | Cyriaque Billard |
 | Sep 30, 2025 | 1.2.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
 | Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
 | Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
-
----

@@ -1,90 +1,82 @@
+---
+id: text-area
+category: Control
+family: None
+---
+
+# Text area
+
+A text area is a UI element that allows users to type, edit, or select longer blocks of text, such as comments, messages, or descriptions, by expanding vertically to provide more space for input.
+
 # Guideline
 
-## Intro
+<img src="images/hero_image_text_area.png" alt="hero_image_text_area" width="864">
 
-Multi-line text area that allows users to enter detailed text like comments or feedback, with features for character limits, auto-expansion, and error validation.
+## When to use
 
----
+✅ To capture long-form or multi-line text
 
-## Definition
+✅ When users need to provide comments, descriptions, or feedback
 
-A text area is a multi-line text area component that allows users to enter and edit longer blocks of text, such as comments, messages, or descriptions. Unlike a standard text area, which is limited to a single line, the text area can expand vertically and offers more space for content entry.
+✅ If the text length is variable or exceeds a single line
 
-It typically includes features like a visible label, placeholder text, character limits, and optional resize behavior. The text area is ideal for open-ended responses where users need to express detailed information.
-
----
-
-## Best for
-
-✅ Open-ended feedback collection requiring detailed responses
-
-✅ Comment sections where multi-line explanations are expected
-
-✅ Description fields in forms that need more than a single sentence
-
-✅ Message composition requiring multiple paragraphs
-
-✅ Long-form content entry like reviews or testimonials
-
-✅ Support ticket submissions with detailed issue descriptions
-
-✅ Notes or additional information fields in applications
-
-✅ Text editing where users need to see multiple lines simultaneously
-
-✅ Content requiring character limits with real-time counter feedback
-
-✅ Mobile contexts where expandable fields improve usability
-
----
+✅ For scenarios requiring auto-expansion, character limits, and validation
 
 ## Anatomy
 
+<img src="images/text_area@anatomy_img.png" alt="text_area@anatomy_img" width="864">
+
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Label | Identifies the purpose of the text area for users | N |
-| 2 | Input container | Multi-line text entry field with auto-resize capability | N |
-| 3 | Placeholder text | Provides guidance on expected input format or content | Y |
-| 4 | Helper text | Offers additional context or instructions for completion | Y |
-| 5 | Helper link | Provides access to detailed help or external guidance | Y |
-| 6 | Character counter | Shows remaining or exceeded character count in real-time | Y |
-| 7 | Error message | Displays validation feedback when input rules are violated | Y |
-| 8 | Trailing container | Holds loading indicator or action buttons when needed | Y |
+| 1 | Label | Tells users what information to enter. | No |
+| 2 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | No |
+| 3 | Character counter | Shows how many characters are remaining as users type. | Yes |
+| 4 | Resize handle | Lets users resize the text area when resizing is supported. | Yes |
+| 5 | Text cursor | Indicates where the next character will be inserted while typing. | No |
+| 6 | Placeholder | Provides guidance on expected input format or content | Yes |
+| 7 | Helper link | Provides a link to supporting guidance or related information. | Yes |
+| 8 | Input text | Show the entered text | No |
+| 9 | Scroll bar | Indicates the scrollable content and lets users scroll when the content exceeds the visible area. | Yes |
+| 10 | Loading indicator | Shows progress while validation or authentication is in progress. | Yes |
+| 11 | Outlined container | Alternative visual style using a full border. | Yes |
+| 12 | Error icon | Highlights the field’s error state to improve visibility and feedback. | Yes |
+| 13 | Error text | Explains what’s wrong and how to fix it when validation fails. | Yes |
 
----
+## Definition
+
+A text area is a UI element that allows users to type, edit, or select longer blocks of text, such as comments, messages, or descriptions, by expanding vertically to provide more space for input.
+
+The text area includes a visible label, placeholder text, character limits, and resize behavior, making it ideal for open-ended responses where users can provide detailed information.
 
 ## Outlined
 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
-**Do & don'ts**
+<img src="images/text_area@outlined_img.png" alt="text_area@outlined_img" width="433">
 
-✅ **Do:** Use filled text areas in dense forms where multiple fields need clear visual separation and containment
+## Rounded corner
 
-❌ **Don't:** Mix outlined and filled styles within the same form context as it creates visual inconsistency
+Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-✅ **Do:** Choose outlined text areas for lightweight contexts like search fields or filtering interfaces where minimal visual weight is desired
+This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
 
-❌ **Don't:** Use outlined text areas on backgrounds with poor contrast as the stroke may become difficult to perceive
+| Brand theme | Availability |
+| --- | --- |
+| **Orange** | Available |
+| **Orange Compact** | Available |
+| **Sosh** | Unavailable |
+| **Wireframe** | Unavailable |
 
-✅ **Do:** Consider the overall page hierarchy when selecting outlined versus filled, ensuring text areas don't compete with primary actions
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
 
-❌ **Don't:** Apply outlined style to all text areas by default without considering the specific use case and surrounding interface elements
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
-✅ **Do:** Use filled text areas when the field needs to stand out as an important data collection point
-
-❌ **Don't:** Switch between styles inconsistently across your application, as users expect predictable patterns
-
-✅ **Do:** Test both styles with your target users to determine which provides better usability in your specific context
-
-❌ **Don't:** Assume outlined text areas are always more modern or better; filled variants often provide clearer affordance for interaction
-
----
+<img src="images/text_area@rounded_corner_img.png" alt="text_area@rounded_corner_img" width="433">
 
 ## Input status
 
@@ -94,29 +86,7 @@ It typically includes features like a visible label, placeholder text, character
 
 **`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
-**Do & don'ts**
-
-✅ **Do:** Provide clear placeholder text that demonstrates the expected format or gives a concrete example
-
-❌ **Don't:** Use placeholder text as a replacement for labels, as it disappears when users begin typing
-
-✅ **Do:** Keep placeholder text concise and specific to help users understand what to enter without overwhelming them
-
-❌ **Don't:** Leave text areas in the empty state without any guidance if the expected input isn't immediately obvious
-
-✅ **Do:** Ensure placeholder text has sufficient contrast (at least 4.5:1) while still being distinguishable from entered text
-
-❌ **Don't:** Include critical instructions only in placeholder text, as it's not accessible to all users and disappears during interaction
-
-✅ **Do:** Use the filled state to provide clear visual feedback that user input has been successfully captured
-
-❌ **Don't:** Rely solely on filled state to indicate valid input; combine with other feedback mechanisms for complex validation
-
-✅ **Do:** Consider progressive disclosure where empty fields show just enough information to get started
-
-❌ **Don't:** Make placeholder text so verbose that it becomes distracting or reduces the perceived simplicity of the form
-
----
+<img src="images/text_area@input_status_img.png" alt="text_area@input_status_img" width="433">
 
 ## Error
 
@@ -126,217 +96,170 @@ This state helps users quickly identify and correct mistakes by explaining what 
 
 **⚠️ Error message vs helper text / link** If a helper text accompanies the text input, it is replaced by the error message. However, a helper link must not be replaced and should remain positioned below the error message.
 
-**Do & don'ts**
+<img src="images/text_area@error_img.png" alt="text_area@error_img" width="433">
 
-✅ **Do:** Display error messages immediately adjacent to the text area with clear visual indicators like red borders and error icons
+**Do:** Write error messages that explain what went wrong and provide specific guidance on how to fix it
 
-❌ **Don't:** Show errors while users are still typing; wait for field blur or form submission to avoid premature interruption
+**Don't:** Use technical jargon or error codes in messages; keep language plain and user-friendly
 
-✅ **Do:** Write error messages that explain what went wrong and provide specific guidance on how to fix it
+## Other boolean options
 
-❌ **Don't:** Use technical jargon or error codes in messages; keep language plain and user-friendly
+**`Scrolled`** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond **the maximum planned height of 240px, allowing the display of about 10 lines of text**. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
 
-✅ **Do:** Ensure error messages are programmatically associated with the text area using `aria-describedby` for screen reader accessibility
+**`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
-❌ **Don't:** Disable or remove the text area when displaying errors; users must be able to correct their input
+**`Helper link`** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
 
-✅ **Do:** Combine visual error indicators (color, icons) with text to support users who cannot perceive color alone
+**`Resize handle`** In certain contexts or environments, such as television or touch use on mobile, the use of this option is not relevant.
 
-❌ **Don't:** Replace helper text permanently with error messages; restore helper text when the error is resolved
+<img src="images/text_area@other_boolean_options_img.png" alt="text_area@other_boolean_options_img" width="433">
 
-✅ **Do:** Keep error messages concise and actionable, focusing on what users need to do next
+## Character counter
 
-❌ **Don't:** Display multiple error messages simultaneously if they can be consolidated into a single, clear instruction
+• **Character limit not exceeded**  
+The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field's allowed limit.
 
-✅ **Do:** Maintain error states until users have successfully corrected the input and validation passes
+⚠️ It is impossible to provide a recommendation for the maximum number of characters, as this depends too specifically on the constraints (or lack thereof) of each project.  
+If the count cannot be added and the text should be changed to "XXX characters maximum."
 
-❌ **Don't:** Clear error messages prematurely before users have had a chance to address the issue
+• **Character limit exceeded**  
+If the user exceeds the set limit, the field enters an error state, but input is not blocked. The character counter then shows the user, still in real time, how many characters have been entered beyond the field's allowed limit.
 
----
+The user must reduce the number of characters entered for the text area to exit the error state.  
+In the case where the maximum number of characters is 180, for example: When the input is at 180 char filled in the helper text changes "You have 0/180 characters left".
 
-## ⚠️ Label
+<img src="images/text_area@character_counter_img.png" alt="text_area@character_counter_img" width="433">
+
+**Do:** Set character limits based on actual content requirements and database constraints, not arbitrary numbers
+
+**Don't:** Use unnecessarily restrictive character limits that frustrate users trying to provide complete information
+
+**Do:** Allow users to see and edit content that exceeds the limit so they can make informed decisions about what to cut
+
+**Don't:** Truncate or delete user content automatically when limits are exceeded
+
+## Behavior by entered line count
+
+• **Default display**  
+By default, the height of **the input text container is set to 72px, which allows 3 lines of text** to be displayed without expanding the component. This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
+
+• **Auto-resize (automatic expansion)**  
+Above 3 lines of text, the field automatically increases in height as the user types their comment.  
+This behavior is not mandatory. It is possible to enable or disable the component’s expansion depending on the page layout. In a mobile chat-type use case, for example, the height of the text area must remain fixed even if the text entered by the user exceeds 3 lines.
+
+• **Vertical scrollbar**  
+If expansion is disabled or **the maximum height is reached at 240px, corresponding to about 10 lines of text**, an internal scrollbar appears allowing the user to scroll through the overflowing text. This choice prevents breaking the layout but has the drawback, on mobile, of creating a scroll within a scroll (text area scroll inside a page scroll).
+
+&nbsp;
+
+### ⚠️ Old web browsers
+The automatic expansion of the text area’s height based on the number of lines entered by the user is not a behavior supported by older web browsers. To address this issue, we have planned an alternative behavior for the component, which in this case has a fixed height of 144px (corresponding to about 6 lines of text), whether it is filled in or not. The selection of the appropriate expected behavior for the component is done automatically based on the version of the user’s web browser.
+
+&nbsp;
+
+### ⚠️ Manual resize (by the user)
+We have chosen to disable horizontal resizing to avoid behaviors inconsistent with the design system.  
+Even if the user manually increases the height of the text area, the max-height of 240px remains applied.  
+On web desktop (keyboard/mouse use), manual resizing is enabled.  
+On both web mobile/tablet and natif iOS/Android (touch use), manual resizing is disabled. For information (for web), the media query is : @media (pointer: coarse) and not (any-pointer: fine).
+
+<img src="images/text_area@behavior_by_entered_line_count_img.png" alt="text_area@behavior_by_entered_line_count_img" width="433">
+
+## ⚠️ Label (can it be hidden?)
 
 Describes the purpose of the input. Why hide a text area label?
 
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
 
 However, hiding the label should only be done if:
-• The purpose of the input remains clear thanks to a placeholder or contextual icon.
-• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
+* The purpose of the input remains clear thanks to a placeholder or contextual icon.
+* The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
 Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
-**Do & don'ts**
+<img src="images/text_area@label_img.png" alt="text_area@label_img" width="433">
 
-✅ **Do:** Always provide a label for every text area, making it visible by default for maximum accessibility and usability
+**Do:** Keep labels short, direct, and without punctuation at the end
 
-❌ **Don't:** Hide labels unless there's a compelling reason and you can guarantee the purpose remains absolutely clear to all users
+**Don't:** Use vague labels and long sentences, with punctuation at the end
 
-✅ **Do:** Position labels above text areas rather than to the side, as top-aligned labels work better with longer text and responsive layouts
+## Mandatory field indication
 
-❌ **Don't:** Use placeholder text as a substitute for labels, as placeholders are not accessible to all users and disappear during interaction
+**If all fields are mandatory (several fields present):**
 
-✅ **Do:** Keep labels short, direct, and written in sentence case without punctuation at the end
+1. Display the message "All fields are mandatory." at the top.
+2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
 
-❌ **Don't:** Use vague labels like "Comments" when more specific labels like "Additional details about your request" would be clearer
+**If not all fields are mandatory (and there are several fields present):**
 
-✅ **Do:** When hiding labels visually, ensure they remain accessible using `aria-label`, `aria-labelledby`, or visually-hidden CSS techniques
+1. Display the message "All fields marked with an * are mandatory." at the top.
+2. Use an asterisk (*) at the end of each mandatory field label. ⚠️ Important:
+   - In Figma, the asterisk must be entered manually by designers in the label text. UI rendering of the asterisk: font-weight-bold + color-content-negative (red).
+   - Technically, for web/iOS/Android, the asterisk is positioned in a dedicated container after the label text. Spacing between label and asterisk: Empty state → 4px / Other states (reduced label) → 3px. If the label is truncated due to a large amount of text, the asterisk must remain visible at the end of the field.
+3. Either the technology allows a 'required' attribute to be managed on the fields (usually in Web), in which case any asterisks must be hidden from users using assistive technologies, or the technology does not allow the mandatory nature of the field to be indicated. In this case, the asterisk must be vocalised as well as a 'mandatory' mention. Please refer to the technical documentations for more information.
+4. Depending on the use case, an 'optional' label can be added to non-mandatory fields.
 
-❌ **Don't:** Rely solely on icons or context to convey the purpose of a text area without providing an accessible label
+**If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
 
-✅ **Do:** Align labels consistently across your form to create a predictable and scannable layout
+<img src="images/text_area@mandatory_field_indication_img.png" alt="text_area@mandatory_field_indication_img" width="433">
 
-❌ **Don't:** Add colons or other punctuation after labels, as modern design systems favor cleaner label presentation
+<img src="images/text_area@mandatory_field_indication_img2.png" alt="text_area@mandatory_field_indication_img2" width="433">
 
-✅ **Do:** Ensure labels are visually and programmatically associated with their corresponding text areas
+## Truncated input area
 
-❌ **Don't:** Place labels far from their text areas, as this makes forms harder to complete and increases cognitive load
+When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:
 
----
+• **On web**, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (bottom-aligned) and the beginning of the text becomes invisible (masked on the top). There should be no visual truncation indicator (...). This choice is intentional because, for many fields, showing the end often makes it easier to identify the value (file names, paths, emails).
 
-## Other boolean options
+• **On Android**, by default (even if the project retains control over this setting), the behavior is the same as on the web.
 
-**Scrolled** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond **the maximum planned height of 240px, allowing the display of about 10 lines of text**. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
+• **On iOS**, by default (even if the project retains control over this setting), the behavior is the same as on the web.
 
-**Helper text** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
+**⚠️ In all cases:** the entire text must remain accessible when the field regains focus:
+- Either by refocusing the field, the text becomes horizontally scrollable again (the blinking cursor is visible).
+- Or via a tooltip on hover in certain desktop contexts.
 
-**Helper link** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
+<img src="images/text_area@truncated_input_area_img.png" alt="text_area@truncated_input_area_img" width="433">
 
-**Do & don'ts**
+## Multiline and responsiveness
 
-✅ **Do:** Set a maximum height for text areas to prevent them from dominating the layout, using scrolling for overflow content
+• **Multiline**  
+This component allows multi-line text editing. Further details are available in the "Behavior by entered line count" section.
 
-❌ **Don't:** Allow text areas to expand infinitely without constraint, as this disrupts page layout and creates poor mobile experiences
+• **Max-width vs full-width**  
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 640px.**  
+For mobile or tablet use (or if the component is positioned inside a specific container), it is possible to set this component to use the full available width (of the screen or the container). Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
 
-✅ **Do:** Use helper text to provide concise, actionable guidance that helps users understand what to enter
+• **User zoom in/out**  
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information. However, "Text input" components present an exception regarding the loss of textual information following the activation of user zoom in, since text truncation (label, placeholder, input text) is exceptionally allowed and enabled.
 
-❌ **Don't:** Make helper text longer than 1-2 lines, as lengthy instructions reduce scannability and increase cognitive burden
+  - The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+  - Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.
+  - The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+  - In order to preserve the minimum interactive area during user zoom out, this component has a min-width **of 240px** and a min-height **of 92px**.
+  - Even if the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+  - In its "Leading icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
+  - As the error icon is functional, it must follow the same rules as text.
+  - The behaviors of the button (layout: icon only) component during user zoom are available in the corresponding documentation.  
+**Learn more about the behavior of the button component.**
 
-✅ **Do:** Position helper text directly below the text area where users naturally look for additional context
+<img src="images/text_area@multiline_and_responsiveness_img.png" alt="text_area@multiline_and_responsiveness_img" width="433">
 
-❌ **Don't:** Place helper text above the text area or far from it, as this breaks the visual flow and reduces discoverability
+## Rich text
 
-✅ **Do:** Use helper links sparingly for detailed instructions that would overwhelm inline helper text
+• **Strong text**  
+Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Large/Strong or Label/Medium/Strong) depending on the selected text style. No other text styles or custom font weights should be used.
 
-❌ **Don't:** Include links within helper text without clear indication, as screen readers may not announce them as interactive
+• **⚠️ Underline text and Hyperlinks**  
+Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users. If a link is required, the dedicated helper link component must be used (e.g. **Writing guidelines**).
 
-✅ **Do:** Ensure scrolled text areas have sufficient contrast on scrollbars and clear visual indicators of scrollable content
-
-❌ **Don't:** Hide scrollbars entirely, as users need visual confirmation that more content exists below
-
-✅ **Do:** Test scrolling behavior on mobile devices to avoid nested scrolling issues where possible
-
-❌ **Don't:** Create scroll-within-scroll situations on mobile, as they cause frustration and usability problems
-
-✅ **Do:** Make helper text and helper links accessible via screen readers using proper semantic markup
-
-❌ **Don't:** Convey critical information only through helper links, as users may miss or skip them
-
-✅ **Do:** Display helper text persistently rather than only on focus, ensuring it's available when users need it most
-
-❌ **Don't:** Rely on hover-only tooltips for essential information, as they're not accessible on touch devices or to keyboard users
-
----
-
-## Behavior by entered line count
-
-• **Default display**
-By default, the height of **the input text container is set to 72px, which allows 3 lines of text** to be displayed without expanding the component. This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
-
-• **Auto-resize (automatic expansion)**
-Above 3 lines of text, the field automatically increases in height as the user types their comment.
-
-• **Vertical scrollbar**
-If expansion is disabled or **the maximum height is reached at 240px, corresponding to about 10 lines of text**, an internal scrollbar appears allowing the user to scroll through the overflowing text. This choice prevents breaking the layout but has the drawback, on mobile, of creating a scroll within a scroll (text area scroll inside a page scroll).
-
-**⚠️ No manual resize (by the user)**
-On both desktop and mobile, we have chosen to disable manual resizing to avoid behaviors inconsistent with the design system.
-
-**Do & don'ts**
-
-✅ **Do:** Start with a reasonable default height (3 lines) that signals multi-line input without overwhelming users
-
-❌ **Don't:** Show a single-line height initially, as it fails to communicate that multi-line input is expected
-
-✅ **Do:** Allow text areas to auto-expand as users type to show all content without requiring scrolling for most use cases
-
-❌ **Don't:** Force users to scroll within small text areas when auto-expansion would provide a better experience
-
-✅ **Do:** Set a maximum height to prevent text areas from consuming excessive screen space in long-form inputs
-
-❌ **Don't:** Allow unlimited expansion on small screens, as it makes navigation and form completion difficult
-
-✅ **Do:** Disable manual resize handles to maintain consistent layout and prevent users from breaking the design
-
-❌ **Don't:** Allow users to resize text areas arbitrarily, especially on mobile, as it causes layout problems
-
-✅ **Do:** Test auto-resize behavior across different devices to ensure smooth transitions without layout shifts
-
-❌ **Don't:** Create jarring resize animations that distract users or cause content to jump unexpectedly
-
-✅ **Do:** Provide clear visual feedback when maximum height is reached and scrolling becomes necessary
-
-❌ **Don't:** Hide the fact that content has been truncated; make scrollability obvious with visible scrollbars
-
-✅ **Do:** Consider the typical length of expected responses when setting default and maximum heights
-
-❌ **Don't:** Use the same height settings for all text areas regardless of their purpose or expected content length
-
-✅ **Do:** Ensure auto-resize respects container boundaries and doesn't break parent layout constraints
-
-❌ **Don't:** Allow text areas to overflow their containers or overlap with adjacent content during expansion
-
----
-
-## Character counter
-
-• **Character limit not exceeded**
-The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field's allowed limit.
-
-⚠️ It is impossible to provide a recommendation for the maximum number of characters, as this depends too specifically on the constraints (or lack thereof) of each project.
-
-• **Character limit exceeded**
-If the user exceeds the set limit, the field enters an error state, but input is not blocked. The character counter then shows the user, still in real time, how many characters have been entered beyond the field's allowed limit.
-
-The user must reduce the number of characters entered for the text area to exit the error state.
-
-**Do & don'ts**
-
-✅ **Do:** Display character counters in real-time to give users immediate feedback on remaining capacity
-
-❌ **Don't:** Wait until form submission to inform users they've exceeded character limits
-
-✅ **Do:** Position character counters in the helper text area where users naturally look for field-related information
-
-❌ **Don't:** Place character counters in locations that are hard to notice or that interrupt the typing flow
-
-✅ **Do:** Show "X characters remaining" format to help users gauge how much more they can write
-
-❌ **Don't:** Only show total character count without indicating the limit, forcing users to do mental math
-
-✅ **Do:** Transition to error state when limits are exceeded, using clear visual indicators like color change
-
-❌ **Don't:** Block user input when the limit is reached; allow typing and show the overflow amount instead
-
-✅ **Do:** Use clear, accessible language in character counters like "15 characters remaining" rather than just numbers
-
-❌ **Don't:** Rely solely on color to communicate limit status; include text and icons for accessibility
-
-✅ **Do:** Set character limits based on actual content requirements and database constraints, not arbitrary numbers
-
-❌ **Don't:** Use unnecessarily restrictive character limits that frustrate users trying to provide complete information
-
-✅ **Do:** Update character counter announcements for screen readers using ARIA live regions
-
-❌ **Don't:** Make character counter changes completely silent to assistive technology users
-
-✅ **Do:** Allow users to see and edit content that exceeds the limit so they can make informed decisions about what to cut
-
-❌ **Don't:** Truncate or delete user content automatically when limits are exceeded
-
----
+<img src="images/text_area@rich_text_img.png" alt="text_area@rich_text_img" width="433">
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/text_area@specs_layout_spacing.png" alt="text_area@specs_layout_spacing" width="864">
 
 ## States
 
@@ -354,20 +277,52 @@ The user must reduce the number of characters entered for the text area to exit 
 
 **`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=False".
 
----
+<img src="images/text_area@states_img.png" alt="text_area@states_img" width="433">
 
-## Layout and spacing
+# Accessibility
 
-🚧 Content to be added
+Work is in progress to deliver this content.
 
----
+# Develop
+
+## OUDS-Web example
+
+[Components/TextArea › Text Area 0](https://web.unified-design-system.orange.com/storybook/?path=/story/components-textarea--text-area-0)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-text-area](https://r.orange.fr/r/S-ouds-web-text-area) |
+| OUDS Android | [S-ouds-android-text-area](https://r.orange.fr/r/S-ouds-android-text-area) |
+| OUDS iOS | [S-ouds-ios-text-area](https://r.orange.fr/r/S-ouds-ios-text-area) |
+| OUDS Flutter | Not available yet |
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Nov 10, 2025 | 1.2.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component | Maxime Tonnerre |
-| Sep 30, 2025 | 1.1.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
-| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+## Availability
 
----
+Design status: **DEV**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Text area component](https://r.orange.fr/r/S-ouds-design-text-area) | Done | 1.2.1 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-text-area) | Done | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-text-area) | Done | 1.2.1 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-text-area) | Done | 1.2.1 |
+| OUDS Flutter | Not available yet | To do | – |
+
+## Design changelog
+
+| Date | Number | Notes |
+|------|--------|-------|
+| May 26, 2026 | - | • Documentation writing: Addition of a clarification regarding auto-resize (automatic expansion). |
+| May 22, 2026 | 1.2.1 | **Version 2.6 of the design tokens is required for the development of this update.**<br>For "Loading" state, "Trailing action: False" variant<ul><li>The loader frame has been renamed to Progress indicator container. It now contains the new Circular Progress Indicator component.</li><li>The following token has been removed: action-button-border-radius-default</li><li>Absolute positioning has been removed and replaced with Auto Layout.</li><li>The container now uses: ouds/action/button/size/min-width-default, ouds/action/button/space/inset/icon-only-default, ouds/control/text-area/space/padding-block-trailing-container</li></ul> |
+| Apr 22, 2026 | 1.2.0 | <ul><li>Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component</li><li>The input text reference changes from a regular weight (font-weight-label-default) to a medium weight (font-weight-label-moderate).</li><li>Removal of the component's max-width to avoid blocking certain layouts and to provide greater flexibility of use. The max-width values remain available in the design documentation.</li><li>Adding the resize handle boolean property</li><li>For the "Empty" status and for all states (except the "Focus" state): Update of the typographic reference for the "Label text" → From "Label-small-default" to "Label-large-default" / Modification of the padding block top value, with the addition of a new token → control-text-area-space-padding-block-top-empty / Removal of the padding block bottom to rebalance the component height across all statuses and all states.</li><li>For the "Trailing container" frames: The responsive behavior (auto-layout) of the height changes from "Fill container" to "Hug content." / Removal of the max-height (ouds-control-text-area-size-max-height-assets-container) / Removal of the min-height (ouds-action-button-size-min-height) / Modification of the padding block, addition of 2 new tokens.</li><li>Add spacing tokens between the label and the asterisk: control-text-input-space-column-gap-label-asterisk / control-text-input-space-column-gap-label-small-asterisk</li></ul> |
+| Apr 8, 2026 | - | • Documentation writing: Rich text |
+| Mar 16, 2026 | - | • Documentation writing:<ul><li>Rounded corners brand theme availability</li><li>Mandatory field indication</li><li>Truncated input area</li><li>Multiline and responsiveness</li></ul> |
+| Jan 21, 2026 | - | • Documentation writing: Rounded corners update | Cyriaque Billard |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
+| Nov 10, 2025 | 1.2.0 | • Scope: Trailing action=False / State=Loading → Replacement of the button component (loading state) with a "Trailing container" frame containing the circular progress indicator component |
+| Sep 30, 2025 | 1.1.0 | • The name of the "Style" variant has been replaced to "Outlined" with true/false variant |
+| Jun 30, 2025 | 1.0.0 | • Component creation |

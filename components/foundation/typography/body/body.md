@@ -1,54 +1,31 @@
+---
+id: typography-body
+category: Content display
+family: Typography
+---
+
+# Body
+
+A body is a UI element that styles typography for common text content like paragraphs, descriptions, and informational messages.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_body.png" alt="hero_image_body" width="864">
 
-Body is the workhorse text style for paragraphs and everyday content, tuned for comfortable, readable reading across every screen size.
+## Anatomy
 
----
-
-## Definition
-
-Body styles are designed for everyday text content such as paragraphs, descriptions, and informational messages. They prioritize readability and provide a comfortable reading experience across all screen sizes. Multiple size options allow content importance to be expressed while maintaining consistency.
-Their typography automatically scales across breakpoints to support responsive layouts.
-
----
-
-## Best for 👈🤔
-
-✅ Paragraphs and running text in articles, descriptions, and help content
-
-✅ Informational and instructional messages
-
-✅ Card and list descriptions beneath a heading or label
-
-✅ Form helper text and supporting explanations
-
-✅ Introductory or lead paragraphs using the Large size
-
-✅ Dense or secondary content using the Small size
-
-✅ Emphasizing key words or sentences with the Moderate or Strong weight
-
-✅ Long-form reading where comfort and rhythm matter
-
-✅ Responsive layouts that must stay readable across breakpoints
-
-✅ Any default text that isn't a heading, label, or code
-
----
-
-## Anatomy 👈🤖
+<img src="images/body@anatomy_img.png" alt="body@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Font family | Theme `body` font-family token defining the typeface | N |
-| 2 | Font size | Type size per variant — Large 16px, Medium 14px, Small 12px | N |
-| 3 | Line height | Reading-optimized vertical rhythm per size | N |
-| 4 | Letter spacing | Subtle positive tracking that aids legibility at text sizes | N |
-| 5 | Font weight | Emphasis axis — Default, Moderate, Strong | N |
-| 6 | Responsive scaling | Automatic adaptation across breakpoints | N |
+| 1 | Body container | The component: the text block whose width and alignment are set by its container | No |
+| 2 | Body text | The text itself, styled with the Body type scale | No |
 
----
+## Definition
+
+A body is a UI element that styles typography for common text content like paragraphs, descriptions, and informational messages.
+
+The body features multiple size options, to allow content importance to be expressed while maintaining consistency. Variants automatically adjust across breakpoints to ensure optimal readability on all devices. Body prioritize readability and provide a comfortable reading experience.
 
 ## Size
 
@@ -58,26 +35,7 @@ Their typography automatically scales across breakpoints to support responsive l
 
 **`Small`** A compact body text size intended for supporting information, secondary content, and dense layouts where space efficiency is important.
 
----
-
-## size_do_&_dont 👈🤔
-
-✅ **Do:** Use Medium as the default for most running text and descriptions.  
-❌ **Don't:** Default to Large or Small for body copy without a clear hierarchy reason.
-
-✅ **Do:** Use Large for introductory or lead paragraphs that deserve more presence.  
-❌ **Don't:** Set long articles entirely in Large, tiring the reader.
-
-✅ **Do:** Reserve Small for supporting, secondary, or dense content.  
-❌ **Don't:** Use Small for primary reading content or critical instructions.
-
-✅ **Do:** Keep a comfortable line length and let body text reflow responsively.  
-❌ **Don't:** Constrain body text to fixed widths or sizes that hurt readability.
-
-✅ **Do:** Maintain a consistent body size within the same content block.  
-❌ **Don't:** Mix multiple body sizes in one paragraph, creating a ragged rhythm.
-
----
+<img src="images/body@size_img.png" alt="body@size_img" width="433">
 
 ## Weight
 
@@ -87,42 +45,72 @@ Their typography automatically scales across breakpoints to support responsive l
 
 **`Strong`** Strong weight provides the highest level of emphasis for Body and Label styles. It is intended for critical information, key actions, or elements that must stand out within dense content. Use it sparingly to preserve its impact and avoid visual overload.
 
----
+<img src="images/body@weight_img.png" alt="body@weight_img" width="433">
 
-## weight_do_&_dont 👈🤔
+## Multiline and responsiveness
 
-✅ **Do:** Use Default weight for the vast majority of body content.  
-❌ **Don't:** Set whole paragraphs in Strong, which removes all emphasis contrast.
+### Multiline
+This component allows multi-line text editing. The number of lines is not limited.
 
-✅ **Do:** Use Moderate to gently reinforce hierarchy or improve scanability.  
-❌ **Don't:** Reach for Strong when Moderate already provides enough emphasis.
+&nbsp;
 
-✅ **Do:** Reserve Strong for critical information or key in-line emphasis.  
-❌ **Don't:** Scatter Strong across the page, causing visual overload.
+### Max-width vs full-width
+This component has a default max-width.  
+For the “Body large” variant, the global max-width token will be: size-max-width-body-large  
+For the “Body medium” variant, the global max-width token will be: size-max-width-body-medium  
+For the “Body small” variant, the global max-width token will be: size-max-width-body-small
 
-✅ **Do:** Pair weight changes with meaning, not decoration.  
-❌ **Don't:** Use weight as the only signal for something that needs a semantic element.
+&nbsp;
 
-✅ **Do:** Keep weight usage consistent for similar content across the product.  
-❌ **Don't:** Switch weights arbitrarily between equivalent pieces of content.
+### User zoom in/out
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.  
+  • The text must always scale proportionally with user zoom. Text resizing must never be blocked.  
+  • Zooming must never cause text to be truncated or hidden. The component must expand vertically to allow line wrapping.  
+  • The component’s height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.  
+  • Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user’s zoom level.
 
----
+<img src="images/body@multiline_and_responsiveness_img.png" alt="body@multiline_and_responsiveness_img" width="433">
 
 # Specs
 
-## States
-
-🚧 Not applicable — Body is a non-interactive typography style and has no interactive states.
-
----
-
 ## Layout and spacing
 
-🚧 Content to be added
+<img src="images/body@spec_layout_spacing.png" alt="body@spec_layout_spacing" width="864">
 
----
+# Accessibility
+
+Work is in progress to deliver this content.
+
+# Develop
+
+## OUDS-Web example
+
+[Components/Typography › Typography 4](https://web.unified-design-system.orange.com/storybook/?path=/story/components-typography--typography-4)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-typography-body](https://r.orange.fr/r/S-ouds-web-typography-body) |
+| OUDS Android | [S-ouds-android-typography-body](https://r.orange.fr/r/S-ouds-android-typography-body) |
+| OUDS iOS | [S-ouds-ios-typography-body](https://r.orange.fr/r/S-ouds-ios-typography-body) |
+| OUDS Flutter | [S-ouds-flutter-typography-body](https://r.orange.fr/r/S-ouds-flutter-typography-body) |
 
 # Changelog
+
+## Availability
+
+Design status: **LIVE**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | Not available yet | Done | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-body) | Done | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-body) | Done | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-body) | Done | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-body) | Done | 1.0.0 |
+
+## Design changelog
 
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|

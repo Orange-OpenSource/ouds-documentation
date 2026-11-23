@@ -1,52 +1,30 @@
+---
+id: divider
+category: Layout
+family: None
+---
+
+# Divider
+
+A divider is a UI element that structures content by visually separating different areas.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_divider.png" alt="hero_image_divider" width="864">
 
-A divider is a thin visual line that separates and organizes content sections to improve readability and interface structure.
+## Anatomy
 
----
-
-## Definition
-
-A Divider is a UI component used to visually structure an interface by clearly separating content sections. It helps improve readability and content organization without introducing a strong hierarchy like a heading or a container would.
-
----
-
-## Best for 👈🤔
-
-✅ Separating stacked content sections vertically (e.g., between main content and footer)
-
-✅ Dividing horizontally aligned elements (e.g., between columns in a layout)
-
-✅ Grouping related menu items or navigation options
-
-✅ Creating visual breaks between list items in dense content
-
-✅ Separating form sections without adding hierarchical weight
-
-✅ Distinguishing content areas within cards or panels
-
-✅ Breaking up long scrolling pages into scannable sections
-
-✅ Separating toolbar actions or icon groups
-
-✅ Creating thematic breaks between paragraphs or articles
-
-✅ Visually organizing dashboard widgets or data regions
-
----
-
-## Anatomy 👈🤖
+<img src="images/divider@anatomy_img.png" alt="divider@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Line | The visual separator element that creates the division between content sections | N |
-| 2 | Container | The bounding area that controls the divider's dimensions and positioning | N |
-| 3 | Spacing | Margin or padding around the divider that creates visual breathing room | Y |
-| 4 | Color | The stroke color applied to the line, using design tokens for consistency | N |
-| 5 | Thickness | The stroke weight of the divider line (typically 1px) | N |
+| 1 | Divider | Neutral coloured horizontal or vertical line placed either horizontally or vertically between elements | No |
 
----
+## Definition
+
+A divider is a UI element that structures content by visually separating different areas.
+
+The divider enhances readability and organises content without creating a stronger visual hierarchy, such as a heading or container.
 
 ## Orientation
 
@@ -54,76 +32,84 @@ A Divider is a UI component used to visually structure an interface by clearly s
 
 **`Vertical`** Separates horizontally aligned elements. Example use case: Between two columns in a layout.
 
----
-
-## orientation_do_&_dont 👈🤔
-
-✅ **Do:** Use horizontal dividers to separate stacked content sections that flow vertically down the page  
-❌ **Don't:** Use horizontal dividers between side-by-side elements that should be separated vertically
-
-✅ **Do:** Use vertical dividers in flex containers or toolbars to separate grouped inline elements  
-❌ **Don't:** Use vertical dividers to separate content that flows vertically—use horizontal dividers instead
-
-✅ **Do:** Ensure vertical dividers have sufficient height by using `flexItem` or explicit height in flex containers  
-❌ **Don't:** Place vertical dividers in block-level contexts where they collapse to zero height
-
-✅ **Do:** Match the divider orientation to the layout direction—horizontal for vertical stacks, vertical for horizontal rows  
-❌ **Don't:** Mix orientations inconsistently within the same UI pattern or component
-
-✅ **Do:** Set `aria-orientation` appropriately when using custom divider implementations  
-❌ **Don't:** Rely on default horizontal orientation when rendering a vertical divider—explicitly declare it
-
----
+<img src="images/divider@orientation_img.png" alt="divider@orientation_img" width="433">
 
 ## Authorized colors
 
-• color-border-default
-• color-border-muted
-• color-border-emphasized
-• color-border-brand-primary (secondary/tertiary)
-• color-border-on-brand-primary (secondary/tertiary)
-• color-always-black
-• color-always-white
-• color-always-on-black
+• color-border-default  
+• color-border-muted  
+• color-border-emphasized  
+• color-border-brand-primary (secondary/tertiary)  
+• color-border-on-brand-primary (secondary/tertiary)  
+• color-always-black  
+• color-always-white  
+• color-always-on-black  
 • color-always-on-white
 
----
-
-## authorized_colors_do_&_dont 👈🤔
-
-✅ **Do:** Use `color-border-default` or `color-border-muted` for standard content separation  
-❌ **Don't:** Use strong or vibrant colors that draw attention away from the content being separated
-
-✅ **Do:** Use brand colors (`color-border-brand-primary`) sparingly for intentional visual emphasis  
-❌ **Don't:** Apply brand colors to every divider—reserve them for specific branding contexts
-
-✅ **Do:** Use `color-always-white` or `color-always-on-black` when placing dividers on dark backgrounds  
-❌ **Don't:** Use dark divider colors on dark backgrounds where contrast would be insufficient
-
-✅ **Do:** Maintain consistent divider colors throughout similar UI patterns and contexts  
-❌ **Don't:** Vary divider colors arbitrarily within the same interface section
-
-✅ **Do:** Ensure divider color meets minimum contrast requirements against adjacent backgrounds  
-❌ **Don't:** Use colors that blend into the background, making the divider invisible or hard to perceive
-
----
+<img src="images/divider@authorized_colors_img.png" alt="divider@authorized_colors_img" width="433">
 
 # Specs
 
-## States
-
-🚧 Missing from source: States section in divider_overview.md
-
----
-
 ## Layout and spacing
 
-🚧 Content to be added
+<img src="images/divider@specs_layout_spacing_img.png" alt="divider@specs_layout_spacing_img" width="864">
 
----
+# Accessibility
+
+### Semantics and Structure
+Use the `<hr>` (Horizontal Rule) tag when the separator has semantic meaning, i.e., when it represents a topic change or a significant transition in the content.  
+Use a styled `<div>` if the divider is purely decorative, ensuring it is hidden from assistive technologies (e.g., `aria-hidden="true"`).
+
+&nbsp;
+
+### Compatibility with Assistive Technologies
+If `<hr>` is used, provide a textual alternative if necessary via `aria-label` or `aria-labelledby` to specify its role (e.g., `<hr aria-label="End of introduction section">`).  
+If the divider is decorative, ensure it is not perceived as content by screen readers (`role="presentation"` or `aria-hidden="true"`).
+
+&nbsp;
+
+### Size and Spacing
+A divider that is too thin may be invisible on some screens, so favor a thickness of at least 1px to 2px.  
+Maintain sufficient margin around the divider to prevent visual clutter and improve readability (e.g., `margin: 16px 0;`).
+
+&nbsp;
+
+### Keyboard Accessibility and Interactions
+A divider should not be focusable (`tabindex="-1"`) unless it has an interactive role (which is rare).  
+If the divider is part of an interactive component (e.g., dropdown menu, accordion panel), ensure it does not interfere with keyboard navigation.
+
+# Develop
+
+## OUDS-Web example
+
+[Components/Divider › Divider 3](https://web.unified-design-system.orange.com/storybook/?path=/story/components-divider--divider-3)
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | [S-ouds-web-divider](https://r.orange.fr/r/S-ouds-web-divider) |
+| OUDS Android | [S-ouds-android-divider](https://r.orange.fr/r/S-ouds-android-divider) |
+| OUDS iOS | [S-ouds-ios-divider](https://r.orange.fr/r/S-ouds-ios-divider) |
+| OUDS Flutter | [S-ouds-flutter-divider](https://r.orange.fr/r/S-ouds-flutter-divider) |
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Mar 14, 2025 | 1.0.0 | • Component creation | Anton Astafev |
+## Availability
+
+Design status: **LIVE**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Divider component](https://r.orange.fr/r/S-ouds-design-divider) | Done | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-divider) | Done | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-divider) | Done | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-divider) | Done | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-divider) | Done | 1.0.0 |
+
+## Design changelog
+
+| Date | Number | Notes |
+|------|--------|-------|
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
+| Mar 14, 2025 | 1.0.0 | • Component creation |

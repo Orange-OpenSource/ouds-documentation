@@ -1,87 +1,54 @@
+---
+id: content-card-container
+category: Content display
+family: Card
+---
+
+# Card
+
+A card is a surface-like UI element that groups related information within a single non-interactive surface that can include independently interactive elements.
+
 # Guideline
 
-## Intro 👈🤖
+<img src="images/hero_image_content_card_container.png" alt="hero_image_content_card_container" width="864">
 
-A content card container is a surface-like UI element that groups related information within a single non-interactive surface that can include independently interactive elements.
+## Anatomy
 
----
-
-## Definition
-
-A content card container is a surface-like UI element that groups related information within a single non-interactive surface that can include independently interactive elements.
-
-The content card container's content is customizable, allowing you to adapt the internal layout with interactive elements like buttons and links, without altering the container's behavior. Unlike the action container card, which contains a single interaction, the content card container card is designed around multiple interactions.
-
----
-
-## Best for 👈🤔
-
-✅ Grouping related information into one non-interactive surface
-
-✅ Presenting content that needs several independent actions, such as a button and links
-
-✅ Pairing instructions or a summary with the next steps the user can take
-
-✅ Arranging independent blocks of content on a dashboard
-
-✅ Separating a block of information from the surrounding page
-
-✅ Combining text, images and nested components in a customizable layout
-
-✅ Building account or settings overviews that hold several links
-
-✅ Presenting offers whose details and actions stay independently accessible
-
-✅ Keeping a defined internal layout across mobile and desktop screens
-
-✅ Cases where the container itself must not receive Hover, Focus or Pressed states
-
----
-
-## Anatomy 👈🤖
+<img src="images/content_card_container@anatomy_img.png" alt="content_card_container@anatomy_img" width="864">
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Background | Layer that sits over the card surface and supports the visual separation of the card. | Y |
-| 2 | Divider | Predefined line along the bottom edge of a Filled card. | Y |
-| 3 | Slot | Holds the customizable content of the card, including independent interactive elements. | N |
-| 4 | Skeleton | Placeholder shown while the content of the card has not loaded yet. | Y |
+| 1 | Background | Layer that sits over the card surface and supports the visual separation of the card. | Yes |
+| 2 | Divider | Predefined line along the bottom edge of a Filled card. | Yes |
+| 3 | Slot | Holds the customizable content of the card, including independent interactive elements. | No |
+| 4 | Skeleton | Placeholder shown while the content of the card has not loaded yet. | Yes |
 
----
+## Definition
+
+A card is a surface-like UI element that groups related information within a single non-interactive surface that can include independently interactive elements.
+
+The card's content is customizable, allowing you to adapt the internal layout with interactive elements like buttons and links, without altering the container's behavior. Unlike the action card, which contains a single interaction, the card is designed around multiple interactions.
 
 ## Style
 
 **`Filled`** Filled cards use a background surface to visually separate their content from the surrounding interface. By default, the card is displayed on a bg/primary background. To display the card on another supported background surface, designers should use the appropriate parent container rather than manually overriding the component's predefined visual properties. Unlike the Action card, the Card component is not interactive. Its background does not provide interaction feedback for the card itself. Any interactive elements within the slot retain their own independent interaction states.
 
+<img src="images/content_card_container@style_filled_img.png" alt="content_card_container@style_filled_img" width="433">
+
 **`Outlined`** Outlined cards define their boundaries with a border instead of a background fill. The container remains transparent, allowing the surrounding surface to show through.
+
+<img src="images/content_card_container@style_outlined_img.png" alt="content_card_container@style_outlined_img" width="433">
 
 **`Elevated`** Elevated cards create visual separation through a predefined shadow, giving the card a raised appearance. The background context is defined by the surrounding surface, while the card retains its own predefined elevation and visual support layers. The Card component remains non-interactive, regardless of its visual treatment.
 
-**Inverse background**  
+<img src="images/content_card_container@style_elevated_img.png" alt="content_card_container@style_elevated_img" width="433">
+
+### Inverse background
 Inverse backgrounds introduce a different color context within the interface. Text, icons, and interactive elements must adapt to the appropriate light or dark theme to maintain readability and contrast.
 
+<img src="images/content_card_container@style_inverse_background_img.png" alt="content_card_container@style_inverse_background_img" width="433">
+
 ⚠️ Only the predefined stroke, divider, and background colors specified for this component may be used. Custom colors are not allowed.
-
----
-
-## style_do_&_dont 👈🤔
-
-✅ **Do:** Use one style (Filled, Outlined or Elevated) for all the cards of a group  
-❌ **Don't:** Mix card styles within the same group of cards
-
-✅ **Do:** Use a parent container to display the card on another supported background surface  
-❌ **Don't:** Override the predefined visual properties of the card by hand
-
-✅ **Do:** Keep the card non-interactive whatever its visual treatment  
-❌ **Don't:** Use Elevated to suggest that the whole card can be clicked
-
-✅ **Do:** Adapt text, icons and interactive elements to the theme of an inverse background  
-❌ **Don't:** Keep colors that lose contrast on an inverse background
-
-✅ **Do:** Use only the predefined stroke, divider and background colors  
-❌ **Don't:** Apply custom colors to the card
-
----
 
 ## Rounded corner
 
@@ -96,60 +63,12 @@ Here’s the list of rounded corners availability by brand theme
 
 | Brand theme | Status |
 |---|---|
-| Orange | Available |
-| Orange Compact | Available |
-| Sosh | Unavailable |
-| Wireframe | Unavailable |
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ❌ Unavailable |
+| Wireframe | ❌ Unavailable |
 
----
-
-## rounded_corner_do_&_dont 👈🤔
-
-✅ **Do:** Apply one corner treatment across the whole product or service  
-❌ **Don't:** Mix rounded and square cards in the same product or service
-
-✅ **Do:** Use rounded corners only with the themes that support them: Orange and Orange Compact  
-❌ **Don't:** Expect rounded corners on the Sosh and Wireframe themes
-
-✅ **Do:** Let the brand theme decide the corner treatment  
-❌ **Don't:** Change the corners of a single card to give it more emphasis
-
-✅ **Do:** Check that images and nested elements follow the corners of the card  
-❌ **Don't:** Let slot content overflow a rounded corner
-
-✅ **Do:** Keep the same corner treatment in every state of the card  
-❌ **Don't:** Switch between rounded and square when the state changes
-
----
-
-## Divider
-
-The Divider property is available only for the Filled style. It adds a subtle line along the bottom edge of the card, following the visual conventions of the Card Item component. Its color is defined by the design system and must not be modified manually.
-
-**`True`** Displays the bottom divider. The divider adds a subtle separation along the bottom edge of a Filled card.
-
-**`False`** The card has no divider and relies on its surface color for separation.
-
----
-
-## divider_do_&_dont 👈🤔
-
-✅ **Do:** Use the divider only on Filled cards  
-❌ **Don't:** Add a divider to Outlined or Elevated cards
-
-✅ **Do:** Keep the predefined divider color  
-❌ **Don't:** Recolor the divider by hand
-
-✅ **Do:** Keep the divider along the bottom edge of the card  
-❌ **Don't:** Add lines on the other edges of the card
-
-✅ **Do:** Apply the same divider choice to all the cards of a group  
-❌ **Don't:** Mix cards with and without a divider in one group
-
-✅ **Do:** Rely on the surface color for separation when Divider is False  
-❌ **Don't:** Draw a manual line in the slot to imitate the divider
-
----
+<img src="images/content_card_container@rounded_corner_img.png" alt="content_card_container@rounded_corner_img" width="433">
 
 ## Background
 
@@ -159,7 +78,9 @@ The Background Boolean property controls the visibility of the predefined color/
 
 **`False`** Hides the internal Background layer, leaving the underlying surface visible without the additional support treatment.
 
-**⚠️ Surface customization**  
+&nbsp;
+
+### ⚠️ Surface customization
 In the Filled style, designers can place the Card inside an additional Surface frame to customize its base background using supported tokens, such as surface/primary, surface/secondary, or surface/tertiary etc...
 
 This external frame acts as the underlying surface of the Card and is independent of the component's internal Background layer.  
@@ -173,26 +94,17 @@ For other styles:
 
 ⚠️ When Rounded corner = True, the external Surface frame must use a predefined OUDS corner-radius token matching the Card's corner-radius value. This ensures consistent corner alignment between the Card and its underlying Surface.
 
----
+<img src="images/content_card_container@background_img.png" alt="content_card_container@background_img" width="433">
 
-## background_do_&_dont 👈🤔
+## Divider
 
-✅ **Do:** Use the Background property on Filled and Elevated cards in the Enabled state  
-❌ **Don't:** Expect the Background property on an Outlined card
+The Divider property is available only for the Filled style. It adds a subtle line along the bottom edge of the card, following the visual conventions of the Card Item component. Its color is defined by the design system and must not be modified manually.
 
-✅ **Do:** Use an external Surface frame with predefined OUDS tokens to customize the base of a Filled card  
-❌ **Don't:** Modify or replace the internal Background layer by hand
+**`True`** Displays the bottom divider. The divider adds a subtle separation along the bottom edge of a Filled card.
 
-✅ **Do:** Match the corner-radius token of the external Surface frame to the card when Rounded corner is True  
-❌ **Don't:** Leave a square Surface frame behind a rounded card
+**`False`** The card has no divider and relies on its surface color for separation.
 
-✅ **Do:** Set the Background property independently of the selected Surface  
-❌ **Don't:** Use the Background property as a replacement for the surface
-
-✅ **Do:** Keep the base background of an Elevated card on its predefined surface  
-❌ **Don't:** Add an external Surface frame to Elevated or Outlined cards
-
----
+<img src="images/content_card_container@divider_img.png" alt="content_card_container@divider_img" width="433">
 
 ## Slot spacing
 
@@ -203,29 +115,10 @@ Internal padding and spacing can be adjusted using two types of spacing tokens.
 
 **`Scaled space`** Uses responsive spacing values that adapt to the screen reference. Spacing may differ between mobile and desktop to preserve the intended layout. Use the appropriate OUDS spacing tokens rather than arbitrary values to maintain consistency across layouts.
 
-⚠️ The card container does not apply internal padding by default. Designers are responsible for defining the content padding and spacing within the slot using the appropriate OUDS spacing tokens.  
-When using nested components, their own internal spacing and corner-radius rules must be preserved.
+⚠️ By default, all padding values within the Card slot are set to 0. Designers can define and customize spacing according to their layout needs using the appropriate OUDS Fixed or Scaled spacing tokens.  
+When using nested components, their predefined internal spacing and corner-radius rules must be preserved.
 
----
-
-## slot_spacing_do_&_dont 👈🤔
-
-✅ **Do:** Define the padding and spacing of the content with OUDS spacing tokens  
-❌ **Don't:** Use arbitrary spacing values in the slot
-
-✅ **Do:** Use fixed space when the spacing must stay the same on mobile and desktop  
-❌ **Don't:** Use fixed space for a layout that has to adapt to the screen
-
-✅ **Do:** Use scaled space when the spacing must adapt to the screen reference  
-❌ **Don't:** Change spacing by hand from one screen size to another
-
-✅ **Do:** Preserve the internal spacing and corner-radius rules of nested components  
-❌ **Don't:** Override the spacing of a nested component to fit the card
-
-✅ **Do:** Test the layout with short and long content before adding more  
-❌ **Don't:** Fill a card with dense, repetitive content that belongs in a list or a table
-
----
+<img src="images/content_card_container@slot_spacing_img.png" alt="content_card_container@slot_spacing_img" width="433">
 
 ## Role
 
@@ -236,28 +129,62 @@ Each interactive element must have its own semantic role according to the action
 • External Link: Navigates to an external destination, when applicable.  
 • Button: Triggers a specific action without navigation.
 
----
+<img src="images/content_card_container@role_img.png" alt="content_card_container@role_img" width="433">
 
-## role_do_&_dont 👈🤔
+## Which component should use?
 
-✅ **Do:** Keep the card non-interactive and give each element in the slot its own semantic role  
-❌ **Don't:** Give the card container a button or link role
+Choose the component based on where the interaction happens, not on its visual style or the number of elements.  
+A single action can belong either to a Card or to an Action card.
 
-✅ **Do:** Use Link for in-product destinations, External Link for outside destinations and Button for actions  
-❌ **Don't:** Use a link to trigger an action without navigation
+| Interaction pattern | Actions | Use | Interactive area |
+|---|---|---|---|
+| Display information only | 0 | Card | No interactive target |
+| Provide one explicit CTA | 1 | Card | Only the internal button or link |
+| Provide independent CTAs | 2+ | Card | Each internal control independently |
+| Make the whole card one action | 1 | Action card | Available card surface |
+| Reinforce the same action visually | 1 | Action card | One target; CTA is not focusable |
+| Add one different secondary action | 2 | Action card | Primary region + secondary target |
+| Add several secondary actions | 3+ | Action card | Primary region + independent targets |
 
-✅ **Do:** Place the actions of the card consistently, at the end of its content  
-❌ **Don't:** Scatter actions through the text of the card
+Use Card when the container itself does nothing. Use Action card when the available card surface triggers a primary action.
 
-✅ **Do:** Give every interactive element an accessible name that makes sense on its own  
-❌ **Don't:** Repeat vague labels such as "Learn more" without context
+Action card with independent secondary controls is conditional on platform and accessibility validation.  
+If unsupported, use Card with an explicit primary CTA and separate secondary controls.  
+Never nest links or buttons inside the primary card link/button; each independent action needs its own focus target
 
-✅ **Do:** Use the action card container when the whole content leads to a single action  
-❌ **Don't:** Wrap a content card container in one link
+## Actions
 
----
+The Card is a non-interactive container that can display static content or include one or more independent interactive elements. Unlike the Action card, the container itself does not trigger any action. All interactions are handled exclusively by the components placed within its slot.
+
+### Static content - 0 actions
+
+The Card displays information without any interactive elements. Its content is purely informational and does not respond to user interactions.
+
+Use case: The card explains what users should check before activating their eSIM. It contains only text and imagery, without any interactive controls.
+
+<img src="images/content_card_container@actions_static_content_0_actions_img.png" alt="content_card_container@actions_static_content_0_actions_img" width="433">
+
+### Single interactive component - 1 action
+
+The Card contains one interactive element that triggers a specific action or navigation. Only this element responds to user interactions, while the Card itself remains non-interactive.
+
+Use case: The card displays the eSIM requirements and an "Activate eSIM" button. Only the button is interactive.
+
+<img src="images/content_card_container@actions_single_interactive_component_1_action_img.png" alt="content_card_container@actions_single_interactive_component_1_action_img" width="433">
+
+### Multiple interactive components - 2 or more actions
+
+The Card contains two or more independent interactive elements. Each element triggers its own action or navigation and has its own interaction states.
+
+Use case: The card contains two links, "Check device compatibility" and "Learn how eSIM activation works", and an independent "Activate eSIM" button.
+
+<img src="images/content_card_container@actions_multiple_interactive_components_2_or_more_actions_img.png" alt="content_card_container@actions_multiple_interactive_components_2_or_more_actions_img" width="433">
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/content_card_container@spec_layout_spacing.png" alt="content_card_container@spec_layout_spacing" width="864">
 
 ## States
 
@@ -265,6 +192,8 @@ Each interactive element must have its own semantic role according to the action
 interaction states.
 
 The card can be displayed on different predefined OUDS background surfaces according to its layout context. The background context must remain consistent when switching between card states. Interactive elements placed within the slot retain their own states independently of the container.
+
+<img src="images/content_card_container@states_enabled_img.png" alt="content_card_container@states_enabled_img" width="433">
 
 **`Disabled`** The card and its contents communicate an unavailable state. All interactive elements within the slot must also be disabled and must not respond to user interaction.
 
@@ -275,17 +204,13 @@ In Figma, changing the card state does not automatically update slotted content.
 ⚠️ Do not apply a global opacity reduction to the entire slot content.  
 Text and nested interactive components must use their corresponding Disabled states or color tokens. Images and illustrations must use the predefined OUDS disabled opacity token, which corresponds to 20% opacity in the current specification.
 
+<img src="images/content_card_container@states_disabled_img.png" alt="content_card_container@states_disabled_img" width="433">
+
 **`Skeleton`** The Skeleton state represents content that has not yet loaded. Replace the final content with non-interactive placeholders that reflect the card’s expected layout and visual hierarchy.
 
 During the Skeleton state, the card must display non-interactive placeholders only. Interactive controls within the slot must not be accessible or actionable until the actual content has finished loading.
 
----
-
-## Layout and spacing
-
-🚧 Content to be added
-
----
+<img src="images/content_card_container@states_skeleton_img.png" alt="content_card_container@states_skeleton_img" width="433">
 
 # Accessibility
 
@@ -301,10 +226,34 @@ During the Skeleton state, the card must display non-interactive placeholders on
 
 • When the card is Disabled, nested interactive components must also be disabled and must not respond to user interaction.
 
----
+# Develop
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | Not available yet |
+| OUDS Android | Not available yet |
+| OUDS iOS | Not available yet |
+| OUDS Flutter | Not available yet |
 
 # Changelog
 
+## Availability
+
+Design status: **DEV**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | Not available yet | Done | 1.0.0 |
+| OUDS Web (former Boosted) | Not available yet | To do | – |
+| OUDS Android - Jetpack Compose | Not available yet | To do | – |
+| OUDS iOS - Swift | Not available yet | To do | – |
+| OUDS Flutter | Not available yet | To do | – |
+
+## Design changelog
+
 | Date | Number | Notes | Designer |
 |------|--------|-------|----------|
+| Nov 10, 2026 | - | Documentation update: Consolidated slot spacing guidelines and clarified that padding defaults to 0. Designers can customize spacing using Fixed or Scaled OUDS spacing tokens. | Anton Astafev |
 | Oct 26, 2026 | 1.0.0 | **Version 2.8 of the design tokens is required for the development of this update.**<ul><li>Component creation</ul> | Anton Astafev |

@@ -1,108 +1,86 @@
+---
+id: quantity-input
+category: Control
+family: None
+---
+
+# Quantity input
+
+A quantity input is a UI element that lets users specify a numerical value representing a quantity.
+
 # Guideline
 
-## Intro
+<img src="images/hero_image_quantity_input.png" alt="hero_image_quantity_input" width="864">
 
-A quantity input enables users to specify numeric values through direct entry or increment/decrement controls, commonly used in e-commerce and booking flows.
+## When to use
 
----
+✅ When users need to specify a numeric quantity within a limited range
 
-## Definition
+✅ For scenarios with incremental increase or decrease controls
 
-A quantity input is a form component that allows users to specify a numerical value representing a quantity, often used in contexts like shopping carts, inventory management, or booking systems. It typically combines a numeric text field with increment and decrement controls (such as "+" and "–" buttons) to make adjustments easy and precise. The component must enforce valid input ranges (minimum of 1), prevent invalid characters, and support keyboard input, stepper controls, and assistive technologies.
+✅ In e-commerce, ordering, or settings where precision matters
 
----
-
-## Best for
-
-✅ Shopping cart quantity adjustments where users modify item counts in small increments
-
-✅ Booking systems requiring passenger, guest, or room counts within defined limits
-
-✅ Inventory management interfaces for stock quantity updates
-
-✅ Product configuration with limited numeric options (e.g., 1–10 items)
-
-✅ Reservation systems specifying party size or number of tickets
-
-✅ Form fields where values rarely exceed 20 and incremental changes are common
-
-✅ Mobile-first interfaces where tap-based controls improve usability
-
-✅ Contexts requiring validation feedback for out-of-range values
-
-✅ Compact layouts needing space-efficient numeric input controls
-
-✅ Scenarios where preventing invalid character entry improves data quality
-
----
+✅ When direct input and + / − controls are both acceptable
 
 ## Anatomy
 
+<img src="images/quantity_input@anatomy_img.png" alt="quantity_input@anatomy_img" width="864">
+
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Label | Describes the input's purpose and provides accessible identification | N |
-| 2 | Input field | Displays current value and accepts direct keyboard entry | N |
-| 3 | Increment button (+) | Increases value by one step when activated | N |
-| 4 | Decrement button (–) | Decreases value by one step when activated | N |
-| 5 | Leading icon | Provides visual context for the input's purpose | Y |
-| 6 | Suffix | Displays units or currency after the value (kg, %, cm) | Y |
-| 7 | Helper text | Offers additional guidance or context below the input | Y |
-| 8 | Error message | Communicates validation failures with corrective guidance | Y |
+| 1 | Label | Tells users what information to enter | No |
+| 2 | Container | Holds and aligns all parts of the field (label, value, icons, etc.). | No |
+| 3 | Decrement action | Decreases the quantity value by one increment. | No |
+| 4 | Divider | Shows separation. | No |
+| 5 | Increment action | Increases the quantity value by one increment. | Yes |
+| 6 | Bottom stroke | The visible bottom border for the non-outlined style. | Yes |
+| 7 | Helper text | Supplementary text displayed below the input field providing guidance or requirements. | Yes |
+| 8 | Leading icon | Provides a visual cue about the field type. | Yes |
+| 9 | Label | Moves above the input when focused or filled, so the field stays identifiable. | No |
+| 10 | Text cursor | Indicates where the next character will be inserted while typing. | No |
+| 11 | Placeholder | Shows an example or hint when the field is empty and focused. | No |
+| 12 | Loading indicator | Shows progress while validation or authentication is in progress. | Yes |
+| 13 | Outlined container | Alternative visual style using a full border. | Yes |
+| 14 | Error icon | Highlights the field’s error state to improve visibility and feedback | Yes |
+| 15 | Error text | Explains what’s wrong and how to fix it when validation fails. | Yes |
 
----
+## Definition
+
+A quantity input is a UI element that lets users specify a numerical value representing a quantity.
+
+The quantity input typically combines a numeric text field with increment and decrement controls (like “+” and “–” buttons) for easy and precise adjustments. It enforces valid input ranges (minimum of one), prevents invalid characters, and supports keyboard input, stepper controls, and assistive technologies.
 
 ## Outlined
 
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
-• When inputs need to feel lightweight and unobtrusive
-• In a header (search field)
-• In a selection/filtering feature in a product catalog
+* When inputs need to feel lightweight and unobtrusive
+* In a header (search field)
+* In a selection/filtering feature in a product catalog
 
-### Do & don'ts
-
-✅ **Do:** Use the outlined variant for standalone inputs that need clear visual boundaries within content-heavy pages  
-❌ **Don't:** Mix outlined and filled variants inconsistently within the same form or interface section
-
-✅ **Do:** Apply the filled variant in dense form layouts where subtle background differentiation aids scanability  
-❌ **Don't:** Use outlined style on dark backgrounds where the stroke may lack sufficient contrast
-
-✅ **Do:** Consider the outlined variant for filter bars and search contexts where inputs appear inline with other controls  
-❌ **Don't:** Default to outlined style without considering the overall visual density of the interface
-
-✅ **Do:** Maintain consistent style choices across related quantity inputs within a single workflow  
-❌ **Don't:** Switch between outlined and filled styles based solely on aesthetic preference without functional rationale
-
-✅ **Do:** Test both variants with your actual content to determine which provides better visual hierarchy  
-❌ **Don't:** Assume one style universally works better—context determines the optimal choice
-
----
+<img src="images/quantity_input@outlined_img.png" alt="quantity_input@outlined_img" width="433">
 
 ## Rounded corner
 
-**`False`** For a square finish.
+Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
-**`True`** For a finish with rounded corner. To be favored in more emotional, immersive contexts or those tied to specific visual identities. For standard or business-oriented journeys, keep the default corners. This evolution addresses the need for flexibility in adapting the design to certain brand contexts.
+**`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
 
-### Do & don'ts
+**`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
 
-✅ **Do:** Use rounded corners consistently with other form elements in your design system to maintain visual harmony  
-❌ **Don't:** Apply rounded corners to quantity inputs while using square corners on adjacent buttons or fields
+This option is technically not available for all brand themes. Here's the list of rounded corners availability by brand theme:
 
-✅ **Do:** Reserve rounded corners for consumer-facing or lifestyle brand interfaces where softer aesthetics align with brand identity  
-❌ **Don't:** Use rounded corners in enterprise or data-heavy applications where sharp edges convey precision
+| Brand theme | Status |
+|---|---|
+| Orange | ✅ Available |
+| Orange Compact | ✅ Available |
+| Sosh | ❌ Unavailable |
+| Wireframe | ❌ Unavailable |
 
-✅ **Do:** Consider rounded corners for mobile interfaces where they may improve perceived touch targets  
-❌ **Don't:** Assume rounded corners automatically improve usability—they are primarily a visual treatment
+<img src="images/quantity_input@rounded_corner_img.png" alt="quantity_input@rounded_corner_img" width="433">
 
-✅ **Do:** Document your corner radius choice in design tokens for consistent application across components  
-❌ **Don't:** Mix corner radius values arbitrarily across different quantity input instances
-
-✅ **Do:** Test rounded corner variants with your specific button placement (trailing vs. split) to ensure visual balance  
-❌ **Don't:** Apply rounded corners without verifying they work well with increment/decrement button styling
-
----
+## Input status
 
 ### Input status
 
@@ -112,24 +90,7 @@ A quantity input is a form component that allows users to specify a numerical va
 
 **`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
 
-### Do & don'ts
-
-✅ **Do:** Set a sensible default value (typically 1) to reduce user effort and prevent empty submission errors  
-❌ **Don't:** Leave quantity inputs empty in e-commerce contexts where a zero value has no valid meaning
-
-✅ **Do:** Use placeholder text to indicate expected format when the field can be empty (e.g., "Enter quantity")  
-❌ **Don't:** Rely solely on placeholders for critical instructions—they disappear once users begin typing
-
-✅ **Do:** Ensure filled state styling provides clear feedback that user input has been captured  
-❌ **Don't:** Style filled and empty states identically, making it difficult to scan form completion status
-
-✅ **Do:** Preserve entered values when users navigate away and return to the form  
-❌ **Don't:** Reset quantity values unexpectedly, forcing users to re-enter their selections
-
-✅ **Do:** Validate and display the filled state immediately when users type valid numbers  
-❌ **Don't:** Delay visual confirmation of valid input, leaving users uncertain if their entry was accepted
-
----
+<img src="images/quantity_input@input_status_img.png" alt="quantity_input@input_status_img" width="433">
 
 ## Actions placement
 
@@ -137,76 +98,44 @@ A quantity input is a form component that allows users to specify a numerical va
 
 **`Split`** It positions the decrement button to the left of the input and the increment button to the right. It provides a more balanced and intuitive interaction model, especially in use cases like e-commerce where users frequently adjust quantities.
 
-### Do & don'ts
+<img src="images/quantity_input@actions_placement_img.png" alt="quantity_input@actions_placement_img" width="433">
 
-✅ **Do:** Use split placement for e-commerce quantity selectors where users frequently adjust values in both directions  
-❌ **Don't:** Use trailing placement when the decrease action is equally important as increase—split provides better balance
+## Specific focus state rules
 
-✅ **Do:** Apply trailing placement in compact table cells or data grids where horizontal space is limited  
-❌ **Don't:** Force split placement in narrow containers where it causes the input field to become too small
-
-✅ **Do:** Consider trailing placement for RTL (right-to-left) interfaces where it may provide more natural interaction  
-❌ **Don't:** Ignore localization requirements when choosing button placement
-
-✅ **Do:** Use split placement when touch targets need to be easily distinguishable for mobile users  
-❌ **Don't:** Use trailing placement with stacked buttons if users struggle to tap the correct control
-
-✅ **Do:** Test both placements with real users to determine which reduces errors in your specific context  
-❌ **Don't:** Assume one placement universally outperforms the other without user research
-
----
-
-## ⚠️ Specific focus state rules
-
-**Keyboard input disabled**
+### Keyboard input disabled
 
 In the vast majority of modern UX/UI cases, a quantity input should be editable on focus. However, there are a few specific rare cases where direct editing by keyboard input might be disabled:
-• Highly guided or controlled usage→product configuration with mandatory steps
-• Risk of critical error→specific or technical values
-• Strict touch context→mobile app with simplified UI, no keyboard
-• Deliberate product decision→to enforce navigation or a business constraint
+* Highly guided or controlled usage→product configuration with mandatory steps
+* Risk of critical error→specific or technical values
+* Strict touch context→mobile app with simplified UI, no keyboard
+* Deliberate product decision→to enforce navigation or a business constraint
 
 In this specific context, it is therefore recommended to prefill the input by default.
 
-**Keyboard input + increment/decrement controls enabled**
+<img src="images/quantity_input@specific_focus_state_rules_focus_img.png" alt="quantity_input@specific_focus_state_rules_focus_img" width="433">
+
+### Keyboard input + increment/decrement controls enabled
 
 In the context of an editable quantity input, if the field is focused and already filled by the user, then clicking the + (increase) or – (decrease) buttons must follow a smooth and predictable behavior according to the following UX rules.
 
-When clicking + or – during editing:
-• The value is automatically validated
-• The action is applied to that value (+1 or –1)
-• The field is visually updated with the new value
-• The cursor is moved to the end of the field (optional)
-• The field remains focused
+**When clicking + or – during editing:**
+* The value is automatically validated
+* The action is applied to that value (+1 or –1)
+* The field is visually updated with the new value
+* The cursor is moved to the end of the field (optional)
+* The field remains focused
 
-Absolutely to avoid:
-• Losing the currently typed value if partially entered
-• Requiring defocus for the buttons to work
-• Failing to parse/validate the value before incrementing
+**Absolutely to avoid:**
+* Losing the currently typed value if partially entered
+* Requiring defocus for the buttons to work
+* Failing to parse/validate the value before incrementing
 
-Specific error focus state:
+**Specific error focus state:**  
 If the value in the field is invalid (empty or non-numeric), clicking + or – may:
-• Either fill in a default value (1)
-• Or display a temporary blocking error ("Please enter a number")
+* Either fill in a default value (1)
+* Or display a temporary blocking error ("Please enter a number")
 
-### Do & don'ts
-
-✅ **Do:** Maintain focus on the input field when users interact with increment/decrement buttons  
-❌ **Don't:** Move focus away from the quantity input after button clicks, disrupting keyboard navigation flow
-
-✅ **Do:** Validate and apply the current value before incrementing or decrementing when the field is being edited  
-❌ **Don't:** Ignore partially entered values—parse and validate them before applying the step change
-
-✅ **Do:** Provide a clear focus indicator that encompasses the entire control (input + buttons) as a single unit  
-❌ **Don't:** Show separate focus states for the input and buttons, confusing users about the component boundary
-
-✅ **Do:** Support keyboard shortcuts (Arrow Up/Down) for incrementing and decrementing when the input has focus  
-❌ **Don't:** Require users to tab to buttons separately when keyboard arrow controls can serve the same purpose
-
-✅ **Do:** Handle edge cases gracefully—default to minimum value (1) when the field is empty and user clicks increment  
-❌ **Don't:** Throw errors or behave unpredictably when users click buttons on an empty or invalid input
-
----
+<img src="images/quantity_input@specific_focus_state_rules_steps_img.png" alt="quantity_input@specific_focus_state_rules_steps_img" width="433">
 
 ## Error
 
@@ -218,76 +147,13 @@ If the input is filled, an "error" status is triggered by the entry of a value t
 
 **⚠️ Error message vs helper text** The error message is not the same element as the helper text, it is independent. If a helper text accompanies the text input, it is replaced by the error message. The helper text must not be displayed simultaneously.
 
-### Do & don'ts
-
-✅ **Do:** Position error messages directly below the input field with consistent spacing for easy scanning  
-❌ **Don't:** Display error messages in tooltips or modals that obscure the input or disappear unexpectedly
-
-✅ **Do:** Write specific, actionable error messages like "Quantity must be between 1 and 99"  
-❌ **Don't:** Use generic messages like "Invalid input" that don't help users understand how to fix the issue
-
-✅ **Do:** Replace helper text with error messages to avoid cognitive overload—one message at a time  
-❌ **Don't:** Show both helper text and error messages simultaneously, creating visual clutter and confusion
-
-✅ **Do:** Use `aria-invalid="true"` and `aria-errormessage` to programmatically associate errors with the input  
-❌ **Don't:** Rely solely on color to communicate errors—ensure text and icons provide redundant cues
-
-✅ **Do:** Allow users to continue editing the input while the error state is displayed  
-❌ **Don't:** Disable the input in error state, preventing users from making corrections
-
----
+<img src="images/quantity_input@error_img.png" alt="quantity_input@error_img" width="433">
 
 ## Leading icon
 
 Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
 
-### Do & don'ts
-
-✅ **Do:** Use leading icons that directly relate to the input's purpose (e.g., shopping cart icon for cart quantity)  
-❌ **Don't:** Add decorative icons that don't enhance understanding of the input's function
-
-✅ **Do:** Ensure leading icons maintain sufficient contrast and size for visibility at all supported sizes  
-❌ **Don't:** Use icons so small or low-contrast that they become difficult to perceive
-
-✅ **Do:** Hide leading icons from screen readers using `aria-hidden="true"` when the label provides sufficient context  
-❌ **Don't:** Make leading icons focusable or interactive unless they serve an independent function
-
-✅ **Do:** Consider omitting leading icons in compact layouts where space is at a premium  
-❌ **Don't:** Force leading icons into every quantity input just for visual consistency
-
-✅ **Do:** Test leading icon visibility across light and dark themes to ensure consistent recognition  
-❌ **Don't:** Use icons that lose meaning or visibility when theme colors change
-
----
-
-## ⚠️ Label
-
-Describes the purpose of the input. Why hide a quantity input label?
-In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
-However, hiding the label should only be done if:
-• The purpose of the input remains clear thanks to a placeholder or contextual icon.
-• The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
-
-Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
-
-### Do & don'ts
-
-✅ **Do:** Always provide a programmatic label using `<label>`, `aria-label`, or `aria-labelledby`  
-❌ **Don't:** Rely solely on placeholder text as a label substitute—it disappears when users type
-
-✅ **Do:** Use visually hidden labels (CSS technique) when visual context makes the purpose obvious  
-❌ **Don't:** Remove labels entirely from the DOM, breaking accessibility for screen reader users
-
-✅ **Do:** Keep labels concise and descriptive: "Quantity" or "Number of guests" rather than lengthy instructions  
-❌ **Don't:** Use vague labels like "Enter value" that don't clarify what the number represents
-
-✅ **Do:** Position visible labels consistently—typically above the input or inline to its left  
-❌ **Don't:** Place labels in unexpected positions that break users' scanning patterns
-
-✅ **Do:** Include context in the label when multiple quantity inputs appear together (e.g., "Adults," "Children")  
-❌ **Don't:** Use identical generic labels for multiple inputs, forcing users to infer meaning from position alone
-
----
+<img src="images/quantity_input@leading_icon_img.png" alt="quantity_input@leading_icon_img" width="433">
 
 ## Other boolean options
 
@@ -295,26 +161,115 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 **`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
-### Do & don'ts
+<img src="images/quantity_input@other_boolean_options_img.png" alt="quantity_input@other_boolean_options_img" width="433">
 
-✅ **Do:** Use suffix for units of measurement (kg, cm, %) or currency symbols that clarify the value's meaning  
-❌ **Don't:** Place units in the label or helper text when a suffix provides clearer inline context
+## ⚠️ Label (can it be hidden?)
 
-✅ **Do:** Keep helper text brief and focused on a single piece of guidance (e.g., "Maximum 99 items")  
-❌ **Don't:** Overload helper text with multiple instructions—prioritize the most critical information
+Describes the purpose of the input. Why hide a quantity input label?
 
-✅ **Do:** Associate helper text with the input using `aria-describedby` for screen reader accessibility  
-❌ **Don't:** Position helper text far from the input where the visual association becomes unclear
+In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.  
+However, hiding the label should only be done if:
+* The purpose of the input remains clear thanks to a placeholder or contextual icon.
+* The label is still accessible to screen readers (using aria-label, aria-labelledby, or visually hidden text).
 
-✅ **Do:** Show helper text persistently when the information is essential for correct input  
-❌ **Don't:** Hide critical guidance behind focus states where users may miss it
+Hiding a label is a design choice that must balance visual simplicity and clarity of intent, without compromising inclusiveness or form guidance.
 
-✅ **Do:** Ensure suffix text maintains legibility and doesn't crowd the numeric value  
-❌ **Don't:** Use long suffix text that causes truncation or makes the input feel cramped
+<img src="images/quantity_input@label_img.png" alt="quantity_input@label_img" width="433">
 
----
+## Mandatory field indication
+
+**If all fields are mandatory (several fields present):**
+1. Display the message "All fields are mandatory." at the top.
+2. Do not use an asterisk (*) at the end of each field label, nor the word "mandatory."
+
+**If not all fields are mandatory (and there are several fields present):**
+1. Display the message "All fields marked with an * are mandatory." at the top.
+2. Use an asterisk (*) at the end of each mandatory field label.  
+   **⚠️ Important:**
+   * In Figma, the asterisk must be entered manually by designers in the label text. UI rendering of the asterisk: **font-weight-bold** + **color-content-negative (red)**.
+   * Technically, for web/iOS/Android, the asterisk is positioned in a dedicated container after the label text. Spacing between label and asterisk: Empty state → 4px / Other states (reduced label) → 3px. If the label is truncated due to a large amount of text, the asterisk must remain visible at the end of the field.
+3. Either the technology allows a 'required' attribute to be managed on the fields (usually in Web), in which case any asterisks must be hidden from users using assistive technologies, or the technology does not allow the mandatory nature of the field to be indicated. In this case, the asterisk must be vocalised as well as a 'mandatory' mention. Please refer to the technical documentations for more information.
+4. Depending on the use case, an 'optional' label can be added to non-mandatory fields.
+
+**If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.**
+
+<img src="images/quantity_input@mandatory_field_indication_img.png" alt="quantity_input@mandatory_field_indication_img" width="433">
+
+<img src="images/quantity_input@mandatory_field_indication_img2.png" alt="quantity_input@mandatory_field_indication_img2" width="433">
+
+## truncated input area
+
+**When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:**
+
+* On web, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (right-aligned) and the beginning of the text becomes invisible (masked on the left). There should be no visual truncation indicator (...). This choice is intentional because, for many fields, showing the end often makes it easier to identify the value (file names, paths, emails).
+* On Android, by default (even if the project retains control over this setting), the behavior is the same as on the web.
+* On iOS, it is the opposite: the input area truncates the value on the right with a visual truncation indicator (...).
+
+**⚠️ In all cases:** the entire text must remain accessible when the field regains focus:
+
+* Either by refocusing the field, the text becomes horizontally scrollable again (the blinking cursor is visible).
+* Or via a tooltip on hover in certain desktop contexts.
+
+<img src="images/quantity_input@truncated_input_area_img.png" alt="quantity_input@truncated_input_area_img" width="433">
+
+## Multiline and responsiveness
+
+### Multiline
+
+In its "Empty" state (without a placeholder) and with its "Actions placement=Trailing", the label of this component allows two lines of text editing. However, it is recommended not to exceed one line of text.
+
+Apart from the case described above, this component doesn't allow multi-line text editing (whether for the label, placeholder or input).
+
+As a result, and in order to maintain a consistent and uniform height across multiple components, the presence of an excessive amount of text (in the label, placeholder, or input) will cause the text to be truncated so that only a single line remains visible for each element.
+
+Additionally, allowing multi-line text editing would create confusion with the "Text area" component.
+
+&nbsp;
+
+### Max-width vs full-width
+
+For greater flexibility, this component doesn't have a default max-width. To avoid exceeding a width that would degrade readability and the perception of a compact interactive element, we recommend applying **a max-width of around 320px.**
+
+For mobile or tablet use (or if the component is positioned inside a specific container), it is possible to set this component to use the full available width (of the screen or the container).
+
+Please note that this behavior is not the default rule; it may be preferred if the template allows it (to improve user comfort or for better page structure/hierarchy).
+
+&nbsp;
+
+### User zoom in/out
+
+The behavior of the text during user zoom in/out must follow a fundamental principle: the text must remain readable, accessible, and must never break the structure or lose information.
+
+However, "Text input" components present an exception regarding the loss of textual information following the activation of user zoom in, since text truncation (label, placeholder, input text) is exceptionally allowed and enabled.
+
+* The text must always scale proportionally with user zoom. Text resizing must never be blocked.
+* The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom.
+* In order to preserve the minimun interactive area during user zoom out, this component have a min-width **of 200px** and a min-height **of 60px**.
+* Even if, the component has a max-height or a max-width for resizing control purposes, technically, during user zoom in, these limitations are not fixed but must be scalable in order to adapt to the user's zoom level.
+* In its "Leading icon" variant, user zoom in/out doesn't affect the size of the icons; they remain fixed in size (decorative use).
+* As the error icon is functional, it must follow the same rules as text.
+* The behaviors of the quantity button increase/decrease component during user zoom are available in the button (Layout: icon only) documentation. [Learn more about the behavior of the button component.](https://www.figma.com/design/QtOWrH1m3RHOAkfyy0XFil?node-id=92394-14049)
+
+<img src="images/quantity_input@multiline_and_responsiveness_img.png" alt="quantity_input@multiline_and_responsiveness_img" width="433">
+
+## Rich text
+
+### Strong text
+* Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
+* No other text styles or custom font weights should be used.
+
+&nbsp;
+
+### ⚠️ Underline text
+* Underlined text must not be applied manually (e.g. in helper text), as it is commonly associated with hyperlinks and may mislead users.
+
+<img src="images/quantity_input@rich_text_img.png" alt="quantity_input@rich_text_img" width="433">
 
 # Specs
+
+## Layout and spacing
+
+<img src="images/quantity_input@specs_layout_spacing.png" alt="quantity_input@specs_layout_spacing" width="864">
 
 ## States
 
@@ -332,20 +287,47 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 **`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded. Uses the "Skeleton" component, variant "Security marge=False".
 
----
+<img src="images/quantity_input@states_img.png" alt="quantity_input@states_img" width="433">
 
-## Layout and spacing
+# Accessibility
 
-🚧 Content to be added
+Work is in progress to deliver this content.
 
----
+# Develop
+
+## Developer documentation
+
+| Platform | Developer documentation |
+|---|---|
+| OUDS Web | Not available yet |
+| OUDS Android | Not available yet |
+| OUDS iOS | Not available yet |
+| OUDS Flutter | Not available yet |
 
 # Changelog
 
-| Date | Number | Notes | Designer |
-|------|--------|-------|----------|
-| Sep 30, 2025 | 1.2.0 | • For the property "Actions placement", the name of the variant "Right" is replaced by "Trailing" (RTL consideration)<br>• The name of the "Style" variant has been replaced to "Outlined" with true/false variant | Hamza Amarir |
-| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) | Maxime Tonnerre |
-| Jun 30, 2025 | 1.0.0 | • Component creation | Maxime Tonnerre |
+## Availability
 
----
+Design status: **EA**
+
+| Platform | Resource | Status | Version |
+|---|---|---|---|
+| Figma | [Quantity input component](https://r.orange.fr/r/S-ouds-design-quantity-input) | Done | 1.3.1 |
+| OUDS Web (former Boosted) | Not available yet | To do | – |
+| OUDS Android - Jetpack Compose | Not available yet | To do | – |
+| OUDS iOS - Swift | Not available yet | To do | – |
+| OUDS Flutter | Not available yet | To do | – |
+
+## Design changelog
+
+| Date | Number | Notes |
+|------|--------|-------|
+| May 22, 2026 | 1.3.1 | **Version 2.6 of the design tokens is required for the development of this update.**<br>For "Loading" state:<ul><li>Loading state button was updated<ul><li>Absolute positioning has been removed and replaced with Auto Layout.<ul><li>The container now uses: ouds/button/space/inset/icon-only-default</li></ul></li><li>Inside the container, the Circular Progress Indicator uses: ouds/button/space/inset/progress-indicator-only-default</li></ul></li></ul> |
+| Apr 22, 2026 | 1.3.0 | <ul><li>The input text reference changes from a regular weight (font-weight-label-default) to a medium weight (font-weight-label-moderate).</li><li>Removal of the component's max-width to avoid blocking certain layouts and to provide greater flexibility of use. The max-width values remain available in the design documentation.</li><li>Add spacing tokens between the label and the asterisk:<ul><li>control-text-input-space-column-gap-📄_label-asterisk</li><li>control-text-input-space-column-gap-📄_label-small-asterisk</li></ul></li></ul> |
+| Apr 8, 2026 | - | • Documentation writing: Rich text |
+| Mar 16, 2026 | - | Documentation writing:<ul><li>Rounded corners brand theme availability</li><li>Mandatory field indication</li><li>Truncated input area</li><li>Multiline and responsiveness</li></ul> |
+| Jan 21, 2026 | - | • Documentation writing: Rounded corners update | Cyriaque Billard |
+| Jan 6, 2026 | - | <ul><li>Documentation writing: Definition update</ul> |
+| Sep 30, 2025 | 1.2.0 | • For the property "Actions placement", the name of the variant "Right" is replaced by "Trailing" (RTL consideration)<br>• The name of the "Style" variant has been replaced to "Outlined" with true/false variant |
+| Jul 29, 2025 | 1.1.0 | • Several design token updates: [Component tokens changelog 1.5.0](https://www.figma.com/design/Co2t6wHMf4GB9NJVGs2Hes/-OUDS-Core-Lib--Design-tokens?m=auto&node-id=9280-2568&t=HLVB4jOd35DWr8Bj-1) |
+| Jun 30, 2025 | 1.0.0 | • Component creation |
