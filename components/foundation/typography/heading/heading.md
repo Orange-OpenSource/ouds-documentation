@@ -30,6 +30,8 @@ The heading features multiple sizes options, to help users quickly understand th
 
 ## Size
 
+<!-- zh-row -->
+
 **`Xlarge`** The highest level of heading hierarchy, used to introduce major sections and establish clear content structure. It serves as the primary navigational anchor within a page or experience.
 
 **`Large`** A high-emphasis heading used for important sections and content groupings. It helps organize information while maintaining strong visual hierarchy.
@@ -41,6 +43,8 @@ The heading features multiple sizes options, to help users quickly understand th
 <img src="images/heading@size_img.png" alt="heading@size_img" width="433">
 
 ## Marker
+
+<!-- zh-row -->
 
 When enabled, a brand-colored marker is displayed below the heading large to enhance its visual emphasis and reinforce information hierarchy. This optional decorative element helps highlight important sections and improve content scanability. Use it selectively to maintain its impact and avoid visual clutter.
 
@@ -62,6 +66,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 <img src="images/heading@marker_img.png" alt="heading@marker_img" width="433">
 
+<!-- zh-row -->
+
 ### Sosh specifications
 The Sosh brand has chosen not to use a marker, instead relying on the "color-content-brand-secondary" color to highlight one or more important words in a heading.  
 A heading may also use just a single color token: "color-content-default" or "color-content-brand-secondary".
@@ -69,6 +75,8 @@ A heading may also use just a single color token: "color-content-default" or "co
 <img src="images/heading@marker_img2.png" alt="heading@marker_img2" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
@@ -125,15 +133,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.1.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-heading) | Done | 1.1.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-heading) | Done | 1.1.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-heading) | Done | 1.1.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-heading) | Done | 1.1.0 |
+| Figma | [Heading component](https://r.orange.fr/r/S-ouds-design-typography-heading) | Live | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-heading) | Live | 1.1.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-heading) | Live | 1.1.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-heading) | Live | 1.1.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-heading) | Live | 1.1.0 |
 
 ## Design changelog
 

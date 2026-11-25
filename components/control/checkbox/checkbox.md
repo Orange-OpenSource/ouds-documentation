@@ -48,6 +48,8 @@ Unlike the checkbox, the checkbox item accommodates a broader range of contexts 
 
 ## Selection status
 
+<!-- zh-row -->
+
 **`Selected`** Indicates that the user has selected the option.  
 This often corresponds to an action or validation.
 
@@ -60,6 +62,8 @@ This is not a state the user directly selects but is calculated by the system.
 <img src="images/checkbox@selection_status_img.png" alt="checkbox@selection_status_img" width="433">
 
 ## Error
+
+<!-- zh-row -->
 
 **`False`** Used when the checkbox is unchecked but required.  
 Example: user must agree to terms, but didn't check the box.
@@ -75,6 +79,8 @@ Example: the selection conflicts with another field or fails validation.
 
 ## Reverse
 
+<!-- zh-row -->
+
 **`False`** This is the default layout of the component.  
 From left to right, the order of the elements is as follows: checkbox / text / icon.
 
@@ -84,6 +90,8 @@ From left to right, the order of the elements is as follows: icon / text / check
 <img src="images/checkbox@reverse_img.png" alt="checkbox@reverse_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Description`** It is possible to display or hide accompanying text for the main label.
 
@@ -96,6 +104,8 @@ From left to right, the order of the elements is as follows: icon / text / check
 <img src="images/checkbox@other_boolean_options_img.png" alt="checkbox@other_boolean_options_img" width="433">
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -125,6 +135,8 @@ This rule avoids visual redundancy, clarifies that the requirement applies to th
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed 2 lines of text. In its "Text + icon" variant, if the label spans multiple lines, the label remains centred.
 
@@ -151,6 +163,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Technical layout adjustments
 
+<!-- zh-row -->
+
 Even though, in Figma, the component structure is unique (for easier use by designers), technically the versions differ in order to respect best practices for each environment (paradigm shift between the web "Container" vs. the native "Edge-to-Edge"):
 
 &nbsp;
@@ -168,6 +182,8 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 <img src="images/checkbox@technical_layout_adjustments_img.png" alt="checkbox@technical_layout_adjustments_img" width="433">
 
 ## Rich text
+
+<!-- zh-row -->
 
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong).
@@ -187,6 +203,8 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 <img src="images/checkbox@specs_layout_spacing_img.png" alt="checkbox@specs_layout_spacing_img" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The status of the checkbox before a user has interacted with it, or other content affects it.
 
@@ -231,15 +249,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Checkbox component](https://r.orange.fr/r/S-ouds-design-checkbox) | Done | 2.4.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-checkbox) | Done | 2.4.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-checkbox) | Done | 2.4.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-checkbox) | Done | 2.4.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-checkbox) | Done | 2.4.0 |
+| Figma | [Checkbox component](https://r.orange.fr/r/S-ouds-design-checkbox) | Live | 2.4.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-checkbox) | Live | 2.4.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-checkbox) | Live | 2.4.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-checkbox) | Live | 2.4.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-checkbox) | Live | 2.4.0 |
 
 ## Design changelog
 

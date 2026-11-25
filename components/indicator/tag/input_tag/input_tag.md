@@ -30,6 +30,8 @@ The input tag allows users to type and submit values (typically by pressing ente
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 This component doesn't allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
 
@@ -59,6 +61,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/input_tag@spec_layout_spacing.png" alt="input_tag@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The default state of the Input tag. The tag is fully interactive, allowing users to read the label and remove the tag if needed.
 
@@ -97,15 +101,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Input tag component](https://r.orange.fr/r/S-ouds-design-input-tag) | Done | 1.2.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-input-tag) | Done | 1.2.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-input-tag) | Done | 1.2.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-input-tag) | Done | 1.2.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-input-tag) | Done | 1.2.0 |
+| Figma | [Input tag component](https://r.orange.fr/r/S-ouds-design-input-tag) | Live | 1.2.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-input-tag) | Live | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-input-tag) | Live | 1.2.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-input-tag) | Live | 1.2.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-input-tag) | Live | 1.2.0 |
 
 ## Design changelog
 

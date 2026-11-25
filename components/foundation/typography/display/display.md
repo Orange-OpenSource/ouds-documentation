@@ -29,6 +29,8 @@ The display features large type sizes that capture attention and create strong v
 
 ## Size
 
+<!-- zh-row -->
+
 **`Large`** The largest Display size, intended for maximum visual impact. Use it for hero sections, key messages, and high-priority content that requires immediate attention.
 
 **`Medium`** A prominent Display size that provides strong emphasis while maintaining a more balanced visual presence. Suitable for major content areas and featured messages.
@@ -38,6 +40,8 @@ The display features large type sizes that capture attention and create strong v
 <img src="images/display@size_img.png" alt="display@size_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
@@ -90,15 +94,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-display) | Done | 1.0.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-display) | Done | 1.0.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-display) | Done | 1.0.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-display) | Done | 1.0.0 |
+| Figma | [Display component](https://r.orange.fr/r/S-ouds-design-typography-display) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-display) | Live | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-display) | Live | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-display) | Live | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-display) | Live | 1.0.0 |
 
 ## Design changelog
 

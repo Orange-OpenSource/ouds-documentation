@@ -15,6 +15,8 @@ This family provides the foundational structures that enable users to move acros
 
 ## Guideline
 
+<!-- zh-row -->
+
 **A navigation bar on Android** is a UI element that enables users to access the primary destinations of a mobile application through three to five persistent tabs.
 
 The navigation bar is located at the bottom of the screen, with each destination represented by an icon and an optional text label to facilitate quick switching between top-level sections.
@@ -47,6 +49,8 @@ The navigation bar is located at the bottom of the screen, with each destination
 <img src="images/hero_image_android_app_bars.png" alt="hero_image_android_app_bars" width="864">
 
 ## Guideline
+
+<!-- zh-row -->
 
 **The App bar (aka Top app bar on Material 2)** is a top-aligned component that displays the screen title and provides access to key actions and navigation elements. It may include an Up button, action icons, overflow menus, search, or tabs. It provides context and controls relevant to the current view.
   
@@ -85,6 +89,8 @@ For more information, we invite you to consult the official Android:
 
 ## Guideline
 
+<!-- zh-row -->
+
 **The Toolbar (aka Bottom app bar on Material 2)** is a bottom-anchored container dedicated to contextual actions and navigation within a given screen. It can host action icons, a navigation drawer icon, or a floating action button (FAB) cutout. It is used for tasks rather than top-level navigation.
   
 For more information, we invite you to consult the official Android:
@@ -113,6 +119,8 @@ For more information, we invite you to consult the official Android:
 
 # Status bar
 
+<!-- zh-row -->
+
 **The Status bar** is a top system UI area displaying device information such as notifications, time, signal strength, and battery status. Its appearance (light/dark, transparent, etc.) can be influenced by the app but its content is controlled by the system.
   
 For more information, we invite you to consult the official Android:
@@ -124,6 +132,8 @@ For more information, we invite you to consult the official Android:
 <img src="images/android_status_bar@definition_img.png" alt="android_status_bar@definition_img" width="433">
 
 # System navigation bar
+
+<!-- zh-row -->
 
 **The System navigation bar** provides system-level navigation controls such as Back, Home, and Overview. Depending on the device or mode, it may appear as a 3-button layout or as a gesture navigation area. Apps must preserve this zone to avoid interfering with system navigation.
   

@@ -10,8 +10,8 @@
 # id: unique; the Ouds-links id when the component has an entry there. component: for a variant record (one of
 # several records of one documented component), the Ouds-links id of that component.
 
-version: 1.0.0
-updated: 2026-11-23
+version: 1.1.0
+updated: 2026-11-24
 
 components:
   - name: Action card
@@ -246,7 +246,7 @@ components:
     design_version: "1.0.0"
     web_version: "1.0.0"
     android_version: not-available
-    ios_version: "1.0.0"
+    ios_version: "1.1.0"
     flutter_version: not-available
   - name: Chat input
     id: chat-input

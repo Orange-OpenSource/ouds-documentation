@@ -36,6 +36,8 @@ The alert banner supports various semantic statuses, layouts, actions, and respo
 The content layout defines how the banner’s icon, message, and action are positioned within the available screen width.  
 Choose the layout according to the viewport size and the relationship between the banner and the page grid.
 
+<!-- zh-row -->
+
 **`Start`** The banner content follows the reference screen grid, with the icon, message, and action aligned to the page margins.  
 Recommended for mobile, tablet, and small desktop screens, where the available width is limited and the banner should use the space efficiently.  
 Use this layout when the banner needs to remain visually connected to the surrounding interface and aligned with the rest of the page content.
@@ -59,6 +61,8 @@ The Center layout has a simplified structure:
 
 **(for Layout=Start only)**
 
+<!-- zh-row -->
+
 **`Top`** Recommended for mobile layouts or banners with longer content. Aligning the icon and action with the first line improves readability and keeps the interactive elements clearly connected to the beginning of the message.
 
 **`Center`** Recommended for desktop layouts, compact banners, or short single-line messages. Vertically centring the icon, text, and action creates a balanced and compact composition.
@@ -72,6 +76,8 @@ Non-functional banners communicate global or cross-screen information without re
 
 They can appear across several screens to promote a service, highlight a new feature, or provide general guidance. Unlike functional banners, they are not triggered by a technical condition and do not require semantic status colours or icons.
 
+<!-- zh-row -->
+
 **`Neutral`** Used for general guidance, service information, or contextual messages that apply across the experience without requiring immediate attention.  
 Neutral banners should remain informative and low priority. Use them for onboarding guidance, account suggestions, or general service notices that are not linked to a system event.
 
@@ -84,6 +90,8 @@ Accent banners are suitable for campaigns, loyalty programmes, feature launches,
 Functional banners behave as system banners. They communicate a global, high-priority state that affects the entire app, service, or user journey rather than a single field, component, or page section.
 
 They usually appear automatically in response to a system condition, without the user triggering them directly. They may persist across screens and should remain visible until the condition is resolved, the information is no longer relevant, or the banner is dismissed when dismissal is permitted.
+
+<!-- zh-row -->
 
 **`Negative`** Communicates a critical system issue that prevents the service or an essential feature from working correctly.  
 Use a negative banner for service outages, failed connections, unavailable functionality, or account-wide errors. The message should clearly explain the issue and, when possible, provide a recovery action.
@@ -112,6 +120,8 @@ For action elements, we use the Link component with the “Text only” layout. 
 
 ⚠️ Non-navigational usage: A link can be used to trigger an action rather than navigation (for example, opening a modal, revealing additional content, or executing a function). This pattern should only be applied when the link appearance is preferred, while ensuring the component remains accessible and its intent is clear.
 
+<!-- zh-row -->
+
 **`None`** Used when the banner communicates a system state but no user action is required.  
 Suitable for messages that only inform users about the current state, such as a temporary service limitation or a restored connection.
 
@@ -135,6 +145,8 @@ Avoid the trailing layout when the message or CTA wraps onto several lines, as t
 The close button determines whether users can dismiss the banner.  
 Use it only when the message can be safely removed after being acknowledged. Functional banners that communicate an active system issue or require user awareness should remain visible until the state changes.
 
+<!-- zh-row -->
+
 **`False`** The banner does not include a close button and remains visible until the underlying issue is resolved.  
 Use this option for high-priority system states that users must remain aware of. For example, a No internet connection banner should not be dismissible and should disappear automatically only when connectivity is restored.
 
@@ -151,6 +163,8 @@ Icons help communicate context and tone but are optional for Non-functional aler
 
 **⚠️ Note:**  
 Functional alerts (Negative, Positive, Info, Warning) must always include a dedicated functional icon that reflects their semantic meaning. This ensures clarity, accessibility, and consistency across all user interfaces.
+
+<!-- zh-row -->
 
 **`False`** The banner is displayed without an icon.  
 Use this option when the message is clear on its own or when a simpler visual treatment is preferred.
@@ -171,6 +185,8 @@ Description is the optional supplementary text in an Alert Banner. Use only when
 • Use plain language consistent with Orange’s tone: friendly, clear, service-oriented. Avoid jargon or complex sentences. The US Web Design System emphasises “concise, human-readable language; avoid jargon and computer code.” U.S. Web Design System (USWDS)  
 • Provide next-step guidance if the alert requires user action: e.g., “Try again”, “Check your settings”, “Contact support”. If no action is required, the body text can simply explain the state.
 
+<!-- zh-row -->
+
 **`False`** The banner displays the label only.  
 Use this option for short, self-explanatory messages that do not require additional context.
 
@@ -180,6 +196,8 @@ Use this option when users need more context about the issue, its impact, or the
 <img src="images/alert_banner@description_img.png" alt="alert_banner@description_img" width="433">
 
 ## Placement and Interaction
+
+<!-- zh-row -->
 
 ### Mobile reference design
 • Placement: Directly below the top app bar or page header and above the related page content.  
@@ -232,6 +250,8 @@ Two width behaviours are supported:
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
 
@@ -259,6 +279,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 ## Rich text
 
 Rich text should be used sparingly to improve scanning and highlight the most important part of the message. It must never compensate for unclear writing.
+
+<!-- zh-row -->
 
 ### Layout=Start
 
@@ -590,11 +612,9 @@ Design guidance supporting reduced-motion user preferences
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Alert banner component](https://r.orange.fr/r/S-ouds-design-alert-banner) | Done | 1.0.0 |
+| Figma | [Alert banner component](https://r.orange.fr/r/S-ouds-design-alert-banner) | Live | 1.0.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

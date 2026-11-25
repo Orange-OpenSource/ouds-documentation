@@ -35,6 +35,8 @@ The categorical tag does not support any interaction. It can represent informati
 The Category property defines the categorical colour used by the component.  
 Categories are identified by numbers 1 to 5 because the actual colour may vary depending on the active theme, product or local market guidelines. The number identifies a reusable colour slot. It does not represent priority, hierarchy, severity or functional status.
 
+<!-- zh-row -->
+
 **`1`** Uses categorical colour slot 1.
 
 **`2`** Uses categorical colour slot 2.
@@ -53,6 +55,8 @@ In some local guidelines, a green categorical colour may be reserved for environ
 
 ## Layouts
 
+<!-- zh-row -->
+
 **`Text only`** Use Text only in most cases. It is recommended when the label alone is enough to identify the category.
 
 **`Text + Bullet`** Use Text + Bullet when a small visual marker helps users scan or distinguish categories more quickly. The bullet supports visual categorisation only. It must not communicate a functional status by itself.
@@ -65,6 +69,8 @@ In some local guidelines, a green categorical colour may be reserved for environ
 <img src="images/categorical_tag@layouts_img.png" alt="categorical_tag@layouts_img" width="433">
 
 ## Size
+
+<!-- zh-row -->
 
 **`Default`** Use Default as the standard size.  
 It is suitable when the Categorical tag needs clear visual presence or is used as the main categorical label in a component.
@@ -86,6 +92,8 @@ Small is suitable for:
 
 Rounded corner changes the visual style of the Categorical tag but does not change its meaning.  
 Use the same corner style for comparable Categorical tags within the same context.
+
+<!-- zh-row -->
 
 **`True`** Displays the Categorical tag with fully rounded corners.  
 Use when rounded components are part of the visual language of the product or service.
@@ -116,6 +124,8 @@ The use of tags depends on the local Art Direction of each country, brand or pro
 Do not use Categorical tags only to make content more colourful or visually prominent.  
 Use them only when their categories and colour meanings are explicitly defined in the Art Direction or brand guidelines of the country or product. Introducing Categorical tags into an identity where they are not defined can create inconsistency and make users interpret colours as meaningful when they are not.
 
+<!-- zh-row -->
+
 ### Categorical tag
 • Some identities use Categorical tags as part of their Art Direction.  
 • Colours can be linked to specific categories defined by the brand, for example green for environmental content.
@@ -124,6 +134,8 @@ Use them only when their categories and colour meanings are explicitly defined i
 
 <img src="images/categorical_tag@use_cases_img.png" alt="categorical_tag@use_cases_img" width="433">
 
+<!-- zh-row -->
+
 ### ⚠️ Orange France
 • Orange France uses the standard Tag in its Art Direction.  
 • For promotional content, mainly Neutral and Yellow tags are used, always with square corners. Yellow can also be used for the Warning semantic style.
@@ -131,6 +143,8 @@ Use them only when their categories and colour meanings are explicitly defined i
 • Do not replace these tags with Categorical tags. Follow the existing Orange France Art Direction to keep promotional experiences consistent.
 
 <img src="images/categorical_tag@use_cases_img2.png" alt="categorical_tag@use_cases_img2" width="433">
+
+<!-- zh-row -->
 
 ### ⚠️ Orange Belgium
 • Orange Belgium also uses the standard Tag, but with a different local Art Direction.  
@@ -141,6 +155,8 @@ Use them only when their categories and colour meanings are explicitly defined i
 <img src="images/categorical_tag@use_cases_img3.png" alt="categorical_tag@use_cases_img3" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component doesn’t allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
@@ -174,6 +190,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/categorical_tag@spec_layout_spacing.png" alt="categorical_tag@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Enabled is the default state.  
 Use it when the categorical information is available and current.  
@@ -226,14 +244,12 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Categorical tag component](https://r.orange.fr/r/S-ouds-design-categorical-tag) | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-categorical-tag) | Done | 1.0.0 |
+| Figma | [Categorical tag component](https://r.orange.fr/r/S-ouds-design-categorical-tag) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-categorical-tag) | Live | 1.0.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-categorical-tag) | Done | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-categorical-tag) | Live | 1.1.0 |
 | OUDS Flutter | Not available yet | To do | – |
 
 ## Design changelog

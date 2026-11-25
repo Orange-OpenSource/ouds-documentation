@@ -29,6 +29,8 @@ The body features multiple size options, to allow content importance to be expre
 
 ## Size
 
+<!-- zh-row -->
+
 **`Large`** The most prominent body text size, ideal for introductory paragraphs, highlighted content, or situations where enhanced readability is desired.
 
 **`Medium`** The default body text size, providing an optimal balance between readability, information density, and visual hierarchy across most use cases.
@@ -39,6 +41,8 @@ The body features multiple size options, to allow content importance to be expre
 
 ## Weight
 
+<!-- zh-row -->
+
 **`Default`** The default weight provides the standard level of typographic emphasis for Body and Label styles. It is designed for optimal readability and neutral hierarchy, making it the baseline for most interface content. Use it whenever no additional emphasis is required.
 
 **`Moderate`** Moderate weight increases visual presence while remaining balanced and readable. It is used to reinforce hierarchy within Body and Label typography without introducing strong emphasis. Suitable for highlighting important information or improving scanability.
@@ -48,6 +52,8 @@ The body features multiple size options, to allow content importance to be expre
 <img src="images/body@weight_img.png" alt="body@weight_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
@@ -100,15 +106,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-body) | Done | 1.0.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-body) | Done | 1.0.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-body) | Done | 1.0.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-body) | Done | 1.0.0 |
+| Figma | [Body component](https://r.orange.fr/r/S-ouds-design-typography-body) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-body) | Live | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-body) | Live | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-body) | Live | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-body) | Live | 1.0.0 |
 
 ## Design changelog
 

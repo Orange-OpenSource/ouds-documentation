@@ -33,6 +33,8 @@ The static card item card may be displayed independently or within a card-based 
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** Use the Default size in most interfaces.  
 It provides sufficient spacing for standalone cards, card collections, multiline content and visual elements such as avatars, images or badges.
 
@@ -47,6 +49,8 @@ The Small size is best suited to:
 <img src="images/static_card_item@size_img.png" alt="static_card_item@size_img" width="433">
 
 ## Alignment
+
+<!-- zh-row -->
 
 **`Center`** Use Center alignment is the default alignment for items containing:  
 • A single-line label.  
@@ -66,6 +70,8 @@ The Small size is best suited to:
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** No outline is displayed. Use when the card is already separated from the surrounding content by its background, spacing or container.
 
 **`True`** An outline is displayed around the card. Use when the card needs clearer visual separation from a surface with a similar background.
@@ -79,6 +85,8 @@ The Small size is best suited to:
 Although this rendering option is available in the properties of each Static card item in Figma, its configuration should be defined consistently across the product or service in which the component is used.  
 Equivalent cards within the same interface should not arbitrarily mix Rounded corner=True and Rounded corner=False.  
 Different corner styles may only be combined when they represent clearly documented card categories or levels of hierarchy.
+
+<!-- zh-row -->
 
 **`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
 
@@ -102,6 +110,8 @@ Leading and trailing content serve different purposes within the card.
 • Leading content supports recognition and identification before users read the main label.  
 • Trailing content provides supplementary information after the main content has been understood.  
 Choose each position according to the role of the content, not only according to the available space.
+
+<!-- zh-row -->
 
 ### Use leading content only
 Use leading content when the visual element helps users identify or understand the item before reading its text.
@@ -146,6 +156,8 @@ When both positions are enabled:
 Leading content appears before the main label and supports recognition or identification.  
 Use it when the visual element helps users understand the card more quickly. Do not add leading content only to decorate the card. Only one leading container should be displayed per card.
 
+<!-- zh-row -->
+
 **`False`** No leading content is displayed. The main content starts at the default horizontal padding.
 
 **`True`** A leading container is displayed before the main content. Use the Leading container type property to define its content, such as an icon, image, avatar, flag, value or custom slot.
@@ -156,6 +168,8 @@ Use it when the visual element helps users understand the card more quickly. Do 
 
 ### Icon
 Use an icon to reinforce the meaning of the item or help users identify a familiar category, object or status.
+
+<!-- zh-row -->
 
 #### Size
 Controls the visual prominence of the icon.
@@ -168,6 +182,8 @@ Do not mix sizes arbitrarily. Different sizes may suggest a hierarchy or importa
 **`Large`** Use when the icon needs stronger prominence or when the card has a larger height, multiline content or additional supporting information.
 
 <img src="images/static_card_item@leading_container_type_icon_size_img.png" alt="static_card_item@leading_container_type_icon_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 Defines the semantic colour applied to the icon.
@@ -194,6 +210,8 @@ Defines the semantic colour applied to the icon.
 
 <img src="images/static_card_item@leading_container_type_icon_status_img.png" alt="static_card_item@leading_container_type_icon_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge
 Controls whether an additional badge is displayed with the icon.
 
@@ -206,6 +224,8 @@ Controls whether an additional badge is displayed with the icon.
 ### Image
 Use an image when visual identification is important, for example for a product, service, destination, article or media item.  
 Do not use an image when it does not add useful information.
+
+<!-- zh-row -->
 
 #### Size
 Controls the dimensions and visual prominence of the image.
@@ -221,6 +241,8 @@ Do not mix sizes arbitrarily. Different sizes may suggest a hierarchy or importa
 
 <img src="images/static_card_item@leading_container_type_image_size_img.png" alt="static_card_item@leading_container_type_image_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Ratio
 Defines the aspect ratio of the image container.
 
@@ -232,6 +254,8 @@ Defines the aspect ratio of the image container.
 
 <img src="images/static_card_item@leading_container_type_image_ratio_img.png" alt="static_card_item@leading_container_type_image_ratio_img" width="433">
 
+<!-- zh-row -->
+
 #### Rounded corner
 Defines whether the image is displayed with square or rounded corners. The corner style should reflect the type of content and remain consistent with the visual language used elsewhere in the product.
 
@@ -240,6 +264,8 @@ Defines whether the image is displayed with square or rounded corners. The corne
 **`True`** Displays the image with rounded corners.
 
 <img src="images/static_card_item@leading_container_type_image_rounded_corner_img.png" alt="static_card_item@leading_container_type_image_rounded_corner_img" width="433">
+
+<!-- zh-row -->
 
 #### Animated
 Defines whether the image can contain animated content. Use animation only when it provides meaningful value to the user and does not distract from the primary content or interaction.
@@ -259,6 +285,8 @@ The use of motion and animation in our products and components requires particul
 ### Avatar
 Use an avatar to represent a person, profile, team, organisation or account. An avatar supports visual recognition but must always be accompanied by a visible text label identifying the represented entity.
 
+<!-- zh-row -->
+
 #### Size
 
 **`Medium`** Use in compact cards or when the avatar is secondary to the content.
@@ -268,6 +296,8 @@ Use an avatar to represent a person, profile, team, organisation or account. An 
 **`Xlarge`** Use when identity is a primary part of the card or when additional avatar details must remain visible.
 
 <img src="images/static_card_item@leading_container_type_avatar_size_img.png" alt="static_card_item@leading_container_type_avatar_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Type
 Defines the content displayed inside the avatar.
@@ -279,6 +309,8 @@ Defines the content displayed inside the avatar.
 **`Icon`** Use for generic accounts, anonymous profiles, teams or entities that do not have an individual image or initials.
 
 <img src="images/static_card_item@leading_container_type_avatar_type_img.png" alt="static_card_item@leading_container_type_avatar_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Badge
 Controls whether a badge is displayed on the avatar.
@@ -292,6 +324,8 @@ When Badge is enabled, additional properties become available.
 
 <img src="images/static_card_item@leading_container_type_avatar_badge_img.png" alt="static_card_item@leading_container_type_avatar_badge_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge type
 Defines the visual content used in the avatar.
 
@@ -302,6 +336,8 @@ Defines the visual content used in the avatar.
 ⚠️ For Neutral and Accent statuses, the icon can be adapted to the context. For functional statuses, the icon is predefined and must not be changed, ensuring consistent and accessible status communication across the design system.
 
 <img src="images/static_card_item@leading_container_type_avatar_badge_type_img.png" alt="static_card_item@leading_container_type_avatar_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Badge status
 Defines the semantic colour of the badge.
@@ -330,6 +366,8 @@ Defines the semantic colour of the badge.
 
 <img src="images/static_card_item@leading_container_type_avatar_badge_status_img.png" alt="static_card_item@leading_container_type_avatar_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 ### Flag
 Use a flag to represent a country, territory or regional context. A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
 
@@ -337,6 +375,8 @@ Use a flag to represent a country, territory or regional context. A flag may sup
 The accessible name should describe the represented country or territory, not the visual appearance of the flag.
 
 <img src="images/static_card_item@leading_container_type_flag_img.png" alt="static_card_item@leading_container_type_flag_img" width="433">
+
+<!-- zh-row -->
 
 ### Slot
 Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag.  
@@ -362,6 +402,8 @@ Trailing content appears after the main content and communicates secondary infor
 It can be used for a value, status, category or supplementary visual element.  
 The trailing content should remain concise and should not contain information that is more important than the primary label.
 
+<!-- zh-row -->
+
 **`False`** No trailing content is displayed. The main content can use the available width of the card.
 
 **`True`** A trailing container is displayed after the main content.  
@@ -370,6 +412,8 @@ Use the Trailing container type property to define its content, such as text, a 
 <img src="images/static_card_item@trailing_img.png" alt="static_card_item@trailing_img" width="433">
 
 ## Trailing container type
+
+<!-- zh-row -->
 
 ### Shared container types
 The following types reuse the properties and guidance documented under Leading container type:  
@@ -391,6 +435,8 @@ Use Text to display a short value or secondary piece of information associated w
 ⚠️ Keep trailing text concise. When the information requires a sentence or explanation, use the Description or Helper text property instead.  
 ⚠️ Keep trailing text to 1–2 words whenever possible. Longer content can reduce the space available for the primary label and cause excessive wrapping, especially when users zoom in or increase the text size.
 
+<!-- zh-row -->
+
 **`Label`** Use Label for standard secondary information that should remain clearly readable without drawing more attention than the primary label.
 
 **`Label muted`** Use Label muted for low-priority metadata that supports the item but is not essential to its immediate understanding.
@@ -405,6 +451,8 @@ Use Text to display a short value or secondary piece of information associated w
 Use a Badge to communicate a compact status or notification associated with the card.  
 A badge should contain secondary information and must not replace the primary label or description.
 
+<!-- zh-row -->
+
 #### Type
 
 **`Badge`** Use Badge for a short textual status. Keep the label concise and use terminology consistently throughout the product.
@@ -413,6 +461,8 @@ A badge should contain secondary information and must not replace the primary la
 The count must have a clear relationship with the primary subject of the card. Users should not need to guess what is being counted.
 
 <img src="images/static_card_item@trailing_container_type_badge_type_img.png" alt="static_card_item@trailing_container_type_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 The Status property defines the semantic colour and meaning of the badge.
@@ -443,6 +493,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/static_card_item@trailing_container_type_badge_status_img.png" alt="static_card_item@trailing_container_type_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge size
 
 **`XSmall`** Use for a very compact badge within small cards or dense layouts.
@@ -455,6 +507,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/static_card_item@trailing_container_type_badge_size_img.png" alt="static_card_item@trailing_container_type_badge_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge count size
 
 **`Medium`** Use Medium for standard or compact cards.
@@ -462,6 +516,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 **`Large`** Use Large when the card uses larger dimensions or when a larger badge is required to remain visually balanced with the surrounding content.
 
 <img src="images/static_card_item@trailing_container_type_badge_count_size_img.png" alt="static_card_item@trailing_container_type_badge_count_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -477,6 +533,8 @@ Do not use Disabled merely to reduce visual emphasis.
 ### Tag
 Use a Tag to communicate a category, attribute, classification or compact status associated with the card. In a Static card item, a tag is informational.
 
+<!-- zh-row -->
+
 #### Appearance
 
 **`Emphasized`** Use Emphasized when the tag carries information that should be easy to notice while remaining secondary to the primary label.
@@ -484,6 +542,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 **`Muted`** Use Muted for low-priority categories or supporting metadata.
 
 <img src="images/static_card_item@trailing_container_type_tag_appearance_img.png" alt="static_card_item@trailing_container_type_tag_appearance_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 
@@ -507,6 +567,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 
 <img src="images/static_card_item@trailing_container_type_tag_status_img.png" alt="static_card_item@trailing_container_type_tag_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Layout
 
 **`Text only`** A tag that displays only text. Used for simple labels, categories, or keywords without additional visual elements.
@@ -517,6 +579,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 
 <img src="images/static_card_item@trailing_container_type_tag_layout_img.png" alt="static_card_item@trailing_container_type_tag_layout_img" width="433">
 
+<!-- zh-row -->
+
 #### Size
 
 **`Small`** Use Small as the standard and recommended tag size within the card. It keeps the tag visually secondary, preserves space for the main content and works well in compact or information-dense card layouts.
@@ -524,6 +588,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 **`Default`** Use Default when the card uses a larger layout or when the tag must align with other Default-size tags in the same interface.
 
 <img src="images/static_card_item@trailing_container_type_tag_size_img.png" alt="static_card_item@trailing_container_type_tag_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -536,6 +602,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 **`Skeleton`** A placeholder state shown before the actual data is loaded.
 
 <img src="images/static_card_item@trailing_container_type_tag_state_img.png" alt="static_card_item@trailing_container_type_tag_state_img" width="433">
+
+<!-- zh-row -->
 
 #### Rounded corner
 
@@ -556,6 +624,8 @@ This option is available for all brand themes
 
 ## Divider
 
+<!-- zh-row -->
+
 **`False`** No divider is displayed.  
 Use this option when the card is already separated from surrounding content by spacing, an individual background, an outline or another clear visual boundary.
 
@@ -567,6 +637,8 @@ Do not use a divider as the only boundary for a standalone card.
 
 ## Helper text
 
+<!-- zh-row -->
+
 **`False`** No helper text is displayed.
 
 **`True`** Helper text is displayed below the primary content.  
@@ -575,6 +647,8 @@ Use helper text for additional information required to interpret the card conten
 <img src="images/static_card_item@helper_text_img.png" alt="static_card_item@helper_text_img" width="433">
 
 ## Background
+
+<!-- zh-row -->
 
 **`False`** The card uses the surrounding container surface without an individual background.  
 Use this option when the card belongs to a visually grouped layout and spacing, an outline or a divider provides sufficient separation.
@@ -585,6 +659,8 @@ Use it when the card needs clear visual separation from its surrounding context 
 <img src="images/static_card_item@background_img.png" alt="static_card_item@background_img" width="433">
 
 ## Label type
+
+<!-- zh-row -->
 
 **`Default`** Use Default for most cards.  
 It provides the standard visual hierarchy and should be the preferred option for common labels, names and titles.
@@ -605,6 +681,8 @@ The Slot may be used for custom primary content such as:
 
 ## Overline
 
+<!-- zh-row -->
+
 **`False`** No overline is displayed.
 
 **`True`** A short contextual label is displayed above the primary label. Use an overline to communicate a short contextual qualifier.
@@ -612,6 +690,8 @@ The Slot may be used for custom primary content such as:
 <img src="images/static_card_item@overline_img.png" alt="static_card_item@overline_img" width="433">
 
 ## Extra label
+
+<!-- zh-row -->
 
 **`False`** No extra label is displayed.
 
@@ -626,6 +706,8 @@ Use an extra label for:
 
 ## Description
 
+<!-- zh-row -->
+
 **`False`** No supporting description is displayed.
 
 **`True`** Supporting text is displayed below the primary label.  
@@ -637,6 +719,8 @@ Use a description when users need additional context to understand the card cont
 
 The bottom slot adds a custom content area below the main card content.  
 Use it when the information cannot be clearly represented by the standard Description or Helper text properties.
+
+<!-- zh-row -->
 
 **`False`** No additional content is displayed below the main content.
 
@@ -653,6 +737,8 @@ It may contain:
 ## Rich text
 
 Rich text should be used sparingly to improve scanning and highlight the most important part of the message. It must never compensate for unclear writing.
+
+<!-- zh-row -->
 
 ### Strong text
 • Strong text can be used sparingly in the helper text or description to highlight key information, such as a status, date, amount, or required step. Rich text must use the **Label/Medium/Strong** token only. No other text styles or custom font weights should be used.
@@ -674,6 +760,8 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 <img src="images/static_card_item@rich_text_img.png" alt="static_card_item@rich_text_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 • The Static card item supports multiline content without a predefined line limit.  
@@ -710,6 +798,8 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 
 ## Technical layout adjustments
 
+<!-- zh-row -->
+
 Even though, in Figma, the component structure is unique (for easier use by designers), technically the versions differ in order to respect best practices for each environment (paradigm shift between the web “Container” vs. the native “Edge-to-Edge”):
 
 &nbsp;
@@ -738,6 +828,8 @@ Padding within the Below text and Bottom slots is optional and can be adjusted o
 
 ## States
 
+<!-- zh-row -->
+
 **`Enabled`** Enabled is the default state. All content is displayed using its standard visual tokens.  Because the card is static, the Enabled state does not introduce hover, pressed or focus behaviour.
 
 **`Disabled`** Use Disabled when the information represented by the card is currently unavailable, inactive or no longer applicable. Since the card is non-interactive, the Disabled state communicates the availability or relevance of its content, not the availability of an action.
@@ -749,6 +841,8 @@ Padding within the Below text and Bottom slots is optional and can be adjusted o
 # Accessibility
 
 ## Motion & Animation accessibility rules
+
+<!-- zh-row -->
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”  
 These two main criteria address different issues:
@@ -1128,15 +1222,13 @@ Design guidance supporting WCAG 2.1 — 2.2.2 Pause, Stop, Hide, Level A
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Static card item component](https://r.orange.fr/r/S-ouds-design-static-card-item) | Done | 1.3.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-static-card-item) | Done | 1.2.0 |
-| OUDS Android - Jetpack Compose | Not available yet | Done | 0.1.0 |
+| Figma | [Static card item component](https://r.orange.fr/r/S-ouds-design-static-card-item) | Live | 1.3.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-static-card-item) | Live | 1.2.0 |
+| OUDS Android - Jetpack Compose | Not available yet | Live | 0.1.0 |
 | OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-static-card-item) | To do | – |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-static-card-item) | Done | 0.3.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-static-card-item) | Live | 0.3.0 |
 
 ## Design changelog
 

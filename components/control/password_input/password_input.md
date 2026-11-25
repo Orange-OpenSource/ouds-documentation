@@ -49,6 +49,8 @@ The password input feature enhances privacy by replacing characters with dots as
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
@@ -59,6 +61,8 @@ The password input feature enhances privacy by replacing characters with dots as
 <img src="images/password_input@outlined_img.png" alt="password_input@outlined_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -79,6 +83,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
+<!-- zh-row -->
+
 **`Empty`** The Empty state indicates that the password input is blank with no content or placeholder, a neutral starting point.
 
 **`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
@@ -88,6 +94,8 @@ This option is technically not available for all brand themes. Here's the list o
 <img src="images/password_input@input_status_img.png" alt="password_input@input_status_img" width="433">
 
 ## Error
+
+<!-- zh-row -->
 
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -107,6 +115,8 @@ This state helps users quickly identify and correct mistakes by explaining what 
 
 ## Leading icon
 
+<!-- zh-row -->
+
 Helps indicate the purpose of the input. Only use a leading icon if it adds clear functional or contextual value.
 
 <img src="images/password_input@leading_icon_img.png" alt="password_input@leading_icon_img" width="433">
@@ -120,6 +130,8 @@ Helps indicate the purpose of the input. Only use a leading icon if it adds clea
 <img src="images/password_input@leading_icon_dont_img.png" alt="password_input@leading_icon_dont_img" width="416">
 
 ## Label
+
+<!-- zh-row -->
 
 Describes the purpose of the input. Why hide a password input label?
 
@@ -140,6 +152,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 <img src="images/password_input@label_dont_img.png" alt="password_input@label_dont_img" width="416">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Prefix`** - for Filled and Empty (Placeholder) Input states only A visual or textual element placed before the user's input. A prefix is not common and is discouraged in a Password Input component. Here are illustrative examples of very specific cases where:
 * "corp-" Company password enforcing a prefix
@@ -166,6 +180,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 <img src="images/password_input@other_boolean_options_dont_img.png" alt="password_input@other_boolean_options_dont_img" width="416">
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -195,6 +211,8 @@ If there is only one field in the form, or if the mandatory nature is obvious (s
 
 ## Truncated input area
 
+<!-- zh-row -->
+
 When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:
 
 * On web, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (right-aligned) and the beginning of the text becomes invisible (masked on the left).  
@@ -210,6 +228,8 @@ This choice is intentional because, for many fields, showing the end often makes
 <img src="images/password_input@truncated_input_area_img.png" alt="password_input@truncated_input_area_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 In its "Empty" state (without a placeholder), the label of this component allows two lines of text editing. However, it is recommended not to exceed one line of text.  
@@ -241,6 +261,8 @@ However, "Text input" components present an exception regarding the loss of text
 
 ## Rich text
 
+<!-- zh-row -->
+
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong and Label/Large/Strong) depending on the selected text style.
 * No other text styles or custom font weights should be used.
@@ -259,6 +281,8 @@ However, "Text input" components present an exception regarding the loss of text
 <img src="images/password_input@spec_layout_spacing.png" alt="password_input@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -299,15 +323,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Password input component](https://r.orange.fr/r/S-ouds-design-password-input) | Done | 1.3.1 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-password-input) | Done | 1.3.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-password-input) | Done | 1.3.1 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-password-input) | Done | 1.3.1 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-password-input) | Done | 1.3.1 |
+| Figma | [Password input component](https://r.orange.fr/r/S-ouds-design-password-input) | Live | 1.3.1 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-password-input) | Live | 1.3.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-password-input) | Live | 1.3.1 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-password-input) | Live | 1.3.1 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-password-input) | Live | 1.3.1 |
 
 ## Design changelog
 

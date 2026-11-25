@@ -35,6 +35,8 @@ The accordion card item is used when a more prominent visual grouping is needed 
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** Use the Default size in most interfaces.  
 It provides sufficient spacing for standalone accordion cards, card collections, multiline Labels and visual elements such as Icons, Avatars, Images or Badges.
 
@@ -50,6 +52,8 @@ The Small size is best suited to:
 <img src="images/accordion_card_item@size_img.png" alt="accordion_card_item@size_img" width="433">
 
 ## Alignment
+
+<!-- zh-row -->
 
 **`Center`** Center alignment is the default for card triggers containing:  
 • A single-line Label.  
@@ -71,6 +75,8 @@ The Small size is best suited to:
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** No Outline is displayed.  
 Use this option when the card is already clearly separated from surrounding content by its Background, spacing or parent layout.
 
@@ -83,6 +89,8 @@ Use this option when the card is already clearly separated from surrounding cont
 Although this rendering option is available in the properties of each Accordion card item in Figma, its configuration should be defined consistently across the product or service in which the component is used.
 
 Equivalent cards within the same interface should not arbitrarily mix Rounded corner = True and Rounded corner = False.
+
+<!-- zh-row -->
 
 **`False`** The square rendering corresponds to Orange's historical visual style. It provides a structured, robust and utility-driven appearance and remains the default treatment for digital interface components where appropriate.
 
@@ -102,6 +110,8 @@ Here’s the list of rounded corners availability by brand theme
 
 ## Expanded
 
+<!-- zh-row -->
+
 **`False`** Use the collapsed state when additional content is hidden.  
 Only the card trigger remains visible, allowing users to scan available sections without displaying all supporting information at once.
 
@@ -112,6 +122,8 @@ Only the card trigger remains visible, allowing users to scan available sections
 <img src="images/accordion_card_item@expanded_img.png" alt="accordion_card_item@expanded_img" width="433">
 
 ## Expanded text
+
+<!-- zh-row -->
 
 **`False`** No standard text content is displayed in the expanded area.  
 Use this option when the expanded content is provided only through Expanded slot, or when no additional text is required.
@@ -135,6 +147,8 @@ The Below text slot adds custom supporting content directly below the main text 
 Use it when additional information needs to remain closely associated with the Label, Description or other text content rather than span the complete trigger width.  
 The slot follows the position and alignment of the text container. Its exact placement may vary depending on the Accordion component structure.
 
+<!-- zh-row -->
+
 **`False`** No additional content is displayed below the main trigger content.
 
 **`True`** A custom content area is displayed directly below the main text content.
@@ -150,6 +164,8 @@ The slot follows the position and alignment of the text container. Its exact pla
 The Bottom slot adds custom supporting content below the complete trigger content.  
 Use it when information needs to remain visible independently of the Expanded state and requires more space or flexibility than the standard text properties.  
 The slot is positioned at the bottom of the trigger area. Its exact width and alignment may vary depending on the Accordion component structure.
+
+<!-- zh-row -->
 
 **`False`** No additional content is displayed below the main trigger content.
 
@@ -167,6 +183,8 @@ The Expand slot adds custom content inside the expanded area of the Accordion.
 Use it when the revealed content requires a structure that cannot be represented clearly by standard Expanded text alone.  
 The slot is displayed only when the Accordion is expanded. Its exact placement inside the expanded area may vary depending on the Accordion component structure.
 
+<!-- zh-row -->
+
 **`False`** No additional content is displayed below the main trigger content.
 
 **`True`** A custom content area is displayed when the Accordion is expanded.
@@ -176,6 +194,8 @@ The slot is displayed only when the Accordion is expanded. Its exact placement i
 <img src="images/accordion_card_item@slot_expand_img.png" alt="accordion_card_item@slot_expand_img" width="433">
 
 ## Alternative icon
+
+<!-- zh-row -->
 
 **`False`** Use the default chevron as the Expanding indicator.  
 This is the recommended option for standard accordion patterns and clearly communicates that additional content can be expanded or collapsed.
@@ -188,6 +208,8 @@ The icon must communicate the same expanded state consistently across all items 
 <img src="images/accordion_card_item@alternative_icon_img.png" alt="accordion_card_item@alternative_icon_img" width="433">
 
 ## Reverse
+
+<!-- zh-row -->
 
 **`False`** Use False as the standard layout.  
 The Expanding indicator is displayed at the logical end of the card trigger, after the main content and any optional Trailing content.
@@ -205,6 +227,8 @@ The Expanding indicator is displayed at the logical end of the card trigger, aft
 Leading content appears before the main Label and supports recognition or identification of the accordion section. Use it when a visual element helps users understand the card topic more quickly.  
 Leading content remains inside the accordion trigger and must not behave as an independent action.
 
+<!-- zh-row -->
+
 **`False`** No Leading content is displayed. The main content starts at the default horizontal padding.
 
 **`True`** A Leading container is displayed before the main content. Use the Leading container type property to define its content, such as an Icon, Image, Avatar, Flag thumbnail or custom Slot.
@@ -216,6 +240,8 @@ Leading content remains inside the accordion trigger and must not behave as an i
 ### Icon
 Use an Icon to reinforce the meaning of the accordion section or help users identify a familiar category, object, service or status.
 
+<!-- zh-row -->
+
 #### Size
 Controls the visual prominence of the Icon.
 
@@ -226,6 +252,8 @@ Controls the visual prominence of the Icon.
 **`Large`** Use when the Icon needs stronger prominence or when the card trigger has a larger height, multiline content or additional supporting information.
 
 <img src="images/accordion_card_item@leading_container_type_icon_size_img.png" alt="accordion_card_item@leading_container_type_icon_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 Defines the semantic colour applied to the icon.
@@ -252,6 +280,8 @@ Defines the semantic colour applied to the icon.
 
 <img src="images/accordion_card_item@leading_container_type_icon_status_img.png" alt="accordion_card_item@leading_container_type_icon_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge
 Controls whether an additional badge is displayed with the icon.
 
@@ -264,6 +294,8 @@ Controls whether an additional badge is displayed with the icon.
 ### Image
 Use an Image when visual identification of the accordion section is important, for example for a product, service, article, media topic or other recognisable subject.  
 The image should help users recognise the subject before expanding the section.
+
+<!-- zh-row -->
 
 #### Size
 Controls the dimensions and visual prominence of the image.
@@ -278,6 +310,8 @@ Controls the dimensions and visual prominence of the image.
 
 <img src="images/accordion_card_item@leading_container_type_image_size_img.png" alt="accordion_card_item@leading_container_type_image_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Ratio
 Defines the aspect ratio of the image container.
 
@@ -289,6 +323,8 @@ Defines the aspect ratio of the image container.
 
 <img src="images/accordion_card_item@leading_container_type_image_ratio_img.png" alt="accordion_card_item@leading_container_type_image_ratio_img" width="433">
 
+<!-- zh-row -->
+
 #### Rounded corner
 Defines whether the image is displayed with square or rounded corners. The corner style should reflect the type of content and remain consistent with the visual language used elsewhere in the product.
 
@@ -297,6 +333,8 @@ Defines whether the image is displayed with square or rounded corners. The corne
 **`True`** Displays the image with rounded corners.
 
 <img src="images/accordion_card_item@leading_container_type_image_rounded_corner_img.png" alt="accordion_card_item@leading_container_type_image_rounded_corner_img" width="433">
+
+<!-- zh-row -->
 
 #### Animated
 Displays animated content, such as a GIF or WEBP file. Use when the animation provides meaningful visual information or helps communicate the nature of the content.
@@ -316,6 +354,8 @@ The use of motion and animation in our products and components requires particul
 ### Avatar
 Use an avatar when the accordion section relates to a person, profile, team, organisation or account. An avatar supports visual recognition but must always be accompanied by a visible text label identifying the represented entity.
 
+<!-- zh-row -->
+
 #### Size
 
 **`Medium`** Use in compact accordions or when the avatar is secondary to the content.
@@ -325,6 +365,8 @@ Use an avatar when the accordion section relates to a person, profile, team, org
 **`Xlarge`** Use when identity is a primary part of the section or when additional avatar details must remain visible.
 
 <img src="images/accordion_card_item@leading_container_type_avatar_size_img.png" alt="accordion_card_item@leading_container_type_avatar_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Type
 Defines the content displayed inside the avatar.
@@ -338,6 +380,8 @@ Use a predictable rule, such as the first letters of the first and last names. D
 
 <img src="images/accordion_card_item@leading_container_type_avatar_type_img.png" alt="accordion_card_item@leading_container_type_avatar_type_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge
 Controls whether a badge is displayed on the avatar.
 
@@ -350,6 +394,8 @@ When Badge is enabled, additional properties become available.
 
 <img src="images/accordion_card_item@leading_container_type_avatar_badge_img.png" alt="accordion_card_item@leading_container_type_avatar_badge_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge type
 Defines the visual content used in the avatar.
 
@@ -360,6 +406,8 @@ Defines the visual content used in the avatar.
 ⚠️ For Neutral and Accent statuses, the icon can be adapted to the context. For functional statuses, the icon is predefined and must not be changed, ensuring consistent and accessible status communication across the design system.
 
 <img src="images/accordion_card_item@leading_container_type_avatar_badge_type_img.png" alt="accordion_card_item@leading_container_type_avatar_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Badge status
 Defines the semantic colour of the badge.
@@ -388,6 +436,8 @@ Defines the semantic colour of the badge.
 
 <img src="images/accordion_card_item@leading_container_type_avatar_badge_status_img.png" alt="accordion_card_item@leading_container_type_avatar_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 ### Flag
 Use a flag to represent a country, territory or regional context when this information helps users identify the accordion section.  
 A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
@@ -395,6 +445,8 @@ A flag may support visual recognition, but it must not replace the corresponding
 ⚠️ Always provide the corresponding country, territory or language name as visible text. The accessible name should describe the represented country or territory, not the visual appearance of the flag.
 
 <img src="images/accordion_card_item@leading_container_type_flag_img.png" alt="accordion_card_item@leading_container_type_flag_img" width="433">
+
+<!-- zh-row -->
 
 ### Slot
 Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag.  
@@ -424,6 +476,8 @@ When an independent action is required, place it inside the expanded content or 
 Trailing content appears after the main content and communicates secondary information related to the accordion section.  
 It may be used for a value, status, category or supplementary visual element that helps users understand the section before expanding it. Trailing content remains part of the accordion trigger and must not behave as an independent action.
 
+<!-- zh-row -->
+
 **`False`** No Trailing content is displayed. The main content can use the available width before the Expanding indicator.
 
 **`True`** A Trailing container is displayed after the main content and before the Expanding indicator. Use the Trailing container type property to define its content, such as Text, Badge, Tag, Icon, Image, Avatar, Flag or custom Slot.
@@ -433,6 +487,8 @@ It may be used for a value, status, category or supplementary visual element tha
 <img src="images/accordion_card_item@trailing_img.png" alt="accordion_card_item@trailing_img" width="433">
 
 ## Trailing container type
+
+<!-- zh-row -->
 
 ### Shared container type
 The following types reuse the properties and guidance documented under Leading container type:  
@@ -452,6 +508,8 @@ Use Text to display a short value or secondary piece of information associated w
 ⚠️ Trailing text must not look like a separate link or action.  
 ⚠️ Keep trailing text to 1–2 words whenever possible. Longer content can reduce the space available for the primary label and cause excessive wrapping, especially when users zoom in or increase the text size.
 
+<!-- zh-row -->
+
 **Label** Use Label for standard secondary information that should remain clearly readable without drawing more attention than the primary Label.
 
 **`Label muted`** Use Label muted for low-priority metadata that supports the card but is not essential to understanding the accordion topic.
@@ -465,6 +523,8 @@ Use Text to display a short value or secondary piece of information associated w
 ### Trailing Badge
 Use a Badge to communicate a compact status or notification associated with the accordion section. A Badge contains secondary information and must not replace the primary Label or Description.
 
+<!-- zh-row -->
+
 #### Type
 
 **`Badge`** Use Badge for a short textual status. Keep the label concise and use terminology consistently throughout the product.
@@ -476,6 +536,8 @@ The count must have a clear relationship with the primary Label. Users should no
 ⚠️ When the meaning of the count is not obvious from the Label, provide additional context through visible or accessible text.
 
 <img src="images/accordion_card_item@trailing_container_type_badge_type_img.png" alt="accordion_card_item@trailing_container_type_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 The Status property defines the semantic colour and meaning of the Badge.
@@ -505,6 +567,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/accordion_card_item@trailing_container_type_badge_status_img.png" alt="accordion_card_item@trailing_container_type_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge size
 
 **`XSmall`** Use for very compact Badges within Small Accordion cards or dense card layouts.
@@ -519,6 +583,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/accordion_card_item@trailing_container_type_badge_size_img.png" alt="accordion_card_item@trailing_container_type_badge_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge count size
 
 **`Medium`** Use Medium for standard or compact Accordion cards.
@@ -526,6 +592,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 **`Large`** Use Large when the Accordion card uses larger dimensions or when a larger Badge count is required to remain visually balanced with the surrounding content.
 
 <img src="images/accordion_card_item@trailing_container_type_badge_count_size_img.png" alt="accordion_card_item@trailing_container_type_badge_count_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -544,6 +612,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 ⚠️ The Tag is informational within the accordion trigger. It must not appear selectable or behave as an independent action.  
 ⚠️ A Tag must not be used to communicate the Expanded state. Use the Expanding indicator for expand and collapse behaviour.
 
+<!-- zh-row -->
+
 #### Appearance
 
 **`Emphasized`** Use Emphasized when the Tag communicates information that should be easy to notice while remaining secondary to the primary Label.
@@ -551,6 +621,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 **`Muted`** Use Muted for low-priority categories or supporting metadata.
 
 <img src="images/accordion_card_item@trailing_container_type_tag_appearance_img.png" alt="accordion_card_item@trailing_container_type_tag_appearance_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 
@@ -576,6 +648,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 
 <img src="images/accordion_card_item@trailing_container_type_tag_status_img.png" alt="accordion_card_item@trailing_container_type_tag_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Layout
 
 **`Text only`** A Tag that displays only text. Use for simple labels, categories or keywords without an additional visual indicator.
@@ -586,6 +660,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 
 <img src="images/accordion_card_item@trailing_container_type_tag_layout_img.png" alt="accordion_card_item@trailing_container_type_tag_layout_img" width="433">
 
+<!-- zh-row -->
+
 #### Size
 
 **`Small`** Use Small as the standard and recommended size within the Accordion card item.  
@@ -594,6 +670,8 @@ It keeps the Tag visually secondary, preserves space for the primary Label and E
 **`Default`** Use Default when the Accordion card uses a larger layout or when the Tag must align with other Default-size Tags in the same interface.
 
 <img src="images/accordion_card_item@trailing_container_type_tag_size_img.png" alt="accordion_card_item@trailing_container_type_tag_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -606,6 +684,8 @@ It keeps the Tag visually secondary, preserves space for the primary Label and E
 **`Skeleton`** A placeholder state shown before the Tag content is available.
 
 <img src="images/accordion_card_item@trailing_container_type_tag_state_img.png" alt="accordion_card_item@trailing_container_type_tag_state_img" width="433">
+
+<!-- zh-row -->
 
 #### Rounded corner
 
@@ -630,6 +710,8 @@ This option is available for all brand themes
 
 ## Divider
 
+<!-- zh-row -->
+
 **`False`** No Divider is displayed.  
 Use this option when the card is already separated from surrounding content by spacing, a Background, an Outline or another clear visual boundary.
 
@@ -639,6 +721,8 @@ Use it when several Accordion card items are vertically grouped within the same 
 <img src="images/accordion_card_item@divider_img.png" alt="accordion_card_item@divider_img" width="433">
 
 ## Background
+
+<!-- zh-row -->
 
 **`False`** The card uses the surrounding container surface without an individual Background. Use this option when spacing, an Outline or the parent card layout already provides sufficient visual separation.
 
@@ -651,6 +735,8 @@ When expanded, the same Background treatment should visually contain both the tr
 <img src="images/accordion_card_item@background_img.png" alt="accordion_card_item@background_img" width="433">
 
 ## Label type
+
+<!-- zh-row -->
 
 **`Default`** Use Default for most Accordion cards.  
 It provides the standard visual hierarchy and should be the preferred option for common section names, questions and topics.
@@ -673,6 +759,8 @@ The Slot may be used for custom primary content such as:
 
 ## Overline
 
+<!-- zh-row -->
+
 **`False`** No overline is displayed.
 
 **`True`** A short contextual Label is displayed above the primary Label.  
@@ -682,6 +770,8 @@ Keep the Overline concise and secondary to the primary Label.
 <img src="images/accordion_card_item@overline_img.png" alt="accordion_card_item@overline_img" width="433">
 
 ## Extra label
+
+<!-- zh-row -->
 
 **`False`** No extra label is displayed.
 
@@ -698,6 +788,8 @@ Use an Extra label for:
 
 ## Description
 
+<!-- zh-row -->
+
 **`False`** No supporting description is displayed.
 
 **`True`** Supporting text is displayed below the primary Label.  
@@ -711,6 +803,8 @@ Use a Description when users need additional context to understand the accordion
 
 Rich text should be used sparingly to improve scanning and highlight the most important part of the information. It must never compensate for unclear writing.
 
+<!-- zh-row -->
+
 ### Strong text
 • Strong text can be used sparingly in the Description or Expanded text to highlight key information, such as a status, date, amount or required step. Rich text must use the **Label/Medium/Strong** token only.  
 • No other text styles or custom font weights should be used.
@@ -723,6 +817,8 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 <img src="images/accordion_card_item@rich_text_img.png" alt="accordion_card_item@rich_text_img" width="433">
 
 ## Technical layout adjustments
+
+<!-- zh-row -->
 
 Even though the component structure is unique in Figma for easier use by designers, its technical implementation may differ between Web and native environments to respect the layout conventions of each platform.  
 The trigger and its Expanded content must nevertheless remain visually aligned and clearly perceived as parts of the same accordion section.
@@ -745,6 +841,8 @@ The trigger and Expanded content must follow the same grid alignment so that the
 <img src="images/accordion_card_item@technical_layout_adjustments_img.png" alt="accordion_card_item@technical_layout_adjustments_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 The Accordion card item supports multiline content. The number of lines is not limited.  
@@ -813,6 +911,8 @@ Slots may include default padding to guide designers in their usage. This paddin
 
 ## States
 
+<!-- zh-row -->
+
 **`Enabled`** Enabled is the default state.  
 The accordion card can be expanded or collapsed. The complete trigger area acts as a single control for changing the Expanded state.
 
@@ -831,6 +931,8 @@ The accordion card can be expanded or collapsed. The complete trigger area acts 
 # Accessibility
 
 ## Motion & Animation accessibility rules
+
+<!-- zh-row -->
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”  
 These two main criteria address different issues:

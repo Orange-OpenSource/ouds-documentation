@@ -29,6 +29,8 @@ The label is non-responsive and maintains a fixed size across all breakpoints. T
 
 ## Size
 
+<!-- zh-row -->
+
 **`Xlarge`** The largest label size, intended for prominent UI controls and interface elements that require increased visibility and emphasis.
 
 **`Large`** A highly readable label size suitable for key interactive components and larger interface patterns. It provides strong clarity while maintaining compactness.
@@ -41,6 +43,8 @@ The label is non-responsive and maintains a fixed size across all breakpoints. T
 
 ## Weight
 
+<!-- zh-row -->
+
 **`Default`** The default weight provides the standard level of typographic emphasis for Body and Label styles. It is designed for optimal readability and neutral hierarchy, making it the baseline for most interface content. Use it whenever no additional emphasis is required.
 
 **`Moderate`** Moderate weight increases visual presence while remaining balanced and readable. It is used to reinforce hierarchy within Body and Label typography without introducing strong emphasis. Suitable for highlighting important information or improving scanability.
@@ -50,6 +54,8 @@ The label is non-responsive and maintains a fixed size across all breakpoints. T
 <img src="images/label@weight_img.png" alt="label@weight_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
@@ -103,15 +109,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-label) | Done | 1.0.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-label) | Done | 1.0.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-label) | Done | 1.0.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-label) | Done | 1.0.0 |
+| Figma | [Label component](https://r.orange.fr/r/S-ouds-design-typography-label) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-label) | Live | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-label) | Live | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-label) | Live | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-label) | Live | 1.0.0 |
 
 ## Design changelog
 

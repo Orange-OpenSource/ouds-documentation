@@ -11,6 +11,8 @@ This family provides the foundational structures that enable users to move acros
 
 <img src="images/hero_image_ios_tab_bar.png" alt="hero_image_ios_tab_bar" width="864">
 
+<!-- zh-row -->
+
 **A tab bar on iOS** is a UI element that enables navigation to the primary destinations of a mobile application.
 
 The tab bar is located at the bottom of the screen, with each destination represented by an icon and an optional text label, facilitating quick navigation between top-level sections.
@@ -42,6 +44,8 @@ The tab bar is located at the bottom of the screen, with each destination repres
 # Toolbar top
 
 <img src="images/hero_image_ios_toolbar_top.png" alt="hero_image_ios_toolbar_top" width="864">
+
+<!-- zh-row -->
 
 **The Toolbar top (aka Navigation bar on iOS and iPadOS 18)** sits at the top of the screen and provides contextual information and controls related to the current view. It typically displays the page title, and may include navigation actions such as “Back,” as well as supplementary actions like search or menus.
   
@@ -75,6 +79,8 @@ For more information, we invite you to consult [**the official iOS Toolbar docum
 
 <img src="images/hero_image_ios_toolbar_bottom.png" alt="hero_image_ios_toolbar_bottom" width="864">
 
+<!-- zh-row -->
+
 **The Toolbar bottom (aka Toolbar on iOS and iPadOS 18)** is a bottom-aligned component used to expose contextual actions specific to the current screen or selected content. Unlike the Tab bar, it does not drive top-level navigation but provides quick access to secondary or task-related actions.
   
 For more information, we invite you to consult [**the official iOS Toolbar documentation**.](https://developer.apple.com/design/human-interface-guidelines/toolbars)
@@ -98,6 +104,8 @@ For more information, we invite you to consult [**the official iOS Toolbar docum
 
 # Status bar
 
+<!-- zh-row -->
+
 **The Status bar** is a system-level area at the very top of the screen that displays device-level information such as time, network connectivity, and battery level. Its appearance can be customized by apps but its structure is controlled by the OS.
   
 For more information, we invite you to consult [**the official iOS Status bar documentation.**](https://developer.apple.com/design/human-interface-guidelines/status-bars)  
@@ -106,6 +114,8 @@ In addition, we invite you to consult [**the official iOS Menu bar documentation
 <img src="images/ios_status_bar@definition_img.png" alt="ios_status_bar@definition_img" width="433">
 
 # Home Indicator
+
+<!-- zh-row -->
 
 **The Home Indicator** is a system gesture area displayed at the bottom of the screen on devices without a physical Home button. It provides visual guidance for system-wide gestures, such as returning to the Home screen or switching apps. Apps must respect this area to avoid obstructing system gestures.
 

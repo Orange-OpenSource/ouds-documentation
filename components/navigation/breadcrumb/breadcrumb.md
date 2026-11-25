@@ -28,6 +28,8 @@ A breadcrumb is a UI element that aids in navigation and identifies the current 
 
 ## Drilldown
 
+<!-- zh-row -->
+
 Breadcrumbs can be categorized into different levels based on their complexity and hierarchy. The current page is never interactive.
 
 **`N+1`** The first level beyond the home page.
@@ -58,6 +60,8 @@ Except for the name of page n-1, which is never truncated, the names of the othe
 Note that technically (CSS helper classes), we retain the ability not to truncate the display of a specific page (for example, we prefer not to truncate the homepage name).
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component doesn't allows multi-line text editing.
@@ -110,12 +114,10 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Breadcrumb component](https://r.orange.fr/r/S-ouds-design-breadcrumb) | Done | 1.2.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-breadcrumb) | Done | 1.2.0 |
+| Figma | [Breadcrumb component](https://r.orange.fr/r/S-ouds-design-breadcrumb) | Live | 1.2.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-breadcrumb) | Live | 1.2.0 |
 | OUDS Android - Jetpack Compose | Not applicable | To do | – |
 | OUDS iOS - Swift | Not applicable | To do | – |
 | OUDS Flutter | Not applicable | To do | – |

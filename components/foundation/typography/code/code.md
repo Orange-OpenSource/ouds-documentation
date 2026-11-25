@@ -29,6 +29,8 @@ The code employs a monospace typeface to maintain character alignment and enhanc
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
 
@@ -77,15 +79,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-code) | Done | 1.0.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-code) | Done | 1.0.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-code) | Done | 1.0.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-code) | Done | 1.0.0 |
+| Figma | [Code component](https://r.orange.fr/r/S-ouds-design-typography-code) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-typography-code) | Live | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-typography-code) | Live | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-typography-code) | Live | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-typography-code) | Live | 1.0.0 |
 
 ## Design changelog
 

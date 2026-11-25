@@ -33,6 +33,8 @@ The assistant button combines standard button functions with AI-specific visual 
 
 ## Layouts
 
+<!-- zh-row -->
+
 **`Text + icon`** Displays an "sparkle" icon alongside a label to clearly communicate the AI assistant action. Recommended when clarity, discoverability, and explicit communication are priorities.
 
 **`Icon only`** Displays only the AI assistant icon for a more compact and minimal interface. Recommended when the context already makes the action understandable or when space is limited. It is rarely standalone (usually part of a group of elements).
@@ -40,6 +42,8 @@ The assistant button combines standard button functions with AI-specific visual 
 <img src="images/assistant_button@layouts_img.png" alt="assistant_button@layouts_img" width="433">
 
 ## Sizes
+
+<!-- zh-row -->
 
 **`Default`** This is the default size of the component.  
 This size is used for the vast majority of applications.
@@ -49,6 +53,8 @@ This size is used for the vast majority of applications.
 <img src="images/assistant_button@size_img.png" alt="assistant_button@size_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -71,6 +77,8 @@ This option is technically not available for all brand themes. Here's the list o
 <img src="images/assistant_button@rounded_corner_img.png" alt="assistant_button@rounded_corner_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
@@ -104,6 +112,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/assistant_button@spec_layout_spacing.png" alt="assistant_button@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The status of the button before a user has interacted with it, or other content affects it.
 
@@ -149,12 +159,10 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Assistant button component](https://r.orange.fr/r/S-ouds-design-assistant-button) | Done | 1.1.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-assistant-button) | Done | 1.1.0 |
+| Figma | [Assistant button component](https://r.orange.fr/r/S-ouds-design-assistant-button) | Live | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-assistant-button) | Live | 1.1.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

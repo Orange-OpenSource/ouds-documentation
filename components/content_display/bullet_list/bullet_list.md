@@ -31,6 +31,8 @@ The bullet list, also referred to as an 'unordered list' or 'ordered list,' is t
 
 ## Type
 
+<!-- zh-row -->
+
 **`Unordered`** Collects related items that don't need to be in a specific order or sequence. List items are typically marked with bullets, but it is also possible to use a tick or any Solaris icon.
 
 **`Ordered`** Collects related items with numeric order or sequence. Numbering starts at 1 with the first list item and increases by increments of 1 for each successive ordered list item.
@@ -44,6 +46,8 @@ The bullet list, also referred to as an 'unordered list' or 'ordered list,' is t
 List can be used with different font sizes, these sizes are based on our body font-size.  
 Today, list is available with two text styles: Body large and body Medium.
 
+<!-- zh-row -->
+
 **`Body Large`** Make sure to use this reference if the text accompanying the list component is the Body Large text.  
 This variant is designed for more visual, engaging experiences.
 
@@ -55,6 +59,8 @@ This variant is best suited for functional, task-oriented experiences.
 ## Nested level
 
 Lists can include nested items to indicate hierarchy or subcategories, with indentation distinguishing each level. Arrange ordered list items logically, such as ranking by importance, highest to lowest values, or in alphabetical/numeric order.
+
+<!-- zh-row -->
 
 **`Nested level: 0`** Level 0 list items define the main structure.  
 Unordered level 0 list items are marked with full squares.  
@@ -70,21 +76,29 @@ Ordered level 2 list items are marked with lowercase letters.
 
 <img src="images/bullet_list@nested_level_img.png" alt="bullet_list@nested_level_img" width="433">
 
+<!-- zh-row -->
+
 Ordered lists can be combined with unordered items in the same list as well.
 
 Note that, in this context, even though the Unordered list item is placed at nested level 1, it is rendered as if it were at nested level 0 (full square) because, in the technical implementation, **the combination of Ordered and Unordered lists is not incremental.**
 
 <img src="images/bullet_list@nested_level_ordered_img.png" alt="bullet_list@nested_level_ordered_img" width="433">
 
+<!-- zh-row -->
+
 Conversely, **in a context using only Unordered lists, the incrementing does apply** even if the choice of nested items differs (bullet items with ticks or Solairs icons).
 
 <img src="images/bullet_list@nested_level_unordered_img.png" alt="bullet_list@nested_level_unordered_img" width="433">
+
+<!-- zh-row -->
 
 In the technical implementation, **Bar lists are considered as Unordered lists**. The incrementing between lists does apply.
 
 <img src="images/bullet_list@nested_level_bar_list_img.png" alt="bullet_list@nested_level_bar_list_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Bold`** The label text can be bolded.
 
@@ -97,11 +111,15 @@ Uses the "Skeleton" component, variant "Security marge=True".
 
 <img src="images/bullet_list@other_boolean_options_img.png" alt="bullet_list@other_boolean_options_img" width="433">
 
+<!-- zh-row -->
+
 Even if the "Bold" option is not active, it is also possible to add a hyperlink in the content of a list. In terms of design, and depending on the chosen text style, the typographic reference "Body/Large/Underline" or "Body/Medium/Underline" must be used.
 
 <img src="images/bullet_list@other_boolean_options_bold_img.png" alt="bullet_list@other_boolean_options_bold_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
@@ -130,6 +148,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Rich text
 
+<!-- zh-row -->
+
 ### Bold option is false
 
 #### Text style Body Large
@@ -151,6 +171,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
   * If a **hyperlink** is needed within the content, the typographic reference **Body/Medium/Underline** must be used.
 
 <img src="images/bullet_list@rich_text_img.png" alt="bullet_list@rich_text_img" width="433">
+
+<!-- zh-row -->
 
 ### Bold option is true
 
@@ -218,14 +240,12 @@ Icons or images inside lists should include `alt` text or be marked `aria-hidden
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Bullet list component](https://r.orange.fr/r/S-ouds-design-bullet-list) | Done | 1.1.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-bullet-list) | Done | 1.1.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-bullet-list) | Done | 1.1.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-bullet-list) | Done | 1.1.0 |
+| Figma | [Bullet list component](https://r.orange.fr/r/S-ouds-design-bullet-list) | Live | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-bullet-list) | Live | 1.1.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-bullet-list) | Live | 1.1.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-bullet-list) | Live | 1.1.0 |
 | OUDS Flutter | Not applicable | To do | – |
 
 ## Design changelog

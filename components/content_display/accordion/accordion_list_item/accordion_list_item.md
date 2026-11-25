@@ -35,6 +35,8 @@ Accordion items are typically stacked vertically, allowing users to scan section
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** Use the Default size in most interfaces.  
 It provides sufficient spacing for standard accordion lists, multiline labels and visual elements.
 
@@ -50,6 +52,8 @@ The Small size is best suited to:
 <img src="images/accordion_list_item@size_img.png" alt="accordion_list_item@size_img" width="433">
 
 ## Alignment
+
+<!-- zh-row -->
 
 **`Center`** Center alignment is the default for items containing:  
 • A single-line label.  
@@ -71,6 +75,8 @@ The Small size is best suited to:
 
 ## Expanded
 
+<!-- zh-row -->
+
 **`False`** Use the collapsed state when the additional content is hidden. Only the trigger content remains visible, allowing users to scan the available accordion sections quickly.
 
 **`True`** Use the expanded state when the additional content related to the trigger is visible. The revealed content should directly explain, complete or provide additional information about the Label above it.
@@ -80,6 +86,8 @@ The Small size is best suited to:
 <img src="images/accordion_list_item@expanded_img.png" alt="accordion_list_item@expanded_img" width="433">
 
 ## Expanded text
+
+<!-- zh-row -->
 
 **`False`** No standard text content is displayed in the expanded area.  
 Use this option when the expanded content is provided only through Expanded slot, or when no additional text is required.
@@ -102,6 +110,8 @@ The Below text slot adds custom supporting content directly below the main text 
 Use it when additional information needs to remain closely associated with the Label, Description or other text content rather than span the complete trigger width.  
 The slot follows the position and alignment of the text container. Its exact placement may vary depending on the Accordion component structure.
 
+<!-- zh-row -->
+
 **`False`** No additional content is displayed below the main trigger content.
 
 **`True`** A custom content area is displayed directly below the main text content.
@@ -117,6 +127,8 @@ The slot follows the position and alignment of the text container. Its exact pla
 The Bottom slot adds custom supporting content below the complete trigger content.  
 Use it when information needs to remain visible independently of the Expanded state and requires more space or flexibility than the standard text properties.  
 The slot is positioned at the bottom of the trigger area. Its exact width and alignment may vary depending on the Accordion component structure.
+
+<!-- zh-row -->
 
 **`False`** No additional content is displayed below the main trigger content.
 
@@ -134,6 +146,8 @@ The Expand slot adds custom content inside the expanded area of the Accordion.
 Use it when the revealed content requires a structure that cannot be represented clearly by standard Expanded text alone.  
 The slot is displayed only when the Accordion is expanded. Its exact placement inside the expanded area may vary depending on the Accordion component structure.
 
+<!-- zh-row -->
+
 **`False`** No additional content is displayed below the main trigger content.
 
 **`True`** A custom content area is displayed when the Accordion is expanded.
@@ -143,6 +157,8 @@ The slot is displayed only when the Accordion is expanded. Its exact placement i
 <img src="images/accordion_list_item@slot_expand_img.png" alt="accordion_list_item@slot_expand_img" width="433">
 
 ## Alternative icon
+
+<!-- zh-row -->
 
 **`False`** Use the default chevron as the Expanding indicator. The direction of the chevron changes with the Expanded state to communicate whether the section can be opened or closed.  
 This is the recommended option for standard accordion patterns.
@@ -155,6 +171,8 @@ The icon must communicate the same expanded state consistently across all items 
 <img src="images/accordion_list_item@alternative_icon_img.png" alt="accordion_list_item@alternative_icon_img" width="433">
 
 ## Reverse
+
+<!-- zh-row -->
 
 **`False`** Use False as the standard layout. The Expanding indicator is displayed at the logical end of the trigger, after the main content and any optional Trailing content.
 
@@ -171,6 +189,8 @@ Leading content appears before the main Label and supports recognition or identi
 
 ⚠️ Leading content remains part of the complete accordion trigger and must not behave as an independent action.
 
+<!-- zh-row -->
+
 **`False`** No Leading content is displayed. The main content starts at the default horizontal padding.
 
 **`True`** A Leading container is displayed before the main content. Use the Leading container type property to define its content, such as an Icon, Image, Avatar, Flag thumbnail or custom Slot.
@@ -182,6 +202,8 @@ Leading content appears before the main Label and supports recognition or identi
 ### Icon
 Use an Icon to reinforce the meaning of the accordion topic or help users identify a familiar category, object, service or status.
 
+<!-- zh-row -->
+
 #### Size
 Controls the visual prominence of the icon.
 
@@ -192,6 +214,8 @@ Controls the visual prominence of the icon.
 **`Large`** Use when the icon needs stronger prominence or when the item has a larger height, multiline content or additional supporting information.
 
 <img src="images/accordion_list_item@leading_container_type_icon_size_img.png" alt="accordion_list_item@leading_container_type_icon_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 Defines the semantic colour applied to the icon.
@@ -218,6 +242,8 @@ Defines the semantic colour applied to the icon.
 
 <img src="images/accordion_list_item@leading_container_type_icon_status_img.png" alt="accordion_list_item@leading_container_type_icon_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge
 Controls whether an additional badge is displayed with the icon.
 
@@ -230,6 +256,8 @@ Controls whether an additional badge is displayed with the icon.
 ### Image
 Use an image when visual identification of the accordion section is important, for example for a product, service, destination, article or media topic.  
 The image should help users recognise the subject before expanding the section.
+
+<!-- zh-row -->
 
 #### Size
 Controls the dimensions and visual prominence of the image.
@@ -244,6 +272,8 @@ Controls the dimensions and visual prominence of the image.
 
 <img src="images/accordion_list_item@leading_container_type_image_size_img.png" alt="accordion_list_item@leading_container_type_image_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Ratio
 Defines the aspect ratio of the image container.
 
@@ -255,6 +285,8 @@ Defines the aspect ratio of the image container.
 
 <img src="images/accordion_list_item@leading_container_type_image_ratio_img.png" alt="accordion_list_item@leading_container_type_image_ratio_img" width="433">
 
+<!-- zh-row -->
+
 #### Rounded corner
 Defines whether the image is displayed with square or rounded corners. The corner style should reflect the type of content and remain consistent with the visual language used elsewhere in the product.
 
@@ -263,6 +295,8 @@ Defines whether the image is displayed with square or rounded corners. The corne
 **`True`** Displays the image with rounded corners.
 
 <img src="images/accordion_list_item@leading_container_type_image_rounded_corner_img.png" alt="accordion_list_item@leading_container_type_image_rounded_corner_img" width="433">
+
+<!-- zh-row -->
 
 **⚠️ Motion & Animation accessibility rules**
 
@@ -282,6 +316,8 @@ Displays animated content, such as a GIF or WEBP file. Use when the animation pr
 ### Avatar
 Use an avatar when the accordion section relates to a person, profile, team, organisation or account. An avatar supports visual recognition but must always be accompanied by a visible text label identifying the represented entity.
 
+<!-- zh-row -->
+
 #### Size
 
 **`Medium`** Use in compact accordions or when the avatar is secondary to the content.
@@ -291,6 +327,8 @@ Use an avatar when the accordion section relates to a person, profile, team, org
 **`Xlarge`** Use when identity is a primary part of the section or when additional avatar details must remain visible.
 
 <img src="images/accordion_list_item@leading_container_type_avatar_size_img.png" alt="accordion_list_item@leading_container_type_avatar_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Type
 Defines the content displayed inside the avatar.
@@ -304,6 +342,8 @@ Defines the content displayed inside the avatar.
 
 <img src="images/accordion_list_item@leading_container_type_avatar_type_img.png" alt="accordion_list_item@leading_container_type_avatar_type_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge
 Controls whether a badge is displayed on the avatar.
 
@@ -316,6 +356,8 @@ When Badge is enabled, additional properties become available.
 
 <img src="images/accordion_list_item@leading_container_type_avatar_badge_img.png" alt="accordion_list_item@leading_container_type_avatar_badge_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge type
 Defines the visual content used in the avatar.
 
@@ -326,6 +368,8 @@ Defines the visual content used in the avatar.
 ⚠️ For Neutral and Accent statuses, the icon can be adapted to the context. For functional statuses, the icon is predefined and must not be changed, ensuring consistent and accessible status communication across the design system.
 
 <img src="images/accordion_list_item@leading_container_type_avatar_badge_type_img.png" alt="accordion_list_item@leading_container_type_avatar_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Badge status
 Defines the semantic colour of the badge.
@@ -354,6 +398,8 @@ Defines the semantic colour of the badge.
 
 <img src="images/accordion_list_item@leading_container_type_avatar_badge_status_img.png" alt="accordion_list_item@leading_container_type_avatar_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 ### Flag
 Use a flag to represent a country, territory or regional context when this information helps users identify the accordion section.  
 A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
@@ -361,6 +407,8 @@ A flag may support visual recognition, but it must not replace the corresponding
 ⚠️ Always provide the corresponding country, territory or language name as visible text. The accessible name should describe the represented country or territory, not the visual appearance of the flag.
 
 <img src="images/accordion_list_item@leading_container_type_flag_img.png" alt="accordion_list_item@leading_container_type_flag_img" width="433">
+
+<!-- zh-row -->
 
 ### Slot
 Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag.  
@@ -391,6 +439,8 @@ Trailing content appears after the main content and communicates secondary infor
 It may be used for a value, status, category or supplementary visual element that helps users understand the section before expanding it.  
 Trailing content remains part of the accordion trigger and must not behave as an independent action.
 
+<!-- zh-row -->
+
 **`False`** No Trailing content is displayed. The main content can use the available width before the Expanding indicator.
 
 **`True`** A Trailing container is displayed after the main content and before the Expanding indicator. Use the Trailing container type property to define its content, such as Text, Badge, Tag, Icon, Image, Avatar, Flag or custom Slot.
@@ -400,6 +450,8 @@ Trailing content remains part of the accordion trigger and must not behave as an
 <img src="images/accordion_list_item@trailing_img.png" alt="accordion_list_item@trailing_img" width="433">
 
 ## Trailing container type
+
+<!-- zh-row -->
 
 ### Shared container type
 The following types reuse the properties and guidance documented under Leading container type:  
@@ -422,6 +474,8 @@ Use Text to display a short value or secondary piece of information associated w
 
 ⚠️ Keep trailing text to 1–2 words whenever possible. Longer content can reduce the space available for the primary label and cause excessive wrapping, especially when users zoom in or increase the text size.
 
+<!-- zh-row -->
+
 **`Label`** Use Label for standard secondary information that should remain clearly readable without drawing more attention than the primary Label.
 
 **`Label muted`** Use Label muted for low-priority metadata that supports the item but is not essential to understanding the accordion topic.
@@ -436,6 +490,8 @@ Use Text to display a short value or secondary piece of information associated w
 Use a Badge to communicate a compact status or notification associated with the accordion section.  
 A Badge contains secondary information and must not replace the primary Label or Description.
 
+<!-- zh-row -->
+
 #### Type
 
 **`Badge`** Use Badge for a short textual status. Keep the label concise and use terminology consistently throughout the product.
@@ -447,6 +503,8 @@ The count must have a clear relationship with the primary Label. Users should no
 ⚠️ When the meaning of the count is not obvious from the Label, provide additional context through visible or accessible text.
 
 <img src="images/accordion_list_item@trailing_container_type_badge_type_img.png" alt="accordion_list_item@trailing_container_type_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 The Status property defines the semantic colour and meaning of the Badge.
@@ -477,6 +535,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/accordion_list_item@trailing_container_type_badge_status_img.png" alt="accordion_list_item@trailing_container_type_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge size
 
 **`XSmall`** Use for very compact Badges within Small accordion items or dense layouts.
@@ -491,6 +551,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/accordion_list_item@trailing_container_type_badge_size_img.png" alt="accordion_list_item@trailing_container_type_badge_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge count size
 
 **`Medium`** Use Medium for standard or compact accordion items.
@@ -498,6 +560,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 **`Large`** Use Large when the accordion item uses larger dimensions or when a larger Badge count is required to remain visually balanced with the surrounding content.
 
 <img src="images/accordion_list_item@trailing_container_type_badge_count_size_img.png" alt="accordion_list_item@trailing_container_type_badge_count_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -517,6 +581,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 
 ⚠️ A Tag must not be used to communicate the Expanded state. Use the Expanding indicator for expand and collapse behaviour.
 
+<!-- zh-row -->
+
 #### Appearance
 
 **`Emphasized`** Use Emphasized when the Tag communicates information that should be easy to notice while remaining secondary to the primary Label.
@@ -524,6 +590,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 **`Muted`** Use Muted for low-priority categories or supporting metadata.
 
 <img src="images/accordion_list_item@trailing_container_type_tag_appearance_img.png" alt="accordion_list_item@trailing_container_type_tag_appearance_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 
@@ -549,6 +617,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 
 <img src="images/accordion_list_item@trailing_container_type_tag_status_img.png" alt="accordion_list_item@trailing_container_type_tag_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Layout
 
 **`Text only`** A Tag that displays only text. Use for simple labels, categories or keywords without an additional visual indicator.
@@ -559,6 +629,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 
 <img src="images/accordion_list_item@trailing_container_type_tag_layout_img.png" alt="accordion_list_item@trailing_container_type_tag_layout_img" width="433">
 
+<!-- zh-row -->
+
 #### Size
 
 **`Small`** Use Small as the standard and recommended size within the Accordion list item.  
@@ -567,6 +639,8 @@ It keeps the Tag visually secondary, preserves space for the primary Label and E
 **`Default`** Use Default when the accordion item uses a larger layout or when the Tag must align with other Default-size Tags in the same interface.
 
 <img src="images/accordion_list_item@trailing_container_type_tag_size_img.png" alt="accordion_list_item@trailing_container_type_tag_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -580,6 +654,8 @@ The Tag state does not control the Accordion list item. A Disabled Tag does not 
 **`Skeleton`** A placeholder state shown before the Tag content is available.
 
 <img src="images/accordion_list_item@trailing_container_type_tag_state_img.png" alt="accordion_list_item@trailing_container_type_tag_state_img" width="433">
+
+<!-- zh-row -->
 
 #### Rounded corner
 
@@ -604,6 +680,8 @@ This option is available for all brand themes
 
 ## Divider
 
+<!-- zh-row -->
+
 **`False`** No Divider is displayed.  
 Use this option when accordion items are already separated by spacing, individual backgrounds or another clear grouping method.
 
@@ -617,6 +695,8 @@ Use it when several items share the same surface and additional visual separatio
 
 ## Background
 
+<!-- zh-row -->
+
 **`False`** The accordion item uses the surrounding container surface without an individual background. Use this option for standard continuous accordion lists.
 
 **`True`** A Background is applied to the accordion trigger.  
@@ -627,6 +707,8 @@ Use it when an item needs stronger visual separation from the surrounding conten
 <img src="images/accordion_list_item@background_img.png" alt="accordion_list_item@background_img" width="433">
 
 ## Label type
+
+<!-- zh-row -->
 
 **`Default`** Use Default for most accordion items.  
 It provides the standard visual hierarchy and should be the preferred option for common section names, questions and topics.
@@ -649,6 +731,8 @@ The Slot may be used for custom primary content such as:
 
 ## Overline
 
+<!-- zh-row -->
+
 **`False`** No overline is displayed.
 
 **`True`** A short contextual Label is displayed above the primary Label.  
@@ -658,6 +742,8 @@ Keep the Overline concise and secondary to the primary Label.
 <img src="images/accordion_list_item@overline_img.png" alt="accordion_list_item@overline_img" width="433">
 
 ## Extra label
+
+<!-- zh-row -->
 
 **`False`** No extra label is displayed.
 
@@ -674,6 +760,8 @@ Use an Extra label for:
 
 ## Description
 
+<!-- zh-row -->
+
 **`False`** No supporting description is displayed.
 
 **`True`** Supporting text is displayed below the primary Label.  
@@ -687,6 +775,8 @@ Use a Description when users need additional context to understand the accordion
 
 Rich text should be used sparingly to improve scanning and highlight the most important part of the information. It must never compensate for unclear writing.
 
+<!-- zh-row -->
+
 ### Strong text
 • Strong text can be used sparingly in the Description or Expanded text to highlight key information, such as a status, date, amount or required step. Rich text must use the **Label/Medium/Strong** token only.  
 • No other text styles or custom font weights should be used.
@@ -699,6 +789,8 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 <img src="images/accordion_list_item@rich_text_img.png" alt="accordion_list_item@rich_text_img" width="433">
 
 ## Technical layout adjustments
+
+<!-- zh-row -->
 
 Even though the component structure is unique in Figma for easier use by designers, its technical implementation may differ between Web and native environments to respect the layout conventions of each platform.  
 The trigger and its Expanded content must nevertheless remain visually aligned and clearly perceived as parts of the same accordion section.
@@ -721,6 +813,8 @@ The trigger and Expanded content must follow the same grid alignment so that the
 <img src="images/accordion_list_item@technical_layout_adjustments_img.png" alt="accordion_list_item@technical_layout_adjustments_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 The Accordion list item supports multiline content. The number of lines is not limited.  
@@ -790,6 +884,8 @@ Slots may include default padding to guide designers in their usage. This paddin
 
 ## States
 
+<!-- zh-row -->
+
 **`Enabled`** Enabled is the default state. The item can be expanded or collapsed. The complete trigger row acts as a single control for changing the expanded state.
 
 **`Hover`** Hover provides visual feedback when a pointer is positioned over the trigger. Hover must not move content, change the item's dimensions or reveal information that is only intended to appear after expansion.
@@ -807,6 +903,8 @@ Slots may include default padding to guide designers in their usage. This paddin
 # Accessibility
 
 ## Motion & Animation accessibility rules
+
+<!-- zh-row -->
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”  
 These two main criteria address different issues:

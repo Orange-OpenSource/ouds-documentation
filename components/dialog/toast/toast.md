@@ -33,6 +33,8 @@ The toast offers brief, non-critical feedback that doesn't require immediate act
 
 ## Alignment
 
+<!-- zh-row -->
+
 **`Top`** Use Top alignment when the toast contains multiple lines of content, such as a label and a description. Aligning actions and leading container to the top keeps interactive elements visually associated with the primary message and improves readability.
 
 **`Center`** Use Center alignment when the toast contains short or single-line content. Center alignment creates better visual balance and keeps the notification compact.
@@ -51,6 +53,8 @@ For action elements, we use the Link component with the “Text only” layout. 
 
 ⚠️ Non-navigational usage: A link can be used to trigger an action rather than navigation (for example, opening a modal, revealing additional content, or executing a function). This pattern should only be applied when the link appearance is preferred, while ensuring the component remains accessible and its intent is clear.
 
+<!-- zh-row -->
+
 **`None`** Used when no user action is required. Ideal for informational alerts that simply convey status or feedback without any interaction.
 
 **`Trailing`** Used when the action is positioned to the right of the message. Best suited for wider layouts or short, single-line alerts where horizontal alignment keeps content compact and balanced.
@@ -68,6 +72,8 @@ They can be non-functional, when the message is contextual or decorative, or fun
 Non-functional toasts provide contextual information without implying a specific system state, result, or required user action.  
 They may use contextual or brand-related icons to support recognition, but the icon does not carry functional meaning.
 
+<!-- zh-row -->
+
 **`Neutral`** Used for general information or contextual feedback without semantic meaning or urgency.  
 Suitable for tips, onboarding messages, dashboards, or descriptive feedback where no specific system response is required.
 
@@ -75,6 +81,8 @@ Suitable for tips, onboarding messages, dashboards, or descriptive feedback wher
 
 ### Functional
 Functional toasts communicate a specific system status, result, or user feedback. Each variant conveys a clear semantic meaning, such as success, error, warning, or information. The icon should match the status to support recognition, consistency, and accessibility.
+
+<!-- zh-row -->
 
 **`Negative`** Communicates an error or issue that prevents the action from being completed. Use it when the user needs to understand that something went wrong.
 
@@ -91,6 +99,8 @@ Use it to confirm that the user action worked as expected.
 
 The close button controls whether users can dismiss the toast manually.  
 Its presence does not necessarily determine how long the toast remains visible. A toast may still disappear automatically after an appropriate duration, unless the message is important, actionable, or requires additional reading time.
+
+<!-- zh-row -->
 
 **`False`** The toast does not include a close button and disappears automatically after a short duration. Use this behavior for short confirmations or status updates that do not require user acknowledgement or interaction. The message should be easy to understand at a glance.
 
@@ -141,6 +151,8 @@ The enter and exit transitions should remain short and subtle, usually 1 second.
 Even though in Figma this rendering option is available and editable from the properties of each alert component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used.  
 It is therefore impossible to have one toast component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
+<!-- zh-row -->
+
 **`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
 
 **`True`** The rounded rendering offers flexibility without sacrificing the attribution to the brand. It helps anchoring the service in a reality where the visual codes of the mobile area tends to rub off on all interfaces. Use rounded corners for a softer, more approachable, friendly and tactile feel.
@@ -167,6 +179,8 @@ Description is the optional supplementary text in an Alert Message. Use only whe
 • Use plain language consistent with Orange’s tone: friendly, clear, service-oriented. Avoid jargon or complex sentences. The US Web Design System emphasises “concise, human-readable language; avoid jargon and computer code.” U.S. Web Design System (USWDS)  
 • Provide next-step guidance if the alert requires user action: e.g., “Try again”, “Check your settings”, “Contact support”. If no action is required, the body text can simply explain the state.
 
+<!-- zh-row -->
+
 **`False`** Label alone conveys message clearly  
 Example: “Payment successful.”
 
@@ -183,6 +197,8 @@ Icons help communicate context and tone but are optional for Non-functional aler
 **⚠️ Note:**  
 Functional alerts (Negative, Positive, Info, Warning) must always include a dedicated functional icon that reflects their semantic meaning. This ensures clarity, accessibility, and consistency across all user interfaces.
 
+<!-- zh-row -->
+
 **`False`** Used when the alert should appear without an icon.  
 Recommended for minimalist layouts or when the message content is already self-explanatory.  
 Works well in neutral contexts where no additional visual cue is required.
@@ -196,6 +212,8 @@ Icons can vary depending on the alert’s content — for example, informational
 
 **(for Neutral only)**  
 Defines the type of content displayed before the label.
+
+<!-- zh-row -->
 
 **`Icon`** Use an icon to represent an action, status, or category.
 
@@ -213,6 +231,8 @@ The image should provide useful context and remain secondary to the message cont
 Defines the size of the image displayed inside the leading container.  
 Choose a size according to the available space, content density, and required visual emphasis. Use the same image size for similar use cases to maintain consistency across the interface.
 
+<!-- zh-row -->
+
 **`Small`** Use Small when the image has low visual priority or when the available space is limited. Recommended for compact or single-line toasts.
 
 **`Medium`** Use Medium as the default image size for most use cases. It provides a clear visual reference without competing with the text content and works well with both short and multi-line messages. Recommended for standard product or content previews.
@@ -229,6 +249,8 @@ Avoid using Large in very compact layouts or when it makes the text difficult to
 Defines whether the image is displayed with square or rounded corners.  
 The corner style should reflect the type of content and remain consistent with the visual language used elsewhere in the product.
 
+<!-- zh-row -->
+
 **`False`** Displays the image with square corners.
 
 **`True`** Displays the image with rounded corners.
@@ -236,6 +258,8 @@ The corner style should reflect the type of content and remain consistent with t
 <img src="images/toast@rounded_corner_image_img.png" alt="toast@rounded_corner_image_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
@@ -262,6 +286,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/toast@multiline_and_responsiveness_img.png" alt="toast@multiline_and_responsiveness_img" width="433">
 
 ## Rich text
+
+<!-- zh-row -->
 
 ### Strong text
 • Strong text can be used sparingly within toast to highlight key information. Rich text must use the **Label/Medium/Strong** token only.  
@@ -294,6 +320,8 @@ On 2xs and xs, the toast takes almost the full screen width with 8 px margins on
 | 3xl | 1880+ px | 4 of 12 grid columns |
 
 ## Placement
+
+<!-- zh-row -->
 
 ### Mobile reference design
 • Constraints: Left & right + Bottom  
@@ -359,12 +387,16 @@ Align the toast with the four central grid columns.
 
 ## Interaction and stacking
 
+<!-- zh-row -->
+
 ### Default behaviour
 • Display only one toast at a time.  
 • When several notifications are triggered, place them in a queue. The currently visible toast must complete its exit transition before the next toast enters. Entrance and exit animations must not overlap.  
 • This sequential behaviour reduces visual interruption, prevents content from being obscured and makes each message easier to identify.
 
 <img src="images/toast@interaction_and_stacking_img.png" alt="toast@interaction_and_stacking_img" width="433">
+
+<!-- zh-row -->
 
 ### ⚠️ Multiple visible toasts
 Displaying several toasts at the same time is not recommended. A stack can interrupt the user, obscure interface content and make important messages harder to notice.
@@ -417,6 +449,8 @@ The highest-priority toast remains closest to the placement edge.
 <img src="images/toast@spec_layout_spacing.png" alt="toast@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Use the Enabled state to display a standard toast once the notification content is ready. The toast presents feedback immediately and allows users to interact with optional actions or dismiss it.
 
@@ -624,11 +658,9 @@ Design guidance supporting motion and cognitive accessibility
 
 ## Availability
 
-Design status: **EA**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Toast component](https://r.orange.fr/r/S-ouds-design-toast) | Done | 1.0.0 |
+| Figma | [Toast component](https://r.orange.fr/r/S-ouds-design-toast) | Early Access | 1.0.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

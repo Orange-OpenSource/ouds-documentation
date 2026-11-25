@@ -40,6 +40,8 @@ Tags have status depending on the context of the information they represent. Eac
 Non-functional tags are used to display categories, default states, or to draw attention without carrying a specific functional meaning (unlike functional tags such as success, info, warning, and error).  
 Icons related to the tag's context can be used to enhance recognition.
 
+<!-- zh-row -->
+
 **`Neutral`** Default or inactive state. Used for standard labels, categories, or when no specific status needs to be communicated.
 
 **`Accent`** Used to draw attention to new features, recommendations, or content suggestions. Invites users to explore and engage with new offerings, creating an exciting and engaging experience.
@@ -49,6 +51,8 @@ Icons related to the tag's context can be used to enhance recognition.
 ### Functional
 Functional tags communicate specific statuses or system feedback (success, warning, error, information). Each tag must always be paired with its dedicated functional icon that matches the meaning of the tag.  
 **Other icons must not be used.**
+
+<!-- zh-row -->
 
 **`Positive`** Indicates a successful or confirmed status, such as completed tasks or active states.  
 Always use the functional icon associated with success. ""
@@ -66,6 +70,8 @@ Always use the functional icon associated with information. ""
 
 ## Appearance
 
+<!-- zh-row -->
+
 **`Muted`** A tag with a subtle, light, or semi-transparent background. Used for secondary or less prominent information. Muted tags blend more with the background, providing a softer visual emphasis compared to emphasized tags.
 
 **`Emphasized`** A tag with a solid, high-contrast background. Used to draw strong attention to important labels or categories. Emphasized tags stand out prominently against the interface and are ideal for primary or high-priority information.
@@ -73,6 +79,8 @@ Always use the functional icon associated with information. ""
 <img src="images/tag@appearance_img.png" alt="tag@appearance_img" width="433">
 
 ## Layouts
+
+<!-- zh-row -->
 
 **`Text only`** A tag that displays only text. Used for simple labels, categories, or keywords without additional visual elements.
 
@@ -85,6 +93,8 @@ Always use the functional icon associated with information. ""
 ## Rounded corner
 
 The configuration of this rendering option is not applied across an entire product/service. It is possible to have one tag component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
+
+<!-- zh-row -->
 
 **`True`** A tag with fully rounded corners, creating a pill-shaped appearance. Rounded tags offer a softer and more approachable look, suitable for most modern interfaces.
 
@@ -103,6 +113,8 @@ This option is available for all brand themes. Here's the list of rounded corner
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** The standard tag size, using bold text to ensure strong visibility and readability.  
 Commonly used for promotional content, highlights, or key information, where emphasis and clarity are important.
 
@@ -112,6 +124,8 @@ It helps maintain visual balance and prevents the interface from feeling overloa
 <img src="images/tag@size_img.png" alt="tag@size_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component doesn't allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
@@ -145,6 +159,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/tag@spec_layout_spacing.png" alt="tag@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 Even though the Tag component is not interactive, it still includes several display states. This allows it to be flexible in different scenarios and ensures the user always sees the right visual feedback. The component supports four states: Enabled, Loading, Disabled, and Skeleton.
 
@@ -202,15 +218,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Tag component](https://r.orange.fr/r/S-ouds-design-tag) | Done | 1.5.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-tag) | Done | 1.5.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-tag) | Done | 1.5.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-tag) | Done | 1.5.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-tag) | Done | 1.5.0 |
+| Figma | [Tag component](https://r.orange.fr/r/S-ouds-design-tag) | Live | 1.5.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-tag) | Live | 1.5.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-tag) | Live | 1.5.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-tag) | Live | 1.5.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-tag) | Live | 1.5.0 |
 
 ## Design changelog
 

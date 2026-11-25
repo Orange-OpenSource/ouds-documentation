@@ -29,6 +29,8 @@ The suggestion chip is usually unselected by default and can be tapped or clicke
 
 ## Layouts
 
+<!-- zh-row -->
+
 **`Text only`** Displays only text, offering a clean and minimalistic look. Best suited for category-based filters that do not require additional visual elements.
 
 **`Text + icon`** Combines text with an icon to enhance clarity and recognition. Ideal when a visual cue helps reinforce the filter's meaning.
@@ -75,6 +77,8 @@ Abstract symbols (like a puzzle piece) may confuse users, since they don’t cle
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 Depending on the use case, permissions for editing multi-line text vary:
 - In a "chips bar" context (the chips are positioned one after another in a horizontal carousel with no width limit), this component doesn't allow multi-line text editing.
@@ -112,6 +116,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 |  |
 |
+
+<!-- zh-row -->
 
 **`Enabled`** The chip is active and available for interaction. It is displayed in its standard style without additional effects.
 
@@ -176,15 +182,13 @@ Suggestion chips announce two key pieces of information:
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.5.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-suggestion-chip) | Done | 1.5.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-suggestion-chip) | Done | 1.5.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-suggestion-chip) | Done | 1.5.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-suggestion-chip) | Done | 1.5.0 |
+| Figma | [Suggestion chip component](https://r.orange.fr/r/S-ouds-design-suggestion-chip) | Live | 1.5.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-suggestion-chip) | Live | 1.5.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-suggestion-chip) | Live | 1.5.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-suggestion-chip) | Live | 1.5.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-suggestion-chip) | Live | 1.5.0 |
 
 ## Design changelog
 

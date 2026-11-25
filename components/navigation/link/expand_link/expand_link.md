@@ -29,6 +29,8 @@ The link expand feature is displayed through a dropdown with selectable values. 
 
 ## Expanded
 
+<!-- zh-row -->
+
 **`False`** State indicates that the content linked to the expand control is currently hidden. The link should suggest that additional information can be revealed.
 
 **`True`** State indicates that the content has been revealed. The link updates visually to indicate that the section is open and can be collapsed again.
@@ -36,6 +38,8 @@ The link expand feature is displayed through a dropdown with selectable values. 
 <img src="images/expand_link@expanded_img.png" alt="expand_link@expanded_img" width="433">
 
 ## Sizes
+
+<!-- zh-row -->
 
 **`Default`** This is the default size of the component.  
 This size is used for the vast majority of applications.
@@ -46,6 +50,8 @@ This size is used for the vast majority of applications.
 
 ## Density
 
+<!-- zh-row -->
+
 **`Default`** This is the default density of the component, recommended for most interfaces and primary navigation contexts.  
 This density wich is used for the vast majority of applications, provides a comfortable touch target that meets accessibility recommendations.
 
@@ -55,6 +61,8 @@ Use in dense layouts where space is limited and a smaller touch target is accept
 <img src="images/expand_link@density_img.png" alt="expand_link@density_img" width="433">
 
 ## Specific component: On colored bg
+
+<!-- zh-row -->
 
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
@@ -67,6 +75,8 @@ This variant ensures a sufficiently high level of accessibility when the compone
 <img src="images/expand_link@on_colored_bg_img.png" alt="expand_link@on_colored_bg_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
@@ -101,6 +111,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/expand_link@spec_layout_spacing_img.png" alt="expand_link@spec_layout_spacing_img" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The default state when the link is available for interaction and displayed with a clear label.
 
@@ -141,12 +153,10 @@ c
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Expand link component](https://r.orange.fr/r/S-ouds-design-expand-link) | Done | 2.5.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-expand-link) | Done | 2.5.0 |
+| Figma | [Expand link component](https://r.orange.fr/r/S-ouds-design-expand-link) | Live | 2.5.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-expand-link) | Live | 2.5.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

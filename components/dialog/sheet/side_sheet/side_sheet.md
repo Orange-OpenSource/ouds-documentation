@@ -39,6 +39,8 @@ The side sheet appears over a backdrop that visually separates it from the under
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** The Default size is intended for side sheet use cases that require more space to present detailed information or support a more complex interaction. It is suitable for use cases such as displaying contextual details, editing a set of related fields, presenting filters with multiple options, or showing supporting information alongside the main page content.
 
 **`Small`** The Small size is intended for lightweight, focused side sheet use cases that require limited space and minimal interaction. It is suitable for use cases such as displaying a short summary, presenting a small set of filters or options, showing contextual information, or providing quick actions related to the underlying page.
@@ -52,6 +54,8 @@ The Size variant also affects the internal scale of the side sheet. The Default 
 <img src="images/side_sheet@size_img.png" alt="side_sheet@size_img" width="433">
 
 ## Placement
+
+<!-- zh-row -->
 
 The Placement variant defines the edge of the viewport from which the Side sheet appears. Choose the placement according to the user's task, the content being presented, and the relationship between the Side sheet and the underlying page.
 
@@ -69,6 +73,8 @@ The Placement variant defines the edge of the viewport from which the Side sheet
 
 ## Sticky action
 
+<!-- zh-row -->
+
 **`False`** Actions are positioned directly after the description or content area and move with the content. The action area uses an Auto Layout Hug behavior.
 
 **`True`** Actions remain fixed at the bottom of the modal while the content area can scroll independently. This ensures that primary actions remain continuously visible and accessible, especially when the modal contains a large amount of content.
@@ -85,6 +91,8 @@ In both cases, each component can use either “fill” or “hug” behavior in
 <img src="images/side_sheet@sticky_action_img.png" alt="side_sheet@sticky_action_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Close button`** The Close button allows users to dismiss the modal without completing the primary action.
 
@@ -119,6 +127,8 @@ When no action is required, ensure that the available dismissal mechanism is suf
 <img src="images/side_sheet@other_boolean_options_img.png" alt="side_sheet@other_boolean_options_img" width="433">
 
 ## Action number
+
+<!-- zh-row -->
 
 **1 (single action)**  
 A single action button is centered horizontally within the modal on mobile, tablet, and desktop. The action button can use either “fill” (especially on mobile devices) or “hug” behavior in Auto Layout.  
@@ -157,6 +167,8 @@ This ensures that assistive technology users encounter actions in the same logic
 <img src="images/side_sheet@action_number_img.png" alt="side_sheet@action_number_img" width="433">
 
 ## Backdrop blurred
+
+<!-- zh-row -->
 
 **`True`** The backdrop uses a black overlay with 68% opacity combined with a background blur effect. Use this option when the underlying content should be visually de-emphasized to reinforce the modal's focus and hierarchy, or when reducing background complexity helps users concentrate on the modal content.  
 Background blur should not be used solely for decorative purposes. It should support the visual separation between the modal and the underlying content without reducing the perceived performance or accessibility of the experience.
@@ -361,11 +373,9 @@ Reduced Motion: instantaneous appearance and closing
 
 ## Availability
 
-Design status: **EA**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Side sheet component](https://r.orange.fr/r/S-ouds-design-side-sheet) | Done | 1.0.0 |
+| Figma | [Side sheet component](https://r.orange.fr/r/S-ouds-design-side-sheet) | Early Access | 1.0.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

@@ -39,6 +39,8 @@ The modal dialog appears over a backdrop that visually separates it from the und
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** The Default size is intended for most modal dialog use cases. It provides sufficient space for standard content, including a title, description, optional supporting content, and one or more actions.
 
 **`Small`** The Small size is intended for simple, focused interactions with limited content. Use it when the dialog requires less space and the user can complete the task with minimal information or interaction.
@@ -53,6 +55,8 @@ The Size variant also affects the internal scale of the dialog. The Default and 
 
 ## Fixed height
 
+<!-- zh-row -->
+
 **`False`** The modal height adapts to the content and uses an Auto Layout Hug behavior. The maximum height is not reached, allowing the modal to remain as compact as possible.
 
 **`True`** The modal uses its maximum defined height. This option can be used to simulate a modal containing a large amount of content that requires vertical scrolling, or to define a fixed-height modal for multi-step flows or content with a consistent layout.
@@ -60,6 +64,8 @@ The Size variant also affects the internal scale of the dialog. The Default and 
 <img src="images/modal_dialog@fixed_height_img.png" alt="modal_dialog@fixed_height_img" width="433">
 
 ## Sticky action
+
+<!-- zh-row -->
 
 **`False`** Actions are positioned directly after the description or content area and move with the content. The action area uses an Auto Layout Hug behavior.
 
@@ -81,6 +87,8 @@ In both cases, each component can use either “fill” or “hug” behavior in
 
 ## Rounded corner
 
+<!-- zh-row -->
+
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used.  
 It is therefore impossible to have one modal component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -101,6 +109,8 @@ Here’s the list of rounded corners availability by brand theme
 <img src="images/modal_dialog@rounded_corner_img.png" alt="modal_dialog@rounded_corner_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Close button`** The Close button allows users to dismiss the modal without completing the primary action.
 
@@ -133,6 +143,8 @@ When no action is required, ensure that the available dismissal mechanism is suf
 <img src="images/modal_dialog@other_boolean_options_img.png" alt="modal_dialog@other_boolean_options_img" width="433">
 
 ## Action number
+
+<!-- zh-row -->
 
 **1 (single action)**  
 A single action button is centered horizontally within the modal on mobile, tablet, and desktop. The action button can use either “fill” (especially on mobile devices) or “hug” behavior in Auto Layout.  
@@ -178,6 +190,8 @@ This ensures that assistive technology users encounter actions in the same logic
 
 ## Backdrop blurred
 
+<!-- zh-row -->
+
 **`True`** The backdrop uses a black overlay with 68% opacity combined with a background blur effect. Use this option when the underlying content should be visually de-emphasized to reinforce the modal's focus and hierarchy, or when reducing background complexity helps users concentrate on the modal content.  
 Background blur should not be used solely for decorative purposes. It should support the visual separation between the modal and the underlying content without reducing the perceived performance or accessibility of the experience.
 
@@ -186,6 +200,8 @@ Background blur should not be used solely for decorative purposes. It should sup
 <img src="images/modal_dialog@backdrop_blurred_img.png" alt="modal_dialog@backdrop_blurred_img" width="433">
 
 ## Examples of uses
+
+<!-- zh-row -->
 
 **`Negative`** The Negative status is intended for destructive or error-related situations, such as confirming a deletion or communicating a backend or system error.  
 Use it when the outcome may result in data loss, an irreversible action, or when an error requires the user's attention.
@@ -395,12 +411,10 @@ Reduced Motion: instantaneous appearance and closing
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Modal dialog component](https://r.orange.fr/r/S-ouds-design-modal-dialog) | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-modal-dialog) | Done | 1.0.0 |
+| Figma | [Modal dialog component](https://r.orange.fr/r/S-ouds-design-modal-dialog) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-modal-dialog) | Live | 1.0.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

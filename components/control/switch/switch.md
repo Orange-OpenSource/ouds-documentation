@@ -40,6 +40,8 @@ Unlike the switch, the switch item accommodates a broader range of contexts by e
 
 Typically, a switch has two main states: Selected and Unselected.
 
+<!-- zh-row -->
+
 **`False`** The switch is off — the option or feature is disabled. Used as the default state before activation.
 
 **`True`** The switch is on — the option or feature is enabled. Indicates that the setting or action is currently active.
@@ -47,6 +49,8 @@ Typically, a switch has two main states: Selected and Unselected.
 <img src="images/switch@selected_img.png" alt="switch@selected_img" width="433">
 
 ## Error
+
+<!-- zh-row -->
 
 **`False`** The switch is unselected or turned off, but this value is invalid. Used when a required action hasn't been completed or an active state is expected.
 
@@ -60,6 +64,8 @@ Typically, a switch has two main states: Selected and Unselected.
 
 ## Reverse
 
+<!-- zh-row -->
+
 **`False`** This is the default layout of the component. From left to right, the order of the elements is as follows: icon / text / switch.
 
 **`True`** As its name suggests, this layout is the reversed mirror of the "Default" template. From left to right, the order of the elements is as follows: switch / text / icon. This variant is necessary for RTL mode and certain mobile use cases.
@@ -67,6 +73,8 @@ Typically, a switch has two main states: Selected and Unselected.
 <img src="images/switch@reverse_img.png" alt="switch@reverse_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Description`** It is possible to display or hide accompanying text for the main label.
 
@@ -79,6 +87,8 @@ Typically, a switch has two main states: Selected and Unselected.
 <img src="images/switch@other_boolean_options_img.png" alt="switch@other_boolean_options_img" width="433">
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -108,6 +118,8 @@ This rule avoids visual redundancy, clarifies that the requirement applies to th
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed 2 lines of text. In its "Text + icon" variant, if the label spans multiple lines, the label remains centred.
 
@@ -134,6 +146,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Technical layout adjustments
 
+<!-- zh-row -->
+
 Even though, in Figma, the component structure is unique (for easier use by designers), technically the versions differ in order to respect best practices for each environment (paradigm shift between the web "Container" vs. the native "Edge-to-Edge"):
 
 &nbsp;
@@ -151,6 +165,8 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 <img src="images/switch@technical_layout_adjustments_img.png" alt="switch@technical_layout_adjustments_img" width="433">
 
 ## Rich text
+
+<!-- zh-row -->
 
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong).
@@ -170,6 +186,8 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 <img src="images/switch@specs_layout_spacing_img.png" alt="switch@specs_layout_spacing_img" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The status of the switch before a user has interacted with it, or other content affects it.
 
@@ -249,15 +267,13 @@ Reduced Motion: instantaneous state change
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Switch component](https://r.orange.fr/r/S-ouds-design-switch) | Done | 1.5.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-switch) | Done | 1.5.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-switch) | Done | 1.5.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-switch) | Done | 1.5.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-switch) | Done | 1.5.0 |
+| Figma | [Switch component](https://r.orange.fr/r/S-ouds-design-switch) | Live | 1.5.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-switch) | Live | 1.5.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-switch) | Live | 1.5.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-switch) | Live | 1.5.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-switch) | Live | 1.5.0 |
 
 ## Design changelog
 

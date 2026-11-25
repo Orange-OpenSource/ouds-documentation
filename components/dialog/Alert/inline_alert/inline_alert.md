@@ -34,6 +34,8 @@ Used for informational or decorative messages not tied to system logic. They are
 
 **⚠️ Note:** Icons in non-functional alerts can be changed or customized depending on the message context.
 
+<!-- zh-row -->
+
 **`Neutral`** Used for generic informational messages that provide context but carry no semantic meaning. Ideal for subtle notices, contextual help, or content highlights within pages.
 
 **`Accent`** Uses brand colors and can include decorative icons to draw attention to key marketing or communication content. Perfect for promotional, inspirational, or brand-driven highlights that engage the user positively.
@@ -44,6 +46,8 @@ Used for informational or decorative messages not tied to system logic. They are
 Used to communicate system statuses, results, or warnings tied directly to UX logic or user actions. These alerts follow strict semantic conventions for icon, color, and tone — ensuring clear, accessible communication across all digital products.
 
 **⚠️ Note:** Icons in functional alerts must never be replaced or customized. Each type has a dedicated, standardized icon that expresses its meaning clearly.
+
+<!-- zh-row -->
 
 **`Negative`** Indicates a failure, error, or blocking issue that needs user attention. Uses the red "error" color and must include the standardized error icon.
 
@@ -56,6 +60,8 @@ Used to communicate system statuses, results, or warnings tied directly to UX lo
 <img src="images/inline_alert@status_functional_img.png" alt="inline_alert@status_functional_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
@@ -84,6 +90,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/inline_alert@spec_layout_spacing.png" alt="inline_alert@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Displayed when the inline alert is active and content is available. Shows an icon and short text message to provide immediate, contextual feedback within the interface.
 
@@ -124,15 +132,13 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Inline alert component](https://r.orange.fr/r/S-ouds-design-inline-alert) | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-inline-alert) | Done | 1.0.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-inline-alert) | Done | 1.0.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-inline-alert) | Done | 1.0.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-inline-alert) | Done | 1.0.0 |
+| Figma | [Inline alert component](https://r.orange.fr/r/S-ouds-design-inline-alert) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-inline-alert) | Live | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-inline-alert) | Live | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-inline-alert) | Live | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-inline-alert) | Live | 1.0.0 |
 
 ## Design changelog
 

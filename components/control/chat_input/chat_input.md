@@ -35,6 +35,8 @@ The chat input provides a dedicated text entry area, typically combined with a s
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.  
@@ -46,6 +48,8 @@ This style may be interesting for contexts other than form pages:
 <img src="images/chat_input@outlined_img.png" alt="chat_input@outlined_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used.  
 It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
@@ -68,6 +72,8 @@ Here’s the list of rounded corners availability by brand theme
 
 ## Input status
 
+<!-- zh-row -->
+
 **`Empty`** The Empty state indicates that the text area is blank with no content or placeholder, a neutral starting point.
 
 **`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
@@ -77,6 +83,8 @@ Here’s the list of rounded corners availability by brand theme
 <img src="images/chat_input@input_status_img.png" alt="chat_input@input_status_img" width="433">
 
 ## Error
+
+<!-- zh-row -->
 
 The Error status indicates that the user input does not meet validation rules, for example, in this specific case, if the number of characters entered by the user exceeds the allowed limit. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -92,6 +100,8 @@ If a helper text accompanies the text input, it is replaced by the error message
 
 ## Other boolean options
 
+<!-- zh-row -->
+
 **`Scrolled`** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available.  
 This allows users to navigate through the overflowing text without expanding the text area beyond the maximum planned height of 240px, allowing the display of about 10 lines of text. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
 
@@ -102,6 +112,8 @@ This allows users to navigate through the overflowing text without expanding the
 <img src="images/chat_input@other_boolean_options_img.png" alt="chat_input@other_boolean_options_img" width="433">
 
 ## Character counter
+
+<!-- zh-row -->
 
 ### Character limit not exceeded
 The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field’s allowed limit.
@@ -119,6 +131,8 @@ In the case where the maximum number of characters is 180, for example: When the
 
 ## Bottom actions
 
+<!-- zh-row -->
+
 ### Leading actions / Trailing actions
 The "Bottom actions" section consists of two independent groups. The group at the beginning ("Leading actions") contains, by default, icon buttons for additional customizable options, as well as a component slot. The group at the end ("Trailing actions") contains the "send" action button, which is not customizable and must never be hidden.
 
@@ -134,11 +148,15 @@ Show or hide each primary action independently. The default options provided can
 
 <img src="images/chat_input@bottom_actions_leading_actions_trailing_actions_img.png" alt="chat_input@bottom_actions_leading_actions_trailing_actions_img" width="433">
 
+<!-- zh-row -->
+
 ### Slot
 A dedicated slot is provided within the "Bottom actions" area to accommodate custom content. This is distinct from the content slot associated with the input field.  
 This slot is disabled by default. It is not a "content-slot" property located at the root of the chat input component. Any custom content inserted into this slot will appear between the action groups.
 
 <img src="images/chat_input@bottom_actions_slot_img.png" alt="chat_input@bottom_actions_slot_img" width="433">
+
+<!-- zh-row -->
 
 ### Trail action
 The final "send" action button cannot be customized and must never be hidden, for accessibility reasons.
@@ -153,6 +171,8 @@ The final "send" action button cannot be customized and must never be hidden, in
 Configuration shown here is made through the nested Bottom actions instance. Keep the sending action identifiable and remove actions that have no useful function in the conversation.
 
 ## Behavior by entered line count
+
+<!-- zh-row -->
 
 ### Default display
 By default, the height of the input text container is set to 60px, which allows 1 lines of text to be displayed without expanding the component.  
@@ -175,6 +195,8 @@ The automatic expansion of the text area’s height based on the number of lines
 
 ## Label (can it be hidden?)
 
+<!-- zh-row -->
+
 Indicates the function of an input field. Why hide the label for an input field? In certain user interface contexts—particularly when space is limited or the field is part of a compact layout (such as a chat input)—visually hiding the label can help maintain a clean, uncluttered interface. However, this practice should only be adopted if:  
 The function of the input field remains clear, either through placeholder text or a contextual icon (e.g., a "send" icon for a chat input).  
 The label remains accessible to screen readers (via `aria-label`, `aria-labelledby`, or text that is visually hidden).  
@@ -185,6 +207,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 <img src="images/chat_input@label_can_it_be_hidden_img.png" alt="chat_input@label_can_it_be_hidden_img" width="433">
 
 ## Truncated input area
+
+<!-- zh-row -->
 
 **When losing focus, the truncation behavior of the input area differs depending on the technical environment. It’s important to respect the native behaviors designed to handle truncation:**
 
@@ -201,6 +225,8 @@ This choice is intentional because, for many fields, showing the end often makes
 <img src="images/chat_input@truncated_input_area_img.png" alt="chat_input@truncated_input_area_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. Further details are available in the “Behavior by entered line count” section.
@@ -229,6 +255,8 @@ However, “Text input” components present an exception regarding the loss of 
 <img src="images/chat_input@multiline_and_responsiveness_img.png" alt="chat_input@multiline_and_responsiveness_img" width="433">
 
 ## Rich text
+
+<!-- zh-row -->
 
 ### Strong text
   • Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Large/Strong or Label/Medium/Strong) depending on the selected text style.  
@@ -286,32 +314,46 @@ Mandatory spacing must remain outside the slot, within the parent container. Cus
 
 ## States
 
+<!-- zh-row -->
+
 **`Enabled`** Neutral appearance, whether empty or filled.  
 It allows users to click, focus, and type freely without restrictions.
 
 <img src="images/chat_input@states_enabled_img.png" alt="chat_input@states_enabled_img" width="433">
 
+<!-- zh-row -->
+
 **`Hover`** Slight visual contrast or border color change.
 
 <img src="images/chat_input@states_hover_img.png" alt="chat_input@states_hover_img" width="433">
+
+<!-- zh-row -->
 
 **`Focus`** The text area is focused and ready to receive user input.  
 It visually highlights the field to indicate that it's currently editable and interactive. This state typically appears after a user clicks or taps into the field.
 
 <img src="images/chat_input@states_focus_img.png" alt="chat_input@states_focus_img" width="433">
 
+<!-- zh-row -->
+
 **`Loading`** The Loading state indicates that the system is processing or retrieving data related to the text area.  
 A progress indicator appears to inform the user that an action is in progress. During this state, the input may be temporarily disabled to prevent further interaction.
 
 <img src="images/chat_input@states_loading_img.png" alt="chat_input@states_loading_img" width="433">
 
+<!-- zh-row -->
+
 **`Read only`** Text visible but not editable (often with a muted or different background).
 
 <img src="images/chat_input@states_read_only_img.png" alt="chat_input@states_read_only_img" width="433">
 
+<!-- zh-row -->
+
 **`Disabled`** The field is non-interactive and grayed out to indicate it cannot be changed. The helper text is muted.
 
 <img src="images/chat_input@states_disabled_img.png" alt="chat_input@states_disabled_img" width="433">
+
+<!-- zh-row -->
 
 **`Skeleton`** Improves the perceived loading time by providing a visual cue of where field will appear once fully loaded.  
 Uses the "Skeleton" component, variant “Security marge=False”.
@@ -337,11 +379,9 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **EA**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Chat input component](https://r.orange.fr/r/S-ouds-design-chat-input) | Done | 1.0.0 |
+| Figma | [Chat input component](https://r.orange.fr/r/S-ouds-design-chat-input) | Early Access | 1.0.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

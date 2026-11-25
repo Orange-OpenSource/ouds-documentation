@@ -39,6 +39,8 @@ Use an indeterminate (loading) indicator when progress cannot be measured.
 • Long (> 5s)  
 Use a determinate (progress) indicator when progress can be measured and communicated (with progress description).
 
+<!-- zh-row -->
+
 **`Indeterminate`** Shows that a process is active without indicating exact progress. Used when the system cannot determine how long the task will take. Communicates that the system is working, even without precise data, and prevents users from thinking the interface is frozen. For long loading times (over 5 seconds), additional context must be provided. This helps inform users about the system state, reduces uncertainty, and prevents the interface from being perceived as unresponsive. User feedback and understanding of the system state (WCAG 2.2.2, 4.1.2).  
 • The duration is unknown or depends on external factors (e.g. waiting for server response)  
 • Progress cannot be reliably calculated
@@ -59,6 +61,8 @@ Animation helps communicate that the system is actively processing.
 The animated property is only available for the Determinate variant.  
 In the Indeterminate variant, animated = false is not supported and is therefore not exposed as a component option. Indeterminate progress indicators are specifically designed to communicate ongoing activity through motion.
 
+<!-- zh-row -->
+
 **`True`** The progress indicator is static and does not move. Used to show a fixed state without suggesting ongoing activity.  
 • Showing a fixed value (e.g. 50%, 100%)  
 • Reducing motion (accessibility or low distraction)
@@ -78,6 +82,8 @@ Progress indicators can use different statuses depending on the meaning of the p
 ### Non-functional
 Non-functional statuses are used for standard progress indication without conveying any semantic feedback. They simply communicate that a process is running or progressing.
 
+<!-- zh-row -->
+
 **`Neutral`** Default status used when progress has no specific semantic meaning.  
 Suitable for generic loading, processing, synchronization, or background tasks where only the completion progress needs to be communicated.
 
@@ -92,6 +98,8 @@ Functional statuses communicate additional semantic meaning about the operation 
 ⚠️ Functional statuses must not be communicated by colour alone.
 
 When Positive, Info, Warning or Negative is used, the same meaning must be available through visible text in the parent context and through an accessible status description. The progress indicator colour communicates the nature of the process, while the text explains the actual state.
+
+<!-- zh-row -->
 
 **`Negative`** Indicates progress related to an error, recovery, cancellation, or failure.  
 Use only when the progress itself communicates a negative operation, such as rolling back changes, removing content, or recovering from an error.
@@ -113,6 +121,8 @@ Controls whether the progress indicator uses motion to communicate progress.
 
 The Animated property is available only for the Determinate variant. Indeterminate progress indicators always rely on animation and therefore do not expose this property.
 
+<!-- zh-row -->
+
 **`True`** The progress indicator uses animation to communicate changes in progress. Use when progress updates over time and motion helps users understand that the process is actively advancing.  
 • **Start animation** Controls how the progress indicator appears when it is first displayed.  
   • **`True`** The progress indicator animates from 0% to the current progress value when the component enters the screen. Use when introducing a new process and providing a smooth visual transition (for example, 0% → 50%).  
@@ -124,6 +134,8 @@ The Animated property is available only for the Determinate variant. Indetermina
 
 ## Gap size
 
+<!-- zh-row -->
+
 **`Default`** Uses the standard gap size.  
 Recommended for most use cases, providing balanced spacing and optimal visual clarity.
 
@@ -133,6 +145,8 @@ Use when a more compact appearance is preferred or to better align with specific
 <img src="images/linear_progress_indicator@gap_size_img.png" alt="linear_progress_indicator@gap_size_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used.  
 It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
@@ -155,6 +169,8 @@ Here’s the list of rounded corners availability by brand theme
 
 ## Track
 
+<!-- zh-row -->
+
 **`True`** Use it when the indicator is shown on its own and needs a clear structure. The track helps define the full range of progress and makes the value easier to read (for determinate variant).
 
 **`False`** Use it when the indicator is embedded inside another component (e.g. button, tag, toast). Also use it when a more minimal and lightweight appearance is needed.
@@ -162,6 +178,8 @@ Here’s the list of rounded corners availability by brand theme
 <img src="images/linear_progress_indicator@track_img.png" alt="linear_progress_indicator@track_img" width="433">
 
 ## Stop indicator
+
+<!-- zh-row -->
 
 **`True`** Displays a stop indicator at the end of the progress track.  
 Use when the interface benefits from a clear visual endpoint, such as upload limits, completion goals, quotas, or multi-step workflows. The stop indicator helps users understand the expected destination of the progress value.
@@ -182,6 +200,8 @@ Helper text can provide context about the process or show the current progress v
 • For determinate progress, display the current completion status using a percentage (40% or 40% complete) or, when relevant, a step indicator (Step 3 of 5).  
 • If the process takes longer than expected, update the message to reassure users, for example Still verifying your identityor This may take a few minutes.  
 • In the French version, a non-breaking space must always be inserted between the number and the percent sign (40 %).
+
+<!-- zh-row -->
 
 ### Helper text
 **`True`** Displays helper text alongside the progress indicator.  
@@ -212,6 +232,8 @@ Languages such as French, Russian, German, Polish, and many other European langu
 
 The linear progress indicator must scale horizontally while preserving a fixed height defined by design tokens.  
 The component should remain clear, readable, and structurally consistent at all zoom levels and in all contexts.
+
+<!-- zh-row -->
 
 ### Behavior
 • The progress bar scales horizontally with its container when width is constrained  
@@ -314,6 +336,8 @@ When combined with elements such as buttons, standard keyboard navigation must b
 Designing a progress indicator is not only about showing a progress bar. It is also essential to define what assistive technologies, such as screen readers, should announce to users.
 
 Screen readers should announce the same essential information that sighted users perceive visually: what is happening, how far the process has progressed, and what remains.
+
+<!-- zh-row -->
 
 **`Determinate`** The system knows the exact progress value, and the loading indicator is animated. Announce the purpose of the progress indicator first (what the system is doing), followed by the current stage of completion (such as a step number or percentage), and avoid reading long sequences of individual values (for example, 1, 2, 3, 4, 5, 6) by grouping progress into clear and meaningful milestones, ideally in a limited number of steps such as 0 to 10, to reduce cognitive load and improve comprehension for screen reader users.  
 Recommended Screen Reader Announcement  
@@ -599,15 +623,13 @@ c
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Linear progress indicator component](https://r.orange.fr/r/S-ouds-design-linear-progress-indicator) | Done | 1.1.0 |
+| Figma | [Linear progress indicator component](https://r.orange.fr/r/S-ouds-design-linear-progress-indicator) | Live | 1.1.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-linear-progress-indicator) | Done | 1.1.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-linear-progress-indicator) | Done | 1.1.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-linear-progress-indicator) | Done | 1.1.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-linear-progress-indicator) | Live | 1.1.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-linear-progress-indicator) | Live | 1.1.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-linear-progress-indicator) | Live | 1.1.0 |
 
 ## Design changelog
 

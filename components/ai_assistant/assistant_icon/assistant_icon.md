@@ -33,6 +33,8 @@ The assistant icon combines standard interactive icon behaviors with AI-specific
 
 ## ⚠️ Interactive icon vs button (icon only)
 
+<!-- zh-row -->
+
 **Although both components provide an icon-based interaction, they serve different purposes and should be selected according to the desired visual emphasis and layout constraints.**
 
 An Assistant button (icon only) includes a dedicated interactive container that can display a visible background, either in its default state or during state transitions such as hover, pressed, or selected. This additional visual layer reinforces the affordance of the component and makes it suitable for primary or clearly identifiable actions.
@@ -46,6 +48,8 @@ This flexibility allows an Assistant icon to be positioned closer to text or adj
 <img src="images/assistant_icon@interactive_icon_vs_button_icon_only_img.png" alt="assistant_icon@interactive_icon_vs_button_icon_only_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### User zoom in/out
 The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom (the icons follow the same rules as the text).  
@@ -71,6 +75,8 @@ Thus: (1/24) * 100 = 4.16666666%
 <img src="images/assistant_icon@spec_layout_spacing.png" alt="assistant_icon@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The status of the icon before a user has interacted with it, or other content affects it.
 
@@ -116,12 +122,10 @@ c
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Assistant icon component](https://r.orange.fr/r/S-ouds-design-assistant-icon) | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-assistant-icon) | Done | 1.0.0 |
+| Figma | [Assistant icon component](https://r.orange.fr/r/S-ouds-design-assistant-icon) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-assistant-icon) | Live | 1.0.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

@@ -34,6 +34,8 @@ The navigation item list allows quick scanning and access to related destination
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** Use the Default size in most interfaces.  
 It provides sufficient spacing for standard navigation lists, multiline destination labels and visual elements such as avatars, images or badges.
 
@@ -49,6 +51,8 @@ The Small size is best suited to:
 <img src="images/navigation_list_item@size_img.png" alt="navigation_list_item@size_img" width="433">
 
 ## Alignment
+
+<!-- zh-row -->
 
 **`Center`** Center alignment is the default for items containing:  
 • A single-line label.  
@@ -70,6 +74,8 @@ The Small size is best suited to:
 
 ## Layout
 
+<!-- zh-row -->
+
 **`Next`** Use Next when the destination moves users forward, deeper into the information hierarchy or to a related destination. The navigation indicator is positioned at the logical end of the item.
 
 **`Previous`** Use Previous when the destination returns users to a parent destination, an earlier level or a preceding step in a navigation flow.  
@@ -80,6 +86,8 @@ The navigation indicator is positioned at the logical start of the item.
 <img src="images/navigation_list_item@layout_img.png" alt="navigation_list_item@layout_img" width="433">
 
 ## Navigation indicator type
+
+<!-- zh-row -->
 
 **`Internal`** Use Internal when the item navigates to another destination within the same product, service or application. The internal navigation indicator reinforces that the complete item opens another view or level.
 
@@ -96,6 +104,8 @@ Leading and trailing content serve different purposes within the navigation item
 • Trailing content provides supplementary information related to the destination after the main content has been understood.  
 The navigation indicator is separate from both areas and communicates the navigation behaviour of the complete item.  
 Choose each position according to the role of the content, not only according to the available space.
+
+<!-- zh-row -->
 
 ### Use leading content only
 Use leading content when the visual element helps users identify or understand the destination before reading its text.
@@ -143,6 +153,8 @@ Leading content appears before the main label and supports recognition or identi
 Use it when the visual element helps users understand the destination more quickly.  
 Leading content is included within the complete navigation target and must not behave as an independent action.
 
+<!-- zh-row -->
+
 **`False`** No leading content is displayed. The main content starts at the default horizontal padding.
 
 **`True`** A leading container is displayed before the main content.  
@@ -157,6 +169,8 @@ Use an icon to reinforce the meaning of the destination or help users identify a
 
 ⚠️ Do not use an action icon that suggests a separate operation inside the navigation item.
 
+<!-- zh-row -->
+
 #### Size
 Controls the visual prominence of the icon.
 
@@ -167,6 +181,8 @@ Controls the visual prominence of the icon.
 **`Large`** Use when the icon needs stronger prominence or when the item has a larger height, multiline content or additional supporting information.
 
 <img src="images/navigation_list_item@leading_container_type_icon_size_img.png" alt="navigation_list_item@leading_container_type_icon_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 Defines the semantic colour applied to the icon.
@@ -193,6 +209,8 @@ Defines the semantic colour applied to the icon.
 
 <img src="images/navigation_list_item@leading_container_type_icon_status_img.png" alt="navigation_list_item@leading_container_type_icon_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge
 Display a badge when a notification or secondary status must be associated with the destination represented by the icon.
 
@@ -205,6 +223,8 @@ Display a badge when a notification or secondary status must be associated with 
 ### Image
 Use an image when visual identification of the destination is important, for example for a product, service, article or media page.  
 Do not use an image when it does not add useful information or when it could be mistaken for a separate interactive preview.
+
+<!-- zh-row -->
 
 #### Size
 Controls the dimensions and visual prominence of the image.
@@ -219,6 +239,8 @@ Controls the dimensions and visual prominence of the image.
 
 <img src="images/navigation_list_item@leading_container_type_image_size_img.png" alt="navigation_list_item@leading_container_type_image_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Ratio
 Defines the aspect ratio of the image container.
 
@@ -230,6 +252,8 @@ Defines the aspect ratio of the image container.
 
 <img src="images/navigation_list_item@leading_container_type_image_ratio_img.png" alt="navigation_list_item@leading_container_type_image_ratio_img" width="433">
 
+<!-- zh-row -->
+
 #### Rounded corner
 Defines whether the image is displayed with square or rounded corners. The corner style should reflect the type of content and remain consistent with the visual language used elsewhere in the product.
 
@@ -238,6 +262,8 @@ Defines whether the image is displayed with square or rounded corners. The corne
 **`True`** Displays the image with rounded corners.
 
 <img src="images/navigation_list_item@leading_container_type_image_rounded_corner_img.png" alt="navigation_list_item@leading_container_type_image_rounded_corner_img" width="433">
+
+<!-- zh-row -->
 
 #### Animated
 Defines whether the image can contain animated content. Use animation only when it provides meaningful value to the user and does not distract from the primary content or interaction.
@@ -258,6 +284,8 @@ The use of motion and animation in our products and components requires particul
 Use an avatar when the destination represents a person, profile, team, organisation or account.  
 The avatar supports visual recognition but must always be accompanied by a visible text label identifying the destination.
 
+<!-- zh-row -->
+
 #### Size
 
 **`Medium`** Use in compact lists or when the avatar is secondary to the content.
@@ -267,6 +295,8 @@ The avatar supports visual recognition but must always be accompanied by a visib
 **`Xlarge`** Use when identity is a primary part of the item or when additional avatar details must remain visible.
 
 <img src="images/navigation_list_item@leading_container_type_avatar_size_img.png" alt="navigation_list_item@leading_container_type_avatar_size_img" width="433">
+
+<!-- zh-row -->
 
 #### Type
 Defines the content displayed inside the avatar.
@@ -278,6 +308,8 @@ Defines the content displayed inside the avatar.
 **`Icon`** Use for generic accounts, anonymous profiles, teams or entities that do not have an individual image or initials.
 
 <img src="images/navigation_list_item@leading_container_type_avatar_type_img.png" alt="navigation_list_item@leading_container_type_avatar_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Badge
 Controls whether a badge is displayed on the avatar.
@@ -291,6 +323,8 @@ When Badge is enabled, additional properties become available.
 
 <img src="images/navigation_list_item@leading_container_type_avatar_badge_img.png" alt="navigation_list_item@leading_container_type_avatar_badge_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge type
 Defines the visual content used in the avatar.
 
@@ -301,6 +335,8 @@ Defines the visual content used in the avatar.
 ⚠️ For Neutral and Accent statuses, the icon can be adapted to the context. For functional statuses, the icon is predefined and must not be changed, ensuring consistent and accessible status communication across the design system.
 
 <img src="images/navigation_list_item@leading_container_type_avatar_badge_type_img.png" alt="navigation_list_item@leading_container_type_avatar_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Badge status
 Defines the semantic colour of the badge.
@@ -329,6 +365,8 @@ Defines the semantic colour of the badge.
 
 <img src="images/navigation_list_item@leading_container_type_avatar_badge_status_img.png" alt="navigation_list_item@leading_container_type_avatar_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 ### Flag
 Use a flag to represent a country, territory or regional context. A flag may support visual recognition, but it must not replace the corresponding country, territory or language name. Flags should be used carefully because countries, languages and nationalities do not always have a one-to-one relationship.
 
@@ -336,6 +374,8 @@ Use a flag to represent a country, territory or regional context. A flag may sup
 The accessible name should describe the represented country or territory, not the visual appearance of the flag.
 
 <img src="images/navigation_list_item@leading_container_type_flag_img.png" alt="navigation_list_item@leading_container_type_flag_img" width="433">
+
+<!-- zh-row -->
 
 ### Slot
 Use Slot for custom leading content that cannot be represented by Icon, Image, Avatar or Flag. Slot provides flexibility for specific product requirements, but it should be used as an exception rather than the default solution.
@@ -362,6 +402,8 @@ Nested interactive elements create conflicting activation and focus behaviour. W
 Trailing content appears after the main content and communicates secondary information related to the destination.  
 Content remains part of the complete navigation target and must not behave as an independent action.
 
+<!-- zh-row -->
+
 **`False`** No trailing content is displayed. The main content can use the available width of the item before the Navigation indicator.
 
 **`True`** A trailing container is displayed after the main content and before the Navigation indicator.  
@@ -370,6 +412,8 @@ Use the Trailing container type property to define its content, such as text, a 
 <img src="images/navigation_list_item@trailing_img.png" alt="navigation_list_item@trailing_img" width="433">
 
 ## Trailing container type
+
+<!-- zh-row -->
 
 ### Shared container types
 The following types reuse the properties and guidance documented under Leading container type:  
@@ -393,6 +437,8 @@ Use Text to display a short value or secondary piece of information associated w
 ⚠️ Trailing text is not a separate link label and must not suggest a different destination.  
 ⚠️ Keep trailing text to 1–2 words whenever possible. Longer content can reduce the space available for the primary label and cause excessive wrapping, especially when users zoom in or increase the text size.
 
+<!-- zh-row -->
+
 **`Label`** Use Label for standard secondary information that should remain clearly readable without drawing more attention than the primary label.
 
 **`Label muted`** Use Label muted for low-priority metadata that supports the item but is not essential to its immediate understanding.
@@ -406,6 +452,8 @@ Use Text to display a short value or secondary piece of information associated w
 ### Badge
 Use a Badge to communicate a compact status or notification associated with the item. A badge should contain secondary information and must not replace the primary label or description.
 
+<!-- zh-row -->
+
 #### Type
 
 **`Badge`** Use Badge for a short textual status. Keep the label concise and use terminology consistently throughout the product.
@@ -416,6 +464,8 @@ Use a Badge to communicate a compact status or notification associated with the 
 ⚠️ The complete meaning should be available through visible or accessible text, for example “2 unread messages”, rather than an isolated “2”.
 
 <img src="images/navigation_list_item@trailing_container_type_badge_type_img.png" alt="navigation_list_item@trailing_container_type_badge_type_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 The Status property defines the semantic colour and meaning of the badge.  
@@ -444,6 +494,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/navigation_list_item@trailing_container_type_badge_status_img.png" alt="navigation_list_item@trailing_container_type_badge_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge size
 
 **`XSmall`** Use for very compact badge with small list items or dense layouts.
@@ -456,6 +508,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 
 <img src="images/navigation_list_item@trailing_container_type_badge_size_img.png" alt="navigation_list_item@trailing_container_type_badge_size_img" width="433">
 
+<!-- zh-row -->
+
 #### Badge count size
 
 **`Medium`** Use Medium for standard or compact list items.
@@ -463,6 +517,8 @@ Often used for errors, restrictions, or urgent messages, but not exclusively for
 **`Large`** Use Large when the list item uses larger dimensions or when a larger badge is required to remain visually balanced with the surrounding content.
 
 <img src="images/navigation_list_item@trailing_container_type_badge_count_size_img.png" alt="navigation_list_item@trailing_container_type_badge_count_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -479,6 +535,8 @@ The Badge state does not control whether the Navigation list item itself can be 
 ### Tag
 Use a Tag to communicate a category, attribute, classification or compact status associated with the navigation destination.
 
+<!-- zh-row -->
+
 #### Appearance
 
 **`Emphasized`** Use Emphasized when the tag carries information that should be easy to notice while remaining secondary to the primary label.
@@ -486,6 +544,8 @@ Use a Tag to communicate a category, attribute, classification or compact status
 **`Muted`** Use Muted for low-priority categories or supporting metadata.
 
 <img src="images/navigation_list_item@trailing_container_type_tag_appearance_img.png" alt="navigation_list_item@trailing_container_type_tag_appearance_img" width="433">
+
+<!-- zh-row -->
 
 #### Status
 
@@ -510,6 +570,8 @@ Do not use Accent solely to attract attention to the destination.
 
 <img src="images/navigation_list_item@trailing_container_type_tag_status_img.png" alt="navigation_list_item@trailing_container_type_tag_status_img" width="433">
 
+<!-- zh-row -->
+
 #### Layout
 
 **`Text only`** A tag that displays only text. Used for simple labels, categories, or keywords without additional visual elements.
@@ -520,6 +582,8 @@ Do not use Accent solely to attract attention to the destination.
 
 <img src="images/navigation_list_item@trailing_container_type_tag_layout_img.png" alt="navigation_list_item@trailing_container_type_tag_layout_img" width="433">
 
+<!-- zh-row -->
+
 #### Size
 
 **`Small`** Use Small as the standard and recommended tag size within the list item. It keeps the tag visually secondary, preserves space for the main content and works well in compact or information-dense lists.
@@ -527,6 +591,8 @@ Do not use Accent solely to attract attention to the destination.
 **`Default`** Use Default when the list item uses a larger layout or when the tag must align with other Default-size tags in the same interface.
 
 <img src="images/navigation_list_item@trailing_container_type_tag_size_img.png" alt="navigation_list_item@trailing_container_type_tag_size_img" width="433">
+
+<!-- zh-row -->
 
 #### State
 
@@ -540,6 +606,8 @@ Do not use Accent solely to attract attention to the destination.
 **`Skeleton`** A placeholder state shown before the actual data is loaded.
 
 <img src="images/navigation_list_item@trailing_container_type_tag_state_img.png" alt="navigation_list_item@trailing_container_type_tag_state_img" width="433">
+
+<!-- zh-row -->
 
 #### Rounded corner
 
@@ -560,6 +628,8 @@ This option is available for all brand themes
 
 ## Divider
 
+<!-- zh-row -->
+
 **`False`** No divider is displayed. Use this option when items are already separated by spacing, individual backgrounds or another clear grouping method.
 
 **`True`** A divider is displayed between list items. Use it when several items share the same surface and additional visual separation improves scanning.
@@ -569,6 +639,8 @@ This option is available for all brand themes
 <img src="images/navigation_list_item@divider_img.png" alt="navigation_list_item@divider_img" width="433">
 
 ## Helper text
+
+<!-- zh-row -->
 
 **`False`** No helper text is displayed.
 
@@ -581,6 +653,8 @@ Use it for additional information required to understand the destination before 
 
 ## Background
 
+<!-- zh-row -->
+
 **`False`** The item uses the surrounding container surface without an individual background.  
 Use this option for standard continuous navigation lists.
 
@@ -590,6 +664,8 @@ Use it when the navigation item needs stronger visual separation from its surrou
 <img src="images/navigation_list_item@background_img.png" alt="navigation_list_item@background_img" width="433">
 
 ## Label type
+
+<!-- zh-row -->
 
 **`Default`** Use Default for most list items. It provides the standard visual hierarchy and should be the preferred option for common labels, names and titles.
 
@@ -611,6 +687,8 @@ The Slot may be used for custom primary content such as:
 
 ## Overline
 
+<!-- zh-row -->
+
 **`False`** No overline is displayed.
 
 **`True`** A short contextual label is displayed above the primary label. Use an overline to communicate a short contextual qualifier.
@@ -618,6 +696,8 @@ The Slot may be used for custom primary content such as:
 <img src="images/navigation_list_item@overline_img.png" alt="navigation_list_item@overline_img" width="433">
 
 ## Extra label
+
+<!-- zh-row -->
 
 **`False`** No extra label is displayed.
 
@@ -632,6 +712,8 @@ Use an extra label for:
 
 ## Description
 
+<!-- zh-row -->
+
 **`False`** No supporting description is displayed.
 
 **`True`** Supporting text is displayed below the primary label. Use a description when users need additional context to understand the item.
@@ -645,6 +727,8 @@ Use an extra label for:
 The Bottom slot adds a custom content area below the main row content.  
 Use it when supporting information cannot be clearly represented by the standard Description or Helper text properties.  
 All Bottom slot content remains part of the same navigation target.
+
+<!-- zh-row -->
 
 **`False`** No additional content is displayed below the main content.
 
@@ -666,6 +750,8 @@ If the supporting content requires a separate destination or action, place it ou
 ## Rich text
 
 Rich text should be used sparingly to improve scanning and highlight the most important part of the message. It must never compensate for unclear writing.
+
+<!-- zh-row -->
 
 ### Strong text
 • Strong text can be used sparingly in the helper text or description to highlight key information, such as a status, date, amount, or required step. Rich text must use the **Label/Medium/Strong** token only.  
@@ -690,6 +776,8 @@ Rich text should be used sparingly to improve scanning and highlight the most im
 <img src="images/navigation_list_item@rich_text_img.png" alt="navigation_list_item@rich_text_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 The Navigation list item supports multiline content. The number of lines is not limited.  
@@ -741,6 +829,8 @@ The component must adapt without clipping, overlapping or hiding meaningful info
 
 ## Technical layout adjustments
 
+<!-- zh-row -->
+
 Even though, in Figma, the component structure is unique (for easier use by designers), technically the versions differ in order to respect best practices for each environment (paradigm shift between the web “Container” vs. the native “Edge-to-Edge”):
 
 &nbsp;
@@ -769,6 +859,8 @@ Mandatory spacing must remain outside the slots, within the parent frame. Slot c
 
 ## States
 
+<!-- zh-row -->
+
 **`Enabled`** Enabled is the default state. The item is available for navigation.  
 The entire item acts as a single link target.
 
@@ -787,6 +879,8 @@ The entire item acts as a single link target.
 # Accessibility
 
 ## Motion & Animation accessibility rules
+
+<!-- zh-row -->
 
 In terms of animation, there are accessibility criteria to consider: “Animation from Interactions” and “Pause, Stop, Hide.”  
 These two main criteria address different issues:
@@ -1198,15 +1292,13 @@ Design guidance supporting WCAG 2.1 — 2.3.1 Three Flashes or Below Threshold, 
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Navigation list item component](https://r.orange.fr/r/S-ouds-design-navigation-list-item) | Done | 1.3.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-navigation-list-item) | Done | 1.2.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-navigation-list-item) | Done | 0.1.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-navigation-list-item) | Done | 1.2.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-navigation-list-item) | Done | 0.3.0 |
+| Figma | [Navigation list item component](https://r.orange.fr/r/S-ouds-design-navigation-list-item) | Live | 1.3.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-navigation-list-item) | Live | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-navigation-list-item) | Live | 0.1.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-navigation-list-item) | Live | 1.2.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-navigation-list-item) | Live | 0.3.0 |
 
 ## Design changelog
 

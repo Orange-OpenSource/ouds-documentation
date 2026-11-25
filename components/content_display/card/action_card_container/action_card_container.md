@@ -34,22 +34,32 @@ The entire card acts as the interaction target and can behave as a button, an in
 
 ## Style
 
+<!-- zh-row -->
+
 **`Filled`** Filled cards use a background surface to visually separate their content from the surrounding interface. By default, the card is displayed on a bg/primary background, with an additional action/support/enabled layer controlled by the Background Boolean property. The Background property controls only the interaction support layer, not the surrounding background surface. To display the card on a different background, designers should use a parent frame with one of the supported OUDS background or surface tokens, rather than manually overriding the card's interaction layers. This ensures that Hover, Focus and Pressed states remain consistent across different background contexts.
 
 <img src="images/action_card_container@style_filled_img.png" alt="action_card_container@style_filled_img" width="433">
+
+<!-- zh-row -->
 
 **`Outlined`** Outlined cards define their boundaries with a border instead of a background fill. The card remains transparent, allowing the surrounding surface to show through.
 
 <img src="images/action_card_container@style_outlined_img.png" alt="action_card_container@style_outlined_img" width="433">
 
+<!-- zh-row -->
+
 **`Elevated`** Elevated cards create visual separation through a shadow, giving the card a raised appearance. Unlike transparent cards, Elevated cards require a visible background surface to ensure that the shadow is rendered correctly. The shadow must apply to the card as a whole, not to individual elements within the slot. Designers must use the predefined OUDS elevation and background tokens. Custom shadows or opacity workarounds should not be applied.
 
 <img src="images/action_card_container@style_elevated_img.png" alt="action_card_container@style_elevated_img" width="433">
+
+<!-- zh-row -->
 
 ### Inverse background
 Inverse backgrounds introduce a different color context within the interface. Text, icons, and interactive elements must adapt to the appropriate light or dark theme to maintain readability and contrast.
 
 <img src="images/action_card_container@style_inverse_background_img.png" alt="action_card_container@style_inverse_background_img" width="433">
+
+<!-- zh-row -->
 
 ### Image background
 A background image can replace the default Filled surface.  
@@ -60,6 +70,8 @@ The image must preserve content readability across different screen sizes and cr
 ⚠️ Only the predefined stroke, divider, and background colors specified for this component may be used. Custom colors are not allowed.
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Although this property can be edited on individual components in Figma, the corner treatment is defined consistently at product or service level by the selected brand theme. Do not mix rounded and square treatments within the same product or service.
 
@@ -80,6 +92,8 @@ Here’s the list of rounded corners availability by brand theme
 <img src="images/action_card_container@rounded_corner_img.png" alt="action_card_container@rounded_corner_img" width="433">
 
 ## Background
+
+<!-- zh-row -->
 
 The Background Boolean property controls the visibility of the predefined color/action/support/enabled layer within the Card component. This property is available for the Filled and Elevated styles when State = Enabled.
 
@@ -107,6 +121,8 @@ For other styles:
 
 ## Divider
 
+<!-- zh-row -->
+
 The Divider Boolean property is available only when Style = Filled. It reinforces the card’s visual separation from its surrounding surface and follows the design system’s predefined color treatment.
 
 **`True`** Displays the predefined divider on the Filled card.
@@ -116,6 +132,8 @@ The Divider Boolean property is available only when Style = Filled. It reinforce
 <img src="images/action_card_container@divider_img.png" alt="action_card_container@divider_img" width="433">
 
 ## Slot spacing
+
+<!-- zh-row -->
 
 The slot allows designers to customize the content and layout inside the card, including its text, imagery, and independent actions.  
 Internal padding and spacing can be adjusted using two types of spacing tokens.
@@ -130,6 +148,8 @@ When using nested components, their predefined internal spacing and corner-radiu
 <img src="images/action_card_container@slot_spacing_img.png" alt="action_card_container@slot_spacing_img" width="433">
 
 ## Role
+
+<!-- zh-row -->
 
 The primary action must use the appropriate semantic element according to its behavior.
 
@@ -168,6 +188,8 @@ Never nest links or buttons inside the primary card link/button; each independen
 
 The Action card provides one primary action. Additional elements within the slot may visually reinforce this action or, when supported, provide independent secondary actions.
 
+<!-- zh-row -->
+
 ### Single action - Card only
 
 The entire Action card represents a single interactive target. No additional interactive controls are present within the slot. Visual indicators, such as arrows or icons, do not create separate actions.  
@@ -176,6 +198,8 @@ Use a link for navigation or a button to trigger an action.
 Use case: The card redirects users to the Assistance Orange website, where they can find guides and tutorials for their Livebox. Clicking anywhere on the card opens the same destination.
 
 <img src="images/action_card_container@actions_single_action_card_only_img.png" alt="action_card_container@actions_single_action_card_only_img" width="433">
+
+<!-- zh-row -->
 
 ### Single action - Shared interaction
 
@@ -187,6 +211,8 @@ Use case: The card provides access to Livebox support, with a visual "Consulter 
 
 <img src="images/action_card_container@actions_single_action_shared_interaction_img.png" alt="action_card_container@actions_single_action_shared_interaction_img" width="433">
 
+<!-- zh-row -->
+
 ### Multiple actions - One secondary action
 
 The card provides a primary action, while one additional interactive element triggers a different action.
@@ -196,6 +222,8 @@ Both actions must be implemented as separate interactive elements, with independ
 Use case: The card opens the Livebox help section within the application, while a separate "Accéder au site Assistance Orange" link redirects users to the external support website.
 
 <img src="images/action_card_container@actions_multiple_actions_one_secondary_action_img.png" alt="action_card_container@actions_multiple_actions_one_secondary_action_img" width="433">
+
+<!-- zh-row -->
 
 ### Multiple actions - Several secondary actions
 
@@ -215,14 +243,20 @@ Use case: The card opens the Livebox help section, while two additional controls
 
 ## States
 
+<!-- zh-row -->
+
 **`Enabled`** The default state. The entire card is available for interaction and displays its content normally.
 
 <img src="images/action_card_container@states_enabled_img.png" alt="action_card_container@states_enabled_img" width="433">
+
+<!-- zh-row -->
 
 **`Hover`** Indicates that the pointer is positioned over the card.  
 Use it to provide visual feedback that the card is interactive.
 
 <img src="images/action_card_container@states_hover_img.png" alt="action_card_container@states_hover_img" width="433">
+
+<!-- zh-row -->
 
 **`Focus`** Indicates that an interactive action has received keyboard focus.  
 When the primary action receives focus, the focus indicator must remain clearly visible around the primary interactive region.  
@@ -230,12 +264,16 @@ When a secondary action receives focus, only that action must display its focus 
 
 <img src="images/action_card_container@states_focus_img.png" alt="action_card_container@states_focus_img" width="433">
 
+<!-- zh-row -->
+
 **`Pressed`** Provides immediate visual feedback while the user is pressing or activating the card.
 
 ⚠️ After activation, the card can follow only one interaction pattern.  
 • Action or navigation: the card triggers an action or destination, behaving as a button or link.
 
 <img src="images/action_card_container@states_pressed_img.png" alt="action_card_container@states_pressed_img" width="433">
+
+<!-- zh-row -->
 
 **`Loading`** Loading indicates that an action triggered by the card is currently being processed. During this state, the card must not accept additional interactions. By default, the card content is hidden by the action/support/loading overlay, and a Progress indicator is displayed.  
 In Figma, designers must set the loading overlay opacity to 100% to fully hide the underlying content.
@@ -246,6 +284,8 @@ In the Loading state, the card must provide sufficient space to display the Prog
 
 <img src="images/action_card_container@states_loading_img.png" alt="action_card_container@states_loading_img" width="433">
 
+<!-- zh-row -->
+
 **`Disabled`** Indicates that the card is temporarily unavailable for interaction.
 
 When a card is disabled, all content within the card must visually reflect the disabled state to maintain a consistent hierarchy and clearly communicate that the entire card is unavailable. Interactive or status elements such as buttons, tags, badges, links, or other components should use their corresponding Disabled state when available. Typography should use the appropriate disabled color tokens, while images and illustrations should use the defined disabled opacity.
@@ -253,6 +293,8 @@ When a card is disabled, all content within the card must visually reflect the d
 The card and its content must not respond to user interaction while disabled.
 
 <img src="images/action_card_container@states_disabled_img.png" alt="action_card_container@states_disabled_img" width="433">
+
+<!-- zh-row -->
 
 **`Skeleton`** Represents the card while its content is not yet available.  
 Use Skeleton when loading the initial content of a card or when multiple cards are loading at the same time, such as when displaying a list, grid, search results, or a page containing several cards.
@@ -290,11 +332,9 @@ Unlike the Loading state, Skeleton represents content that has not yet been load
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.0.0 |
+| Figma | [Action card component](https://r.orange.fr/r/S-ouds-design-action-card) | Live | 1.0.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

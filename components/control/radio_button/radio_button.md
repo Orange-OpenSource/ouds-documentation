@@ -45,6 +45,8 @@ Unlike the radio button, the radio button item accommodates a broader range of c
 
 Typically, a radio button has two main states: Selected and Unselected.
 
+<!-- zh-row -->
+
 **`False`** The radio button is unselected. Used by default or when the user chooses another option in the group.
 
 **`True`** The radio button is selected. Indicates the user's current active choice within the group.
@@ -52,6 +54,8 @@ Typically, a radio button has two main states: Selected and Unselected.
 <img src="images/radio_button@selected_img.png" alt="radio_button@selected_img" width="433">
 
 ## Error
+
+<!-- zh-row -->
 
 **`False`** The field is required but not selected. Example: the "I accept the terms" checkbox is not checked — user action is required.
 
@@ -65,6 +69,8 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** This is the default layout of the component.
 
 **`True`** Outlined radio buttons are designed to stand out and draw the user's attention. They are often used to emphasize significant or impactful options that require careful consideration in the interface.
@@ -73,6 +79,8 @@ Typically, a radio button has two main states: Selected and Unselected.
 
 ## Reverse
 
+<!-- zh-row -->
+
 **`False`** This is the default layout of the component. From left to right, the order of the elements is as follows: radio button / text / icon.
 
 **`True`** As its name suggests, this layout is the reversed mirror of the "Default" template. From left to right, the order of the elements is as follows: icon / text / radio button. This variant is necessary for RTL mode and certain mobile use cases.
@@ -80,6 +88,8 @@ Typically, a radio button has two main states: Selected and Unselected.
 <img src="images/radio_button@reverse_img.png" alt="radio_button@reverse_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Extra label`** It is possible to display or hide strong accompanying text for the main label.
 
@@ -94,6 +104,8 @@ Typically, a radio button has two main states: Selected and Unselected.
 <img src="images/radio_button@other_boolean_options_img.png" alt="radio_button@other_boolean_options_img" width="433">
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -121,6 +133,8 @@ This rule avoids visual redundancy, clarifies that the requirement applies to th
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed 2 lines of text. In its "Text + icon" variant, if the label spans multiple lines, the label remains centred.
 
@@ -147,6 +161,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Technical layout adjustments
 
+<!-- zh-row -->
+
 Even though, in Figma, the component structure is unique (for easier use by designers), technically the versions differ in order to respect best practices for each environment (paradigm shift between the web "Container" vs. the native "Edge-to-Edge"):
 
 &nbsp;
@@ -163,11 +179,15 @@ Its internal padding-inline is therefore replaced by the grid-margin tokens.
 
 <img src="images/radio_button@technical_layout_adjustments_img.png" alt="radio_button@technical_layout_adjustments_img" width="433">
 
+<!-- zh-row -->
+
 For a card-type display (Outlined=True), no adaptation is made; the component structure remains the same between web and native.
 
 <img src="images/radio_button@technical_layout_adjustments_img2.png" alt="radio_button@technical_layout_adjustments_img2" width="433">
 
 ## Rich text
+
+<!-- zh-row -->
 
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong).
@@ -187,6 +207,8 @@ For a card-type display (Outlined=True), no adaptation is made; the component st
 <img src="images/radio_button@specs_layout_spacing_img.png" alt="radio_button@specs_layout_spacing_img" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The default active state where the radio button is functional and selectable. It may show an unselected or selected style, with a label and helper text visible.
 
@@ -229,15 +251,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Radio button component](https://r.orange.fr/r/S-ouds-design-radio-button) | Done | 1.4.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-radio-button) | Done | 1.4.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-radio-button) | Done | 1.4.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-radio-button) | Done | 1.4.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-radio-button) | Done | 1.4.0 |
+| Figma | [Radio button component](https://r.orange.fr/r/S-ouds-design-radio-button) | Live | 1.4.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-radio-button) | Live | 1.4.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-radio-button) | Live | 1.4.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-radio-button) | Live | 1.4.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-radio-button) | Live | 1.4.0 |
 
 ## Design changelog
 

@@ -33,6 +33,8 @@ Badges have seven states depending on the context of the information they repres
 
 ### Not functional
 
+<!-- zh-row -->
+
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
@@ -40,6 +42,8 @@ Badges have seven states depending on the context of the information they repres
 <img src="images/badge_count@status_non_functional_img.png" alt="badge_count@status_non_functional_img" width="433">
 
 ### Functional
+
+<!-- zh-row -->
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -53,6 +57,8 @@ Badges have seven states depending on the context of the information they repres
 
 ## Size
 
+<!-- zh-row -->
+
 **`Medium`** The default size, providing a balance between visibility and space efficiency, suitable for most use cases.
 
 **`Large`** A prominent badge for drawing more attention, often used in dashboards or highlighted sections.
@@ -60,6 +66,8 @@ Badges have seven states depending on the context of the information they repres
 <img src="images/badge_count@size_img.png" alt="badge_count@size_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component doesn't allows multi-line text editing. This is a design recommendation, technically, and for several reasons (responsive behavior, user zoom, etc.), multiline remains possible.
@@ -91,12 +99,16 @@ A badge count should not rely on color alone to convey meaning.
 The number itself is the primary source of information, while color may support it visually.  
 The badge must remain clearly visible with sufficient contrast and readable size, especially for users with low vision or color blindness.
 
+<!-- zh-row -->
+
 ### Status context (badge count + label)
 
 - The numeric value is the main information (e.g. number of messages, notifications, items). Color should only reinforce meaning, not replace it. If multiple colors are used, each must correspond to a clear and consistent meaning
 - In this example, color can represent different states (e.g. info and error), but the meaning remains understandable through the number and context (Extra label).
 
 <img src="images/badge_count@context_of_color_usage_img.png" alt="badge_count@context_of_color_usage_img" width="433">
+
+<!-- zh-row -->
 
 ### Non-status context (badge count only)
 
@@ -114,6 +126,8 @@ The badge must remain clearly visible with sufficient contrast and readable size
 <img src="images/badge_count@spec_layout_spacing.png" alt="badge_count@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (e.g., success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
 
@@ -145,15 +159,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Badge count component](https://r.orange.fr/r/S-ouds-design-badge-count) | Done | 1.2.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-badge-count) | Done | 1.2.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-badge-count) | Done | 1.2.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-badge-count) | Done | 1.2.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-badge-count) | Done | 1.2.0 |
+| Figma | [Badge count component](https://r.orange.fr/r/S-ouds-design-badge-count) | Live | 1.2.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-badge-count) | Live | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-badge-count) | Live | 1.2.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-badge-count) | Live | 1.2.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-badge-count) | Live | 1.2.0 |
 
 ## Design changelog
 

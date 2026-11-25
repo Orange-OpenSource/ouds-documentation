@@ -33,6 +33,8 @@ Badges have seven states depending on the context of the information they repres
 
 ### Not functional
 
+<!-- zh-row -->
+
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
@@ -40,6 +42,8 @@ Badges have seven states depending on the context of the information they repres
 <img src="images/badge_icon@status_non_functional_img.png" alt="badge_icon@status_non_functional_img" width="433">
 
 ### Functional
+
+<!-- zh-row -->
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -53,6 +57,8 @@ Badges have seven states depending on the context of the information they repres
 
 ## Size
 
+<!-- zh-row -->
+
 **`Xsmall`** A compact badge for minimal space usage, ideal for small UI elements like icons or tooltips.
 
 **`Small`** A slightly larger badge that remains subtle but improves readability, often used for inline labels.
@@ -64,6 +70,8 @@ Badges have seven states depending on the context of the information they repres
 <img src="images/badge_icon@size_img.png" alt="badge_icon@size_img" width="433">
 
 ## User zoom and responsiveness
+
+<!-- zh-row -->
 
 ### Max-width vs full-width
 This component have a max-width and a max-height.  
@@ -87,6 +95,8 @@ It is not possible to set this component to use the full available width (of the
 <img src="images/badge_icon@specs_layout_spacing_img.png" alt="badge_icon@specs_layout_spacing_img" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (e.g., success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
 
@@ -120,15 +130,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Badge icon component](https://r.orange.fr/r/S-ouds-design-badge-icon) | Done | 1.3.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-badge-icon) | Done | 1.3.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-badge-icon) | Done | 1.3.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-badge-icon) | Done | 1.3.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-badge-icon) | Done | 1.3.0 |
+| Figma | [Badge icon component](https://r.orange.fr/r/S-ouds-design-badge-icon) | Live | 1.3.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-badge-icon) | Live | 1.3.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-badge-icon) | Live | 1.3.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-badge-icon) | Live | 1.3.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-badge-icon) | Live | 1.3.0 |
 
 ## Design changelog
 

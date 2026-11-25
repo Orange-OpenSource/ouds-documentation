@@ -52,6 +52,8 @@ The quantity input typically combines a numeric text field with increment and de
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
@@ -62,6 +64,8 @@ The quantity input typically combines a numeric text field with increment and de
 <img src="images/quantity_input@outlined_img.png" alt="quantity_input@outlined_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -82,6 +86,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
+<!-- zh-row -->
+
 ### Input status
 
 **`Empty`** The Empty state indicates that the quantity input is blank with no content or placeholder, a neutral starting point.
@@ -94,6 +100,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Actions placement
 
+<!-- zh-row -->
+
 **`Trailing`** It places both the increment and decrement buttons on the right side of the input field, either stacked vertically or positioned side by side. This layout is compact and visually streamlined, making it ideal for dense interfaces or mobile views.
 
 **`Split`** It positions the decrement button to the left of the input and the increment button to the right. It provides a more balanced and intuitive interaction model, especially in use cases like e-commerce where users frequently adjust quantities.
@@ -101,6 +109,8 @@ This option is technically not available for all brand themes. Here's the list o
 <img src="images/quantity_input@actions_placement_img.png" alt="quantity_input@actions_placement_img" width="433">
 
 ## Specific focus state rules
+
+<!-- zh-row -->
 
 ### Keyboard input disabled
 
@@ -113,6 +123,8 @@ In the vast majority of modern UX/UI cases, a quantity input should be editable 
 In this specific context, it is therefore recommended to prefill the input by default.
 
 <img src="images/quantity_input@specific_focus_state_rules_focus_img.png" alt="quantity_input@specific_focus_state_rules_focus_img" width="433">
+
+<!-- zh-row -->
 
 ### Keyboard input + increment/decrement controls enabled
 
@@ -139,6 +151,8 @@ If the value in the field is invalid (empty or non-numeric), clicking + or – m
 
 ## Error
 
+<!-- zh-row -->
+
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
 This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
@@ -151,11 +165,15 @@ If the input is filled, an "error" status is triggered by the entry of a value t
 
 ## Leading icon
 
+<!-- zh-row -->
+
 Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
 
 <img src="images/quantity_input@leading_icon_img.png" alt="quantity_input@leading_icon_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Suffix`** An element placed after the user's input, often used to display a currency or a unit (kg, %, cm…).
 
@@ -164,6 +182,8 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 <img src="images/quantity_input@other_boolean_options_img.png" alt="quantity_input@other_boolean_options_img" width="433">
 
 ## ⚠️ Label (can it be hidden?)
+
+<!-- zh-row -->
 
 Describes the purpose of the input. Why hide a quantity input label?
 
@@ -177,6 +197,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 <img src="images/quantity_input@label_img.png" alt="quantity_input@label_img" width="433">
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -199,6 +221,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## truncated input area
 
+<!-- zh-row -->
+
 **When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:**
 
 * On web, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (right-aligned) and the beginning of the text becomes invisible (masked on the left). There should be no visual truncation indicator (...). This choice is intentional because, for many fields, showing the end often makes it easier to identify the value (file names, paths, emails).
@@ -213,6 +237,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 <img src="images/quantity_input@truncated_input_area_img.png" alt="quantity_input@truncated_input_area_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 
@@ -254,6 +280,8 @@ However, "Text input" components present an exception regarding the loss of text
 
 ## Rich text
 
+<!-- zh-row -->
+
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
 * No other text styles or custom font weights should be used.
@@ -272,6 +300,8 @@ However, "Text input" components present an exception regarding the loss of text
 <img src="images/quantity_input@specs_layout_spacing.png" alt="quantity_input@specs_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -308,11 +338,9 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **EA**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Quantity input component](https://r.orange.fr/r/S-ouds-design-quantity-input) | Done | 1.3.1 |
+| Figma | [Quantity input component](https://r.orange.fr/r/S-ouds-design-quantity-input) | Early Access | 1.3.1 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

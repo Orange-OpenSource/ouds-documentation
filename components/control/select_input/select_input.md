@@ -52,6 +52,8 @@ The select input appears as a dropdown that shows available options. It is used 
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** An input with a subtle background fill and a visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
@@ -64,6 +66,8 @@ This style may be interesting for contexts other than form pages:
 <img src="images/select_input@outlined_img.png" alt="select_input@outlined_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -84,6 +88,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
+<!-- zh-row -->
+
 **`Empty`** The Empty state indicates that the select input is blank with no content or placeholder, a neutral starting point.
 
 **`Filled`** The Filled state shows that the user has entered valid content into the field, replacing any placeholder.
@@ -91,6 +97,8 @@ This option is technically not available for all brand themes. Here's the list o
 <img src="images/select_input@input_status_img.png" alt="select_input@input_status_img" width="433">
 
 ## Error
+
+<!-- zh-row -->
 
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -110,6 +118,8 @@ The error message is not the same element as the helper text, it is independent.
 
 ## Leading icon
 
+<!-- zh-row -->
+
 Helps indicate the purpose of the input.
 
 Only use a leading icon if it adds clear functional or contextual value.
@@ -117,6 +127,8 @@ Only use a leading icon if it adds clear functional or contextual value.
 <img src="images/select_input@leading_icon_img.png" alt="select_input@leading_icon_img" width="433">
 
 ## Label
+
+<!-- zh-row -->
 
 Describes the purpose of the input. Why hide a select input label?  
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.  
@@ -130,6 +142,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## Other boolean options
 
+<!-- zh-row -->
+
 **`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 **`Helper link`** If the helper text is not sufficient (It can also be displayed on its own without helper text), it's possible to offer the user an additional help link (the link can be external or open a modal).
@@ -137,6 +151,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 <img src="images/select_input@other_boolean_options_img.png" alt="select_input@other_boolean_options_img" width="433">
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 1. Display the message "All fields are mandatory." at the top.
@@ -159,6 +175,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## Truncated input area
 
+<!-- zh-row -->
+
 **When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:**
 
 For this component, if the text volume exceeds the visible width of the field, the input area truncates the value on the right with a visual truncation indicator (...).
@@ -171,6 +189,8 @@ For this component, if the text volume exceeds the visible width of the field, t
 <img src="images/select_input@truncated_input_area_img.png" alt="select_input@truncated_input_area_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 
@@ -211,6 +231,8 @@ However, "Text input" components present an exception regarding the loss of text
 
 ## Rich text
 
+<!-- zh-row -->
+
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
 * No other text styles or custom font weights should be used.
@@ -230,6 +252,8 @@ However, "Text input" components present an exception regarding the loss of text
 <img src="images/select_input@specs_layout_spacing.png" alt="select_input@specs_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -268,12 +292,10 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Select input component](https://r.orange.fr/r/S-ouds-design-select-input) | Done | 1.3.1 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-select-input) | Done | 1.2.0 |
+| Figma | [Select input component](https://r.orange.fr/r/S-ouds-design-select-input) | Live | 1.3.1 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-select-input) | Live | 1.2.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

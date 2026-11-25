@@ -38,6 +38,8 @@ The fullscreen dialog layout mirrors the structure and behavior of a standard pa
 
 ## Sticky action
 
+<!-- zh-row -->
+
 **`False`** Actions are positioned directly after the description or content area and move with the content. The action area uses an Auto Layout Hug behavior.
 
 **`True`** Actions remain fixed at the bottom of the modal while the content area can scroll independently. This ensures that primary actions remain continuously visible and accessible, especially when the modal contains a large amount of content.
@@ -54,6 +56,8 @@ In both cases, each component can use either “fill” or “hug” behavior in
 <img src="images/fullscreen_dialog@sticky_action_img.png" alt="fullscreen_dialog@sticky_action_img" width="433">
 
 ## Other boolean options
+
+<!-- zh-row -->
 
 **`Close button`** The Close button allows users to dismiss the modal without completing the primary action.
 
@@ -86,6 +90,8 @@ When no action is required, ensure that the available dismissal mechanism is suf
 <img src="images/fullscreen_dialog@other_boolean_options_img.png" alt="fullscreen_dialog@other_boolean_options_img" width="433">
 
 ## Action number
+
+<!-- zh-row -->
 
 **1 (single action)**  
 A single action button is centered horizontally within the modal on mobile, tablet, and desktop. The action button can use either “fill” (especially on mobile devices) or “hug” behavior in Auto Layout.  
@@ -136,6 +142,8 @@ This ensures that assistive technology users encounter actions in the same logic
 <img src="images/fullscreen_dialog@action_number_img.png" alt="fullscreen_dialog@action_number_img" width="433">
 
 ## Examples of uses
+
+<!-- zh-row -->
 
 **`Negative`** The Negative status is intended for destructive or error-related situations, such as confirming a deletion or communicating a backend or system error.  
 Use it when the outcome may result in data loss, an irreversible action, or when an error requires the user's attention.
@@ -256,12 +264,10 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Fullscreen dialog component](https://r.orange.fr/r/S-ouds-design-fullscreen-dialog) | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-fullscreen-dialog) | Done | 1.0.0 |
+| Figma | [Fullscreen dialog component](https://r.orange.fr/r/S-ouds-design-fullscreen-dialog) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-fullscreen-dialog) | Live | 1.0.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

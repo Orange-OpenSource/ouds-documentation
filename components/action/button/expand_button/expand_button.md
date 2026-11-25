@@ -30,6 +30,8 @@ The expand button minimises visual clutter by displaying only essential informat
 
 ## Appearance
 
+<!-- zh-row -->
+
 **`Default`** Default expand buttons are used for standard interactions where expanding or collapsing content doesn't require strong emphasis. They provide a balanced and neutral look suitable for most layouts.  
 Use case: Expanding FAQ sections or showing additional text in articles.
 
@@ -50,6 +52,8 @@ Use case: Expanding advanced options in a settings menu or filters in a search p
 
 ## Expanded
 
+<!-- zh-row -->
+
 **`False`** The Expanded = false state indicates that the content controlled by the button is currently hidden or collapsed. The button should visually suggest that more information is available (with a downward chevron).  
 Use case: Default state in FAQs, dropdowns, or collapsible panels before the user interacts with them.
 
@@ -60,6 +64,8 @@ Use case: Active state when a user expands details, advanced options, or additio
 
 ## Icon only
 
+<!-- zh-row -->
+
 **`False`** The Icon only = false state displays both a text label and an icon. This version provides greater clarity and is recommended when users may need additional context to understand the button's action.  
 Use case: Expanding or collapsing sections in forms or settings, where descriptive text improves usability.
 
@@ -69,6 +75,8 @@ Use case: Expanding or collapsing filters, toolbars, or mobile panels where spac
 <img src="images/expand_button@icon_only_img.png" alt="expand_button@icon_only_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -91,6 +99,8 @@ This option is technically not available for all brand themes. Here's the list o
 <img src="images/expand_button@rounded_corner_img.png" alt="expand_button@rounded_corner_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
@@ -124,6 +134,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/expand_button@spec_layout_spacing.png" alt="expand_button@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The default state of the Expand button when it is available for interaction.  
 Use case: A collapsed section ready to be expanded by the user.
@@ -171,12 +183,10 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Expand button component](https://r.orange.fr/r/S-ouds-design-expand-button) | Done | 3.3.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-expand-button) | Done | 3.3.0 |
+| Figma | [Expand button component](https://r.orange.fr/r/S-ouds-design-expand-button) | Live | 3.3.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-expand-button) | Live | 3.3.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

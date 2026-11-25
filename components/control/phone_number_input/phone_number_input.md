@@ -48,6 +48,8 @@ The phone number Input includes a country selector, enabling users to choose the
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.
@@ -60,6 +62,8 @@ This style may be interesting for contexts other than form pages:
 <img src="images/phone_number_input@outlined_img.png" alt="phone_number_input@outlined_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -80,6 +84,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
+<!-- zh-row -->
+
 **`Empty`** The Empty state indicates that the phone number input is blank with no content or placeholder, a neutral starting point.
 
 **`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
@@ -93,6 +99,8 @@ This option is technically not available for all brand themes. Here's the list o
 **Don't:** Display placeholder text that could be mistaken for pre-filled user data.
 
 ## Error
+
+<!-- zh-row -->
 
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory). This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it. The input remains editable, encouraging users to revise their input without starting over.
 
@@ -110,6 +118,8 @@ The error message is not the same element as the helper text, it is independent.
 
 ## Leading icon
 
+<!-- zh-row -->
+
 Helps indicate the purpose of the input (magnifying glass for search, envelope for email, phone device for phone number). Only use a leading icon if it adds clear functional or contextual value.
 
 <img src="images/phone_number_input@leading_icon_img.png" alt="phone_number_input@leading_icon_img" width="433">
@@ -124,6 +134,8 @@ Helps indicate the purpose of the input (magnifying glass for search, envelope f
 
 ## Country selector
 
+<!-- zh-row -->
+
 The country selector allows users to choose their country before entering a phone number. It automatically adjusts the international dialing code (+33 for France) and helps format the input accordingly.
 
 <img src="images/phone_number_input@country_selector_img.png" alt="phone_number_input@country_selector_img" width="433">
@@ -137,6 +149,8 @@ The country selector allows users to choose their country before entering a phon
 **Don't:** Clear the phone number field when users switch countries, forcing re-entry.
 
 ## Label
+
+<!-- zh-row -->
 
 Describes the purpose of the input. Why hide a phone number input label?
 
@@ -154,6 +168,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## Other boolean options
 
+<!-- zh-row -->
+
 **`Dial code`** Displaying the dial code (+XX) as a prefix helps users understand the expected phone number format and reinforces the international nature of the input.
 
 **`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
@@ -169,6 +185,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 **Don't:** Use long and multiline helper text
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 * Display the message "All fields are mandatory." at the top.
@@ -195,6 +213,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## Truncated input area
 
+<!-- zh-row -->
+
 **When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:**
 
 * On web, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (right-aligned) and the beginning of the text becomes invisible (masked on the left). There should be no visual truncation indicator (...). This choice is intentional because, for many fields, showing the end often makes it easier to identify the value (file names, paths, emails).
@@ -209,6 +229,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 <img src="images/phone_number_input@truncated_input_area_img.png" alt="phone_number_input@truncated_input_area_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 
@@ -249,6 +271,8 @@ However, "Text input" components present an exception regarding the loss of text
 
 ## Rich text
 
+<!-- zh-row -->
+
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong and Label/Large/Strong) depending on the selected text style.
 * No other text styles or custom font weights should be used.
@@ -267,6 +291,8 @@ However, "Text input" components present an exception regarding the loss of text
 <img src="images/phone_number_input@specs_layout_spacing.png" alt="phone_number_input@specs_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -303,15 +329,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Phone number input component](https://r.orange.fr/r/S-ouds-design-phone-number-input) | Done | 1.3.1 |
+| Figma | [Phone number input component](https://r.orange.fr/r/S-ouds-design-phone-number-input) | Live | 1.3.1 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-phone-number-input) | Done | 1.3.1 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-phone-number-input) | Live | 1.3.1 |
 
 ## Design changelog
 

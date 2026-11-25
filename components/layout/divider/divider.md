@@ -28,6 +28,8 @@ The divider enhances readability and organises content without creating a strong
 
 ## Orientation
 
+<!-- zh-row -->
+
 **`Horizontal`** Separates stacked vertical sections. Example use case: Between main content and a footer.
 
 **`Vertical`** Separates horizontally aligned elements. Example use case: Between two columns in a layout.
@@ -35,6 +37,8 @@ The divider enhances readability and organises content without creating a strong
 <img src="images/divider@orientation_img.png" alt="divider@orientation_img" width="433">
 
 ## Authorized colors
+
+<!-- zh-row -->
 
 • color-border-default  
 • color-border-muted  
@@ -97,15 +101,13 @@ If the divider is part of an interactive component (e.g., dropdown menu, accordi
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Divider component](https://r.orange.fr/r/S-ouds-design-divider) | Done | 1.0.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-divider) | Done | 1.0.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-divider) | Done | 1.0.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-divider) | Done | 1.0.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-divider) | Done | 1.0.0 |
+| Figma | [Divider component](https://r.orange.fr/r/S-ouds-design-divider) | Live | 1.0.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-divider) | Live | 1.0.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-divider) | Live | 1.0.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-divider) | Live | 1.0.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-divider) | Live | 1.0.0 |
 
 ## Design changelog
 

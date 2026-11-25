@@ -30,6 +30,8 @@ The button comes in various layouts, styles, and states to convey hierarchy or e
 
 ## Appearance
 
+<!-- zh-row -->
+
 **`Default`** Default buttons are used for actions which are not mandatory or essential for the user. Often screens will include multiple Outline buttons alongside one of the Full button.
 
 **`Strong`** The Strong button on the page should be singular and prominent, ideally limited to one per view. It should be reserved for the most critical action, such as "Buy," "Save," "Submit," etc.
@@ -45,6 +47,8 @@ To be used sparingly for high-value specific actions or to visually anchor a bra
 
 ## Layouts
 
+<!-- zh-row -->
+
 **`Text only`** This is the default layout of the component.
 
 **`Text + icon`** This option includes functionality to choose any Solaris icon.  
@@ -56,6 +60,8 @@ Its use must be restricted and remain specific to certain clearly identified con
 
 ## Sizes
 
+<!-- zh-row -->
+
 **`Default`** This is the default size of the component. This size is used for the vast majority of applications.
 
 **`Small`** This size can be particularly useful in an information-dense interface or in the construction of a template or component requiring the use of small elements (in an "List item" component, for example).
@@ -63,6 +69,8 @@ Its use must be restricted and remain specific to certain clearly identified con
 <img src="images/button@sizes_img.png" alt="button@sizes_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -86,6 +94,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Specific component: On colored bg
 
+<!-- zh-row -->
+
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
 &nbsp;
@@ -97,6 +107,8 @@ This variant ensures a sufficiently high level of accessibility when the compone
 <img src="images/button@on_colored_bg_img.png" alt="button@on_colored_bg_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
@@ -130,6 +142,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/button@spec_layout_spacing.png" alt="button@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The status of the button before a user has interacted with it, or other content affects it.
 
@@ -221,15 +235,13 @@ When a button’s label is unique and self-explanatory, additional descriptors m
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Button component](https://r.orange.fr/r/S-ouds-design-button) | Done | 3.4.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-button) | Done | 3.4.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-button) | Done | 3.4.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-button) | Done | 3.4.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-button) | Done | 3.4.0 |
+| Figma | [Button component](https://r.orange.fr/r/S-ouds-design-button) | Live | 3.4.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-button) | Live | 3.4.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-button) | Live | 3.4.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-button) | Live | 3.4.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-button) | Live | 3.4.0 |
 
 ## Design changelog
 

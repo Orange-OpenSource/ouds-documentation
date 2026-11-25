@@ -30,6 +30,8 @@ The link’s main function is navigation, and it visually and semantically conve
 
 ## Layouts
 
+<!-- zh-row -->
+
 **`Next`** Used in a standard navigation context. Positioned after the label, it features a "chevron right" icon, which is not customizable.
 
 **`Previous`** Used for "backward" navigation. Positioned before the label, it features a "chevron left" icon, which is not customizable.
@@ -49,6 +51,8 @@ Used for navigation or actions within the same page.
 
 ## Sizes
 
+<!-- zh-row -->
+
 **`Default`** This is the default size of the component.  
 This size is used for the vast majority of applications.
 
@@ -57,6 +61,8 @@ This size is used for the vast majority of applications.
 <img src="images/link@size_img.png" alt="link@size_img" width="433">
 
 ## Density
+
+<!-- zh-row -->
 
 **`Default`** This is the default density of the component, recommended for most interfaces and primary navigation contexts.  
 This density wich is used for the vast majority of applications, provides a comfortable touch target that meets accessibility recommendations.
@@ -67,6 +73,8 @@ Use in dense layouts where space is limited and a smaller touch target is accept
 <img src="images/link@density_img.png" alt="link@density_img" width="433">
 
 ## Specific component: On colored bg
+
+<!-- zh-row -->
 
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
@@ -79,6 +87,8 @@ This variant ensures a sufficiently high level of accessibility when the compone
 <img src="images/link@on_colored_bg_img.png" alt="link@on_colored_bg_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. In standalone use, although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
@@ -115,6 +125,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/link@spec_layout_spacing.png" alt="link@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The status of the link before a user has interacted with it, or other content affects it.  
 Depending on the layout, the underline may or may not appear in this state.  
@@ -164,15 +176,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 2.4.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-link) | Done | 2.3.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-link) | Done | 2.4.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-link) | Done | 2.3.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-link) | Done | 2.4.0 |
+| Figma | [Link component](https://r.orange.fr/r/S-ouds-design-link) | Live | 2.4.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-link) | Live | 2.3.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-link) | Live | 2.4.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-link) | Live | 2.3.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-link) | Live | 2.4.0 |
 
 ## Design changelog
 

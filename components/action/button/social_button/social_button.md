@@ -32,6 +32,8 @@ Depending on the interaction, the social button can semantically behave as eithe
 
 ## Appearance
 
+<!-- zh-row -->
+
 **`Strong`** Used for primary or high-visibility actions. It uses bold styling and solid backgrounds, making the button stand out. Suitable for prominent placements where social interaction (sharing or following) is a key part of the user flow.
 
 **`Minimal`** Offers a more subtle appearance with lighter backgrounds or outlines. Intended for secondary or less intrusive placements. Works well in footers, cards, or alongside other actions where a social button is not the primary action.
@@ -40,6 +42,8 @@ Depending on the interaction, the social button can semantically behave as eithe
 
 ## Size
 
+<!-- zh-row -->
+
 **`Default`** Use Default in most situations. It provides the standard button size and interaction area.
 
 **`Small`** Use Small when space is limited or when the button needs to appear with less visual emphasis. Avoid using the Small size when it would reduce the required touch target.
@@ -47,6 +51,8 @@ Depending on the interaction, the social button can semantically behave as eithe
 <img src="images/social_button@size_img.png" alt="social_button@size_img" width="433">
 
 ## Social network
+
+<!-- zh-row -->
 
 **`Discord`** Links to or opens a Discord server or direct message for community-oriented sharing. Common in gaming or community-focused interfaces.
 
@@ -82,6 +88,8 @@ For any other social networks not yet in the list please fill in a [Component Ev
 
 ## Responsiveness and user zoom
 
+<!-- zh-row -->
+
 ### Responsiveness
 The Social button is an icon-only component and does not support multiline content. Its width and height remain proportional to preserve the button shape and the correct alignment of the social network icon. The component should not stretch to fill the available width. When several Social buttons are displayed together, the surrounding layout should allow them to wrap onto another line when there is not enough horizontal space, rather than reducing or compressing their size.
 
@@ -102,6 +110,8 @@ The Social button is an icon-only component and does not support multiline conte
 <img src="images/social_button@spec_layout_spacing.png" alt="social_button@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The default interactive state. The button is available and ready to be activated.
 

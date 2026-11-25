@@ -44,6 +44,8 @@ Using a badge without icons may require additional context, such as a label or d
 
 ### Not functional
 
+<!-- zh-row -->
+
 **`Neutral`** Used for general labels without specific emphasis.
 
 **`Accent`** Employed to highlight discovery or exploration-related content.
@@ -51,6 +53,8 @@ Using a badge without icons may require additional context, such as a label or d
 <img src="images/badge@status_non_functional_img.png" alt="badge@status_non_functional_img" width="433">
 
 ### Functional
+
+<!-- zh-row -->
 
 **`Positive`** Indicates success, completion, or approval.
 
@@ -64,6 +68,8 @@ Using a badge without icons may require additional context, such as a label or d
 
 ## Size
 
+<!-- zh-row -->
+
 **`Xsmall`** A compact badge for minimal space usage, ideal for small UI elements like icons or tooltips.
 
 **`Small`** A slightly larger badge that remains subtle but improves readability, often used for inline labels.
@@ -75,6 +81,8 @@ Using a badge without icons may require additional context, such as a label or d
 <img src="images/badge@size_img.png" alt="badge@size_img" width="433">
 
 ## Badge without icon user zoom and responsiveness
+
+<!-- zh-row -->
 
 ### Max-width vs full-width
 This component have a max-width.  
@@ -98,12 +106,16 @@ It is not possible to set this component to use the full available width (of the
 A color-only badge should not be used as the only way to show functional information.  
 It needs to be clearly visible on its background, with enough contrast and a readable size, especially for people with low vision or color blindness.
 
+<!-- zh-row -->
+
 ### Status context (badge + label)
 
 - Color alone doesn't explain meaning. It can support the interface visually, but it shouldn't be the only way to show a status or state. If multiple badge colors are used within the same interface, each color must have an accessible equivalent (e.g. visible text).
 - In this example, the badge is used together with an Extra label that clearly conveys the status (positive and negative). The badge only reinforces this meaning visually, allowing multiple statuses to coexist within the same interface.
 
 <img src="images/badge@context_of_color_usage_img.png" alt="badge@context_of_color_usage_img" width="433">
+
+<!-- zh-row -->
 
 ### Non-status context (badge only)
 
@@ -121,6 +133,8 @@ It needs to be clearly visible on its background, with enough contrast and a rea
 <img src="images/badge@spec_layout_spacing.png" alt="badge@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The active state of a badge. Includes all possible visual statuses that represent the current state of the system or element (e.g., success, warning, error, information, etc.). Used when the badge should attract attention and convey meaningful information.
 
@@ -153,15 +167,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Badge component](https://r.orange.fr/r/S-ouds-design-badge) | Done | 1.2.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-badge) | Done | 1.2.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-badge) | Done | 1.2.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-badge) | Done | 1.2.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-badge) | Done | 1.2.0 |
+| Figma | [Badge component](https://r.orange.fr/r/S-ouds-design-badge) | Live | 1.2.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-badge) | Live | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-badge) | Live | 1.2.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-badge) | Live | 1.2.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-badge) | Live | 1.2.0 |
 
 ## Design changelog
 

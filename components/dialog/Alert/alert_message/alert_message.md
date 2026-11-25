@@ -33,6 +33,8 @@ The alert message features a functional icon and a semantic colour, and may also
 
 ## Layout
 
+<!-- zh-row -->
+
 Alerts can be displayed with or without an action.  
 The placement of the action depends on the amount of content and the available screen space.  
 For action elements, we use the Link component with the "Text only" layout. This approach maintains visual consistency and aligns with our design system guidelines.
@@ -56,6 +58,8 @@ For action elements, we use the Link component with the "Text only" layout. This
 ### Non-functional
 Non-functional alerts are informational or decorative. They provide context or highlight content without implying a specific state, system event, or user action. These alerts are not tied to UX patterns such as success, error, or warning, and may use contextual or brand-related icons to enhance recognition or storytelling.
 
+<!-- zh-row -->
+
 **`Neutral`** Used as a generic informative alert without semantic meaning or colour association.  
 Suitable for a wide range of contexts – such as tips, general information, or descriptive labels – where no specific feedback or urgency is required.  
 Appropriate for help sections, dashboards, or onboarding flows.
@@ -72,6 +76,8 @@ Each variant conveys a clear semantic meaning – such as success, warning, or e
 Other icons should not be substituted, as the semantic pairing between icon, colour, and message is essential for recognition and consistency.
 
 Use functional alerts to inform users about state changes, confirmations, or issues that are directly connected to system logic or user actions. These messages carry functional meaning and help guide user response or acknowledgment.
+
+<!-- zh-row -->
 
 **`Negative`** Communicates a critical issue or error that prevents the user from proceeding until it is resolved.  
 These alerts remain visible until the problem is fixed or dismissed by the user.
@@ -90,6 +96,8 @@ Warnings encourage awareness but typically do not block actions.
 ## Rounded corner
 
 Even though in Figma this rendering option is available and editable from the properties of each alert component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one alert component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
+
+<!-- zh-row -->
 
 **`False`** The square rendering corresponds to Orange's historical style. It conveys the brand's sense of seriousness, robustness and utility-driven. It remains the default style for our digital interface components.
 
@@ -111,6 +119,8 @@ This option is technically not available for all brand themes. Here's the list o
 The close (dismiss) button controls whether a user can remove the alert message from view.  
 Depending on the purpose of the alert, it may either be dismissible (True) or persistent (False).  
 Some alerts must remain visible to ensure users are aware of important information; others can be closed to reduce visual clutter.
+
+<!-- zh-row -->
 
 **`False`** The alert does not include a close button, and therefore remains visible until the context changes (e.g., the issue is resolved, the page is refreshed, or the user completes a related task).  
 Example:  
@@ -136,6 +146,8 @@ Icons help communicate context and tone but are optional for Non-functional aler
 Functional alerts (Negative, Positive, Info, Warning) must always include a dedicated functional icon that reflects their semantic meaning.  
 This ensures clarity, accessibility, and consistency across all user interfaces.
 
+<!-- zh-row -->
+
 **`False`** Used when the alert should appear without an icon.  
 Recommended for minimalist layouts or when the message content is already self-explanatory.  
 Works well in neutral contexts where no additional visual cue is required.
@@ -155,6 +167,8 @@ Description is the optional supplementary text in an Alert Message. Use only whe
 * Use plain language consistent with Orange's tone: friendly, clear, service-oriented. Avoid jargon or complex sentences. The US Web Design System emphasises "concise, human-readable language; avoid jargon and computer code." [U.S. Web Design System (USWDS)](https://designsystem.digital.gov/components/alert/?utm_source=chatgpt.com)
 * Provide next-step guidance if the alert requires user action: e.g., "Try again", "Check your settings", "Contact support". If no action is required, the body text can simply explain the state.
 
+<!-- zh-row -->
+
 **`False`** Label alone conveys message cleary  
 Example: "Payment successful."
 
@@ -163,6 +177,8 @@ Example: "Payment successful."
 <img src="images/alert_message@description_img.png" alt="alert_message@description_img" width="433">
 
 ## Bullet list
+
+<!-- zh-row -->
 
 Some alerts may include a bulleted list to present multiple related points or actions clearly, rather than a single sentence or paragraph.  
 This boolean option (True / False) controls whether the list is shown.
@@ -193,6 +209,8 @@ Each bullet should be short and written as a clear phrase or fragment – avoid 
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### Multiline
 This component allows multi-line text editing. The number of lines is not limited.
 
@@ -219,6 +237,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Rich text
 
+<!-- zh-row -->
+
 ### Strong text
 * Strong text can be used sparingly within alert messages to highlight key information. Rich text must use the **Label/Medium/Strong** token only.
 * No other text styles or custom font weights should be used.
@@ -238,6 +258,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/alert_message@spec_layout_spacing_img.png" alt="alert_message@spec_layout_spacing_img" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The normal interactive/display state of the Alert Message component, when actual content (message text, optional icon or action) is present, and the component is fully styled and active.
 
@@ -300,15 +322,13 @@ Alerts must not take focus unless the user must resolve them before proceeding.
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Alert message component](https://r.orange.fr/r/S-ouds-design-alert-message) | Done | 1.2.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-alert-message) | Done | 1.2.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-alert-message) | Done | 1.2.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-alert-message) | Done | 1.2.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-alert-message) | Done | 1.2.0 |
+| Figma | [Alert message component](https://r.orange.fr/r/S-ouds-design-alert-message) | Live | 1.2.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-alert-message) | Live | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-alert-message) | Live | 1.2.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-alert-message) | Live | 1.2.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-alert-message) | Live | 1.2.0 |
 
 ## Design changelog
 

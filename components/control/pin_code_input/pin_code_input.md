@@ -44,6 +44,8 @@ The PIN code input is displayed as a series of individual fields or boxes, each 
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field.  
@@ -55,6 +57,8 @@ This style may be interesting for contexts other than form pages:
 <img src="images/pin_code_input@outlined_img.png" alt="pin_code_input@outlined_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -75,6 +79,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Error
 
+<!-- zh-row -->
+
 The Error status indicates that the user input does not meet validation rules or expected formatting. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
 This state helps users quickly identify and correct mistakes by explaining what went wrong and, when possible, how to fix it.  
@@ -88,17 +94,23 @@ The error state must be triggered by an explicit validation (submission, API res
 
 ## Other boolean options
 
+<!-- zh-row -->
+
 **`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
 
 <img src="images/pin_code_input@other_boolean_options_img.png" alt="pin_code_input@other_boolean_options_img" width="433">
 
 ## Mandatory field indication
 
+<!-- zh-row -->
+
 If there is only one field in the form, or if the mandatory nature is obvious (such as login/password), no mention is necessary since the fields are essential to the form's functionality.
 
 <img src="images/pin_code_input@mandatory_field_indication_img.png" alt="pin_code_input@mandatory_field_indication_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 
@@ -126,6 +138,8 @@ However, "Text input" components present an exception regarding the loss of text
 <img src="images/pin_code_input@multiline_and_responsiveness_img.png" alt="pin_code_input@multiline_and_responsiveness_img" width="433">
 
 ## Rich text
+
+<!-- zh-row -->
 
 ### Strong text
 * Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Medium/Strong) depending on the selected text style.
@@ -163,15 +177,13 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [PIN code input component](https://r.orange.fr/r/S-ouds-design-pin-code-input) | Done | 1.4.0 |
+| Figma | [PIN code input component](https://r.orange.fr/r/S-ouds-design-pin-code-input) | Live | 1.4.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-pin-code-input) | Done | 1.3.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-pin-code-input) | Done | 1.4.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-pin-code-input) | Done | 1.4.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-pin-code-input) | Live | 1.3.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-pin-code-input) | Live | 1.4.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-pin-code-input) | Live | 1.4.0 |
 
 ## Design changelog
 

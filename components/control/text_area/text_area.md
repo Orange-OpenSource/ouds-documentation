@@ -50,6 +50,8 @@ The text area includes a visible label, placeholder text, character limits, and 
 
 ## Outlined
 
+<!-- zh-row -->
+
 **`False`** An input with a subtle background fill and un visible bottom border, creating a softer and more contained look. Best suited for dense layouts or to enhance visibility.
 
 **`True`** A minimalist input with a transparent background and a visible stroke outlining the field. This style may be interesting for contexts other than form pages:
@@ -60,6 +62,8 @@ The text area includes a visible label, placeholder text, character limits, and 
 <img src="images/text_area@outlined_img.png" alt="text_area@outlined_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each input component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one input component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -80,6 +84,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Input status
 
+<!-- zh-row -->
+
 **`Empty`** The Empty state indicates that the text area is blank with no content or placeholder, a neutral starting point.
 
 **`Empty (Placeholder)`** The Empty with Placeholder state provides a hint or guidance inside the field to suggest expected input.
@@ -89,6 +95,8 @@ This option is technically not available for all brand themes. Here's the list o
 <img src="images/text_area@input_status_img.png" alt="text_area@input_status_img" width="433">
 
 ## Error
+
+<!-- zh-row -->
 
 The Error status indicates that the user input does not meet validation rules, for example, in this specific case, if the number of characters entered by the user exceeds the allowed limit. It provides immediate visual feedback, typically through a red border, error icon, and a clear, accessible error message positioned below the input (mandatory).
 
@@ -104,6 +112,8 @@ This state helps users quickly identify and correct mistakes by explaining what 
 
 ## Other boolean options
 
+<!-- zh-row -->
+
 **`Scrolled`** Represents the state in which the field contains more text than its visible height can display and that internal scrolling is available. This allows users to navigate through the overflowing text without expanding the text area beyond **the maximum planned height of 240px, allowing the display of about 10 lines of text**. It is particularly useful when preserving space is important, or when the text area is embedded within a fixed-height container.
 
 **`Helper text`** Supporting text conveys additional information about the input field, such as how it will be used. It should ideally only take up a single line, though may wrap to multiple lines if required, and be either persistently visible or visible only on focus.
@@ -115,6 +125,8 @@ This state helps users quickly identify and correct mistakes by explaining what 
 <img src="images/text_area@other_boolean_options_img.png" alt="text_area@other_boolean_options_img" width="433">
 
 ## Character counter
+
+<!-- zh-row -->
 
 • **Character limit not exceeded**  
 The character counter, located in the helper text area, displays in real time (with each keystroke) the number of characters the user can still enter before reaching the field's allowed limit.
@@ -139,6 +151,8 @@ In the case where the maximum number of characters is 180, for example: When the
 **Don't:** Truncate or delete user content automatically when limits are exceeded
 
 ## Behavior by entered line count
+
+<!-- zh-row -->
 
 • **Default display**  
 By default, the height of **the input text container is set to 72px, which allows 3 lines of text** to be displayed without expanding the component. This height helps distinguish the field from other text inputs, prevents discouraging users with an overly large field, and keeps the layout compact at the start of a form.
@@ -167,6 +181,8 @@ On both web mobile/tablet and natif iOS/Android (touch use), manual resizing is 
 
 ## ⚠️ Label (can it be hidden?)
 
+<!-- zh-row -->
+
 Describes the purpose of the input. Why hide a text area label?
 
 In some UI contexts, especially when space is limited or when the input is part of a compact layout (search bars, filters, inline forms), visually hiding the label can help maintain a clean and uncluttered interface.
@@ -184,6 +200,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 **Don't:** Use vague labels and long sentences, with punctuation at the end
 
 ## Mandatory field indication
+
+<!-- zh-row -->
 
 **If all fields are mandatory (several fields present):**
 
@@ -207,6 +225,8 @@ Hiding a label is a design choice that must balance visual simplicity and clarit
 
 ## Truncated input area
 
+<!-- zh-row -->
+
 When losing focus, the truncation behavior of the input area differs depending on the technical environment. It's important to respect the native behaviors designed to handle truncation:
 
 • **On web**, by default (even if the project retains control over this setting), if the text volume exceeds the visible width of the field, the input displays the end of the text (bottom-aligned) and the beginning of the text becomes invisible (masked on the top). There should be no visual truncation indicator (...). This choice is intentional because, for many fields, showing the end often makes it easier to identify the value (file names, paths, emails).
@@ -222,6 +242,8 @@ When losing focus, the truncation behavior of the input area differs depending o
 <img src="images/text_area@truncated_input_area_img.png" alt="text_area@truncated_input_area_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 • **Multiline**  
 This component allows multi-line text editing. Further details are available in the "Behavior by entered line count" section.
@@ -247,6 +269,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 
 ## Rich text
 
+<!-- zh-row -->
+
 • **Strong text**  
 Strong text can be used sparingly to highlight key information within the content. Text is allowed using the corresponding "Strong" token (e.g. Label/Large/Strong or Label/Medium/Strong) depending on the selected text style. No other text styles or custom font weights should be used.
 
@@ -262,6 +286,8 @@ Underlined text must not be applied manually (e.g. in helper text), as it is com
 <img src="images/text_area@specs_layout_spacing.png" alt="text_area@specs_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Neutral appearance, whether empty or filled. It allows users to click, focus, and type freely without restrictions.
 
@@ -302,14 +328,12 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Text area component](https://r.orange.fr/r/S-ouds-design-text-area) | Done | 1.2.1 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-text-area) | Done | 1.2.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-text-area) | Done | 1.2.1 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-text-area) | Done | 1.2.1 |
+| Figma | [Text area component](https://r.orange.fr/r/S-ouds-design-text-area) | Live | 1.2.1 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-text-area) | Live | 1.2.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-text-area) | Live | 1.2.1 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-text-area) | Live | 1.2.1 |
 | OUDS Flutter | Not available yet | To do | – |
 
 ## Design changelog

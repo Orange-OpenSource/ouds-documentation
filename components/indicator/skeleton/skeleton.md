@@ -28,6 +28,8 @@ The skeleton enhances user experience by temporarily replacing content with gray
 
 ## Boolean options
 
+<!-- zh-row -->
+
 **`Security margin`** Depending on the position of components in the Skeleton screen template, two variants are possible:  
 • If a margin (spacing) is present between two or more components, apply the version "Security margin=False" to the affected components.  
 • If no spacing is present between two or more components, apply the version "Security margin=True" to the affected components.
@@ -120,15 +122,13 @@ c
 
 ## Availability
 
-Design status: **LIVE**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Skeleton component](https://r.orange.fr/r/S-ouds-design-skeleton) | Done | 1.1.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-skeleton) | Done | 1.0.0 |
-| OUDS Android - Jetpack Compose | Not available yet | Done | 1.1.0 |
-| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-skeleton) | Done | 1.1.0 |
-| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-skeleton) | Done | 1.0.0 |
+| Figma | [Skeleton component](https://r.orange.fr/r/S-ouds-design-skeleton) | Live | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-skeleton) | Live | 1.0.0 |
+| OUDS Android - Jetpack Compose | Not available yet | Live | 1.1.0 |
+| OUDS iOS - Swift | [iOS dev documentation](https://r.orange.fr/r/S-ouds-ios-skeleton) | Live | 1.1.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-skeleton) | Live | 1.0.0 |
 
 ## Design changelog
 

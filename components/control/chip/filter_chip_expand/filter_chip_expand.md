@@ -31,6 +31,8 @@ The filter chip expand feature is displayed through a dropdown with selectable v
 
 ## Selection Status
 
+<!-- zh-row -->
+
 **`Selected`** Visually differentiated to show an active filter. The chip changes color and displays a tick and counter to indicate it has been selected.
 
 **`Unselected`** Maintains a neutral appearance, indicating an available filter option.
@@ -55,6 +57,8 @@ A “0” or empty counter adds unnecessary visual noise.
 
 ## Expanded
 
+<!-- zh-row -->
+
 The "Expanded" state allows the filter chip to be dynamically edited via a dropdown component.
 
 **`True`** When a Filter chip is in the "Expanded" state, it:
@@ -68,6 +72,8 @@ The component can remain in the "Expanded" state until a user action (click or k
 <img src="images/expanded_filter_chip@expanded_img.png" alt="expanded_filter_chip@expanded_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 Depending on the use case, permissions for editing multi-line text vary:
@@ -103,6 +109,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/expanded_filter_chip@spec_layout_spacing.png" alt="expanded_filter_chip@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The chip is active and available for interaction.  
 It is displayed in its standard style without additional effects.

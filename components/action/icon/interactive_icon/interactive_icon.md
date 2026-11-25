@@ -32,6 +32,8 @@ The interactive icon can be used alone or within other components. It works well
 
 ## Interactive icon vs Button (icon only)
 
+<!-- zh-row -->
+
 **Although both components provide an icon-based interaction, they serve different purposes and should be selected according to the desired visual emphasis and layout constraints.**
 
 A Button (icon only) includes a dedicated interactive container that can display a visible background, either in its default state or during state transitions such as hover, pressed, or selected. This additional visual layer reinforces the affordance of the component and makes it suitable for primary or clearly identifiable actions.
@@ -46,6 +48,8 @@ This flexibility allows an Interactive icon to be positioned closer to text or a
 
 ## Multiline and responsiveness
 
+<!-- zh-row -->
+
 ### User zoom in/out
 The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom (the icons follow the same rules as the text).  
 In order to preserve the minimum interactive area during user zoom out, this component has a min-width and a min-height **of 28px**.
@@ -59,6 +63,8 @@ In order to preserve the minimum interactive area during user zoom out, this com
 <img src="images/interactive_icon@spec_layout_spacing.png" alt="interactive_icon@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The status of the icon before a user has interacted with it, or other content affects it.
 
@@ -102,12 +108,10 @@ Work is in progress to deliver this content.
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Interactive icon component](https://r.orange.fr/r/S-ouds-design-interactive-icon) | Done | 1.1.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-interactive-icon) | Done | 1.1.0 |
+| Figma | [Interactive icon component](https://r.orange.fr/r/S-ouds-design-interactive-icon) | Live | 1.1.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-interactive-icon) | Live | 1.1.0 |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |
 | OUDS Flutter | Not available yet | To do | – |

@@ -32,6 +32,8 @@ The status icon offers quick, at-a-glance feedback using standardised colors and
 ⚠️ Note:  
 Icons must never be replaced or customized. Each type has a dedicated, standardized icon that expresses its meaning clearly.
 
+<!-- zh-row -->
+
 **`Positive`** Confirms that an action was completed successfully.  
 Uses a green color and the standard success icon.
 
@@ -47,6 +49,8 @@ Uses red color and must include the standardized error icon.
 
 ## Animated
 
+<!-- zh-row -->
+
 **`True`** The Status Icon includes a subtle animation to reinforce the status change or draw attention to the state. The animation remains minimal and purposeful, supporting clarity without distraction.
 
 **`False`** The Status Icon is displayed in a static state, without motion. It provides immediate visual feedback using color and symbol only.
@@ -54,6 +58,8 @@ Uses red color and must include the standardized error icon.
 <img src="images/status_icon@animated_img.gif" alt="status_icon@animated_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### User zoom in/out
 The component's height and width must be flexible, never fixed, in order to automatically adapt its dimensions according to the level of zoom (the icons follow the same rules as the text).  
@@ -129,11 +135,9 @@ testing image formats
 
 ## Availability
 
-Design status: **EA**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Status icon component](https://r.orange.fr/r/S-ouds-design-status-icon) | Done | 1.0.0 |
+| Figma | [Status icon component](https://r.orange.fr/r/S-ouds-design-status-icon) | Early Access | 1.0.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

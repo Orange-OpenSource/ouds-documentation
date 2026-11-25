@@ -31,17 +31,25 @@ The card's content is customizable, allowing you to adapt the internal layout wi
 
 ## Style
 
+<!-- zh-row -->
+
 **`Filled`** Filled cards use a background surface to visually separate their content from the surrounding interface. By default, the card is displayed on a bg/primary background. To display the card on another supported background surface, designers should use the appropriate parent container rather than manually overriding the component's predefined visual properties. Unlike the Action card, the Card component is not interactive. Its background does not provide interaction feedback for the card itself. Any interactive elements within the slot retain their own independent interaction states.
 
 <img src="images/content_card_container@style_filled_img.png" alt="content_card_container@style_filled_img" width="433">
+
+<!-- zh-row -->
 
 **`Outlined`** Outlined cards define their boundaries with a border instead of a background fill. The container remains transparent, allowing the surrounding surface to show through.
 
 <img src="images/content_card_container@style_outlined_img.png" alt="content_card_container@style_outlined_img" width="433">
 
+<!-- zh-row -->
+
 **`Elevated`** Elevated cards create visual separation through a predefined shadow, giving the card a raised appearance. The background context is defined by the surrounding surface, while the card retains its own predefined elevation and visual support layers. The Card component remains non-interactive, regardless of its visual treatment.
 
 <img src="images/content_card_container@style_elevated_img.png" alt="content_card_container@style_elevated_img" width="433">
+
+<!-- zh-row -->
 
 ### Inverse background
 Inverse backgrounds introduce a different color context within the interface. Text, icons, and interactive elements must adapt to the appropriate light or dark theme to maintain readability and contrast.
@@ -51,6 +59,8 @@ Inverse backgrounds introduce a different color context within the interface. Te
 ⚠️ Only the predefined stroke, divider, and background colors specified for this component may be used. Custom colors are not allowed.
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Although this property can be edited on individual components in Figma, the corner treatment is defined consistently at product or service level by the selected brand theme. Do not mix rounded and square treatments within the same product or service.
 
@@ -71,6 +81,8 @@ Here’s the list of rounded corners availability by brand theme
 <img src="images/content_card_container@rounded_corner_img.png" alt="content_card_container@rounded_corner_img" width="433">
 
 ## Background
+
+<!-- zh-row -->
 
 The Background Boolean property controls the visibility of the predefined color/action/support/enabled layer within the Card component. This property is available for the Filled and Elevated styles when State = Enabled.
 
@@ -98,6 +110,8 @@ For other styles:
 
 ## Divider
 
+<!-- zh-row -->
+
 The Divider property is available only for the Filled style. It adds a subtle line along the bottom edge of the card, following the visual conventions of the Card Item component. Its color is defined by the design system and must not be modified manually.
 
 **`True`** Displays the bottom divider. The divider adds a subtle separation along the bottom edge of a Filled card.
@@ -107,6 +121,8 @@ The Divider property is available only for the Filled style. It adds a subtle li
 <img src="images/content_card_container@divider_img.png" alt="content_card_container@divider_img" width="433">
 
 ## Slot spacing
+
+<!-- zh-row -->
 
 The slot allows designers to customize the content and layout inside the card, including its text, imagery, and independent actions.  
 Internal padding and spacing can be adjusted using two types of spacing tokens.
@@ -121,6 +137,8 @@ When using nested components, their predefined internal spacing and corner-radiu
 <img src="images/content_card_container@slot_spacing_img.png" alt="content_card_container@slot_spacing_img" width="433">
 
 ## Role
+
+<!-- zh-row -->
 
 The Card component is a non-interactive surface that can include multiple independent interactive elements within its slot.  
 Each interactive element must have its own semantic role according to the action it performs.
@@ -156,6 +174,8 @@ Never nest links or buttons inside the primary card link/button; each independen
 
 The Card is a non-interactive container that can display static content or include one or more independent interactive elements. Unlike the Action card, the container itself does not trigger any action. All interactions are handled exclusively by the components placed within its slot.
 
+<!-- zh-row -->
+
 ### Static content - 0 actions
 
 The Card displays information without any interactive elements. Its content is purely informational and does not respond to user interactions.
@@ -164,6 +184,8 @@ Use case: The card explains what users should check before activating their eSIM
 
 <img src="images/content_card_container@actions_static_content_0_actions_img.png" alt="content_card_container@actions_static_content_0_actions_img" width="433">
 
+<!-- zh-row -->
+
 ### Single interactive component - 1 action
 
 The Card contains one interactive element that triggers a specific action or navigation. Only this element responds to user interactions, while the Card itself remains non-interactive.
@@ -171,6 +193,8 @@ The Card contains one interactive element that triggers a specific action or nav
 Use case: The card displays the eSIM requirements and an "Activate eSIM" button. Only the button is interactive.
 
 <img src="images/content_card_container@actions_single_interactive_component_1_action_img.png" alt="content_card_container@actions_single_interactive_component_1_action_img" width="433">
+
+<!-- zh-row -->
 
 ### Multiple interactive components - 2 or more actions
 
@@ -188,12 +212,16 @@ Use case: The card contains two links, "Check device compatibility" and "Learn h
 
 ## States
 
+<!-- zh-row -->
+
 **`Enabled`** The card displays its content normally. Interactive elements within the slot remain independently accessible and retain their own
 interaction states.
 
 The card can be displayed on different predefined OUDS background surfaces according to its layout context. The background context must remain consistent when switching between card states. Interactive elements placed within the slot retain their own states independently of the container.
 
 <img src="images/content_card_container@states_enabled_img.png" alt="content_card_container@states_enabled_img" width="433">
+
+<!-- zh-row -->
 
 **`Disabled`** The card and its contents communicate an unavailable state. All interactive elements within the slot must also be disabled and must not respond to user interaction.
 
@@ -205,6 +233,8 @@ In Figma, changing the card state does not automatically update slotted content.
 Text and nested interactive components must use their corresponding Disabled states or color tokens. Images and illustrations must use the predefined OUDS disabled opacity token, which corresponds to 20% opacity in the current specification.
 
 <img src="images/content_card_container@states_disabled_img.png" alt="content_card_container@states_disabled_img" width="433">
+
+<!-- zh-row -->
 
 **`Skeleton`** The Skeleton state represents content that has not yet loaded. Replace the final content with non-interactive placeholders that reflect the card’s expected layout and visual hierarchy.
 
@@ -241,11 +271,9 @@ During the Skeleton state, the card must display non-interactive placeholders on
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | Not available yet | Done | 1.0.0 |
+| Figma | [Card component](https://r.orange.fr/r/S-ouds-design-content-card) | Live | 1.0.0 |
 | OUDS Web (former Boosted) | Not available yet | To do | – |
 | OUDS Android - Jetpack Compose | Not available yet | To do | – |
 | OUDS iOS - Swift | Not available yet | To do | – |

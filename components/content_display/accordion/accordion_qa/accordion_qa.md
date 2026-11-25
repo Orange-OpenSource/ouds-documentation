@@ -35,6 +35,8 @@ Accordion Q&A are used to organize frequently asked questions into a compact, ea
 
 ## Expanded
 
+<!-- zh-row -->
+
 **`False`** Use the collapsed state when the answer is hidden. Only the question remains visible, allowing users to scan the available Q&A topics quickly without displaying all answers at once.
 
 **`True`** Use the expanded state when the answer related to the question is visible. The answer appears directly below the trigger and should clearly respond to the question above it.
@@ -42,6 +44,8 @@ Accordion Q&A are used to organize frequently asked questions into a compact, ea
 <img src="images/accordion_qa@expanded_img.png" alt="accordion_qa@expanded_img" width="433">
 
 ## Expanded text
+
+<!-- zh-row -->
 
 **`False`** No standard answer text is displayed in the expanded area.  
 Use this option when the answer is provided through Slot (Expand) or when no standard text content is required.
@@ -63,6 +67,8 @@ The Below text slot adds custom supporting content directly below the main text 
 Use it when additional information needs to remain closely associated with the Label, Description or other text content rather than span the complete trigger width.  
 The slot follows the position and alignment of the text container. Its exact placement may vary depending on the Accordion component structure.
 
+<!-- zh-row -->
+
 **`False`** No additional content is displayed below the main trigger content.
 
 **`True`** A custom content area is displayed directly below the main text content.
@@ -78,6 +84,8 @@ The slot follows the position and alignment of the text container. Its exact pla
 The Bottom slot adds custom supporting content below the complete trigger content.  
 Use it when information needs to remain visible independently of the Expanded state and requires more space or flexibility than the standard text properties.  
 The slot is positioned at the bottom of the trigger area. Its exact width and alignment may vary depending on the Accordion component structure.
+
+<!-- zh-row -->
 
 **`False`** No additional content is displayed below the main trigger content.
 
@@ -95,6 +103,8 @@ The Expand slot adds custom content inside the expanded area of the Accordion.
 Use it when the revealed content requires a structure that cannot be represented clearly by standard Expanded text alone.  
 The slot is displayed only when the Accordion is expanded. Its exact placement inside the expanded area may vary depending on the Accordion component structure.
 
+<!-- zh-row -->
+
 **`False`** No additional content is displayed below the main trigger content.
 
 **`True`** A custom content area is displayed when the Accordion is expanded.
@@ -104,6 +114,8 @@ The slot is displayed only when the Accordion is expanded. Its exact placement i
 <img src="images/accordion_qa@slot_expand_img.png" alt="accordion_qa@slot_expand_img" width="433">
 
 ## Alternative icon
+
+<!-- zh-row -->
 
 **`False`** Use the default chevron as the Expanding indicator. This is the recommended option for standard Q&A patterns and clearly communicates that the answer can be expanded or collapsed.
 
@@ -115,6 +127,8 @@ The icon must communicate the same expanded state consistently across all items 
 <img src="images/accordion_qa@alternative_icon_img.png" alt="accordion_qa@alternative_icon_img" width="433">
 
 ## Reverse
+
+<!-- zh-row -->
 
 **`False`** Use False as the standard layout.  
 The Expanding indicator is displayed at the logical end of the Q&A trigger, after the question and any optional Trailing content.
@@ -129,6 +143,8 @@ The Expanding indicator is displayed at the logical end of the Q&A trigger, afte
 
 Leading displays an Icon before the Q&A. Use it when an Icon provides useful context or helps users identify the topic of the question more quickly.
 
+<!-- zh-row -->
+
 **`False`** No Leading content is displayed. The main content starts at the default horizontal padding.
 
 **`True`** A Leading Icon is displayed before the Q&A. Choose an Icon that clearly represents the topic.
@@ -141,6 +157,8 @@ Leading displays an Icon before the Q&A. Use it when an Icon provides useful con
 
 Trailing content displays short secondary information related to the Q&A before the Expanding indicator.  
 Use it sparingly when this information helps users understand the context of the question before opening the answer.
+
+<!-- zh-row -->
 
 **`False`** No Trailing content is displayed. The main content can use the available width before the Expanding indicator.
 
@@ -158,6 +176,8 @@ Use it for short contextual information such as:
 
 ## Trailing container type
 
+<!-- zh-row -->
+
 **Trailing Text** Use Text to display a short value or secondary piece of information associated with the accordion section.
 
 ⚠️ Keep Trailing text concise. When the information requires a sentence or explanation, use the Description or place the information inside the expanded content instead.  
@@ -174,6 +194,8 @@ Use it for short contextual information such as:
 
 ## Divider
 
+<!-- zh-row -->
+
 **`False`** No Divider is displayed. Use this option when Q&A items are already clearly separated by spacing, Background or another visual treatment.
 
 **`True`** A Divider is displayed between adjacent Q&A items. Use it when several questions share the same surface and additional visual separation improves scanning.
@@ -182,6 +204,8 @@ Use it for short contextual information such as:
 
 ## Background
 
+<!-- zh-row -->
+
 **`False`** The Q&A item uses the surrounding container surface without an individual Background. Use this option for standard Q&A lists where spacing or Dividers already provide sufficient visual separation.
 
 **`True`** A Background is applied to the complete Q&A item. Use it when individual questions require stronger visual grouping from the surrounding content. When expanded, the Background must visually contain both the question and its answer.
@@ -189,6 +213,8 @@ Use it for short contextual information such as:
 <img src="images/accordion_qa@background_img.png" alt="accordion_qa@background_img" width="433">
 
 ## Label bold
+
+<!-- zh-row -->
 
 **`False`** Use the standard Label emphasis for most Q&As.
 
@@ -205,6 +231,8 @@ It may be appropriate when:
 
 ## Overline
 
+<!-- zh-row -->
+
 **`False`** No overline is displayed.
 
 **`True`** A short contextual Label is displayed above the Q&A. Use an Overline when users need additional context to understand the category or scope of the question.
@@ -212,6 +240,8 @@ It may be appropriate when:
 <img src="images/accordion_qa@overline_img.png" alt="accordion_qa@overline_img" width="433">
 
 ## Description
+
+<!-- zh-row -->
 
 **`False`** No supporting description is displayed.
 
@@ -225,6 +255,8 @@ The Description should clarify the scope or conditions of the question rather th
 Rich text should be used sparingly to improve scanning and highlight the most important information in the answer.  
 It must never compensate for unclear writing.
 
+<!-- zh-row -->
+
 ### Strong text
 • Strong text can be used sparingly in the Description or Expanded text to highlight key information, such as a status, date, amount or required step. Rich text must use the **Label/Medium/Strong** token only.  
 • No other text styles or custom font weights should be used.
@@ -237,6 +269,8 @@ It must never compensate for unclear writing.
 <img src="images/accordion_qa@rich_text_img.png" alt="accordion_qa@rich_text_img" width="433">
 
 ## Technical layout adjustments
+
+<!-- zh-row -->
 
 Even though the component has a single structure in Figma for easier use by designers, its technical implementation may differ between Web and native environments to respect the layout conventions of each platform.  
 The Q&A trigger and its Expanded answer must remain visually aligned and clearly perceived as parts of the same question-and-answer item.
@@ -256,6 +290,8 @@ The Q&A component follows the screen and grid-margin conventions defined by the 
 <img src="images/accordion_qa@technical_layout_adjustments_img.png" alt="accordion_qa@technical_layout_adjustments_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 Accordion Q&A supports multiline questions and answers. The number of lines is not limited. The question, Description, Trailing text and Expanded text must wrap when there is not enough horizontal space.
@@ -315,6 +351,8 @@ Slots may include default padding to guide designers in their usage. This paddin
 <img src="images/accordion_qa@spec_layout_spacing.png" alt="accordion_qa@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** Enabled is the default state.  
 The Q&A can be expanded or collapsed. The complete trigger area acts as a single control for changing the Expanded state.

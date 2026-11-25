@@ -30,6 +30,8 @@ The navigation button is typically arranged in a sequence to indicate the userâ€
 
 ## Appearance
 
+<!-- zh-row -->
+
 **`Default`** Default Navigation buttons are used for navigation between pages that are not critical or emphasized. They typically represent inactive page states and support smooth movement across content.  
 Use case: Standard "next/previous" navigation in product listings or search results.
 
@@ -50,6 +52,8 @@ Use case: Secondary interfaces, such as blogs or FAQs, where pagination is less 
 
 ## Layouts
 
+<!-- zh-row -->
+
 **`Next`** The Next layout button is used to move the user forward in a sequence of content, steps, or pages.  
 Use case: Navigating to the next page in a multi-step form, product catalog, or article series.
 
@@ -60,6 +64,8 @@ Use case: Going back to the previous step in a checkout flow or returning to the
 
 ## Icon only
 
+<!-- zh-row -->
+
 **`False`** When Icon only is set to false, the button displays both an icon and a text label. This makes the action more explicit and accessible, especially for new users or in contexts where clarity is critical.  
 Use case: Using a "Next" button with both text and icon in a multi-step checkout flow to ensure the action is clearly understood.
 
@@ -68,6 +74,8 @@ Use case: Using a "Next" button with both text and icon in a multi-step checkout
 <img src="images/navigation_button@icon_only_img.png" alt="navigation_button@icon_only_img" width="433">
 
 ## Rounded corner
+
+<!-- zh-row -->
 
 Even though in Figma this rendering option is available and editable from the properties of each button component, the configuration of this rendering option is actually transversal across the entire product/service in which the component is used. It is therefore impossible to have one button component set to Rounded corner=True and another set to Rounded corner=False within the same product/service.
 
@@ -91,6 +99,8 @@ This option is technically not available for all brand themes. Here's the list o
 
 ## Specific component: On colored bg
 
+<!-- zh-row -->
+
 This variant ensures a sufficiently high level of accessibility when the component is used on a background that is "out of control".
 
 &nbsp;
@@ -102,6 +112,8 @@ This variant ensures a sufficiently high level of accessibility when the compone
 <img src="images/navigation_button@on_colored_bg_img.png" alt="navigation_button@on_colored_bg_img" width="433">
 
 ## Multiline and responsiveness
+
+<!-- zh-row -->
 
 ### Multiline
 This component allows multi-line text editing. Although the number of lines is not technically limited, it is recommended not to exceed one line of text.  
@@ -134,6 +146,8 @@ The behavior of the text during user zoom in/out must follow a fundamental princ
 <img src="images/navigation_button@spec_layout_spacing.png" alt="navigation_button@spec_layout_spacing" width="864">
 
 ## States
+
+<!-- zh-row -->
 
 **`Enabled`** The default state of the Navigation button when it is available for interaction. It represents a normal, ready-to-use navigation control.  
 Use case: Visible as the standard button for moving to the next or previous page.
@@ -177,21 +191,19 @@ Work is in progress to deliver this content.
 | OUDS Web | [S-ouds-web-navigation-button](https://r.orange.fr/r/S-ouds-web-navigation-button) |
 | OUDS Android | [S-ouds-android-navigation-button](https://r.orange.fr/r/S-ouds-android-navigation-button) |
 | OUDS iOS | Not available yet |
-| OUDS Flutter | Not available yet |
+| OUDS Flutter | [S-ouds-flutter-navigation-button](https://r.orange.fr/r/S-ouds-flutter-navigation-button) |
 
 # Changelog
 
 ## Availability
 
-Design status: **DEV**
-
 | Platform | Resource | Status | Version |
 |---|---|---|---|
-| Figma | [Navigation button component](https://r.orange.fr/r/S-ouds-design-navigation-button) | Done | 3.4.0 |
-| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-navigation-button) | Done | 3.4.0 |
-| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-navigation-button) | Done | 3.4.0 |
+| Figma | [Navigation button component](https://r.orange.fr/r/S-ouds-design-navigation-button) | Live | 3.4.0 |
+| OUDS Web (former Boosted) | [Web dev documentation](https://r.orange.fr/r/S-ouds-web-navigation-button) | Live | 3.4.0 |
+| OUDS Android - Jetpack Compose | [Android dev documentation](https://r.orange.fr/r/S-ouds-android-navigation-button) | Live | 3.4.0 |
 | OUDS iOS - Swift | Not available yet | To do | â€“ |
-| OUDS Flutter | Not available yet | Done | 3.4.0 |
+| OUDS Flutter | [Flutter dev documentation](https://r.orange.fr/r/S-ouds-flutter-navigation-button) | Live | 3.4.0 |
 
 ## Design changelog
 
