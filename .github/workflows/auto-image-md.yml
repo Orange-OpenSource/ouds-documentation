@@ -8,11 +8,9 @@ name: Auto Generate Image Markdown
 on:
   # Trigger on push events
   push:
-    # Watch for changes in component image directories
-    # Supports both 3-level and 4-level deep component structures
+    # Watch for changes in component image directories (flat folders since 2026-11-25)
     paths:
-      - 'components/*/*/images/*'
-      - 'components/*/*/*/images/*'
+      - 'components/*/images/*'
     # Only run on main branch
     branches:
       - main

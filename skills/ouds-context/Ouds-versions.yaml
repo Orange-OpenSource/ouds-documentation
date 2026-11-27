@@ -10,8 +10,8 @@
 # id: unique; the Ouds-links id when the component has an entry there. component: for a variant record (one of
 # several records of one documented component), the Ouds-links id of that component.
 
-version: 1.1.0
-updated: 2026-11-24
+version: 1.2.0
+updated: 2026-11-27
 
 components:
   - name: Action card
@@ -717,10 +717,11 @@ components:
   - name: Skeleton
     id: skeleton
     design_status: LIVE
-    design_version: "1.1.0"
+    pinned: "Ben 2026-11-27: v1.0.0 on every platform (Figma changelog 1.0.0; the iOS wiki says 1.1.0)"
+    design_version: "1.0.0"
     web_version: "1.0.0"
-    android_version: "1.1.0"
-    ios_version: "1.1.0"
+    android_version: "1.0.0"
+    ios_version: "1.0.0"
     flutter_version: "1.0.0"
   - name: Star rating
     id: star-rating

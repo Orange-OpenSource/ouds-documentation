@@ -99,20 +99,19 @@ def validate_image_path(file_path: Path) -> bool:
     """
     Validate that the file path is in a valid component images/ directory
     
-    Expected formats:
-    - components/[type]/[name]/images/[image]
-    - components/[type]/[group]/[name]/images/[image]
-    
+    Expected format (flat folders since 2026-11-25):
+    - components/[name]/images/[image]
+
     Args:
         file_path: Path to validate
-        
+
     Returns:
         True if valid, False otherwise
     """
     parts = file_path.parts
-    
+
     # Must start with 'components' and contain 'images' directory
-    if len(parts) < 5 or parts[0] != 'components':
+    if len(parts) < 4 or parts[0] != 'components':
         return False
     
     # 'images' should be the second-to-last part (parent directory of the image)
