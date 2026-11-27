@@ -1,1 +1,0 @@
-A toast is a temporary, non-modal UI element that provides a status message confirming an action or delivering a brief system update without interrupting the user's current task.

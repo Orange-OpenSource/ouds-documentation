@@ -1,1 +1,0 @@
-A badge icon is a UI element that highlights system notifications, statuses, or the categorisation of information through colour and iconography. The badge icon is presented as a coloured shape that displays an icon, and its selected size remains constant despite any changes to the interface size.

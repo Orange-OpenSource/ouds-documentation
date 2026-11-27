@@ -1,3 +1,0 @@
-A body is a UI element that styles typography for common text content like paragraphs, descriptions, and informational messages.
-
-The body features multiple size options, to allow content importance to be expressed while maintaining consistency. Variants automatically adjust across breakpoints to ensure optimal readability on all devices. Body prioritize readability and provide a comfortable reading experience.

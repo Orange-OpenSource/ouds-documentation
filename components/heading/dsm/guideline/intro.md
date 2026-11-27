@@ -1,1 +1,0 @@
-A heading is a UI element that styles typography to structure content and define the hierarchy of information within an interface.

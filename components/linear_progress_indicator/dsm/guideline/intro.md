@@ -1,1 +1,0 @@
-A linear progress indicator is a UI element that shows the progress of a task using a horizontal bar.

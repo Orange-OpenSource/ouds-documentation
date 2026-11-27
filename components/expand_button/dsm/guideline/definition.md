@@ -1,1 +1,0 @@
-A button expand is a UI element that toggles content visibility, allowing users to expand or collapse content sections. The expand button minimises visual clutter by displaying only essential information and allowing access to additional details when necessary.

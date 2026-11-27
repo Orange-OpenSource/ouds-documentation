@@ -1,1 +1,0 @@
-A tag is a UI element that shows brief information, such as a label, keyword, or category.

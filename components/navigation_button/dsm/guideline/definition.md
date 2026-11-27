@@ -1,1 +1,0 @@
-A navigation button is a UI element that enables movement between different pages within a multi-page interface. The navigation button is typically arranged in a sequence to indicate the user's current position and provide controls for accessing previous, next, or specific pages.

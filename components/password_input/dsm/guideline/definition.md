@@ -1,1 +1,0 @@
-A password input is a UI element designed to securely and confidentially capture a user's password. The password input feature enhances privacy by replacing characters with dots as they are typed. It also includes usability features like the option to show or hide the password and helper text to assist with password creation.

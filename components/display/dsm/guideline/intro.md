@@ -1,1 +1,0 @@
-A display is a UI element that styles typography for impactful content like landing pages, marketing campaigns, and key messages.

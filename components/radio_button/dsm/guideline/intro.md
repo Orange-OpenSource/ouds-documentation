@@ -1,1 +1,0 @@
-A radio button is a UI element that allows users to select a single option from a set of mutually exclusive choices.

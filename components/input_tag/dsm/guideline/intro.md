@@ -1,1 +1,0 @@
-An input tag is a UI element that renders an entered value as a tag, allowing it to display brief information like a label, keyword, or category.

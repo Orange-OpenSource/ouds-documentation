@@ -1,1 +1,0 @@
-A bullet list is a UI element that allows users to view related individual text items grouped together, with items typically starting with a number or a bullet. The bullet list, also referred to as an 'unordered list' or 'ordered list,' is typically not an interactive element, although text items can include hypertext links.

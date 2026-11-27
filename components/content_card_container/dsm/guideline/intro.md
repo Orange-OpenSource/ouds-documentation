@@ -1,1 +1,0 @@
-A content card container is a surface-like UI element that groups related information within a single non-interactive surface that can include independently interactive elements.

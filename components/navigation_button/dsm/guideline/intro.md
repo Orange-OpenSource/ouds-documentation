@@ -1,1 +1,0 @@
-A navigation button is a UI element that enables movement between different pages within a multi-page interface.

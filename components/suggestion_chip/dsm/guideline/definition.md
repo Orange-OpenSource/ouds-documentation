@@ -1,1 +1,0 @@
-A suggestion chip is a UI element that presents recommended or predictive options based on the user's input or context, often utilised to capture filtering decisions. The suggestion chip is usually unselected by default and can be tapped or clicked to apply the suggestion, making input easier and improving usability.

@@ -1,1 +1,0 @@
-A status icon is a UI element that communicates the functional state of a system or message, such as Success, Info, Warning, or Error.

@@ -1,1 +1,0 @@
-An accordion list item is a UI element shaped like a row, that reveals or hides related content within the current context.

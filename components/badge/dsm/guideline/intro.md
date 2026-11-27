@@ -1,1 +1,0 @@
-A badge is a UI element that highlights system notifications, statuses, or the categorisation of information through colour alone.

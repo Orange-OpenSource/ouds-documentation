@@ -1,1 +1,0 @@
-A filter chip is a UI element that enables users to select or deselect options within a series, commonly used to capture filtering decisions.

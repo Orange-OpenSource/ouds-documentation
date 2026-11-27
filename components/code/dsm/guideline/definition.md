@@ -1,3 +1,0 @@
-A code element is a UI element that styles typography for technical content like code snippets, commands, system values, and identifiers.
-
-The code employs a monospace typeface to maintain character alignment and enhance the readability of structured content. Offered in one size, it ensures a uniform presentation of technical information across the product. Its application should be restricted to content that necessitates a precise code-like representation.

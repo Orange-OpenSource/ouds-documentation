@@ -1,1 +1,0 @@
-A link expand is a UI element that reveals or hides additional content through a text link.

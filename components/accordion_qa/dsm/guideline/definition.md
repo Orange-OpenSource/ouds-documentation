@@ -1,3 +1,0 @@
-An accordion Q&A is a UI element designed as a row that accommodates a question-and-answer format, used to reveal or hide an answer within the current context.
-
-Accordion Q&A are used to organize frequently asked questions into a compact, easy-to-scan list where users can open only the information they need. The question serves as the accordion trigger, and the related answer appears directly below when expanded.

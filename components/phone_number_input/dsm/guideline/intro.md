@@ -1,1 +1,0 @@
-A phone number input is a UI element that captures and validates telephone numbers in an international format.

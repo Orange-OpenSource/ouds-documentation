@@ -1,1 +1,0 @@
-A body is a UI element that styles typography for common text content like paragraphs, descriptions, and informational messages.

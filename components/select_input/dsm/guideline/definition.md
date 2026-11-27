@@ -1,1 +1,0 @@
-A select input is a UI element that enables users to choose one or, in some cases, multiple options from a predefined list. The select input appears as a dropdown that shows available options. It is used when the number of choices is limited and known ahead of time, allowing users to select from controlled or standardised values.

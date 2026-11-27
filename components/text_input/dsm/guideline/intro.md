@@ -1,1 +1,0 @@
-A text input is a UI element that enables users to type, edit, or select a single line of text, such as names, emails, or search queries.

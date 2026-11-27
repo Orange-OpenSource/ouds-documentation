@@ -1,1 +1,0 @@
-A code element is a UI element that styles typography for technical content like code snippets, commands, system values, and identifiers.

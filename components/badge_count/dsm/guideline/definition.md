@@ -1,1 +1,0 @@
-A badge count is a UI element that highlights system notifications, status, or the categorisation of information through colour and numerical value. The badge count is displayed as a coloured shape that shows numerical values, and its selected size remains consistent regardless of any changes to the interface size.

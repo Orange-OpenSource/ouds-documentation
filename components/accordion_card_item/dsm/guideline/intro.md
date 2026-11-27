@@ -1,1 +1,0 @@
-An accordion card item is a UI element shaped like a self-contained card that reveals or hides related content within the current context.

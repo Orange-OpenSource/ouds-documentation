@@ -1,1 +1,0 @@
-A password input is a UI element designed to securely and confidentially capture a user’s password.

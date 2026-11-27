@@ -1,1 +1,0 @@
-A social button is a UI element providing quick access to a social network or social action, such as opening a profile, navigating to social content, sharing content, or starting a conversation.

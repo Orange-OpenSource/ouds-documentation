@@ -1,7 +1,0 @@
-A **switch** is a UI element that toggles between two states, typically "On" and "Off," and is used to enable or disable features, options, or settings.
-
-The switch, that lacks an additional icon asset or text label, provides greater flexibility when creating other components that require a switch.
-
-A **switch item** is a UI element shaped like a row that toggles between two states, typically "On" and "Off," and is used to enable or disable features, options, or settings.
-
-Unlike the switch, the switch item accommodates a broader range of contexts by enabling the toggling of visibility of additional text labels and icon assets.

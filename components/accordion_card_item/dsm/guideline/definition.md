@@ -1,3 +1,0 @@
-An accordion card item is a UI element shaped like a self-contained card that reveals or hides related content within the current context.
-
-The accordion card item is used when a more prominent visual grouping is needed compared to an accordion list item. The card can be displayed on its own or as part of a card-based accordion collection, and may feature a distinct background, outline, or rounded corners.

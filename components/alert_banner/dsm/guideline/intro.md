@@ -1,1 +1,0 @@
-An alert banner is a UI element that communicates important information, system states, or service updates across an interface.

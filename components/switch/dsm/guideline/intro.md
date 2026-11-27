@@ -1,1 +1,0 @@
-A switch is a UI element that toggles between two states, typically "On" and "Off," and is used to enable or disable features, options, or settings.

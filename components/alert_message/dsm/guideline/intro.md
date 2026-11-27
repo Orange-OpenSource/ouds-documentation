@@ -1,1 +1,0 @@
-An alert message is a UI element that provides system feedback, indicates status changes, or prompts required actions through clear, prominent, persistent, and actionable communication.

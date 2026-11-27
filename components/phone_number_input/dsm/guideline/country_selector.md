@@ -1,1 +1,0 @@
-The country selector allows users to choose their country before entering a phone number. It automatically adjusts the international dialing code (+33 for France) and helps format the input accordingly.

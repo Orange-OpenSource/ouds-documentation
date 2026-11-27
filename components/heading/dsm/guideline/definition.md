@@ -1,3 +1,0 @@
-A heading is a UI element that styles typography to structure content and define the hierarchy of information within an interface.
-
-The heading features multiple sizes options, to help users quickly understand the organisation of a page or section. Variants automatically adjust across breakpoints to ensure optimal readability on all devices. Heading serve as the primary entry point for visual navigation.

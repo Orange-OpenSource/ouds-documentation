@@ -1,1 +1,0 @@
-A **text input** is a UI element that enables users to type, edit, or select a single line of text, such as names, emails, or search queries. Text input features labels, placeholders, icons, helper messages, and validation feedback to provide visual and interactive cues.

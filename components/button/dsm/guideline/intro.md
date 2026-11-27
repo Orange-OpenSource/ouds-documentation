@@ -1,1 +1,0 @@
-A button is a UI element that triggers an action or event, used to initiate tasks or confirm an action.

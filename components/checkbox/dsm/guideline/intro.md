@@ -1,1 +1,0 @@
-A checkbox is a UI element that enables users to select multiple options from a set of mutually non-exclusive choices.

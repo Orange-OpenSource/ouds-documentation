@@ -1,1 +1,0 @@
-A skeleton is a UI element that indicates when content is loading.
