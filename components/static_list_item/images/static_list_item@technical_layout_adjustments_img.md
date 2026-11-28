@@ -1,1 +1,0 @@
-![static_list_item@technical_layout_adjustments_img](./static_list_item@technical_layout_adjustments_img.png)

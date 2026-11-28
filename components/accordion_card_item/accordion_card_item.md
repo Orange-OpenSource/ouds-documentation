@@ -25,7 +25,7 @@ An accordion card item is a UI element shaped like a self-contained card that re
 | 5 | Trailing container | Secondary information such as text, a badge or a tag | Yes |
 | 6 | Expanding indicator | Chevron or plus icon that shows whether the section is open, at the end or the start | No |
 | 7 | Expanded container | The revealed content: Expanded text and/or the Expand slot | Yes |
-| 8 | Bottom border | Separates the items of a group that share the same surface | Yes |
+| 8 | Divider | Separates the items of a group that share the same surface | Yes |
 
 ## Definition
 

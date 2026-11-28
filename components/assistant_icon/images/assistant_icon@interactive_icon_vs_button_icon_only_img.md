@@ -1,1 +1,0 @@
-![assistant_icon@interactive_icon_vs_button_icon_only_img](./assistant_icon@interactive_icon_vs_button_icon_only_img.png)

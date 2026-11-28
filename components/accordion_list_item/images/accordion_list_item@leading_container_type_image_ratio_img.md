@@ -1,1 +1,0 @@
-![accordion_list_item@leading_container_type_image_ratio_img](./accordion_list_item@leading_container_type_image_ratio_img.png)

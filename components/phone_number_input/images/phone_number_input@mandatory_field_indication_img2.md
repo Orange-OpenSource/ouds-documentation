@@ -1,1 +1,0 @@
-![phone_number_input@mandatory_field_indication_img2](./phone_number_input@mandatory_field_indication_img2.png)

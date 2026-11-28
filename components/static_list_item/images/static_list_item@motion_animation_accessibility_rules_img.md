@@ -1,1 +1,0 @@
-![static_list_item@motion_animation_accessibility_rules_img](./static_list_item@motion_animation_accessibility_rules_img.png)

@@ -1,1 +1,0 @@
-![navigation_list_item@trailing_container_type_tag_state_img](./navigation_list_item@trailing_container_type_tag_state_img.png)

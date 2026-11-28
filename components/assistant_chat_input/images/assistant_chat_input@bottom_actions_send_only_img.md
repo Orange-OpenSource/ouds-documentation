@@ -1,1 +1,0 @@
-![assistant_chat_input@bottom_actions_send_only_img](./assistant_chat_input@bottom_actions_send_only_img.png)

@@ -26,7 +26,7 @@ An assistant chat input is a UI element designed for interacting with AI assista
 | 6 | Text input container | Holds the label and the entered text or placeholder. | No |
 | 7 | Label text | Indicates the function of the input. It can be hidden in compact layouts. | Yes |
 | 8 | Bottom actions | Holds the leading and trailing actions, including the send action. | No |
-| 9 | Bottom border | The visible bottom border of the chat input surface. | No |
+| 9 | Divider | The visible divider of the chat input surface. | No |
 | 10 | Helper text container | Holds the supporting text below the input. | Yes |
 | 11 | Helper text | Gives additional information about the input, such as the remaining characters. | Yes |
 | 12 | Helper link | Links to additional help when the helper text is not sufficient. | Yes |

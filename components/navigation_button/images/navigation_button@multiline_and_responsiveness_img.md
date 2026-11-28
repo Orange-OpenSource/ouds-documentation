@@ -1,1 +1,0 @@
-![navigation_button@multiline_and_responsiveness_img](./navigation_button@multiline_and_responsiveness_img.png)

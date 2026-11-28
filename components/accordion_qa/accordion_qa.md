@@ -25,7 +25,7 @@ An accordion Q&A is a UI element designed as a row that accommodates a question-
 | 5 | Trailing container | Short secondary information related to the question | Yes |
 | 6 | Expanding indicator | Chevron or plus icon that shows whether the answer is visible, at the end or the start | No |
 | 7 | Expanded container | The answer: Expanded text and/or the Expand slot | Yes |
-| 8 | Bottom border | Separates adjacent questions that share the same surface | Yes |
+| 8 | Divider | Separates adjacent questions that share the same surface | Yes |
 
 ## Definition
 

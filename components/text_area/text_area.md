@@ -32,7 +32,7 @@ A text area is a UI element that allows users to type, edit, or select longer bl
 | 2 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | No |
 | 3 | Character counter | Shows how many characters are remaining as users type. | Yes |
 | 4 | Resize handle | Lets users resize the text area when resizing is supported. | Yes |
-| 5 | Bottom border | The visible bottom border for the non-outlined style. | No |
+| 5 | Divider | The visible divider for the non-outlined style. | No |
 | 6 | Text cursor | Indicates where the next character will be inserted while typing. | No |
 | 7 | Placeholder | Provides guidance on expected input format or content | Yes |
 | 8 | Helper link | Provides a link to supporting guidance or related information. | Yes |

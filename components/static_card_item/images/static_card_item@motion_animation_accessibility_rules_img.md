@@ -1,1 +1,0 @@
-![static_card_item@motion_animation_accessibility_rules_img](./static_card_item@motion_animation_accessibility_rules_img.png)

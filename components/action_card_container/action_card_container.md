@@ -18,9 +18,9 @@ An action card is a surface-like UI element that groups related information with
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | The card itself: the surface that holds the background, the bottom border and the slot. | No |
+| 1 | Container | The card itself: the surface that holds the background, the divider and the slot. | No |
 | 2 | Background | Interaction support layer that sits over the card surface and carries the enabled treatment. | Yes |
-| 3 | Bottom border | Predefined line that reinforces the separation of a Filled card from its surrounding surface. | Yes |
+| 3 | Divider | Predefined line that reinforces the separation of a Filled card from its surrounding surface. | Yes |
 | 4 | Slot | Holds the customizable content of the card: text, imagery and other elements. | No |
 | 5 | Focus | Focus indicator shown around the complete card when it receives keyboard focus. | Yes |
 | 6 | Focus inset | Inner line of the focus indicator that keeps it visible on any surface. | Yes |

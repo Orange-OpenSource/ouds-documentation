@@ -1,1 +1,0 @@
-![navigation_card_item@leading_container_type_image_rounded_corner_img](./navigation_card_item@leading_container_type_image_rounded_corner_img.png)

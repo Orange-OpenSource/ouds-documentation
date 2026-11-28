@@ -1,1 +1,0 @@
-![circular_progress_indicator@animated_for_determinate_state_only_img](./circular_progress_indicator@animated_for_determinate_state_only_img.gif)

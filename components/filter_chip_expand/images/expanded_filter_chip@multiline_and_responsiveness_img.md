@@ -1,1 +1,0 @@
-![expanded_filter_chip@multiline_and_responsiveness_img](./expanded_filter_chip@multiline_and_responsiveness_img.png)

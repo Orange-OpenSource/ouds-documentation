@@ -1,1 +1,0 @@
-![circular_progress_indicator@helper_text_img](./circular_progress_indicator@helper_text_img.png)

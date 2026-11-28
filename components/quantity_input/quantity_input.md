@@ -33,7 +33,7 @@ A quantity input is a UI element that lets users specify a numerical value repre
 | 3 | Decrement action | Decreases the quantity value by one increment. | No |
 | 4 | Divider | Shows separation. | No |
 | 5 | Increment action | Increases the quantity value by one increment. | Yes |
-| 6 | Bottom border | The visible bottom border for the non-outlined style. | Yes |
+| 6 | Divider | The visible divider for the non-outlined style. | Yes |
 | 7 | Helper text | Supplementary text displayed below the input field providing guidance or requirements. | Yes |
 | 8 | Leading icon | Provides a visual cue about the field type. | Yes |
 | 9 | Label | Moves above the input when focused or filled, so the field stays identifiable. | No |

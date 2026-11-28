@@ -1,1 +1,0 @@
-![modal_dialog@spec_layout_spacing_max_height_true_04](./modal_dialog@spec_layout_spacing_max_height_true_04.png)

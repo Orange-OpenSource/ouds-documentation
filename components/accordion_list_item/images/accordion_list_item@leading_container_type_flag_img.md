@@ -1,1 +1,0 @@
-![accordion_list_item@leading_container_type_flag_img](./accordion_list_item@leading_container_type_flag_img.png)

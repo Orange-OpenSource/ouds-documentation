@@ -1,1 +1,0 @@
-![linear_progress_indicator@progress_determinate_state_only_img](./linear_progress_indicator@progress_determinate_state_only_img.png)

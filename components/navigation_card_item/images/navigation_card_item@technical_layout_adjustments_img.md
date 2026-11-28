@@ -1,1 +1,0 @@
-![navigation_card_item@technical_layout_adjustments_img](./navigation_card_item@technical_layout_adjustments_img.png)

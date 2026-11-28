@@ -34,7 +34,7 @@ A PIN code input is a UI element that captures short, fixed-length numeric codes
 | 2 | Hiding symbol | The masking character that replaces each entered character while the code is hidden. | No |
 | 3 | Active character input | Shows the active slot and the text cursor, indicating where the next character will be inserted while typing. | No |
 | 4 | Empty character input | Shows an empty slot to indicate where a character should be entered. | No |
-| 5 | Bottom border | The visible bottom border of each character input. | No |
+| 5 | Divider | The visible divider of each character input. | No |
 | 6 | Helper text | Adds extra guidance, examples, or formatting instructions. | Yes |
 
 ## Definition

@@ -34,7 +34,7 @@ A select input is a UI element that enables users to choose one or, in some case
 | 2 | Label | Tells users what information to enter. | Yes |
 | 3 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | No |
 | 4 | Trailing action | Opens the list of available options | No |
-| 5 | Bottom border | The visible bottom border for the non-outlined style | Yes |
+| 5 | Divider | The visible divider for the non-outlined style | Yes |
 | 6 | Helper text | Adds extra guidance, examples, or formatting instructions. | Yes |
 | 7 | Label | Moves above the input when focused or filled, so the field stays identifiable. | No |
 | 8 | Text cursor | Indicates where the next character will be inserted while typing. | No |

@@ -21,7 +21,7 @@ A text input is a UI element that enables users to type, edit, or select a singl
 | 1 | Leading icon | Indicates input purpose or type (search, email, phone) | Yes |
 | 2 | Label | Describes the purpose of the input and what information is expected | Yes |
 | 3 | Input container | Provides visual boundaries and interactive area for the input field | No |
-| 4 | Bottom border | The visible bottom border for the non-outlined style | No |
+| 4 | Divider | The visible divider for the non-outlined style | No |
 | 5 | Helper text | Offers additional context or instructions for completion | Yes |
 | 6 | Trailing action | Provides quick interactions (clear, show/hide password, dropdown) | Yes |
 | 7 | Helper link | A link to the helper message | Yes |

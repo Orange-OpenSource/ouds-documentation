@@ -1,1 +1,0 @@
-![accordion_card_item@technical_layout_adjustments_img](./accordion_card_item@technical_layout_adjustments_img.png)

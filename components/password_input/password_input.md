@@ -30,7 +30,7 @@ A password input is a UI element designed to securely and confidentially capture
 | 2 | Label | Tells users what information to enter. | Yes |
 | 3 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | No |
 | 4 | Trailing action | Lets users toggle between hiding and showing the password. | No |
-| 5 | Bottom border | The visible bottom border for the non-outlined style. | No |
+| 5 | Divider | The visible divider for the non-outlined style. | No |
 | 6 | Helper text | Supplementary text displayed below the input field providing guidance or requirements. | Yes |
 | 7 | Label | Moves above the input when focused or filled, so the field stays identifiable. | Yes |
 | 8 | Prefix | Shows a static prefix before the value to provide context or format requirements (e.g., “DEV-”). | Yes |

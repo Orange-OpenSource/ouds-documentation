@@ -18,12 +18,12 @@ A checkbox item is a UI element shaped like a row that allows users to select mu
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | The row that holds the checkbox indicator, the texts, the optional icon and the bottom border. | No |
+| 1 | Container | The row that holds the checkbox indicator, the texts, the optional icon and the divider. | No |
 | 2 | Checkbox indicator | Visually indicates the state of the checkbox (unchecked, checked, indeterminate). Unchecked by default. | No |
 | 3 | Label | Primary text that describes the selectable option. Should be short and easy to scan. | No |
 | 4 | Description | Optional supporting text that provides additional context or instructions for the option. | Yes |
 | 5 | Icon | Optional decorative or functional icon used to visually reinforce the meaning of the option. | Yes |
-| 6 | Bottom border | Separator line used when multiple checkbox items are grouped together. | Yes |
+| 6 | Divider | Separator line used when multiple checkbox items are grouped together. | Yes |
 | 7 | Error text | Text message explaining why the field is in an error state. Displayed when validation fails. | Yes |
 | 8 | Error icon | Visual indicator that highlights the error state of the component. | No |
 

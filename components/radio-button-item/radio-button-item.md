@@ -18,13 +18,13 @@ A radio button item is a UI element shaped like a row, that allows users to sele
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | The row that holds the radio button indicator, the texts, the optional icon and the bottom border. | No |
+| 1 | Container | The row that holds the radio button indicator, the texts, the optional icon and the divider. | No |
 | 2 | Radio button indicator | Indicates the selection state of a radio option (selected or unselected). | No |
 | 3 | Label | Primary text that describes the selectable option. | No |
 | 4 | Extra label | Secondary label used to highlight critical or contextual information. | Yes |
 | 5 | Description | Provides additional guidance or explanatory text for the option. | Yes |
 | 6 | Icon | Solaris icon representing the option. | Yes |
-| 7 | Bottom border | Visual separator used when multiple radio options are displayed in a list. | Yes |
+| 7 | Divider | Visual separator used when multiple radio options are displayed in a list. | Yes |
 | 8 | Error text | Displays validation or error messaging related to the radio option. | Yes |
 | 9 | Error icon | Visual indicator that reinforces the error state of the option. | No |
 | 10 | Outline | The outline that frames the item when Outlined is True. | Yes |

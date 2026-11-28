@@ -18,12 +18,12 @@ A switch item is a UI element shaped like a row that toggles between two states,
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | The row that holds the switch indicator, the texts, the optional icon and the bottom border. | No |
+| 1 | Container | The row that holds the switch indicator, the texts, the optional icon and the divider. | No |
 | 2 | Icon | Icon representing the selection or context of the switch. | Yes |
 | 3 | Label | Text describing the switch’s purpose. | No |
 | 4 | Description | Additional supporting text that provides more context or clarification. | Yes |
 | 5 | Switch indicator | Indicates the current state of the switch (on/off). | No |
-| 6 | Bottom border | Separator line for multiple items. | Yes |
+| 6 | Divider | Separator line for multiple items. | Yes |
 | 7 | Error icon | Visual indicator that reinforces the error state of the option. | No |
 | 8 | Error text | Displays validation or error messaging related to the option. | Yes |
 

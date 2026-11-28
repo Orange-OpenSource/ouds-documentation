@@ -1,1 +1,0 @@
-![static_list_item@leading_container_type_image_animated_img](./static_list_item@leading_container_type_image_animated_img.png)

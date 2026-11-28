@@ -1,1 +1,0 @@
-![assistant_chat_input@input_status_empty_placeholder_img](./assistant_chat_input@input_status_empty_placeholder_img.png)

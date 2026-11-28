@@ -18,9 +18,9 @@ A card is a surface-like UI element that groups related information within a sin
 
 | # | Element | Purpose | Optional |
 |---|---------|---------|----------|
-| 1 | Container | The card itself: the surface that holds the background, the bottom border and the slot. | No |
+| 1 | Container | The card itself: the surface that holds the background, the divider and the slot. | No |
 | 2 | Background | Layer that sits over the card surface and supports the visual separation of the card. | Yes |
-| 3 | Bottom border | Predefined line along the bottom edge of a Filled card. | Yes |
+| 3 | Divider | Predefined line along the bottom edge of a Filled card. | Yes |
 | 4 | Slot | Holds the customizable content of the card, including independent interactive elements. | No |
 | 5 | Skeleton | Placeholder shown while the content of the card has not loaded yet. | Yes |
 

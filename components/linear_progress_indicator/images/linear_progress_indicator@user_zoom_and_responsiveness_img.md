@@ -1,1 +1,0 @@
-![linear_progress_indicator@user_zoom_and_responsiveness_img](./linear_progress_indicator@user_zoom_and_responsiveness_img.png)

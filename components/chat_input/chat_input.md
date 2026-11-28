@@ -23,7 +23,7 @@ A chat input is a UI element that enables users to compose and send messages wit
 | 3 | Text input container | Holds the label and the entered text or placeholder. | No |
 | 4 | Label text | Indicates the function of the input. It can be hidden in compact layouts. | Yes |
 | 5 | Bottom actions | Holds the leading and trailing actions, including the send action. | No |
-| 6 | Bottom border | The visible bottom border of the chat input surface. | No |
+| 6 | Divider | The visible divider of the chat input surface. | No |
 | 7 | Helper text container | Holds the supporting text below the input. | Yes |
 | 8 | Helper text | Gives additional information about the input, such as the remaining characters. | Yes |
 | 9 | Helper link | Links to additional help when the helper text is not sufficient. | Yes |

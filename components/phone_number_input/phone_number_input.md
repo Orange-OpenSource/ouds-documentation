@@ -28,7 +28,7 @@ A phone number input is a UI element that captures and validates telephone numbe
 |---|---------|---------|----------|
 | 1 | Label | Tells users what information to enter | Yes |
 | 2 | Input container | Holds and aligns all parts of the field (label, value, icons, etc.). | No |
-| 3 | Bottom border | Providing visual boundary for a non-outlined style. | No |
+| 3 | Divider | Providing visual boundary for a non-outlined style. | No |
 | 4 | Helper text | Adds extra guidance, examples, or formatting instructions. | Yes |
 | 5 | Leading icon | Provides a visual cue about the field type (phone number). | Yes |
 | 6 | Country selector | Lets users choose country/region so the correct calling code can be applied. | Yes |
